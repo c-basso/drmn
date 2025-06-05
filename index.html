@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>DRMN – Sleep Better, Fall Asleep Faster</title>
+  <meta name="apple-itunes-app" content="app-id=6746480683">
+  <meta name="description" content="DRMN is an iOS app for better sleep, faster falling asleep, sleep sounds, breathing techniques, and a sleep journal.">
+  <meta name="keywords" content="sleep, iOS, app, better sleep, fall asleep, sleep sounds, breathing techniques, sleep journal, DRMN, relaxation, bedtime, mobile app">
+  <meta property="og:title" content="DRMN – Sleep Better, Fall Asleep Faster">
+  <meta property="og:description" content="DRMN is an iOS app for better sleep, faster falling asleep, sleep sounds, breathing techniques, and a sleep journal.">
+  <meta property="og:image" content="logo.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://drmn.xyz/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DRMN – Sleep Better, Fall Asleep Faster">
+  <meta name="twitter:description" content="DRMN is an iOS app for better sleep, faster falling asleep, sleep sounds, breathing techniques, and a sleep journal.">
+  <meta name="twitter:image" content="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/png" href="logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #23243a 0%, #3a3d5c 100%);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .container {
+      padding: 2rem 1rem;
+      max-width: 480px;
+      margin: 0 auto;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-sizing: border-box;
+    }
+    .logo {
+      display: none;
+    }
+    .logo-img {
+      height: 160px;
+      margin-bottom: 0.5rem;
+      display: block;
+      filter: drop-shadow(0 2px 12px rgba(163,191,250,0.18));
+      border-radius: 50px;
+      background: rgba(255,255,255,0.04);
+      padding: 0.5rem;
+      max-width: 80vw;
+      width: auto;
+    }
+    .subtitle {
+      font-size: 1.2rem;
+      margin-bottom: 0.8rem;
+      color: #d1d5f0;
+      text-align: center;
+    }
+    .cta-btn {
+      background: transparent;
+      border: none;
+      padding: 0;
+      margin: 0.2rem 0 2rem 0;
+      cursor: pointer;
+      box-shadow: none;
+      transition: transform 0.32s cubic-bezier(0.22, 1, 0.36, 1);
+      text-decoration: none;
+      display: inline-block;
+      min-width: 56px;
+      min-height: 56px;
+      border-radius: 16px;
+    }
+    .cta-btn:active {
+      outline: none;
+      box-shadow: 0 0 0 2px #a3bffa44;
+    }
+    .cta-btn img {
+      height: 4.2rem;
+      vertical-align: middle;
+      max-width: 90vw;
+      width: auto;
+    }
+    .features {
+      width: 100%;
+      margin-bottom: 2rem;
+      box-sizing: border-box;
+    }
+    .feature {
+      background: rgba(255,255,255,0.05);
+      border-radius: 18px;
+      padding: 1.2rem 1rem;
+      margin-bottom: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      min-height: 56px;
+      font-size: 1.08rem;
+    }
+    .feature-icon {
+      font-size: 2rem;
+      color: #a3bffa;
+      flex-shrink: 0;
+      min-width: 2.2rem;
+      text-align: center;
+    }
+    .feature-text {
+      font-size: 1.08rem;
+      color: #e3e6fa;
+      line-height: 1.5;
+    }
+    .testimonials {
+      margin-bottom: 2rem;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .testimonial {
+      background: rgba(255,255,255,0.07);
+      border-radius: 14px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      font-size: 0.98rem;
+      color: #c7c9e6;
+      font-style: italic;
+      line-height: 1.5;
+    }
+    .testimonial-author {
+      display: block;
+      margin-top: 0.5rem;
+      font-size: 0.92rem;
+      color: #a3bffa;
+      font-style: normal;
+    }
+    .footer {
+      text-align: center;
+      padding: 1.2rem 0 0.7rem 0;
+      font-size: 0.95rem;
+      color: #7b7e9e;
+      word-break: break-word;
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 1.2rem 0.5rem;
+      }
+      .feature {
+        font-size: 1rem;
+        padding: 1rem 0.7rem;
+      }
+    }
+    @media (max-width: 400px) {
+      .container {
+        padding: 1rem 0.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="logo.png" alt="DRMN app logo – Sleep Better, Fall Asleep Faster" class="logo-img" />
+      <h1 class="app-title">DRMN</h1>
+      <div class="subtitle">Sleep better, fall asleep faster.<br>Exclusive for iOS.</div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <a class="cta-btn" href="https://apps.apple.com/app/id6746480683" id="cta-btn">
+        <img id="cta-img" alt="Download or Preorder DRMN on the App Store">
+      </a>
+      <section class="features" aria-label="App Features">
+        <div class="feature">
+          <span class="feature-icon">🎵</span>
+          <span class="feature-text">Soothing sleep sounds to calm your mind</span>
+        </div>
+        <div class="feature">
+          <span class="feature-icon">🌬️</span>
+          <span class="feature-text">Guided breathing techniques for relaxation</span>
+        </div>
+        <div class="feature">
+          <span class="feature-icon">📓</span>
+          <span class="feature-text">Personal sleep journal to track your nights</span>
+        </div>
+        <div class="feature">
+          <span class="feature-icon">🌙</span>
+          <span class="feature-text">Designed for a peaceful bedtime routine</span>
+        </div>
+      </section>
+      <section class="testimonials" aria-label="User Testimonials">
+        <div class="testimonial">
+          "I fall asleep so much faster now. The sounds are magical!"
+          <span class="testimonial-author">– Alex</span>
+        </div>
+        <div class="testimonial">
+          "The breathing exercises help me unwind every night. Love the journal too!"
+          <span class="testimonial-author">– Jamie</span>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    &copy; 2025 DRMN. All rights reserved. | iOS only
+  </footer>
+  <script>
+    // Set CTA image based on date
+    const ctaImg = document.getElementById('cta-img');
+    const now = new Date();
+    const cutoff = new Date('2025-07-01T00:00:00Z');
+    if (now < cutoff) {
+      ctaImg.src = './preorder.svg';
+      ctaImg.alt = 'Preorder on the App Store';
+    } else {
+      ctaImg.src = './download.svg';
+      ctaImg.alt = 'Download on the App Store';
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "DRMN",
+      "operatingSystem": "iOS",
+      "applicationCategory": "HealthApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "2"
+      },
+      "description": "DRMN is an iOS app for better sleep, faster falling asleep, sleep sounds, breathing techniques, and a sleep journal.",
+      "image": "logo.png",
+      "screenshot": "logo.png",
+      "url": "https://drmn.xyz/",
+      "author": {
+        "@type": "Organization",
+        "name": "DRMN"
+      },
+      "operatingSystem": "iOS",
+      "applicationCategory": "Health & Fitness",
+      "inLanguage": "en"
+    }
+  </script>
+</body>
+</html>
