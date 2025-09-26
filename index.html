@@ -88,132 +88,6 @@
       max-width: 90vw;
       width: auto;
     }
-    .features {
-      width: 100%;
-      margin-bottom: 2rem;
-      box-sizing: border-box;
-    }
-    .feature {
-      background: rgba(255,255,255,0.05);
-      border-radius: 18px;
-      padding: 1.2rem 1rem;
-      margin-bottom: 1.2rem;
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      min-height: 56px;
-      font-size: 1.08rem;
-    }
-    .feature-icon {
-      font-size: 2rem;
-      color: #a3bffa;
-      flex-shrink: 0;
-      min-width: 2.2rem;
-      text-align: center;
-    }
-    .feature-text {
-      font-size: 1.08rem;
-      color: #e3e6fa;
-      line-height: 1.5;
-    }
-    .testimonials {
-      margin-bottom: 2rem;
-      width: 100%;
-      box-sizing: border-box;
-    }
-    .testimonial-carousel {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      position: relative;
-      margin-bottom: 2rem;
-    }
-    .testimonial-list {
-      width: 100%;
-      max-width: 420px;
-      display: flex;
-      overflow: hidden;
-      padding: 0;
-      margin: 0;
-      list-style: none;
-      transition: transform 0.5s cubic-bezier(0.4,0.2,0.2,1);
-    }
-    .testimonial {
-      min-width: 100%;
-      box-sizing: border-box;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.4s;
-      display: flex;
-      align-items: flex-start;
-      gap: 1rem;
-      background: rgba(255,255,255,0.07);
-      border-radius: 14px;
-      padding: 1rem;
-      margin-bottom: 0;
-      font-size: 0.98rem;
-      color: #c7c9e6;
-      font-style: italic;
-      line-height: 1.5;
-      box-shadow: 0 2px 8px 0 rgba(35,36,58,0.04);
-      position: absolute;
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
-    }
-    .testimonial.active {
-      opacity: 1;
-      pointer-events: auto;
-      position: relative;
-    }
-    .testimonial-avatar {
-      font-size: 2rem;
-      flex-shrink: 0;
-      margin-top: 0.1rem;
-      filter: drop-shadow(0 1px 2px rgba(35,36,58,0.08));
-    }
-    .testimonial-content {
-      display: flex;
-      flex-direction: column;
-    }
-    .testimonial-stars {
-      color: #ffe066;
-      font-size: 1.1rem;
-      letter-spacing: 0.1em;
-      margin-bottom: 0.2rem;
-      font-style: normal;
-    }
-    .testimonial-text {
-      margin-bottom: 0.4rem;
-      display: block;
-    }
-    .testimonial-author {
-      font-size: 0.92rem;
-      color: #a3bffa;
-      font-style: normal;
-      margin-top: 0.1rem;
-    }
-    .testimonial-arrow {
-      background: rgba(35,36,58,0.12);
-      border: none;
-      color: #a3bffa;
-      font-size: 2rem;
-      border-radius: 50%;
-      width: 2.5rem;
-      height: 2.5rem;
-      cursor: pointer;
-      margin: 0 0.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: background 0.2s;
-      z-index: 2;
-    }
-    .testimonial-arrow:hover {
-      background: #a3bffa22;
-    }
     .footer {
       text-align: center;
       padding: 1.2rem 0 0.7rem 0;
@@ -224,10 +98,6 @@
     @media (max-width: 600px) {
       .container {
         padding: 1.2rem 0.5rem;
-      }
-      .feature {
-        font-size: 1rem;
-        padding: 1rem 0.7rem;
       }
     }
     @media (max-width: 400px) {
@@ -358,80 +228,13 @@
   <main>
     <div class="container">
       <a class="cta-btn" href="https://apps.apple.com/app/id6746480683" id="cta-btn">
-        <img id="cta-img" alt="Download or Preorder DRMN on the App Store">
+        <img id="cta-img" src="download.svg" alt="Download on the App Store">
       </a>
-      <section class="features" aria-label="App Features">
-        <div class="feature">
-          <span class="feature-icon">🎵</span>
-          <span class="feature-text">Soothing Sleep Sounds to calm your mind and help you fall asleep faster</span>
-        </div>
-        <div class="feature">
-          <span class="feature-icon">🌬️</span>
-          <span class="feature-text">Guided breathing techniques for relaxation</span>
-        </div>
-        <div class="feature">
-          <span class="feature-icon">📓</span>
-          <span class="feature-text">Personal sleep journal to track your nights</span>
-        </div>
-        <div class="feature">
-          <span class="feature-icon">🌙</span>
-          <span class="feature-text">Designed for a peaceful bedtime routine</span>
-        </div>
-        <div class="feature">
-          <span class="feature-icon">🔊</span>
-          <span class="feature-text">Sleep Sounds: our signature feature for deep, restorative sleep</span>
-        </div>
-      </section>
-      <section class="testimonials" aria-label="User Testimonials">
-        <div class="testimonial-carousel">
-          <button class="testimonial-arrow left" aria-label="Previous testimonial">&#8592;</button>
-          <ul class="testimonial-list">
-            <li class="testimonial" data-index="0">
-              <span class="testimonial-avatar" aria-hidden="true">🧑‍🦱</span>
-              <span class="testimonial-content">
-                <span class="testimonial-stars" aria-label="5 stars">★★★★★</span>
-                <span class="testimonial-text">"Sleep Sounds are a game changer! I fall asleep so much faster now. The sounds are magical!"</span>
-                <span class="testimonial-author">– Alex</span>
-              </span>
-            </li>
-            <li class="testimonial" data-index="1">
-              <span class="testimonial-avatar" aria-hidden="true">🧑‍🦰</span>
-              <span class="testimonial-content">
-                <span class="testimonial-stars" aria-label="5 stars">★★★★★</span>
-                <span class="testimonial-text">"The breathing exercises help me unwind every night. Love the journal too!"</span>
-                <span class="testimonial-author">– Jamie</span>
-              </span>
-            </li>
-            <li class="testimonial" data-index="2">
-              <span class="testimonial-avatar" aria-hidden="true">🧑‍🦳</span>
-              <span class="testimonial-content">
-                <span class="testimonial-stars" aria-label="5 stars">★★★★★</span>
-                <span class="testimonial-text">"I use Sleep Sounds every night. My sleep quality has improved so much! Highly recommend."</span>
-                <span class="testimonial-author">– Morgan</span>
-              </span>
-            </li>
-          </ul>
-          <button class="testimonial-arrow right" aria-label="Next testimonial">&#8594;</button>
-        </div>
-      </section>
     </div>
   </main>
   <footer class="footer">
-    &copy; 2025 DRMN. All rights reserved. | iOS only
+    &copy; 2025 DRMN. All rights reserved.
   </footer>
-  <script>
-    // Set CTA image based on date
-    const ctaImg = document.getElementById('cta-img');
-    const now = new Date();
-    const cutoff = new Date('2025-07-01T00:00:00Z');
-    if (now < cutoff) {
-      ctaImg.src = './preorder.svg';
-      ctaImg.alt = 'Preorder on the App Store';
-    } else {
-      ctaImg.src = './download.svg';
-      ctaImg.alt = 'Download on the App Store';
-    }
-  </script>
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -460,30 +263,6 @@
       "applicationCategory": "Health & Fitness",
       "inLanguage": "en"
     }
-  </script>
-  <script>
-    // Testimonial carousel logic
-    (function() {
-      const testimonials = document.querySelectorAll('.testimonial');
-      const leftBtn = document.querySelector('.testimonial-arrow.left');
-      const rightBtn = document.querySelector('.testimonial-arrow.right');
-      let current = 0;
-      function showTestimonial(idx) {
-        testimonials.forEach((el, i) => {
-          el.classList.toggle('active', i === idx);
-        });
-      }
-      leftBtn.addEventListener('click', () => {
-        current = (current - 1 + testimonials.length) % testimonials.length;
-        showTestimonial(current);
-      });
-      rightBtn.addEventListener('click', () => {
-        current = (current + 1) % testimonials.length;
-        showTestimonial(current);
-      });
-      // Show the first testimonial on load
-      showTestimonial(current);
-    })();
   </script>
 </body>
 </html>
