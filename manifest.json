@@ -1,0 +1,21 @@
+{
+  "name": "DRMN - Sleep Better, Fall Asleep Faster",
+  "short_name": "DRMN",
+  "description": "DRMN is the ultimate iOS sleep app for better sleep quality, faster falling asleep, premium Sleep Sounds, guided breathing exercises, and comprehensive sleep tracking.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#23243a",
+  "theme_color": "#23243a",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "176x176",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["health", "lifestyle", "medical"],
+  "lang": "en",
+  "dir": "ltr"
+}
