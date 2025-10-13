@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>DRMN – Sleep Better, Fall Asleep Faster</title>
   <meta name="apple-itunes-app" content="app-id=6746480683">
-  <meta name="description" content="DRMN is the ultimate iOS sleep app for better sleep quality and faster falling asleep. Download free on App Store.">
-  <meta name="keywords" content="sleep app, iOS sleep app, better sleep, fall asleep faster, Sleep Sounds, sleep sounds app, breathing exercises, sleep journal, sleep tracking, insomnia relief, bedtime routine, relaxation app, meditation for sleep, white noise, nature sounds, sleep quality, DRMN app, mobile sleep aid, sleep improvement, sleep wellness">
+  <meta name="description"
+    content="DRMN is the ultimate iOS sleep app for better sleep quality and faster falling asleep. Download free on App Store.">
+  <meta name="keywords"
+    content="sleep app, iOS sleep app, better sleep, fall asleep faster, Sleep Sounds, sleep sounds app, breathing exercises, sleep journal, sleep tracking, insomnia relief, bedtime routine, relaxation app, meditation for sleep, white noise, nature sounds, sleep quality, DRMN app, mobile sleep aid, sleep improvement, sleep wellness">
   <meta name="author" content="DRMN">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <meta name="googlebot" content="index, follow">
@@ -17,7 +20,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta property="og:title" content="DRMN – Sleep Better, Fall Asleep Faster">
-  <meta property="og:description" content="DRMN is the ultimate iOS sleep app for better sleep quality and faster falling asleep. Download free on App Store.">
+  <meta property="og:description"
+    content="DRMN is the ultimate iOS sleep app for better sleep quality and faster falling asleep. Download free on App Store.">
   <meta property="og:image" content="https://drmn.xyz/logo.webp">
   <meta property="og:image:width" content="176">
   <meta property="og:image:height" content="176">
@@ -28,7 +32,8 @@
   <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="DRMN – Sleep Better, Fall Asleep Faster">
-  <meta name="twitter:description" content="DRMN is the ultimate iOS sleep app for better sleep quality and faster falling asleep. Download free on App Store.">
+  <meta name="twitter:description"
+    content="DRMN is the ultimate iOS sleep app for better sleep quality and faster falling asleep. Download free on App Store.">
   <meta name="twitter:image" content="https://drmn.xyz/logo.webp">
   <meta name="twitter:image:alt" content="DRMN app logo - Sleep Better, Fall Asleep Faster">
   <meta name="twitter:site" content="@drmnapp">
@@ -54,6 +59,7 @@
       position: relative;
       overflow-x: hidden;
     }
+
     .container {
       padding: 2rem 1rem;
       max-width: 480px;
@@ -64,27 +70,31 @@
       align-items: center;
       box-sizing: border-box;
     }
+
     .logo {
       display: none;
     }
+
     .logo-img {
       height: 160px;
       margin-top: 2rem;
       margin-bottom: 0.5rem;
       display: block;
-      filter: drop-shadow(0 2px 12px rgba(163,191,250,0.18));
+      filter: drop-shadow(0 2px 12px rgba(163, 191, 250, 0.18));
       border-radius: 50px;
-      background: rgba(255,255,255,0.04);
+      background: rgba(255, 255, 255, 0.04);
       padding: 0.5rem;
       max-width: 80vw;
       width: auto;
     }
+
     .subtitle {
       font-size: 1.2rem;
       margin-bottom: 0.8rem;
       color: #d1d5f0;
       text-align: center;
     }
+
     .cta-btn {
       background: transparent;
       border: none;
@@ -99,16 +109,19 @@
       min-height: 56px;
       border-radius: 16px;
     }
+
     .cta-btn:active {
       outline: none;
       box-shadow: 0 0 0 2px #a3bffa44;
     }
+
     .cta-btn img {
       height: 4.2rem;
       vertical-align: middle;
       max-width: 90vw;
       width: auto;
     }
+
     .footer {
       text-align: center;
       padding: 1.2rem 0 0.7rem 0;
@@ -116,16 +129,19 @@
       color: #7b7e9e;
       word-break: break-word;
     }
+
     @media (max-width: 600px) {
       .container {
         padding: 1.2rem 0.5rem;
       }
     }
+
     @media (max-width: 400px) {
       .container {
         padding: 1rem 0.3rem;
       }
     }
+
     /* Animated Night Sky Background */
     .sky-bg {
       position: fixed;
@@ -138,6 +154,7 @@
       background: linear-gradient(180deg, #23243a 0%, #3a3d5c 100%);
       overflow: hidden;
     }
+
     .star {
       position: absolute;
       width: 2px;
@@ -147,13 +164,31 @@
       opacity: 0.8;
       animation: twinkle 2.5s infinite ease-in-out;
     }
-    .star:nth-child(2n) { animation-duration: 3.2s; }
-    .star:nth-child(3n) { animation-duration: 1.8s; }
-    .star:nth-child(5n) { animation-duration: 2.1s; }
-    @keyframes twinkle {
-      0%, 100% { opacity: 0.8; }
-      50% { opacity: 0.2; }
+
+    .star:nth-child(2n) {
+      animation-duration: 3.2s;
     }
+
+    .star:nth-child(3n) {
+      animation-duration: 1.8s;
+    }
+
+    .star:nth-child(5n) {
+      animation-duration: 2.1s;
+    }
+
+    @keyframes twinkle {
+
+      0%,
+      100% {
+        opacity: 0.8;
+      }
+
+      50% {
+        opacity: 0.2;
+      }
+    }
+
     /* Natural, Fluffy Clouds */
     .cloud-group {
       position: absolute;
@@ -162,25 +197,61 @@
       opacity: 0.7;
       animation: cloud-move 60s linear infinite;
     }
+
     .cloud-blob {
       position: absolute;
-      background: rgba(255,255,255,0.13);
+      background: rgba(255, 255, 255, 0.13);
       border-radius: 50%;
       filter: blur(4px);
     }
+
     /* Individual cloud groups and their animation durations */
-    .cloud1 { top: 12vh; left: -240px; animation-duration: 70s; width: 140px; height: 60px; animation-delay: -20s; }
-    .cloud2 { top: 28vh; left: -100px; animation-duration: 90s; width: 110px; height: 44px; animation-delay: -45s; }
-    .cloud3 { top: 55vh; left: -400px; animation-duration: 110s; width: 180px; height: 70px; animation-delay: -60s; }
-    @keyframes cloud-move {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(120vw); }
+    .cloud1 {
+      top: 12vh;
+      left: -240px;
+      animation-duration: 70s;
+      width: 140px;
+      height: 60px;
+      animation-delay: -20s;
     }
+
+    .cloud2 {
+      top: 28vh;
+      left: -100px;
+      animation-duration: 90s;
+      width: 110px;
+      height: 44px;
+      animation-delay: -45s;
+    }
+
+    .cloud3 {
+      top: 55vh;
+      left: -400px;
+      animation-duration: 110s;
+      width: 180px;
+      height: 70px;
+      animation-delay: -60s;
+    }
+
+    @keyframes cloud-move {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(120vw);
+      }
+    }
+
     /* Ensure content is above background */
-    header, main, footer, .container {
+    header,
+    main,
+    footer,
+    .container {
       position: relative;
       z-index: 1;
     }
+
     /* Screen reader only content */
     .sr-only {
       position: absolute;
@@ -196,22 +267,27 @@
   </style>
 
   <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();
-   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date();
+      for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-   ym(102522439, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true
-   });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/102522439" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+    ym(102522439, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/102522439" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
 </head>
+
 <body>
   <div class="sky-bg" aria-hidden="true">
     <!-- Stars (randomly placed with inline style for demo, ideally generated with JS for more) -->
@@ -247,14 +323,8 @@
   </div>
   <header role="banner">
     <div class="container">
-      <img
-        src="logo.webp"
-        alt="DRMN app logo – Sleep Better, Fall Asleep Faster"
-        class="logo-img"
-        width="176"
-        height="176"
-        loading="eager"
-      />
+      <img src="logo.webp" alt="DRMN app logo – Sleep Better, Fall Asleep Faster" class="logo-img" width="176"
+        height="176" loading="eager" />
       <h1 class="app-title">DRMN</h1>
       <p class="subtitle">Sleep better, fall asleep faster.<br>Exclusive for iOS.</p>
     </div>
@@ -263,17 +333,29 @@
     <div class="container">
       <section aria-labelledby="download-section">
         <h2 id="download-section" class="sr-only">Download DRMN Sleep App</h2>
-        <a class="cta-btn" href="https://apps.apple.com/app/id6746480683" id="cta-btn" aria-label="Download DRMN sleep app from the App Store">
+        <a class="cta-btn" href="https://apps.apple.com/app/id6746480683" id="cta-btn"
+          aria-label="Download DRMN sleep app from the App Store">
           <img id="cta-img" src="download.svg" alt="Download on the App Store" width="200" height="60" loading="lazy">
         </a>
       </section>
-      
+
     </div>
   </main>
   <footer class="footer" role="contentinfo">
     <p>&copy; 2025 DRMN. All rights reserved.</p>
 
-    <a href="https://fazier.com/launches/drmn.xyz" target="_blank"><img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=dark" width=120 alt="Fazier badge" /></a>
+    <br>
+
+    <a href="https://fazier.com/launches/drmn.xyz" target="_blank"><img
+        src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=dark" width=120
+        alt="Fazier badge" /></a>
+
+    <br>
+    <br>
+
+    <a href="https://www.superlaun.ch/products/909" target="_blank" rel="noopener">
+      <img src="https://www.superlaun.ch/badge.png" alt="Featured on Super Launch" height="60" />
+    </a>
   </footer>
   <script type="application/ld+json">
     {
@@ -333,4 +415,5 @@
     }
   </script>
 </body>
+
 </html>
