@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "lang": "en",
+    "title": "DRMN – Sleep Better, Fall Asleep Faster",
+    "description": "DRMN is the ultimate iOS sleep app for better sleep quality and faster falling asleep. Download free on App Store.",
+    "keywords": "sleep app, iOS sleep app, better sleep, fall asleep faster, Sleep Sounds, sleep sounds app, breathing exercises, sleep journal, sleep tracking, insomnia relief, bedtime routine, relaxation app, meditation for sleep, white noise, nature sounds, sleep quality, DRMN app, mobile sleep aid, sleep improvement, sleep wellness",
+    "author": "DRMN",
+    "canonical": "https://drmn.xyz/",
+    "og_title": "DRMN – Sleep Better, Fall Asleep Faster",
+    "og_description": "DRMN is the ultimate iOS sleep app for better sleep quality and faster falling asleep. Download free on App Store.",
+    "og_image": "https://drmn.xyz/img/logo.webp",
+    "og_image_alt": "DRMN app logo - Sleep Better, Fall Asleep Faster",
+    "twitter_title": "DRMN – Sleep Better, Fall Asleep Faster",
+    "twitter_description": "DRMN is the ultimate iOS sleep app for better sleep quality and faster falling asleep. Download free on App Store.",
+    "twitter_image": "https://drmn.xyz/img/logo.webp",
+    "twitter_image_alt": "DRMN app logo - Sleep Better, Fall Asleep Faster",
+    "twitter_site": "@drmnapp",
+    "twitter_creator": "@drmnapp"
+  },
+  "header": {
+    "logo_alt": "DRMN app logo – Sleep Better, Fall Asleep Faster",
+    "title": "DRMN",
+    "subtitle": "Sleep better, fall asleep faster. Exclusive for iOS."
+  },
+  "download": {
+    "section_title": "Download DRMN Sleep App",
+    "cta_url": "https://apps.apple.com/app/id6746480683",
+    "cta_aria_label": "Download DRMN sleep app from the App Store",
+    "cta_img_alt": "Download on the App Store"
+  },
+  "footer": {
+    "copyright": "© 2025 DRMN. All rights reserved.",
+    "fazier_badge_alt": "Fazier badge",
+    "superlaunch_badge_alt": "Featured on Super Launch"
+  },
+  "schema": {
+    "name": "DRMN",
+    "alternateName": "DRMN Sleep App",
+    "description": "DRMN is the ultimate iOS sleep app for better sleep quality and faster falling asleep. Download free on App Store.",
+    "image_caption": "DRMN app logo",
+    "inLanguage": "en"
+  }
+}

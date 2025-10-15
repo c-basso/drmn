@@ -1,39 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{meta.lang}}">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>DRMN – Sleep Better, Fall Asleep Faster</title>
+  <title>{{meta.title}}</title>
   <meta name="apple-itunes-app" content="app-id=6746480683">
-  <meta name="description" content="DRMN is the ultimate iOS sleep app for better sleep quality and faster falling asleep. Download free on App Store.">
-  <meta name="keywords" content="sleep app, iOS sleep app, better sleep, fall asleep faster, Sleep Sounds, sleep sounds app, breathing exercises, sleep journal, sleep tracking, insomnia relief, bedtime routine, relaxation app, meditation for sleep, white noise, nature sounds, sleep quality, DRMN app, mobile sleep aid, sleep improvement, sleep wellness">
-  <meta name="author" content="DRMN">
+  <meta name="description" content="{{meta.description}}">
+  <meta name="keywords" content="{{meta.keywords}}">
+  <meta name="author" content="{{meta.author}}">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <meta name="googlebot" content="index, follow">
   <meta name="bingbot" content="index, follow">
-  <link rel="canonical" href="https://drmn.xyz/">
+  <link rel="canonical" href="{{meta.canonical}}">
   <meta name="theme-color" content="#23243a">
   <meta name="msapplication-TileColor" content="#23243a">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta property="og:title" content="DRMN – Sleep Better, Fall Asleep Faster">
-  <meta property="og:description" content="DRMN is the ultimate iOS sleep app for better sleep quality and faster falling asleep. Download free on App Store.">
-  <meta property="og:image" content="https://drmn.xyz/img/logo.webp">
+  <meta property="og:title" content="{{meta.og_title}}">
+  <meta property="og:description" content="{{meta.og_description}}">
+  <meta property="og:image" content="{{meta.og_image}}">
   <meta property="og:image:width" content="176">
   <meta property="og:image:height" content="176">
-  <meta property="og:image:alt" content="DRMN app logo - Sleep Better, Fall Asleep Faster">
+  <meta property="og:image:alt" content="{{meta.og_image_alt}}">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://drmn.xyz/">
+  <meta property="og:url" content="{{meta.canonical}}">
   <meta property="og:site_name" content="DRMN">
   <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="DRMN – Sleep Better, Fall Asleep Faster">
-  <meta name="twitter:description" content="DRMN is the ultimate iOS sleep app for better sleep quality and faster falling asleep. Download free on App Store.">
-  <meta name="twitter:image" content="https://drmn.xyz/img/logo.webp">
-  <meta name="twitter:image:alt" content="DRMN app logo - Sleep Better, Fall Asleep Faster">
-  <meta name="twitter:site" content="@drmnapp">
-  <meta name="twitter:creator" content="@drmnapp">
+  <meta name="twitter:title" content="{{meta.twitter_title}}">
+  <meta name="twitter:description" content="{{meta.twitter_description}}">
+  <meta name="twitter:image" content="{{meta.twitter_image}}">
+  <meta name="twitter:image:alt" content="{{meta.twitter_image_alt}}">
+  <meta name="twitter:site" content="{{meta.twitter_site}}">
+  <meta name="twitter:creator" content="{{meta.twitter_creator}}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="dns-prefetch" href="https://apps.apple.com">
@@ -101,45 +101,45 @@
   </div>
   <header role="banner">
     <div class="container">
-      <img src="/img/logo.webp" alt="DRMN app logo – Sleep Better, Fall Asleep Faster" class="logo-img" width="176"
+      <img src="/img/logo.webp" alt="{{header.logo_alt}}" class="logo-img" width="176"
         height="176" loading="eager" />
-      <h1 class="app-title">DRMN</h1>
-      <p class="subtitle">Sleep better, fall asleep faster. Exclusive for iOS.</p>
+      <h1 class="app-title">{{header.title}}</h1>
+      <p class="subtitle">{{header.subtitle}}</p>
     </div>
   </header>
   <main role="main">
     <div class="container">
       <section aria-labelledby="download-section">
-        <h2 id="download-section" class="sr-only">Download DRMN Sleep App</h2>
-        <a class="cta-btn" href="https://apps.apple.com/app/id6746480683" id="cta-btn" aria-label="Download DRMN sleep app from the App Store">
-          <img id="cta-img" src="/img/download.svg" alt="Download on the App Store" width="200" height="60" loading="lazy">
+        <h2 id="download-section" class="sr-only">{{download.section_title}}</h2>
+        <a class="cta-btn" href="{{download.cta_url}}" id="cta-btn" aria-label="{{download.cta_aria_label}}">
+          <img id="cta-img" src="/img/download.svg" alt="{{download.cta_img_alt}}" width="200" height="60" loading="lazy">
         </a>
       </section>
 
     </div>
   </main>
   <footer class="footer" role="contentinfo">
-    <p>© 2025 DRMN. All rights reserved.</p>
+    <p>{{footer.copyright}}</p>
 
     <br>
 
     <a href="https://fazier.com/launches/drmn.xyz" target="_blank"><img
         src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=dark" width=120
-        alt="Fazier badge" /></a>
+        alt="{{footer.fazier_badge_alt}}" /></a>
 
     <br>
     <br>
 
     <a href="https://www.superlaun.ch/products/909" target="_blank" rel="noopener">
-      <img src="https://www.superlaun.ch/badge.png" alt="Featured on Super Launch" height="60" />
+      <img src="https://www.superlaun.ch/badge.png" alt="{{footer.superlaunch_badge_alt}}" height="60" />
     </a>
   </footer>
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "MobileApplication",
-      "name": "DRMN",
-      "alternateName": "DRMN Sleep App",
+      "name": "{{schema.name}}",
+      "alternateName": "{{schema.alternateName}}",
       "applicationCategory": "HealthApplication",
       "operatingSystem": "iOS",
       "offers": {
@@ -156,13 +156,13 @@
         "bestRating": "5",
         "worstRating": "1"
       },
-      "description": "DRMN is the ultimate iOS sleep app for better sleep quality and faster falling asleep. Download free on App Store.",
+      "description": "{{schema.description}}",
       "image": {
         "@type": "ImageObject",
         "url": "https://drmn.xyz/img/logo.webp",
         "width": 176,
         "height": 176,
-        "caption": "DRMN app logo"
+        "caption": "{{schema.image_caption}}"
       },
       "screenshot": {
         "@type": "ImageObject",
@@ -181,8 +181,8 @@
         "name": "DRMN",
         "url": "https://drmn.xyz/"
       },
-      "keywords": "sleep app, iOS sleep app, better sleep, fall asleep faster, Sleep Sounds, sleep sounds app, breathing exercises, sleep journal, sleep tracking, insomnia relief, bedtime routine, relaxation app, meditation for sleep, white noise, nature sounds, sleep quality, DRMN app, mobile sleep aid, sleep improvement, sleep wellness",
-      "inLanguage": "en",
+      "keywords": "{{meta.keywords}}",
+      "inLanguage": "{{schema.inLanguage}}",
       "datePublished": "2024-01-01",
       "dateModified": "2025-01-01",
       "softwareVersion": "1.0",

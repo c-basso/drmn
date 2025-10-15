@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="{{meta.lang}}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{meta.title}}</title>
+    <meta name="description" content="{{meta.description}}">
+    <meta name="keywords" content="{{meta.keywords}}">
+    <meta name="author" content="{{meta.author}}">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{meta.og_url}}">
+    <meta property="og:title" content="{{meta.og_title}}">
+    <meta property="og:description" content="{{meta.og_description}}">
+    <meta property="og:image" content="{{meta.og_image}}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{meta.twitter_url}}">
+    <meta property="twitter:title" content="{{meta.twitter_title}}">
+    <meta property="twitter:description" content="{{meta.twitter_description}}">
+    <meta property="twitter:image" content="{{meta.twitter_image}}">
+
+    <!-- App Store Meta -->
+    <meta name="apple-itunes-app" content="app-id={{meta.app_store_id}}">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{meta.canonical}}">
+
+    <link rel="alternate" hreflang="ru" href="{{meta.alternate_ru}}" />
+    <link rel="alternate" hreflang="en" href="{{meta.alternate_en}}" />
+    <link rel="alternate" hreflang="x-default" href="{{meta.alternate_default}}" />
+
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <link rel="preload" as="image" href="/bg.webp" fetchpriority="high">
+    <link rel="preload" as="image" href="/logo.webp" fetchpriority="high">
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <a href="{{hero.cta_url}}" rel="nofollow">
+                <div class="logo">
+                    <img src="/logo.webp" alt="{{hero.logo_alt}}">
+                </div>
+            </a>
+            <h1>{{hero.title}}</h1>
+            <h2>{{hero.subtitle}}</h2>
+            <p class="subheadline">{{hero.subheadline}}</p>
+            <a href="{{hero.cta_url}}" class="app-store-btn" rel="nofollow">
+                <img src="/download.svg" alt="{{hero.download_alt}}">
+            </a>
+            <div class="phone-mockup" style="display: none;">
+                <div class="phone-screen">
+                    {{hero.phone_text}}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">{{features.title}}</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>{{features.items.0.title}}</h3>
+                    <p>{{features.items.0.description}}</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✂️</div>
+                    <h3>{{features.items.1.title}}</h3>
+                    <p>{{features.items.1.description}}</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔗</div>
+                    <h3>{{features.items.2.title}}</h3>
+                    <p>{{features.items.2.description}}</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📤</div>
+                    <h3>{{features.items.3.title}}</h3>
+                    <p>{{features.items.3.description}}</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>{{features.items.4.title}}</h3>
+                    <p>{{features.items.4.description}}</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎵</div>
+                    <h3>{{features.items.5.title}}</h3>
+                    <p>{{features.items.5.description}}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO Chapter -->
+    <section class="seo-chapter">
+        <div class="container">
+            <h2 class="section-title">{{seo_chapter.title}}</h2>
+            <p class="subheadline">{{seo_chapter.subtitle}}</p>
+            <p>{{seo_chapter.intro}}</p>
+            <div class="seo-sections">
+                <div class="seo-section">
+                    <h3>{{seo_chapter.sections.0.heading}}</h3>
+                    <p>{{seo_chapter.sections.0.body}}</p>
+                </div>
+                <div class="seo-section">
+                    <h3>{{seo_chapter.sections.1.heading}}</h3>
+                    <p>{{seo_chapter.sections.1.body}}</p>
+                </div>
+            </div>
+            <h3>{{seo_chapter.bullets_title}}</h3>
+            <ul>
+                <li>{{seo_chapter.bullets.0}}</li>
+                <li>{{seo_chapter.bullets.1}}</li>
+                <li>{{seo_chapter.bullets.2}}</li>
+                <li>{{seo_chapter.bullets.3}}</li>
+            </ul>
+            <p>{{seo_chapter.conclusion}}</p>
+        </div>
+    </section>
+
+    <!-- Demo Section (hidden) -->
+    <section class="demo" style="display:none;">
+        <div class="container">
+            <h2 class="section-title">{{demo.title}}</h2>
+            <p style="font-size: 1.2rem; color: #666; margin-bottom: 40px;">{{demo.subtitle}}</p>
+            <div class="demo-video">
+                <div>
+                    <p>{{demo.placeholder_line1}}</p>
+                    <p style="font-size: 0.9rem; margin-top: 10px;">{{demo.placeholder_line2}}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="rating">
+                <div class="stars">{{testimonials.stars}}</div>
+                <div class="rating-text">{{testimonials.rating_text}}</div>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">{{testimonials.items.0.text}}</p>
+                    <div class="testimonial-author">{{testimonials.items.0.author}}</div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">{{testimonials.items.1.text}}</p>
+                    <div class="testimonial-author">{{testimonials.items.1.author}}</div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">{{testimonials.items.2.text}}</p>
+                    <div class="testimonial-author">{{testimonials.items.2.author}}</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">{{faq.title}}</h2>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">{{faq.items.0.q}}</div>
+                <div class="faq-answer">{{faq.items.0.a}}</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">{{faq.items.1.q}}</div>
+                <div class="faq-answer">{{faq.items.1.a}}</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">{{faq.items.2.q}}</div>
+                <div class="faq-answer">{{faq.items.2.a}}</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <a href="{{footer.cta_url}}" class="footer-cta" rel="nofollow">
+                        {{footer.cta_text}}
+                    </a>
+                </div>
+                <div class="footer-links">
+                    <a href="{{footer.privacy_url}}" rel="nofollow">{{footer.privacy_text}}</a>
+                    <a href="{{footer.terms_url}}" rel="nofollow">{{footer.terms_text}}</a>
+                    <a href="{{footer.support_url}}" rel="nofollow">{{footer.support_text}}</a>
+                </div>
+            </div>
+            <div style="margin-top: 20px; opacity: 0.7;">
+                {{footer.copyright}}
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating CTA -->
+    <a href="{{floating_cta.url}}" class="floating-cta" rel="nofollow">
+        {{floating_cta.text}}
+    </a>
+
+    <script>
+        function toggleFAQ(element) {
+            const answer = element.nextElementSibling;
+            const isActive = answer.classList.contains('active');
+            document.querySelectorAll('.faq-answer').forEach(item => { item.classList.remove('active'); });
+            if (!isActive) { answer.classList.add('active'); }
+        }
+
+        const floatingCta = document.querySelector('.floating-cta');
+        const appStoreBtn = document.querySelector('.app-store-btn');
+        const footerCta = document.querySelector('.footer-cta');
+        function checkScroll() {
+            if (appStoreBtn) {
+                const appStoreRect = appStoreBtn.getBoundingClientRect();
+                const footerRect = footerCta ? footerCta.getBoundingClientRect() : null;
+                const appStoreVisible = appStoreRect.top < window.innerHeight && appStoreRect.bottom > 0;
+                const footerVisible = footerRect ? (footerRect.top < window.innerHeight && footerRect.bottom > 0) : false;
+                if (!appStoreVisible && !footerVisible) { floatingCta.classList.add('show'); } else { floatingCta.classList.remove('show'); }
+            }
+        }
+        window.addEventListener('scroll', checkScroll);
+        window.addEventListener('resize', checkScroll);
+        checkScroll();
+    </script>
+</body>
+</html>
+
