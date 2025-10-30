@@ -1,26 +1,26 @@
 {
   "meta": {
     "lang": "en",
-    "title": "DRMN – Sleep Better, Fall Asleep Faster",
-    "description": "DRMN is the ultimate iOS sleep app for better sleep quality and faster falling asleep. Download free on App Store.",
+    "title": "DRMN – White Noise Machine App for Sleep | Sound Machine iOS",
+    "description": "Turn your iPhone into a powerful white noise machine. Ocean waves, rain, fan, and more to sleep faster and better. Free on the App Store.",
     "keywords": "sleep app, iOS sleep app, better sleep, fall asleep faster, Sleep Sounds, sleep sounds app, breathing exercises, sleep journal, sleep tracking, insomnia relief, bedtime routine, relaxation app, meditation for sleep, white noise, nature sounds, sleep quality, DRMN app, mobile sleep aid, sleep improvement, sleep wellness",
     "author": "DRMN",
     "canonical": "https://drmn.xyz/",
-    "og_title": "DRMN – Sleep Better, Fall Asleep Faster",
-    "og_description": "DRMN is the ultimate iOS sleep app for better sleep quality and faster falling asleep. Download free on App Store.",
+    "og_title": "DRMN – White Noise Machine App for Sleep",
+    "og_description": "Your portable white noise machine: white noise, ocean waves, rain, and fan sounds to help you sleep.",
     "og_image": "https://drmn.xyz/img/logo.webp",
     "og_image_alt": "DRMN app logo - Sleep Better, Fall Asleep Faster",
-    "twitter_title": "DRMN – Sleep Better, Fall Asleep Faster",
-    "twitter_description": "DRMN is the ultimate iOS sleep app for better sleep quality and faster falling asleep. Download free on App Store.",
+    "twitter_title": "DRMN – White Noise Machine App for Sleep",
+    "twitter_description": "Turn your iPhone into a sound machine. White noise, ocean waves, rain, and more.",
     "twitter_image": "https://drmn.xyz/img/logo.webp",
     "twitter_image_alt": "DRMN app logo - Sleep Better, Fall Asleep Faster",
     "twitter_site": "@drmnapp",
     "twitter_creator": "@drmnapp"
   },
   "header": {
-    "logo_alt": "DRMN app logo – Sleep Better, Fall Asleep Faster",
-    "title": "DRMN",
-    "subtitle": "Sleep better, fall asleep faster. Exclusive for iOS."
+    "logo_alt": "DRMN app logo – White Noise Machine App for Sleep",
+    "title": "DRMN Sound Machine",
+    "subtitle": "White noise, ocean waves, rain, and more to fall asleep faster. iOS only."
   },
   "download": {
     "section_title": "Download DRMN Sleep App",
@@ -36,8 +36,12 @@
   "schema": {
     "name": "DRMN",
     "alternateName": "DRMN Sleep App",
-    "description": "DRMN is the ultimate iOS sleep app for better sleep quality and faster falling asleep. Download free on App Store.",
+    "description": "DRMN is a white noise machine and sound machine app for iOS that helps you sleep faster and better with high‑quality loops like ocean waves, rain, fan, and brown/pink noise.",
     "image_caption": "DRMN app logo",
     "inLanguage": "en"
+  },
+  "article": {
+    "section_title": "White Noise Machine: Sleep Better with DRMN",
+    "content_html": "<p><strong>Looking for the best white noise machine?</strong> Turn your iPhone into a powerful, portable sound machine with <strong>DRMN</strong>. Whether you need white noise for sleep, soothing sounds for your baby, or a travel‑friendly noise machine, DRMN delivers high‑quality loops that run seamlessly all night.</p>\n\n<h3>Why use a white noise machine?</h3>\n<p>Consistent, broadband sound masks disruptive noises (traffic, neighbors, snoring) and helps your brain settle. Many people fall asleep faster and wake up less often with <em>white noise</em> or <em>ocean waves</em>.</p>\n\n<h3>DRMN: Your portable sound machine</h3>\n<ul>\n  <li><strong>White noise machine for sleep</strong>: classic white noise, plus <em>pink</em> and <em>brown</em> noise</li>\n  <li><strong>Ocean waves sound machine</strong>: realistic surf with rich low‑frequency textures</li>\n  <li><strong>Rain and fan sounds</strong>: gentle rain, storm, box fan, and more</li>\n  <li><strong>For babies</strong>: calm fussiness with steady, gentle noise (use safe volumes)</li>\n  <li><strong>Portable noise machine</strong>: no extra hardware—just your iPhone</li>\n</ul>\n\n<h3>How to get the best results</h3>\n<ol>\n  <li>Choose a sound you enjoy (white noise, ocean waves, rain, or fan)</li>\n  <li>Set a comfortable volume—loud enough to mask noise, not to overpower</li>\n  <li>Use the sleep timer or let it play all night</li>\n</ol>\n\n<p><strong>DRMN</strong> is designed to be your <strong>best white noise machine</strong> on iOS—simple, reliable, and always with you. Ready to sleep better?</p>\n\n<p><a class=\"cta-btn inline\" href=\"https://apps.apple.com/app/id6746480683\" aria-label=\"Download DRMN – White Noise Machine App\">Get DRMN on the App Store</a></p>"
   }
 }

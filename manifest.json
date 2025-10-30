@@ -1,21 +1,53 @@
 {
-  "name": "DRMN - Sleep Better, Fall Asleep Faster",
-  "short_name": "DRMN",
-  "description": "DRMN is the ultimate iOS sleep app for better sleep quality, faster falling asleep, premium Sleep Sounds, guided breathing exercises, and comprehensive sleep tracking.",
+  "name": "DRMN – White Noise Machine for Better Sleep",
+  "short_name": "DRMN White Noise",
+  "description": "DRMN is a white noise machine and sleep app with high‑quality white noise, brown noise, nature sounds, and breathing exercises to help you fall asleep faster and sleep better.",
   "start_url": "/",
+  "scope": "/",
+  "id": "/",
   "display": "standalone",
   "background_color": "#23243a",
   "theme_color": "#23243a",
   "orientation": "portrait",
   "icons": [
     {
-      "src": "/img/logo.webp",
-      "sizes": "176x176",
+      "src": "/img/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/img/favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/img/favicon.ico",
+      "sizes": "16x16 32x32 48x48",
+      "type": "image/x-icon",
+      "purpose": "any"
+    },
+    {
+      "src": "/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/img/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/img/web-app-manifest-512x512.png",
+      "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
     }
   ],
-  "categories": ["health", "lifestyle", "medical"],
+  "categories": ["health", "lifestyle", "medical", "productivity", "utilities"],
   "lang": "en",
   "dir": "ltr"
 }

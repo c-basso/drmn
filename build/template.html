@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>{{meta.title}}</title>
+  <!-- App Store Smart App Banner -->
   <meta name="apple-itunes-app" content="app-id=6746480683">
+  <!-- Core SEO -->
   <meta name="description" content="{{meta.description}}">
   <meta name="keywords" content="{{meta.keywords}}">
   <meta name="author" content="{{meta.author}}">
@@ -13,10 +15,13 @@
   <meta name="googlebot" content="index, follow">
   <meta name="bingbot" content="index, follow">
   <link rel="canonical" href="{{meta.canonical}}">
+  <!-- PWA & Theming -->
   <meta name="theme-color" content="#23243a">
   <meta name="msapplication-TileColor" content="#23243a">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <!-- Open Graph -->
   <meta property="og:title" content="{{meta.og_title}}">
   <meta property="og:description" content="{{meta.og_description}}">
   <meta property="og:image" content="{{meta.og_image}}">
@@ -27,6 +32,7 @@
   <meta property="og:url" content="{{meta.canonical}}">
   <meta property="og:site_name" content="DRMN">
   <meta property="og:locale" content="en_US">
+  <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{meta.twitter_title}}">
   <meta name="twitter:description" content="{{meta.twitter_description}}">
@@ -34,15 +40,23 @@
   <meta name="twitter:image:alt" content="{{meta.twitter_image_alt}}">
   <meta name="twitter:site" content="{{meta.twitter_site}}">
   <meta name="twitter:creator" content="{{meta.twitter_creator}}">
+  <!-- Resource Hints -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="dns-prefetch" href="https://apps.apple.com">
   <link rel="dns-prefetch" href="https://mc.yandex.ru">
-  <link rel="icon" type="image/png" href="/img/logo.webp">
-  <link rel="apple-touch-icon" href="/img/logo.webp">
-  <link rel="manifest" href="/manifest.json">
+  <!-- Icons & Manifest -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png">
+  <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+  <link rel="mask-icon" href="/img/favicon.svg" color="#23243a">
+  <link rel="manifest" href="/site.webmanifest">
+  <!-- Application Name -->
+  <meta name="application-name" content="DRMN – White Noise Machine">
+  <!-- Fonts & CSS -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/styles.css?v={{build.cache_buster}}">
 
   <!-- Yandex.Metrika counter -->
   <script type="text/javascript">
@@ -114,6 +128,11 @@
         <a class="cta-btn" href="{{download.cta_url}}" id="cta-btn" aria-label="{{download.cta_aria_label}}">
           <img id="cta-img" src="/img/download.svg" alt="{{download.cta_img_alt}}" width="200" height="60" loading="lazy">
         </a>
+      </section>
+
+      <section aria-labelledby="article-section" class="article">
+        <h2 id="article-section">{{article.section_title}}</h2>
+        {{article.content_html}}
       </section>
 
     </div>

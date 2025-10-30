@@ -19,6 +19,8 @@ const languages = ['en'];
             
             const template = fs.readFileSync(templatePath, 'utf8');
             const data = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
+            // Add cache-busting build metadata
+            data.build = Object.assign({}, data.build, { cache_buster: Date.now().toString() });
             
             // Function to replace variables in template
             function replaceVariables(template, data) {
