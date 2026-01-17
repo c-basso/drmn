@@ -8,7 +8,7 @@ const LANGUAGES = [
     'fr',
     'de',
     'it',
-    // 'pt'
+    'pt'
 ];
 
 const URLS = LANGUAGES.map((lang) => ({
