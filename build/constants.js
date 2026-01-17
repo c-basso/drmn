@@ -7,7 +7,7 @@ const LANGUAGES = [
     'es',
     'fr',
     'de',
-    // 'it',
+    'it',
     // 'pt'
 ];
 
