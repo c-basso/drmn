@@ -6,7 +6,7 @@ const LANGUAGES = [
     'ru',
     'es',
     'fr',
-    // 'de',
+    'de',
     // 'it',
     // 'pt'
 ];
