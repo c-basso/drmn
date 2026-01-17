@@ -537,13 +537,13 @@
   <header role="banner">
     <div class="container">
       <div class="header-content">
-        <div class="app-logo">
-          <img src="/img/logo.webp" alt="{{header.logo_alt}}" width="120" height="120" loading="eager" decoding="async">
+        <div class="app-logo" itemscope itemtype="https://schema.org/ImageObject">
+          <img src="/img/logo.webp" alt="{{header.logo_alt}}" width="120" height="120" loading="eager" decoding="async" itemprop="image">
         </div>
         <h1>{{header.title}}</h1>
-        <p class="tagline">{{header.tagline}}</p>
+        <p class="tagline" itemprop="description">{{header.tagline}}</p>
         <div class="hero-cta">
-          <a href="{{header.download_url}}" class="download-btn" aria-label="{{header.download_aria_label}}">
+          <a href="{{header.download_url}}" class="download-btn" aria-label="{{header.download_aria_label}}" rel="noopener noreferrer" itemscope itemtype="https://schema.org/SoftwareApplication">
             <img src="/img/download.svg" alt="{{header.download_img_alt}}" width="200" height="60" loading="eager" decoding="async">
           </a>
         </div>
@@ -553,15 +553,15 @@
 
   <main role="main">
     <!-- Features Section -->
-    <section class="features" aria-labelledby="features-heading">
+    <section class="features" aria-labelledby="features-heading" itemscope itemtype="https://schema.org/ItemList">
       <div class="container">
-        <h2 id="features-heading" class="sr-only">{{features.title}}</h2>
+        <h2 id="features-heading">{{features.title}}</h2>
         <div class="features-grid">
           {{#each features.items as |feature|}}
-          <article class="feature-card">
-            <div class="feature-icon">{{feature.icon}}</div>
-            <h3>{{feature.title}}</h3>
-            <p>{{feature.description}}</p>
+          <article class="feature-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <div class="feature-icon" aria-hidden="true">{{feature.icon}}</div>
+            <h3 itemprop="name">{{feature.title}}</h3>
+            <p itemprop="description">{{feature.description}}</p>
           </article>
           {{/each}}
         </div>
@@ -569,45 +569,53 @@
     </section>
 
     <!-- Detailed Content Section for SEO -->
-    <section class="content-section" aria-labelledby="content-heading">
+    <article class="content-section" aria-labelledby="content-heading" itemscope itemtype="https://schema.org/Article">
       <div class="container-narrow">
-        <h2 id="content-heading">{{content.title}}</h2>
-        <p>{{content.intro}}</p>
+        <header>
+          <h2 id="content-heading" itemprop="headline">{{content.title}}</h2>
+          <p itemprop="description">{{content.intro}}</p>
+        </header>
         
         {{#each content.sections as |section|}}
-        <h3>{{section.title}}</h3>
-        <p>{{section.paragraph1}}</p>
-        <ul>
-          {{#each section.list_items as |item|}}
-          <li>{{item}}</li>
-          {{/each}}
-        </ul>
-        <p>{{section.paragraph2}}</p>
+        <section>
+          <h3>{{section.title}}</h3>
+          <p>{{section.paragraph1}}</p>
+          <ul>
+            {{#each section.list_items as |item|}}
+            <li>{{item}}</li>
+            {{/each}}
+          </ul>
+          <p>{{section.paragraph2}}</p>
+        </section>
         {{/each}}
       </div>
-    </section>
+    </article>
 
     <!-- Benefits Section -->
-    <section class="benefits" aria-labelledby="benefits-heading">
+    <section class="benefits" aria-labelledby="benefits-heading" itemscope itemtype="https://schema.org/ItemList">
       <div class="container-narrow">
         <h2 id="benefits-heading">{{benefits.title}}</h2>
         <ul class="benefits-list">
           {{#each benefits.items as |item|}}
-          <li>{{item}}</li>
+          <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <span itemprop="name">{{item}}</span>
+          </li>
           {{/each}}
         </ul>
       </div>
     </section>
 
     <!-- FAQ Section for SEO -->
-    <section class="content-section" aria-labelledby="faq-heading">
+    <section class="content-section" aria-labelledby="faq-heading" itemscope itemtype="https://schema.org/FAQPage">
       <div class="container-narrow">
-        <h2 id="faq-heading">Frequently Asked Questions</h2>
+        <h2 id="faq-heading">Frequently Asked Questions About White Noise App & Sleep Sounds App</h2>
         <div style="margin-top: 2rem;">
           {{#each seo.faq as |faq|}}
-          <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">{{faq.question}}</h3>
-            <p style="color: var(--color-text-secondary); line-height: 1.8;">{{faq.answer}}</p>
+          <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
+            <h3 itemprop="name" style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">{{faq.question}}</h3>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text" style="color: var(--color-text-secondary); line-height: 1.8;">{{faq.answer}}</p>
+            </div>
           </div>
           {{/each}}
         </div>
@@ -621,7 +629,7 @@
           <h2 id="cta-heading">{{final_cta.title}}</h2>
           <p>{{final_cta.paragraph1}}</p>
           <div class="hero-cta">
-            <a href="{{final_cta.cta_url}}" class="download-btn" aria-label="{{final_cta.cta_aria_label}}">
+            <a href="{{final_cta.cta_url}}" class="download-btn" aria-label="{{final_cta.cta_aria_label}}" rel="noopener noreferrer" itemscope itemtype="https://schema.org/SoftwareApplication">
               <img src="/img/download.svg" alt="{{final_cta.cta_img_alt}}" width="200" height="60" loading="lazy" decoding="async">
             </a>
           </div>
@@ -670,9 +678,11 @@
   </script>
   
   <!-- BreadcrumbList Schema -->
+  {{#if seo.structured_data.breadcrumb_list}}
   <script type="application/ld+json">
     {{seo.structured_data.breadcrumb_list|json}}
   </script>
+  {{/if}}
 
   <!-- Yandex.Metrika counter -->
   <script type="text/javascript">
