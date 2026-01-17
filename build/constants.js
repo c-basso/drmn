@@ -4,7 +4,7 @@ const DEFAULT_LANGUAGE = 'en';
 const LANGUAGES = [
     DEFAULT_LANGUAGE,
     'ru',
-    // 'es',
+    'es',
     // 'fr',
     // 'de',
     // 'it',
