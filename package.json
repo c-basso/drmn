@@ -6,8 +6,8 @@
     "sitemap": "node build/sitemap.js",
     "start": "npx http-server",
     "site:preview": "node build/preview.js",
-    "index:ya": "npx indexnow-submit submit-urls urls.txt --host makeblur.com --engine yandex.com --key Q8IPzEDH72muy5mKoXE2j5il",
-    "index:bing": "npx indexnow-submit submit-urls urls.txt --host makeblur.com --engine bing.com --key Q8IPzEDH72muy5mKoXE2j5il",
+    "index:ya": "npx indexnow-submit submit-urls urls.txt --host drmn.xyz --engine yandex.com --key z1CYpveatbisfkh3cqp7ys73",
+    "index:bing": "npx indexnow-submit submit-urls urls.txt --host drmn.xyz --engine bing.com --key z1CYpveatbisfkh3cqp7ys73",
     "index:now": "npm run index:ya && npm run index:bing"
   },
   "devDependencies": {
