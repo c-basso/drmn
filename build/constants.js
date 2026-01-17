@@ -1,4 +1,4 @@
-const SITE_URL = "https://drmn.com/";
+const SITE_URL = "https://drmn.xyz/";
 const DEFAULT_LANGUAGE = 'en';
 
 const LANGUAGES = [
