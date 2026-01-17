@@ -3,27 +3,46 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  
+  <!-- Preconnect to external domains for performance -->
+  <link rel="preconnect" href="https://apps.apple.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://mc.yandex.ru">
+  <link rel="dns-prefetch" href="https://apps.apple.com">
+  <link rel="dns-prefetch" href="https://mc.yandex.ru">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover">
   <title>DRMN – White Noise Machine App for Sleep | Sound Machine iOS</title>
+  
   <!-- App Store Smart App Banner -->
   <meta name="apple-itunes-app" content="app-id=6746480683">
+  
   <!-- Core SEO -->
-  <meta name="description" content="Turn your iPhone into a powerful white noise machine. Ocean waves, rain, fan, and more to sleep faster and better. Free on the App Store.">
-  <meta name="keywords" content="White Noise Machine, white noise app, sound machine app, white noise for sleep, free white noise app, white noise sound, noise app, sleep noise app, sleep sounds, sleep sounds app, sleep sound app, sound machine">
+  <meta name="description" content="White Noise Machine - DRMN: The ultimate sound therapy app for iPhone. Fall asleep faster, reduce stress, and stay focused with white noise, brown noise, ocean waves, rain sounds, and more. Perfect for sleep, meditation, work, and baby sleep. Free download with offline support and battery optimization.">
+  <meta name="keywords" content="White Noise Machine, white noise app, sound machine app, white noise for sleep, free white noise app, white noise sound, noise app, sleep noise app, sleep sounds, sleep sounds app, sleep sound app, sound machine, focus sounds, meditation sounds">
   <meta name="author" content="DRMN">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <meta name="googlebot" content="index, follow">
   <meta name="bingbot" content="index, follow">
   <link rel="canonical" href="https://drmn.xyz/">
+  
+  <!-- Alternate Language Links -->
+  
+  <link rel="alternate" hreflang="en" href="https://drmn.com/" />
+  
+  <link rel="alternate" hreflang="x-default" href="https://drmn.com/" />
+  
   <!-- PWA & Theming -->
-  <meta name="theme-color" content="#23243a">
-  <meta name="msapplication-TileColor" content="#23243a">
+  <meta name="theme-color" content="#1a1b2e">
+  <meta name="msapplication-TileColor" content="#1a1b2e">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  
   <!-- Open Graph -->
   <meta property="og:title" content="DRMN – White Noise Machine App for Sleep">
-  <meta property="og:description" content="Your portable white noise machine: white noise, ocean waves, rain, and fan sounds to help you sleep.">
+  <meta property="og:description" content="Discover tranquility with White Noise Machine - DRMN. Fall asleep faster, reduce stress, and stay focused. Enjoy relaxing sounds and wake up refreshed every day!">
   <meta property="og:image" content="https://drmn.xyz/img/drmn.png">
   <meta property="og:image:width" content="176">
   <meta property="og:image:height" content="176">
@@ -32,130 +51,640 @@
   <meta property="og:url" content="https://drmn.xyz/">
   <meta property="og:site_name" content="DRMN">
   <meta property="og:locale" content="en_US">
+  
   <!-- Twitter Cards -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="DRMN – White Noise Machine App for Sleep">
-  <meta name="twitter:description" content="Turn your iPhone into a sound machine. White noise, ocean waves, rain, and more.">
-  <meta name="twitter:image" content="https://drmn.xyz/img/drmn.png">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://drmn.xyz/">
+  <meta property="twitter:title" content="DRMN – White Noise Machine App for Sleep">
+  <meta property="twitter:description" content="Discover tranquility with White Noise Machine - DRMN. Fall asleep faster, reduce stress, and stay focused. Enjoy relaxing sounds and wake up refreshed every day!">
+  <meta property="twitter:image" content="https://drmn.xyz/img/drmn.png">
   <meta name="twitter:image:alt" content="DRMN app logo - Sleep Better, Fall Asleep Faster">
   <meta name="twitter:site" content="@drmnapp">
-  <meta name="twitter:creator" content="@drmnapp">
-  <!-- Resource Hints -->
-  <link rel="dns-prefetch" href="https://apps.apple.com">
-  <link rel="dns-prefetch" href="https://mc.yandex.ru">
+  <meta name="twitter:creator" content="@c__basso">
+  
   <!-- Icons & Manifest -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png">
-  <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
   <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-  <link rel="mask-icon" href="/img/favicon.svg" color="#23243a">
+  <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+  <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+  <link rel="mask-icon" href="/img/favicon.svg" color="#1a1b2e">
   <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="/img/web-app-manifest-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/img/web-app-manifest-512x512.png">
+  
   <!-- Application Name -->
   <meta name="application-name" content="DRMN – White Noise Machine">
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --color-bg-primary: #0f1018;
+      --color-bg-secondary: #1a1b2e;
+      --color-bg-accent: #25273d;
+      --color-text-primary: #ffffff;
+      --color-text-secondary: #b8bdd1;
+      --color-text-muted: #7a7f9a;
+      --color-accent: #6b7fd7;
+      --color-accent-hover: #7d8fe8;
+      --color-accent-light: #8fa0f0;
+      --color-success: #4ade80;
+      --gradient-primary: linear-gradient(135deg, #1a1b2e 0%, #25273d 50%, #1a1b2e 100%);
+      --gradient-accent: linear-gradient(135deg, #6b7fd7 0%, #8fa0f0 100%);
+      --gradient-hero: radial-gradient(ellipse at top, #25273d 0%, #1a1b2e 50%, #0f1018 100%);
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+      --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+      --shadow-glow: 0 0 24px rgba(107, 127, 215, 0.3);
+    }
 
-  <link rel="preload" href="/css/styles.css?v=1762851252615" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet" href="/css/styles.css?v=1762851252615">
-  </noscript>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: var(--color-bg-primary);
+      color: var(--color-text-primary);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+
+    /* Typography */
+    h1, h2, h3, h4 {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 600;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: clamp(1.75rem, 3vw, 2.5rem);
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: clamp(1.25rem, 2vw, 1.5rem);
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      font-size: clamp(1rem, 1.5vw, 1.125rem);
+      color: var(--color-text-secondary);
+      margin-bottom: 1rem;
+    }
+
+    /* Layout */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .container-narrow {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Header */
+    header {
+      position: relative;
+      padding: 2rem 0;
+      background: var(--gradient-hero);
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        radial-gradient(circle at 20% 30%, rgba(107, 127, 215, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(143, 160, 240, 0.08) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .header-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 3rem 0 4rem;
+    }
+
+    .app-logo {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 2rem;
+      border-radius: 28px;
+      background: var(--gradient-accent);
+      padding: 0;
+      box-shadow: var(--shadow-glow), var(--shadow-lg);
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .app-logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 20px;
+    }
+
+    .tagline {
+      font-size: clamp(1.125rem, 2vw, 1.375rem);
+      color: var(--color-text-secondary);
+      margin-bottom: 2rem;
+      font-weight: 400;
+    }
+
+    .hero-cta {
+      margin: 2rem 0;
+    }
+
+    .download-btn {
+      display: inline-block;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .download-btn:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.1);
+    }
+
+    .download-btn:active {
+      transform: translateY(0);
+    }
+
+    .download-btn img {
+      height: 60px;
+      width: auto;
+      display: block;
+    }
+
+    /* Features Grid */
+    .features {
+      padding: 5rem 0;
+      background: var(--color-bg-secondary);
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .feature-card {
+      background: var(--color-bg-accent);
+      border-radius: 20px;
+      padding: 2rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid rgba(107, 127, 215, 0.1);
+    }
+
+    .feature-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md), 0 0 0 1px rgba(107, 127, 215, 0.2);
+    }
+
+    .feature-icon {
+      width: 56px;
+      height: 56px;
+      background: var(--gradient-accent);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .feature-card h3 {
+      color: var(--color-text-primary);
+      margin-bottom: 0.75rem;
+    }
+
+    .feature-card p {
+      color: var(--color-text-secondary);
+      font-size: 0.95rem;
+    }
+
+    /* Content Section for SEO */
+    .content-section {
+      padding: 5rem 0;
+      background: var(--color-bg-primary);
+    }
+
+    .content-section h2 {
+      color: var(--color-text-primary);
+      margin-bottom: 1.5rem;
+    }
+
+    .content-section h3 {
+      color: var(--color-text-primary);
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      font-size: clamp(1.375rem, 2.5vw, 1.75rem);
+    }
+
+    .content-section p {
+      color: var(--color-text-secondary);
+      line-height: 1.8;
+      margin-bottom: 1.25rem;
+    }
+
+    .content-section ul {
+      margin: 1.5rem 0;
+      padding-left: 1.5rem;
+      list-style: none;
+    }
+
+    .content-section ul li {
+      color: var(--color-text-secondary);
+      line-height: 1.8;
+      margin-bottom: 0.75rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+
+    .content-section ul li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: var(--color-accent);
+      font-size: 1.5rem;
+      line-height: 1.2;
+    }
+
+    .content-section strong {
+      color: var(--color-text-primary);
+      font-weight: 600;
+    }
+
+    /* Benefits Section */
+    .benefits {
+      padding: 5rem 0;
+      background: var(--color-bg-secondary);
+    }
+
+    .benefits-list {
+      list-style: none;
+      margin-top: 2rem;
+    }
+
+    .benefits-list li {
+      padding: 1.25rem 0;
+      padding-left: 2.5rem;
+      position: relative;
+      font-size: 1.125rem;
+      color: var(--color-text-secondary);
+      border-bottom: 1px solid rgba(107, 127, 215, 0.1);
+    }
+
+    .benefits-list li:last-child {
+      border-bottom: none;
+    }
+
+    .benefits-list li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      top: 1.25rem;
+      width: 24px;
+      height: 24px;
+      background: var(--gradient-accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 600;
+      font-size: 0.875rem;
+    }
+
+    /* CTA Section */
+    .cta-section {
+      padding: 5rem 0;
+      background: var(--gradient-hero);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(107, 127, 215, 0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .cta-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .cta-section h2 {
+      margin-bottom: 1rem;
+    }
+
+    .cta-section p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Footer */
+    footer {
+      padding: 3rem 0;
+      background: var(--color-bg-secondary);
+      text-align: center;
+      border-top: 1px solid rgba(107, 127, 215, 0.1);
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+
+    .footer-links a {
+      color: var(--color-text-secondary);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .footer-links a:hover {
+      color: var(--color-accent-light);
+    }
+
+    .footer-copyright {
+      color: var(--color-text-muted);
+      font-size: 0.875rem;
+      margin-top: 1.5rem;
+    }
+
+    .footer-badges {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .container {
+        padding: 0 1rem;
+      }
+
+      .header-content {
+        padding: 2rem 0 3rem;
+      }
+
+      .features-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .benefits-list li {
+        font-size: 1rem;
+      }
+
+      .footer-links {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+
+    /* Accessibility */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    /* Smooth scroll reveal */
+    @media (prefers-reduced-motion: no-preference) {
+      .feature-card,
+      .benefits-list li {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 0.6s ease forwards;
+      }
+
+      .feature-card:nth-child(1) { animation-delay: 0.1s; }
+      .feature-card:nth-child(2) { animation-delay: 0.2s; }
+      .feature-card:nth-child(3) { animation-delay: 0.3s; }
+      .feature-card:nth-child(4) { animation-delay: 0.4s; }
+
+      @keyframes fadeInUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <div class="sky-bg" aria-hidden="true">
-    <!-- Stars (randomly placed with inline style for demo, ideally generated with JS for more) -->
-    <div class="star" style="top:10%;left:15%"></div>
-    <div class="star" style="top:20%;left:70%"></div>
-    <div class="star" style="top:30%;left:40%"></div>
-    <div class="star" style="top:50%;left:60%"></div>
-    <div class="star" style="top:65%;left:25%"></div>
-    <div class="star" style="top:80%;left:80%"></div>
-    <div class="star" style="top:75%;left:55%"></div>
-    <div class="star" style="top:60%;left:10%"></div>
-    <div class="star" style="top:15%;left:85%"></div>
-    <div class="star" style="top:40%;left:30%"></div>
-    <!-- Natural Clouds -->
-    <div class="cloud-group cloud1">
-      <div class="cloud-blob" style="width:60px;height:36px;left:10px;top:18px;"></div>
-      <div class="cloud-blob" style="width:40px;height:24px;left:50px;top:10px;opacity:0.8;"></div>
-      <div class="cloud-blob" style="width:50px;height:30px;left:30px;top:28px;opacity:0.7;"></div>
-      <div class="cloud-blob" style="width:30px;height:18px;left:80px;top:22px;opacity:0.6;"></div>
-    </div>
-    <div class="cloud-group cloud2">
-      <div class="cloud-blob" style="width:40px;height:22px;left:8px;top:10px;"></div>
-      <div class="cloud-blob" style="width:30px;height:16px;left:32px;top:18px;opacity:0.7;"></div>
-      <div class="cloud-blob" style="width:28px;height:14px;left:60px;top:12px;opacity:0.6;"></div>
-      <div class="cloud-blob" style="width:22px;height:12px;left:50px;top:24px;opacity:0.5;"></div>
-    </div>
-    <div class="cloud-group cloud3">
-      <div class="cloud-blob" style="width:70px;height:36px;left:20px;top:20px;"></div>
-      <div class="cloud-blob" style="width:60px;height:30px;left:60px;top:28px;opacity:0.8;"></div>
-      <div class="cloud-blob" style="width:50px;height:24px;left:100px;top:18px;opacity:0.7;"></div>
-      <div class="cloud-blob" style="width:40px;height:20px;left:80px;top:40px;opacity:0.6;"></div>
-    </div>
-  </div>
   <header role="banner">
     <div class="container">
-      <img src="/img/logo.webp" alt="DRMN app logo – White Noise Machine App for Sleep" class="logo-img" width="176"
-        height="176" loading="eager" />
-      <h1 class="app-title">DRMN Sound Machine</h1>
-      <p class="subtitle">White noise, ocean waves, rain, and more to fall asleep faster. iOS only.</p>
+      <div class="header-content">
+        <div class="app-logo">
+          <img src="/img/logo.webp" alt="DRMN app logo" width="120" height="120" loading="eager" decoding="async">
+        </div>
+        <h1>White Noise</h1>
+        <p class="tagline">Fall asleep faster, reduce stress, and stay focused. Enjoy relaxing sounds and wake up refreshed every day! Transform your sleep and focus with the ultimate sound therapy app.</p>
+        <div class="hero-cta">
+          <a href="https://apps.apple.com/app/id6746480683" class="download-btn" aria-label="Download DRMN from the App Store">
+            <img src="/img/download.svg" alt="Download on the App Store" width="200" height="60" loading="eager" decoding="async">
+          </a>
+        </div>
+      </div>
     </div>
   </header>
+
   <main role="main">
-    <div class="container">
-      <section aria-labelledby="download-section">
-        <h2 id="download-section" class="sr-only">Download DRMN Sleep App</h2>
-        <a class="cta-btn" href="https://apps.apple.com/app/id6746480683" id="cta-btn" aria-label="Download DRMN sleep app from the App Store">
-          <img id="cta-img" src="/img/download.svg" alt="Download on the App Store" width="200" height="60" loading="lazy">
-        </a>
-      </section>
+    <!-- Features Section -->
+    <section class="features" aria-labelledby="features-heading">
+      <div class="container">
+        <h2 id="features-heading" class="sr-only">Key Features</h2>
+        <div class="features-grid">
+          
+          <article class="feature-card">
+            <div class="feature-icon">🌊</div>
+            <h3>Comprehensive Sound Library</h3>
+            <p>White noise, brown noise, and dark noise for deep relaxation. Nature sounds: rain, ocean waves, crackling fire, and morning birds. Ambient meditation sounds and soft instrumentals. Mix multiple sounds for custom audio experiences.</p>
+          </article>
+          
+          <article class="feature-card">
+            <div class="feature-icon">😴</div>
+            <h3>Sleep Better Every Night</h3>
+            <p>Helps you fall asleep faster and stay asleep longer. Our scientifically-backed sound therapy masks disruptive noises, creates a consistent sleep environment, and promotes deeper, more restorative sleep. Wake up feeling refreshed and energized.</p>
+          </article>
+          
+          <article class="feature-card">
+            <div class="feature-icon">🎯</div>
+            <h3>Relax & Focus Anywhere</h3>
+            <p>Perfect for meditation, yoga, studying, or work. Whether you're struggling with insomnia, need to concentrate at work, or want to create a peaceful environment, DRMN creates the ideal atmosphere for concentration and relaxation. Block out distractions, reduce stress, and enhance your productivity.</p>
+          </article>
+          
+          <article class="feature-card">
+            <div class="feature-icon">👶</div>
+            <h3>Baby Sleep Solutions</h3>
+            <p>Specialized baby sleep sounds (hair dryer, vacuum cleaner, keyboard typing) help infants and toddlers fall asleep faster and sleep more soundly. These familiar rhythms soothe little ones and create a soothing nursery environment that promotes healthy sleep patterns.</p>
+          </article>
+          
+        </div>
+      </div>
+    </section>
 
-      <section aria-labelledby="article-section" class="article">
-        <h2 id="article-section">White Noise Machine: Sleep Better with DRMN</h2>
-        <p><strong>Looking for the best white noise machine?</strong> Turn your iPhone into a powerful, portable sound machine with <strong>DRMN</strong>. Whether you need white noise for sleep, soothing sounds for your baby, or a travel‑friendly noise machine, DRMN delivers high‑quality loops that run seamlessly all night.</p>
+    <!-- Detailed Content Section for SEO -->
+    <section class="content-section" aria-labelledby="content-heading">
+      <div class="container-narrow">
+        <h2 id="content-heading">Transform Your Sleep and Focus with White Noise Machine - DRMN</h2>
+        <p>Whether you're struggling with insomnia, need to concentrate at work, or want to create a peaceful environment for your baby, White Noise Machine - DRMN provides the perfect audio solution. Our ultimate sound therapy app is designed to help you relax deeper, sleep better, and focus easier.</p>
+        
+        
+        <h3>Comprehensive Sound Library for Every Need</h3>
+        <p>White Noise Machine - DRMN offers an extensive collection of high-quality sounds to suit every preference and situation:</p>
+        <ul>
+          
+      </div>
+    </section>
 
-<h3>Why use a white noise machine?</h3>
-<p>Consistent, broadband sound masks disruptive noises (traffic, neighbors, snoring) and helps your brain settle. Many people fall asleep faster and wake up less often with <em>white noise</em> or <em>ocean waves</em>.</p>
+    <!-- Benefits Section -->
+    <section class="benefits" aria-labelledby="benefits-heading">
+      <div class="container-narrow">
+        <h2 id="benefits-heading">Why Choose DRMN?</h2>
+        <ul class="benefits-list">
+          
+          <li>High-quality, professionally recorded sounds</li>
+          
+          <li>Mix multiple sounds for custom audio experiences</li>
+          
+          <li>Timer and fade-out settings for worry-free sleep</li>
+          
+          <li>Beautiful, intuitive interface</li>
+          
+          <li>Works offline — once sounds are downloaded, enjoy uninterrupted sleep anywhere</li>
+          
+          <li>Battery-optimized for all-night use</li>
+          
+          <li>Free to download with optional premium features</li>
+          
+        </ul>
+      </div>
+    </section>
 
-<h3>DRMN: Your portable sound machine</h3>
-<ul>
-  <li><strong>White noise machine for sleep</strong>: classic white noise, plus <em>pink</em> and <em>brown</em> noise</li>
-  <li><strong>Ocean waves sound machine</strong>: realistic surf with rich low‑frequency textures</li>
-  <li><strong>Rain and fan sounds</strong>: gentle rain, storm, box fan, and more</li>
-  <li><strong>For babies</strong>: calm fussiness with steady, gentle noise (use safe volumes)</li>
-  <li><strong>Portable noise machine</strong>: no extra hardware—just your iPhone</li>
-</ul>
-
-<h3>How to get the best results</h3>
-<ol>
-  <li>Choose a sound you enjoy (white noise, ocean waves, rain, or fan)</li>
-  <li>Set a comfortable volume—loud enough to mask noise, not to overpower</li>
-  <li>Use the sleep timer or let it play all night</li>
-</ol>
-
-<p><strong>DRMN</strong> is designed to be your <strong>best white noise machine</strong> on iOS—simple, reliable, and always with you. Ready to sleep better?</p>
-
-<p><a class="cta-btn inline" href="https://apps.apple.com/app/id6746480683" aria-label="Download DRMN – White Noise Machine App">Get DRMN on the App Store</a></p>
-      </section>
-
-    </div>
+    <!-- CTA Section -->
+    <section class="cta-section" aria-labelledby="cta-heading">
+      <div class="container">
+        <div class="cta-content">
+          <h2 id="cta-heading">Your Personal Sleep & Wellness Companion</h2>
+          <p>DRMN is more than just a sound app - it's your personal sleep and wellness companion. Join thousands of users who have transformed their sleep quality and daily focus with our powerful audio therapy solutions. Download White Noise Machine - DRMN today and discover the difference that perfect sound can make in your life.</p>
+          <div class="hero-cta">
+            <a href="https://apps.apple.com/app/id6746480683" class="download-btn" aria-label="Download DRMN from the App Store">
+              <img src="/img/download.svg" alt="Download on the App Store" width="200" height="60" loading="lazy" decoding="async">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="footer" role="contentinfo">
-    <p>© 2025 DRMN. All rights reserved.</p>
 
-    <br>
-
-    <a href="https://fazier.com/launches/drmn.xyz" target="_blank"><img
-        src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=dark" width=120
-        alt="Fazier badge" /></a>
-
-    <br>
-    <br>
-
-    <a href="https://www.superlaun.ch/products/909" target="_blank" rel="noopener">
-      <img src="https://www.superlaun.ch/badge.png" alt="Featured on Super Launch" height="60" />
-    </a>
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-links">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+      </div>
+      <div class="footer-badges">
+        <a href="https://fazier.com/launches/drmn.xyz" target="_blank" rel="noopener">
+          <img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=dark" width="120" alt="Fazier badge">
+        </a>
+        <a href="https://www.superlaun.ch/products/909" target="_blank" rel="noopener">
+          <img src="https://www.superlaun.ch/badge.png" alt="Featured on Super Launch" height="60">
+        </a>
+      </div>
+      <p class="footer-copyright">© 2025 DRMN. All rights reserved.</p>
+    </div>
   </footer>
-  <!-- Yandex.Metrika counter (moved to end to avoid render-blocking) -->
+
+  <!-- Structured Data (JSON-LD) for SEO -->
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"MobileApplication","name":"DRMN","alternateName":"DRMN Sleep App","applicationCategory":"HealthApplication","operatingSystem":"iOS","offers":{"@type":"Offer","price":"0","priceCurrency":"USD","availability":"https://schema.org/InStock","url":"https://apps.apple.com/app/id6746480683"},"description":"Transform your sleep and focus with White Noise Machine - DRMN, the ultimate sound therapy app designed to help you relax deeper, sleep better, and focus easier. Comprehensive sound library with white noise, brown noise, nature sounds, and baby sleep solutions.","image":{"@type":"ImageObject","url":"https://drmn.xyz/img/logo.webp","width":176,"height":176,"caption":"DRMN app logo"},"screenshot":{"@type":"ImageObject","url":"https://drmn.xyz/img/logo.webp","width":176,"height":176},"url":"https://drmn.xyz/","author":{"@type":"Organization","name":"DRMN","url":"https://drmn.xyz/"},"publisher":{"@type":"Organization","name":"DRMN","url":"https://drmn.xyz/"},"keywords":"White Noise Machine, white noise app, sound machine app, white noise for sleep, free white noise app, white noise sound, noise app, sleep noise app, sleep sounds, sleep sounds app, sleep sound app, sound machine","inLanguage":"en","datePublished":"2024-01-01","dateModified":"2025-01-01","softwareVersion":"1.5","fileSize":"49.2MB","softwareRequirements":"iOS 17.1 or later","downloadUrl":"https://apps.apple.com/app/id6746480683"}
+  </script>
+  
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Organization","name":"DRMN","url":"https://drmn.xyz/","logo":"https://drmn.xyz/img/logo.webp","description":"DRMN - The best white noise machine app for iPhone. Fall asleep faster, reduce stress, and stay focused with white noise, brown noise, ocean waves, rain sounds, and more."}
+  </script>
+  
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"WebSite","name":"DRMN","url":"https://drmn.xyz/","description":"White Noise Machine - DRMN: The ultimate sound therapy app for iPhone. Fall asleep faster, reduce stress, and stay focused with white noise, brown noise, ocean waves, rain sounds, and more.","potentialAction":{"@type":"SearchAction","target":"https://drmn.xyz/?q={search_term_string}","query-input":"required name=search_term_string"}}
+  </script>
+  
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"HowTo","name":"How to Use White Noise Machine - DRMN for Better Sleep","description":"Learn how to use White Noise Machine - DRMN app to fall asleep faster and sleep better. Step-by-step guide to using white noise and nature sounds for sleep.","step":[]}
+  </script>
+  
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[]}
+  </script>
+  
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://drmn.xyz/"}]}
+  </script>
+
+  <!-- Yandex.Metrika counter -->
   <script type="text/javascript">
     (function (m, e, t, r, i, k, a) {
       m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
@@ -173,64 +702,6 @@
   <noscript>
     <div><img src="https://mc.yandex.ru/watch/102522439" style="position:absolute; left:-9999px;" alt="" /></div>
   </noscript>
-  <!-- /Yandex.Metrika counter -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "MobileApplication",
-      "name": "DRMN",
-      "alternateName": "DRMN Sleep App",
-      "applicationCategory": "HealthApplication",
-      "operatingSystem": "iOS",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock",
-        "url": "https://apps.apple.com/app/id6746480683"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "reviewCount": "2",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "description": "DRMN is a white noise machine and sound machine app for iOS that helps you sleep faster and better with high‑quality loops like ocean waves, rain, fan, and brown/pink noise.",
-      "image": {
-        "@type": "ImageObject",
-        "url": "https://drmn.xyz/img/logo.webp",
-        "width": 176,
-        "height": 176,
-        "caption": "DRMN app logo"
-      },
-      "screenshot": {
-        "@type": "ImageObject",
-        "url": "https://drmn.xyz/img/logo.webp",
-        "width": 176,
-        "height": 176
-      },
-      "url": "https://drmn.xyz/",
-      "author": {
-        "@type": "Organization",
-        "name": "DRMN",
-        "url": "https://drmn.xyz/"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "DRMN",
-        "url": "https://drmn.xyz/"
-      },
-      "keywords": "White Noise Machine, white noise app, sound machine app, white noise for sleep, free white noise app, white noise sound, noise app, sleep noise app, sleep sounds, sleep sounds app, sleep sound app, sound machine",
-      "inLanguage": "en",
-      "datePublished": "2024-01-01",
-      "dateModified": "2025-01-01",
-      "softwareVersion": "1.0",
-      "fileSize": "50MB",
-      "softwareRequirements": "iOS 15.0 or later",
-      "permissions": "Microphone access for sleep tracking, Notifications for sleep reminders"
-    }
-  </script>
 </body>
 
 </html>

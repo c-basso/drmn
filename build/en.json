@@ -2,46 +2,224 @@
   "meta": {
     "lang": "en",
     "title": "DRMN – White Noise Machine App for Sleep | Sound Machine iOS",
-    "description": "Turn your iPhone into a powerful white noise machine. Ocean waves, rain, fan, and more to sleep faster and better. Free on the App Store.",
-    "keywords": "White Noise Machine, white noise app, sound machine app, white noise for sleep, free white noise app, white noise sound, noise app, sleep noise app, sleep sounds, sleep sounds app, sleep sound app, sound machine",
+    "description": "White Noise Machine - DRMN: The ultimate sound therapy app for iPhone. Fall asleep faster, reduce stress, and stay focused with white noise, brown noise, ocean waves, rain sounds, and more. Perfect for sleep, meditation, work, and baby sleep. Free download with offline support and battery optimization.",
+    "keywords": "White Noise Machine, white noise app, sound machine app, white noise for sleep, free white noise app, white noise sound, noise app, sleep noise app, sleep sounds, sleep sounds app, sleep sound app, sound machine, focus sounds, meditation sounds",
     "author": "DRMN",
-    "canonical": "https://drmn.xyz/",
+    "og_url": "https://drmn.xyz/",
     "og_title": "DRMN – White Noise Machine App for Sleep",
-    "og_description": "Your portable white noise machine: white noise, ocean waves, rain, and fan sounds to help you sleep.",
+    "og_description": "Discover tranquility with White Noise Machine - DRMN. Fall asleep faster, reduce stress, and stay focused. Enjoy relaxing sounds and wake up refreshed every day!",
     "og_image": "https://drmn.xyz/img/drmn.png",
     "og_image_alt": "DRMN app logo - Sleep Better, Fall Asleep Faster",
+    "twitter_url": "https://drmn.xyz/",
     "twitter_title": "DRMN – White Noise Machine App for Sleep",
-    "twitter_description": "Turn your iPhone into a sound machine. White noise, ocean waves, rain, and more.",
+    "twitter_description": "Discover tranquility with White Noise Machine - DRMN. Fall asleep faster, reduce stress, and stay focused. Enjoy relaxing sounds and wake up refreshed every day!",
     "twitter_image": "https://drmn.xyz/img/drmn.png",
     "twitter_image_alt": "DRMN app logo - Sleep Better, Fall Asleep Faster",
     "twitter_site": "@drmnapp",
-    "twitter_creator": "@drmnapp"
+    "twitter_creator": "@c__basso",
+    "canonical": "https://drmn.xyz/",
+    "app_store_id": "6746480683"
   },
   "header": {
-    "logo_alt": "DRMN app logo – White Noise Machine App for Sleep",
-    "title": "DRMN Sound Machine",
-    "subtitle": "White noise, ocean waves, rain, and more to fall asleep faster. iOS only."
+    "logo_alt": "DRMN app logo",
+    "app_name": "DRMN",
+    "title": "White Noise",
+    "tagline": "Fall asleep faster, reduce stress, and stay focused. Enjoy relaxing sounds and wake up refreshed every day! Transform your sleep and focus with the ultimate sound therapy app.",
+    "download_text": "Download Now",
+    "download_url": "https://apps.apple.com/app/id6746480683",
+    "download_aria_label": "Download DRMN from the App Store",
+    "download_img_alt": "Download on the App Store"
   },
-  "download": {
-    "section_title": "Download DRMN Sleep App",
+  "features": {
+    "title": "Key Features",
+    "items": [
+      {
+        "icon": "🌊",
+        "title": "Comprehensive Sound Library",
+        "description": "White noise, brown noise, and dark noise for deep relaxation. Nature sounds: rain, ocean waves, crackling fire, and morning birds. Ambient meditation sounds and soft instrumentals. Mix multiple sounds for custom audio experiences."
+      },
+      {
+        "icon": "😴",
+        "title": "Sleep Better Every Night",
+        "description": "Helps you fall asleep faster and stay asleep longer. Our scientifically-backed sound therapy masks disruptive noises, creates a consistent sleep environment, and promotes deeper, more restorative sleep. Wake up feeling refreshed and energized."
+      },
+      {
+        "icon": "🎯",
+        "title": "Relax & Focus Anywhere",
+        "description": "Perfect for meditation, yoga, studying, or work. Whether you're struggling with insomnia, need to concentrate at work, or want to create a peaceful environment, DRMN creates the ideal atmosphere for concentration and relaxation. Block out distractions, reduce stress, and enhance your productivity."
+      },
+      {
+        "icon": "👶",
+        "title": "Baby Sleep Solutions",
+        "description": "Specialized baby sleep sounds (hair dryer, vacuum cleaner, keyboard typing) help infants and toddlers fall asleep faster and sleep more soundly. These familiar rhythms soothe little ones and create a soothing nursery environment that promotes healthy sleep patterns."
+      }
+    ]
+  },
+  "content": {
+    "title": "Transform Your Sleep and Focus with White Noise Machine - DRMN",
+    "intro": "Whether you're struggling with insomnia, need to concentrate at work, or want to create a peaceful environment for your baby, White Noise Machine - DRMN provides the perfect audio solution. Our ultimate sound therapy app is designed to help you relax deeper, sleep better, and focus easier.",
+    "sections": [
+      {
+        "title": "Comprehensive Sound Library for Every Need",
+        "paragraph1": "White Noise Machine - DRMN offers an extensive collection of high-quality sounds to suit every preference and situation:",
+        "list_items": [
+          "<strong>White noise, brown noise, and dark noise</strong> for deep relaxation and masking disruptive environmental sounds",
+          "<strong>Nature sounds</strong> including gentle rain, ocean waves, crackling fire, and morning birds to create a calming atmosphere",
+          "<strong>Ambient meditation sounds and soft instrumentals</strong> perfect for mindfulness practices and deep focus",
+          "<strong>Baby sleep sounds</strong> such as hair dryer, vacuum cleaner, and keyboard typing to help infants and toddlers rest peacefully"
+        ],
+        "paragraph2": "Mix multiple sounds together to create custom audio experiences tailored to your unique preferences. Whether you prefer the steady hum of white noise or the rhythmic patterns of ocean waves, DRMN gives you complete control over your sound environment."
+      },
+      {
+        "title": "Sleep Better Every Night with Science-Backed Sound Therapy",
+        "paragraph1": "White Noise Machine - DRMN helps you fall asleep faster and stay asleep longer. Our scientifically-backed sound therapy works by:",
+        "list_items": [
+          "<strong>Masking disruptive noises</strong> from traffic, neighbors, snoring, or other environmental sounds that can interrupt your sleep",
+          "<strong>Creating a consistent sleep environment</strong> that signals to your brain that it's time to rest",
+          "<strong>Promoting deeper, more restorative sleep</strong> through carefully curated sound frequencies"
+        ],
+        "paragraph2": "Wake up feeling refreshed and energized every morning. Many users report falling asleep 30-50% faster when using white noise or nature sounds, and experiencing fewer nighttime awakenings."
+      },
+      {
+        "title": "Relax and Focus Anywhere, Anytime",
+        "paragraph1": "Perfect for meditation, yoga, studying, or work, White Noise Machine - DRMN creates the ideal atmosphere for concentration and relaxation. Our carefully curated soundscapes help you:",
+        "list_items": [
+          "<strong>Block out distractions</strong> in noisy offices, coffee shops, or home environments",
+          "<strong>Reduce stress and anxiety</strong> through calming audio frequencies",
+          "<strong>Enhance productivity</strong> by creating a focused work environment",
+          "<strong>Improve concentration</strong> during study sessions or important tasks"
+        ],
+        "paragraph2": "Whether you're working from home, studying for exams, practicing meditation, or simply need a moment of peace, DRMN provides the perfect sound backdrop to help you achieve your goals."
+      },
+      {
+        "title": "Specialized Baby Sleep Solutions",
+        "paragraph1": "White Noise Machine - DRMN includes specialized baby sleep sounds that help infants and toddlers fall asleep faster and sleep more soundly. From gentle hair dryer and vacuum hums to soft keyboard typing, these familiar rhythms soothe little ones and create a soothing nursery environment that promotes healthy sleep patterns.",
+        "list_items": [],
+        "paragraph2": "Parents worldwide trust DRMN to help their babies sleep through the night. The consistent, gentle sounds mimic the familiar noises babies heard in the womb, providing comfort and security that leads to longer, more restful sleep for both baby and parents."
+      },
+      {
+        "title": "Key Features That Make DRMN the Best White Noise App",
+        "paragraph1": "White Noise Machine - DRMN stands out from other sound apps with its comprehensive feature set designed for real-world use:",
+        "list_items": [
+          "<strong>High-quality, professionally recorded sounds</strong> - Every sound in our library is carefully recorded and mastered for optimal quality and seamless looping",
+          "<strong>Mix multiple sounds</strong> - Create custom audio experiences by combining different sounds to find your perfect blend",
+          "<strong>Timer and fade-out settings</strong> - Set a sleep timer with automatic fade-out for worry-free sleep, perfect for those who don't want sounds playing all night",
+          "<strong>Beautiful, intuitive interface</strong> - Easy-to-use design that lets you start relaxing in seconds, no complicated setup required",
+          "<strong>Works offline</strong> - Once sounds are downloaded, enjoy uninterrupted sleep anywhere, even without an internet connection",
+          "<strong>Battery-optimized</strong> - Designed to run efficiently all night without draining your iPhone battery",
+          "<strong>Free to download</strong> - Start using DRMN immediately with free sounds, with optional premium features available"
+        ],
+        "paragraph2": "Available exclusively for iPhone, DRMN requires iOS 17.1 or later and is optimized for all iPhone models. The app is completely free to download from the App Store, with optional in-app purchases for premium features and additional sound packs."
+      }
+    ]
+  },
+  "benefits": {
+    "title": "Why Choose DRMN?",
+    "items": [
+      "High-quality, professionally recorded sounds",
+      "Mix multiple sounds for custom audio experiences",
+      "Timer and fade-out settings for worry-free sleep",
+      "Beautiful, intuitive interface",
+      "Works offline — once sounds are downloaded, enjoy uninterrupted sleep anywhere",
+      "Battery-optimized for all-night use",
+      "Free to download with optional premium features"
+    ]
+  },
+  "final_cta": {
+    "title": "Your Personal Sleep & Wellness Companion",
+    "paragraph1": "DRMN is more than just a sound app - it's your personal sleep and wellness companion. Join thousands of users who have transformed their sleep quality and daily focus with our powerful audio therapy solutions. Download White Noise Machine - DRMN today and discover the difference that perfect sound can make in your life.",
+    "cta_text": "Download Now",
     "cta_url": "https://apps.apple.com/app/id6746480683",
-    "cta_aria_label": "Download DRMN sleep app from the App Store",
+    "cta_aria_label": "Download DRMN from the App Store",
     "cta_img_alt": "Download on the App Store"
   },
   "footer": {
     "copyright": "© 2025 DRMN. All rights reserved.",
+    "privacy_link": "Privacy Policy",
+    "privacy_url": "/privacy.html",
+    "terms_link": "Terms of Service",
+    "terms_url": "/terms.html",
     "fazier_badge_alt": "Fazier badge",
     "superlaunch_badge_alt": "Featured on Super Launch"
   },
-  "schema": {
-    "name": "DRMN",
-    "alternateName": "DRMN Sleep App",
-    "description": "DRMN is a white noise machine and sound machine app for iOS that helps you sleep faster and better with high‑quality loops like ocean waves, rain, fan, and brown/pink noise.",
-    "image_caption": "DRMN app logo",
-    "inLanguage": "en"
-  },
-  "article": {
-    "section_title": "White Noise Machine: Sleep Better with DRMN",
-    "content_html": "<p><strong>Looking for the best white noise machine?</strong> Turn your iPhone into a powerful, portable sound machine with <strong>DRMN</strong>. Whether you need white noise for sleep, soothing sounds for your baby, or a travel‑friendly noise machine, DRMN delivers high‑quality loops that run seamlessly all night.</p>\n\n<h3>Why use a white noise machine?</h3>\n<p>Consistent, broadband sound masks disruptive noises (traffic, neighbors, snoring) and helps your brain settle. Many people fall asleep faster and wake up less often with <em>white noise</em> or <em>ocean waves</em>.</p>\n\n<h3>DRMN: Your portable sound machine</h3>\n<ul>\n  <li><strong>White noise machine for sleep</strong>: classic white noise, plus <em>pink</em> and <em>brown</em> noise</li>\n  <li><strong>Ocean waves sound machine</strong>: realistic surf with rich low‑frequency textures</li>\n  <li><strong>Rain and fan sounds</strong>: gentle rain, storm, box fan, and more</li>\n  <li><strong>For babies</strong>: calm fussiness with steady, gentle noise (use safe volumes)</li>\n  <li><strong>Portable noise machine</strong>: no extra hardware—just your iPhone</li>\n</ul>\n\n<h3>How to get the best results</h3>\n<ol>\n  <li>Choose a sound you enjoy (white noise, ocean waves, rain, or fan)</li>\n  <li>Set a comfortable volume—loud enough to mask noise, not to overpower</li>\n  <li>Use the sleep timer or let it play all night</li>\n</ol>\n\n<p><strong>DRMN</strong> is designed to be your <strong>best white noise machine</strong> on iOS—simple, reliable, and always with you. Ready to sleep better?</p>\n\n<p><a class=\"cta-btn inline\" href=\"https://apps.apple.com/app/id6746480683\" aria-label=\"Download DRMN – White Noise Machine App\">Get DRMN on the App Store</a></p>"
+  "seo": {
+    "breadcrumb_home": "Home",
+    "faq": [],
+    "structured_data": {
+      "software_application": {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "DRMN",
+        "alternateName": "DRMN Sleep App",
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "iOS",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://apps.apple.com/app/id6746480683"
+        },
+        "description": "Transform your sleep and focus with White Noise Machine - DRMN, the ultimate sound therapy app designed to help you relax deeper, sleep better, and focus easier. Comprehensive sound library with white noise, brown noise, nature sounds, and baby sleep solutions.",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://drmn.xyz/img/logo.webp",
+          "width": 176,
+          "height": 176,
+          "caption": "DRMN app logo"
+        },
+        "screenshot": {
+          "@type": "ImageObject",
+          "url": "https://drmn.xyz/img/logo.webp",
+          "width": 176,
+          "height": 176
+        },
+        "url": "https://drmn.xyz/",
+        "author": {
+          "@type": "Organization",
+          "name": "DRMN",
+          "url": "https://drmn.xyz/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "DRMN",
+          "url": "https://drmn.xyz/"
+        },
+        "keywords": "White Noise Machine, white noise app, sound machine app, white noise for sleep, free white noise app, white noise sound, noise app, sleep noise app, sleep sounds, sleep sounds app, sleep sound app, sound machine",
+        "inLanguage": "en",
+        "datePublished": "2024-01-01",
+        "dateModified": "2025-01-01",
+        "softwareVersion": "1.5",
+        "fileSize": "49.2MB",
+        "softwareRequirements": "iOS 17.1 or later"
+      },
+      "organization": {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "DRMN",
+        "url": "https://drmn.xyz/",
+        "logo": "https://drmn.xyz/img/logo.webp",
+        "description": "DRMN - The best white noise machine app for iPhone. Fall asleep faster, reduce stress, and stay focused with white noise, brown noise, ocean waves, rain sounds, and more."
+      },
+      "website": {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "DRMN",
+        "url": "https://drmn.xyz/",
+        "description": "White Noise Machine - DRMN: The ultimate sound therapy app for iPhone. Fall asleep faster, reduce stress, and stay focused with white noise, brown noise, ocean waves, rain sounds, and more.",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://drmn.xyz/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      "howto": {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to Use White Noise Machine - DRMN for Better Sleep",
+        "description": "Learn how to use White Noise Machine - DRMN app to fall asleep faster and sleep better. Step-by-step guide to using white noise and nature sounds for sleep.",
+        "step": []
+      }
+    }
   }
 }
