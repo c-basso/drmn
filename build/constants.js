@@ -5,7 +5,7 @@ const LANGUAGES = [
     DEFAULT_LANGUAGE,
     'ru',
     'es',
-    // 'fr',
+    'fr',
     // 'de',
     // 'it',
     // 'pt'
