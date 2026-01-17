@@ -10,6 +10,7 @@
     "og_description": "Discover tranquility with White Noise Machine - DRMN. Fall asleep faster, reduce stress, and stay focused. Enjoy relaxing sounds and wake up refreshed every day!",
     "og_image": "https://drmn.xyz/img/drmn.png",
     "og_image_alt": "DRMN app logo - Sleep Better, Fall Asleep Faster",
+    "og_locale": "en_US",
     "twitter_url": "https://drmn.xyz/",
     "twitter_title": "DRMN – White Noise Machine App for Sleep",
     "twitter_description": "Discover tranquility with White Noise Machine - DRMN. Fall asleep faster, reduce stress, and stay focused. Enjoy relaxing sounds and wake up refreshed every day!",
@@ -18,9 +19,16 @@
     "twitter_site": "@drmnapp",
     "twitter_creator": "@c__basso",
     "canonical": "https://drmn.xyz/",
-    "app_store_id": "6746480683"
+    "app_store_id": "6746480683",
+    "og_image_width": "176",
+    "og_image_height": "176",
+    "og_type": "website",
+    "twitter_card": "summary_large_image",
+    "theme_color": "#1a1b2e",
+    "apple_mobile_web_app_status_bar_style": "default"
   },
   "header": {
+    "app_name_suffix": "White Noise Machine",
     "logo_alt": "DRMN app logo",
     "app_name": "DRMN",
     "title": "White Noise",

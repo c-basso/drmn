@@ -34,26 +34,26 @@
   <link rel="alternate" hreflang="x-default" href="{{meta.alternate_default}}" />
   
   <!-- PWA & Theming -->
-  <meta name="theme-color" content="#1a1b2e">
-  <meta name="msapplication-TileColor" content="#1a1b2e">
+  <meta name="theme-color" content="{{meta.theme_color}}">
+  <meta name="msapplication-TileColor" content="{{meta.theme_color}}">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-status-bar-style" content="{{meta.apple_mobile_web_app_status_bar_style}}">
   
   <!-- Open Graph -->
   <meta property="og:title" content="{{meta.og_title}}">
   <meta property="og:description" content="{{meta.og_description}}">
   <meta property="og:image" content="{{meta.og_image}}">
-  <meta property="og:image:width" content="176">
-  <meta property="og:image:height" content="176">
+  <meta property="og:image:width" content="{{meta.og_image_width}}">
+  <meta property="og:image:height" content="{{meta.og_image_height}}">
   <meta property="og:image:alt" content="{{meta.og_image_alt}}">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="{{meta.og_type}}">
   <meta property="og:url" content="{{meta.og_url}}">
   <meta property="og:site_name" content="{{header.app_name}}">
-  <meta property="og:locale" content="en_US">
+  <meta property="og:locale" content="{{meta.og_locale}}">
   
   <!-- Twitter Cards -->
-  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:card" content="{{meta.twitter_card}}">
   <meta property="twitter:url" content="{{meta.twitter_url}}">
   <meta property="twitter:title" content="{{meta.twitter_title}}">
   <meta property="twitter:description" content="{{meta.twitter_description}}">
@@ -67,13 +67,13 @@
   <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
   <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
-  <link rel="mask-icon" href="/img/favicon.svg" color="#1a1b2e">
+  <link rel="mask-icon" href="/img/favicon.svg" color="{{meta.theme_color}}">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" type="image/png" sizes="192x192" href="/img/web-app-manifest-192x192.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/img/web-app-manifest-512x512.png">
   
   <!-- Application Name -->
-  <meta name="application-name" content="{{header.app_name}} – White Noise Machine">
+  <meta name="application-name" content="{{header.app_name}} – {{header.app_name_suffix}}">
   
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
