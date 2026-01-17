@@ -608,7 +608,7 @@
     <!-- FAQ Section for SEO -->
     <section class="content-section" aria-labelledby="faq-heading" itemscope itemtype="https://schema.org/FAQPage">
       <div class="container-narrow">
-        <h2 id="faq-heading">Frequently Asked Questions About White Noise App & Sleep Sounds App</h2>
+        <h2 id="faq-heading">{{seo.faq_title}}</h2>
         <div style="margin-top: 2rem;">
           {{#each seo.faq as |faq|}}
           <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
@@ -678,11 +678,9 @@
   </script>
   
   <!-- BreadcrumbList Schema -->
-  {{#if seo.structured_data.breadcrumb_list}}
   <script type="application/ld+json">
     {{seo.structured_data.breadcrumb_list|json}}
   </script>
-  {{/if}}
 
   <!-- Yandex.Metrika counter -->
   <script type="text/javascript">

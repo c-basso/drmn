@@ -3,7 +3,7 @@ const DEFAULT_LANGUAGE = 'en';
 
 const LANGUAGES = [
     DEFAULT_LANGUAGE,
-    // 'ru',
+    'ru',
     // 'es',
     // 'fr',
     // 'de',
