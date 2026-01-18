@@ -2,7 +2,7 @@
   "name": "drmn",
   "scripts": {
     "build": "node build/build.js",
-    "validate": "node build/validate.js",
+    "validate": "node build/validate/index.js",
     "sitemap": "node build/sitemap.js",
     "start": "npx http-server",
     "site:preview": "node build/preview.js",
