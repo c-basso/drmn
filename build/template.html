@@ -606,15 +606,15 @@
     </section>
 
     <!-- FAQ Section for SEO -->
-    <section class="content-section" aria-labelledby="faq-heading" itemscope itemtype="https://schema.org/FAQPage">
+    <section class="content-section" aria-labelledby="faq-heading">
       <div class="container-narrow">
         <h2 id="faq-heading">{{seo.faq_title}}</h2>
         <div style="margin-top: 2rem;">
           {{#each seo.faq as |faq|}}
-          <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 itemprop="name" style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">{{faq.question}}</h3>
-            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-              <p itemprop="text" style="color: var(--color-text-secondary); line-height: 1.8;">{{faq.answer}}</p>
+          <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">{{faq.question}}</h3>
+            <div>
+              <p style="color: var(--color-text-secondary); line-height: 1.8;">{{faq.answer}}</p>
             </div>
           </div>
           {{/each}}
