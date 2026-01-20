@@ -6,9 +6,7 @@
     "sitemap": "node build/sitemap.js",
     "start": "npx http-server",
     "site:preview": "node build/preview.js",
-    "index:ya": "npx indexnow-submit submit-urls urls.txt --host drmn.xyz --engine yandex.com --key z1CYpveatbisfkh3cqp7ys73",
-    "index:bing": "npx indexnow-submit submit-urls urls.txt --host drmn.xyz --engine bing.com --key z1CYpveatbisfkh3cqp7ys73",
-    "index:now": "npm run index:ya && npm run index:bing",
+    "index:now": "node build/indexnow.js",
     "push": "git add . && git commit -m 'wip' && git push origin main",
     "deploy": "npm run build && npm run validate && npm run sitemap && npm run push"
   },
