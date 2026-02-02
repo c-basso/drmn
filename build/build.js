@@ -174,14 +174,39 @@ const {
                 return undefined;
             }
             
+            // Function to process #if blocks
+            function processIfBlocks(template, context) {
+                // Pattern to match {{#if path}}...{{/if}}
+                const ifPattern = /\{\{#if\s+([^\s}]+)\}\}([\s\S]*?)\{\{\/if\}\}/g;
+                let result = template;
+                let match;
+                
+                while ((match = ifPattern.exec(template)) !== null) {
+                    const fullMatch = match[0];
+                    const pathExpression = match[1].trim();
+                    const blockContent = match[2];
+                    
+                    // Get the value from context
+                    const value = getValueFromContext(context, pathExpression);
+                    
+                    // Check if value is truthy (exists and is not empty/false/null/undefined)
+                    const isTruthy = value !== undefined && value !== null && value !== false && value !== '';
+                    
+                    // Replace the entire #if block with content if truthy, or empty string if falsy
+                    result = result.replace(fullMatch, isTruthy ? blockContent : '');
+                }
+                
+                return result;
+            }
+            
             // Function to replace variables in template
             function replaceVariables(template, context) {
                 return template.replace(/\{\{([^}]+)\}\}/g, (match, key) => {
                     const rawKey = key.trim();
                     
-                    // Skip #each blocks and /each - these are handled by processEachBlocks
-                    if (rawKey.startsWith('#each') || rawKey === '/each') {
-                        return match; // Keep as-is, will be processed by processEachBlocks
+                    // Skip #each blocks, #if blocks, and /each, /if - these are handled separately
+                    if (rawKey.startsWith('#each') || rawKey === '/each' || rawKey.startsWith('#if') || rawKey === '/if') {
+                        return ''; // Remove the placeholder since it's already processed
                     }
                     
                     const [pathExpression, ...filters] = rawKey
@@ -275,8 +300,9 @@ const {
                 return result;
             }
             
-            // First process #each blocks, then replace remaining variables
-            let result = processEachBlocks(template, data);
+            // First process #if blocks, then #each blocks, then replace remaining variables
+            let result = processIfBlocks(template, data);
+            result = processEachBlocks(result, data);
             result = replaceVariables(result, data);
             
             // Final cleanup: remove any trailing commas before closing brackets in JSON-LD

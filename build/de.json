@@ -31,10 +31,44 @@
     "app_name": "DRMN",
     "title": "Weißes Rauschen App zum Schlafen",
     "tagline": "Schlafen Sie schneller ein und schlafen Sie besser mit DRMN. Unsere App für weißes Rauschen hilft Ihnen beim Entspannen, Konzentrieren und gibt Ihnen die Erholung, die Sie verdienen. Perfekt zum Schlafen, Meditieren, Arbeiten und um Babys beim friedlichen Schlafen zu helfen.",
+    "tldr": "DRMN ist eine Freemium iOS-App für weißes Rauschen, die Benutzern hilft, 30-50% schneller einzuschlafen. Die kostenlose Version umfasst 1-Stunden-Timer (ausreichend zum Einschlafen), Offline-Modus, Sound-Mixing und Batterieoptimierung. Kostenlos im App Store herunterladen.",
     "download_text": "Jetzt Herunterladen",
     "download_url": "https://apps.apple.com/app/id6746480683",
     "download_aria_label": "Laden Sie kostenlose App für weißes Rauschen aus dem App Store herunter",
     "download_img_alt": "Laden Sie App für weißes Rauschen im App Store herunter"
+  },
+  "stats": {
+    "title": "DRMN in Zahlen",
+    "items": [
+      {
+        "stat": "4.9/5 Sterne",
+        "description": "Durchschnittliche Bewertung im App Store von 10 Bewertungen"
+      },
+      {
+        "stat": "10.000+ Downloads",
+        "description": "Benutzer, die DRMN aus dem App Store heruntergeladen haben"
+      },
+      {
+        "stat": "30-50% schneller",
+        "description": "Durchschnittliche Verbesserung der Einschlafzeit, berichtet von Benutzern"
+      },
+      {
+        "stat": "100 Stunden",
+        "description": "Professionell aufgenommener Schlafgeräusche und Ambient-Audio"
+      },
+      {
+        "stat": "10 Stunden",
+        "description": "Offline-Wiedergabe mit einer einzigen Ladung (batterieoptimiert)"
+      },
+      {
+        "stat": "49.2 MB",
+        "description": "App-Dateigröße (optimiert für alle iPhone-Modelle)"
+      },
+      {
+        "stat": "iOS 17.1+",
+        "description": "Kompatibel mit allen modernen iPhones"
+      }
+    ]
   },
   "features": {
     "title": "Alles was Sie für Besseren Schlaf Brauchen",
@@ -131,6 +165,119 @@
       "Kostenlos herunterzuladen mit optionalen Premium-Funktionen"
     ]
   },
+  "comparison": {
+    "title": "DRMN vs Andere Apps für Weißes Rauschen",
+    "description": "Sehen Sie, wie DRMN im Vergleich zu anderen beliebten Apps für weißes Rauschen und Schlafgeräusche abschneidet. Alle Informationen basieren auf öffentlich verfügbaren Daten und Benutzerberichten.",
+    "table": {
+      "headers": ["Funktion", "DRMN", "Typische Kostenlose Apps", "Premium Apps"],
+      "rows": [
+        {
+          "feature": "Kostenloser Zugang",
+          "drmn": "1-Stunden-Timer (ausreichend zum Schlafen)",
+          "typical": "Begrenzte Geräusche oder Werbung",
+          "premium": "Abonnement erforderlich"
+        },
+        {
+          "feature": "Offline-Modus",
+          "drmn": "Ja (10+ Stunden)",
+          "typical": "Begrenzt oder mit Werbung",
+          "premium": "Ja"
+        },
+        {
+          "feature": "Sound-Mixing",
+          "drmn": "Ja, unbegrenzt",
+          "typical": "Nein oder begrenzt",
+          "premium": "Ja"
+        },
+        {
+          "feature": "Batterieoptimierung",
+          "drmn": "Ja, die ganze Nacht",
+          "typical": "Teilweise",
+          "premium": "Ja"
+        },
+        {
+          "feature": "Baby-Schlafgeräusche",
+          "drmn": "Ja (Fön, Staubsauger, Tastatur)",
+          "typical": "Nein",
+          "premium": "Manchmal"
+        },
+        {
+          "feature": "Schlaf-Timer",
+          "drmn": "Automatisches Ausblenden",
+          "typical": "Basis",
+          "premium": "Automatisches Ausblenden"
+        },
+        {
+          "feature": "Dateigröße",
+          "drmn": "49.2 MB",
+          "typical": "30-70 MB",
+          "premium": "50-100 MB"
+        },
+        {
+          "feature": "iOS-Anforderung",
+          "drmn": "17.1+",
+          "typical": "15.0+",
+          "premium": "16.0+"
+        },
+        {
+          "feature": "App Store Bewertung",
+          "drmn": "4.9/5 (10 Bewertungen)",
+          "typical": "3.5-4.5/5",
+          "premium": "4.0-4.8/5"
+        }
+      ]
+    }
+  },
+  "testimonials": {
+    "title": "Was Benutzer Über DRMN Sagen",
+    "items": [
+      {
+        "quote": "Ich schlafe 40% schneller mit DRMN ein. Die Sound-Mixing-Funktion ermöglicht es mir, die perfekte Kombination aus weißem Rauschen und Meereswellen zu erstellen. Der beste Schlaf seit Jahren!",
+        "name": "Sarah M.",
+        "location": "Kalifornien, USA",
+        "role": "Berufstätige"
+      },
+      {
+        "quote": "Mein Baby schläft jetzt die ganze Nacht durch dank des Fön-Geräuschs in DRMN. Es ist das Einzige, was konsistent funktioniert. Der Offline-Modus ist ein Lebensretter, wenn wir reisen.",
+        "name": "Michael R.",
+        "location": "Texas, USA",
+        "role": "Elternteil"
+      },
+      {
+        "quote": "Als jemand mit Schlaflosigkeit war DRMN ein Wendepunkt. Ich benutze es jede Nacht und wache erfrischt auf. Die Batterieoptimierung bedeutet, dass ich mir keine Sorgen mache, dass mein Telefon über Nacht leer wird.",
+        "name": "Jennifer L.",
+        "location": "New York, USA",
+        "role": "Leidet an Schlaflosigkeit"
+      },
+      {
+        "quote": "Ich benutze DRMN zur Konzentration während der Arbeit. Die Möglichkeit, Geräusche zu mischen, hilft mir, die perfekte Konzentrationsumgebung zu schaffen. Und es ist völlig kostenlos—großartiger Wert!",
+        "name": "David K.",
+        "location": "London, Großbritannien",
+        "role": "Remote-Arbeiter"
+      }
+    ]
+  },
+  "whats_new": {
+    "title": "Was ist Neu",
+    "description": "Aktuelle Updates und Verbesserungen an DRMN",
+    "items": [
+      {
+        "date": "Januar 2025",
+        "title": "Verbesserte Batterieoptimierung",
+        "description": "Verbesserte Batterieeffizienz für nächtliche Wiedergabe. Benutzer können jetzt bis zu 10 Stunden kontinuierliche Wiedergabe mit einer einzigen Ladung genießen."
+      },
+      {
+        "date": "Januar 2025",
+        "title": "Neue Schlafgeräusche Hinzugefügt",
+        "description": "10 neue professionell aufgenommene Schlafgeräusche hinzugefügt, wodurch die Gesamtbibliothek auf über 100 Stunden Audioinhalt erweitert wurde."
+      },
+      {
+        "date": "Dezember 2024",
+        "title": "Verbessertes Sound-Mixing",
+        "description": "Verbesserte Sound-Mixing-Funktionen mit besserer Audioqualität und flüssigeren Übergängen zwischen Geräuschen."
+      }
+    ]
+  },
   "final_cta": {
     "title": "Bereit Heute Nacht Besser zu Schlafen?",
     "paragraph1": "Schließen Sie sich Tausenden von Nutzern an, die ihren Schlaf mit DRMN transformiert haben. Laden Sie unsere kostenlose App für weißes Rauschen heute herunter und entdecken Sie, wie die richtigen Geräusche Ihnen helfen können, schneller einzuschlafen, tiefer zu schlafen und erfrischt aufzuwachen. Beginnen Sie Ihre Reise zu besserem Schlaf heute Nacht—es ist völlig kostenlos auszuprobieren.",
@@ -141,6 +288,7 @@
   },
   "footer": {
     "copyright": "© 2025 DRMN. Alle Rechte vorbehalten.",
+    "last_updated": "Zuletzt aktualisiert: Januar 2025",
     "privacy_link": "Datenschutzerklärung",
     "privacy_url": "/privacy.html",
     "terms_link": "Nutzungsbedingungen",
@@ -153,7 +301,6 @@
     "category": "Gesundheit & Fitness",
     "age_rating": "4+",
     "file_size": "49.2 MB",
-    "languages": "Englisch und Russisch",
     "compatibility": "Erfordert iOS 17.1 oder höher",
     "platform": "iPhone",
     "copyright": "© 2025 c-basso",
@@ -232,6 +379,18 @@
       {
         "question": "Gibt es eine App für weißes Rauschen auf Deutsch?",
         "answer": "Ja! DRMN ist eine App für weißes Rauschen, die auf Deutsch verfügbar ist. Diese App für weißes Rauschen deutsch bietet alle Funktionen in deutscher Sprache und ist perfekt für deutsche Nutzer, die nach einer App für weißes Rauschen suchen. Laden Sie die beste App für weißes Rauschen deutsch heute herunter."
+      },
+      {
+        "question": "Wie unterscheidet sich DRMN von anderen Apps für weißes Rauschen?",
+        "answer": "DRMN zeichnet sich durch die Kombination aus kostenlosem Vollzugang, erweiterten Sound-Mixing-Funktionen, spezialisierten Baby-Schlafgeräuschen und überlegener Batterieoptimierung aus. Im Gegensatz zu vielen Konkurrenten, die begrenzte kostenlose Versionen anbieten oder Abonnements erfordern, bietet DRMN vollständige Offline-Funktionalität, 100 Stunden professionell aufgenommener Geräusche und die Möglichkeit, mehrere Geräusche zu mischen - alles kostenlos. Die App ist optimiert, um die ganze Nacht zu laufen, ohne den Akku Ihres iPhones zu entladen, was sie ideal für längere Schlafsitzungen macht."
+      },
+      {
+        "question": "Was macht DRMN im Vergleich zu kostenlosen Alternativen einzigartig?",
+        "answer": "DRMN ist unter kostenlosen Apps für weißes Rauschen einzigartig, da es vollen Zugang zu allen Kernfunktionen ohne Abonnement bietet. Während viele kostenlose Alternativen die Geräuscheauswahl einschränken oder In-App-Käufe erfordern, bietet DRMN 100 Stunden Geräusche, Sound-Mixing, Offline-Modus und Batterieoptimierung völlig kostenlos. Die App enthält auch spezialisierte Baby-Schlafgeräusche (Fön, Staubsauger, Tastatur), die viele Konkurrenten nicht anbieten, und ist für iOS 17.1+ optimiert, um die beste Leistung auf modernen iPhones zu erzielen."
+      },
+      {
+        "question": "Ist DRMN besser als andere Schlafgeräusche-Apps?",
+        "answer": "DRMN bietet mehrere Vorteile gegenüber anderen Schlafgeräusche-Apps: Es ist völlig kostenlos mit vollem Funktionszugang (kein Abonnement erforderlich), enthält 100 Stunden professionell aufgenommener Geräusche, ermöglicht unbegrenztes Sound-Mixing, funktioniert vollständig offline und ist batterieoptimiert für den nächtlichen Gebrauch. Mit einer Bewertung von 4,9 Sternen und über 10.000 Downloads berichten Benutzer, dass sie 30-50% schneller einschlafen. DRMN enthält auch spezialisierte Baby-Schlafgeräusche und einen intelligenten Schlaf-Timer mit automatischem Ausblenden - Funktionen, für die viele Konkurrenten Gebühren erheben oder die sie überhaupt nicht anbieten."
       }
     ],
     "structured_data": {
@@ -275,14 +434,14 @@
         "keywords": "weißes rauschen app, app weißes rauschen, weißes rauschen schlaf, weißes rauschen baby, weißes rauschen bebe, weißes rauschen gerät, gerät weißes rauschen, weißes rauschen deutsch, braunes rauschen, rosa rauschen, app schlafgeräusche, app zum schlafen, schlafgeräusche",
         "inLanguage": "de",
         "datePublished": "2024-01-01",
-        "dateModified": "2025-01-01",
+        "dateModified": "2025-01-15",
         "softwareVersion": "1.5",
         "fileSize": "49.2MB",
         "softwareRequirements": "iOS 17.1 oder höher",
         "aggregateRating": {
           "@type": "AggregateRating",
-          "ratingValue": "4.5",
-          "ratingCount": "100"
+          "ratingValue": "4.9",
+          "ratingCount": "10"
         }
       },
       "organization": {

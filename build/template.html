@@ -162,7 +162,8 @@
     /* Header */
     header {
       position: relative;
-      padding: 2rem 0;
+      padding: 2rem;
+      border-radius: 10px;
       background: var(--gradient-hero);
       overflow: hidden;
     }
@@ -341,6 +342,55 @@
       font-weight: 600;
     }
 
+    /* Stats Section */
+    .stats-section {
+      padding: 5rem 0;
+      background: var(--color-bg-primary);
+    }
+
+    .stats-section h2 {
+      text-align: center;
+      color: var(--color-text-primary);
+      margin-bottom: 3rem;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .stat-card {
+      background: var(--color-bg-accent);
+      border-radius: 16px;
+      padding: 2rem;
+      text-align: center;
+      border: 1px solid rgba(107, 127, 215, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .stat-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md), 0 0 0 1px rgba(107, 127, 215, 0.2);
+    }
+
+    .stat-value {
+      font-family: 'Outfit', sans-serif;
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 700;
+      color: var(--color-accent);
+      margin-bottom: 0.75rem;
+      line-height: 1.2;
+    }
+
+    .stat-description {
+      font-size: 0.95rem;
+      color: var(--color-text-secondary);
+      line-height: 1.5;
+    }
+
     /* Benefits Section */
     .benefits {
       padding: 5rem 0;
@@ -420,6 +470,160 @@
       margin-right: auto;
     }
 
+    /* TL;DR Section */
+    .tldr-section {
+      padding: 2rem 0;
+      background: var(--color-bg-primary);
+    }
+
+    .tldr-box {
+      background: var(--color-bg-accent);
+      border-left: 4px solid var(--color-accent);
+      border-radius: 8px;
+      padding: 1.5rem;
+      color: var(--color-text-secondary);
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .tldr-box strong {
+      color: var(--color-text-primary);
+      font-weight: 600;
+    }
+
+    /* Comparison Section */
+    .comparison-section {
+      padding: 5rem 0;
+    }
+
+    .comparison-table-wrapper {
+      overflow-x: auto;
+      margin-top: 2rem;
+    }
+
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--color-bg-accent);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .comparison-table thead {
+      background: var(--gradient-accent);
+    }
+
+    .comparison-table th {
+      padding: 1rem;
+      text-align: left;
+      color: var(--color-text-primary);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .comparison-table td {
+      padding: 1rem;
+      color: var(--color-text-secondary);
+      border-top: 1px solid rgba(107, 127, 215, 0.1);
+      font-size: 0.95rem;
+    }
+
+    .comparison-table tbody tr:hover {
+      background: rgba(107, 127, 215, 0.05);
+    }
+
+    .comparison-table td strong {
+      color: var(--color-text-primary);
+    }
+
+    /* Testimonials Section */
+    .testimonials-section {
+      padding: 5rem 0;
+      background: var(--color-bg-secondary);
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .testimonial-card {
+      background: var(--color-bg-accent);
+      border-radius: 16px;
+      padding: 2rem;
+      border: 1px solid rgba(107, 127, 215, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md), 0 0 0 1px rgba(107, 127, 215, 0.2);
+    }
+
+    .testimonial-quote {
+      color: var(--color-text-secondary);
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+      font-style: italic;
+    }
+
+    .testimonial-author {
+      color: var(--color-text-primary);
+      font-size: 0.9rem;
+    }
+
+    .testimonial-location,
+    .testimonial-role {
+      color: var(--color-text-muted);
+      font-weight: 400;
+    }
+
+    /* What's New Section */
+    .whats-new-section {
+      padding: 5rem 0;
+    }
+
+    .whats-new-list {
+      margin-top: 2rem;
+    }
+
+    .whats-new-item {
+      background: var(--color-bg-accent);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+      border-left: 4px solid var(--color-accent);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .whats-new-item:hover {
+      transform: translateX(4px);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .whats-new-date {
+      color: var(--color-accent);
+      font-size: 0.875rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .whats-new-item h3 {
+      color: var(--color-text-primary);
+      margin-bottom: 0.75rem;
+      font-size: 1.25rem;
+    }
+
+    .whats-new-item p {
+      color: var(--color-text-secondary);
+      margin-bottom: 0;
+    }
+
     /* Footer */
     footer {
       padding: 3rem 0;
@@ -452,6 +656,12 @@
       margin-top: 1.5rem;
     }
 
+    .footer-updated {
+      color: var(--color-text-muted);
+      font-size: 0.75rem;
+      margin-top: 0.5rem;
+    }
+
     .footer-badges {
       margin-top: 2rem;
       display: flex;
@@ -477,6 +687,28 @@
 
       .benefits-list li {
         font-size: 1rem;
+      }
+
+      .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .stat-card {
+        padding: 1.5rem;
+      }
+
+      .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .comparison-table-wrapper {
+        overflow-x: scroll;
+      }
+
+      .comparison-table {
+        min-width: 600px;
       }
 
       .footer-links {
@@ -549,6 +781,17 @@
   </header>
 
   <main role="main">
+    <!-- TL;DR Section -->
+    {{#if header.tldr}}
+    <section class="tldr-section" aria-label="Summary">
+      <div class="container-narrow">
+        <div class="tldr-box">
+          <strong>TL;DR:</strong> {{header.tldr}}
+        </div>
+      </div>
+    </section>
+    {{/if}}
+
     <!-- Features Section -->
     <section class="features" aria-labelledby="features-heading" itemscope itemtype="https://schema.org/ItemList">
       <div class="container">
@@ -565,6 +808,23 @@
       </div>
     </section>
 
+    <!-- DRMN by the Numbers Section -->
+    {{#if stats.title}}
+    <section class="stats-section" aria-labelledby="stats-heading">
+      <div class="container">
+        <h2 id="stats-heading">{{stats.title}}</h2>
+        <div class="stats-grid">
+          {{#each stats.items as |stat|}}
+          <div class="stat-card">
+            <div class="stat-value">{{stat.stat}}</div>
+            <div class="stat-description">{{stat.description}}</div>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+    </section>
+    {{/if}}
+
     <!-- Detailed Content Section for SEO -->
     <article class="content-section" aria-labelledby="content-heading" itemscope itemtype="https://schema.org/Article">
       <div class="container-narrow">
@@ -577,12 +837,16 @@
         <section>
           <h3>{{section.title}}</h3>
           <p>{{section.paragraph1}}</p>
+          {{#if section.list_items}}
           <ul>
             {{#each section.list_items as |item|}}
             <li>{{item}}</li>
             {{/each}}
           </ul>
+          {{/if}}
+          {{#if section.paragraph2}}
           <p>{{section.paragraph2}}</p>
+          {{/if}}
         </section>
         {{/each}}
       </div>
@@ -601,6 +865,83 @@
         </ul>
       </div>
     </section>
+
+    <!-- Comparison Section -->
+    {{#if comparison.title}}
+    <section class="content-section comparison-section" aria-labelledby="comparison-heading">
+      <div class="container-narrow">
+        <h2 id="comparison-heading">{{comparison.title}}</h2>
+        {{#if comparison.description}}
+        <p>{{comparison.description}}</p>
+        {{/if}}
+        {{#if comparison.table}}
+        <div class="comparison-table-wrapper">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                {{#each comparison.table.headers as |header|}}
+                <th>{{header}}</th>
+                {{/each}}
+              </tr>
+            </thead>
+            <tbody>
+              {{#each comparison.table.rows as |row|}}
+              <tr>
+                <td><strong>{{row.feature}}</strong></td>
+                <td>{{row.drmn}}</td>
+                <td>{{row.typical}}</td>
+                <td>{{row.premium}}</td>
+              </tr>
+              {{/each}}
+            </tbody>
+          </table>
+        </div>
+        {{/if}}
+      </div>
+    </section>
+    {{/if}}
+
+    <!-- Testimonials Section -->
+    {{#if testimonials.title}}
+    <section class="testimonials-section" aria-labelledby="testimonials-heading">
+      <div class="container-narrow">
+        <h2 id="testimonials-heading">{{testimonials.title}}</h2>
+        <div class="testimonials-grid">
+          {{#each testimonials.items as |testimonial|}}
+          <article class="testimonial-card">
+            <div class="testimonial-quote">"{{testimonial.quote}}"</div>
+            <div class="testimonial-author">
+              <strong>{{testimonial.name}}</strong>
+              {{#if testimonial.location}}<span class="testimonial-location">, {{testimonial.location}}</span>{{/if}}
+              {{#if testimonial.role}}<span class="testimonial-role"> • {{testimonial.role}}</span>{{/if}}
+            </div>
+          </article>
+          {{/each}}
+        </div>
+      </div>
+    </section>
+    {{/if}}
+
+    <!-- What's New Section -->
+    {{#if whats_new.title}}
+    <section class="content-section whats-new-section" aria-labelledby="whats-new-heading">
+      <div class="container-narrow">
+        <h2 id="whats-new-heading">{{whats_new.title}}</h2>
+        {{#if whats_new.description}}
+        <p>{{whats_new.description}}</p>
+        {{/if}}
+        <div class="whats-new-list">
+          {{#each whats_new.items as |item|}}
+          <div class="whats-new-item">
+            <div class="whats-new-date">{{item.date}}</div>
+            <h3>{{item.title}}</h3>
+            <p>{{item.description}}</p>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+    </section>
+    {{/if}}
 
     <!-- FAQ Section for SEO -->
     <section class="content-section" aria-labelledby="faq-heading">
@@ -650,6 +991,9 @@
         </a>
       </div>
       <p class="footer-copyright">{{footer.copyright}}</p>
+      {{#if footer.last_updated}}
+      <p class="footer-updated">{{footer.last_updated}}</p>
+      {{/if}}
     </div>
   </footer>
 
