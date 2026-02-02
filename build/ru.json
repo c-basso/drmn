@@ -35,7 +35,8 @@
     "download_text": "Скачать сейчас",
     "download_url": "https://apps.apple.com/app/id6746480683",
     "download_aria_label": "Скачать приложение белого шума из App Store",
-    "download_img_alt": "Скачать приложение белого шума в App Store"
+    "download_img_alt": "Скачать приложение белого шума в App Store",
+    "scan_to_download": "Отсканируйте для загрузки"
   },
   "stats": {
     "title": "DRMN в цифрах",

@@ -35,7 +35,8 @@
     "download_text": "Descargar Ahora",
     "download_url": "https://apps.apple.com/app/id6746480683",
     "download_aria_label": "Descarga app gratuita de ruido blanco desde la App Store",
-    "download_img_alt": "Descarga app de ruido blanco en la App Store"
+    "download_img_alt": "Descarga app de ruido blanco en la App Store",
+    "scan_to_download": "Escanear para descargar"
   },
   "stats": {
     "title": "DRMN en Cifras",

@@ -16,6 +16,10 @@ const URLS = LANGUAGES.map((lang) => ({
     url: lang === DEFAULT_LANGUAGE ? SITE_URL : `${SITE_URL}${lang}/`
 }));
 
+const ADDITIONAL_URLS = [
+    `${SITE_URL}llms.txt`
+];
+
 // Expected JSON-LD types that should be present on each generated page.
 // Keep this list in sync with `build/template.html` structured data scripts.
 // Note: MobileApplication is a subtype of SoftwareApplication and is acceptable
@@ -48,5 +52,6 @@ module.exports = {
     LANGUAGES,
     EXPECTED_JSON_LD_TYPES,
     INDEX_NOW_KEY,
-    INDEX_NOW_ENGINES
+    INDEX_NOW_ENGINES,
+    ADDITIONAL_URLS
 };

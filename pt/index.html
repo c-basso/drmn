@@ -200,6 +200,29 @@
       padding: 3rem 0 4rem;
     }
 
+    .header-link {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+    }
+
+    .header-link:hover {
+      opacity: 0.95;
+    }
+
+    .header-link:active {
+      opacity: 0.9;
+    }
+
+    .header-link .download-btn,
+    .header-link .hero-cta-desktop {
+      pointer-events: auto;
+      position: relative;
+      z-index: 2;
+    }
+
     .app-logo {
       width: 120px;
       height: 120px;
@@ -252,6 +275,48 @@
       height: 60px;
       width: auto;
       display: block;
+    }
+
+    /* Mobile: show download button, hide QR code */
+    .hero-cta-mobile {
+      display: block;
+    }
+
+    .hero-cta-desktop {
+      display: none;
+    }
+
+    .hero-cta-desktop .qr-code {
+      width: 180px;
+      height: 180px;
+      margin: 0 auto 1rem;
+      display: block;
+      overflow: hidden;
+      border-radius: 20px;
+    }
+
+    .hero-cta-desktop .qr-code img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .hero-cta-desktop .qr-text {
+      text-align: center;
+      color: var(--color-text-secondary);
+      font-size: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    /* Desktop: hide download button, show QR code */
+    @media (min-width: 769px) {
+      .hero-cta-mobile {
+        display: none;
+      }
+
+      .hero-cta-desktop {
+        display: block;
+      }
     }
 
     /* Features Grid */
@@ -522,7 +587,7 @@
     }
 
     .comparison-table thead {
-      background: var(--gradient-accent);
+      background: var(--color-bg-secondary);
     }
 
     .comparison-table th {
@@ -777,18 +842,30 @@
 <body>
   <header role="banner">
     <div class="container">
-      <div class="header-content">
-        <div class="app-logo" itemscope itemtype="https://schema.org/ImageObject">
-          <img src="/img/logo.webp" alt="Logo app ruído branco DRMN - melhor app sons para dormir para iPhone" width="120" height="120" loading="eager" decoding="async" itemprop="image">
+      <a href="https://apps.apple.com/app/id6746480683" class="header-link" aria-label="Baixe app gratuita ruído branco da App Store" rel="noopener noreferrer" itemscope itemtype="https://schema.org/SoftwareApplication">
+        <div class="header-content">
+          <div class="app-logo" itemscope itemtype="https://schema.org/ImageObject">
+            <img src="/img/logo.webp" alt="Logo app ruído branco DRMN - melhor app sons para dormir para iPhone" width="120" height="120" loading="eager" decoding="async" itemprop="image">
+          </div>
+          <h1>App Ruído Branco para Dormir</h1>
+          <p class="tagline" itemprop="description">Durma mais rápido e durma melhor com DRMN. Nosso app ruído branco te ajuda a relaxar, se concentrar e ter o descanso que você merece. Perfeito para dormir, meditação, trabalho e ajudar bebês a dormirem tranquilamente.</p>
+          <div class="hero-cta">
+            <!-- Mobile: Download button -->
+            <div class="hero-cta-mobile">
+              <div class="download-btn">
+                <img src="/img/download.svg" alt="Baixe app ruído branco na App Store" width="200" height="60" loading="eager" decoding="async">
+              </div>
+            </div>
+            <!-- Desktop: QR code -->
+            <div class="hero-cta-desktop">
+              <div class="qr-code">
+                <img src="/qr.png" alt="Escanear para baixar" width="200" height="200" loading="eager" decoding="async">
+              </div>
+              <p class="qr-text">Escanear para baixar</p>
+            </div>
+          </div>
         </div>
-        <h1>App Ruído Branco para Dormir</h1>
-        <p class="tagline" itemprop="description">Durma mais rápido e durma melhor com DRMN. Nosso app ruído branco te ajuda a relaxar, se concentrar e ter o descanso que você merece. Perfeito para dormir, meditação, trabalho e ajudar bebês a dormirem tranquilamente.</p>
-        <div class="hero-cta">
-          <a href="https://apps.apple.com/app/id6746480683" class="download-btn" aria-label="Baixe app gratuita ruído branco da App Store" rel="noopener noreferrer" itemscope itemtype="https://schema.org/SoftwareApplication">
-            <img src="/img/download.svg" alt="Baixe app ruído branco na App Store" width="200" height="60" loading="eager" decoding="async">
-          </a>
-        </div>
-      </div>
+      </a>
     </div>
   </header>
 
