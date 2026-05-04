@@ -11,15 +11,29 @@ const {
     ADDITIONAL_URLS
 } = require('./constants');
 
+function getIndexableUrls() {
+    const urlsPath = path.resolve(__dirname, '..', 'urls.txt');
+    if (fs.existsSync(urlsPath)) {
+        return fs.readFileSync(urlsPath, 'utf8')
+            .split('\n')
+            .map((line) => line.trim())
+            .filter(Boolean);
+    }
+    return URLS.map(({ url }) => url);
+}
+
 const indexNow = async (engine) => {
     console.log('🚀 Starting IndexNow submit...');
+    const urlList = Array.from(
+        new Set(
+            getIndexableUrls().concat(ADDITIONAL_URLS)
+        )
+    );
 
     const data = {
         host: new URL(SITE_URL).hostname,
         key: INDEX_NOW_KEY,
-        urlList: URLS
-            .map(({url}) => url)
-            .concat(ADDITIONAL_URLS)
+        urlList
     };
 
     console.log()

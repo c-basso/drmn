@@ -5,12 +5,92 @@
   
   <url>
     <loc>https://drmn.xyz/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drmn.xyz/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://drmn.xyz/ru/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://drmn.xyz/es/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://drmn.xyz/fr/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://drmn.xyz/de/" />
     <xhtml:link rel="alternate" hreflang="it" href="https://drmn.xyz/it/" />
     <xhtml:link rel="alternate" hreflang="pt" href="https://drmn.xyz/pt/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drmn.xyz/" />
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://drmn.xyz/ru/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drmn.xyz/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drmn.xyz/ru/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://drmn.xyz/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drmn.xyz/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://drmn.xyz/de/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drmn.xyz/it/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://drmn.xyz/pt/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drmn.xyz/" />
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://drmn.xyz/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drmn.xyz/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drmn.xyz/ru/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://drmn.xyz/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drmn.xyz/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://drmn.xyz/de/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drmn.xyz/it/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://drmn.xyz/pt/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drmn.xyz/" />
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://drmn.xyz/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drmn.xyz/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drmn.xyz/ru/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://drmn.xyz/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drmn.xyz/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://drmn.xyz/de/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drmn.xyz/it/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://drmn.xyz/pt/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drmn.xyz/" />
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://drmn.xyz/de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drmn.xyz/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drmn.xyz/ru/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://drmn.xyz/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drmn.xyz/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://drmn.xyz/de/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drmn.xyz/it/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://drmn.xyz/pt/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drmn.xyz/" />
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://drmn.xyz/it/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drmn.xyz/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drmn.xyz/ru/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://drmn.xyz/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drmn.xyz/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://drmn.xyz/de/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drmn.xyz/it/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://drmn.xyz/pt/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drmn.xyz/" />
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://drmn.xyz/pt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drmn.xyz/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drmn.xyz/ru/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://drmn.xyz/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://drmn.xyz/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://drmn.xyz/de/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drmn.xyz/it/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://drmn.xyz/pt/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drmn.xyz/" />
     <priority>1.0</priority>
   </url>
 
