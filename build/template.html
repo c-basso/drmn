@@ -27,6 +27,13 @@
   <meta name="googlebot" content="index, follow">
   <meta name="bingbot" content="index, follow">
   <link rel="canonical" href="{{meta.canonical}}">
+  <!-- After verifying in Search Console / Bing Webmasters, set meta.google_site_verification and meta.ms_validate in build/<lang>.json -->
+  {{#if meta.google_site_verification}}
+  <meta name="google-site-verification" content="{{meta.google_site_verification}}" />
+  {{/if}}
+  {{#if meta.ms_validate}}
+  <meta name="msvalidate.01" content="{{meta.ms_validate}}" />
+  {{/if}}
   
   <!-- Alternate Language Links -->
   {{#each meta.alternate_languages as |lang|}}

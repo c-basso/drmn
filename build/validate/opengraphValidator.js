@@ -28,7 +28,8 @@ const OG_DESCRIPTION_MAX_LENGTH = 160;
 
 function extractMetaTags(html) {
   const metaTags = {};
-  const re = /<meta\s+(?:property|name)=["']([^"']+)["']\s+content=["']([^"']+)["']/g;
+  // Allow apostrophes inside content (e.g. dall'App, l'App) — match double-quoted content only
+  const re = /<meta\s+(?:property|name)=["']([^"']+)["']\s+content="([^"]*)"/g;
   let m;
   while ((m = re.exec(html))) {
     const property = m[1];

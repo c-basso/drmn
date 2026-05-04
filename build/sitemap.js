@@ -7,6 +7,10 @@ const { SITE_URL, URLS, DEFAULT_LANGUAGE } = require('./constants');
   const sitemapPath = path.join(__dirname, '..', 'sitemap.xml');
   const robotsPath = path.join(__dirname, '..', 'robots.txt');
 
+  const lastmod = new Date().toISOString().slice(0, 10);
+  const siteOrigin = SITE_URL.replace(/\/$/, '');
+  const legalUrls = [`${siteOrigin}/privacy.html`, `${siteOrigin}/terms.html`];
+
   const lines = [];
   lines.push('<?xml version="1.0" encoding="UTF-8" standalone="yes"?>');
   lines.push('<urlset ');
@@ -21,7 +25,16 @@ const { SITE_URL, URLS, DEFAULT_LANGUAGE } = require('./constants');
       lines.push(`    <xhtml:link rel="alternate" hreflang="${lang}" href="${url}" />`);
     }
     lines.push(`    <xhtml:link rel="alternate" hreflang="x-default" href="${defaultUrl}" />`);
+    lines.push(`    <lastmod>${lastmod}</lastmod>`);
     lines.push('    <priority>1.0</priority>');
+    lines.push('  </url>');
+    lines.push('');
+  }
+  for (const loc of legalUrls) {
+    lines.push('  <url>');
+    lines.push(`    <loc>${loc}</loc>`);
+    lines.push(`    <lastmod>${lastmod}</lastmod>`);
+    lines.push('    <priority>0.5</priority>');
     lines.push('  </url>');
     lines.push('');
   }

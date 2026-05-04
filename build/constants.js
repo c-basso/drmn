@@ -1,3 +1,5 @@
+// Optional: set meta.google_site_verification and meta.ms_validate in each build/<lang>.json
+// after domain verification in Google Search Console and Bing Webmaster Tools.
 const SITE_URL = "https://drmn.xyz/";
 const DEFAULT_LANGUAGE = 'en';
 
