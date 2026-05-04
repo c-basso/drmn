@@ -8,6 +8,24 @@ const {
     LANGUAGES
 } = require('./constants');
 
+/** Month + year in the given locale (no extra words like "de" / "г."). */
+function formatFooterMonthYear(date, locale) {
+    const parts = new Intl.DateTimeFormat(locale, { month: 'long', year: 'numeric' }).formatToParts(date);
+    const month = parts.find((p) => p.type === 'month')?.value ?? '';
+    const year = parts.find((p) => p.type === 'year')?.value ?? '';
+    return `${month} ${year}`.trim();
+}
+
+const FOOTER_LAST_UPDATED = {
+    en: { locale: 'en-US', prefix: 'Last updated: ' },
+    de: { locale: 'de-DE', prefix: 'Zuletzt aktualisiert: ' },
+    es: { locale: 'es-ES', prefix: 'Última actualización: ' },
+    fr: { locale: 'fr-FR', prefix: 'Dernière mise à jour : ' },
+    it: { locale: 'it-IT', prefix: 'Ultimo aggiornamento: ' },
+    pt: { locale: 'pt-BR', prefix: 'Última atualização: ' },
+    ru: { locale: 'ru-RU', prefix: 'Последнее обновление: ' }
+};
+
 (function() {
     const urlsPath = path.join(__dirname, '..', 'urls.txt');
 
@@ -50,6 +68,14 @@ const {
             const currentYear = new Date().getFullYear();
             if (data.footer && data.footer.copyright) {
                 data.footer.copyright = data.footer.copyright.replace(/\{year\}/g, currentYear.toString());
+            }
+
+            // Footer "last updated" line: generated at build time (not stored in JSON)
+            if (data.footer) {
+                const lu = FOOTER_LAST_UPDATED[lang];
+                if (lu) {
+                    data.footer.last_updated = lu.prefix + formatFooterMonthYear(new Date(buildTimestamp), lu.locale);
+                }
             }
 
             // Build JSON-LD objects from translation data to avoid hardcoded strings in template
