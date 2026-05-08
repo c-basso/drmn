@@ -23,7 +23,11 @@
     "og_type": "website",
     "twitter_card": "summary_large_image",
     "theme_color": "#1a1b2e",
-    "apple_mobile_web_app_status_bar_style": "default"
+    "apple_mobile_web_app_status_bar_style": "default",
+    "og_image_width": "1200",
+    "og_image_height": "630",
+    "twitter_image_width": "1200",
+    "twitter_image_height": "630"
   },
   "header": {
     "app_name_suffix": "Macchina Rumore Bianco",
@@ -170,7 +174,12 @@
     "title": "DRMN vs Altre App di Rumore Bianco",
     "description": "Vedi come DRMN si confronta con altre app popolari di rumore bianco e suoni per dormire. Tutte le informazioni si basano su dati pubblicamente disponibili e rapporti degli utenti.",
     "table": {
-      "headers": ["Funzionalità", "DRMN", "App Gratuite Tipiche", "App Premium"],
+      "headers": [
+        "Funzionalità",
+        "DRMN",
+        "App Gratuite Tipiche",
+        "App Premium"
+      ],
       "rows": [
         {
           "feature": "Accesso livello gratuito",

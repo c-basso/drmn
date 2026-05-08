@@ -23,7 +23,11 @@
     "og_type": "website",
     "twitter_card": "summary_large_image",
     "theme_color": "#1a1b2e",
-    "apple_mobile_web_app_status_bar_style": "default"
+    "apple_mobile_web_app_status_bar_style": "default",
+    "og_image_width": "1200",
+    "og_image_height": "630",
+    "twitter_image_width": "1200",
+    "twitter_image_height": "630"
   },
   "header": {
     "app_name_suffix": "Aparelho Ruído Branco",
@@ -170,7 +174,12 @@
     "title": "DRMN vs Outros Apps de Ruído Branco",
     "description": "Veja como DRMN se compara a outros apps populares de ruído branco e sons para dormir. Todas as informações são baseadas em dados publicamente disponíveis e relatórios de usuários.",
     "table": {
-      "headers": ["Recurso", "DRMN", "Apps Gratuitos Típicos", "Apps Premium"],
+      "headers": [
+        "Recurso",
+        "DRMN",
+        "Apps Gratuitos Típicos",
+        "Apps Premium"
+      ],
       "rows": [
         {
           "feature": "Acesso nível gratuito",

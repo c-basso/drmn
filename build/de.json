@@ -23,7 +23,11 @@
     "og_type": "website",
     "twitter_card": "summary_large_image",
     "theme_color": "#1a1b2e",
-    "apple_mobile_web_app_status_bar_style": "default"
+    "apple_mobile_web_app_status_bar_style": "default",
+    "og_image_width": "1200",
+    "og_image_height": "630",
+    "twitter_image_width": "1200",
+    "twitter_image_height": "630"
   },
   "header": {
     "app_name_suffix": "Gerät für Weißes Rauschen",
@@ -170,7 +174,12 @@
     "title": "DRMN vs Andere Apps für Weißes Rauschen",
     "description": "Sehen Sie, wie DRMN im Vergleich zu anderen beliebten Apps für weißes Rauschen und Schlafgeräusche abschneidet. Alle Informationen basieren auf öffentlich verfügbaren Daten und Benutzerberichten.",
     "table": {
-      "headers": ["Funktion", "DRMN", "Typische Kostenlose Apps", "Premium Apps"],
+      "headers": [
+        "Funktion",
+        "DRMN",
+        "Typische Kostenlose Apps",
+        "Premium Apps"
+      ],
       "rows": [
         {
           "feature": "Kostenloser Zugang",

@@ -23,7 +23,11 @@
     "og_type": "website",
     "twitter_card": "summary_large_image",
     "theme_color": "#1a1b2e",
-    "apple_mobile_web_app_status_bar_style": "default"
+    "apple_mobile_web_app_status_bar_style": "default",
+    "og_image_width": "1200",
+    "og_image_height": "630",
+    "twitter_image_width": "1200",
+    "twitter_image_height": "630"
   },
   "header": {
     "app_name_suffix": "Белый шум для сна",
@@ -170,7 +174,12 @@
     "title": "DRMN vs Другие приложения белого шума",
     "description": "Посмотрите, как DRMN сравнивается с другими популярными приложениями белого шума и звуков для сна. Вся информация основана на публично доступных данных и отзывах пользователей.",
     "table": {
-      "headers": ["Функция", "DRMN", "Типичные бесплатные приложения", "Премиум приложения"],
+      "headers": [
+        "Функция",
+        "DRMN",
+        "Типичные бесплатные приложения",
+        "Премиум приложения"
+      ],
       "rows": [
         {
           "feature": "Доступ к бесплатной версии",
