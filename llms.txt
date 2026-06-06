@@ -1,19 +1,19 @@
 # DRMN - White Noise & Sleep Sounds App
 
-> DRMN is a free iOS mobile application that provides white noise, nature sounds, and ambient audio to help users fall asleep faster, improve focus, and aid baby sleep. Available on the App Store for iPhone.
+> Sleep sound machine app for iPhone: rain, fan & white noise, mix sounds, offline. Download DRMN free on App Store—best sounds for sleep, focus & baby sleep.
 
 ## Main Sections
 
-- [Home](/): App overview and features
-- [Privacy Policy](/privacy.html): Privacy and data handling
-- [Terms of Service](/terms.html): Terms and conditions
+- [Home](https://drmn.xyz/): App overview and features
+- [Privacy Policy](https://drmn.xyz/privacy.html): Privacy and data handling
+- [Terms of Service](https://drmn.xyz/terms.html): Terms and conditions
 
 ## Key Facts
 
 - Platform: iOS (iPhone)
 - Price: Free with optional premium features
 - File Size: 49.2 MB
-- Minimum iOS: 17.1 or later
+- Minimum iOS: iOS 17.1 or later
 - Category: Health & Fitness
 - Developer: Vladimir Ivakhnenko
 - App Store Rating: 4.9/5 stars (10 reviews)
@@ -30,6 +30,16 @@
 - Battery-optimized
 - Sleep timer with auto-fade
 
+## Language Pages
+
+- [en](https://drmn.xyz/)
+- [ru](https://drmn.xyz/ru/)
+- [es](https://drmn.xyz/es/)
+- [fr](https://drmn.xyz/fr/)
+- [de](https://drmn.xyz/de/)
+- [it](https://drmn.xyz/it/)
+- [pt](https://drmn.xyz/pt/)
+
 ## App Store
 
 - URL: https://apps.apple.com/app/id6746480683
@@ -41,3 +51,5 @@
 
 - Website: https://drmn.xyz/
 - App Store: https://apps.apple.com/app/id6746480683
+
+Last updated: 2026-06-06
