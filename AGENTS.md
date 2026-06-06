@@ -23,6 +23,12 @@ Usage notes:
 <available_skills>
 
 <skill>
+<name>app-website-translation</name>
+<description>High-quality, human-in-the-loop UI and marketing copy translation for mobile apps, web apps, and marketing sites. Builds and enforces a project glossary, follows Apple (and web) platform terminology per locale, handles plurals, gender, expansion, and formality. Use when translating in-app strings, website copy, or App Store/Play metadata so it reads at native level and does not break layouts. Triggers for locales, l10n, localization, i18n, strings, xcstrings, po/mo, JSON i18n, and “translate our app/website.”</description>
+<location>project</location>
+</skill>
+
+<skill>
 <name>frontend-design</name>
 <description>Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, artifacts, posters, or applications (examples include websites, landing pages, dashboards, React components, HTML/CSS layouts, or when styling/beautifying any web UI). Generates creative, polished code and UI design that avoids generic AI aesthetics.</description>
 <location>project</location>

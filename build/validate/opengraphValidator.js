@@ -61,20 +61,16 @@ const VALID_TWITTER_CARD_TYPES = new Set([
 const OG_DESCRIPTION_MIN_LENGTH = 110;
 const OG_DESCRIPTION_MAX_LENGTH = 160;
 
-function escapeRegExp(string) {
-  return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-}
-
-/**
- * Reads a quoted HTML attribute value. Double-quoted values may contain apostrophes
- * (e.g. French "jusqu'à"); single-quoted values may contain double quotes.
- */
-function matchQuotedAttr(attrs, attrName) {
-  const esc = escapeRegExp(attrName);
-  let m = attrs.match(new RegExp(`\\b${esc}="([^"]*)"`, 'i'));
-  if (m) return m[1];
-  m = attrs.match(new RegExp(`\\b${esc}='([^']*)'`, 'i'));
-  if (m) return m[1];
+/** Match content="..." or content='...' without treating apostrophe inside double quotes as the end. */
+function parseMetaContentAttribute(attrs) {
+  const doubleQuoted = attrs.match(/\bcontent="([^"]*)"/i);
+  if (doubleQuoted) {
+    return doubleQuoted[1];
+  }
+  const singleQuoted = attrs.match(/\bcontent='([^']*)'/i);
+  if (singleQuoted) {
+    return singleQuoted[1];
+  }
   return null;
 }
 
@@ -84,10 +80,10 @@ function extractMetaTags(html) {
   let m;
   while ((m = re.exec(html))) {
     const attrs = m[1];
-    const key = matchQuotedAttr(attrs, 'property') ?? matchQuotedAttr(attrs, 'name');
-    const content = matchQuotedAttr(attrs, 'content');
-    if (key != null && content != null) {
-      metaTags[key] = content;
+    const nameMatch = attrs.match(/\b(?:property|name)=["']([^"']+)["']/i);
+    const contentMatch = parseMetaContentAttribute(attrs);
+    if (nameMatch && contentMatch !== null) {
+      metaTags[nameMatch[1]] = contentMatch;
     }
   }
   return metaTags;
@@ -103,30 +99,32 @@ function validateMetaRdfaConventions(html, { lang }) {
   let m;
   while ((m = re.exec(html))) {
     const attrs = m[1];
-    const propKey = matchQuotedAttr(attrs, 'property');
-    const nameKey = matchQuotedAttr(attrs, 'name');
-    const contentVal = matchQuotedAttr(attrs, 'content');
-    if (contentVal == null) {
+    const propMatch = attrs.match(/\bproperty=["']([^"']+)["']/i);
+    const nameMatch = attrs.match(/\bname=["']([^"']+)["']/i);
+    const contentMatch = parseMetaContentAttribute(attrs);
+    if (contentMatch === null) {
       continue;
     }
 
-    if (propKey != null && nameKey != null) {
+    if (propMatch && nameMatch) {
       errors.push(
-        `${lang}: one <meta> must not use both property and name (property="${propKey}", name="${nameKey}")`
+        `${lang}: one <meta> must not use both property and name (property="${propMatch[1]}", name="${nameMatch[1]}")`
       );
       continue;
     }
 
-    if (propKey != null) {
-      if (propKey.startsWith('twitter:')) {
+    if (propMatch) {
+      const key = propMatch[1];
+      if (key.startsWith('twitter:')) {
         errors.push(
-          `${lang}: Twitter Card "${propKey}" must use name=, not property= (X Cards markup)`
+          `${lang}: Twitter Card "${key}" must use name=, not property= (X Cards markup)`
         );
       }
-    } else if (nameKey != null) {
-      if (nameKey.startsWith('og:')) {
+    } else if (nameMatch) {
+      const key = nameMatch[1];
+      if (key.startsWith('og:')) {
         errors.push(
-          `${lang}: Open Graph "${nameKey}" must use property=, not name= (https://ogp.me/)`
+          `${lang}: Open Graph "${key}" must use property=, not name= (https://ogp.me/)`
         );
       }
     }

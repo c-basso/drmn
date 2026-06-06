@@ -1,0 +1,6 @@
+key	en-US	de-DE	fr-FR	notes	apple_or_web_verified
+concept_id_unique	stable source English	locale1	locale2	what this means in UI; register (du/Sie)	no / yes + where (e.g. Settings 18.2)
+settings	Settings	…	…	entry point to preferences	yes iOS
+cancel	Cancel	…	…	verb, dismisses sheet	yes
+done	Done	…	…	complete action; not same as OK everywhere	yes
+ADD_MORE_ROWS	…	…	…	one row per app-specific term. Add columns for each BCP-47 you ship.	

@@ -1,5 +1,6 @@
 const { validateJsonLD } = require('./jsonLDValidator');
 const { validateOpenGraph } = require('./opengraphValidator');
+const { validateSeoMeta } = require('./seoValidator');
 
 async function main() {
   console.log('Running validators...\n');
@@ -17,7 +18,12 @@ async function main() {
   const openGraphResult = await validateOpenGraph();
   results.push({ name: 'Open Graph', result: openGraphResult });
   console.log('');
-  
+
+  console.log('3. Validating SEO: document <title> and meta description...');
+  const seoMetaResult = await validateSeoMeta();
+  results.push({ name: 'SEO meta', result: seoMetaResult });
+  console.log('');
+
   // Summary
   const failed = results.filter(r => !r.result.ok);
   const passed = results.filter(r => r.result.ok);
