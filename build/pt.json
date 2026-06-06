@@ -1,19 +1,19 @@
 {
   "meta": {
     "lang": "pt",
-    "title": "App de Ruído Branco para Dormir no iPhone | DRMN App",
-    "description": "App de ruído branco para iPhone: mixagem de sons, modo offline e bateria otimizada. Baixe DRMN grátis na App Store—sono profundo, foco, bebês e concentração.",
-    "keywords": "ruído branco app, app ruído branco, ruído branco para dormir, ruído branco bebê, ruído branco bebe, ruído branco para bebê, aparelho ruído branco, ruído branco aparelho, o que é ruído branco, ruído marrom, ruído rosa, app sons para dormir, app para dormir, sons relaxantes, sons para bebê, ruído branco para estudar, ruído branco chuva",
+    "title": "App máquina de sons para dormir no iPhone | DRMN App",
+    "description": "App sons para dormir no iPhone: chuva, ventilador e ruído branco, mixagem, offline. Baixe DRMN grátis na App Store—melhores sons para dormir, foco e bebês.",
+    "keywords": "sons para dormir, máquina de sons para dormir, som para dormir, chuva para dormir, ventilador para dormir, ruído branco app, app ruído branco, sons sono, app para dormir",
     "author": "DRMN",
     "og_url": "https://drmn.xyz/pt/",
-    "og_title": "Ruído Branco para Dormir | DRMN",
-    "og_description": "Ruído branco e sons para dormir no iPhone. Mixagem, modo offline, bateria otimizada. Baixe DRMN grátis na App Store—sono, foco, bebês e concentração.",
+    "og_title": "Máquina de sons e sons para dormir | DRMN",
+    "og_description": "Sons para dormir no iPhone: chuva, ventilador, ruído branco e natureza. Mixagem, offline. Baixe DRMN grátis na App Store.",
     "og_image": "https://drmn.xyz/pt/site_preview.png",
     "og_image_alt": "DRMN App - Durma Melhor, Durma Mais Rápido",
     "og_locale": "pt_BR",
     "twitter_url": "https://drmn.xyz/pt/",
-    "twitter_title": "Ruído Branco para Dormir | DRMN",
-    "twitter_description": "Ruído branco e sons para dormir no iPhone. Mixagem, modo offline, bateria otimizada. Baixe DRMN grátis na App Store—sono, foco, bebês e concentração.",
+    "twitter_title": "Máquina de sons e sons para dormir | DRMN",
+    "twitter_description": "Sons para dormir no iPhone: chuva, ventilador, ruído branco e natureza. Mixagem, offline. Baixe DRMN grátis na App Store.",
     "twitter_image": "https://drmn.xyz/pt/site_preview.png",
     "twitter_image_alt": "DRMN App - Durma Melhor, Durma Mais Rápido",
     "twitter_site": "@c__basso",
@@ -30,12 +30,12 @@
     "twitter_image_height": "630"
   },
   "header": {
-    "app_name_suffix": "Aparelho Ruído Branco",
-    "logo_alt": "Logo app ruído branco DRMN - melhor app sons para dormir para iPhone",
+    "app_name_suffix": "Máquina de Sons para Dormir",
+    "logo_alt": "Logo DRMN — app sons para dormir para iPhone",
     "app_name": "DRMN",
-    "title": "App Ruído Branco para Dormir",
-    "tagline": "Durma mais rápido e durma melhor com DRMN. Nosso app ruído branco te ajuda a relaxar, se concentrar e ter o descanso que você merece. Perfeito para dormir, meditação, trabalho e ajudar bebês a dormirem tranquilamente.",
-    "tldr": "DRMN é um app freemium de ruído branco para iOS que ajuda os usuários a dormirem 30-50% mais rápido. A versão gratuita inclui timer de 1 hora (suficiente para dormir), modo offline, mixagem de sons e otimização de bateria. Baixe grátis na App Store.",
+    "title": "App de Sons para Dormir no iPhone",
+    "tagline": "Durma mais rápido com os melhores sons para dormir. DRMN é uma máquina de sons com chuva, ventilador, ruído branco e natureza—mixagem, offline e bateria otimizada.",
+    "tldr": "DRMN é um app freemium de sons para dormir no iOS: sono 30–50 % mais rápido. Grátis: chuva, ventilador, ruído branco, timer 1 h, offline, mix e bateria. Na App Store.",
     "download_text": "Baixar Agora",
     "download_url": "https://apps.apple.com/app/id6746480683",
     "download_aria_label": "Baixe app gratuita ruído branco da App Store",
@@ -76,7 +76,7 @@
     ]
   },
   "features": {
-    "title": "Tudo que Você Precisa para Dormir Melhor",
+    "title": "Sons para Dormir e Natureza para Descansar Melhor",
     "items": [
       {
         "icon": "🌊",
@@ -101,15 +101,15 @@
     ]
   },
   "content": {
-    "title": "Transforme Seu Sono com Ruído Branco e Sons da Natureza",
-    "intro": "Cansado de se virar na cama? DRMN é um app gratuito ruído branco para iPhone que te ajuda a dormir mais rápido e dormir mais profundamente. Seja lidando com insônia, precisando se concentrar no trabalho ou querendo ajudar seu bebê a dormir melhor, temos tudo coberto com sons de alta qualidade projetados para melhorar seu descanso.",
+    "title": "Transforme seu Sono com uma Máquina de Sons",
+    "intro": "DRMN é um app de sons para dormir no iOS com ruído branco, chuva, ventilador e natureza. Mais de 10.000 downloads, 4,9 estrelas—melhores sons para dormir, insônia, foco e bebês.",
     "sections": [
       {
         "title": "Uma Biblioteca de Sons Projetada para Suas Necessidades",
         "paragraph1": "Selecionamos cuidadosamente uma coleção de sons de alta qualidade para te ajudar a relaxar, se concentrar e dormir melhor:",
         "list_items": [
           "<strong>Ruído branco, ruído marrom e ruído escuro</strong> - Perfeitos para mascarar sons perturbadores e criar um ambiente de sono constante",
-          "<strong>Sons da natureza</strong> - Chuva suave, ondas do oceano, fogo crepitante e pássaros da manhã te transportam para um lugar tranquilo",
+          "<strong>Sons da natureza</strong> - Som de chuva para dormir, ondas, fogo, som de ventilador para dormir e pássaros matinais levam você à calma",
           "<strong>Sons de meditação e concentração</strong> - Trilhas ambiente e instrumentais suaves te ajudam a se concentrar durante o trabalho ou praticar mindfulness",
           "<strong>Sons para o sono do bebê</strong> - Sons familiares como secador de cabelo, aspirador de pó e teclado digitando ajudam os pequenos a dormirem"
         ],
@@ -171,8 +171,8 @@
     ]
   },
   "comparison": {
-    "title": "DRMN vs Outros Apps de Ruído Branco",
-    "description": "Veja como DRMN se compara a outros apps populares de ruído branco e sons para dormir. Todas as informações são baseadas em dados publicamente disponíveis e relatórios de usuários.",
+    "title": "Melhor Máquina de Sons para Dormir — Comparação DRMN",
+    "description": "Como DRMN se compara como app de sons para dormir com apps gratuitos e premium. Dados públicos e relatos de usuários.",
     "table": {
       "headers": [
         "Recurso",
@@ -331,8 +331,16 @@
   },
   "seo": {
     "breadcrumb_home": "Início",
-    "faq_title": "Perguntas Frequentes sobre App Ruído Branco e Sons para Dormir",
+    "faq_title": "FAQ: máquina de sons, sons para dormir e ruído branco",
     "faq": [
+      {
+        "question": "Qual é o melhor som para dormir?",
+        "answer": "O melhor som para dormir depende de você—muitos escolhem chuva, ventilador ou ruído branco. No DRMN você pode ouvir e misturar esses sons."
+      },
+      {
+        "question": "O que é uma máquina de sons para dormir?",
+        "answer": "Uma máquina de sons reproduz áudio constante—chuva, ventilador ou ruído branco—para mascarar barulhos e dormir. DRMN é esse app para iPhone com mix, offline e timer."
+      },
       {
         "question": "Qual é o melhor app ruído branco para iPhone?",
         "answer": "DRMN é o melhor app ruído branco e sons para dormir para iPhone. Este app gratuito ruído branco te ajuda a dormir mais rápido com ruído branco, ruído marrom, sons da natureza, ondas do oceano, sons de chuva e mais. O melhor app ruído para dormir, meditação, trabalho e sono do bebê."
@@ -525,5 +533,31 @@
         ]
       }
     }
+  },
+  "popular_sounds": {
+    "title": "Sons Populares para Dormir",
+    "intro": "Procura o melhor som para dormir? DRMN inclui os sons mais buscados—mixagem, offline e a noite toda no iPhone.",
+    "items": [
+      {
+        "icon": "🌧️",
+        "title": "Som de Chuva para Dormir",
+        "description": "Chuva suave mascara barulhos repentinos. Misture chuva com ruído branco para uma experiência mais profunda."
+      },
+      {
+        "icon": "🌀",
+        "title": "Som de Ventilador para Dormir",
+        "description": "O zumbido do ventilador bloqueia trânsito, ronco e vizinhos—um clássico som para dormir."
+      },
+      {
+        "icon": "🔊",
+        "title": "Ruído Branco para Dormir",
+        "description": "Ruído branco, marrom e escuro criam uma camada constante que sinaliza ao cérebro que é hora de descansar."
+      },
+      {
+        "icon": "🌊",
+        "title": "Oceano e Sons da Natureza",
+        "description": "Ondas, fogo e pássaros completam a biblioteca—misture com chuva ou ventilador quando quiser."
+      }
+    ]
   }
 }

@@ -171,26 +171,36 @@
       padding: 0 1.5rem;
     }
 
-    /* Header */
+    /* Header / Hero */
     header {
       position: relative;
       padding: 2rem;
-      border-radius: 10px;
-      background: var(--gradient-hero);
       overflow: hidden;
+      background: var(--color-bg-primary);
     }
 
     header::before {
       content: '';
       position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: 
-        radial-gradient(circle at 20% 30%, rgba(107, 127, 215, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 80% 70%, rgba(143, 160, 240, 0.08) 0%, transparent 50%);
+      inset: 0;
+      background: url('/img/hero-bg.webp') center / cover no-repeat;
+      z-index: 0;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      background: rgba(15, 16, 24, 0.42);
       pointer-events: none;
+    }
+
+    header > .container {
+      position: relative;
+      z-index: 1;
     }
 
     .header-content {
@@ -365,6 +375,21 @@
     .feature-card p {
       color: var(--color-text-secondary);
       font-size: 0.95rem;
+    }
+
+    /* Popular Sounds (keyword-targeted) */
+    .popular-sounds {
+      padding: 5rem 0;
+      background: var(--color-bg-primary);
+    }
+
+    .popular-sounds .section-intro {
+      color: var(--color-text-secondary);
+      text-align: center;
+      max-width: 720px;
+      margin: 1rem auto 0;
+      font-size: 1.05rem;
+      line-height: 1.7;
     }
 
     /* Content Section for SEO */
@@ -896,6 +921,27 @@
         </div>
       </div>
     </section>
+
+    <!-- Popular Sleep Sounds (keyword mapping) -->
+    {{#if popular_sounds.title}}
+    <section class="popular-sounds" aria-labelledby="popular-sounds-heading">
+      <div class="container">
+        <h2 id="popular-sounds-heading">{{popular_sounds.title}}</h2>
+        {{#if popular_sounds.intro}}
+        <p class="section-intro">{{popular_sounds.intro}}</p>
+        {{/if}}
+        <div class="features-grid">
+          {{#each popular_sounds.items as |sound|}}
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">{{sound.icon}}</div>
+            <h3>{{sound.title}}</h3>
+            <p>{{sound.description}}</p>
+          </article>
+          {{/each}}
+        </div>
+      </div>
+    </section>
+    {{/if}}
 
     <!-- DRMN by the Numbers Section -->
     {{#if stats.title}}
