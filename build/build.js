@@ -15,6 +15,11 @@ const {
     OG_LOCALE_BY_LANGUAGE,
     CANONICAL_URL_BY_LANGUAGE
 } = require('./constants');
+const {
+    getHtmlLang,
+    getHtmlDir,
+    getFooterLastUpdatedConfig
+} = require('./locales');
 
 const ROOT_DIR = path.join(__dirname, '..');
 const TEMPLATE_PATH = path.join(__dirname, 'template.html');
@@ -26,16 +31,6 @@ const BUILD_DATE_ISO = new Date(BUILD_TIMESTAMP).toISOString().slice(0, 10);
 const CURRENT_YEAR = new Date(BUILD_TIMESTAMP).getFullYear();
 
 const DEFAULT_SITE_NAME = 'DRMN';
-
-const FOOTER_LAST_UPDATED = {
-    en: { locale: 'en-US', prefix: 'Last updated: ' },
-    de: { locale: 'de-DE', prefix: 'Zuletzt aktualisiert: ' },
-    es: { locale: 'es-ES', prefix: 'Última actualización: ' },
-    fr: { locale: 'fr-FR', prefix: 'Dernière mise à jour : ' },
-    it: { locale: 'it-IT', prefix: 'Ultimo aggiornamento: ' },
-    pt: { locale: 'pt-BR', prefix: 'Última atualização: ' },
-    ru: { locale: 'ru-RU', prefix: 'Последнее обновление: ' }
-};
 
 const LOOP_PLACEHOLDER_ROOTS = new Set([
     'item',
@@ -200,6 +195,8 @@ function normalizeMeta(data, lang) {
     const previewUrl = getPreviewImageUrl(lang);
 
     data.meta.lang = data.meta.lang || lang;
+    data.meta.html_lang = getHtmlLang(lang);
+    data.meta.html_dir = getHtmlDir(lang);
     data.meta.version = BUILD_TIMESTAMP;
     data.meta.canonical = canonicalUrl;
     data.meta.alternate_default = SITE_URL;
@@ -229,9 +226,9 @@ function normalizeFooter(data, lang) {
         data.footer.copyright = data.footer.copyright.replace(/\{year\}/g, String(CURRENT_YEAR));
     }
 
-    const lu = FOOTER_LAST_UPDATED[lang];
-    if (lu) {
-        data.footer.last_updated = lu.prefix + formatFooterMonthYear(new Date(BUILD_TIMESTAMP), lu.locale);
+    const footerLu = getFooterLastUpdatedConfig(lang);
+    if (footerLu) {
+        data.footer.last_updated = footerLu.prefix + formatFooterMonthYear(new Date(BUILD_TIMESTAMP), footerLu.intl);
     }
     data.footer.last_updated_iso = BUILD_DATE_ISO;
 }

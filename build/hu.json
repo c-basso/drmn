@@ -1,0 +1,555 @@
+{
+  "meta": {
+    "lang": "hu",
+    "title": "DRMN — alvási hangok, fehér zaj és hanggép iPhone-ra",
+    "description": "Alvási hangok app iPhone-ra: eső, ventilátor, fehér zaj, mix és offline. Töltsd le a DRMN-t ingyen az App Store-ból — alvási hangok, fókusz és baba alvás.",
+    "keywords": "alvási hangok, alvási hanggép, fehér zaj, esőhang alváshoz, ventilátor hang alvás, alvás app, fehér zaj app, baba alvási hangok, fókusz, offline alvás",
+    "author": "DRMN",
+    "og_url": "https://drmn.xyz/hu/",
+    "og_title": "Alvási hanggép és alvási hangok | DRMN",
+    "og_description": "Alvási hanggép iPhone-ra: eső, ventilátor, fehér zaj és természeti hangok. Mix, offline. Töltsd le a DRMN-t ingyen az App Store-ból.",
+    "og_image": "https://drmn.xyz/hu/site_preview.png",
+    "og_image_alt": "DRMN app — Jobban alszol, gyorsabban elalszol",
+    "og_locale": "hu_HU",
+    "twitter_url": "https://drmn.xyz/hu/",
+    "twitter_title": "Alvási hanggép és alvási hangok | DRMN",
+    "twitter_description": "Alvási hanggép iPhone-ra: eső, ventilátor, fehér zaj és természeti hangok. Mix, offline. Töltsd le a DRMN-t ingyen az App Store-ból.",
+    "twitter_image": "https://drmn.xyz/hu/site_preview.png",
+    "twitter_image_alt": "DRMN app — Jobban alszol, gyorsabban elalszol",
+    "twitter_site": "@c__basso",
+    "twitter_creator": "@c__basso",
+    "canonical": "https://drmn.xyz/hu/",
+    "app_store_id": "6746480683",
+    "og_type": "website",
+    "twitter_card": "summary_large_image",
+    "theme_color": "#1a1b2e",
+    "apple_mobile_web_app_status_bar_style": "default",
+    "og_image_width": "1200",
+    "og_image_height": "630",
+    "twitter_image_width": "1200",
+    "twitter_image_height": "630"
+  },
+  "header": {
+    "app_name_suffix": "Alvási hanggép",
+    "logo_alt": "DRMN alvási hanggép app logó iPhone-hoz",
+    "app_name": "DRMN",
+    "title": "Alvási hanggép app iPhone-ra",
+    "tagline": "Aludj gyorsabban a legjobb alvási hangokkal. A DRMN alvási hanggép app esővel, ventilátorral, fehér zajjal és természeti hangokkal — mix, offline lejátszás és akkumulátor-kímélő egész éjszaka.",
+    "tldr": "A DRMN ingyenes iOS alvási hangok app, amely 30–50%-kal gyorsabb elalvást segít. Ingyenes verzió: eső, ventilátor, fehér zaj, 1 órás időzítő, offline, hangmix és akkumulátor-optimalizálás. Töltsd le ingyen az App Store-ból.",
+    "download_text": "Letöltés most",
+    "download_url": "https://apps.apple.com/app/id6746480683",
+    "download_aria_label": "Töltsd le ingyen az alvási hangok appot az App Store-ból",
+    "download_img_alt": "Töltsd le az alvási hangok appot az App Store-ban",
+    "scan_to_download": "Szkenneld a letöltéshez"
+  },
+  "stats": {
+    "title": "DRMN számokban",
+    "items": [
+      {
+        "stat": "4,9/5",
+        "description": "Átlagos App Store értékelés (10 értékelés)"
+      },
+      {
+        "stat": "10 000+",
+        "description": "Felhasználó töltötte le a DRMN-t az App Store-ból"
+      },
+      {
+        "stat": "30–50%-kal gyorsabban",
+        "description": "Átlagos javulás az elalvási időben"
+      },
+      {
+        "stat": "100 óra",
+        "description": "Professzionálisan rögzített alvási hangok és ambient"
+      },
+      {
+        "stat": "10 óra",
+        "description": "Offline lejátszás egy töltéssel (akkumulátor optimalizált)"
+      },
+      {
+        "stat": "49,2 MB",
+        "description": "App méret (minden iPhone modellhez optimalizálva)"
+      },
+      {
+        "stat": "iOS 17.1+",
+        "description": "Kompatibilis minden modern iPhone-nal"
+      }
+    ]
+  },
+  "features": {
+    "title": "Alvási hangok és természet a jobb pihenésért",
+    "items": [
+      {
+        "icon": "🌊",
+        "title": "Gazdag alvási hangkönyvtár",
+        "description": "Válassz fehér, barna és sötét zajból a mély relaxációhoz. Fedezd fel a természeti hangokat: lágy eső, hullámok, tűz és reggeli madarak. Meditációs ambientek és lágy instrumentális zenék is. Keverd a hangokat a tökéletes alvási környezethez."
+      },
+      {
+        "icon": "😴",
+        "title": "Aludj gyorsabban, aludj mélyebben",
+        "description": "Nehezen alszol el? A tudományosan alátámasztott hangterápia elfedi a forgalmat, szomszédokat és horkolást. Állandó alvási környezetet teremt, amely jelzi az agynak: pihenés. Ébredj frissen minden reggel."
+      },
+      {
+        "icon": "🎯",
+        "title": "Jobban fókuszálsz, hatékonyabban dolgozol",
+        "description": "Meditáció, tanulás vagy munka zajos kávézóban — a DRMN tökéletes hangulatot teremt a koncentrációhoz. Zárj ki zavaró tényezőket, csökkentsd a stresszt és növeld a produktivitást."
+      },
+      {
+        "icon": "👶",
+        "title": "Segíts a babának békésen aludni",
+        "description": "Speciális baba alvási hangok — hajszárító, porszívó és billentyűzet — segítenek a csecsemőknek és kicsiknek gyorsabban elaludni. Ismerős ritmusok megnyugtatnak és egészséges alvási szokásokat alakítanak ki."
+      }
+    ]
+  },
+  "popular_sounds": {
+    "title": "Népszerű alvási hangok",
+    "intro": "A legjobb hangot keresed alváshoz? A DRMN-ben a legkeresettebb alvási hangok — mix, offline és egész éjszaka iPhone-on.",
+    "items": [
+      {
+        "icon": "🌧️",
+        "title": "Esőhang alváshoz",
+        "description": "A lágy eső elfedi a hirtelen zajokat és segít elaludni. Keverd az esőt fehér zajjal a mélyebb alváshoz."
+      },
+      {
+        "icon": "🌀",
+        "title": "Ventilátor hang alváshoz",
+        "description": "A ventilátor egyenletes zúgása elnyomja a forgalmat, horkolást és szomszédokat — klasszikus alvási hang."
+      },
+      {
+        "icon": "🔊",
+        "title": "Fehér zaj alváshoz",
+        "description": "A fehér, barna és sötét zaj állandó háttérréteget hoz létre, amely jelzi az agynak a pihenést."
+      },
+      {
+        "icon": "🌊",
+        "title": "Természeti hangok alváshoz",
+        "description": "Hullámok, tűz és reggeli madarak kiegészítik a könyvtárat — keverd esővel vagy ventilátorral bármikor."
+      }
+    ]
+  },
+  "content": {
+    "title": "Javítsd az alvásod hanggép app-pal",
+    "intro": "A DRMN iOS alvási hanggép app fehér zajjal, esővel, ventilátorral és természeti hangokkal a gyorsabb elalvásért. Több mint 10 000 letöltés és 4,9-es értékelés. Tökéletes álmatlanságra, fókuszra és baba alvásra.",
+    "sections": [
+      {
+        "title": "Hangkönyvtár az igényeidhez",
+        "paragraph1": "Gondosan válogattunk minőségi hangokat relaxációhoz, koncentrációhoz és jobb alváshoz:",
+        "list_items": [
+          "<strong>Fehér, barna és sötét zaj</strong> — elfedi a zavaró hangokat és állandó alvási környezetet teremt",
+          "<strong>Természeti hangok</strong> — eső, hullámok, tűz, ventilátor és reggeli madarak nyugodt helyre visznek",
+          "<strong>Meditáció és fókusz</strong> — ambientek és lágy instrumentális zenék munkához és mindfulness-hez",
+          "<strong>Baba alvási hangok</strong> — hajszárító, porszívó és billentyűzet segít a kicsiknek elaludni"
+        ],
+        "paragraph2": "A legjobb? Több hangot is keverhetsz. Fehér zaj hullámokkal vagy eső meditációval — te döntesz."
+      },
+      {
+        "title": "Tudományosan alátámasztott alvásterápia, ami működik",
+        "paragraph1": "A kutatások szerint az állandó háttérhang javítja az alvás minőségét. Így segít a DRMN:",
+        "list_items": [
+          "<strong>Blokkolja a zavaró hangokat</strong> — forgalom, szomszédok, horkolás nem ébreszt többé",
+          "<strong>Jelzi az agynak a pihenést</strong> — az állandó hang segít lecsillapodni",
+          "<strong>Mélyebb alvást segít</strong> — válogatott frekvenciák támogatják a regeneráló alvásciklusokat"
+        ],
+        "paragraph2": "Több mint 10 000 letöltés és 4,9 az App Store-ban. A felhasználók átlagosan 30–50%-kal gyorsabban alszanak el és ritkábban ébrednek éjjel. Kezdd energikusan a napot."
+      },
+      {
+        "title": "Nem csak alváshoz — fókuszhoz is",
+        "paragraph1": "A DRMN nem csak alvás app — titkos eszköz a koncentrációhoz. Zajos kávézó, vizsga vagy meditáció — a megfelelő hangok sokat számítanak:",
+        "list_items": [
+          "<strong>Eltávolítja a zavaró tényezőket</strong> — csendes buborék bárhol",
+          "<strong>Csökkenti a stresszt</strong> — nyugtató frekvenciák segítenek a fókuszban maradni",
+          "<strong>Növeli a produktivitást</strong> — sokan jobban koncentrálnak háttérhanggal",
+          "<strong>Mélyíti a fókuszt</strong> — tökéletes mély munkához és fontos feladatokhoz"
+        ],
+        "paragraph2": "Home office, éjszakai tanulás vagy pillanatnyi nyugalom — a DRMN tökéletes hanghátteret ad."
+      },
+      {
+        "title": "Segíts a kicsinek egész éjjel aludni",
+        "paragraph1": "Tudjuk, milyen kimerítő, ha a baba nem akar aludni. Ezért külön hangok vannak csecsemőknek és kicsiknek. Lágy hajszárító, porszívó és billentyűzet ismerős ritmusokat hoz létre.",
+        "list_items": [],
+        "paragraph2": "Az állandó, lágy hangok az anyaméhben hallott zajokra emlékeztetnek és biztonságérzetet adnak. Szülők világszerte bíznak a DRMN-ben — te is jobban alszol."
+      },
+      {
+        "title": "A való életre tervezve",
+        "paragraph1": "Minden részlet úgy van megtervezve, hogy a DRMN illeszkedjen a napodba:",
+        "list_items": [
+          "<strong>Professzionálisan rögzítve</strong> — több mint 100 óra minőségi audio",
+          "<strong>Mix és kombinációk</strong> — készítsd el a tökéletes keveréket",
+          "<strong>Okos alvási időzítő</strong> — automatikus fade-out, ne aggódj az egész éjszakáért",
+          "<strong>Egyszerű szép felület</strong> — másodpercek alatt kész",
+          "<strong>Offline működik</strong> — töltsd le a kedvenceket és hallgasd akár 10 órán át internet nélkül",
+          "<strong>Akkumulátor-kímélő</strong> — egész éjszaka anélkül, hogy lemerülne az iPhone",
+          "<strong>Ingyenes kezdés</strong> — próbáld ki ingyen, prémium opcionális"
+        ],
+        "paragraph2": "A DRMN iOS 17.1+ iPhone-on működik. Ingyenes verzió: 1 órás időzítő, offline, mix és akkumulátor-optimalizálás. A prémium hosszabb lejátszást és több hangot nyit meg."
+      }
+    ]
+  },
+  "benefits": {
+    "title": "Miért a DRMN?",
+    "items": [
+      "Minőségi professzionális hangok, amelyek tényleg segítenek elaludni",
+      "Keverj több hangot a tökéletes alvási környezethez",
+      "Okos időzítő automatikus fade-out-tal — állítsd be és felejtsd el",
+      "Szép intuitív felület, könnyű használni",
+      "Teljesen offline működik a hangok letöltése után",
+      "Akkumulátor optimalizálva egész éjszakára",
+      "Ingyenes letöltés, prémium opcionális"
+    ]
+  },
+  "comparison": {
+    "title": "A legjobb alvási hanggép — DRMN összehasonlítás",
+    "description": "Hogyan viszonyul a DRMN a tipikus ingyenes és prémium appokhoz. Nyilvános adatokon és felhasználói visszajelzéseken alapul.",
+    "table": {
+      "headers": [
+        "Funkció",
+        "DRMN",
+        "Tipikus ingyenes appok",
+        "Prémium appok"
+      ],
+      "rows": [
+        {
+          "feature": "Ingyenes verzió",
+          "drmn": "1 órás időzítő (elég az alváshoz)",
+          "typical": "Korlátozott hangok vagy reklámok",
+          "premium": "Előfizetés szükséges"
+        },
+        {
+          "feature": "Offline",
+          "drmn": "Igen (10+ óra)",
+          "typical": "Korlátozott vagy reklámokkal",
+          "premium": "Igen"
+        },
+        {
+          "feature": "Hangmix",
+          "drmn": "Igen, korlátlan",
+          "typical": "Nem vagy korlátozott",
+          "premium": "Igen"
+        },
+        {
+          "feature": "Akkumulátor-optimalizálás",
+          "drmn": "Igen, egész éjszaka",
+          "typical": "Részleges",
+          "premium": "Igen"
+        },
+        {
+          "feature": "Baba alvási hangok",
+          "drmn": "Igen (hajszárító, porszívó, billentyűzet)",
+          "typical": "Nem",
+          "premium": "Néha"
+        },
+        {
+          "feature": "Alvási időzítő",
+          "drmn": "Automatikus fade-out",
+          "typical": "Alap",
+          "premium": "Automatikus fade-out"
+        },
+        {
+          "feature": "Fájlméret",
+          "drmn": "49,2 MB",
+          "typical": "30–70 MB",
+          "premium": "50–100 MB"
+        },
+        {
+          "feature": "iOS követelmény",
+          "drmn": "17.1+",
+          "typical": "15.0+",
+          "premium": "16.0+"
+        },
+        {
+          "feature": "App Store értékelés",
+          "drmn": "4,9/5 (10 értékelés)",
+          "typical": "3,5–4,5/5",
+          "premium": "4,0–4,8/5"
+        }
+      ]
+    }
+  },
+  "testimonials": {
+    "title": "Mit mondanak a felhasználók a DRMN-ről",
+    "items": [
+      {
+        "quote": "40%-kal gyorsabban alszom el a DRMN-nel. A mix lehetővé teszi a fehér zaj és hullámok kombinálását. A legjobb alvás évek óta!",
+        "name": "Sarah M.",
+        "location": "Kalifornia, USA",
+        "role": "Szakember"
+      },
+      {
+        "quote": "A babánk egész éjjel alszik a hajszárító hangnak köszönhetően. Az egyetlen, ami következetesen működik. Az offline életmentő utazáskor.",
+        "name": "Michael R.",
+        "location": "Texas, USA",
+        "role": "Szülő"
+      },
+      {
+        "quote": "Álmatlansággal a DRMN mindent megváltoztatott. Minden éjjel használom és frissen ébredek. Nem aggódom többé az akkumulátor miatt.",
+        "name": "Jennifer L.",
+        "location": "New York, USA",
+        "role": "Álmatlanságban szenvedő"
+      },
+      {
+        "quote": "A DRMN-t munka közben használom fókuszhoz. A mix tökéletes hangulatot teremt. Az ingyenes 1 órás időzítő — remek érték!",
+        "name": "David K.",
+        "location": "London, UK",
+        "role": "Távmunkás"
+      }
+    ]
+  },
+  "whats_new": {
+    "title": "Újdonságok",
+    "description": "Legutóbbi DRMN frissítések",
+    "items": [
+      {
+        "date": "2025. január",
+        "title": "Továbbfejlesztett akkumulátor-optimalizálás",
+        "description": "Hatékonyabb egész éjszakára. Akár 10 óra folyamatos lejátszás egy töltéssel."
+      },
+      {
+        "date": "2025. január",
+        "title": "Új alvási hangok",
+        "description": "10 új professzionális felvétel — több mint 100 órás könyvtár."
+      },
+      {
+        "date": "2024. december",
+        "title": "Továbbfejlesztett hangmix",
+        "description": "Jobb hangminőség és simább átmenetek a hangok között."
+      }
+    ]
+  },
+  "final_cta": {
+    "title": "Készen állsz ma este jobban aludni?",
+    "paragraph1": "Csatlakozz több mint 10 000 felhasználóhoz, akik javították alvásukat a DRMN-nel. 4,9/5 az App Store-ban — az ingyenes alvási hangok app 30–50%-kal gyorsabb elalvást segít. Ingyenes verzió: 1 órás időzítő, offline és mix. Töltsd le ma és próbáld ki a professzionális hangokat ingyen.",
+    "cta_text": "Töltsd le ingyen az alvási hangok appot",
+    "cta_url": "https://apps.apple.com/app/id6746480683",
+    "cta_aria_label": "Töltsd le ingyen az alvási hangok appot az App Store-ból",
+    "cta_img_alt": "Töltsd le az alvási hangok appot az App Store-ban"
+  },
+  "footer": {
+    "copyright": "© 2025 DRMN. Minden jog fenntartva.",
+    "privacy_link": "Adatvédelmi irányelvek",
+    "privacy_url": "/privacy.html",
+    "terms_link": "Felhasználási feltételek",
+    "terms_url": "/terms.html",
+    "fazier_badge_alt": "Fazier jelvény",
+    "superlaunch_badge_alt": "Kiemelve a Super Launch-on"
+  },
+  "app_info": {
+    "developer": "Vladimir Ivakhnenko",
+    "category": "Egészség és fitnesz",
+    "age_rating": "4+",
+    "file_size": "49,2 MB",
+    "compatibility": "iOS 17.1 vagy újabb szükséges",
+    "platform": "iPhone",
+    "copyright": "© 2025 c-basso",
+    "in_app_purchases": true,
+    "subscriptions": [
+      {
+        "name": "White Noise Machine",
+        "description": "Jobb alvás alvási hangokkal a DRMN-ben",
+        "price": "$5.99",
+        "type": "Ingyenes próba"
+      },
+      {
+        "name": "Lifetime Plan",
+        "description": "Egyszeri vásárlás élethosszig tartó hozzáférésért",
+        "price": "$19.99",
+        "type": "Egyszeri"
+      }
+    ]
+  },
+  "seo": {
+    "breadcrumb_home": "Kezdőlap",
+    "faq_title": "GYIK: alvási hanggép, alvási hangok és fehér zaj",
+    "faq": [
+      {
+        "question": "Mi a legjobb hang alváshoz?",
+        "answer": "Rajtad múlik — sokan az esőt, ventilátort vagy az állandó fehér zajt választják. A DRMN-ben meghallgathatod és keverheted a hangokat, hogy megtaláld a leggyorsabb elalvást."
+      },
+      {
+        "question": "Mi az alvási hanggép?",
+        "answer": "Állandó hátteret játszik le — esőt, ventilátort vagy fehér zajt — hogy elfedje a zajt és segítsen elaludni. A DRMN iPhone app mix-sel, offline lejátszással és alvási időzítővel, mint egy fizikai hanggép."
+      },
+      {
+        "question": "A legjobb fehér zaj app iPhone-ra?",
+        "answer": "A DRMN 4,9-es értékeléssel és több mint 10 000 letöltéssel rendelkezik. Eső, ventilátor, fehér zaj és 100 óra alvási és természeti hang — a felhasználók 30–50%-kal gyorsabban alszanak el."
+      },
+      {
+        "question": "Van ingyenes fehér zaj app?",
+        "answer": "Igen! A DRMN ingyenes az App Store-ban. Az ingyenes verzió tartalmaz 1 órás időzítőt, offline módot, mixet és alvási hangokat. A prémium hosszabb lejátszást nyit meg."
+      },
+      {
+        "question": "Milyen hangok vannak az alvás appban?",
+        "answer": "A DRMN több mint 100 óra professzionális audiót kínál: fehér, barna és sötét zaj, eső, hullámok, tűz, reggeli madarak, meditáció és baba hangok (hajszárító, porszívó, billentyűzet)."
+      },
+      {
+        "question": "Működik offline az app?",
+        "answer": "Igen! A hangok letöltése után a DRMN teljesen offline működik. Akkumulátor-optimalizálással akár 10 óra internet nélkül."
+      },
+      {
+        "question": "A legjobb app baba alvásához?",
+        "answer": "A DRMN speciális baba hangokat tartalmaz (hajszárító, porszívó, billentyűzet), amelyek gyorsabb elalvást segítenek. Ismerős ritmusok megnyugtatnak és nyugodt környezetet teremtenek."
+      },
+      {
+        "question": "Hogyan működik a hanggép app?",
+        "answer": "A DRMN fehér zajt és alvási hangokat ad pihenéshez és fókuszhoz. Elfedi a zajt, állandó alvási környezetet teremt és mélyebb alvást segít — mint egy fizikai hanggép."
+      },
+      {
+        "question": "Keverhetem a hangokat?",
+        "answer": "Igen! Kombináld a fehér zajt hullámokkal vagy az esőt meditációval. Alkosd meg a saját alvási élményed."
+      },
+      {
+        "question": "Van alvási időzítő?",
+        "answer": "Igen! Időzítő automatikus fade-out-tal. Állítsd be — a hang lassan elhalványul elalvás után."
+      },
+      {
+        "question": "Mi a fehér zaj alváshoz és hogyan segít?",
+        "answer": "Állandó hang, amely elfedi a zavaró zajokat és gyorsabb elalvást segít. A DRMN elnyomja a forgalmat, szomszédokat és más hangokat állandó alvási környezetben."
+      },
+      {
+        "question": "Alkalmas álmatlanságra?",
+        "answer": "Igen! A DRMN 4,9-es és több mint 10 000 letöltés. Zaj elfedésével a felhasználók átlagosan 30–50%-kal gyorsabban alszanak el. Töltsd le ingyen."
+      },
+      {
+        "question": "Hány letöltése van a DRMN-nek?",
+        "answer": "Több mint 10 000 az App Store-ban, 4,9/5 10 értékelésből. 100 óra hang és akár 10 óra offline egy töltéssel."
+      },
+      {
+        "question": "Mi a DRMN App Store értékelése?",
+        "answer": "4,9/5 10 értékelés alapján. Több mint 10 000 letöltés, 100 óra alvási hang és offline lejátszás."
+      },
+      {
+        "question": "Miben különbözik a DRMN más appoktól?",
+        "answer": "A DRMN bőkezű ingyenes verzióval (1 órás időzítő), fejlett mix-sel, baba hangokkal és akkumulátor-optimalizálással tűnik ki — offline és professzionális hangok előfizetés nélkül."
+      },
+      {
+        "question": "Mi teszi egyedivé a DRMN-t az ingyenes alternatívákhoz képest?",
+        "answer": "Ingyenes verzió 1 órás időzítővel előfizetés nélkül. Míg mások korlátozzák a hangokat vagy vásárlást kérnek, a DRMN mixet, offline módot és akkumulátor-optimalizálást ad ingyen — plusz baba hangokat, amik sokaknál hiányoznak."
+      },
+      {
+        "question": "Jobb a DRMN más alvási hang appoknál?",
+        "answer": "Ingyenes verzió: időzítő, mix, offline, akkumulátor előfizetés nélkül. 4,9, több mint 10 000 letöltés, 30–50%-kal gyorsabb elalvás. Baba hangok és okos időzítő ingyen — funkciók, amikért mások fizetnek."
+      }
+    ],
+    "structured_data": {
+      "software_application": {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "DRMN",
+        "alternateName": "DRMN alvás app",
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "iOS",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://apps.apple.com/app/id6746480683"
+        },
+        "description": "Alvási hangok app és fehér zaj iPhone-ra. Ingyenes verzió esővel, ventilátorral, mix-sel és offline móddal. Alvás, fókusz és baba alvás.",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://drmn.xyz/img/logo.webp",
+          "width": 176,
+          "height": 176,
+          "caption": "DRMN app logó"
+        },
+        "screenshot": {
+          "@type": "ImageObject",
+          "url": "https://drmn.xyz/img/logo.webp",
+          "width": 176,
+          "height": 176
+        },
+        "url": "https://drmn.xyz/hu/",
+        "author": {
+          "@type": "Person",
+          "name": "Vladimir Ivakhnenko"
+        },
+        "publisher": {
+          "@type": "Person",
+          "name": "Vladimir Ivakhnenko"
+        },
+        "keywords": "alvási hangok, alvási hanggép, fehér zaj, alvás app, esőhang, ventilátor hang, offline alvás",
+        "inLanguage": "hu",
+        "datePublished": "2024-01-01",
+        "dateModified": "2025-01-15",
+        "softwareVersion": "1.5",
+        "fileSize": "49.2MB",
+        "softwareRequirements": "iOS 17.1 vagy újabb szükséges",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "ratingCount": "10"
+        }
+      },
+      "organization": {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "DRMN",
+        "url": "https://drmn.xyz/hu/",
+        "logo": "https://drmn.xyz/img/logo.webp",
+        "description": "DRMN — alvási hangok app és fehér zaj iPhone-ra. Ingyenes verzió mix-sel és offline móddal. Alvás, fókusz és baba alvás."
+      },
+      "website": {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "DRMN",
+        "url": "https://drmn.xyz/hu/",
+        "description": "Alvási hangok app és fehér zaj iPhone-ra. Ingyenes verzió mix-sel és offline móddal. Töltsd le ingyen az App Store-ból.",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://drmn.xyz/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      "howto": {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Hogyan használd az alvási hangok appot",
+        "description": "Tanuld meg, hogyan használd a DRMN-t a gyorsabb elalvásért. Lépésről lépésre útmutató.",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Töltsd le ingyen",
+            "text": "Töltsd le a DRMN-t az App Store-ból iPhone-odra. iOS 17.1+ szükséges. Az ingyenes verzió tartalmaz 1 órás időzítőt.",
+            "url": "https://apps.apple.com/app/id6746480683"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Böngészd az alvási hangokat",
+            "text": "Nyisd meg az appot és fedezd fel a könyvtárat: fehér és barna zaj, természet (eső, hullámok, tűz), meditáció és baba hangok."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Válassz hangokat",
+            "text": "Igényeid szerint — fehér zaj elfedéshez, természet relaxációhoz, baba hangok kicsiknek. Hallgasd meg lejátszás előtt."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Keverd a hangokat",
+            "text": "Kombináld a fehér zajt hullámokkal vagy az esőt meditációval. Teremts tökéletes alvási környezetet."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "Állítsd be az alvási időzítőt",
+            "text": "Kapcsold be az automatikus fade-out-ot, ha nem akarsz hangot egész éjjel. A hangerő lassan csökken."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 6,
+            "name": "Indítsd el és aludj",
+            "text": "Nyomd meg a play gombot és állítsd a hangerőt. iPhone közel vagy fülhallgató — mindkettő működik."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 7,
+            "name": "Töltsd le offline használatra",
+            "text": "Töltsd le a kedvenceket offline használatra. Megszakítás nélküli alvás bárhol internet nélkül."
+          }
+        ]
+      }
+    }
+  }
+}

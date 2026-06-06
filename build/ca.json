@@ -1,0 +1,555 @@
+{
+  "meta": {
+    "lang": "ca",
+    "title": "DRMN — sons per dormir, soroll blanc i màquina per iPhone",
+    "description": "App de sons per dormir per a iPhone: pluja, ventilador, soroll blanc, mix i offline. Descarrega DRMN gratis a l'App Store — son, focus i son del nadó.",
+    "keywords": "sons per dormir, màquina de soroll per dormir, soroll blanc, so de pluja per dormir, so de ventilador per dormir, app per dormir, app soroll blanc, sons per nadó, concentració, son offline",
+    "author": "DRMN",
+    "og_url": "https://drmn.xyz/ca/",
+    "og_title": "Màquina de soroll per dormir i sons per dormir | DRMN",
+    "og_description": "Màquina de soroll per dormir per a iPhone: pluja, ventilador, soroll blanc i natura. Mix, offline, temporitzador. Descarrega DRMN gratis a l'App Store.",
+    "og_image": "https://drmn.xyz/ca/site_preview.png",
+    "og_image_alt": "App DRMN — Dorm millor, adorm-te més ràpid",
+    "og_locale": "ca_ES",
+    "twitter_url": "https://drmn.xyz/ca/",
+    "twitter_title": "Màquina de soroll per dormir i sons per dormir | DRMN",
+    "twitter_description": "Màquina de soroll per dormir per a iPhone: pluja, ventilador, soroll blanc i natura. Mix, offline, temporitzador. Descarrega DRMN gratis a l'App Store.",
+    "twitter_image": "https://drmn.xyz/ca/site_preview.png",
+    "twitter_image_alt": "App DRMN — Dorm millor, adorm-te més ràpid",
+    "twitter_site": "@c__basso",
+    "twitter_creator": "@c__basso",
+    "canonical": "https://drmn.xyz/ca/",
+    "app_store_id": "6746480683",
+    "og_type": "website",
+    "twitter_card": "summary_large_image",
+    "theme_color": "#1a1b2e",
+    "apple_mobile_web_app_status_bar_style": "default",
+    "og_image_width": "1200",
+    "og_image_height": "630",
+    "twitter_image_width": "1200",
+    "twitter_image_height": "630"
+  },
+  "header": {
+    "app_name_suffix": "Màquina de soroll per dormir",
+    "logo_alt": "Logotip de l'app DRMN màquina de soroll per dormir per a iPhone",
+    "app_name": "DRMN",
+    "title": "App de màquina de soroll per dormir per a iPhone",
+    "tagline": "Adorm-te més ràpid amb els millors sons per dormir. DRMN és una app amb pluja, ventilador, soroll blanc i sons de la natura — mix, reproducció offline i estalvi de bateria tota la nit.",
+    "tldr": "DRMN és una app iOS gratuïta de sons per dormir que t'ajuda a adormir-te un 30–50 % més ràpid. La versió gratuïta inclou pluja, ventilador, soroll blanc, temporitzador d'1 hora, offline, mix de sons i optimització de bateria. Descarrega gratis a l'App Store.",
+    "download_text": "Descarrega ara",
+    "download_url": "https://apps.apple.com/app/id6746480683",
+    "download_aria_label": "Descarrega l'app gratuïta de sons per dormir des de l'App Store",
+    "download_img_alt": "Descarrega l'app de sons per dormir a l'App Store",
+    "scan_to_download": "Escaneja per descarregar"
+  },
+  "stats": {
+    "title": "DRMN en xifres",
+    "items": [
+      {
+        "stat": "4,9/5",
+        "description": "Valoració mitjana a l'App Store (10 ressenyes)"
+      },
+      {
+        "stat": "10.000+",
+        "description": "Usuaris han descarregat DRMN des de l'App Store"
+      },
+      {
+        "stat": "30–50 % més ràpid",
+        "description": "Millora mitjana del temps per adormir-se"
+      },
+      {
+        "stat": "100 hores",
+        "description": "Sons per dormir i ambient enregistrats professionalment"
+      },
+      {
+        "stat": "10 hores",
+        "description": "Reproducció offline en una càrrega (bateria optimitzada)"
+      },
+      {
+        "stat": "49,2 MB",
+        "description": "Mida de l'app (optimitzada per a tots els models d'iPhone)"
+      },
+      {
+        "stat": "iOS 17.1+",
+        "description": "Compatible amb tots els iPhone moderns"
+      }
+    ]
+  },
+  "features": {
+    "title": "Sons per dormir i natura per a un millor descans",
+    "items": [
+      {
+        "icon": "🌊",
+        "title": "Biblioteca rica de sons per dormir",
+        "description": "Tria soroll blanc, marró i fosc per a una relaxació profunda. Descobreix sons de la natura: pluja suau, ones, foc i ocells del matí. Ambient de meditació i instrumentals suaus. Mixa sons per al teu entorn de son perfecte."
+      },
+      {
+        "icon": "😴",
+        "title": "Adorm-te més ràpid, dorm més profund",
+        "description": "Et costa adormir-te? La teràpia sonora amb base científica emmascara el trànsit, els veïns i els roncs. Crea un entorn de son estable que senyala al cervell que és hora de descansar. Desperta't descansat cada matí."
+      },
+      {
+        "icon": "🎯",
+        "title": "Concentra't millor, treballa més intel·ligent",
+        "description": "Medites, estudies o treballes en una cafeteria sorollosa? DRMN crea l'atmosfera perfecta per a la concentració. Bloqueja distraccions, redueix l'estrès i augmenta la productivitat."
+      },
+      {
+        "icon": "👶",
+        "title": "Ajuda el teu nadó a dormir tranquil",
+        "description": "Sons especials per a nadons — assecador, aspiradora i teclat — ajuden els petits a adormir-se més ràpid. Ritmes coneguts els calmen i fomenten hàbits de son saludables."
+      }
+    ]
+  },
+  "popular_sounds": {
+    "title": "Sons populars per dormir",
+    "intro": "Busques el millor so per adormir-te? DRMN té els sons per dormir més cercats — llestos per mixar, reproduir offline i usar tota la nit a l'iPhone.",
+    "items": [
+      {
+        "icon": "🌧️",
+        "title": "So de pluja per adormir-se",
+        "description": "La pluja suau emmascara sorolls sobtats i t'ajuda a adormir-te. Mixa pluja amb soroll blanc per a un son més profund."
+      },
+      {
+        "icon": "🌀",
+        "title": "So de ventilador per adormir-se",
+        "description": "El brunzit constant del ventilador atenua el trànsit, els roncs i els veïns — un so clàssic per dormir en què confien milions."
+      },
+      {
+        "icon": "🔊",
+        "title": "Soroll blanc per adormir-se",
+        "description": "El soroll blanc, marró i fosc creen una capa de fons estable que senyala al cervell que és hora de descansar."
+      },
+      {
+        "icon": "🌊",
+        "title": "Sons de la natura per adormir-se",
+        "description": "Ones, foc i ocells del matí complementen la biblioteca — mixa'ls en qualsevol moment amb pluja o ventilador."
+      }
+    ]
+  },
+  "content": {
+    "title": "Millora el teu son amb una app de màquina de soroll",
+    "intro": "DRMN és una app iOS de màquina de soroll per dormir amb soroll blanc, pluja, ventilador i sons de la natura per adormir-te més ràpid. Més de 10.000 descàrregues i valoració 4,9. Perfecta per a insomni, focus i son del nadó.",
+    "sections": [
+      {
+        "title": "Biblioteca de sons per a les teves necessitats",
+        "paragraph1": "Hem seleccionat amb cura sons de qualitat per a relaxació, focus i millor son:",
+        "list_items": [
+          "<strong>Soroll blanc, marró i fosc</strong> — emmascara sorolls molestos i crea un entorn de son estable",
+          "<strong>Sons de la natura</strong> — pluja, ones, foc, ventilador i ocells del matí et porten a un lloc tranquil",
+          "<strong>Meditació i focus</strong> — pistes ambient i instrumentals suaus per a treball i mindfulness",
+          "<strong>Sons per a nadons</strong> — assecador, aspiradora i teclat ajuden els més petits a adormir-se"
+        ],
+        "paragraph2": "El millor? Pots mixar diversos sons. Soroll blanc amb ones o pluja amb meditació — tu decideixes."
+      },
+      {
+        "title": "Teràpia del son amb base científica que funciona",
+        "paragraph1": "La recerca mostra que el soroll de fons constant millora la qualitat del son. Així t'ajuda DRMN:",
+        "list_items": [
+          "<strong>Bloqueja sorolls molestos</strong> — el trànsit, els veïns i els roncs ja no et despertaran",
+          "<strong>Senyala descans al cervell</strong> — el so constant ajuda a calmar la ment",
+          "<strong>Fomenta un son més profund</strong> — freqüències seleccionades donen suport als cicles de son reparador"
+        ],
+        "paragraph2": "Més de 10.000 descàrregues i 4,9 a l'App Store. Els usuaris s'adormen de mitjana un 30–50 % més ràpid i es desperten menys a la nit. Comença el dia amb energia."
+      },
+      {
+        "title": "No només per dormir — també per al focus",
+        "paragraph1": "DRMN no és només una app per dormir — la teva arma secreta per a la concentració. Cafeteria sorollosa, examen o meditació — els sons adequats marquen la diferència:",
+        "list_items": [
+          "<strong>Elimina distraccions</strong> — crea una bombolla silenciosa on siguis",
+          "<strong>Redueix l'estrès</strong> — freqüències calmants t'ajuden a mantenir el focus",
+          "<strong>Augmenta la productivitat</strong> — molts es concentren millor amb soroll de fons",
+          "<strong>Enforteix la concentració</strong> — ideal per a deep work i tasques importants"
+        ],
+        "paragraph2": "Teletreball, estudi nocturn o un moment de calma — DRMN ofereix el fons d'àudio perfecte."
+      },
+      {
+        "title": "Ajuda el teu petit a dormir tota la nit",
+        "paragraph1": "Sabem com d'esgotador és quan el nadó no vol dormir. Per això hi ha sons especials per a nadons i infants petits. Assecador suau, aspiradora i teclat creen ritmes coneguts.",
+        "list_items": [],
+        "paragraph2": "Sons constants i suaus recorden l'úter i donen sensació de seguretat. Pares de tot el món confien en DRMN — i tu també dormiràs millor."
+      },
+      {
+        "title": "Feta per a la vida real",
+        "paragraph1": "Cada detall està pensat perquè DRMN encaixi al teu dia:",
+        "list_items": [
+          "<strong>Enregistraments professionals</strong> — més de 100 hores d'àudio de qualitat",
+          "<strong>Mix i combinacions</strong> — crea la teva barreja perfecta",
+          "<strong>Temporitzador de son intel·ligent</strong> — esvaïment automàtic, sense preocupacions tota la nit",
+          "<strong>Interfície simple i bonica</strong> — a punt en segons",
+          "<strong>Funciona offline</strong> — descarrega favorits i escolta fins a 10 hores sense internet",
+          "<strong>Estalvia bateria</strong> — tota la nit sense iPhone descarregat",
+          "<strong>Inici gratuït</strong> — prova gratis, premium opcional"
+        ],
+        "paragraph2": "DRMN funciona a l'iPhone amb iOS 17.1+. Versió gratuïta: temporitzador d'1 hora, offline, mix i optimització de bateria. Premium desbloqueja reproducció més llarga i més sons."
+      }
+    ]
+  },
+  "benefits": {
+    "title": "Per què DRMN?",
+    "items": [
+      "Sons professionals de qualitat que realment t'ajuden a adormir-te",
+      "Mixa diversos sons per al teu entorn de son perfecte",
+      "Temporitzador intel·ligent amb esvaïment automàtic — activa i oblida",
+      "Interfície bonica i intuïtiva, fàcil d'usar",
+      "Funciona completament offline després de descarregar els sons",
+      "Bateria optimitzada per a tota la nit",
+      "Descàrrega gratuïta, premium opcional"
+    ]
+  },
+  "comparison": {
+    "title": "Millor màquina de soroll per dormir — comparativa DRMN",
+    "description": "Com es compara DRMN amb apps gratuïtes i premium típiques. Basat en dades públiques i feedback d'usuaris.",
+    "table": {
+      "headers": [
+        "Funció",
+        "DRMN",
+        "Apps gratuïtes típiques",
+        "Apps premium"
+      ],
+      "rows": [
+        {
+          "feature": "Versió gratuïta",
+          "drmn": "Temporitzador d'1 hora (prou per adormir-se)",
+          "typical": "Sons limitats o anuncis",
+          "premium": "Cal subscripció"
+        },
+        {
+          "feature": "Offline",
+          "drmn": "Sí (10+ hores)",
+          "typical": "Limitat o amb anuncis",
+          "premium": "Sí"
+        },
+        {
+          "feature": "Mix de sons",
+          "drmn": "Sí, il·limitat",
+          "typical": "No o limitat",
+          "premium": "Sí"
+        },
+        {
+          "feature": "Optimització de bateria",
+          "drmn": "Sí, tota la nit",
+          "typical": "Parcial",
+          "premium": "Sí"
+        },
+        {
+          "feature": "Sons per a nadons",
+          "drmn": "Sí (assecador, aspiradora, teclat)",
+          "typical": "No",
+          "premium": "De vegades"
+        },
+        {
+          "feature": "Temporitzador de son",
+          "drmn": "Esvaïment automàtic",
+          "typical": "Bàsic",
+          "premium": "Esvaïment automàtic"
+        },
+        {
+          "feature": "Mida del fitxer",
+          "drmn": "49,2 MB",
+          "typical": "30–70 MB",
+          "premium": "50–100 MB"
+        },
+        {
+          "feature": "Requisits iOS",
+          "drmn": "17.1+",
+          "typical": "15.0+",
+          "premium": "16.0+"
+        },
+        {
+          "feature": "Valoració App Store",
+          "drmn": "4,9/5 (10 ressenyes)",
+          "typical": "3,5–4,5/5",
+          "premium": "4,0–4,8/5"
+        }
+      ]
+    }
+  },
+  "testimonials": {
+    "title": "Què diuen els usuaris sobre DRMN",
+    "items": [
+      {
+        "quote": "M'adormo un 40 % més ràpid amb DRMN. El mix em permet combinar soroll blanc i ones. El millor son en anys!",
+        "name": "Sarah M.",
+        "location": "Califòrnia, EUA",
+        "role": "Professional"
+      },
+      {
+        "quote": "El nostre nadó dorm tota la nit gràcies al so de l'assecador. L'únic que funciona de manera consistent. L'offline ens salva en viatges.",
+        "name": "Michael R.",
+        "location": "Texas, EUA",
+        "role": "Pare"
+      },
+      {
+        "quote": "Amb insomni, DRMN ho ha canviat tot. L'uso cada nit i em despert descansat. Optimització de bateria — sense por de quedar-me sense.",
+        "name": "Jennifer L.",
+        "location": "Nova York, EUA",
+        "role": "Insomni"
+      },
+      {
+        "quote": "Faig servir DRMN per al focus a la feina. El mix crea l'atmosfera perfecta de concentració. Temporitzador gratuït d'1 hora — gran valor!",
+        "name": "David K.",
+        "location": "Londres, Regne Unit",
+        "role": "Teletreball"
+      }
+    ]
+  },
+  "whats_new": {
+    "title": "Novetats",
+    "description": "Últimes actualitzacions de DRMN",
+    "items": [
+      {
+        "date": "Gener 2025",
+        "title": "Optimització de bateria millorada",
+        "description": "Més eficient tota la nit. Fins a 10 hores de reproducció contínua en una càrrega."
+      },
+      {
+        "date": "Gener 2025",
+        "title": "Nous sons per dormir",
+        "description": "10 noves gravacions professionals — la biblioteca supera les 100 hores."
+      },
+      {
+        "date": "Desembre 2024",
+        "title": "Mix de sons millorat",
+        "description": "Millor qualitat d'àudio i transicions més suaus entre sons."
+      }
+    ]
+  },
+  "final_cta": {
+    "title": "Preparat per dormir millor aquesta nit?",
+    "paragraph1": "Uneix-te a més de 10.000 usuaris que han millorat el son amb DRMN. 4,9/5 a l'App Store — app gratuïta de sons per dormir que t'ajuda a adormir-te un 30–50 % més ràpid. Versió gratuïta: temporitzador d'1 hora, offline i mix. Descarrega avui i prova sons professionals gratis.",
+    "cta_text": "Descarrega l'app gratuïta de sons per dormir",
+    "cta_url": "https://apps.apple.com/app/id6746480683",
+    "cta_aria_label": "Descarrega l'app gratuïta de sons per dormir des de l'App Store",
+    "cta_img_alt": "Descarrega l'app de sons per dormir a l'App Store"
+  },
+  "footer": {
+    "copyright": "© 2025 DRMN. Tots els drets reservats.",
+    "privacy_link": "Política de privadesa",
+    "privacy_url": "/privacy.html",
+    "terms_link": "Condicions d'ús",
+    "terms_url": "/terms.html",
+    "fazier_badge_alt": "Insígnia Fazier",
+    "superlaunch_badge_alt": "Destacat a Super Launch"
+  },
+  "app_info": {
+    "developer": "Vladimir Ivakhnenko",
+    "category": "Salut i fitness",
+    "age_rating": "4+",
+    "file_size": "49,2 MB",
+    "compatibility": "Requereix iOS 17.1 o posterior",
+    "platform": "iPhone",
+    "copyright": "© 2025 c-basso",
+    "in_app_purchases": true,
+    "subscriptions": [
+      {
+        "name": "White Noise Machine",
+        "description": "Millor son amb sons per dormir a DRMN",
+        "price": "$5.99",
+        "type": "Prova gratuïta"
+      },
+      {
+        "name": "Lifetime Plan",
+        "description": "Compra única — accés de per vida",
+        "price": "$19.99",
+        "type": "Pagament únic"
+      }
+    ]
+  },
+  "seo": {
+    "breadcrumb_home": "Inici",
+    "faq_title": "FAQ: màquina de soroll per dormir, sons per dormir i soroll blanc",
+    "faq": [
+      {
+        "question": "Quin so és el millor per adormir-se?",
+        "answer": "Depèn de tu — molts trien pluja, ventilador o soroll blanc constant. A DRMN pots preescoltar i mixar sons per trobar el que t'ajuda a adormir-te més ràpid."
+      },
+      {
+        "question": "Què és una màquina de soroll per dormir?",
+        "answer": "Reprodueix un fons constant — pluja, ventilador o soroll blanc — per emmascarar soroll i ajudar-te a dormir. DRMN és una app per a iPhone amb mix, reproducció offline i temporitzador de son, com una màquina física."
+      },
+      {
+        "question": "Millor app de soroll blanc per a iPhone?",
+        "answer": "DRMN té valoració 4,9 i més de 10.000 descàrregues. Pluja, ventilador, soroll blanc i 100 hores de sons per dormir i natura — els usuaris s'adormen un 30–50 % més ràpid."
+      },
+      {
+        "question": "Hi ha una app gratuïta de soroll blanc?",
+        "answer": "Sí! DRMN és gratuïta a l'App Store. La versió gratuïta inclou temporitzador d'1 hora, offline, mix i sons per dormir. Premium desbloqueja reproducció més llarga."
+      },
+      {
+        "question": "Quins sons té l'app per dormir?",
+        "answer": "DRMN ofereix més de 100 hores d'àudio professional: soroll blanc, marró i fosc, pluja, ones, foc, ocells del matí, meditació i sons per a nadons (assecador, aspiradora, teclat)."
+      },
+      {
+        "question": "L'app funciona offline?",
+        "answer": "Sí! Després de descarregar els sons, DRMN funciona completament offline. Amb optimització de bateria — fins a 10 hores sense internet."
+      },
+      {
+        "question": "Millor app per al son del nadó?",
+        "answer": "DRMN inclou sons especials per a nadons (assecador, aspiradora, teclat) que ajuden a adormir-se més ràpid. Ritmes coneguts els calmen i creen un entorn tranquil."
+      },
+      {
+        "question": "Com funciona una app de màquina de soroll?",
+        "answer": "DRMN ofereix soroll blanc i sons per dormir per a calma i focus. Emmascara soroll, crea un entorn de son estable i fomenta un son més profund — com una màquina física."
+      },
+      {
+        "question": "Puc mixar sons?",
+        "answer": "Sí! Combina soroll blanc amb ones o pluja amb meditació. Crea la teva pròpia experiència de son."
+      },
+      {
+        "question": "L'app té temporitzador de son?",
+        "answer": "Sí! Temporitzador amb esvaïment automàtic. Configura'l — el so s'esvaeix gradualment després d'adormir-te."
+      },
+      {
+        "question": "Què és el soroll blanc per dormir i com ajuda?",
+        "answer": "So constant que emmascara soroll molest i t'ajuda a adormir-te més ràpid. DRMN atenua trànsit, veïns i altres sons per a un entorn de son estable."
+      },
+      {
+        "question": "És adequat per a insomni?",
+        "answer": "Sí! DRMN té 4,9 i més de 10.000 descàrregues. Emmascarant el soroll, els usuaris s'adormen de mitjana un 30–50 % més ràpid. Descarrega gratis."
+      },
+      {
+        "question": "Quantes descàrregues té DRMN?",
+        "answer": "Més de 10.000 a l'App Store, 4,9/5 de 10 ressenyes. 100 hores de sons i fins a 10 hores offline en una càrrega."
+      },
+      {
+        "question": "Quina és la valoració de DRMN a l'App Store?",
+        "answer": "4,9/5 basat en 10 ressenyes. Més de 10.000 descàrregues, 100 hores de sons per dormir i reproducció offline."
+      },
+      {
+        "question": "En què es diferencia DRMN d'altres apps?",
+        "answer": "DRMN destaca per una versió gratuïta generosa (temporitzador d'1 hora), mix avançat, sons per a nadons i optimització de bateria — offline i sons professionals sense subscripció."
+      },
+      {
+        "question": "Què fa DRMN únic entre alternatives gratuïtes?",
+        "answer": "Versió gratuïta amb temporitzador d'1 hora sense subscripció. Mentre altres limiten sons o demanen compres, DRMN ofereix mix, offline i bateria gratis — més sons per a nadons que moltes no tenen."
+      },
+      {
+        "question": "DRMN és millor que altres apps de sons per dormir?",
+        "answer": "Versió gratuïta: temporitzador, mix, offline, bateria sense subscripció. 4,9, més de 10.000 descàrregues, adormir-se un 30–50 % més ràpid. Sons per a nadons i temporitzador intel·ligent gratis — funcions per les quals altres cobren."
+      }
+    ],
+    "structured_data": {
+      "software_application": {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "DRMN",
+        "alternateName": "DRMN App per dormir",
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "iOS",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://apps.apple.com/app/id6746480683"
+        },
+        "description": "App de sons per dormir i soroll blanc per a iPhone. Versió gratuïta amb pluja, ventilador, mix i offline. Per a son, focus i nadons.",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://drmn.xyz/img/logo.webp",
+          "width": 176,
+          "height": 176,
+          "caption": "Logotip de l'app DRMN"
+        },
+        "screenshot": {
+          "@type": "ImageObject",
+          "url": "https://drmn.xyz/img/logo.webp",
+          "width": 176,
+          "height": 176
+        },
+        "url": "https://drmn.xyz/ca/",
+        "author": {
+          "@type": "Person",
+          "name": "Vladimir Ivakhnenko"
+        },
+        "publisher": {
+          "@type": "Person",
+          "name": "Vladimir Ivakhnenko"
+        },
+        "keywords": "sons per dormir, màquina de soroll per dormir, soroll blanc, app per dormir, so de pluja, so de ventilador, son offline",
+        "inLanguage": "ca",
+        "datePublished": "2024-01-01",
+        "dateModified": "2025-01-15",
+        "softwareVersion": "1.5",
+        "fileSize": "49.2MB",
+        "softwareRequirements": "Requereix iOS 17.1 o posterior",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "ratingCount": "10"
+        }
+      },
+      "organization": {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "DRMN",
+        "url": "https://drmn.xyz/ca/",
+        "logo": "https://drmn.xyz/img/logo.webp",
+        "description": "DRMN — app de sons per dormir i soroll blanc per a iPhone. Versió gratuïta amb mix i offline. Per a son, focus i nadons."
+      },
+      "website": {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "DRMN",
+        "url": "https://drmn.xyz/ca/",
+        "description": "App de sons per dormir i soroll blanc per a iPhone. Versió gratuïta amb mix i offline. Descarrega gratis a l'App Store.",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://drmn.xyz/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      "howto": {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Com usar una app de sons per dormir",
+        "description": "Aprèn a usar DRMN per adormir-te més ràpid. Guia pas a pas.",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Descarrega gratis",
+            "text": "Descarrega DRMN a l'App Store al teu iPhone. Requereix iOS 17.1+. La versió gratuïta inclou temporitzador d'1 hora.",
+            "url": "https://apps.apple.com/app/id6746480683"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Explora sons per dormir",
+            "text": "Obre l'app i explora la biblioteca: soroll blanc i marró, natura (pluja, ones, foc), meditació i sons per a nadons."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Tria sons",
+            "text": "Segons la necessitat — soroll blanc per emmascarar, natura per relaxar, sons per a nadons per als més petits. Preescolta abans de reproduir."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Mixa sons",
+            "text": "Combina soroll blanc amb ones o pluja amb meditació. Crea el teu entorn de son ideal."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "Configura el temporitzador de son",
+            "text": "Activa l'esvaïment automàtic si no vols so tota la nit. El volum disminueix gradualment."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 6,
+            "name": "Reprodueix i dorm",
+            "text": "Prem play i ajusta el volum. iPhone a prop o auriculars — ambdós funcionen."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 7,
+            "name": "Descarrega per a offline",
+            "text": "Descarrega favorits per a ús offline. Son ininterromput a qualsevol lloc sense internet."
+          }
+        ]
+      }
+    }
+  }
+}

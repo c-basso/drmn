@@ -1,0 +1,555 @@
+{
+  "meta": {
+    "lang": "ro",
+    "title": "DRMN — sunete de somn, zgomot alb și aparat pentru iPhone",
+    "description": "Aplicație sunete de somn pentru iPhone: ploaie, ventilator, zgomot alb, mix și offline. Descarcă DRMN gratuit din App Store — somn, focus și somn bebeluș.",
+    "keywords": "sunete de somn, aparat de sunet pentru somn, zgomot alb, sunet ploaie somn, sunet ventilator somn, aplicație somn, zgomot alb app, sunete bebeluș, concentrare, somn offline",
+    "author": "DRMN",
+    "og_url": "https://drmn.xyz/ro/",
+    "og_title": "Aparat de Sunet pentru Somn și Sunete de Somn | DRMN",
+    "og_description": "Aparat de sunet pentru somn pe iPhone: ploaie, ventilator, zgomot alb și natură. Mix, offline, cronometru. Descarcă DRMN gratuit din App Store.",
+    "og_image": "https://drmn.xyz/ro/site_preview.png",
+    "og_image_alt": "Aplicația DRMN — Somn mai bun, adormi mai repede",
+    "og_locale": "ro_RO",
+    "twitter_url": "https://drmn.xyz/ro/",
+    "twitter_title": "Aparat de Sunet pentru Somn și Sunete de Somn | DRMN",
+    "twitter_description": "Aparat de sunet pentru somn pe iPhone: ploaie, ventilator, zgomot alb și natură. Mix, offline, cronometru. Descarcă DRMN gratuit din App Store.",
+    "twitter_image": "https://drmn.xyz/ro/site_preview.png",
+    "twitter_image_alt": "Aplicația DRMN — Somn mai bun, adormi mai repede",
+    "twitter_site": "@c__basso",
+    "twitter_creator": "@c__basso",
+    "canonical": "https://drmn.xyz/ro/",
+    "app_store_id": "6746480683",
+    "og_type": "website",
+    "twitter_card": "summary_large_image",
+    "theme_color": "#1a1b2e",
+    "apple_mobile_web_app_status_bar_style": "default",
+    "og_image_width": "1200",
+    "og_image_height": "630",
+    "twitter_image_width": "1200",
+    "twitter_image_height": "630"
+  },
+  "header": {
+    "app_name_suffix": "Aparat de Sunet pentru Somn",
+    "logo_alt": "Logo aplicație DRMN aparat de sunet pentru somn pe iPhone",
+    "app_name": "DRMN",
+    "title": "Aplicație aparat de sunet pentru somn pe iPhone",
+    "tagline": "Adormi mai repede cu cele mai bune sunete de somn. DRMN este o aplicație cu ploaie, ventilator, zgomot alb și sunete din natură — mix, redare offline și consum redus de baterie toată noaptea.",
+    "tldr": "DRMN este o aplicație iOS gratuită cu sunete de somn care te ajută să adormi cu 30–50 % mai repede. Versiunea gratuită include ploaie, ventilator, zgomot alb, cronometru de 1 oră, offline, mix și optimizare baterie. Descarcă gratuit din App Store.",
+    "download_text": "Descarcă acum",
+    "download_url": "https://apps.apple.com/app/id6746480683",
+    "download_aria_label": "Descarcă aplicația gratuită cu sunete de somn din App Store",
+    "download_img_alt": "Descarcă aplicația cu sunete de somn din App Store",
+    "scan_to_download": "Scanează pentru a descărca"
+  },
+  "stats": {
+    "title": "DRMN în cifre",
+    "items": [
+      {
+        "stat": "4,9/5",
+        "description": "Evaluare medie în App Store (10 recenzii)"
+      },
+      {
+        "stat": "10.000+",
+        "description": "Utilizatori au descărcat DRMN din App Store"
+      },
+      {
+        "stat": "30–50 % mai repede",
+        "description": "Îmbunătățire medie a timpului de adormire"
+      },
+      {
+        "stat": "100 de ore",
+        "description": "Sunete de somn și ambient înregistrate profesional"
+      },
+      {
+        "stat": "10 ore",
+        "description": "Redare offline la o încărcare (baterie optimizată)"
+      },
+      {
+        "stat": "49,2 MB",
+        "description": "Dimensiunea aplicației (optimizată pentru toate modelele iPhone)"
+      },
+      {
+        "stat": "iOS 17.1+",
+        "description": "Compatibilă cu toate iPhone-urile moderne"
+      }
+    ]
+  },
+  "features": {
+    "title": "Sunete de somn și natură pentru odihnă mai bună",
+    "items": [
+      {
+        "icon": "🌊",
+        "title": "Bibliotecă bogată de sunete de somn",
+        "description": "Alege zgomot alb, maro și închis pentru relaxare profundă. Explorează sunete din natură: ploaie ușoară, valuri, foc și păsări de dimineață. Ambient pentru meditație și instrumentale blânde. Mixează sunete pentru mediul perfect de somn."
+      },
+      {
+        "icon": "😴",
+        "title": "Adormi mai repede, dormi mai adânc",
+        "description": "Greu de adormit? Terapia sonoră susținută științific maschează traficul, vecinii și sforăitul. Creează un mediu constant de somn care semnalează creierului că e timpul de odihnă. Trezește-te odihnit în fiecare dimineață."
+      },
+      {
+        "icon": "🎯",
+        "title": "Concentrează-te mai bine, lucrează mai inteligent",
+        "description": "Meditezi, studiezi sau lucrezi într-o cafenea zgomotoasă? DRMN creează atmosfera perfectă pentru concentrare. Blochează distragerile, reduce stresul și crește productivitatea."
+      },
+      {
+        "icon": "👶",
+        "title": "Ajută bebelușul să doarmă liniștit",
+        "description": "Sunete speciale pentru bebeluși — uscător de păr, aspirator și tastatură — îi ajută pe cei mici să adoarmă mai repede. Ritmurile familiare calmează și susțin tipare sănătoase de somn."
+      }
+    ]
+  },
+  "popular_sounds": {
+    "title": "Sunete de somn populare",
+    "intro": "Cauți cel mai bun sunet pentru adormit? DRMN are cele mai căutate sunete de somn — gata de mixat, redat offline și folosit toată noaptea pe iPhone.",
+    "items": [
+      {
+        "icon": "🌧️",
+        "title": "Sunet de ploaie pentru adormit",
+        "description": "Ploaia blândă maschează sunetele bruște și te ajută să adormi. Mixează ploaia cu zgomot alb pentru un somn mai profund."
+      },
+      {
+        "icon": "🌀",
+        "title": "Sunet de ventilator pentru adormit",
+        "description": "Buzitul constant al ventilatorului atenuează traficul, sforăitul și vecinii — sunet clasic de somn în care au încredere milioane."
+      },
+      {
+        "icon": "🔊",
+        "title": "Zgomot alb pentru adormit",
+        "description": "Zgomotul alb, maro și închis creează un fundal constant care semnalează creierului că e timpul de odihnă."
+      },
+      {
+        "icon": "🌊",
+        "title": "Sunete din natură pentru adormit",
+        "description": "Valuri, foc și păsări de dimineață completează biblioteca — mixează-le oricând cu ploaie sau ventilator."
+      }
+    ]
+  },
+  "content": {
+    "title": "Îmbunătățește somnul cu o aplicație aparat de sunet",
+    "intro": "DRMN este o aplicație iOS aparat de sunet pentru somn cu zgomot alb, ploaie, ventilator și sunete din natură, pentru adormire mai rapidă. Peste 10.000 de descărcări și evaluare 4,9. Perfectă pentru insomnie, concentrare și somnul bebelușului.",
+    "sections": [
+      {
+        "title": "Bibliotecă de sunete pentru nevoile tale",
+        "paragraph1": "Am selectat cu grijă sunete de calitate pentru relaxare, concentrare și somn mai bun:",
+        "list_items": [
+          "<strong>Zgomot alb, maro și închis</strong> — maschează sunetele deranjante și creează un mediu constant de somn",
+          "<strong>Sunete din natură</strong> — ploaie, valuri, foc, ventilator și păsări de dimineață te duc într-un loc liniștit",
+          "<strong>Meditație și concentrare</strong> — piese ambient și instrumentale blânde pentru muncă și mindfulness",
+          "<strong>Sunete pentru bebeluși</strong> — uscător de păr, aspirator și tastatură îi ajută pe cei mici să adoarmă"
+        ],
+        "paragraph2": "Cel mai bun lucru? Poți mixa mai multe sunete. Zgomot alb cu valuri sau ploaie cu meditație — tu decizi."
+      },
+      {
+        "title": "Terapie de somn susținută științific care funcționează",
+        "paragraph1": "Cercetările arată că sunetul de fundal constant îmbunătățește calitatea somnului. Iată cum te ajută DRMN:",
+        "list_items": [
+          "<strong>Blochează sunetele deranjante</strong> — traficul, vecinii și sforăitul nu te mai trezesc",
+          "<strong>Semnalează odihnă creierului</strong> — sunetul constant ajută mintea să se calmeze",
+          "<strong>Promovează somnul profund</strong> — frecvențe selectate susțin ciclurile regenerative de somn"
+        ],
+        "paragraph2": "Peste 10.000 de descărcări și 4,9 în App Store. Utilizatorii adorm în medie cu 30–50 % mai repede și se trezesc mai rar noaptea. Începe ziua cu energie."
+      },
+      {
+        "title": "Nu doar pentru somn — și pentru concentrare",
+        "paragraph1": "DRMN nu e doar o aplicație de somn — arma ta secretă pentru concentrare. Cafenea zgomotoasă, examen sau meditație — sunetele potrivite fac diferența:",
+        "list_items": [
+          "<strong>Elimină distragerile</strong> — creează o bulă liniștită oriunde ești",
+          "<strong>Reduce stresul</strong> — frecvențe calmante te ajută să rămâi concentrat",
+          "<strong>Crește productivitatea</strong> — mulți se concentrează mai bine cu sunet de fundal",
+          "<strong>Concentrare profundă</strong> — perfect pentru muncă intensă și sarcini importante"
+        ],
+        "paragraph2": "Muncă de acasă, studiu noaptea sau un moment de liniște — DRMN oferă fundalul audio perfect."
+      },
+      {
+        "title": "Ajută micuțul să doarmă toată noaptea",
+        "paragraph1": "Știm cât de obositor e când bebelușul nu vrea să doarmă. De aceea există sunete speciale pentru bebeluși și copii mici. Uscător de păr blând, aspirator și tastatură creează ritmuri familiare.",
+        "list_items": [],
+        "paragraph2": "Sunetele constante și blânde amintesc de uter și dau un sentiment de siguranță. Părinți din întreaga lume au încredere în DRMN — și tu dormi mai bine."
+      },
+      {
+        "title": "Creată pentru viața reală",
+        "paragraph1": "Fiecare detaliu e gândit ca DRMN să se potrivească în ziua ta:",
+        "list_items": [
+          "<strong>Înregistrări profesionale</strong> — peste 100 de ore de audio de calitate",
+          "<strong>Mix și combinații</strong> — creează amestecul perfect",
+          "<strong>Cronometru de somn inteligent</strong> — fade-out automat, fără griji toată noaptea",
+          "<strong>Interfață simplă și frumoasă</strong> — gata în câteva secunde",
+          "<strong>Funcționează offline</strong> — descarcă favoritele și ascultă până la 10 ore fără internet",
+          "<strong>Economisește bateria</strong> — toată noaptea fără iPhone descărcat",
+          "<strong>Start gratuit</strong> — încearcă gratuit, premium opțional"
+        ],
+        "paragraph2": "DRMN funcționează pe iPhone cu iOS 17.1+. Versiunea gratuită: cronometru de 1 oră, offline, mix și optimizare baterie. Premium deblochează redare mai lungă și mai multe sunete."
+      }
+    ]
+  },
+  "benefits": {
+    "title": "De ce DRMN?",
+    "items": [
+      "Sunete profesionale de calitate care chiar te ajută să adormi",
+      "Mixează mai multe sunete pentru mediul perfect de somn",
+      "Cronometru inteligent cu fade-out automat — pornește și uită",
+      "Interfață frumoasă și intuitivă, ușor de folosit",
+      "Funcționează complet offline după descărcarea sunetelor",
+      "Baterie optimizată pentru toată noaptea",
+      "Descărcare gratuită, premium opțional"
+    ]
+  },
+  "comparison": {
+    "title": "Cel mai bun aparat de sunet pentru somn — comparație DRMN",
+    "description": "Cum se compară DRMN cu aplicațiile tipice gratuite și premium. Bazat pe date publice și feedback de la utilizatori.",
+    "table": {
+      "headers": [
+        "Funcție",
+        "DRMN",
+        "Aplicații gratuite tipice",
+        "Aplicații premium"
+      ],
+      "rows": [
+        {
+          "feature": "Versiune gratuită",
+          "drmn": "Cronometru 1 oră (suficient pentru adormit)",
+          "typical": "Sunete limitate sau reclame",
+          "premium": "Abonament necesar"
+        },
+        {
+          "feature": "Offline",
+          "drmn": "Da (10+ ore)",
+          "typical": "Limitat sau cu reclame",
+          "premium": "Da"
+        },
+        {
+          "feature": "Mix sunete",
+          "drmn": "Da, nelimitat",
+          "typical": "Nu sau limitat",
+          "premium": "Da"
+        },
+        {
+          "feature": "Optimizare baterie",
+          "drmn": "Da, toată noaptea",
+          "typical": "Parțial",
+          "premium": "Da"
+        },
+        {
+          "feature": "Sunete pentru bebeluși",
+          "drmn": "Da (uscător, aspirator, tastatură)",
+          "typical": "Nu",
+          "premium": "Uneori"
+        },
+        {
+          "feature": "Cronometru de somn",
+          "drmn": "Fade-out automat",
+          "typical": "De bază",
+          "premium": "Fade-out automat"
+        },
+        {
+          "feature": "Dimensiune fișier",
+          "drmn": "49,2 MB",
+          "typical": "30–70 MB",
+          "premium": "50–100 MB"
+        },
+        {
+          "feature": "Cerințe iOS",
+          "drmn": "17.1+",
+          "typical": "15.0+",
+          "premium": "16.0+"
+        },
+        {
+          "feature": "Evaluare App Store",
+          "drmn": "4,9/5 (10 recenzii)",
+          "typical": "3,5–4,5/5",
+          "premium": "4,0–4,8/5"
+        }
+      ]
+    }
+  },
+  "testimonials": {
+    "title": "Ce spun utilizatorii despre DRMN",
+    "items": [
+      {
+        "quote": "Adorm cu 40 % mai repede cu DRMN. Mixul îmi permite să combin zgomot alb și valuri. Cel mai bun somn din ultimii ani!",
+        "name": "Sarah M.",
+        "location": "California, SUA",
+        "role": "Profesionistă"
+      },
+      {
+        "quote": "Bebelușul nostru doarme toată noaptea datorită sunetului de uscător. Singurul lucru care funcționează constant. Offline ne salvează în călătorii.",
+        "name": "Michael R.",
+        "location": "Texas, SUA",
+        "role": "Părinte"
+      },
+      {
+        "quote": "Cu insomnie, DRMN a schimbat totul. Îl folosesc în fiecare noapte și mă trezesc odihnit. Optimizarea bateriei — fără griji de descărcare.",
+        "name": "Jennifer L.",
+        "location": "New York, SUA",
+        "role": "Insomnie"
+      },
+      {
+        "quote": "Folosesc DRMN pentru concentrare la muncă. Mixul creează atmosfera perfectă. Cronometru gratuit de 1 oră — valoare excelentă!",
+        "name": "David K.",
+        "location": "Londra, Marea Britanie",
+        "role": "Muncă de acasă"
+      }
+    ]
+  },
+  "whats_new": {
+    "title": "Noutăți",
+    "description": "Ultimele actualizări DRMN",
+    "items": [
+      {
+        "date": "Ianuarie 2025",
+        "title": "Optimizare baterie îmbunătățită",
+        "description": "Mai eficientă toată noaptea. Până la 10 ore de redare continuă la o încărcare."
+      },
+      {
+        "date": "Ianuarie 2025",
+        "title": "Sunete de somn noi",
+        "description": "10 înregistrări profesionale noi — biblioteca depășește 100 de ore."
+      },
+      {
+        "date": "Decembrie 2024",
+        "title": "Mix sunete îmbunătățit",
+        "description": "Calitate audio mai bună și tranziții mai fluide între sunete."
+      }
+    ]
+  },
+  "final_cta": {
+    "title": "Gata să dormi mai bine diseară?",
+    "paragraph1": "Alătură-te celor peste 10.000 de utilizatori care și-au îmbunătățit somnul cu DRMN. 4,9/5 în App Store — aplicație gratuită cu sunete de somn care te ajută să adormi cu 30–50 % mai repede. Versiunea gratuită: cronometru 1 oră, offline și mix. Descarcă azi și încearcă sunete profesionale gratuit.",
+    "cta_text": "Descarcă aplicația gratuită cu sunete de somn",
+    "cta_url": "https://apps.apple.com/app/id6746480683",
+    "cta_aria_label": "Descarcă aplicația gratuită cu sunete de somn din App Store",
+    "cta_img_alt": "Descarcă aplicația cu sunete de somn din App Store"
+  },
+  "footer": {
+    "copyright": "© 2025 DRMN. Toate drepturile rezervate.",
+    "privacy_link": "Politica de confidențialitate",
+    "privacy_url": "/privacy.html",
+    "terms_link": "Termeni și condiții",
+    "terms_url": "/terms.html",
+    "fazier_badge_alt": "Insignă Fazier",
+    "superlaunch_badge_alt": "Prezentat pe Super Launch"
+  },
+  "app_info": {
+    "developer": "Vladimir Ivakhnenko",
+    "category": "Sănătate și fitness",
+    "age_rating": "4+",
+    "file_size": "49,2 MB",
+    "compatibility": "Necesită iOS 17.1 sau o versiune ulterioară",
+    "platform": "iPhone",
+    "copyright": "© 2025 c-basso",
+    "in_app_purchases": true,
+    "subscriptions": [
+      {
+        "name": "White Noise Machine",
+        "description": "Somn mai bun cu sunete de somn în DRMN",
+        "price": "$5.99",
+        "type": "Perioadă de probă gratuită"
+      },
+      {
+        "name": "Lifetime Plan",
+        "description": "Achiziție unică — acces pe viață",
+        "price": "$19.99",
+        "type": "O singură dată"
+      }
+    ]
+  },
+  "seo": {
+    "breadcrumb_home": "Acasă",
+    "faq_title": "FAQ: aparat de sunet pentru somn, sunete de somn și zgomot alb",
+    "faq": [
+      {
+        "question": "Care sunet e cel mai bun pentru adormit?",
+        "answer": "Depinde de tine — mulți aleg ploaia, ventilatorul sau zgomotul alb constant. În DRMN poți previzualiza și mixa sunete ca să găsești ce te ajută cel mai repede să adormi."
+      },
+      {
+        "question": "Ce este un aparat de sunet pentru somn?",
+        "answer": "Redă fundal constant — ploaie, ventilator sau zgomot alb — pentru a masca zgomotul și a te ajuta să dormi. DRMN e o aplicație iPhone cu mix, redare offline și cronometru de somn, ca un aparat fizic."
+      },
+      {
+        "question": "Cea mai bună aplicație de zgomot alb pentru iPhone?",
+        "answer": "DRMN are evaluare 4,9 și peste 10.000 de descărcări. Ploaie, ventilator, zgomot alb și 100 de ore de sunete de somn și natură — utilizatorii adorm cu 30–50 % mai repede."
+      },
+      {
+        "question": "Există o aplicație gratuită de zgomot alb?",
+        "answer": "Da! DRMN e gratuit în App Store. Versiunea gratuită include cronometru de 1 oră, offline, mix și sunete de somn. Premium deblochează redare mai lungă."
+      },
+      {
+        "question": "Ce sunete are aplicația de somn?",
+        "answer": "DRMN oferă peste 100 de ore de audio profesional: zgomot alb, maro și închis, ploaie, valuri, foc, păsări de dimineață, meditație și sunete pentru bebeluși (uscător, aspirator, tastatură)."
+      },
+      {
+        "question": "Funcționează aplicația offline?",
+        "answer": "Da! După descărcarea sunetelor, DRMN funcționează complet offline. Cu optimizare baterie — până la 10 ore fără internet."
+      },
+      {
+        "question": "Cea mai bună aplicație pentru somnul bebelușului?",
+        "answer": "DRMN include sunete speciale pentru bebeluși (uscător, aspirator, tastatură) care îi ajută să adoarmă mai repede. Ritmurile familiare calmează și creează un mediu liniștit."
+      },
+      {
+        "question": "Cum funcționează o aplicație aparat de sunet?",
+        "answer": "DRMN oferă zgomot alb și sunete de somn pentru liniște și concentrare. Maschează zgomotul, creează mediu constant de somn și promovează somnul profund — ca un aparat fizic."
+      },
+      {
+        "question": "Pot mixa sunete?",
+        "answer": "Da! Combină zgomot alb cu valuri sau ploaie cu meditație. Creează-ți propria experiență de somn."
+      },
+      {
+        "question": "Are aplicația cronometru de somn?",
+        "answer": "Da! Cronometru cu fade-out automat. Setează-l — sunetul se estompează treptat după ce adormi."
+      },
+      {
+        "question": "Ce este zgomotul alb pentru somn și cum ajută?",
+        "answer": "Sunet constant care maschează zgomotul deranjant și te ajută să adormi mai repede. DRMN atenuează traficul, vecinii și alte sunete pentru un mediu constant de somn."
+      },
+      {
+        "question": "E potrivită pentru insomnie?",
+        "answer": "Da! DRMN are 4,9 și peste 10.000 de descărcări. Mascând zgomotul, utilizatorii adorm în medie cu 30–50 % mai repede. Descarcă gratuit."
+      },
+      {
+        "question": "Câte descărcări are DRMN?",
+        "answer": "Peste 10.000 în App Store, 4,9/5 din 10 recenzii. 100 de ore de sunete și până la 10 ore offline la o încărcare."
+      },
+      {
+        "question": "Care e evaluarea DRMN în App Store?",
+        "answer": "4,9/5 bazat pe 10 recenzii. Peste 10.000 de descărcări, 100 de ore de sunete de somn și redare offline."
+      },
+      {
+        "question": "Cum se deosebește DRMN de alte aplicații?",
+        "answer": "DRMN se remarcă prin versiunea gratuită generoasă (cronometru 1 oră), mix avansat, sunete pentru bebeluși și optimizare baterie — offline și sunete profesionale fără abonament."
+      },
+      {
+        "question": "Ce face DRMN unic printre alternativele gratuite?",
+        "answer": "Versiune gratuită cu cronometru de 1 oră fără abonament. În timp ce altele limitează sunetele sau cer achiziții, DRMN oferă mix, offline și baterie gratuit — plus sunete pentru bebeluși pe care multe le omit."
+      },
+      {
+        "question": "E DRMN mai bun decât alte aplicații cu sunete de somn?",
+        "answer": "Versiune gratuită: cronometru, mix, offline, baterie fără abonament. 4,9, peste 10.000 descărcări, 30–50 % adormire mai rapidă. Sunete bebeluși și cronometru inteligent gratuit — funcții pentru care alții cer bani."
+      }
+    ],
+    "structured_data": {
+      "software_application": {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "DRMN",
+        "alternateName": "DRMN Aplicație de somn",
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "iOS",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://apps.apple.com/app/id6746480683"
+        },
+        "description": "Aplicație sunete de somn și zgomot alb pentru iPhone. Versiune gratuită cu ploaie, ventilator, mix și offline. Pentru somn, concentrare și bebeluși.",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://drmn.xyz/img/logo.webp",
+          "width": 176,
+          "height": 176,
+          "caption": "Logo aplicație DRMN"
+        },
+        "screenshot": {
+          "@type": "ImageObject",
+          "url": "https://drmn.xyz/img/logo.webp",
+          "width": 176,
+          "height": 176
+        },
+        "url": "https://drmn.xyz/ro/",
+        "author": {
+          "@type": "Person",
+          "name": "Vladimir Ivakhnenko"
+        },
+        "publisher": {
+          "@type": "Person",
+          "name": "Vladimir Ivakhnenko"
+        },
+        "keywords": "sunete de somn, aparat de sunet pentru somn, zgomot alb, aplicație somn, sunet ploaie, sunet ventilator, somn offline",
+        "inLanguage": "ro",
+        "datePublished": "2024-01-01",
+        "dateModified": "2025-01-15",
+        "softwareVersion": "1.5",
+        "fileSize": "49.2MB",
+        "softwareRequirements": "Necesită iOS 17.1 sau o versiune ulterioară",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "ratingCount": "10"
+        }
+      },
+      "organization": {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "DRMN",
+        "url": "https://drmn.xyz/ro/",
+        "logo": "https://drmn.xyz/img/logo.webp",
+        "description": "DRMN — aplicație sunete de somn și zgomot alb pentru iPhone. Versiune gratuită cu mix și offline. Pentru somn, concentrare și bebeluși."
+      },
+      "website": {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "DRMN",
+        "url": "https://drmn.xyz/ro/",
+        "description": "Aplicație sunete de somn și zgomot alb pentru iPhone. Versiune gratuită cu mix și offline. Descarcă gratuit din App Store.",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://drmn.xyz/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      "howto": {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Cum folosești o aplicație cu sunete de somn",
+        "description": "Află cum să folosești DRMN pentru a adormi mai repede. Ghid pas cu pas.",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Descarcă gratuit",
+            "text": "Descarcă DRMN din App Store pe iPhone. Necesită iOS 17.1+. Versiunea gratuită include cronometru de 1 oră.",
+            "url": "https://apps.apple.com/app/id6746480683"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Explorează sunetele de somn",
+            "text": "Deschide aplicația și explorează biblioteca: zgomot alb și maro, natură (ploaie, valuri, foc), meditație și sunete pentru bebeluși."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Alege sunete",
+            "text": "După nevoie — zgomot alb pentru mascare, natură pentru relaxare, sunete bebeluși pentru cei mici. Previzualizează înainte de redare."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Mixează sunete",
+            "text": "Combină zgomot alb cu valuri sau ploaie cu meditație. Creează mediul ideal de somn."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "Setează cronometrul de somn",
+            "text": "Activează fade-out automat dacă nu vrei sunet toată noaptea. Volumul scade treptat."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 6,
+            "name": "Pornește și dormi",
+            "text": "Apasă play și ajustează volumul. iPhone aproape sau căști — ambele funcționează."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 7,
+            "name": "Descarcă pentru offline",
+            "text": "Descarcă favoritele pentru utilizare offline. Somn neîntrerupt oriunde, fără internet."
+          }
+        ]
+      }
+    }
+  }
+}

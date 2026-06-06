@@ -1,6 +1,6 @@
 <!-- Version: {{meta.version}} -->
 <!DOCTYPE html>
-<html lang="{{meta.lang}}">
+<html lang="{{meta.html_lang}}" dir="{{meta.html_dir}}">
 
 <head>
   <meta charset="UTF-8">
@@ -381,6 +381,10 @@
     .popular-sounds {
       padding: 5rem 0;
       background: var(--color-bg-primary);
+    }
+
+    .popular-sounds h2 {
+      text-align: center;
     }
 
     .popular-sounds .section-intro {

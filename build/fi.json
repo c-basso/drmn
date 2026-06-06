@@ -1,0 +1,555 @@
+{
+  "meta": {
+    "lang": "fi",
+    "title": "DRMN — unen äänilaite ja valkoinen kohina iPhonelle",
+    "description": "Unen äänisovellus iPhonelle: sade, tuuletin, valkoinen kohina, mix ja offline. Lataa DRMN ilmaiseksi App Storesta — parhaat unen äänet uneen ja fokukseen.",
+    "keywords": "unen äänet, unen äänilaite, valkoinen kohina, sadeääni uneen, tuulettimen ääni uneen, unisovellus, valkoinen kohina -sovellus, vauvan unen äänet, keskittymisäänet, offline-uni",
+    "author": "DRMN",
+    "og_url": "https://drmn.xyz/fi/",
+    "og_title": "Unen äänilaite ja unen äänet | DRMN",
+    "og_description": "Unen äänilaite iPhonelle: sade, tuuletin, valkoinen kohina ja luontoäänet. Mix, offline. Lataa DRMN ilmaiseksi App Storesta.",
+    "og_image": "https://drmn.xyz/fi/site_preview.png",
+    "og_image_alt": "DRMN-sovellus — Nuku paremmin, nuku nopeammin",
+    "og_locale": "fi_FI",
+    "twitter_url": "https://drmn.xyz/fi/",
+    "twitter_title": "Unen äänilaite ja unen äänet | DRMN",
+    "twitter_description": "Unen äänilaite iPhonelle: sade, tuuletin, valkoinen kohina ja luontoäänet. Mix, offline. Lataa DRMN ilmaiseksi App Storesta.",
+    "twitter_image": "https://drmn.xyz/fi/site_preview.png",
+    "twitter_image_alt": "DRMN-sovellus — Nuku paremmin, nuku nopeammin",
+    "twitter_site": "@c__basso",
+    "twitter_creator": "@c__basso",
+    "canonical": "https://drmn.xyz/fi/",
+    "app_store_id": "6746480683",
+    "og_type": "website",
+    "twitter_card": "summary_large_image",
+    "theme_color": "#1a1b2e",
+    "apple_mobile_web_app_status_bar_style": "default",
+    "og_image_width": "1200",
+    "og_image_height": "630",
+    "twitter_image_width": "1200",
+    "twitter_image_height": "630"
+  },
+  "header": {
+    "app_name_suffix": "Unen äänilaite",
+    "logo_alt": "DRMN unen äänilaite -sovelluksen logo iPhonelle",
+    "app_name": "DRMN",
+    "title": "Unen äänilaite-sovellus iPhonelle",
+    "tagline": "Nuku nopeammin parhailla unen äänillä. DRMN on unen äänilaite sateella, tuulettimella, valkoisella kohinalla ja luontoäänillä — plus mix, offline-toisto ja akkuystävällinen yöpito.",
+    "tldr": "DRMN on ilmainen iOS-unen äänisovellus, joka auttaa nukahtamaan 30–50 % nopeammin. Ilmainen versio: sade, tuuletin, valkoinen kohina, 1 tunnin ajastin, offline, äänimix ja akkuoptimointi. Lataa ilmaiseksi App Storesta.",
+    "download_text": "Lataa nyt",
+    "download_url": "https://apps.apple.com/app/id6746480683",
+    "download_aria_label": "Lataa ilmainen unen äänisovellus App Storesta",
+    "download_img_alt": "Lataa unen äänisovellus App Storesta",
+    "scan_to_download": "Skannaa ladataksesi"
+  },
+  "stats": {
+    "title": "DRMN lukuina",
+    "items": [
+      {
+        "stat": "4,9/5",
+        "description": "Keskimääräinen App Store -arvio (10 arviota)"
+      },
+      {
+        "stat": "10 000+",
+        "description": "Käyttäjää ladannut DRMN:n App Storesta"
+      },
+      {
+        "stat": "30–50 % nopeammin",
+        "description": "Keskimääräinen parannus nukahtamisajassa"
+      },
+      {
+        "stat": "100 tuntia",
+        "description": "Ammattimaisesti tallennettuja unen ääniä ja taustaääniä"
+      },
+      {
+        "stat": "10 tuntia",
+        "description": "Offline-toisto yhdellä latauksella (akku optimoitu)"
+      },
+      {
+        "stat": "49,2 Mt",
+        "description": "Sovelluksen koko (optimoitu kaikille iPhone-malleille)"
+      },
+      {
+        "stat": "iOS 17.1+",
+        "description": "Yhteensopiva kaikkien nykyaikaisten iPhonejen kanssa"
+      }
+    ]
+  },
+  "features": {
+    "title": "Unen äänet ja luontoäänet parempaan lepoon",
+    "items": [
+      {
+        "icon": "🌊",
+        "title": "Laaja kirjasto unen ääniä",
+        "description": "Valitse valkoisesta, ruskeasta ja tummasta kohinasta syvään rentoutumiseen. Tutustu luontoääniin: lempeä sade, aallot, tuli ja aamu-linnut. Meditaatioambientit ja pehmeät instrumentaalit. Sekoita ääniä täydelliseen unympäristöön."
+      },
+      {
+        "icon": "😴",
+        "title": "Nuku nopeammin, nuku syvemmin",
+        "description": "Vaikea nukahtaa? Tieteeseen perustuvat äänet peittävät liikenteen, naapurit ja kuorsauksen. Tasainen unympäristö kertoo aivoillesi, että on aika levätä. Herää virkeänä joka aamu."
+      },
+      {
+        "icon": "🎯",
+        "title": "Keskity paremmin, työskentele tehokkaammin",
+        "description": "Meditaatio, opiskelu tai työ meluisassa kahvilassa — DRMN luo täydellisen tunnelman keskittymiseen. Estä häiriöt, vähennä stressiä ja paranna tuottavuutta. Monet keskittyvät paremmin tärkeisiin tehtäviin."
+      },
+      {
+        "icon": "👶",
+        "title": "Auta vauvaasi nukkumaan rauhallisesti",
+        "description": "Erityiset vauvan unen äänet — hiustenkuivaaja, imuri ja näppäimistö — auttavat vauvoja ja taaperoita nukahtamaan nopeammin. Tutut rytmit rauhoittavat ja luovat terveen unirytmin."
+      }
+    ]
+  },
+  "popular_sounds": {
+    "title": "Suositut unen äänet",
+    "intro": "Etsitkö parasta ääntä uneen? DRMN:ssä on haetuimmat unen äänet — valmiina mixattavaksi, offline-toistoon ja yöpito iPhonella.",
+    "items": [
+      {
+        "icon": "🌧️",
+        "title": "Sadeääni uneen",
+        "description": "Lempeä sade peittää äkilliset äänet ja auttaa nukahtamaan. Sekoita sadetta valkoiseen kohinaan syvempään uneen."
+      },
+      {
+        "icon": "🌀",
+        "title": "Tuulettimen ääni uneen",
+        "description": "Tasainen tuulettimen humina estää liikenteen, kuorsauksen ja naapurit — klassinen unen ääni, johon monet luottavat."
+      },
+      {
+        "icon": "🔊",
+        "title": "Valkoinen kohina uneen",
+        "description": "Valkoinen, ruskea ja tumma kohina luovat tasaisen taustakerroksen, joka kertoo aivoille lepoaikaa."
+      },
+      {
+        "icon": "🌊",
+        "title": "Meri- ja luontoäänet uneen",
+        "description": "Aallot, tuli ja aamu-linnut täydentävät kirjastoa — sekoita sateen tai tuulettimen kanssa milloin tahansa."
+      }
+    ]
+  },
+  "content": {
+    "title": "Paranna untasi unen äänilaite-sovelluksella",
+    "intro": "DRMN on iOS-unen äänilaite valkoisella kohinalla, sateella, tuulettimella ja luontoäänillä nopeampaan nukahtamiseen. Yli 10 000 latausta ja 4,9 tähden arvio. Täydellinen unettomuuteen, keskittymiseen ja vauvan uneen.",
+    "sections": [
+      {
+        "title": "Äänikirjasto tarpeisiisi",
+        "paragraph1": "Olemme kuratoineet laadukkaita ääniä rentoutumiseen, keskittymiseen ja parempaan uneen:",
+        "list_items": [
+          "<strong>Valkoinen, ruskea ja tumma kohina</strong> — peittää häiritsevät äänet ja luo tasaisen unympäristön",
+          "<strong>Luontoäänet</strong> — sade, aallot, tuli, tuuletin ja aamu-linnut vievät rauhalliseen paikkaan",
+          "<strong>Meditaatio- ja keskittymisäänet</strong> — ambientit ja pehmeät instrumentaalit työhön ja mindfulnessiin",
+          "<strong>Vauvan unen äänet</strong> — hiustenkuivaaja, imuri ja näppäimistö auttavat pieniä nukahtamaan"
+        ],
+        "paragraph2": "Parasta on, että voit sekoittaa useita ääniä. Valkoinen kohina aalloilla tai sade meditaatiomusiikin kanssa — sinä päätät."
+      },
+      {
+        "title": "Tieteeseen perustuva uniterapia, joka toimii",
+        "paragraph1": "Tutkimukset osoittavat: tasainen taustaääni parantaa unen laatua. Näin DRMN auttaa:",
+        "list_items": [
+          "<strong>Estää häiritsevät äänet</strong> — liikenne, naapurit, kuorsaus eivät enää herätä",
+          "<strong>Antaa aivoille leposignaalin</strong> — tasainen ääni auttaa mielen rauhoittumaan",
+          "<strong>Edistää syvempää unta</strong> — valitut taajuudet tukevat palauttavia unisyklejä"
+        ],
+        "paragraph2": "Yli 10 000 latausta ja 4,9 App Storessa. Käyttäjät nukahtavat keskimäärin 30–50 % nopeammin ja heräävät harvemmin yöllä. Aloita päivä virkeänä."
+      },
+      {
+        "title": "Ei vain uneen — myös keskittymiseen",
+        "paragraph1": "DRMN ei ole vain unisovellus, vaan apu keskittymiseen. Meluisa kahvila, koe tai meditaatio — oikeat äänet tekevät eron:",
+        "list_items": [
+          "<strong>Poistaa häiriöt</strong> — luo hiljainen kupla minne tahansa",
+          "<strong>Vähentää stressiä</strong> — rauhoittavat taajuudet auttavat pysymään fokuksessa",
+          "<strong>Parantaa tuottavuutta</strong> — monet keskittyvät paremmin taustaäänillä",
+          "<strong>Syventää keskittymistä</strong> — täydellinen deep workiin ja tärkeisiin tehtäviin"
+        ],
+        "paragraph2": "Etätyö, yöopiskelu tai hetki rauhaa — DRMN tarjoaa täydellisen äänitaustan."
+      },
+      {
+        "title": "Auta pienokaisesi nukkumaan yöllä",
+        "paragraph1": "Tiedämme, kuinka uuvuttavaa on, kun vauva ei nuku. Siksi lisäsimme erityiset äänet vauvoille ja taaperoille. Lempeä hiustenkuivaaja, imuri ja näppäimistö luovat tuttuja rytmejä.",
+        "list_items": [],
+        "paragraph2": "Tasaiset, lempeät äänet muistuttavat kohtua ja tuovat turvallisuuden tunteen. Vanhemmat ympäri maailmaa luottavat DRMN:ään — ja saavat itsekin paremman yön."
+      },
+      {
+        "title": "Suunniteltu arkeen",
+        "paragraph1": "Jokainen yksityiskohta on mietitty, jotta DRMN sopii päivääsi:",
+        "list_items": [
+          "<strong>Ammattimaisesti tallennetut äänet</strong> — yli 100 tuntia laadukasta audiota",
+          "<strong>Mix ja yhdistelmät</strong> — luo täydellinen sekoitus",
+          "<strong>Älykäs uniajastin</strong> — automaattinen häivytys, ei tarvitse pelätä yöpito",
+          "<strong>Yksinkertainen kaunis käyttöliittymä</strong> — valmis sekunneissa",
+          "<strong>Toimii offline</strong> — lataa suosikit ja kuuntele jopa 10 tuntia ilman nettiä",
+          "<strong>Akkuystävällinen</strong> — koko yö ilman iPhonen tyhjentymistä",
+          "<strong>Ilmainen aloitus</strong> — kokeile ilmaiseksi, premium valinnainen"
+        ],
+        "paragraph2": "DRMN toimii iPhonella iOS 17.1+:lla. Ilmainen versio: 1 tunnin ajastin, offline, mix ja akkuoptimointi. Premium avaa pidemmän toiston ja lisää ääniä."
+      }
+    ]
+  },
+  "benefits": {
+    "title": "Miksi DRMN?",
+    "items": [
+      "Laadukkaat ammattimaiset äänet, jotka oikeasti auttavat nukkumaan",
+      "Sekoita useita ääniä täydelliseen unympäristöön",
+      "Älykäs ajastin automaattisella häivytyksellä — aseta ja unohda",
+      "Kaunis intuitiivinen käyttöliittymä, helppo käyttää",
+      "Toimii täysin offline äänien latauksen jälkeen",
+      "Akku optimoitu yöpito ilman tyhjentymistä",
+      "Ilmainen lataus, premium valinnainen"
+    ]
+  },
+  "comparison": {
+    "title": "Paras unen äänilaite — DRMN vertailussa",
+    "description": "Miten DRMN vertautuu tyypillisiin ilmaisiin ja premium-sovelluksiin. Perustuu julkisiin tietoihin ja käyttäjäpalautteeseen.",
+    "table": {
+      "headers": [
+        "Ominaisuus",
+        "DRMN",
+        "Tyypilliset ilmaiset",
+        "Premium-sovellukset"
+      ],
+      "rows": [
+        {
+          "feature": "Ilmainen versio",
+          "drmn": "1 tunnin ajastin (riittää uneen)",
+          "typical": "Rajoitetut äänet tai mainokset",
+          "premium": "Tilaus vaaditaan"
+        },
+        {
+          "feature": "Offline",
+          "drmn": "Kyllä (10+ tuntia)",
+          "typical": "Rajoitettu tai mainoksilla",
+          "premium": "Kyllä"
+        },
+        {
+          "feature": "Äänimix",
+          "drmn": "Kyllä, rajoittamaton",
+          "typical": "Ei tai rajoitettu",
+          "premium": "Kyllä"
+        },
+        {
+          "feature": "Akkuoptimointi",
+          "drmn": "Kyllä, koko yö",
+          "typical": "Osittain",
+          "premium": "Kyllä"
+        },
+        {
+          "feature": "Vauvan unen äänet",
+          "drmn": "Kyllä (hiustenkuivaaja, imuri, näppäimistö)",
+          "typical": "Ei",
+          "premium": "Joskus"
+        },
+        {
+          "feature": "Uniajastin",
+          "drmn": "Automaattinen häivytys",
+          "typical": "Perus",
+          "premium": "Automaattinen häivytys"
+        },
+        {
+          "feature": "Tiedostokoko",
+          "drmn": "49,2 Mt",
+          "typical": "30–70 Mt",
+          "premium": "50–100 Mt"
+        },
+        {
+          "feature": "iOS-vaatimus",
+          "drmn": "17.1+",
+          "typical": "15.0+",
+          "premium": "16.0+"
+        },
+        {
+          "feature": "App Store -arvio",
+          "drmn": "4,9/5 (10 arviota)",
+          "typical": "3,5–4,5/5",
+          "premium": "4,0–4,8/5"
+        }
+      ]
+    }
+  },
+  "testimonials": {
+    "title": "Mitä käyttäjät sanovat DRMN:stä",
+    "items": [
+      {
+        "quote": "Nukun 40 % nopeammin DRMN:n kanssa. Mix mahdollistaa valkoisen kohinan ja aaltojen yhdistämisen. Paras uni vuosiin!",
+        "name": "Sarah M.",
+        "location": "Kalifornia, USA",
+        "role": "Ammattilainen"
+      },
+      {
+        "quote": "Vauvamme nukkuu yöllä hiustenkuivaajaäänen ansiosta. Ainoa joka toimii johdonmukaisesti. Offline pelastaa matkoilla.",
+        "name": "Michael R.",
+        "location": "Texas, USA",
+        "role": "Vanhempi"
+      },
+      {
+        "quote": "Unettomuuden kanssa DRMN muutti kaiken. Käytän joka yö ja herään virkeänä. Akkuoptimointi — ei enää huolta tyhjentymisestä.",
+        "name": "Jennifer L.",
+        "location": "New York, USA",
+        "role": "Unettomuudesta kärsivä"
+      },
+      {
+        "quote": "Käytän DRMN:ää keskittymiseen töissä. Mix luo täydellisen tunnelman. Ilmainen 1 tunnin ajastin — loistava arvo!",
+        "name": "David K.",
+        "location": "Lontoo, UK",
+        "role": "Etätyöntekijä"
+      }
+    ]
+  },
+  "whats_new": {
+    "title": "Uutta",
+    "description": "Viimeisimmät DRMN-päivitykset",
+    "items": [
+      {
+        "date": "Tammikuu 2025",
+        "title": "Parannettu akkuoptimointi",
+        "description": "Tehokkaampi yöpito. Jopa 10 tuntia jatkuvaa toistoa yhdellä latauksella."
+      },
+      {
+        "date": "Tammikuu 2025",
+        "title": "Uusia unen ääniä",
+        "description": "10 uutta ammattimaista tallennusta — kirjasto yli 100 tuntia."
+      },
+      {
+        "date": "Joulukuu 2024",
+        "title": "Parannettu äänimix",
+        "description": "Parempi äänenlaatu ja sujuvammat siirtymät äänien välillä."
+      }
+    ]
+  },
+  "final_cta": {
+    "title": "Valmis nukkumaan paremmin tänä yönä?",
+    "paragraph1": "Liity yli 10 000 käyttäjään, jotka paransivat untaan DRMN:llä. 4,9/5 App Storessa — ilmainen unen äänisovellus auttaa nukahtamaan 30–50 % nopeammin. Ilmainen versio: 1 tunnin ajastin, offline ja mix. Lataa tänään ja kokeile ammattimaisia ääniä ilmaiseksi.",
+    "cta_text": "Lataa ilmainen unen äänisovellus",
+    "cta_url": "https://apps.apple.com/app/id6746480683",
+    "cta_aria_label": "Lataa ilmainen unen äänisovellus App Storesta",
+    "cta_img_alt": "Lataa unen äänisovellus App Storesta"
+  },
+  "footer": {
+    "copyright": "© 2025 DRMN. Kaikki oikeudet pidätetään.",
+    "privacy_link": "Tietosuojakäytäntö",
+    "privacy_url": "/privacy.html",
+    "terms_link": "Käyttöehdot",
+    "terms_url": "/terms.html",
+    "fazier_badge_alt": "Fazier-merkki",
+    "superlaunch_badge_alt": "Esittelyssä Super Launchissa"
+  },
+  "app_info": {
+    "developer": "Vladimir Ivakhnenko",
+    "category": "Terveys ja kunto",
+    "age_rating": "4+",
+    "file_size": "49,2 Mt",
+    "compatibility": "Vaatii iOS 17.1:n tai uudemman",
+    "platform": "iPhone",
+    "copyright": "© 2025 c-basso",
+    "in_app_purchases": true,
+    "subscriptions": [
+      {
+        "name": "White Noise Machine",
+        "description": "Parempi uni unen äänillä DRMN:ssä",
+        "price": "$5.99",
+        "type": "Ilmainen kokeilu"
+      },
+      {
+        "name": "Lifetime Plan",
+        "description": "Kertaluonteinen ostos elinikäiseen käyttöön",
+        "price": "$19.99",
+        "type": "Kertaluonteinen"
+      }
+    ]
+  },
+  "seo": {
+    "breadcrumb_home": "Etusivu",
+    "faq_title": "UKK: unen äänilaite, unen äänet ja valkoinen kohina",
+    "faq": [
+      {
+        "question": "Mikä on paras ääni uneen?",
+        "answer": "Riippuu sinusta — monet valitsevat sadeäänen, tuulettimen tai tasaisen valkoisen kohinan. DRMN:ssä voit kuunnella ja sekoittaa ääniä löytääksesi nopeimman nukahtamisen."
+      },
+      {
+        "question": "Mikä on unen äänilaite?",
+        "answer": "Toistaa tasaista taustaa — sadetta, tuulettimen huminaa tai valkoista kohinaa — peittääksesi melun ja auttaaksesi nukkumaan. DRMN on iPhone-sovellus mixillä, offline-toistolla ja uniajastimella, kuten fyysinen äänilaite."
+      },
+      {
+        "question": "Paras valkoinen kohina -sovellus iPhonelle?",
+        "answer": "DRMN:llä on 4,9 tähden arvio ja yli 10 000 latausta. Sade, tuuletin, valkoinen kohina ja 100 tuntia unen ja luontoääniä — käyttäjät nukahtavat 30–50 % nopeammin."
+      },
+      {
+        "question": "Onko ilmainen valkoinen kohina -sovellus?",
+        "answer": "Kyllä! DRMN on ilmainen App Storessa. Ilmainen versio sisältää 1 tunnin ajastimen, offline-tilan, mixin ja unen äänet. Premium avaa pidemmän toiston."
+      },
+      {
+        "question": "Mitä ääniä unisovelluksessa on?",
+        "answer": "DRMN tarjoaa yli 100 tuntia ammattimaista audiota: valkoinen, ruskea ja tumma kohina, sade, aallot, tuli, aamu-linnut, meditaatio ja vauvan äänet (hiustenkuivaaja, imuri, näppäimistö)."
+      },
+      {
+        "question": "Toimiiko sovellus offline?",
+        "answer": "Kyllä! Äänien latauksen jälkeen DRMN toimii täysin offline. Akkuoptimoinnilla jopa 10 tuntia ilman nettiä."
+      },
+      {
+        "question": "Paras sovellus vauvan uneen?",
+        "answer": "DRMN sisältää erityiset vauvan äänet (hiustenkuivaaja, imuri, näppäimistö), jotka auttavat nukahtamaan nopeammin. Tutut rytmit rauhoittavat ja luovat rauhallisen ympäristön."
+      },
+      {
+        "question": "Miten unen äänilaite-sovellus toimii?",
+        "answer": "DRMN tarjoaa valkoista kohinaa ja unen ääniä lepoon ja keskittymiseen. Peittää melun, luo tasaisen unympäristön ja edistää syvempää unta — kuten fyysinen äänilaite."
+      },
+      {
+        "question": "Voiko ääniä sekoittaa?",
+        "answer": "Kyllä! Yhdistä valkoinen kohina aalloilla tai sade meditaatiolla. Luo oma unikokemuksesi."
+      },
+      {
+        "question": "Onko uniajastin?",
+        "answer": "Kyllä! Ajastin automaattisella häivytyksellä. Aseta se — ääni hiipuu hitaasti nukahtamisen jälkeen."
+      },
+      {
+        "question": "Mikä on valkoinen kohina uneen ja miten se auttaa?",
+        "answer": "Tasainen ääni, joka peittää häiritsevät melut ja auttaa nukahtamaan nopeammin. DRMN estää liikenteen, naapurit ja muut äänet tasaisessa unympäristössä."
+      },
+      {
+        "question": "Sopiiko unettomuuteen?",
+        "answer": "Kyllä! DRMN:llä on 4,9 ja yli 10 000 latausta. Peittämällä melua käyttäjät nukahtavat keskimäärin 30–50 % nopeammin. Lataa ilmaiseksi."
+      },
+      {
+        "question": "Kuinka monta latausta DRMN:llä on?",
+        "answer": "Yli 10 000 App Storessa, 4,9/10 arviosta. 100 tuntia ääniä ja jopa 10 tuntia offline yhdellä latauksella."
+      },
+      {
+        "question": "Mikä on DRMN:n App Store -arvio?",
+        "answer": "4,9/5 kymmenestä arviosta. Yli 10 000 latausta, 100 tuntia unen ääniä ja offline-toisto."
+      },
+      {
+        "question": "Miten DRMN eroaa muista sovelluksista?",
+        "answer": "DRMN erottuu anteliaalla ilmaisversiolla (1 tunnin ajastin), edistyneellä mixillä, vauvan äänillä ja akkuoptimoinnilla — offline ja ammattimaiset äänit ilman tilausta."
+      },
+      {
+        "question": "Mikä tekee DRMN:stä ainutlaatuisen ilmaisten vaihtoehtojen joukossa?",
+        "answer": "Ilmainen versio 1 tunnin ajastimella ilman tilausta. Kun muut rajoittavat ääniä tai vaativat ostoja, DRMN tarjoaa mixin, offline-tilan ja akkuoptimoinnin ilmaiseksi — plus vauvan äänet, joita monilta puuttuu."
+      },
+      {
+        "question": "Onko DRMN parempi kuin muut unen äänisovellukset?",
+        "answer": "Ilmainen versio: ajastin, mix, offline, akku ilman tilausta. 4,9, yli 10 000 latausta, nukahtaminen 30–50 % nopeammin. Vauvan äänet ja älykäs ajastin ilmaiseksi — ominaisuuksia, joista muut veloittavat."
+      }
+    ],
+    "structured_data": {
+      "software_application": {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "DRMN",
+        "alternateName": "DRMN Unisovellus",
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "iOS",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://apps.apple.com/app/id6746480683"
+        },
+        "description": "Unen äänisovellus ja valkoinen kohina iPhonelle. Ilmainen versio sateella, tuulettimella, mixillä ja offline-tilalla. Uneen, keskittymiseen ja vauvan uneen.",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://drmn.xyz/img/logo.webp",
+          "width": 176,
+          "height": 176,
+          "caption": "DRMN-sovelluksen logo"
+        },
+        "screenshot": {
+          "@type": "ImageObject",
+          "url": "https://drmn.xyz/img/logo.webp",
+          "width": 176,
+          "height": 176
+        },
+        "url": "https://drmn.xyz/fi/",
+        "author": {
+          "@type": "Person",
+          "name": "Vladimir Ivakhnenko"
+        },
+        "publisher": {
+          "@type": "Person",
+          "name": "Vladimir Ivakhnenko"
+        },
+        "keywords": "unen äänet, unen äänilaite, valkoinen kohina, unisovellus, sadeääni uneen, tuulettimen ääni uneen, offline-uni",
+        "inLanguage": "fi",
+        "datePublished": "2024-01-01",
+        "dateModified": "2025-01-15",
+        "softwareVersion": "1.5",
+        "fileSize": "49.2MB",
+        "softwareRequirements": "Vaatii iOS 17.1:n tai uudemman",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "ratingCount": "10"
+        }
+      },
+      "organization": {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "DRMN",
+        "url": "https://drmn.xyz/fi/",
+        "logo": "https://drmn.xyz/img/logo.webp",
+        "description": "DRMN — unen äänisovellus ja valkoinen kohina iPhonelle. Ilmainen versio mixillä ja offline-tilalla. Uneen, keskittymiseen ja vauvan uneen."
+      },
+      "website": {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "DRMN",
+        "url": "https://drmn.xyz/fi/",
+        "description": "Unen äänisovellus ja valkoinen kohina iPhonelle. Ilmainen versio mixillä ja offline-tilalla. Lataa ilmaiseksi App Storesta.",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://drmn.xyz/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      "howto": {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Kuinka käyttää unen äänisovellusta",
+        "description": "Opi käyttämään DRMN:ää nopeampaan nukahtamiseen. Vaiheittainen opas.",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Lataa ilmaiseksi",
+            "text": "Lataa DRMN App Storesta iPhonellesi. Vaatii iOS 17.1:n. Ilmainen versio sisältää 1 tunnin ajastimen.",
+            "url": "https://apps.apple.com/app/id6746480683"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Selaa unen ääniä",
+            "text": "Avaa sovellus ja tutustu kirjastoon: valkoinen ja ruskea kohina, luonto (sade, aallot, tuli), meditaatio ja vauvan äänet."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Valitse äänet",
+            "text": "Valitse tarpeesi mukaan — valkoinen kohina peittämiseen, luonto rentoutumiseen, vauvan äänet pienille. Kuuntele ennen toistoa."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Sekoita ääniä",
+            "text": "Yhdistä valkoinen kohina aalloilla tai sade meditaatiolla. Luo täydellinen unympäristö."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "Aseta uniajastin",
+            "text": "Ota automaattinen häivytys käyttöön, jos et halua ääntä koko yöksi. Äänenvoimakkuus hiipuu hitaasti."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 6,
+            "name": "Toista ja nuku",
+            "text": "Paina play ja säädä äänenvoimakkuus. iPhone lähellä tai kuulokkeet — molemmat toimivat."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 7,
+            "name": "Lataa offline-käyttöön",
+            "text": "Lataa suosikit offline-käyttöön. Keskeytymätön uni missä tahansa ilman nettiä."
+          }
+        ]
+      }
+    }
+  }
+}

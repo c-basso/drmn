@@ -3,6 +3,8 @@
 const SITE_URL = 'https://drmn.xyz/';
 const DEFAULT_LANGUAGE = 'en';
 
+const { buildOgLocaleMap } = require('./locales');
+
 const APP_ID = '6746480683';
 const APP_STORE_URL = `https://apps.apple.com/app/id${APP_ID}`;
 
@@ -17,6 +19,7 @@ const SOFTWARE_APPLICATION_AGGREGATE_RATING = {
     ratingCount: '10'
 };
 
+// Shipped locales are active; uncomment a line after adding build/<code>.json.
 const LANGUAGES = [
     DEFAULT_LANGUAGE,
     'ru',
@@ -24,7 +27,36 @@ const LANGUAGES = [
     'fr',
     'de',
     'it',
-    'pt'
+    'pt',
+    'ja',
+    'ko',
+    'zh',
+    'cs',
+    'da',
+    'el',
+    'fi',   // Suomi
+    'fil',  // Filipino
+    'he',   // עברית (RTL)
+    'hr',   // Hrvatski
+    'hu',   // Magyar
+    'id',   // Bahasa Indonesia
+    'ms',   // Bahasa Melayu
+    'nl',   // Nederlands
+    'no',   // Norsk (html lang: nb)
+    'pl',   // Polski
+    'ro',   // Română
+    'sk',   // Slovenčina
+    'sv',   // Svenska
+    'bg',   // Български
+    'sl',   // Slovenščina
+    'ca',   // Català
+    'hi',   // हिन्दी
+    'bn',   // বাংলা
+    'ml',   // മലയാളം
+    'th',   // ไทย
+    'tr',   // Türkçe
+    'uk',   // Українська
+    'vi'    // Tiếng Việt
 ];
 
 const URLS = LANGUAGES.map((lang) => ({
@@ -32,15 +64,7 @@ const URLS = LANGUAGES.map((lang) => ({
     url: lang === DEFAULT_LANGUAGE ? SITE_URL : `${SITE_URL}${lang}/`
 }));
 
-const OG_LOCALE_BY_LANGUAGE = {
-    en: 'en_US',
-    ru: 'ru_RU',
-    es: 'es_ES',
-    fr: 'fr_FR',
-    de: 'de_DE',
-    it: 'it_IT',
-    pt: 'pt_BR'
-};
+const OG_LOCALE_BY_LANGUAGE = buildOgLocaleMap(LANGUAGES);
 
 const CANONICAL_URL_BY_LANGUAGE = new Map(URLS.map(({ lang, url }) => [lang, url]));
 

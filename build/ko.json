@@ -1,0 +1,555 @@
+{
+  "meta": {
+    "lang": "ko",
+    "title": "DRMN 수면 사운드 머신 — iPhone 잠잘 때 듣는 소리",
+    "description": "iPhone용 수면 사운드 앱. 빗소리·선풍기·화이트 노이즈 믹스, 오프라인 재생. App Store에서 DRMN 무료 다운로드—수면·집중·아기 수면에 최적.",
+    "keywords": "잠잘 때 듣는 소리, 수면 사운드, 사운드 머신, 화이트 노이즈, 수면 소리, 빗소리 수면, 선풍기 소리 수면, 수면 앱, 화이트 노이즈 앱, 아기 수면 소리, 집중 사운드, 오프라인 수면 소리",
+    "author": "DRMN",
+    "og_url": "https://drmn.xyz/ko/",
+    "og_title": "수면 사운드 머신 | DRMN",
+    "og_description": "iPhone용 수면 사운드 앱. 빗소리, 선풍기, 화이트 노이즈, 자연음을 믹스하고 오프라인으로 재생해요. 1시간 타이머와 배터리 최적화로 밤새 사용 가능. 수면, 집중, 아기 수면을 돕습니다. App Store에서 DRMN 무료 다운로드.",
+    "og_image": "https://drmn.xyz/ko/site_preview.png",
+    "og_image_alt": "DRMN 앱 — 더 편안한 수면, 더 빠른 잠들기",
+    "og_locale": "ko_KR",
+    "twitter_url": "https://drmn.xyz/ko/",
+    "twitter_title": "수면 사운드 머신 | DRMN",
+    "twitter_description": "iPhone용 수면 사운드 앱. 빗소리, 선풍기, 화이트 노이즈, 자연음을 믹스하고 오프라인으로 재생해요. 1시간 타이머와 배터리 최적화로 밤새 사용 가능. 수면, 집중, 아기 수면을 돕습니다. App Store에서 DRMN 무료 다운로드.",
+    "twitter_image": "https://drmn.xyz/ko/site_preview.png",
+    "twitter_image_alt": "DRMN 앱 — 더 편안한 수면, 더 빠른 잠들기",
+    "twitter_site": "@c__basso",
+    "twitter_creator": "@c__basso",
+    "canonical": "https://drmn.xyz/ko/",
+    "app_store_id": "6746480683",
+    "og_type": "website",
+    "twitter_card": "summary_large_image",
+    "theme_color": "#1a1b2e",
+    "apple_mobile_web_app_status_bar_style": "default",
+    "og_image_width": "1200",
+    "og_image_height": "630",
+    "twitter_image_width": "1200",
+    "twitter_image_height": "630"
+  },
+  "header": {
+    "app_name_suffix": "수면 사운드 머신",
+    "logo_alt": "DRMN 수면 사운드 머신 앱 로고 (iPhone)",
+    "app_name": "DRMN",
+    "title": "iPhone용 수면 사운드 머신 앱",
+    "tagline": "잠들기 좋은 사운드로 더 빨리 잠드세요. DRMN은 빗소리, 선풍기, 화이트 노이즈, 자연음을 지원하는 수면 사운드 앱이에요. 믹스, 오프라인 재생, 배터리 절약으로 밤새 사용할 수 있어요.",
+    "tldr": "DRMN은 기본 무료 iOS 수면 사운드 앱으로, 사용자의 잠드는 시간을 평균 30~50% 단축해요. 무료 버전에는 빗소리, 선풍기, 화이트 노이즈, 1시간 타이머, 오프라인 모드, 사운드 믹스, 배터리 최적화가 포함돼요. App Store에서 무료로 다운로드할 수 있어요.",
+    "download_text": "지금 다운로드",
+    "download_url": "https://apps.apple.com/app/id6746480683",
+    "download_aria_label": "App Store에서 무료 수면 사운드 앱 다운로드",
+    "download_img_alt": "App Store에서 수면 사운드 앱 다운로드",
+    "scan_to_download": "스캔하여 다운로드"
+  },
+  "stats": {
+    "title": "DRMN 숫자로 보기",
+    "items": [
+      {
+        "stat": "4.9/5",
+        "description": "App Store 평균 평점 (리뷰 10개)"
+      },
+      {
+        "stat": "1만 회 이상",
+        "description": "App Store에서 DRMN을 다운로드한 사용자"
+      },
+      {
+        "stat": "30~50% 단축",
+        "description": "사용자가 보고한 평균 잠드는 시간 개선"
+      },
+      {
+        "stat": "100시간",
+        "description": "전문가가 녹음한 수면 사운드와 앰비언트 오디오"
+      },
+      {
+        "stat": "10시간",
+        "description": "한 번 충전으로 오프라인 재생 (배터리 최적화)"
+      },
+      {
+        "stat": "49.2 MB",
+        "description": "앱 용량 (모든 iPhone 모델에 최적화)"
+      },
+      {
+        "stat": "iOS 17.1+",
+        "description": "최신 iPhone 모두 지원"
+      }
+    ]
+  },
+  "features": {
+    "title": "더 나은 휴식을 위한 수면 사운드와 자연음",
+    "items": [
+      {
+        "icon": "🌊",
+        "title": "풍부한 수면 사운드 라이브러리",
+        "description": "화이트 노이즈, 브라운 노이즈, 다크 노이즈로 깊은 이완을. 잔잔한 빗소리, 파도, 모닥불, 아침 새소리 같은 자연음도 있어요. 명상용 앰비언트와 부드러운 연주곡도 포함. 사운드를 조합해 나만의 수면 환경을 만들 수 있어요."
+      },
+      {
+        "icon": "😴",
+        "title": "더 빨리 잠들고, 더 깊이 자요",
+        "description": "잠들기 어려운 밤에. 과학적 근거가 있는 사운드가 교통 소음, 이웃 소음, 코골이 등을 가려줘요. 일정한 소리 환경이 뇌에 휴식 시간을 알려주고, 아침에 상쾌하게 일어날 수 있게 도와줘요."
+      },
+      {
+        "icon": "🎯",
+        "title": "집중력 UP, 일도 편하게",
+        "description": "명상, 공부, 시끄러운 카페에서 일할 때도. DRMN이 집중에 맞는 소리 환경을 만들어 잡음을 차단하고 스트레스를 줄여줘요. 중요한 작업 중에도 집중을 유지하기 좋다는 평이 많아요."
+      },
+      {
+        "icon": "👶",
+        "title": "아기의 편안한 수면을 돕습니다",
+        "description": "드라이어, 청소기, 키보드 등 아기 전용 사운드로 잠들기를 도와요. 익숙한 리듬이 안정감을 주고, 건강한 수면 패턴 형성에 도움이 됩니다."
+      }
+    ]
+  },
+  "popular_sounds": {
+    "title": "인기 수면 사운드",
+    "intro": "잠들기 좋은 사운드를 찾고 계신가요? DRMN에는 많이 검색하는 수면 소리가 준비되어 있어요. 믹스, 오프라인 재생, 밤새 재생까지 iPhone에서 가능해요.",
+    "items": [
+      {
+        "icon": "🌧️",
+        "title": "빗소리 (수면용)",
+        "description": "잔잔한 빗소리가 갑작스러운 소음을 줄이고 잠들기를 도와요. 화이트 노이즈와 믹스하면 더 깊은 수면 사운드 경험을."
+      },
+      {
+        "icon": "🌀",
+        "title": "선풍기 소리 (수면용)",
+        "description": "일정한 선풍기 소리가 교통 소음, 코골이, 이웃 소음을 차단해요. 많은 분이 매일 밤 의지하는 클래식한 잠들기 사운드예요."
+      },
+      {
+        "icon": "🔊",
+        "title": "화이트 노이즈 (수면용)",
+        "description": "화이트·브라운·다크 노이즈가 일정한 소리층을 만들어 뇌에 휴식 신호를 보내요."
+      },
+      {
+        "icon": "🌊",
+        "title": "바다와 자연 수면 사운드",
+        "description": "파도, 모닥불, 새소리 등 자연음 라이브러리. 빗소리나 선풍기 소리와 언제든 자유롭게 믹스할 수 있어요."
+      }
+    ]
+  },
+  "content": {
+    "title": "수면 사운드 머신 앱으로 수면을 바꿔보세요",
+    "intro": "DRMN은 화이트 노이즈, 빗소리, 선풍기, 자연음으로 더 빨리 잠들도록 돕는 iOS 수면 사운드 앱이에요. 1만 회 이상 다운로드, 4.9점 평점. 불면, 업무 집중, 아기 수면 등 다양한 상황에 맞는 사운드를 제공해요.",
+    "sections": [
+      {
+        "title": "필요에 맞춘 사운드 라이브러리",
+        "paragraph1": "휴식, 집중, 더 나은 수면을 위해 고품질 사운드를 엄선했어요:",
+        "list_items": [
+          "<strong>화이트 노이즈, 브라운 노이즈, 다크 노이즈</strong> — 방해 소음을 가리고 일정한 수면 환경을 만들어요",
+          "<strong>자연음</strong> — 빗소리, 파도, 모닥불, 선풍기, 아침 새소리로 평온한 공간으로",
+          "<strong>명상·집중 사운드</strong> — 앰비언트와 부드러운 연주곡으로 일과 마음챙김을 지원",
+          "<strong>아기 수면 사운드</strong> — 드라이어, 청소기, 키보드 등 익숙한 소리로 아이의 잠들기를 도와요"
+        ],
+        "paragraph2": "여러 사운드를 믹스해 나만의 조합을 만들 수 있어요. 화이트 노이즈에 파도 소리를 살짝 더하거나, 빗소리와 명상 음악을 섞는 것도 자유롭게 가능해요."
+      },
+      {
+        "title": "과학적 근거가 있는 수면 지원",
+        "paragraph1": "일정한 배경음이 수면의 질을 개선한다는 연구 결과가 있어요. DRMN이 돕는 방법:",
+        "list_items": [
+          "<strong>방해 소음 차단</strong> — 교통, 이웃, 코골이, 갑작스러운 소리에 덜 깨어요",
+          "<strong>뇌에 휴식 신호</strong> — 일정한 소리 환경이 마음을 가라앉히고 잠들기를 도와요",
+          "<strong>더 깊은 수면</strong> — 엄선된 주파수가 회복력 있는 수면 주기를 지원해요"
+        ],
+        "paragraph2": "1만 회 이상 다운로드, App Store 4.9점. 사용자들은 평균 30~50% 더 빨리 잠들고, 밤중 깨어남이 줄었다고 보고해요. 상쾌하게 일어나 하루를 시작하세요."
+      },
+      {
+        "title": "수면뿐 아니라 집중에도",
+        "paragraph1": "DRMN은 수면 앱을 넘어 집중의 비밀 병기예요. 시끄러운 카페, 시험 공부, 명상—적절한 소리가 큰 차이를 만들어요:",
+        "list_items": [
+          "<strong>산만함 제거</strong> — 어떤 환경에서도 나만의 조용한 공간을",
+          "<strong>스트레스 감소</strong> — 차분한 주파수로 편안하게 집중",
+          "<strong>생산성 향상</strong> — 배경음으로 집중력과 생산성이 올랐다는 후기",
+          "<strong>깊은 집중</strong> — 중요한 작업과 딥 워크에 적합"
+        ],
+        "paragraph2": "재택근무, 밤늦은 공부, 잠깐의 평온이 필요할 때—DRMN이 최적의 사운드 배경을 제공해요."
+      },
+      {
+        "title": "아이가 밤새 편히 자도록",
+        "paragraph1": "아기가 잠들지 않는 밤은 정말 힘들죠. 영·유아를 위해 설계한 전용 사운드를 담았어요. 부드러운 드라이어, 청소기, 키보드 리듬이 아이를 편안하게 해요.",
+        "list_items": [],
+        "paragraph2": "일정하고 부드러운 소리는 태내에서 들었던 익숙한 리듬을 재현해 안정감을 줘요. 전 세계 부모님들이 DRMN을 신뢰하며, 아이의 더 길고 편안한 수면을—부모님의 휴식도 함께—돕고 있어요."
+      },
+      {
+        "title": "일상에 맞춘 세심한 설계",
+        "paragraph1": "DRMN이 일상에 자연스럽게 녹아들도록 세부까지 신경 썼어요:",
+        "list_items": [
+          "<strong>전문가 녹음 사운드</strong> — 100시간 이상의 고품질 오디오",
+          "<strong>자유로운 믹스</strong> — 여러 사운드를 조합해 나만의 블렌드",
+          "<strong>스마트 수면 타이머</strong> — 자동 페이드아웃, 밤새 재생 걱정 없이",
+          "<strong>심플하고 아름다운 UI</strong> — 몇 초면 시작, 복잡한 설정 불필요",
+          "<strong>오프라인 지원</strong> — 즐겨찾는 사운드를 다운로드하면 인터넷 없이 최대 10시간 재생",
+          "<strong>배터리 절약</strong> — 밤새 재생해도 iPhone 배터리를 적게 씀",
+          "<strong>무료로 시작</strong> — 지금 무료로 체험, 프리미엄 기능은 선택 사항"
+        ],
+        "paragraph2": "iOS 17.1 이상 iPhone 지원. 무료 버전에는 1시간 타이머(잠들기에 충분), 오프라인 모드, 사운드 믹스, 배터리 최적화가 포함돼요. 프리미엄으로 연장 재생과 추가 사운드를 이용할 수 있어요."
+      }
+    ]
+  },
+  "benefits": {
+    "title": "DRMN을 선택하는 이유",
+    "items": [
+      "수면을 돕는 전문가 녹음 고품질 사운드",
+      "여러 사운드를 믹스해 나만의 수면 환경",
+      "자동 페이드아웃 스마트 타이머—설정하고 잊어버리세요",
+      "아름답고 직관적인, 쉬운 인터페이스",
+      "사운드 다운로드 후 완전 오프라인 사용",
+      "밤새 재생해도 배터리를 적게 쓰는 최적화",
+      "무료 다운로드, 프리미엄 기능은 선택"
+    ]
+  },
+  "comparison": {
+    "title": "수면용 사운드 머신 — DRMN 비교",
+    "description": "DRMN이 일반적인 무료·유료 수면 사운드 앱과 어떻게 다른지 비교해요. 공개 정보와 사용자 보고를 바탕으로 합니다.",
+    "table": {
+      "headers": [
+        "기능",
+        "DRMN",
+        "일반 무료 앱",
+        "유료 앱"
+      ],
+      "rows": [
+        {
+          "feature": "무료 버전",
+          "drmn": "1시간 타이머 (수면에 충분)",
+          "typical": "사운드 제한 또는 광고",
+          "premium": "구독 필수"
+        },
+        {
+          "feature": "오프라인 모드",
+          "drmn": "지원 (10시간+)",
+          "typical": "제한 또는 광고",
+          "premium": "지원"
+        },
+        {
+          "feature": "사운드 믹스",
+          "drmn": "무제한",
+          "typical": "미지원 또는 제한",
+          "premium": "지원"
+        },
+        {
+          "feature": "배터리 최적화",
+          "drmn": "밤새 지원",
+          "typical": "일부만",
+          "premium": "지원"
+        },
+        {
+          "feature": "아기 수면 사운드",
+          "drmn": "지원 (드라이어, 청소기, 키보드)",
+          "typical": "미지원",
+          "premium": "경우에 따라"
+        },
+        {
+          "feature": "수면 타이머",
+          "drmn": "자동 페이드",
+          "typical": "기본만",
+          "premium": "자동 페이드"
+        },
+        {
+          "feature": "파일 크기",
+          "drmn": "49.2 MB",
+          "typical": "30~70 MB",
+          "premium": "50~100 MB"
+        },
+        {
+          "feature": "iOS 요구사항",
+          "drmn": "17.1+",
+          "typical": "15.0+",
+          "premium": "16.0+"
+        },
+        {
+          "feature": "App Store 평점",
+          "drmn": "4.9/5 (리뷰 10개)",
+          "typical": "3.5~4.5/5",
+          "premium": "4.0~4.8/5"
+        }
+      ]
+    }
+  },
+  "testimonials": {
+    "title": "사용자 후기",
+    "items": [
+      {
+        "quote": "DRMN 덕분에 40% 더 빨리 잠들어요. 사운드 믹스로 화이트 노이즈와 파도 소리를 조합해, 몇 년 만에 최고의 수면을 하고 있어요.",
+        "name": "Sarah M.",
+        "location": "캘리포니아, 미국",
+        "role": "직장인"
+      },
+      {
+        "quote": "드라이어 소리 덕분에 아기가 이제 밤새 잠을 자요. 꾸준히 효과가 있는 유일한 방법이에요. 여행할 때 오프라인 모드가 정말 큰 도움이 됩니다.",
+        "name": "Michael R.",
+        "location": "텍사스, 미국",
+        "role": "부모"
+      },
+      {
+        "quote": "불면증이 있는 저에게 DRMN은 게임 체인저예요. 매일 밤 쓰고 상쾌하게 일어나요. 배터리 최적화 덕분에 밤에 폰이 꺼질 걱정도 없어요.",
+        "name": "Jennifer L.",
+        "location": "뉴욕, 미국",
+        "role": "불면으로 고민하는 분"
+      },
+      {
+        "quote": "일할 때 집중용으로 DRMN을 써요. 사운드를 믹스해 최적의 환경을 만들 수 있고, 무료 1시간 타이머는 작업 세션에 딱—가성비 최고예요.",
+        "name": "David K.",
+        "location": "런던, 영국",
+        "role": "재택 근무자"
+      }
+    ]
+  },
+  "whats_new": {
+    "title": "새로운 소식",
+    "description": "DRMN 최근 업데이트",
+    "items": [
+      {
+        "date": "2025년 1월",
+        "title": "배터리 최적화 강화",
+        "description": "밤새 재생을 위한 배터리 효율을 개선했어요. 한 번 충전으로 최대 10시간 연속 재생이 가능합니다."
+      },
+      {
+        "date": "2025년 1월",
+        "title": "새 수면 사운드 추가",
+        "description": "전문가 녹음 수면 사운드 10종 추가. 라이브러리는 총 100시간 이상의 오디오로."
+      },
+      {
+        "date": "2024년 12월",
+        "title": "사운드 믹스 개선",
+        "description": "음질과 사운드 전환을 더 부드럽게. 믹스 기능을 강화했습니다."
+      }
+    ]
+  },
+  "final_cta": {
+    "title": "오늘 밤, 더 나은 수면을 시작하세요",
+    "paragraph1": "1만 명 이상의 사용자가 DRMN으로 수면을 개선했어요. App Store 4.9점 기본 무료 수면 사운드 앱으로 평균 30~50% 더 빨리 잠들 수 있어요. 무료 버전에는 1시간 타이머, 오프라인 모드, 사운드 믹스가 포함돼요. 지금 다운로드해 전문가 녹음 사운드로 더 깊은 수면과 상쾌한 아침을—무료로 체험해 보세요.",
+    "cta_text": "무료 수면 사운드 앱 다운로드",
+    "cta_url": "https://apps.apple.com/app/id6746480683",
+    "cta_aria_label": "App Store에서 무료 수면 사운드 앱 다운로드",
+    "cta_img_alt": "App Store에서 수면 사운드 앱 다운로드"
+  },
+  "footer": {
+    "copyright": "© 2025 DRMN. All rights reserved.",
+    "privacy_link": "개인정보 처리방침",
+    "privacy_url": "/privacy.html",
+    "terms_link": "이용 약관",
+    "terms_url": "/terms.html",
+    "fazier_badge_alt": "Fazier 배지",
+    "superlaunch_badge_alt": "Super Launch 소개"
+  },
+  "app_info": {
+    "developer": "Vladimir Ivakhnenko",
+    "category": "건강 및 피트니스",
+    "age_rating": "4+",
+    "file_size": "49.2 MB",
+    "compatibility": "iOS 17.1 이상 필요",
+    "platform": "iPhone",
+    "copyright": "© 2025 c-basso",
+    "in_app_purchases": true,
+    "subscriptions": [
+      {
+        "name": "White Noise Machine",
+        "description": "DRMN 수면 사운드로 더 편안한 수면",
+        "price": "$5.99",
+        "type": "무료 체험"
+      },
+      {
+        "name": "Lifetime Plan",
+        "description": "일회 구매로 평생 이용",
+        "price": "$19.99",
+        "type": "일회 구매"
+      }
+    ]
+  },
+  "seo": {
+    "breadcrumb_home": "홈",
+    "faq_title": "자주 묻는 질문: 수면 사운드 머신과 화이트 노이즈",
+    "faq": [
+      {
+        "question": "수면에 가장 좋은 소리는 무엇인가요?",
+        "answer": "사람마다 다르지만, 빗소리, 선풍기 소리, 일정한 화이트 노이즈를 많이 선택해요. DRMN에서는 미리 듣고 믹스해 보며 나에게 맞는 사운드를 찾을 수 있어요."
+      },
+      {
+        "question": "수면 사운드 머신이란?",
+        "answer": "빗소리, 선풍기, 화이트 노이즈 같은 일정한 배경음을 재생해 방해 소음을 가리고 잠들기를 돕는 장치예요. DRMN은 iPhone용 수면 사운드 앱으로, 실물 사운드 머신처럼 믹스, 오프라인 재생, 수면 타이머를 사용할 수 있어요."
+      },
+      {
+        "question": "iPhone용 추천 화이트 노이즈 앱은?",
+        "answer": "DRMN은 App Store 4.9점, 1만 회 이상 다운로드를 기록한 수면 사운드 앱이에요. 빗소리, 선풍기, 화이트 노이즈와 100시간 이상의 수면·자연음을 제공하며, 사용자들은 평균 30~50% 더 빨리 잠든다고 보고해요."
+      },
+      {
+        "question": "무료로 쓸 수 있는 화이트 노이즈 앱이 있나요?",
+        "answer": "네. DRMN은 App Store에서 무료 다운로드할 수 있는 프리미엄 앱이에요. 무료 버전에는 1시간 타이머, 오프라인 모드, 사운드 믹스, 수면 사운드가 포함돼요. 프리미엄으로 연장 재생과 추가 사운드를 이용할 수 있어요."
+      },
+      {
+        "question": "수면 사운드 앱에는 어떤 소리가 있나요?",
+        "answer": "DRMN에는 100시간 이상의 전문가 녹음 오디오가 있어요. 화이트·브라운·다크 노이즈, 빗소리, 파도, 모닥불, 아침 새소리와 명상 사운드, 아기용(드라이어, 청소기, 키보드) 사운드도 포함돼요."
+      },
+      {
+        "question": "오프라인에서 사용할 수 있나요?",
+        "answer": "네. 사운드를 다운로드하면 완전 오프라인으로 사용할 수 있어요. 배터리 최적화로 한 번 충전에 최대 10시간 연속 재생. 인터넷 없이도 밤새 사용 가능해요."
+      },
+      {
+        "question": "아기 수면용 화이트 노이즈 앱은?",
+        "answer": "DRMN에는 아기 전용 사운드(드라이어, 청소기, 키보드)가 포함되어 영유아의 잠들기를 도와요. 익숙한 리듬이 안정감을 주고 편안한 수면 환경을 만드는 데 도움이 됩니다."
+      },
+      {
+        "question": "사운드 머신 앱은 어떻게 작동하나요?",
+        "answer": "DRMN은 화이트 노이즈와 수면 사운드로 잠들기와 집중을 돕습니다. 방해 소음을 가리고 일정한 수면 환경을 만들어 더 깊은 수면을 촉진해요. 실물 화이트 노이즈 머신처럼 iPhone에서 사용할 수 있어요."
+      },
+      {
+        "question": "사운드를 믹스할 수 있나요?",
+        "answer": "네. 여러 사운드를 자유롭게 조합할 수 있어요. 화이트 노이즈에 파도 소리를 더하거나, 빗소리와 명상 음악을 믹스해 나만의 수면 환경을 만들 수 있어요."
+      },
+      {
+        "question": "수면 타이머가 있나요?",
+        "answer": "네. 자동 페이드아웃 수면 타이머가 내장되어 있어요. 설정하면 잠든 후 소리가 점점 작아져 걱정 없이 사용할 수 있습니다."
+      },
+      {
+        "question": "수면용 화이트 노이즈란? 어떻게 도움이 되나요?",
+        "answer": "일정한 소리로 갑작스러운 소음을 가리고 더 빨리 잠들도록 돕는 사운드예요. DRMN의 화이트 노이즈는 교통·이웃 소음을 차단하고 일정한 수면 환경을 만드는 데 도움이 됩니다."
+      },
+      {
+        "question": "불면증용 수면 사운드 앱으로 쓸 수 있나요?",
+        "answer": "네. DRMN은 App Store 4.9점, 1만 회 이상 다운로드를 기록했어요. 방해 소음을 가리고 일정한 환경을 만들어 사용자들은 평균 30~50% 더 빨리 잠든다고 보고합니다. 무료로 체험해 보세요."
+      },
+      {
+        "question": "DRMN 다운로드 수는?",
+        "answer": "App Store에서 1만 회 이상 다운로드되었고, 10개 리뷰 기준 4.9점을 유지하고 있어요. 100시간 이상의 전문가 녹음 사운드와 최대 10시간 오프라인 재생을 지원합니다."
+      },
+      {
+        "question": "DRMN App Store 평점은?",
+        "answer": "10개 사용자 리뷰 기준 App Store에서 4.9/5점이에요. 1만 회 이상 다운로드되었으며, 100시간 이상의 수면 사운드와 오프라인 재생을 제공합니다."
+      },
+      {
+        "question": "다른 화이트 노이즈 앱과의 차이점은?",
+        "answer": "DRMN은 무료 버전에서도 1시간 타이머, 고급 사운드 믹스, 아기 수면 사운드, 뛰어난 배터리 최적화를 제공해요. 많은 경쟁 앱이 무료를 제한하거나 구독을 요구하는 반면, DRMN 무료 버전은 오프라인, 전문 녹음 사운드, 믹스가 가능합니다."
+      },
+      {
+        "question": "무료 앱 중 DRMN만의 특징은?",
+        "answer": "구독 없이 1시간 타이머가 포함된 넉넉한 무료 버전이 특징이에요. 무료 경쟁 앱이 사운드 수를 제한하거나 결제를 요구하는 반면, DRMN은 믹스, 오프라인, 배터리 최적화를 무료로 제공합니다. 아기 수면 사운드도 많은 경쟁 앱에는 없어요."
+      },
+      {
+        "question": "다른 수면 사운드 앱보다 나은가요?",
+        "answer": "무료 버전에 1시간 타이머, 사운드 믹스, 오프라인, 배터리 최적화가 포함되고 구독이 필요 없어요. 4.9점, 1만 회 이상 다운로드. 아기 수면 사운드와 자동 페이드 수면 타이머도 무료 버전에서 이용 가능—많은 경쟁 앱은 유료이거나 미제공인 기능입니다."
+      }
+    ],
+    "structured_data": {
+      "software_application": {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "DRMN",
+        "alternateName": "DRMN 수면 앱",
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "iOS",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://apps.apple.com/app/id6746480683"
+        },
+        "description": "iPhone용 수면 사운드·화이트 노이즈 앱. 무료 버전으로 빗소리, 선풍기, 화이트 노이즈 믹스, 오프라인 재생. 수면, 집중, 아기 수면 지원.",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://drmn.xyz/img/logo.webp",
+          "width": 176,
+          "height": 176,
+          "caption": "DRMN 앱 로고"
+        },
+        "screenshot": {
+          "@type": "ImageObject",
+          "url": "https://drmn.xyz/img/logo.webp",
+          "width": 176,
+          "height": 176
+        },
+        "url": "https://drmn.xyz/ko/",
+        "author": {
+          "@type": "Person",
+          "name": "Vladimir Ivakhnenko"
+        },
+        "publisher": {
+          "@type": "Person",
+          "name": "Vladimir Ivakhnenko"
+        },
+        "keywords": "수면 사운드, 사운드 머신, 화이트 노이즈, 수면 앱, 화이트 노이즈 앱, 빗소리 수면, 선풍기 수면, 잠잘 때 듣는 소리, 오프라인 수면 소리",
+        "inLanguage": "ko",
+        "datePublished": "2024-01-01",
+        "dateModified": "2025-01-15",
+        "softwareVersion": "1.5",
+        "fileSize": "49.2MB",
+        "softwareRequirements": "iOS 17.1 이상",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "ratingCount": "10"
+        }
+      },
+      "organization": {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "DRMN",
+        "url": "https://drmn.xyz/ko/",
+        "logo": "https://drmn.xyz/img/logo.webp",
+        "description": "DRMN — iPhone용 수면 사운드·화이트 노이즈 앱. 무료 버전으로 빗소리, 선풍기, 화이트 노이즈 믹스, 오프라인 재생. 수면, 집중, 아기 수면 지원."
+      },
+      "website": {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "DRMN",
+        "url": "https://drmn.xyz/ko/",
+        "description": "iPhone용 수면 사운드·화이트 노이즈 앱. 무료 버전으로 빗소리, 선풍기, 화이트 노이즈 믹스, 오프라인 재생. App Store에서 무료 다운로드.",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://drmn.xyz/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      "howto": {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "수면 사운드 앱으로 더 나은 수면을",
+        "description": "DRMN 수면 사운드와 화이트 노이즈로 잠들기를 돕는 사용법. 단계별 가이드.",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "무료로 다운로드",
+            "text": "App Store에서 iPhone에 DRMN을 다운로드하세요. iOS 17.1 이상 지원. 무료 버전에는 1시간 타이머가 포함돼요.",
+            "url": "https://apps.apple.com/app/id6746480683"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "수면 사운드 둘러보기",
+            "text": "앱을 실행하고 라이브러리를 탐색하세요. 화이트·브라운 노이즈, 자연음(빗소리, 파도, 모닥불), 명상 사운드, 아기 수면 사운드가 준비되어 있어요."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "사운드 선택",
+            "text": "목적에 맞게 선택—소음을 가리는 화이트 노이즈, 이완용 자연음, 아기 전용 사운드. 재생 전 미리 들을 수 있어요."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "사운드 믹스",
+            "text": "여러 사운드를 조합해 나만의 환경을. 화이트 노이즈에 파도, 빗소리에 명상 음악 등 자유롭게 커스터마이즈."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "수면 타이머 설정",
+            "text": "자동 페이드아웃 수면 타이머를 설정하세요. 밤새 재생하고 싶지 않을 때 편리합니다. 잠든 후 소리가 점점 작아져요."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 6,
+            "name": "재생하고 잠들기",
+            "text": "재생 버튼을 눌러 수면 사운드를 시작하세요. 볼륨을 조절해 편안하게. iPhone을 가까이 두거나 헤드폰으로 사용할 수 있어요."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 7,
+            "name": "오프라인용 다운로드",
+            "text": "즐겨찾는 사운드를 다운로드하면 완전 오프라인 이용. 인터넷 없이도 어디서든 끊김 없는 수면을."
+          }
+        ]
+      }
+    }
+  }
+}

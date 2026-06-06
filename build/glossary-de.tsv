@@ -1,0 +1,15 @@
+key	en	de-DE	notes
+product_name	DRMN	DRMN	Brand; do not translate
+app_store	App Store	App Store	Apple platform term
+iphone	iPhone	iPhone	Apple product name
+download	Download Now	Jetzt laden	CTA; Apple App Store DE style
+white_noise	white noise	weißes Rauschen	Standard de-DE term
+brown_noise	brown noise	braunes Rauschen	
+sleep_sounds	sleep sounds	Schlafgeräusche / Einschlafgeräusche	
+sound_machine	sleep sound machine	Schlafgeräte-App	Marketing; avoid literal Gerät für weißes Rauschen
+offline	offline	offline	Common in App Store DE
+privacy_policy	Privacy Policy	Datenschutzerklärung	Apple de-DE legal term
+terms_of_service	Terms of Service	Nutzungsbedingungen	Apple de-DE
+freemium	freemium	kostenlose Version	Explain premium in body; not völlig kostenlos
+sleep_timer	sleep timer	Schlaf-Timer	
+register	informal du	du	B2C consumer app tone for de-DE

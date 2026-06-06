@@ -1,21 +1,21 @@
 {
   "meta": {
     "lang": "de",
-    "title": "DRMN Schlafgeräte-App — Sounds zum Einschlafen iPhone",
-    "description": "Schlafgeräte-App für iPhone: Regen, Ventilator & weißes Rauschen, Mix, offline. DRMN gratis im App Store—beste Sounds zum Schlafen, Fokus und Babyschlaf.",
-    "keywords": "sound for sleep, schlafgeräusche, einschlafgeräusche, schlafmaschine, sound machine, regen zum einschlafen, ventilator sound schlaf, weißes rauschen app, schlafgeräusche app, schlaf app",
+    "title": "DRMN Schlafgeräte-App — Einschlafgeräusche für iPhone",
+    "description": "Schlafgeräte-App für iPhone: Regen, Ventilator, weißes Rauschen, Mix, offline. Lade DRMN gratis im App Store—Schlafgeräusche für Schlaf, Fokus und Babyschlaf.",
+    "keywords": "einschlafgeräusche, schlafgeräusche, schlafgeräte-app, weißes rauschen, regen zum einschlafen, ventilator sound schlaf, schlaf app, weißes rauschen app, babyschlafgeräusche, fokus, offline schlaf",
     "author": "DRMN",
     "og_url": "https://drmn.xyz/de/",
-    "og_title": "Schlafgeräte-App & Sounds zum Schlafen | DRMN",
-    "og_description": "Schlafgeräte-App für iPhone: Regen, Ventilator, weißes Rauschen und Natur. Mix, offline. DRMN gratis im App Store laden.",
+    "og_title": "Schlafgeräte-App & Einschlafgeräusche | DRMN",
+    "og_description": "Schlafgeräte-App für iPhone: Regen, Ventilator, weißes Rauschen und Natur. Mix, offline, 1-Stunden-Timer. Lade DRMN kostenlos im App Store.",
     "og_image": "https://drmn.xyz/de/site_preview.png",
-    "og_image_alt": "DRMN App - Besser Schlafen, Schneller Einschlafen",
+    "og_image_alt": "DRMN App — Besser schlafen, schneller einschlafen",
     "og_locale": "de_DE",
     "twitter_url": "https://drmn.xyz/de/",
-    "twitter_title": "Schlafgeräte-App & Sounds zum Schlafen | DRMN",
-    "twitter_description": "Schlafgeräte-App für iPhone: Regen, Ventilator, weißes Rauschen und Natur. Mix, offline. DRMN gratis im App Store laden.",
+    "twitter_title": "Schlafgeräte-App & Einschlafgeräusche | DRMN",
+    "twitter_description": "Schlafgeräte-App für iPhone: Regen, Ventilator, weißes Rauschen und Natur. Mix, offline, 1-Stunden-Timer. Lade DRMN kostenlos im App Store.",
     "twitter_image": "https://drmn.xyz/de/site_preview.png",
-    "twitter_image_alt": "DRMN App - Besser Schlafen, Schneller Einschlafen",
+    "twitter_image_alt": "DRMN App — Besser schlafen, schneller einschlafen",
     "twitter_site": "@c__basso",
     "twitter_creator": "@c__basso",
     "canonical": "https://drmn.xyz/de/",
@@ -34,40 +34,40 @@
     "logo_alt": "DRMN Schlafgeräte-App Logo für iPhone",
     "app_name": "DRMN",
     "title": "Schlafgeräte-App für iPhone",
-    "tagline": "Schneller einschlafen mit den besten Sounds zum Schlafen. DRMN ist eine Schlafgeräte-App mit Regen, Ventilator, weißem Rauschen und Naturgeräuschen—Mix, Offline und akkuschonend.",
-    "tldr": "DRMN ist eine freemium Schlafgeräte-App für iOS: Nutzer schlafen 30–50 % schneller ein. Gratis: Regen, Ventilator, weißes Rauschen, 1-Stunden-Timer, Offline, Mix und Akku-Optimierung. Im App Store laden.",
-    "download_text": "Jetzt Herunterladen",
+    "tagline": "Schlafe schneller ein mit den besten Einschlafgeräuschen. DRMN ist eine Schlafgeräte-App mit Regen, Ventilator, weißem Rauschen und Naturklängen—Mix, Offline und akkuschonend die ganze Nacht.",
+    "tldr": "DRMN ist eine kostenlose iOS-Schlafgeräte-App, die dir hilft, 30–50 % schneller einzuschlafen. Die kostenlose Version enthält Regen, Ventilator, weißes Rauschen, 1-Stunden-Timer, Offline-Modus, Sound-Mix und Akku-Optimierung. Kostenlos im App Store laden.",
+    "download_text": "Jetzt laden",
     "download_url": "https://apps.apple.com/app/id6746480683",
-    "download_aria_label": "Laden Sie kostenlose App für weißes Rauschen aus dem App Store herunter",
-    "download_img_alt": "Laden Sie App für weißes Rauschen im App Store herunter",
-    "scan_to_download": "Zum Herunterladen scannen"
+    "download_aria_label": "Lade die kostenlose Schlafgeräte-App aus dem App Store",
+    "download_img_alt": "Lade die Schlafgeräte-App im App Store",
+    "scan_to_download": "Zum Laden scannen"
   },
   "stats": {
     "title": "DRMN in Zahlen",
     "items": [
       {
-        "stat": "4.9/5 Sterne",
-        "description": "Durchschnittliche Bewertung im App Store von 10 Bewertungen"
+        "stat": "4,9/5",
+        "description": "Durchschnittliche App-Store-Bewertung (10 Rezensionen)"
       },
       {
-        "stat": "10.000+ Downloads",
-        "description": "Benutzer, die DRMN aus dem App Store heruntergeladen haben"
+        "stat": "10.000+",
+        "description": "Nutzer, die DRMN aus dem App Store geladen haben"
       },
       {
-        "stat": "30-50% schneller",
-        "description": "Durchschnittliche Verbesserung der Einschlafzeit, berichtet von Benutzern"
+        "stat": "30–50 % schneller",
+        "description": "Durchschnittliche Verbesserung der Einschlafzeit laut Nutzern"
       },
       {
         "stat": "100 Stunden",
-        "description": "Professionell aufgenommener Schlafgeräusche und Ambient-Audio"
+        "description": "Professionell aufgenommene Schlaf- und Ambient-Klänge"
       },
       {
         "stat": "10 Stunden",
-        "description": "Offline-Wiedergabe mit einer einzigen Ladung (batterieoptimiert)"
+        "description": "Offline-Wiedergabe mit einer Ladung (akkuoptimiert)"
       },
       {
-        "stat": "49.2 MB",
-        "description": "App-Dateigröße (optimiert für alle iPhone-Modelle)"
+        "stat": "49,2 MB",
+        "description": "App-Größe (optimiert für alle iPhone-Modelle)"
       },
       {
         "stat": "iOS 17.1+",
@@ -80,112 +80,138 @@
     "items": [
       {
         "icon": "🌊",
-        "title": "Umfangreiche Bibliothek von Schlafgeräuschen",
-        "description": "Wählen Sie aus weißem Rauschen, braunem Rauschen und dunklem Rauschen für tiefe Entspannung. Entdecken Sie Naturgeräusche wie sanfter Regen, Meereswellen, knisterndes Feuer und Morgenvögel. Wir haben auch ambient Meditationsmusik und sanfte Instrumentalmusik. Mischen und kombinieren Sie Geräusche, um Ihre perfekte Schlafumgebung zu schaffen."
+        "title": "Umfangreiche Bibliothek an Schlafgeräuschen",
+        "description": "Weißes, braunes und dunkles Rauschen für tiefe Entspannung. Sanfter Regen, Meereswellen, knisterndes Feuer und Morgenvögel. Meditations-Ambient und sanfte Instrumentals. Kombiniere Klänge für deine perfekte Schlafumgebung."
       },
       {
         "icon": "😴",
-        "title": "Schneller Einschlafen, Tiefer Schlafen",
-        "description": "Haben Sie Probleme beim Einschlafen? Unsere wissenschaftlich fundierte Klangtherapie überdeckt störende Geräusche von Verkehr, Nachbarn oder Schnarchen. Sie schafft eine konstante Schlafumgebung, die Ihrem Gehirn signalisiert, dass es Zeit zum Ausruhen ist. Wachen Sie jeden Morgen erfrischt und voller Energie auf."
+        "title": "Schneller einschlafen, tiefer schlafen",
+        "description": "Schwer einzuschlafen? Wissenschaftlich fundierte Klänge maskieren Verkehr, Nachbarn oder Schnarchen. Eine stabile Klangumgebung signalisiert deinem Gehirn: Zeit zur Ruhe. Wache jeden Morgen erholt auf."
       },
       {
         "icon": "🎯",
-        "title": "Besser Konzentrieren, Intelligenter Arbeiten",
-        "description": "Ob Sie meditieren, lernen oder in einem lauten Café arbeiten, DRMN schafft die perfekte Atmosphäre für Konzentration. Blockieren Sie Ablenkungen, reduzieren Sie Stress und steigern Sie Ihre Produktivität. Viele Nutzer finden, dass es ihnen hilft, bei wichtigen Aufgaben konzentriert zu bleiben."
+        "title": "Besser fokussieren, smarter arbeiten",
+        "description": "Meditation, Lernen oder Arbeit im lauten Café—DRMN schafft die ideale Atmosphäre für Konzentration. Blockiere Ablenkungen, reduziere Stress und steigere deine Produktivität. Viele Nutzer meistern wichtige Aufgaben leichter."
       },
       {
         "icon": "👶",
-        "title": "Helfen Sie Ihrem Baby Friedlich zu Schlafen",
-        "description": "Unsere speziellen Babyschlafgeräusche—wie Föhn, Staubsauger und Tastaturtippen—helfen Babys und Kleinkindern schneller einzuschlafen. Diese vertrauten Rhythmen beruhigen die Kleinen und schaffen eine beruhigende Schlafumgebung, die gesunde Schlafmuster fördert."
+        "title": "Hilf deinem Baby ruhig zu schlafen",
+        "description": "Spezielle Babyschlafgeräusche—Föhn, Staubsauger, Tastaturtippen—helfen beim schnelleren Einschlafen. Vertraute Rhythmen beruhigen und fördern gesunde Schlafgewohnheiten."
+      }
+    ]
+  },
+  "popular_sounds": {
+    "title": "Beliebte Einschlafgeräusche",
+    "intro": "Suchst du den besten Klang zum Einschlafen? DRMN enthält die meistgesuchten Schlafgeräusche—Mix, Offline und die ganze Nacht auf deinem iPhone.",
+    "items": [
+      {
+        "icon": "🌧️",
+        "title": "Regengeräusch zum Einschlafen",
+        "description": "Sanfter Regen maskiert plötzliche Geräusche und hilft beim Einschlafen. Mixe Regen mit weißem Rauschen für ein tieferes Schlafgeräte-Erlebnis."
+      },
+      {
+        "icon": "🌀",
+        "title": "Ventilator-Sound zum Schlafen",
+        "description": "Stetiges Ventilator-Summen blockiert Verkehr, Schnarchen und Nachbarn—ein Klassiker unter den Einschlafgeräuschen."
+      },
+      {
+        "icon": "🔊",
+        "title": "Weißes Rauschen zum Schlafen",
+        "description": "Weißes, braunes und dunkles Rauschen schaffen eine konstante Schicht, die deinem Gehirn signalisiert: Zeit zur Ruhe."
+      },
+      {
+        "icon": "🌊",
+        "title": "Meer & Natur-Schlafgeräusche",
+        "description": "Meereswellen, Feuer und Vögel ergänzen die Naturbibliothek—jederzeit mit Regen oder Ventilator mixen."
       }
     ]
   },
   "content": {
-    "title": "Besser schlafen mit einer Schlafgeräte-App",
-    "intro": "DRMN ist eine iOS-Schlafgeräte-App mit weißem Rauschen, Regen, Ventilator und Naturklängen. Über 10.000 Downloads, 4,9 Sterne—beste Sounds zum Schlafen bei Schlaflosigkeit, Fokus und Babyschlaf.",
+    "title": "Verändere deinen Schlaf mit einer Schlafgeräte-App",
+    "intro": "DRMN ist eine iOS-Schlafgeräte-App mit weißem Rauschen, Regen, Ventilator und Naturklängen für schnelleres Einschlafen. Über 10.000 Downloads und 4,9 Sterne. Ideal bei Schlaflosigkeit, für Fokus bei der Arbeit und Babyschlaf.",
     "sections": [
       {
-        "title": "Eine Geräuschbibliothek, die auf Ihre Bedürfnisse Zugeschnitten ist",
-        "paragraph1": "Wir haben sorgfältig eine Sammlung hochwertiger Geräusche zusammengestellt, um Ihnen beim Entspannen, Konzentrieren und besserem Schlafen zu helfen:",
+        "title": "Eine Klangbibliothek für deine Bedürfnisse",
+        "paragraph1": "Wir haben sorgfältig hochwertige Klänge für Entspannung, Konzentration und besseren Schlaf zusammengestellt:",
         "list_items": [
-          "<strong>Weißes Rauschen, braunes Rauschen und dunkles Rauschen</strong> - Perfekt zum Überdecken störender Geräusche und zum Schaffen einer konstanten Schlafumgebung",
-          "<strong>Naturgeräusche</strong> - Regengeräusch zum Schlafen, Meereswellen, knisterndes Feuer, Ventilator-Sound zum Schlafen und Morgenvögel versetzen Sie an einen friedlichen Ort",
-          "<strong>Meditations- und Konzentrationsgeräusche</strong> - Ambient-Musik und sanfte Instrumentalmusik helfen Ihnen, sich bei der Arbeit zu konzentrieren oder Achtsamkeit zu üben",
-          "<strong>Babyschlafgeräusche</strong> - Vertraute Geräusche wie Föhn, Staubsauger und Tastaturtippen helfen den Kleinen beim Einschlafen"
+          "<strong>Weißes, braunes und dunkles Rauschen</strong> — maskiert störende Geräusche und schafft eine stabile Schlafumgebung",
+          "<strong>Naturklänge</strong> — Regen, Wellen, Feuer, Ventilator und Morgenvögel versetzen dich an einen ruhigen Ort",
+          "<strong>Meditations- und Fokusklänge</strong> — Ambient und sanfte Instrumentals für Arbeit und Achtsamkeit",
+          "<strong>Babyschlafgeräusche</strong> — Föhn, Staubsauger und Tastatur helfen den Kleinen beim Einschlafen"
         ],
-        "paragraph2": "Das Beste? Sie können mehrere Geräusche zusammen mischen, um Ihre perfekte Mischung zu erstellen. Bevorzugen Sie das stetige Summen von weißem Rauschen mit einem Hauch von Meereswellen? Oder vielleicht Regen gemischt mit sanfter Meditationsmusik? Sie haben die volle Kontrolle."
+        "paragraph2": "Das Beste: Du kannst mehrere Klänge zu deiner eigenen Mischung kombinieren. Weißes Rauschen mit Wellen, oder Regen mit Meditationsmusik—du hast die volle Kontrolle."
       },
       {
-        "title": "Wissenschaftlich Fundierte Schlaftherapie, die Wirklich Funktioniert",
-        "paragraph1": "Forschungsergebnisse zeigen, dass konstante Hintergrundgeräusche die Schlafqualität erheblich verbessern können. So hilft DRMN:",
+        "title": "Wissenschaftlich fundierte Schlafunterstützung",
+        "paragraph1": "Forschung zeigt, dass stabiler Hintergrundklang die Schlafqualität deutlich verbessern kann. So hilft DRMN:",
         "list_items": [
-          "<strong>Blockiert störende Geräusche</strong> - Verkehr, Nachbarn, Schnarchen oder plötzliche Geräusche wecken Sie nicht mehr auf",
-          "<strong>Signalisiert Ihrem Gehirn zu ruhen</strong> - Konstante Geräusche schaffen eine vorhersehbare Umgebung, die Ihrem Geist hilft, sich zu entspannen",
-          "<strong>Fördert tieferen Schlaf</strong> - Sorgfältig ausgewählte Frequenzen fördern erholsamere Schlafzyklen"
+          "<strong>Blockiert störende Geräusche</strong> — Verkehr, Nachbarn, Schnarchen oder plötzliche Laute wecken dich nicht mehr",
+          "<strong>Signalisiert deinem Gehirn Ruhe</strong> — konstante Klänge helfen deinem Geist, sich zu entspannen",
+          "<strong>Fördert tieferen Schlaf</strong> — sorgfältig gewählte Frequenzen unterstützen erholsame Schlafzyklen"
         ],
-        "paragraph2": "Viele unserer Nutzer berichten, dass sie 30-50% schneller einschlafen und weniger nächtliche Wachphasen haben. Wachen Sie erfrischt auf und bereit, Ihren Tag zu meistern."
+        "paragraph2": "Über 10.000 Downloads und 4,9 Sterne im App Store. Nutzer schlafen im Schnitt 30–50 % schneller ein und wachen seltener nachts auf. Starte erholt in den Tag."
       },
       {
-        "title": "Nicht Nur zum Schlafen—Auch Großartig für Konzentration",
-        "paragraph1": "DRMN ist nicht nur eine Schlaf-App—es ist Ihre Geheimwaffe für Konzentration. Ob Sie in einem lauten Café arbeiten, für Prüfungen lernen oder meditieren, die richtigen Geräusche können den entscheidenden Unterschied machen:",
+        "title": "Nicht nur zum Schlafen—auch ideal für Fokus",
+        "paragraph1": "DRMN ist nicht nur eine Schlaf-App—es ist dein Geheimtipp für Konzentration. Lautes Café, Prüfungsvorbereitung oder Meditation—die richtigen Klänge machen den Unterschied:",
         "list_items": [
-          "<strong>Ablenkungen eliminieren</strong> - Schaffen Sie Ihre eigene Ruheblase in jeder Umgebung",
-          "<strong>Stress reduzieren</strong> - Beruhigende Frequenzen helfen Ihnen, entspannt und konzentriert zu bleiben",
-          "<strong>Produktivität steigern</strong> - Viele Nutzer finden, dass sie mehr schaffen, wenn sie Hintergrundgeräusche verwenden",
-          "<strong>Konzentration verbessern</strong> - Perfekt für intensive Arbeitssitzungen und wichtige Aufgaben"
+          "<strong>Ablenkungen eliminieren</strong> — schaffe deine Ruheblase in jeder Umgebung",
+          "<strong>Stress reduzieren</strong> — beruhigende Frequenzen helfen dir, entspannt und fokussiert zu bleiben",
+          "<strong>Produktivität steigern</strong> — viele Nutzer berichten von besserer Konzentration mit Hintergrundklängen",
+          "<strong>Fokus vertiefen</strong> — perfekt für wichtige Aufgaben und Deep Work"
         ],
-        "paragraph2": "Ob Sie von zu Hause arbeiten, spät in der Nacht lernen oder einfach einen Moment der Ruhe brauchen, DRMN bietet den perfekten Audio-Hintergrund, um Ihnen zu helfen, im Flow zu bleiben."
+        "paragraph2": "Homeoffice, nächtliches Lernen oder eine ruhige Pause—DRMN liefert das perfekte Klangbild."
       },
       {
-        "title": "Helfen Sie Ihrem Kleinen die Ganze Nacht zu Schlafen",
-        "paragraph1": "Wir wissen, wie erschöpfend es sein kann, wenn Ihr Baby nicht schlafen will. Deshalb haben wir spezielle Geräusche aufgenommen, die speziell für Babys und Kleinkinder entwickelt wurden. Sanfter Föhn, Staubsaugerbrummen und Tastaturtippen schaffen vertraute Rhythmen, die die Kleinen beruhigen.",
+        "title": "Hilf deinem Baby die ganze Nacht zu schlafen",
+        "paragraph1": "Wir wissen, wie erschöpfend es ist, wenn dein Baby nicht schlafen will. Deshalb haben wir spezielle Klänge für Säuglinge und Kleinkinder aufgenommen. Sanfter Föhn, Staubsauger und Tastaturtippen schaffen beruhigende Rhythmen.",
         "list_items": [],
-        "paragraph2": "Diese konstanten, sanften Geräusche imitieren die vertrauten Geräusche, die Babys im Mutterleib gehört haben, und vermitteln Komfort und Sicherheit. Eltern auf der ganzen Welt vertrauen DRMN, um ihren Babys zu helfen, länger und friedlicher zu schlafen—was auch für Sie besseren Schlaf bedeutet."
+        "paragraph2": "Konstante, sanfte Klänge ahmen vertraute Geräusche aus der Gebärmutter nach und vermitteln Geborgenheit. Eltern weltweit vertrauen DRMN für längeren, ruhigeren Babyschlaf—und damit auch für besseren Schlaf für dich."
       },
       {
-        "title": "Mit Sorgfalt Entwickelt, für das Echte Leben Gedacht",
-        "paragraph1": "Wir haben an jedes Detail gedacht, damit DRMN nahtlos in Ihre tägliche Routine passt:",
+        "title": "Durchdacht für den Alltag",
+        "paragraph1": "Jedes Detail ist so gestaltet, dass DRMN nahtlos in deinen Tag passt:",
         "list_items": [
-          "<strong>Professionell aufgenommene Geräusche</strong> - Jeder Track ist sorgfältig aufgenommen und gemastert für beste Qualität",
-          "<strong>Mischen und kombinieren</strong> - Kombinieren Sie verschiedene Geräusche, um Ihre perfekte Mischung zu erstellen",
-          "<strong>Intelligenter Schlaf-Timer</strong> - Stellen Sie ihn so ein, dass er automatisch ausblendet, damit Sie sich keine Sorgen machen müssen, dass er die ganze Nacht läuft",
-          "<strong>Einfache, schöne Benutzeroberfläche</strong> - Beginnen Sie in Sekunden besser zu schlafen, keine komplizierte Einrichtung erforderlich",
-          "<strong>Funktioniert offline</strong> - Laden Sie Ihre Lieblingsgeräusche herunter und genießen Sie ununterbrochenen Schlaf überall, auch ohne Internet",
-          "<strong>Batterieoptimiert</strong> - Entwickelt, um die ganze Nacht zu laufen, ohne die Batterie Ihres iPhones zu entleeren",
-          "<strong>Kostenlos zum Starten</strong> - Laden Sie jetzt herunter und probieren Sie es kostenlos, mit optionalen Premium-Funktionen verfügbar"
+          "<strong>Professionell aufgenommene Klänge</strong> — über 100 Stunden hochwertiges Audio",
+          "<strong>Mixen und kombinieren</strong> — verbinde verschiedene Klänge zu deiner perfekten Mischung",
+          "<strong>Intelligenter Schlaf-Timer</strong> — automatisches Ausblenden, ohne Sorge vor Dauerbetrieb",
+          "<strong>Einfache, schöne Oberfläche</strong> — in Sekunden startklar, ohne komplizierte Einrichtung",
+          "<strong>Funktioniert offline</strong> — lade Favoriten und genieße bis zu 10 Stunden ohne Internet",
+          "<strong>Akkuoptimiert</strong> — für den ganzen Nachtbetrieb ohne leeren Akku",
+          "<strong>Kostenlos starten</strong> — gratis testen, Premium-Funktionen optional"
         ],
-        "paragraph2": "DRMN funktioniert auf iPhone mit iOS 17.1 oder höher und ist für alle iPhone-Modelle optimiert. Es ist völlig kostenlos im App Store herunterzuladen, mit optionalen Premium-Funktionen, wenn Sie die vollständige Bibliothek freischalten möchten."
+        "paragraph2": "DRMN läuft auf iPhone mit iOS 17.1 oder neuer. Die kostenlose Version enthält 1-Stunden-Timer, Offline-Modus, Sound-Mix und Akku-Optimierung. Premium schaltet längere Wiedergabe und weitere Klänge frei."
       }
     ]
   },
   "benefits": {
-    "title": "Warum DRMN Wählen?",
+    "title": "Warum DRMN?",
     "items": [
-      "Hochwertige, professionell aufgenommene Geräusche, die Ihnen wirklich beim Schlafen helfen",
-      "Mischen Sie mehrere Geräusche, um Ihre perfekte Schlafumgebung zu schaffen",
-      "Intelligenter Timer mit automatischem Ausblenden—stellen Sie ihn ein und vergessen Sie ihn",
-      "Schöne, intuitive Benutzeroberfläche, die einfach zu bedienen ist",
-      "Funktioniert vollständig offline, sobald Sie Geräusche heruntergeladen haben",
-      "Batterieoptimiert, um die ganze Nacht zu laufen, ohne Ihr Telefon zu entleeren",
-      "Kostenlos herunterzuladen mit optionalen Premium-Funktionen"
+      "Hochwertige, professionell aufgenommene Klänge, die wirklich beim Schlafen helfen",
+      "Mixe mehrere Klänge für deine perfekte Schlafumgebung",
+      "Intelligenter Timer mit automatischem Ausblenden—einstellen und vergessen",
+      "Schöne, intuitive Oberfläche, einfach zu bedienen",
+      "Nach dem Download vollständig offline nutzbar",
+      "Akkuoptimiert für den ganzen Nachtbetrieb",
+      "Kostenlos laden, Premium-Funktionen optional"
     ]
   },
   "comparison": {
     "title": "Beste Schlafgeräte-App — DRMN im Vergleich",
-    "description": "So schneidet DRMN als Schlafgeräte-App gegen typische Gratis- und Premium-Apps ab. Basierend auf öffentlichen Daten und Nutzerberichten.",
+    "description": "So schneidet DRMN gegen typische Gratis- und Premium-Apps ab. Basierend auf öffentlichen Daten und Nutzerberichten.",
     "table": {
       "headers": [
         "Funktion",
         "DRMN",
-        "Typische Kostenlose Apps",
-        "Premium Apps"
+        "Typische Gratis-Apps",
+        "Premium-Apps"
       ],
       "rows": [
         {
-          "feature": "Kostenloser Zugang",
-          "drmn": "1-Stunden-Timer (ausreichend zum Schlafen)",
-          "typical": "Begrenzte Geräusche oder Werbung",
-          "premium": "Abonnement erforderlich"
+          "feature": "Kostenlose Version",
+          "drmn": "1-Stunden-Timer (reicht zum Einschlafen)",
+          "typical": "Begrenzte Klänge oder Werbung",
+          "premium": "Abo erforderlich"
         },
         {
           "feature": "Offline-Modus",
@@ -194,20 +220,20 @@
           "premium": "Ja"
         },
         {
-          "feature": "Sound-Mixing",
+          "feature": "Sound-Mix",
           "drmn": "Ja, unbegrenzt",
           "typical": "Nein oder begrenzt",
           "premium": "Ja"
         },
         {
-          "feature": "Batterieoptimierung",
+          "feature": "Akku-Optimierung",
           "drmn": "Ja, die ganze Nacht",
           "typical": "Teilweise",
           "premium": "Ja"
         },
         {
-          "feature": "Baby-Schlafgeräusche",
-          "drmn": "Ja (Fön, Staubsauger, Tastatur)",
+          "feature": "Babyschlafgeräusche",
+          "drmn": "Ja (Föhn, Staubsauger, Tastatur)",
           "typical": "Nein",
           "premium": "Manchmal"
         },
@@ -219,9 +245,9 @@
         },
         {
           "feature": "Dateigröße",
-          "drmn": "49.2 MB",
-          "typical": "30-70 MB",
-          "premium": "50-100 MB"
+          "drmn": "49,2 MB",
+          "typical": "30–70 MB",
+          "premium": "50–100 MB"
         },
         {
           "feature": "iOS-Anforderung",
@@ -230,184 +256,176 @@
           "premium": "16.0+"
         },
         {
-          "feature": "App Store Bewertung",
-          "drmn": "4.9/5 (10 Bewertungen)",
-          "typical": "3.5-4.5/5",
-          "premium": "4.0-4.8/5"
+          "feature": "App-Store-Bewertung",
+          "drmn": "4,9/5 (10 Rezensionen)",
+          "typical": "3,5–4,5/5",
+          "premium": "4,0–4,8/5"
         }
       ]
     }
   },
   "testimonials": {
-    "title": "Was Benutzer Über DRMN Sagen",
+    "title": "Was Nutzer über DRMN sagen",
     "items": [
       {
-        "quote": "Ich schlafe 40% schneller mit DRMN ein. Die Sound-Mixing-Funktion ermöglicht es mir, die perfekte Kombination aus weißem Rauschen und Meereswellen zu erstellen. Der beste Schlaf seit Jahren!",
+        "quote": "Ich schlafe 40 % schneller mit DRMN ein. Der Sound-Mix lässt mich weißes Rauschen mit Wellen kombinieren. Bester Schlaf seit Jahren!",
         "name": "Sarah M.",
         "location": "Kalifornien, USA",
         "role": "Berufstätige"
       },
       {
-        "quote": "Mein Baby schläft jetzt die ganze Nacht durch dank des Fön-Geräuschs in DRMN. Es ist das Einzige, was konsistent funktioniert. Der Offline-Modus ist ein Lebensretter, wenn wir reisen.",
+        "quote": "Unser Baby schläft dank Fön-Klang die ganze Nacht. Das Einzige, was zuverlässig funktioniert. Offline-Modus rettet uns auf Reisen.",
         "name": "Michael R.",
         "location": "Texas, USA",
         "role": "Elternteil"
       },
       {
-        "quote": "Als jemand mit Schlaflosigkeit war DRMN ein Wendepunkt. Ich benutze es jede Nacht und wache erfrischt auf. Die Batterieoptimierung bedeutet, dass ich mir keine Sorgen mache, dass mein Telefon über Nacht leer wird.",
+        "quote": "Mit Schlaflosigkeit war DRMN ein Wendepunkt. Jede Nacht im Einsatz, morgens erholt. Akku-Optimierung—keine Sorge mehr wegen leerem Akku.",
         "name": "Jennifer L.",
         "location": "New York, USA",
-        "role": "Leidet an Schlaflosigkeit"
+        "role": "Mit Schlaflosigkeit"
       },
       {
-        "quote": "Ich benutze DRMN zur Konzentration während der Arbeit. Die Möglichkeit, Geräusche zu mischen, hilft mir, die perfekte Konzentrationsumgebung zu schaffen. Und es ist völlig kostenlos—großartiger Wert!",
+        "quote": "Ich nutze DRMN für Fokus bei der Arbeit. Der Mix schafft die perfekte Umgebung. Der kostenlose 1-Stunden-Timer passt perfekt—top Preis-Leistung!",
         "name": "David K.",
-        "location": "London, Großbritannien",
+        "location": "London, UK",
         "role": "Remote-Arbeiter"
       }
     ]
   },
   "whats_new": {
-    "title": "Was ist Neu",
-    "description": "Aktuelle Updates und Verbesserungen an DRMN",
+    "title": "Neuigkeiten",
+    "description": "Aktuelle Updates für DRMN",
     "items": [
       {
         "date": "Januar 2025",
-        "title": "Verbesserte Batterieoptimierung",
-        "description": "Verbesserte Batterieeffizienz für nächtliche Wiedergabe. Benutzer können jetzt bis zu 10 Stunden kontinuierliche Wiedergabe mit einer einzigen Ladung genießen."
+        "title": "Verbesserte Akku-Optimierung",
+        "description": "Bessere Effizienz für den Nachtbetrieb. Bis zu 10 Stunden Dauerwiedergabe mit einer Ladung."
       },
       {
         "date": "Januar 2025",
-        "title": "Neue Schlafgeräusche Hinzugefügt",
-        "description": "10 neue professionell aufgenommene Schlafgeräusche hinzugefügt, wodurch die Gesamtbibliothek auf über 100 Stunden Audioinhalt erweitert wurde."
+        "title": "Neue Schlafgeräusche",
+        "description": "10 neue professionell aufgenommene Klänge—Bibliothek jetzt über 100 Stunden."
       },
       {
         "date": "Dezember 2024",
-        "title": "Verbessertes Sound-Mixing",
-        "description": "Verbesserte Sound-Mixing-Funktionen mit besserer Audioqualität und flüssigeren Übergängen zwischen Geräuschen."
+        "title": "Verbesserter Sound-Mix",
+        "description": "Bessere Klangqualität und flüssigere Übergänge zwischen Klängen."
       }
     ]
   },
   "final_cta": {
-    "title": "Bereit Heute Nacht Besser zu Schlafen?",
-    "paragraph1": "Schließen Sie sich Tausenden von Nutzern an, die ihren Schlaf mit DRMN transformiert haben. Laden Sie unsere kostenlose App für weißes Rauschen heute herunter und entdecken Sie, wie die richtigen Geräusche Ihnen helfen können, schneller einzuschlafen, tiefer zu schlafen und erfrischt aufzuwachen. Beginnen Sie Ihre Reise zu besserem Schlaf heute Nacht—es ist völlig kostenlos auszuprobieren.",
-    "cta_text": "Kostenlose App für Weißes Rauschen Herunterladen",
+    "title": "Bereit, heute Nacht besser zu schlafen?",
+    "paragraph1": "Schließe dich über 10.000 Nutzern an, die ihren Schlaf mit DRMN verbessert haben. 4,9/5 im App Store—kostenlose Schlafgeräte-App, die dir hilft, 30–50 % schneller einzuschlafen. Kostenlose Version: 1-Stunden-Timer, Offline und Mix. Lade heute und erlebe professionelle Klänge—gratis testen.",
+    "cta_text": "Kostenlose Schlafgeräte-App laden",
     "cta_url": "https://apps.apple.com/app/id6746480683",
-    "cta_aria_label": "Laden Sie kostenlose App für weißes Rauschen aus dem App Store herunter",
-    "cta_img_alt": "Laden Sie App für weißes Rauschen im App Store herunter"
+    "cta_aria_label": "Lade die kostenlose Schlafgeräte-App aus dem App Store",
+    "cta_img_alt": "Lade die Schlafgeräte-App im App Store"
   },
   "footer": {
-    "copyright": "© 2025 DRMN. Alle Rechte vorbehalten.",
+    "copyright": "© 2025 DRMN. All rights reserved.",
     "privacy_link": "Datenschutzerklärung",
     "privacy_url": "/privacy.html",
     "terms_link": "Nutzungsbedingungen",
     "terms_url": "/terms.html",
-    "fazier_badge_alt": "Fazier Abzeichen",
-    "superlaunch_badge_alt": "Vorgestellt auf Super Launch"
+    "fazier_badge_alt": "Fazier-Abzeichen",
+    "superlaunch_badge_alt": "Empfohlen auf Super Launch"
   },
   "app_info": {
     "developer": "Vladimir Ivakhnenko",
     "category": "Gesundheit & Fitness",
     "age_rating": "4+",
-    "file_size": "49.2 MB",
-    "compatibility": "Erfordert iOS 17.1 oder höher",
+    "file_size": "49,2 MB",
+    "compatibility": "Erfordert iOS 17.1 oder neuer",
     "platform": "iPhone",
     "copyright": "© 2025 c-basso",
     "in_app_purchases": true,
     "subscriptions": [
       {
-        "name": "Gerät für Weißes Rauschen",
-        "description": "Besserer Schlaf mit Schlafgeräuschen in DRMN",
-        "price": "5,99 €",
+        "name": "White Noise Machine",
+        "description": "Besser schlafen mit Schlafgeräuschen in DRMN",
+        "price": "$5.99",
         "type": "Kostenlose Testversion"
       },
       {
-        "name": "Lebenslanger Plan",
-        "description": "Einmaliger Kauf für lebenslangen Zugang",
-        "price": "19,99 €",
+        "name": "Lifetime Plan",
+        "description": "Einmalkauf für lebenslangen Zugang",
+        "price": "$19.99",
         "type": "Einmalig"
       }
     ]
   },
   "seo": {
     "breadcrumb_home": "Startseite",
-    "faq_title": "FAQ: Schlafgeräte-App, Sounds zum Schlafen & Weißes Rauschen",
+    "faq_title": "FAQ: Schlafgeräte-App, Einschlafgeräusche & Weißes Rauschen",
     "faq": [
       {
-        "question": "Was ist der beste Sound zum Schlafen?",
-        "answer": "Der beste Sound zum Schlafen ist individuell—viele wählen Regen, Ventilator-Summen oder weißes Rauschen. In DRMN können Sie diese Sounds anhören und mischen."
+        "question": "Welcher Klang ist am besten zum Schlafen?",
+        "answer": "Das ist individuell—viele wählen Regen, Ventilator oder stabiles weißes Rauschen. In DRMN kannst du Klänge anhören und mixen, um herauszufinden, was dir am schnellsten beim Einschlafen hilft."
       },
       {
         "question": "Was ist eine Schlafgeräte-App?",
-        "answer": "Eine Schlafgeräte-App spielt gleichmäßigen Hintergrundsound—Regen, Ventilator oder weißes Rauschen—um Störgeräusche zu überdecken. DRMN funktioniert wie ein physisches Schlafgerät mit Mix, Offline und Schlaf-Timer."
+        "answer": "Sie spielt gleichmäßigen Hintergrundklang—Regen, Ventilator oder weißes Rauschen—um Störgeräusche zu überdecken und beim Schlafen zu helfen. DRMN ist eine iPhone-App mit Mix, Offline und Schlaf-Timer, wie ein physisches Schlafgerät."
       },
       {
-        "question": "Was ist die beste App für weißes Rauschen für iPhone?",
-        "answer": "DRMN ist die beste App für weißes Rauschen und Schlafgeräusche für iPhone. Diese kostenlose App für weißes Rauschen hilft Ihnen, schneller einzuschlafen mit weißem Rauschen, braunem Rauschen, Naturgeräuschen, Meereswellen, Regengeräuschen und mehr. Die beste App für Schlafgeräusche zum Schlafen, Meditieren, Arbeiten und Babyschlaf."
+        "question": "Beste App für weißes Rauschen auf dem iPhone?",
+        "answer": "DRMN hat 4,9 Sterne und über 10.000 Downloads. Regen, Ventilator, weißes Rauschen und 100 Stunden Schlaf- und Naturklänge—Nutzer schlafen 30–50 % schneller ein."
       },
       {
-        "question": "Gibt es eine kostenlose App für weißes Rauschen, die ich herunterladen kann?",
-        "answer": "Ja! DRMN ist eine völlig kostenlose App für weißes Rauschen, die im App Store verfügbar ist. Diese kostenlose Schlafgeräusche App enthält kostenlose Geräusche zum Einstieg. Laden Sie die beste kostenlose App für weißes Rauschen heute herunter - optionale Premium-Funktionen verfügbar."
+        "question": "Gibt es eine kostenlose App für weißes Rauschen?",
+        "answer": "Ja! DRMN ist kostenlos im App Store. Die kostenlose Version enthält 1-Stunden-Timer, Offline-Modus, Sound-Mix und Zugang zu Schlafgeräuschen. Premium schaltet längere Wiedergabe frei."
       },
       {
-        "question": "Was ist weißes Rauschen und wie funktioniert es?",
-        "answer": "Weißes Rauschen ist ein konstantes Geräusch, das störende Geräusche überdeckt und Ihnen hilft, schneller einzuschlafen. Diese App für weißes Rauschen bietet weißes Rauschen zum Schlafen, das Verkehr, Nachbarn und andere Geräusche blockiert. Die beste App für weißes Rauschen zum Schlafen hilft, konstante Schlafumgebungen zu schaffen."
+        "question": "Welche Klänge hat eine Schlafgeräte-App?",
+        "answer": "DRMN bietet über 100 Stunden professionelles Audio: weißes, braunes und dunkles Rauschen, Regen, Wellen, Feuer, Morgenvögel, Meditation und Babyschlafgeräusche (Föhn, Staubsauger, Tastatur)."
       },
       {
-        "question": "Was ist eine Schlafgeräusche App und welche Geräusche enthält sie?",
-        "answer": "Eine Schlafgeräusche App wie DRMN bietet weißes Rauschen und Naturgeräusche für besseren Schlaf. Diese Schlafgeräusche App enthält weißes Rauschen, braunes Rauschen, dunkles Rauschen, Regen, Meereswellen, Feuergeräusche und Morgenvögel. Plus Meditationsgeräusche und Babyschlafgeräusche wie Föhn, Staubsauger und Tastaturtippen."
+        "question": "Funktioniert die App offline?",
+        "answer": "Ja! Nach dem Download läuft DRMN vollständig offline. Mit Akku-Optimierung bis zu 10 Stunden Dauerwiedergabe ohne Internet."
       },
       {
-        "question": "Funktioniert die App für weißes Rauschen offline?",
-        "answer": "Ja! Diese App für weißes Rauschen funktioniert vollständig offline, sobald Geräusche heruntergeladen wurden. Genießen Sie ununterbrochenen Schlaf überall mit dieser Schlafgeräusche App, auch ohne Internet. Die beste offline App für weißes Rauschen, batterieoptimiert für den Einsatz die ganze Nacht."
+        "question": "Beste App für weißes Rauschen beim Babyschlaf?",
+        "answer": "DRMN enthält spezielle Babyschlafgeräusche (Föhn, Staubsauger, Tastatur), die beim schnelleren Einschlafen helfen. Vertraute Rhythmen beruhigen und schaffen eine ruhige Umgebung."
       },
       {
-        "question": "Was ist die beste App für weißes Rauschen für Babyschlaf?",
-        "answer": "DRMN ist die beste App für weißes Rauschen für Babyschlaf. Diese Schlafgeräusche App enthält spezielle Babyschlafgeräusche (Föhn, Staubsauger, Tastaturtippen), die Babys beim schnelleren Einschlafen helfen. Die beste App für Babyschlafgeräusche mit vertrauten Rhythmen, die die Kleinen beruhigen."
+        "question": "Wie funktioniert eine Schlafgeräte-App?",
+        "answer": "DRMN liefert weißes Rauschen und Schlafgeräusche für Schlaf und Fokus. Überdeckt Störgeräusche, schafft eine stabile Umgebung und fördert tieferen Schlaf—wie ein physisches Schlafgerät."
       },
       {
-        "question": "Was ist ein Gerät für weißes Rauschen und wie funktioniert es?",
-        "answer": "Ein Gerät für weißes Rauschen wie DRMN bietet weißes Rauschen und Schlafgeräusche, um Ihnen beim Schlafen und Konzentrieren zu helfen. Diese App für Gerät für weißes Rauschen überdeckt störende Geräusche, schafft konstante Schlafumgebungen und fördert tieferen Schlaf. Die beste App für Gerät für weißes Rauschen für iPhone - funktioniert wie ein physisches Gerät für weißes Rauschen."
+        "question": "Kann ich Klänge mixen?",
+        "answer": "Ja! Kombiniere weißes Rauschen mit Wellen oder Regen mit Meditationsklängen. Gestalte dein eigenes Schlaf-Erlebnis."
       },
       {
-        "question": "Kann ich Geräusche in der Schlafgeräusche App mischen?",
-        "answer": "Ja! Diese Schlafgeräusche App ermöglicht es Ihnen, mehrere Geräusche zusammen zu mischen. Kombinieren Sie weißes Rauschen mit Meereswellen oder Regen mit Meditationsgeräuschen in dieser App für weißes Rauschen. Erstellen Sie maßgeschneiderte Schlaf-Erlebnisse mit den besten Funktionen der App für Gerät für Geräusche."
-      },
-      {
-        "question": "Hat die App für weißes Rauschen einen Schlaf-Timer?",
-        "answer": "Ja! Diese App für weißes Rauschen enthält einen Schlaf-Timer mit automatischem Ausblenden. Perfekte Funktion der App für Schlafgeräusche für sorgenfreien Schlaf. Stellen Sie den Timer in dieser Schlafgeräusche App ein und das weiße Rauschen blendet automatisch aus."
+        "question": "Hat die App einen Schlaf-Timer?",
+        "answer": "Ja! Timer mit automatischem Ausblenden. Stell ihn ein, und der Klang wird nach dem Einschlafen allmählich leiser."
       },
       {
         "question": "Was ist weißes Rauschen zum Schlafen und wie hilft es?",
-        "answer": "Weißes Rauschen zum Schlafen ist ein konstantes Geräusch, das störende Geräusche überdeckt und Ihnen hilft, schneller einzuschlafen. Diese App für weißes Rauschen bietet weißes Rauschen zum Schlafen, das Verkehr, Nachbarn und andere Geräusche blockiert. Die beste App für weißes Rauschen zum Schlafen hilft, konstante Schlafumgebungen zu schaffen."
+        "answer": "Stabiler Klang, der störende Geräusche überdeckt und beim schnelleren Einschlafen hilft. DRMN blockiert Verkehr, Nachbarn und andere Laute für eine konstante Schlafumgebung."
       },
       {
-        "question": "Ist dies die beste App für Schlafgeräusche bei Schlaflosigkeit?",
-        "answer": "Ja! DRMN ist eine der besten Apps für Schlafgeräusche bei Schlaflosigkeit. Diese App für weißes Rauschen hilft Ihnen, 30-50% schneller einzuschlafen, indem sie störende Geräusche überdeckt und konstante Schlafumgebungen schafft. Die beste Schlafgeräusche App zur Linderung von Schlaflosigkeit - laden Sie die kostenlose App für weißes Rauschen heute herunter."
+        "question": "Ist das gut bei Schlaflosigkeit?",
+        "answer": "Ja! DRMN hat 4,9 Sterne und 10.000+ Downloads. Durch Überdecken von Störgeräuschen schlafen Nutzer im Schnitt 30–50 % schneller ein. Kostenlos laden."
       },
       {
-        "question": "Was ist braunes Rauschen und wie unterscheidet es sich von weißem Rauschen?",
-        "answer": "Braunes Rauschen ist ähnlich wie weißes Rauschen, hat aber mehr Energie in den niedrigeren Frequenzen, was es tiefer und beruhigender macht. Diese App für weißes Rauschen enthält braunes Rauschen als Alternative zum traditionellen weißen Rauschen. Beide sind effektiv zum Schlafen und Konzentrieren, aber braunes Rauschen kann für manche Menschen angenehmer sein."
+        "question": "Wie viele Downloads hat DRMN?",
+        "answer": "Über 10.000 aus dem App Store, 4,9 Sterne aus 10 Rezensionen. 100 Stunden aufgenommene Klänge und bis zu 10 Stunden offline mit einer Ladung."
       },
       {
-        "question": "Was ist rosa Rauschen und wofür wird es verwendet?",
-        "answer": "Rosa Rauschen ist eine Variante von weißem Rauschen mit mehr Energie in den mittleren Frequenzen. Diese App für weißes Rauschen enthält rosa Rauschen als weitere Option. Rosa Rauschen wird oft als natürlicher und angenehmer empfunden als weißes Rauschen und eignet sich gut zum Schlafen und Entspannen."
+        "question": "Wie ist DRMNs App-Store-Bewertung?",
+        "answer": "4,9 von 5 Sternen basierend auf 10 Rezensionen. Über 10.000 Downloads, 100 Stunden Schlafgeräusche und Offline-Wiedergabe."
       },
       {
-        "question": "Gibt es eine App für weißes Rauschen auf Deutsch?",
-        "answer": "Ja! DRMN ist eine App für weißes Rauschen, die auf Deutsch verfügbar ist. Diese App für weißes Rauschen deutsch bietet alle Funktionen in deutscher Sprache und ist perfekt für deutsche Nutzer, die nach einer App für weißes Rauschen suchen. Laden Sie die beste App für weißes Rauschen deutsch heute herunter."
+        "question": "Wodurch unterscheidet sich DRMN von anderen Apps?",
+        "answer": "DRMN sticht mit großzügiger kostenloser Version (1-Stunden-Timer), erweitertem Mix, Babyschlafgeräuschen und starker Akku-Optimierung hervor—Offline und professionelle Klänge ohne Abo."
       },
       {
-        "question": "Wie unterscheidet sich DRMN von anderen Apps für weißes Rauschen?",
-        "answer": "DRMN zeichnet sich durch die Kombination aus kostenlosem Vollzugang, erweiterten Sound-Mixing-Funktionen, spezialisierten Baby-Schlafgeräuschen und überlegener Batterieoptimierung aus. Im Gegensatz zu vielen Konkurrenten, die begrenzte kostenlose Versionen anbieten oder Abonnements erfordern, bietet DRMN vollständige Offline-Funktionalität, 100 Stunden professionell aufgenommener Geräusche und die Möglichkeit, mehrere Geräusche zu mischen - alles kostenlos. Die App ist optimiert, um die ganze Nacht zu laufen, ohne den Akku Ihres iPhones zu entladen, was sie ideal für längere Schlafsitzungen macht."
-      },
-      {
-        "question": "Was macht DRMN im Vergleich zu kostenlosen Alternativen einzigartig?",
-        "answer": "DRMN ist unter kostenlosen Apps für weißes Rauschen einzigartig, da es vollen Zugang zu allen Kernfunktionen ohne Abonnement bietet. Während viele kostenlose Alternativen die Geräuscheauswahl einschränken oder In-App-Käufe erfordern, bietet DRMN 100 Stunden Geräusche, Sound-Mixing, Offline-Modus und Batterieoptimierung völlig kostenlos. Die App enthält auch spezialisierte Baby-Schlafgeräusche (Fön, Staubsauger, Tastatur), die viele Konkurrenten nicht anbieten, und ist für iOS 17.1+ optimiert, um die beste Leistung auf modernen iPhones zu erzielen."
+        "question": "Was macht DRMN unter Gratis-Alternativen einzigartig?",
+        "answer": "Kostenlose Version mit 1-Stunden-Timer ohne Abo. Während Konkurrenten Klänge einschränken oder Käufe verlangen, bietet DRMN Mix, Offline und Akku-Optimierung gratis—plus Babyschlafgeräusche, die viele nicht haben."
       },
       {
         "question": "Ist DRMN besser als andere Schlafgeräusche-Apps?",
-        "answer": "DRMN bietet mehrere Vorteile gegenüber anderen Schlafgeräusche-Apps: Es ist völlig kostenlos mit vollem Funktionszugang (kein Abonnement erforderlich), enthält 100 Stunden professionell aufgenommener Geräusche, ermöglicht unbegrenztes Sound-Mixing, funktioniert vollständig offline und ist batterieoptimiert für den nächtlichen Gebrauch. Mit einer Bewertung von 4,9 Sternen und über 10.000 Downloads berichten Benutzer, dass sie 30-50% schneller einschlafen. DRMN enthält auch spezialisierte Baby-Schlafgeräusche und einen intelligenten Schlaf-Timer mit automatischem Ausblenden - Funktionen, für die viele Konkurrenten Gebühren erheben oder die sie überhaupt nicht anbieten."
+        "answer": "Kostenlose Version: Timer, Mix, Offline, Akku-Optimierung ohne Abo. 4,9 Sterne, 10.000+ Downloads, 30–50 % schnelleres Einschlafen. Babyschlafgeräusche und smarter Timer gratis—Funktionen, für die andere bezahlt verlangen."
       }
     ],
     "structured_data": {
@@ -415,17 +433,17 @@
         "@context": "https://schema.org",
         "@type": "MobileApplication",
         "name": "DRMN",
-        "alternateName": "DRMN Schlaf App",
+        "alternateName": "DRMN Schlaf-App",
         "applicationCategory": "HealthApplication",
         "operatingSystem": "iOS",
         "offers": {
           "@type": "Offer",
           "price": "0",
-          "priceCurrency": "EUR",
+          "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
           "url": "https://apps.apple.com/app/id6746480683"
         },
-        "description": "Beste App für weißes Rauschen und Schlafgeräusche für iPhone. Kostenlose App für weißes Rauschen hilft Ihnen schneller einzuschlafen mit weißem Rauschen, Schlafgeräuschen und Funktionen für Gerät für weißes Rauschen. Laden Sie die beste App für Schlafgeräusche für Schlaflosigkeit, Konzentration und Babyschlaf herunter.",
+        "description": "Schlafgeräte- und Weißes-Rauschen-App für iPhone. Kostenlose Version mit Regen, Ventilator, Mix und Offline. Für Schlaf, Fokus und Babyschlaf.",
         "image": {
           "@type": "ImageObject",
           "url": "https://drmn.xyz/img/logo.webp",
@@ -448,13 +466,13 @@
           "@type": "Person",
           "name": "Vladimir Ivakhnenko"
         },
-        "keywords": "weißes rauschen app, app weißes rauschen, weißes rauschen schlaf, weißes rauschen baby, weißes rauschen bebe, weißes rauschen gerät, gerät weißes rauschen, weißes rauschen deutsch, braunes rauschen, rosa rauschen, app schlafgeräusche, app zum schlafen, schlafgeräusche",
+        "keywords": "schlafgeräusche, schlafgeräte-app, weißes rauschen, einschlafgeräusche, schlaf app, weißes rauschen app, regen einschlafen, ventilator schlaf, offline schlaf",
         "inLanguage": "de",
         "datePublished": "2024-01-01",
         "dateModified": "2025-01-15",
         "softwareVersion": "1.5",
         "fileSize": "49.2MB",
-        "softwareRequirements": "iOS 17.1 oder höher",
+        "softwareRequirements": "Erfordert iOS 17.1 oder neuer",
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "4.9",
@@ -467,97 +485,71 @@
         "name": "DRMN",
         "url": "https://drmn.xyz/de/",
         "logo": "https://drmn.xyz/img/logo.webp",
-        "description": "DRMN - Beste App für weißes Rauschen und Schlafgeräusche für iPhone. Kostenlose App für weißes Rauschen hilft Ihnen schneller einzuschlafen mit weißem Rauschen, Schlafgeräuschen und Funktionen für Gerät für weißes Rauschen. Laden Sie die beste App für Schlafgeräusche heute herunter."
+        "description": "DRMN — Schlafgeräte- und Weißes-Rauschen-App für iPhone. Kostenlose Version mit Mix und Offline. Für Schlaf, Fokus und Babyschlaf."
       },
       "website": {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "DRMN",
         "url": "https://drmn.xyz/de/",
-        "description": "Beste App für weißes Rauschen und Schlafgeräusche für iPhone. Kostenlose App für weißes Rauschen hilft Ihnen schneller einzuschlafen mit weißem Rauschen, Schlafgeräuschen und Funktionen für Gerät für weißes Rauschen. Laden Sie die beste App für Schlafgeräusche heute herunter.",
+        "description": "Schlafgeräte- und Weißes-Rauschen-App für iPhone. Kostenlose Version mit Mix und Offline. Kostenlos im App Store laden.",
         "potentialAction": {
           "@type": "SearchAction",
-          "target": "https://drmn.xyz/de/?q={search_term_string}",
+          "target": "https://drmn.xyz/?q={search_term_string}",
           "query-input": "required name=search_term_string"
         }
       },
       "howto": {
         "@context": "https://schema.org",
         "@type": "HowTo",
-        "name": "Wie Man App für Weißes Rauschen für Besseren Schlaf Verwendet",
-        "description": "Lernen Sie, wie Sie die beste App für weißes Rauschen und Schlafgeräusche verwenden, um schneller einzuschlafen. Schritt-für-Schritt-Anleitung zur Verwendung von App für weißes Rauschen, Schlafgeräusche App und Funktionen für Gerät für weißes Rauschen für besseren Schlaf.",
+        "name": "So nutzt du eine Schlafgeräte-App für besseren Schlaf",
+        "description": "Lerne, DRMN für schnelleres Einschlafen zu nutzen. Schritt-für-Schritt-Anleitung.",
         "step": [
           {
             "@type": "HowToStep",
             "position": 1,
-            "name": "Laden Sie Kostenlose App für Weißes Rauschen Herunter",
-            "text": "Laden Sie die beste App für weißes Rauschen - DRMN aus dem App Store auf Ihrem iPhone herunter. Diese kostenlose Schlafgeräusche App erfordert iOS 17.1 oder höher und ist völlig kostenlos herunterzuladen.",
+            "name": "Kostenlos laden",
+            "text": "Lade DRMN aus dem App Store auf dein iPhone. Erfordert iOS 17.1+. Die kostenlose Version hat einen 1-Stunden-Timer.",
             "url": "https://apps.apple.com/app/id6746480683"
           },
           {
             "@type": "HowToStep",
             "position": 2,
-            "name": "Durchsuchen Sie Schlafgeräusche in App für Weißes Rauschen",
-            "text": "Starten Sie diese App für weißes Rauschen und erkunden Sie die Bibliothek der Schlafgeräusche App. Sie finden weißes Rauschen, braunes Rauschen, Naturgeräusche (Regen, Meereswellen, Feuer), Meditationsgeräusche und Babyschlafgeräusche in dieser App für Gerät für Geräusche."
+            "name": "Schlafgeräusche entdecken",
+            "text": "Öffne die App und erkunde die Bibliothek: weißes und braunes Rauschen, Natur (Regen, Wellen, Feuer), Meditation und Babyschlafgeräusche."
           },
           {
             "@type": "HowToStep",
             "position": 3,
-            "name": "Wählen Sie Weißes Rauschen oder Schlafgeräusche",
-            "text": "In dieser App für weißes Rauschen wählen Sie Geräusche, die Ihren Bedürfnissen entsprechen - weißes Rauschen zum Überdecken störender Geräusche, Schlafgeräusche zur Entspannung oder Babyschlafgeräusche für Babys. Diese Schlafgeräusche App ermöglicht es Ihnen, jedes Geräusch vor dem Abspielen in der Vorschau anzusehen."
+            "name": "Klänge auswählen",
+            "text": "Wähle nach Bedarf—weißes Rauschen zum Überdecken, Natur zum Entspannen, Babyschlafgeräusche für Säuglinge. Vor dem Abspielen anhören."
           },
           {
             "@type": "HowToStep",
             "position": 4,
-            "name": "Mischen Sie Geräusche in App für Gerät für Geräusche",
-            "text": "Diese App für Gerät für Geräusche ermöglicht es Ihnen, mehrere Geräusche zusammen zu mischen. In dieser App für weißes Rauschen kombinieren Sie weißes Rauschen mit Meereswellen oder Regen mit Meditationsgeräuschen. Erstellen Sie Ihre perfekte Schlafumgebung mit dieser Schlafgeräusche App."
+            "name": "Klänge mixen",
+            "text": "Kombiniere weißes Rauschen mit Wellen oder Regen mit Meditation. Schaffe deine ideale Schlafumgebung."
           },
           {
             "@type": "HowToStep",
             "position": 5,
-            "name": "Stellen Sie Schlaf-Timer in App für Weißes Rauschen Ein",
-            "text": "Diese App für weißes Rauschen enthält einen Schlaf-Timer mit automatischem Ausblenden. Konfigurieren Sie ihn in dieser Schlafgeräusche App, wenn Sie nicht möchten, dass Geräusche die ganze Nacht laufen. Diese Funktion der App für Schlafgeräusche hilft Ihnen beim Einschlafen und blendet dann allmählich aus."
+            "name": "Schlaf-Timer einstellen",
+            "text": "Stelle automatisches Ausblenden ein, wenn du nicht die ganze Nacht hören willst. Der Klang wird allmählich leiser."
           },
           {
             "@type": "HowToStep",
             "position": 6,
-            "name": "Starten Sie Weißes Rauschen und Schlafen Sie Besser",
-            "text": "Drücken Sie Wiedergabe in dieser App für weißes Rauschen, um Ihre ausgewählten Schlafgeräusche zu starten. Stellen Sie die Lautstärke in dieser Schlafgeräusche App ein, um störende Geräusche bequem zu überdecken. Diese App für Gerät für Geräusche funktioniert am besten mit dem Telefon in der Nähe oder Kopfhörern."
+            "name": "Abspielen und schlafen",
+            "text": "Tippe auf Play und passe die Lautstärke an. iPhone in der Nähe oder Kopfhörer—beides funktioniert gut."
           },
           {
             "@type": "HowToStep",
             "position": 7,
-            "name": "Laden Sie Geräusche für Offline-Verwendung von App für Weißes Rauschen Herunter",
-            "text": "Laden Sie Ihre Lieblingsgeräusche in dieser App für weißes Rauschen für die Offline-Verwendung herunter. Einmal heruntergeladen, funktioniert diese Schlafgeräusche App vollständig offline. Genießen Sie ununterbrochenen Schlaf überall mit dieser kostenlosen App für weißes Rauschen, auch ohne Internet."
+            "name": "Für Offline laden",
+            "text": "Lade Favoriten für Offline-Nutzung. Ununterbrochener Schlaf überall, auch ohne Internet."
           }
         ]
       }
     }
-  },
-  "popular_sounds": {
-    "title": "Beliebte Sounds zum Einschlafen",
-    "intro": "Suchen Sie den besten Sound zum Schlafen? DRMN enthält die meistgesuchten Schlafgeräusche—Mix, Offline und die ganze Nacht auf dem iPhone.",
-    "items": [
-      {
-        "icon": "🌧️",
-        "title": "Regengeräusch zum Einschlafen",
-        "description": "Sanfter Regen maskiert plötzliche Geräusche. Mischen Sie Regen mit weißem Rauschen für ein tieferes Schlafgeräte-Erlebnis."
-      },
-      {
-        "icon": "🌀",
-        "title": "Ventilator-Sound zum Schlafen",
-        "description": "Stetiges Ventilator-Summen blockiert Verkehr, Schnarchen und Nachbarn—ein Klassiker unter den Sounds zum Schlafen."
-      },
-      {
-        "icon": "🔊",
-        "title": "Weißes Rauschen zum Schlafen",
-        "description": "Weißes, braunes und dunkles Rauschen schaffen eine konstante Schicht, die dem Gehirn signalisiert: Zeit zur Ruhe."
-      },
-      {
-        "icon": "🌊",
-        "title": "Meer & Natur-Schlafgeräusche",
-        "description": "Meereswellen, Feuer und Vögel ergänzen die Bibliothek—jederzeit mit Regen oder Ventilator mischen."
-      }
-    ]
   }
 }

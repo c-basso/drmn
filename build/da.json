@@ -1,0 +1,555 @@
+{
+  "meta": {
+    "lang": "da",
+    "title": "DRMN Søvnlydsmaskine — Bedste Søvnlyde til iPhone",
+    "description": "Søvnlyds-app til iPhone: regn, ventilator og hvid støj, mix, offline. Hent DRMN gratis i App Store—bedste søvnlyde til søvn, fokus og babysøvn hele natten.",
+    "keywords": "søvnlyde, søvnlydsmaskine, hvid støj, lyde til søvn, regnlyd søvn, ventilatorlyd søvn, søvn app, hvid støj app, baby søvnlyde, fokuslyde, offline søvn",
+    "author": "DRMN",
+    "og_url": "https://drmn.xyz/da/",
+    "og_title": "Søvnlydsmaskine og Søvnlyde | DRMN",
+    "og_description": "Søvnlydsmaskine til iPhone: regn, ventilator, hvid støj og naturlyde. Mix, offline, søvntimer og batterioptimering. Hent DRMN gratis i App Store.",
+    "og_image": "https://drmn.xyz/da/site_preview.png",
+    "og_image_alt": "DRMN-app — Sov bedre, falder hurtigere i søvn",
+    "og_locale": "da_DK",
+    "twitter_url": "https://drmn.xyz/da/",
+    "twitter_title": "Søvnlydsmaskine og Søvnlyde | DRMN",
+    "twitter_description": "Søvnlydsmaskine til iPhone: regn, ventilator, hvid støj og naturlyde. Mix, offline, søvntimer og batterioptimering. Hent DRMN gratis i App Store.",
+    "twitter_image": "https://drmn.xyz/da/site_preview.png",
+    "twitter_image_alt": "DRMN-app — Sov bedre, falder hurtigere i søvn",
+    "twitter_site": "@c__basso",
+    "twitter_creator": "@c__basso",
+    "canonical": "https://drmn.xyz/da/",
+    "app_store_id": "6746480683",
+    "og_type": "website",
+    "twitter_card": "summary_large_image",
+    "theme_color": "#1a1b2e",
+    "apple_mobile_web_app_status_bar_style": "default",
+    "og_image_width": "1200",
+    "og_image_height": "630",
+    "twitter_image_width": "1200",
+    "twitter_image_height": "630"
+  },
+  "header": {
+    "app_name_suffix": "Søvnlydsmaskine",
+    "logo_alt": "DRMN søvnlydsmaskine-app logo til iPhone",
+    "app_name": "DRMN",
+    "title": "Søvnlydsmaskine-app til iPhone",
+    "tagline": "Fald hurtigere i søvn med de bedste søvnlyde. DRMN er en søvnlyds-app med regn, ventilator, hvid støj og naturlyde—mix, offline afspilning og batterivenlig brug hele natten.",
+    "tldr": "DRMN er en gratis iOS søvnlyds-app, der hjælper dig med at falde i søvn 30–50 % hurtigere. Gratis version inkluderer regn, ventilator, hvid støj, 1-times timer, offline-tilstand, lydmix og batterioptimering. Hent gratis i App Store.",
+    "download_text": "Hent nu",
+    "download_url": "https://apps.apple.com/app/id6746480683",
+    "download_aria_label": "Hent gratis søvnlyds-app fra App Store",
+    "download_img_alt": "Hent søvnlyds-app i App Store",
+    "scan_to_download": "Scan for at hente"
+  },
+  "stats": {
+    "title": "DRMN i tal",
+    "items": [
+      {
+        "stat": "4,9/5",
+        "description": "Gennemsnitlig App Store-bedømmelse (10 anmeldelser)"
+      },
+      {
+        "stat": "10.000+",
+        "description": "Brugere der har hentet DRMN fra App Store"
+      },
+      {
+        "stat": "30–50 % hurtigere",
+        "description": "Gennemsnitlig forbedring af indsovnning ifølge brugere"
+      },
+      {
+        "stat": "100 timer",
+        "description": "Professionelt indspillede søvnlyde og ambient-lyd"
+      },
+      {
+        "stat": "10 timer",
+        "description": "Offline afspilning på én opladning (batterioptimeret)"
+      },
+      {
+        "stat": "49,2 MB",
+        "description": "App-størrelse (optimeret til alle iPhone-modeller)"
+      },
+      {
+        "stat": "iOS 17.1+",
+        "description": "Kompatibel med alle moderne iPhones"
+      }
+    ]
+  },
+  "features": {
+    "title": "Søvnlyde og Naturlyde til Bedre Hvile",
+    "items": [
+      {
+        "icon": "🌊",
+        "title": "Stort bibliotek af søvnlyde",
+        "description": "Hvid, brun og mørk støj til dyb afslapning. Blid regn, bølger, knitrende bål og morgenfugle. Meditations-ambient og blød instrumental. Mix lyde og skab dit perfekte søvnmiljø."
+      },
+      {
+        "icon": "😴",
+        "title": "Fald hurtigere i søvn, sov dybere",
+        "description": "Svært at falde i søvn? Videnskabeligt understøttede lyde maskerer trafik, naboer og snorken. Et stabilt lydmiljø signalerer hjernen, at det er tid til hvile. Vågn op frisk hver morgen."
+      },
+      {
+        "icon": "🎯",
+        "title": "Fokusér bedre, arbejd smartere",
+        "description": "Meditation, studier eller arbejde i en støjende café—DRMN skaber den perfekte atmosfære til koncentration. Bloker distraktioner, reducer stress og øg produktiviteten."
+      },
+      {
+        "icon": "👶",
+        "title": "Hjælp babyen med at sove roligt",
+        "description": "Specialiserede babylyde—hårtørrer, støvsuger, tastatur—hjælper spædbørn og småbørn med at falde i søvn. Velkendte rytmer beroliger og fremmer sunde søvnvaner."
+      }
+    ]
+  },
+  "popular_sounds": {
+    "title": "Populære Søvnlyde",
+    "intro": "Leder du efter den bedste lyd at sove til? DRMN har de mest søgte søvnlyde—klar til mix, offline afspilning og natten igennem på din iPhone.",
+    "items": [
+      {
+        "icon": "🌧️",
+        "title": "Regnlyd til søvn",
+        "description": "Blid regn maskerer pludselig støj og hjælper dig med at falde i søvn. Mix regn med hvid støj for en dybere søvnlydsmaskine-oplevelse."
+      },
+      {
+        "icon": "🌀",
+        "title": "Ventilatorlyd til søvn",
+        "description": "Stabil ventilator-hum blokerer trafik, snorken og naboer—den klassiske søvnlyd mange stoler på hver nat."
+      },
+      {
+        "icon": "🔊",
+        "title": "Hvid støj til søvn",
+        "description": "Hvid, brun og mørk støj skaber et stabilt lag, der signalerer hjernen, at det er tid til hvile."
+      },
+      {
+        "icon": "🌊",
+        "title": "Hav- og natursøvnlyde",
+        "description": "Bølger, bål og morgenfugle i vores naturlydsbibliotek—mix dem med regn eller ventilator når som helst."
+      }
+    ]
+  },
+  "content": {
+    "title": "Forvandl Din Søvn med en Søvnlydsmaskine-app",
+    "intro": "DRMN er en iOS søvnlyds-app med hvid støj, regn, ventilator og naturlyde, der hjælper dig med at falde hurtigere i søvn. Over 10.000 downloads og 4,9 i bedømmelse. Til insomnia, fokus på arbejdet eller babysøvn.",
+    "sections": [
+      {
+        "title": "Et lydbibliotek designet til dine behov",
+        "paragraph1": "Vi har kurateret kvalitetslyde til afslapning, fokus og bedre søvn:",
+        "list_items": [
+          "<strong>Hvid, brun og mørk støj</strong> — maskerer forstyrrende lyde og skaber et stabilt søvnmiljø",
+          "<strong>Naturlyde</strong> — regn, bølger, bål, ventilator og morgenfugle transporterer dig til et fredeligt sted",
+          "<strong>Meditations- og fokuslyde</strong> — ambient og blød instrumental til arbejde og mindfulness",
+          "<strong>Babylyde</strong> — hårtørrer, støvsuger og tastatur hjælper de små med at falde i søvn"
+        ],
+        "paragraph2": "Det bedste? Du kan mixe flere lyde til din perfekte blanding. Hvid støj med et strejf af bølger, eller regn med blid meditationsmusik—du har fuld kontrol."
+      },
+      {
+        "title": "Videnskabeligt understøttet søvnhjælp",
+        "paragraph1": "Forskning viser, at stabile baggrundslyde forbedrer søvnkvaliteten markant. Sådan hjælper DRMN:",
+        "list_items": [
+          "<strong>Blokerer forstyrrende lyde</strong> — trafik, naboer, snorken eller pludselige lyde vækker dig ikke længere",
+          "<strong>Signalerer hvile til hjernen</strong> — stabilt lydmiljø hjælper sindet med at slappe af",
+          "<strong>Fremmer dybere søvn</strong> — udvalgte frekvenser understøtter mere genoprettende søvncyklusser"
+        ],
+        "paragraph2": "Over 10.000 downloads og 4,9 i App Store. Brugere falder i gennemsnit 30–50 % hurtigere i søvn og vågner færre gange om natten. Vågn op frisk og klar til dagen."
+      },
+      {
+        "title": "Ikke kun til søvn—også til fokus",
+        "paragraph1": "DRMN er mere end en søvn-app—det er dit hemmelige våben til koncentration. Støjende café, eksamen eller meditation—de rigtige lyde gør en forskel:",
+        "list_items": [
+          "<strong>Fjern distraktioner</strong> — skab din egen stille boble overalt",
+          "<strong>Reducer stress</strong> — beroligende frekvenser holder dig afslappet og fokuseret",
+          "<strong>Øg produktiviteten</strong> — brugere rapporterer bedre fokus med baggrundslyde",
+          "<strong>Dyb koncentration</strong> — perfekt til vigtige opgaver og deep work"
+        ],
+        "paragraph2": "Hjemmearbejde, sen natte-studier eller et øjebliks ro—DRMN giver det perfekte lydlandskab."
+      },
+      {
+        "title": "Hjælp den lille med at sove natten igennem",
+        "paragraph1": "Vi ved, hvor udmattende det er, når babyen ikke vil sove. Derfor har vi specialiserede lyde til spædbørn og småbørn. Blid hårtørrer, støvsuger og tastatur skaber beroligende rytmer.",
+        "list_items": [],
+        "paragraph2": "Stabile, blide lyde efterligner velkendte lyde fra livmoderen og giver tryghed. Forældre verden over stoler på DRMN til længere og roligere babysøvn—og bedre hvile for dig."
+      },
+      {
+        "title": "Bygget med omhu til hverdagen",
+        "paragraph1": "Hver detalje er tænkt igennem, så DRMN passer ind i din rutine:",
+        "list_items": [
+          "<strong>Professionelt indspillede lyde</strong> — over 100 timer kvalitetsaudio",
+          "<strong>Mix og match</strong> — kombiner lyde til din perfekte blanding",
+          "<strong>Smart søvntimer</strong> — automatisk fade-out, ingen bekymring om natten igennem",
+          "<strong>Enkelt smukt interface</strong> — start på sekunder, ingen kompliceret opsætning",
+          "<strong>Fungerer offline</strong> — download favoritter og afspil op til 10 timer uden internet",
+          "<strong>Batterivenlig</strong> — optimeret til natten uden at tømme iPhonen",
+          "<strong>Gratis at starte</strong> — prøv gratis, premium-funktioner er valgfrie"
+        ],
+        "paragraph2": "DRMN kører på iPhone med iOS 17.1+. Gratis version: 1-times timer, offline, lydmix og batterioptimering. Premium låser op for længere afspilning og flere lyde."
+      }
+    ]
+  },
+  "benefits": {
+    "title": "Hvorfor Vælge DRMN?",
+    "items": [
+      "Kvalitetslyde, professionelt indspillet, der faktisk hjælper dig med at sove",
+      "Mix flere lyde til dit perfekte søvnmiljø",
+      "Smart timer med automatisk fade-out—sæt og glem",
+      "Smukt intuitivt interface, nemt at bruge",
+      "Fuldt offline efter download af lyde",
+      "Batterioptimeret til natten igennem",
+      "Gratis download, premium valgfrit"
+    ]
+  },
+  "comparison": {
+    "title": "Bedste Søvnlydsmaskine — Sådan Sammenligner DRMN",
+    "description": "Se hvordan DRMN klarer sig mod typiske gratis og premium søvnlyds-apps. Baseret på offentlige data og brugerrapporter.",
+    "table": {
+      "headers": [
+        "Funktion",
+        "DRMN",
+        "Typiske gratis apps",
+        "Premium-apps"
+      ],
+      "rows": [
+        {
+          "feature": "Gratis version",
+          "drmn": "1-times timer (nok til søvn)",
+          "typical": "Begrænsede lyde eller reklamer",
+          "premium": "Abonnement påkrævet"
+        },
+        {
+          "feature": "Offline-tilstand",
+          "drmn": "Ja (10+ timer)",
+          "typical": "Begrænset eller reklamer",
+          "premium": "Ja"
+        },
+        {
+          "feature": "Lydmix",
+          "drmn": "Ja, ubegrænset",
+          "typical": "Nej eller begrænset",
+          "premium": "Ja"
+        },
+        {
+          "feature": "Batterioptimering",
+          "drmn": "Ja, hele natten",
+          "typical": "Delvist",
+          "premium": "Ja"
+        },
+        {
+          "feature": "Babylyde",
+          "drmn": "Ja (hårtørrer, støvsuger, tastatur)",
+          "typical": "Nej",
+          "premium": "Nogle gange"
+        },
+        {
+          "feature": "Søvntimer",
+          "drmn": "Auto-fade",
+          "typical": "Basis",
+          "premium": "Auto-fade"
+        },
+        {
+          "feature": "Filstørrelse",
+          "drmn": "49,2 MB",
+          "typical": "30–70 MB",
+          "premium": "50–100 MB"
+        },
+        {
+          "feature": "iOS-krav",
+          "drmn": "17.1+",
+          "typical": "15.0+",
+          "premium": "16.0+"
+        },
+        {
+          "feature": "App Store-bedømmelse",
+          "drmn": "4,9/5 (10 anmeldelser)",
+          "typical": "3,5–4,5/5",
+          "premium": "4,0–4,8/5"
+        }
+      ]
+    }
+  },
+  "testimonials": {
+    "title": "Hvad Brugerne Siger om DRMN",
+    "items": [
+      {
+        "quote": "Jeg falder 40 % hurtigere i søvn med DRMN. Lydmix lader mig kombinere hvid støj og bølger. Den bedste søvn i årevis!",
+        "name": "Sarah M.",
+        "location": "Californien, USA",
+        "role": "Professionel"
+      },
+      {
+        "quote": "Vores baby sover natten igennem takket være hårtørrerlyden. Det eneste der virker konsekvent. Offline redder os på rejser.",
+        "name": "Michael R.",
+        "location": "Texas, USA",
+        "role": "Forælder"
+      },
+      {
+        "quote": "Som insomniiker har DRMN været en game changer. Bruger det hver nat og vågner frisk. Batterioptimering—ingen bekymring om afladning.",
+        "name": "Jennifer L.",
+        "location": "New York, USA",
+        "role": "Med insomnia"
+      },
+      {
+        "quote": "Jeg bruger DRMN til fokus på arbejdet. Lydmix skaber det perfekte miljø. Gratis 1-times timer er perfekt til arbejde—fantastisk værdi!",
+        "name": "David K.",
+        "location": "London, UK",
+        "role": "Remote-arbejder"
+      }
+    ]
+  },
+  "whats_new": {
+    "title": "Nyheder",
+    "description": "Seneste opdateringer til DRMN",
+    "items": [
+      {
+        "date": "Januar 2025",
+        "title": "Forbedret batterioptimering",
+        "description": "Bedre batterieffektivitet til natten. Op til 10 timers kontinuerlig afspilning på én opladning."
+      },
+      {
+        "date": "Januar 2025",
+        "title": "Nye søvnlyde",
+        "description": "10 nye professionelt indspillede søvnlyde—biblioteket overstiger nu 100 timer."
+      },
+      {
+        "date": "December 2024",
+        "title": "Forbedret lydmix",
+        "description": "Bedre lydkvalitet og glattere overgange mellem lyde."
+      }
+    ]
+  },
+  "final_cta": {
+    "title": "Klar til at Sove Bedre I Aften?",
+    "paragraph1": "Slut dig til over 10.000 brugere, der har forbedret søvnen med DRMN. 4,9/5 i App Store—gratis søvnlyds-app, der hjælper dig med at falde i søvn 30–50 % hurtigere. Gratis version: 1-times timer, offline og lydmix. Hent i dag og oplev professionelle lyde—prøv gratis.",
+    "cta_text": "Hent Gratis Søvnlyds-app",
+    "cta_url": "https://apps.apple.com/app/id6746480683",
+    "cta_aria_label": "Hent gratis søvnlyds-app fra App Store",
+    "cta_img_alt": "Hent søvnlyds-app i App Store"
+  },
+  "footer": {
+    "copyright": "© 2025 DRMN. All rights reserved.",
+    "privacy_link": "Privatlivspolitik",
+    "privacy_url": "/privacy.html",
+    "terms_link": "Vilkår og betingelser",
+    "terms_url": "/terms.html",
+    "fazier_badge_alt": "Fazier-badge",
+    "superlaunch_badge_alt": "Fremhævet på Super Launch"
+  },
+  "app_info": {
+    "developer": "Vladimir Ivakhnenko",
+    "category": "Sundhed og fitness",
+    "age_rating": "4+",
+    "file_size": "49,2 MB",
+    "compatibility": "Kræver iOS 17.1 eller nyere",
+    "platform": "iPhone",
+    "copyright": "© 2025 c-basso",
+    "in_app_purchases": true,
+    "subscriptions": [
+      {
+        "name": "White Noise Machine",
+        "description": "Bedre søvn med søvnlyde i DRMN",
+        "price": "$5.99",
+        "type": "Gratis prøveperiode"
+      },
+      {
+        "name": "Lifetime Plan",
+        "description": "Engangskøb for livstidsadgang",
+        "price": "$19.99",
+        "type": "Engangskøb"
+      }
+    ]
+  },
+  "seo": {
+    "breadcrumb_home": "Hjem",
+    "faq_title": "FAQ: Søvnlydsmaskine, Søvnlyde og Hvid Støj",
+    "faq": [
+      {
+        "question": "Hvilken lyd er bedst til søvn?",
+        "answer": "Det afhænger af dig—mange vælger regn, ventilator eller stabil hvid støj. I DRMN kan du forhåndslytte og mixe, så du finder det, der hjælper dig hurtigst i søvn."
+      },
+      {
+        "question": "Hvad er en søvnlydsmaskine?",
+        "answer": "Den afspiller stabilt baggrundslyd—regn, ventilator eller hvid støj—for at maskere støj og hjælpe dig med at sove. DRMN er en iPhone-app med mix, offline og søvntimer, som en fysisk lydsmaskine."
+      },
+      {
+        "question": "Bedste hvid støj-app til iPhone?",
+        "answer": "DRMN har 4,9 i bedømmelse og over 10.000 downloads. Regn, ventilator, hvid støj og 100 timer søvn- og naturlyde—brugere falder 30–50 % hurtigere i søvn."
+      },
+      {
+        "question": "Findes en gratis hvid støj-app?",
+        "answer": "Ja! DRMN er gratis i App Store. Gratis version: 1-times timer, offline, lydmix og søvnlyde. Premium låser op for længere afspilning."
+      },
+      {
+        "question": "Hvilke lyde har en søvnlyds-app?",
+        "answer": "DRMN har 100+ timer professionel lyd: hvid, brun og mørk støj, regn, bølger, bål, morgenfugle, meditation og babylyde (hårtørrer, støvsuger, tastatur)."
+      },
+      {
+        "question": "Virker appen offline?",
+        "answer": "Ja! Efter download fungerer DRMN fuldt offline. Med batterioptimering op til 10 timers afspilning uden internet."
+      },
+      {
+        "question": "Bedste hvid støj-app til baby?",
+        "answer": "DRMN har specialiserede babylyde (hårtørrer, støvsuger, tastatur), der hjælper spædbørn med at falde i søvn. Velkendte rytmer beroliger."
+      },
+      {
+        "question": "Hvordan fungerer en lydsmaskine-app?",
+        "answer": "DRMN giver hvid støj og søvnlyde til søvn og fokus. Maskerer støj, skaber stabilt miljø og fremmer dybere søvn—som en fysisk hvid støj-maskine."
+      },
+      {
+        "question": "Kan jeg mixe lyde?",
+        "answer": "Ja! Kombiner hvid støj med bølger, eller regn med meditation. Skab din egen søvnoplevelse."
+      },
+      {
+        "question": "Har appen søvntimer?",
+        "answer": "Ja! Søvntimer med automatisk fade-out. Sæt den, og lyden dæmpes gradvist efter du er faldet i søvn."
+      },
+      {
+        "question": "Hvad er hvid støj til søvn, og hvordan hjælper den?",
+        "answer": "Stabil lyd der maskerer forstyrrende lyde og hjælper dig hurtigere i søvn. DRMN blokerer trafik, naboer og andre lyde."
+      },
+      {
+        "question": "Er det godt til insomnia?",
+        "answer": "Ja! DRMN har 4,9 og 10.000+ downloads. Maskering af støj hjælper brugere med at falde 30–50 % hurtigere i søvn. Hent gratis."
+      },
+      {
+        "question": "Hvor mange downloads har DRMN?",
+        "answer": "Over 10.000 fra App Store, 4,9 fra 10 anmeldelser. 100 timer lyde og op til 10 timer offline på én opladning."
+      },
+      {
+        "question": "Hvad er DRMNs App Store-bedømmelse?",
+        "answer": "4,9 af 5 baseret på 10 anmeldelser. Over 10.000 downloads, 100 timer søvnlyde og offline-afspilning."
+      },
+      {
+        "question": "Hvordan adskiller DRMN sig fra andre apps?",
+        "answer": "DRMN skiller sig ud med generøs gratis version (1-times timer), avanceret mix, babylyde og batterioptimering—offline og professionelle lyde uden abonnement."
+      },
+      {
+        "question": "Hvad gør DRMN unik blandt gratis alternativer?",
+        "answer": "1-times timer uden abonnement. Mens konkurrenter begrænser lyde eller kræver køb, giver DRMN mix, offline og batterioptimering gratis—plus babylyde mange mangler."
+      },
+      {
+        "question": "Er DRMN bedre end andre søvnlyds-apps?",
+        "answer": "Gratis version: timer, mix, offline, batterioptimering uden abonnement. 4,9, 10.000+ downloads, 30–50 % hurtigere indsovnning. Babylyde og smart timer gratis—funktioner konkurrenter tager betaling for."
+      }
+    ],
+    "structured_data": {
+      "software_application": {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "DRMN",
+        "alternateName": "DRMN Søvn-app",
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "iOS",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://apps.apple.com/app/id6746480683"
+        },
+        "description": "Søvnlyds- og hvid støj-app til iPhone. Gratis version med regn, ventilator, mix og offline. Til søvn, fokus og baby.",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://drmn.xyz/img/logo.webp",
+          "width": 176,
+          "height": 176,
+          "caption": "DRMN-app logo"
+        },
+        "screenshot": {
+          "@type": "ImageObject",
+          "url": "https://drmn.xyz/img/logo.webp",
+          "width": 176,
+          "height": 176
+        },
+        "url": "https://drmn.xyz/da/",
+        "author": {
+          "@type": "Person",
+          "name": "Vladimir Ivakhnenko"
+        },
+        "publisher": {
+          "@type": "Person",
+          "name": "Vladimir Ivakhnenko"
+        },
+        "keywords": "søvnlyde, søvnlydsmaskine, hvid støj, søvn app, hvid støj app, regnlyd søvn, ventilator søvn, lyde til søvn, offline søvn",
+        "inLanguage": "da",
+        "datePublished": "2024-01-01",
+        "dateModified": "2025-01-15",
+        "softwareVersion": "1.5",
+        "fileSize": "49.2MB",
+        "softwareRequirements": "Kræver iOS 17.1 eller nyere",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "ratingCount": "10"
+        }
+      },
+      "organization": {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "DRMN",
+        "url": "https://drmn.xyz/da/",
+        "logo": "https://drmn.xyz/img/logo.webp",
+        "description": "DRMN — søvnlyds- og hvid støj-app til iPhone. Gratis version med mix og offline. Til søvn, fokus og baby."
+      },
+      "website": {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "DRMN",
+        "url": "https://drmn.xyz/da/",
+        "description": "Søvnlyds- og hvid støj-app til iPhone. Gratis version med mix og offline. Hent gratis i App Store.",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://drmn.xyz/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      "howto": {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Sådan bruger du søvnlyds-app til bedre søvn",
+        "description": "Lær at bruge DRMN til hurtigere indsovnning. Trin-for-trin guide.",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Hent gratis",
+            "text": "Hent DRMN fra App Store til din iPhone. Kræver iOS 17.1+. Gratis version har 1-times timer.",
+            "url": "https://apps.apple.com/app/id6746480683"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Gennemse søvnlyde",
+            "text": "Åbn appen og udforsk biblioteket: hvid og brun støj, natur (regn, bølger, bål), meditation og babylyde."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Vælg lyde",
+            "text": "Vælg efter behov—hvid støj til maskering, natur til afslapning, babylyde til spædbørn. Forhåndslyt før afspilning."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Mix lyde",
+            "text": "Kombiner hvid støj med bølger eller regn med meditation. Skab dit ideelle søvnmiljø."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "Indstil søvntimer",
+            "text": "Sæt automatisk fade-out, hvis du ikke vil have lyd hele natten. Lyden dæmpes gradvist."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 6,
+            "name": "Afspil og sov",
+            "text": "Tryk play og juster lydstyrken. Telefon i nærheden eller hovedtelefoner—begge virker godt."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 7,
+            "name": "Download til offline",
+            "text": "Download favoritter til offline brug. Uafbrudt søvn overalt, også uden internet."
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+key	en	hi-IN	notes
+product_name	DRMN	DRMN	Brand; do not translate
+app_store	App Store	App Store	Apple platform term; kept in English
+iphone	iPhone	iPhone	Apple product name
+download	Download Now	अभी डाउनलोड करें	CTA; standard Hindi app imperative
+white_noise	white noise	वाइट नॉइज़	Common hi-IN app/marketing term
+brown_noise	brown noise	ब्राउन नॉइज़	
+sleep_sounds	sleep sounds	नींद की ध्वनियाँ	
+sound_machine	sleep sound machine	नींद की साउंड मशीन	Marketing
+offline	offline	ऑफ़लाइन	Standard hi-IN UI term
+privacy_policy	Privacy Policy	गोपनीयता नीति	Apple hi-IN legal term
+terms_of_service	Terms of Service	सेवा की शर्तें	Apple hi-IN
+freemium	freemium	मुफ़्त संस्करण	1-hour timer; not पूरी तरह मुफ़्त
+sleep_timer	sleep timer	नींद टाइमर	
+register	informal tum	तुम	B2C consumer app tone for hi-IN; CTAs use करें imperative

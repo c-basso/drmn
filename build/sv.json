@@ -1,0 +1,555 @@
+{
+  "meta": {
+    "lang": "sv",
+    "title": "DRMN — sömnljud, vitt brus och sömnljudsmaskin för iPhone",
+    "description": "Sömnljudsapp för iPhone: regn, fläkt, vitt brus, mix och offline. Ladda ner DRMN gratis i App Store — sömn, fokus och babysömn hela natten utan prenumeration.",
+    "keywords": "sömnljud, sömnljudsmaskin, vitt brus, ljud för sömn, regnljud sömn, fläktljud sömn, sömnapp, vitt brus app, babysömnljud, fokusljud, offline sömn",
+    "author": "DRMN",
+    "og_url": "https://drmn.xyz/sv/",
+    "og_title": "Sömnljudsmaskin och Sömnljud | DRMN",
+    "og_description": "Sömnljudsmaskin för iPhone: regn, fläkt, vitt brus och naturljud. Mix, offline, sömntimer. Ladda ner DRMN gratis i App Store.",
+    "og_image": "https://drmn.xyz/sv/site_preview.png",
+    "og_image_alt": "DRMN-app — Sov bättre, somna snabbare",
+    "og_locale": "sv_SE",
+    "twitter_url": "https://drmn.xyz/sv/",
+    "twitter_title": "Sömnljudsmaskin och Sömnljud | DRMN",
+    "twitter_description": "Sömnljudsmaskin för iPhone: regn, fläkt, vitt brus och naturljud. Mix, offline, sömntimer. Ladda ner DRMN gratis i App Store.",
+    "twitter_image": "https://drmn.xyz/sv/site_preview.png",
+    "twitter_image_alt": "DRMN-app — Sov bättre, somna snabbare",
+    "twitter_site": "@c__basso",
+    "twitter_creator": "@c__basso",
+    "canonical": "https://drmn.xyz/sv/",
+    "app_store_id": "6746480683",
+    "og_type": "website",
+    "twitter_card": "summary_large_image",
+    "theme_color": "#1a1b2e",
+    "apple_mobile_web_app_status_bar_style": "default",
+    "og_image_width": "1200",
+    "og_image_height": "630",
+    "twitter_image_width": "1200",
+    "twitter_image_height": "630"
+  },
+  "header": {
+    "app_name_suffix": "Sömnljudsmaskin",
+    "logo_alt": "DRMN sömnljudsmaskin-app logotyp för iPhone",
+    "app_name": "DRMN",
+    "title": "Sömnljudsmaskin-app för iPhone",
+    "tagline": "Somna snabbare med de bästa sömnljuden. DRMN är en sömnljudsapp med regn, fläkt, vitt brus och naturljud — mix, offlineuppspelning och batterivänlig användning hela natten.",
+    "tldr": "DRMN är en gratis iOS sömnljudsapp som hjälper dig somna 30–50 % snabbare. Gratisversionen inkluderar regn, fläkt, vitt brus, 1-timmes timer, offline, ljudmix och batterioptimering. Ladda ner gratis i App Store.",
+    "download_text": "Ladda ner nu",
+    "download_url": "https://apps.apple.com/app/id6746480683",
+    "download_aria_label": "Ladda ner gratis sömnljudsapp från App Store",
+    "download_img_alt": "Ladda ner sömnljudsapp i App Store",
+    "scan_to_download": "Skanna för att ladda ner"
+  },
+  "stats": {
+    "title": "DRMN i siffror",
+    "items": [
+      {
+        "stat": "4,9/5",
+        "description": "Genomsnittligt App Store-betyg (10 recensioner)"
+      },
+      {
+        "stat": "10 000+",
+        "description": "Användare har laddat ner DRMN från App Store"
+      },
+      {
+        "stat": "30–50 % snabbare",
+        "description": "Genomsnittlig förbättring av insomningstid"
+      },
+      {
+        "stat": "100 timmar",
+        "description": "Professionellt inspelade sömnljud och ambientljud"
+      },
+      {
+        "stat": "10 timmar",
+        "description": "Offlineuppspelning på en laddning (batterioptimerad)"
+      },
+      {
+        "stat": "49,2 MB",
+        "description": "Appstorlek (optimerad för alla iPhone-modeller)"
+      },
+      {
+        "stat": "iOS 17.1+",
+        "description": "Kompatibel med alla moderna iPhones"
+      }
+    ]
+  },
+  "features": {
+    "title": "Sömnljud och natur för bättre vila",
+    "items": [
+      {
+        "icon": "🌊",
+        "title": "Rikt bibliotek med sömnljud",
+        "description": "Välj vitt, brunt och mörkt brus för djup avslappning. Utforska naturljud: milt regn, vågor, eld och morgonfåglar. Meditationsambient och mjuka instrumentaler. Mixa ljud för din perfekta sömnmiljö."
+      },
+      {
+        "icon": "😴",
+        "title": "Somna snabbare, sov djupare",
+        "description": "Svårt att somna? Vetenskapligt stödd ljudterapi maskerar trafik, grannar och snarkning. Skapar en stabil sömnmiljö som signalerar till hjärnan att det är dags att vila. Vakna utvilad varje morgon."
+      },
+      {
+        "icon": "🎯",
+        "title": "Fokusera bättre, jobba smartare",
+        "description": "Mediterar du, pluggar eller jobbar på ett bullrigt café? DRMN skapar den perfekta stämningen för koncentration. Blockera distraktioner, minska stress och öka produktiviteten."
+      },
+      {
+        "icon": "👶",
+        "title": "Hjälp bebisen att sova lugnt",
+        "description": "Specialanpassade babysömnljud — hårtork, dammsugare och tangentbord — hjälper bebisar och småbarn att somna snabbare. Bekanta rytmer lugnar och främjar hälsosamma sömnmönster."
+      }
+    ]
+  },
+  "popular_sounds": {
+    "title": "Populära sömnljud",
+    "intro": "Letar du efter det bästa ljudet för att somna? DRMN har de mest sökta sömnljuden — redo att mixas, spelas offline och användas hela natten på iPhone.",
+    "items": [
+      {
+        "icon": "🌧️",
+        "title": "Regnljud för att somna",
+        "description": "Milt regn maskerar plötsliga ljud och hjälper dig somna. Mixa regn med vitt brus för djupare sömn."
+      },
+      {
+        "icon": "🌀",
+        "title": "Fläktljud för att somna",
+        "description": "Fläktens jämna surrande dämpar trafik, snarkning och grannar — ett klassiskt sömnljud som miljoner litar på."
+      },
+      {
+        "icon": "🔊",
+        "title": "Vitt brus för att somna",
+        "description": "Vitt, brunt och mörkt brus skapar ett stabilt bakgrundslager som signalerar till hjärnan att det är dags att vila."
+      },
+      {
+        "icon": "🌊",
+        "title": "Natur ljud för att somna",
+        "description": "Vågor, eld och morgonfåglar kompletterar biblioteket — mixa dem när som helst med regn eller fläkt."
+      }
+    ]
+  },
+  "content": {
+    "title": "Förbättra sömnen med en sömnljudsmaskin-app",
+    "intro": "DRMN är en iOS sömnljudsmaskin-app med vitt brus, regn, fläkt och naturljud för snabbare insomning. Över 10 000 nedladdningar och betyg 4,9. Perfekt vid sömnlöshet, fokus och babysömn.",
+    "sections": [
+      {
+        "title": "Ljudbibliotek för dina behov",
+        "paragraph1": "Vi har noggrant valt kvalitetsljud för avslappning, fokus och bättre sömn:",
+        "list_items": [
+          "<strong>Vitt, brunt och mörkt brus</strong> — maskerar störande ljud och skapar en stabil sömnmiljö",
+          "<strong>Natur ljud</strong> — regn, vågor, eld, fläkt och morgonfåglar tar dig till en lugn plats",
+          "<strong>Meditation och fokus</strong> — ambientspår och mjuka instrumentaler för arbete och mindfulness",
+          "<strong>Babysömnljud</strong> — hårtork, dammsugare och tangentbord hjälper de minsta att somna"
+        ],
+        "paragraph2": "Det bästa? Du kan mixa flera ljud. Vitt brus med vågor eller regn med meditation — du bestämmer."
+      },
+      {
+        "title": "Vetenskapligt stödd sömnterapi som fungerar",
+        "paragraph1": "Forskning visar att jämnt bakgrundsljud förbättrar sömnkvaliteten. Så här hjälper DRMN:",
+        "list_items": [
+          "<strong>Blockerar störande ljud</strong> — trafik, grannar och snarkning väcker dig inte längre",
+          "<strong>Signaliserar vila till hjärnan</strong> — jämnt ljud hjälper sinnet att lugna sig",
+          "<strong>Främjar djupare sömn</strong> — utvalda frekvenser stödjer återhämtande sömncykler"
+        ],
+        "paragraph2": "Över 10 000 nedladdningar och 4,9 i App Store. Användare somnar i genomsnitt 30–50 % snabbare och vaknar mer sällan på natten. Börja dagen med energi."
+      },
+      {
+        "title": "Inte bara för sömn — också för fokus",
+        "paragraph1": "DRMN är inte bara en sömnapp — ditt hemliga vapen för koncentration. Bullrigt café, tenta eller meditation — rätt ljud gör skillnad:",
+        "list_items": [
+          "<strong>Tar bort distraktioner</strong> — skapa en tyst bubbla var du än är",
+          "<strong>Minskar stress</strong> — lugnande frekvenser hjälper dig hålla fokus",
+          "<strong>Ökar produktiviteten</strong> — många koncentrerar sig bättre med bakgrundsljud",
+          "<strong>Djupare koncentration</strong> — perfekt för deep work och viktiga uppgifter"
+        ],
+        "paragraph2": "Distansarbete, nattplugg eller ett ögonblick av ro — DRMN ger det perfekta ljudbakgrundet."
+      },
+      {
+        "title": "Hjälp de minsta att sova hela natten",
+        "paragraph1": "Vi vet hur utmattande det är när bebisen inte vill sova. Därför finns specialanpassade ljud för bebisar och småbarn. Mjuk hårtork, dammsugare och tangentbord skapar bekanta rytmer.",
+        "list_items": [],
+        "paragraph2": "Jämna, milda ljud påminner om livmodern och ger en känsla av trygghet. Föräldrar världen över litar på DRMN — och du sover också bättre."
+      },
+      {
+        "title": "Skapad för det verkliga livet",
+        "paragraph1": "Varje detalj är genomtänkt så att DRMN passar in i din vardag:",
+        "list_items": [
+          "<strong>Professionellt inspelat</strong> — över 100 timmar kvalitetsljud",
+          "<strong>Mix och kombinationer</strong> — skapa din perfekta blandning",
+          "<strong>Smart sömntimer</strong> — automatisk fade-out, inga bekymmer hela natten",
+          "<strong>Enkelt, vackert gränssnitt</strong> — klart på sekunder",
+          "<strong>Fungerar offline</strong> — ladda ner favoriter och lyssna upp till 10 timmar utan internet",
+          "<strong>Batterivänlig</strong> — hela natten utan urladdad iPhone",
+          "<strong>Gratis start</strong> — prova gratis, premium valfritt"
+        ],
+        "paragraph2": "DRMN fungerar på iPhone med iOS 17.1+. Gratisversion: 1-timmes timer, offline, mix och batterioptimering. Premium låser upp längre uppspelning och fler ljud."
+      }
+    ]
+  },
+  "benefits": {
+    "title": "Varför DRMN?",
+    "items": [
+      "Kvalitetsljud som verkligen hjälper dig somna",
+      "Mixa flera ljud för din perfekta sömnmiljö",
+      "Smart timer med automatisk fade-out — sätt på och glöm",
+      "Vackert, intuitivt gränssnitt, enkelt att använda",
+      "Fungerar helt offline efter att ljud laddats ner",
+      "Batterioptimerad för hela natten",
+      "Gratis nedladdning, premium valfritt"
+    ]
+  },
+  "comparison": {
+    "title": "Bästa sömnljudsmaskin — DRMN-jämförelse",
+    "description": "Hur DRMN jämförs med typiska gratis- och premiumappar. Baserat på offentliga data och användarfeedback.",
+    "table": {
+      "headers": [
+        "Funktion",
+        "DRMN",
+        "Typiska gratisappar",
+        "Premiumappar"
+      ],
+      "rows": [
+        {
+          "feature": "Gratisversion",
+          "drmn": "1-timmes timer (räcker för att somna)",
+          "typical": "Begränsade ljud eller annonser",
+          "premium": "Prenumeration krävs"
+        },
+        {
+          "feature": "Offline",
+          "drmn": "Ja (10+ timmar)",
+          "typical": "Begränsat eller med annonser",
+          "premium": "Ja"
+        },
+        {
+          "feature": "Ljudmix",
+          "drmn": "Ja, obegränsat",
+          "typical": "Nej eller begränsat",
+          "premium": "Ja"
+        },
+        {
+          "feature": "Batterioptimering",
+          "drmn": "Ja, hela natten",
+          "typical": "Delvis",
+          "premium": "Ja"
+        },
+        {
+          "feature": "Babysömnljud",
+          "drmn": "Ja (hårtork, dammsugare, tangentbord)",
+          "typical": "Nej",
+          "premium": "Ibland"
+        },
+        {
+          "feature": "Sömntimer",
+          "drmn": "Automatisk fade-out",
+          "typical": "Grundläggande",
+          "premium": "Automatisk fade-out"
+        },
+        {
+          "feature": "Filstorlek",
+          "drmn": "49,2 MB",
+          "typical": "30–70 MB",
+          "premium": "50–100 MB"
+        },
+        {
+          "feature": "iOS-krav",
+          "drmn": "17.1+",
+          "typical": "15.0+",
+          "premium": "16.0+"
+        },
+        {
+          "feature": "App Store-betyg",
+          "drmn": "4,9/5 (10 recensioner)",
+          "typical": "3,5–4,5/5",
+          "premium": "4,0–4,8/5"
+        }
+      ]
+    }
+  },
+  "testimonials": {
+    "title": "Vad användare säger om DRMN",
+    "items": [
+      {
+        "quote": "Jag somnar 40 % snabbare med DRMN. Ljudmixen låter mig kombinera vitt brus och vågor. Bästa sömnen på åratal!",
+        "name": "Sarah M.",
+        "location": "Kalifornien, USA",
+        "role": "Professionell"
+      },
+      {
+        "quote": "Vår bebis sover hela natten tack vare hårtorksljudet. Det enda som fungerar konsekvent. Offline räddar oss på resor.",
+        "name": "Michael R.",
+        "location": "Texas, USA",
+        "role": "Förälder"
+      },
+      {
+        "quote": "Med sömnlöshet har DRMN förändrat allt. Jag använder det varje natt och vaknar utvilad. Batterioptimering — inga bekymmer om urladdning.",
+        "name": "Jennifer L.",
+        "location": "New York, USA",
+        "role": "Sömnlöshet"
+      },
+      {
+        "quote": "Jag använder DRMN för fokus på jobbet. Mixen skapar den perfekta koncentrationsmiljön. Gratis 1-timmes timer — fantastiskt värde!",
+        "name": "David K.",
+        "location": "London, Storbritannien",
+        "role": "Distansarbete"
+      }
+    ]
+  },
+  "whats_new": {
+    "title": "Nyheter",
+    "description": "Senaste uppdateringarna i DRMN",
+    "items": [
+      {
+        "date": "Januari 2025",
+        "title": "Förbättrad batterioptimering",
+        "description": "Mer effektiv hela natten. Upp till 10 timmars kontinuerlig uppspelning på en laddning."
+      },
+      {
+        "date": "Januari 2025",
+        "title": "Nya sömnljud",
+        "description": "10 nya professionellt inspelade ljud — biblioteket överstiger nu 100 timmar."
+      },
+      {
+        "date": "December 2024",
+        "title": "Förbättrad ljudmix",
+        "description": "Bättre ljudkvalitet och smidigare övergångar mellan ljud."
+      }
+    ]
+  },
+  "final_cta": {
+    "title": "Redo att sova bättre i kväll?",
+    "paragraph1": "Gå med över 10 000 användare som förbättrat sömnen med DRMN. 4,9/5 i App Store — gratis sömnljudsapp som hjälper dig somna 30–50 % snabbare. Gratisversion: 1-timmes timer, offline och ljudmix. Ladda ner idag och prova professionella ljud gratis.",
+    "cta_text": "Ladda ner gratis sömnljudsapp",
+    "cta_url": "https://apps.apple.com/app/id6746480683",
+    "cta_aria_label": "Ladda ner gratis sömnljudsapp från App Store",
+    "cta_img_alt": "Ladda ner sömnljudsapp i App Store"
+  },
+  "footer": {
+    "copyright": "© 2025 DRMN. Alla rättigheter förbehållna.",
+    "privacy_link": "Integritetspolicy",
+    "privacy_url": "/privacy.html",
+    "terms_link": "Användarvillkor",
+    "terms_url": "/terms.html",
+    "fazier_badge_alt": "Fazier-märke",
+    "superlaunch_badge_alt": "Utvald på Super Launch"
+  },
+  "app_info": {
+    "developer": "Vladimir Ivakhnenko",
+    "category": "Hälsa och träning",
+    "age_rating": "4+",
+    "file_size": "49,2 MB",
+    "compatibility": "Kräver iOS 17.1 eller senare",
+    "platform": "iPhone",
+    "copyright": "© 2025 c-basso",
+    "in_app_purchases": true,
+    "subscriptions": [
+      {
+        "name": "White Noise Machine",
+        "description": "Bättre sömn med sömnljud i DRMN",
+        "price": "$5.99",
+        "type": "Gratis provperiod"
+      },
+      {
+        "name": "Lifetime Plan",
+        "description": "Engångsköp — livstidsåtkomst",
+        "price": "$19.99",
+        "type": "Engångsköp"
+      }
+    ]
+  },
+  "seo": {
+    "breadcrumb_home": "Hem",
+    "faq_title": "FAQ: sömnljudsmaskin, sömnljud och vitt brus",
+    "faq": [
+      {
+        "question": "Vilket ljud är bäst för att somna?",
+        "answer": "Det beror på dig — många väljer regn, fläkt eller jämnt vitt brus. I DRMN kan du förhandslyssna och mixa ljud för att hitta det som hjälper dig somna snabbast."
+      },
+      {
+        "question": "Vad är en sömnljudsmaskin?",
+        "answer": "Spelar jämnt bakgrundsljud — regn, fläkt eller vitt brus — för att maskera buller och hjälpa dig sova. DRMN är en iPhone-app med mix, offlineuppspelning och sömntimer, som en fysisk ljudmaskin."
+      },
+      {
+        "question": "Bästa appen för vitt brus på iPhone?",
+        "answer": "DRMN har betyg 4,9 och över 10 000 nedladdningar. Regn, fläkt, vitt brus och 100 timmar sömn- och naturljud — användare somnar 30–50 % snabbare."
+      },
+      {
+        "question": "Finns det en gratis app för vitt brus?",
+        "answer": "Ja! DRMN är gratis i App Store. Gratisversionen inkluderar 1-timmes timer, offline, ljudmix och sömnljud. Premium låser upp längre uppspelning."
+      },
+      {
+        "question": "Vilka ljud har sömnljudsappen?",
+        "answer": "DRMN erbjuder över 100 timmar professionellt ljud: vitt, brunt och mörkt brus, regn, vågor, eld, morgonfåglar, meditation och babysömnljud (hårtork, dammsugare, tangentbord)."
+      },
+      {
+        "question": "Fungerar appen offline?",
+        "answer": "Ja! Efter att du laddat ner ljud fungerar DRMN helt offline. Med batterioptimering — upp till 10 timmar utan internet."
+      },
+      {
+        "question": "Bästa appen för babysömn?",
+        "answer": "DRMN har specialanpassade babysömnljud (hårtork, dammsugare, tangentbord) som hjälper spädbarn att somna snabbare. Bekanta rytmer lugnar och skapar en lugn miljö."
+      },
+      {
+        "question": "Hur fungerar en ljudmaskin-app?",
+        "answer": "DRMN ger vitt brus och sömnljud för ro och fokus. Maskerar buller, skapar stabil sömnmiljö och främjar djupare sömn — som en fysisk maskin."
+      },
+      {
+        "question": "Kan jag mixa ljud?",
+        "answer": "Ja! Kombinera vitt brus med vågor eller regn med meditation. Skapa din egen sömnupplevelse."
+      },
+      {
+        "question": "Har appen sömntimer?",
+        "answer": "Ja! Timer med automatisk fade-out. Ställ in den — ljudet dämpas gradvis efter att du somnat."
+      },
+      {
+        "question": "Vad är vitt brus för sömn och hur hjälper det?",
+        "answer": "Jämnt ljud som maskerar störande buller och hjälper dig somna snabbare. DRMN dämpar trafik, grannar och andra ljud för en stabil sömnmiljö."
+      },
+      {
+        "question": "Passar det vid sömnlöshet?",
+        "answer": "Ja! DRMN har 4,9 och över 10 000 nedladdningar. Genom att maskera buller somnar användare i genomsnitt 30–50 % snabbare. Ladda ner gratis."
+      },
+      {
+        "question": "Hur många nedladdningar har DRMN?",
+        "answer": "Över 10 000 i App Store, 4,9/5 från 10 recensioner. 100 timmar ljud och upp till 10 timmar offline på en laddning."
+      },
+      {
+        "question": "Vad är DRMNs App Store-betyg?",
+        "answer": "4,9/5 baserat på 10 recensioner. Över 10 000 nedladdningar, 100 timmar sömnljud och offlineuppspelning."
+      },
+      {
+        "question": "Hur skiljer sig DRMN från andra appar?",
+        "answer": "DRMN sticker ut med generös gratisversion (1-timmes timer), avancerad mix, babysömnljud och batterioptimering — offline och professionella ljud utan prenumeration."
+      },
+      {
+        "question": "Vad gör DRMN unik bland gratisalternativ?",
+        "answer": "Gratisversion med 1-timmes timer utan prenumeration. Medan andra begränsar ljud eller kräver köp ger DRMN mix, offline och batteri gratis — plus babysömnljud som många saknar."
+      },
+      {
+        "question": "Är DRMN bättre än andra sömnljudsappar?",
+        "answer": "Gratisversion: timer, mix, offline, batteri utan prenumeration. 4,9, över 10 000 nedladdningar, 30–50 % snabbare insomning. Babysömnljud och smart timer gratis — funktioner andra tar betalt för."
+      }
+    ],
+    "structured_data": {
+      "software_application": {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "DRMN",
+        "alternateName": "DRMN Sömnapp",
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "iOS",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://apps.apple.com/app/id6746480683"
+        },
+        "description": "Sömnljudsapp och vitt brus för iPhone. Gratisversion med regn, fläkt, mix och offline. För sömn, fokus och bebisar.",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://drmn.xyz/img/logo.webp",
+          "width": 176,
+          "height": 176,
+          "caption": "DRMN-app logotyp"
+        },
+        "screenshot": {
+          "@type": "ImageObject",
+          "url": "https://drmn.xyz/img/logo.webp",
+          "width": 176,
+          "height": 176
+        },
+        "url": "https://drmn.xyz/sv/",
+        "author": {
+          "@type": "Person",
+          "name": "Vladimir Ivakhnenko"
+        },
+        "publisher": {
+          "@type": "Person",
+          "name": "Vladimir Ivakhnenko"
+        },
+        "keywords": "sömnljud, sömnljudsmaskin, vitt brus, sömnapp, regnljud, fläktljud, offline sömn",
+        "inLanguage": "sv",
+        "datePublished": "2024-01-01",
+        "dateModified": "2025-01-15",
+        "softwareVersion": "1.5",
+        "fileSize": "49.2MB",
+        "softwareRequirements": "Kräver iOS 17.1 eller senare",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "ratingCount": "10"
+        }
+      },
+      "organization": {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "DRMN",
+        "url": "https://drmn.xyz/sv/",
+        "logo": "https://drmn.xyz/img/logo.webp",
+        "description": "DRMN — sömnljudsapp och vitt brus för iPhone. Gratisversion med mix och offline. För sömn, fokus och bebisar."
+      },
+      "website": {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "DRMN",
+        "url": "https://drmn.xyz/sv/",
+        "description": "Sömnljudsapp och vitt brus för iPhone. Gratisversion med mix och offline. Ladda ner gratis i App Store.",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://drmn.xyz/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      "howto": {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Så använder du en sömnljudsapp",
+        "description": "Lär dig använda DRMN för att somna snabbare. Steg-för-steg-guide.",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Ladda ner gratis",
+            "text": "Ladda ner DRMN i App Store på din iPhone. Kräver iOS 17.1+. Gratisversionen inkluderar 1-timmes timer.",
+            "url": "https://apps.apple.com/app/id6746480683"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Utforska sömnljud",
+            "text": "Öppna appen och utforska biblioteket: vitt och brunt brus, natur (regn, vågor, eld), meditation och babysömnljud."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Välj ljud",
+            "text": "Efter behov — vitt brus för maskering, natur för avslappning, babysömnljud för de minsta. Förhandslyssna före uppspelning."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Mixa ljud",
+            "text": "Kombinera vitt brus med vågor eller regn med meditation. Skapa din ideala sömnmiljö."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "Ställ in sömntimer",
+            "text": "Aktivera automatisk fade-out om du inte vill ha ljud hela natten. Volymen minskar gradvis."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 6,
+            "name": "Starta och sov",
+            "text": "Tryck på play och justera volymen. iPhone i närheten eller hörlurar — båda fungerar."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 7,
+            "name": "Ladda ner för offline",
+            "text": "Ladda ner favoriter för offlineanvändning. Oavbruten sömn överallt utan internet."
+          }
+        ]
+      }
+    }
+  }
+}
