@@ -14,7 +14,8 @@ const {
     DEFAULT_OG_LOGO,
     SOFTWARE_APPLICATION_AGGREGATE_RATING,
     OG_LOCALE_BY_LANGUAGE,
-    CANONICAL_URL_BY_LANGUAGE
+    CANONICAL_URL_BY_LANGUAGE,
+    getAnalyticsContext
 } = require('./constants');
 const {
     getHtmlLang,
@@ -344,6 +345,7 @@ function preparePageData(data, lang) {
     normalizeHeader(data);
     normalizeFooter(data, lang);
     ensureSeoShape(data);
+    data.analytics = getAnalyticsContext();
     buildSoftwareApplicationStructuredData(data);
     buildOrganizationStructuredData(data);
     buildWebsiteStructuredData(data);

@@ -9,7 +9,8 @@ const {
     FOOTER_PRIVACY_URL,
     FOOTER_TERMS_URL,
     FOOTER_BLOG_URL,
-    BLOG_POSTS_PER_PAGE
+    BLOG_POSTS_PER_PAGE,
+    getAnalyticsContext
 } = require('../constants');
 
 const ROOT_DIR = path.join(__dirname, '..', '..');
@@ -321,7 +322,8 @@ function preparePostContext(post, blogConfig, buildTimestamp) {
             }
         },
         site_url: SITE_URL.replace(/\/?$/, '/'),
-        feed_url: '/blog/feed.xml'
+        feed_url: '/blog/feed.xml',
+        analytics: getAnalyticsContext()
     };
 }
 
@@ -428,7 +430,8 @@ function prepareIndexContext(blogConfig, posts, pageNumber, totalPages, buildTim
             }
         },
         site_url: SITE_URL.replace(/\/?$/, '/'),
-        feed_url: '/blog/feed.xml'
+        feed_url: '/blog/feed.xml',
+        analytics: getAnalyticsContext()
     };
 }
 
