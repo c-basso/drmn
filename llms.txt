@@ -5,6 +5,7 @@
 ## Main Sections
 
 - [Home](https://drmn.xyz/): App overview and features
+- [Blog](https://drmn.xyz/blog/): Sleep and focus sound guides (English)
 - [Privacy Policy](https://drmn.xyz/privacy.html): Privacy and data handling
 - [Terms of Service](https://drmn.xyz/terms.html): Terms and conditions
 
@@ -81,4 +82,4 @@
 - Website: https://drmn.xyz/
 - App Store: https://apps.apple.com/app/id6746480683
 
-Last updated: 2026-06-07
+Last updated: 2026-06-12

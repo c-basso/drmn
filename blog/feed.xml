@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DRMN Blog — Sleep &amp; Focus Sounds</title>
+    <link>https://drmn.xyz/blog/</link>
+    <description>Guides on white noise, sleep sounds, and focus audio for better rest and concentration.</description>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 12 Jun 2026 12:00:00 GMT</lastBuildDate>
+    <atom:link href="https://drmn.xyz/blog/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title><![CDATA[White Noise for Sleep: What It Is, Why It Works, and How to Use It]]></title>
+      <link>https://drmn.xyz/blog/white-noise-for-sleep/</link>
+      <guid isPermaLink="true">https://drmn.xyz/blog/white-noise-for-sleep/</guid>
+      <pubDate>Thu, 12 Jun 2025 12:00:00 GMT</pubDate>
+      <description><![CDATA[White noise masks sudden sounds that wake you at night. Here is how it works, how loud it should be, and how to build a simple bedtime routine around it.]]></description>
+      <enclosure url="https://drmn.xyz/blog/img/white-noise-for-sleep-hero.webp" type="image/webp" length="90362"/>
+    </item>
+  </channel>
+</rss>

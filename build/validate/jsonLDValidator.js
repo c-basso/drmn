@@ -73,7 +73,7 @@ function contextAround(str, pos, radius = 160) {
   return str.slice(start, end);
 }
 
-function parseJsonLd(block, { file, lang, index }) {
+function parseJsonLdBlock(block, meta = {}) {
   try {
     const obj = JSON.parse(block);
     if (!obj || typeof obj !== 'object') {
@@ -93,16 +93,24 @@ function parseJsonLd(block, { file, lang, index }) {
       error: msg,
       pos,
       context: pos === null ? null : contextAround(block, pos),
-      meta: { file, lang, index },
+      meta,
     };
   }
 }
 
-function normalizeTypes(typeValue) {
+async function expandJsonLdBlock(obj) {
+  await jsonld.expand(obj, jsonLdExpandOptions);
+}
+
+function normalizeJsonLdTypes(typeValue) {
   if (Array.isArray(typeValue)) return typeValue.map(String).filter(Boolean);
   if (typeof typeValue === 'string') return [typeValue];
   if (typeValue == null) return [];
   return [String(typeValue)];
+}
+
+function parseJsonLd(block, meta) {
+  return parseJsonLdBlock(block, meta);
 }
 
 function checkDuplicatesInBlock(obj, path = '', duplicates = []) {
@@ -202,7 +210,7 @@ async function validateJsonLD() {
         continue;
       }
 
-      const types = normalizeTypes(res.type);
+      const types = normalizeJsonLdTypes(res.type);
       for (const t of types) {
         foundTypes.add(t);
         typeCounts[t] = (typeCounts[t] || 0) + 1;
@@ -271,4 +279,10 @@ async function validateJsonLD() {
   return { ok: false, errors: results };
 }
 
-module.exports = { validateJsonLD };
+module.exports = {
+  validateJsonLD,
+  extractJsonLdBlocks,
+  parseJsonLdBlock,
+  expandJsonLdBlock,
+  normalizeJsonLdTypes
+};

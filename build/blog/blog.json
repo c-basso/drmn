@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "title": "DRMN Blog — Sleep Sounds, White Noise & Focus Guides",
+    "description": "Expert guides on white noise, sleep sounds, and focus audio. Science-backed tips for better sleep and concentration—no app required.",
+    "og_title": "DRMN Blog — Sleep & Focus Sound Guides",
+    "og_description": "Science-backed guides on white noise, rain sounds, brown noise, and sound masking for sleep and focus.",
+    "og_type": "website",
+    "twitter_card": "summary_large_image",
+    "theme_color": "#1a1b2e"
+  },
+  "header": {
+    "logo_alt": "DRMN sleep sound machine app logo",
+    "home_aria_label": "DRMN home"
+  },
+  "labels": {
+    "blog_title": "DRMN Blog",
+    "blog_subtitle": "Guides on sleep sounds, white noise, and focus audio",
+    "read_more": "Read article",
+    "min_read": "min read",
+    "published": "Published",
+    "updated": "Updated",
+    "tags": "Tags",
+    "prev_post": "Previous",
+    "next_post": "Next",
+    "back_to_blog": "All articles",
+    "home": "Home",
+    "rss_title": "DRMN Blog RSS Feed",
+    "pagination_prev": "Newer posts",
+    "pagination_next": "Older posts",
+    "page_of": "Page",
+    "no_posts": "No articles yet. Check back soon."
+  },
+  "footer": {
+    "blog_link": "Blog",
+    "privacy_link": "Privacy Policy",
+    "terms_link": "Terms of Use",
+    "copyright": "© {year} DRMN. All rights reserved."
+  }
+}

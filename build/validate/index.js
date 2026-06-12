@@ -1,6 +1,7 @@
 const { validateJsonLD } = require('./jsonLDValidator');
 const { validateOpenGraph } = require('./opengraphValidator');
 const { validateSeoMeta } = require('./seoValidator');
+const { validateBlog } = require('./blogValidator');
 
 async function main() {
   console.log('Running validators...\n');
@@ -22,6 +23,11 @@ async function main() {
   console.log('3. Validating SEO: document <title> and meta description...');
   const seoMetaResult = await validateSeoMeta();
   results.push({ name: 'SEO meta', result: seoMetaResult });
+  console.log('');
+
+  console.log('4. Validating blog pages, RSS feed, and sitemap entries...');
+  const blogResult = await validateBlog();
+  results.push({ name: 'Blog', result: blogResult });
   console.log('');
 
   // Summary

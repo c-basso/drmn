@@ -10,6 +10,9 @@ const APP_STORE_URL = `https://apps.apple.com/app/id${APP_ID}`;
 
 const FOOTER_PRIVACY_URL = '/privacy.html';
 const FOOTER_TERMS_URL = '/terms.html';
+const FOOTER_BLOG_URL = '/blog/';
+
+const BLOG_POSTS_PER_PAGE = 10;
 
 const DEFAULT_OG_LOGO = `${SITE_URL}img/logo.webp`;
 
@@ -94,6 +97,9 @@ const INDEX_NOW_ENGINES = [
     'bing.com'
 ];
 
+const BLOG_INDEX_JSON_LD_TYPES = ['CollectionPage', 'BreadcrumbList'];
+const BLOG_POST_JSON_LD_TYPES = ['BlogPosting', 'BreadcrumbList'];
+
 module.exports = {
     SITE_URL,
     URLS,
@@ -103,11 +109,15 @@ module.exports = {
     APP_STORE_URL,
     FOOTER_PRIVACY_URL,
     FOOTER_TERMS_URL,
+    FOOTER_BLOG_URL,
+    BLOG_POSTS_PER_PAGE,
     DEFAULT_OG_LOGO,
     SOFTWARE_APPLICATION_AGGREGATE_RATING,
     OG_LOCALE_BY_LANGUAGE,
     CANONICAL_URL_BY_LANGUAGE,
     EXPECTED_JSON_LD_TYPES,
+    BLOG_INDEX_JSON_LD_TYPES,
+    BLOG_POST_JSON_LD_TYPES,
     INDEX_NOW_KEY,
     INDEX_NOW_ENGINES,
     ADDITIONAL_URLS

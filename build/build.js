@@ -10,6 +10,7 @@ const {
     APP_STORE_URL,
     FOOTER_PRIVACY_URL,
     FOOTER_TERMS_URL,
+    FOOTER_BLOG_URL,
     DEFAULT_OG_LOGO,
     SOFTWARE_APPLICATION_AGGREGATE_RATING,
     OG_LOCALE_BY_LANGUAGE,
@@ -20,6 +21,9 @@ const {
     getHtmlDir,
     getFooterLastUpdatedConfig
 } = require('./locales');
+const { renderTemplate } = require('./template-engine');
+const { buildBlog } = require('./blog/build-blog');
+const { generateSitemap } = require('./sitemap');
 
 const ROOT_DIR = path.join(__dirname, '..');
 const TEMPLATE_PATH = path.join(__dirname, 'template.html');
@@ -32,21 +36,9 @@ const CURRENT_YEAR = new Date(BUILD_TIMESTAMP).getFullYear();
 
 const DEFAULT_SITE_NAME = 'DRMN';
 
-const LOOP_PLACEHOLDER_ROOTS = new Set([
-    'item',
-    'feature',
-    'section',
-    'lang',
-    'sound',
-    'stat',
-    'faq',
-    'row',
-    'header',
-    'testimonial'
-]);
-
-function writeUrlsFile() {
-    fs.writeFileSync(URLS_PATH, URLS.map(({ url }) => url).join('\n'), 'utf8');
+function writeUrlsFile(blogUrls = []) {
+    const allUrls = [...URLS.map(({ url }) => url), ...blogUrls];
+    fs.writeFileSync(URLS_PATH, allUrls.join('\n'), 'utf8');
     console.log('✅ Successfully built urls.txt file');
     console.log(`📁 Output saved to: ${URLS_PATH}`);
     console.log();
@@ -99,6 +91,7 @@ function writeLlmsFile(defaultLocaleData) {
         '## Main Sections',
         '',
         `- [Home](${SITE_URL}): App overview and features`,
+        `- [Blog](${absoluteSiteUrl(FOOTER_BLOG_URL)}): Sleep and focus sound guides (English)`,
         `- [Privacy Policy](${privacyUrl}): Privacy and data handling`,
         `- [Terms of Service](${termsUrl}): Terms and conditions`,
         '',
@@ -221,6 +214,8 @@ function normalizeFooter(data, lang) {
     data.footer = data.footer || {};
     data.footer.privacy_url = FOOTER_PRIVACY_URL;
     data.footer.terms_url = FOOTER_TERMS_URL;
+    data.footer.blog_url = FOOTER_BLOG_URL;
+    data.footer.blog_link = data.footer.blog_link || 'Blog';
 
     if (typeof data.footer.copyright === 'string') {
         data.footer.copyright = data.footer.copyright.replace(/\{year\}/g, String(CURRENT_YEAR));
@@ -358,152 +353,6 @@ function preparePageData(data, lang) {
     return data;
 }
 
-function getValue(obj, keyPath) {
-    return keyPath.split('.').reduce((value, key) => {
-        if (value && typeof value === 'object' && key in value) {
-            return value[key];
-        }
-        return undefined;
-    }, obj);
-}
-
-function getValueFromContext(context, keyPath) {
-    const direct = getValue(context, keyPath);
-    if (direct !== undefined) {
-        return direct;
-    }
-    if (!keyPath.includes('.')) {
-        return undefined;
-    }
-    const parts = keyPath.split('.');
-    const first = parts[0];
-    if (first in context) {
-        const firstValue = context[first];
-        if (firstValue && typeof firstValue === 'object' && firstValue !== null) {
-            const rest = parts.slice(1).join('.');
-            return rest ? getValue(firstValue, rest) : firstValue;
-        }
-    }
-    return undefined;
-}
-
-function warnForTemplateIssue(lang, message) {
-    console.warn(`Warning [${lang}]: ${message}`);
-}
-
-function shouldWarnMissingVar(pathExpression) {
-    if (pathExpression.startsWith('seo.structured_data.')) {
-        return false;
-    }
-    const root = pathExpression.split('.')[0];
-    return !LOOP_PLACEHOLDER_ROOTS.has(root);
-}
-
-function cleanupJsonArtifacts(content) {
-    return content
-        .replace(/,\s*\n[\s\n]*\]/g, '\n            ]')
-        .replace(/,\s*\]/g, ']');
-}
-
-function applyFilters(value, filters, rawKey, lang) {
-    let output = value;
-    for (const filter of filters) {
-        if (filter === 'json') {
-            output = JSON.stringify(output);
-        } else {
-            warnForTemplateIssue(lang, `Unknown filter "${filter}" in ${rawKey}`);
-        }
-    }
-    return output;
-}
-
-function replaceVariables(template, context, lang) {
-    return template.replace(/\{\{([^}]+)\}\}/g, (match, key) => {
-        const rawKey = key.trim();
-        if (
-            rawKey.startsWith('#each') ||
-            rawKey === '/each' ||
-            rawKey.startsWith('#if') ||
-            rawKey === '/if'
-        ) {
-            return '';
-        }
-
-        const [pathExpression, ...filters] = rawKey
-            .split('|')
-            .map((part) => part.trim())
-            .filter(Boolean);
-
-        const value = getValueFromContext(context, pathExpression);
-        if (value === undefined) {
-            if (shouldWarnMissingVar(pathExpression)) {
-                warnForTemplateIssue(lang, `Variable ${pathExpression} not found in data`);
-            }
-            return match;
-        }
-
-        return applyFilters(value, filters, rawKey, lang);
-    });
-}
-
-function processIfBlocks(template, context) {
-    const ifPattern = /\{\{#if\s+([^\s}]+)\}\}([\s\S]*?)\{\{\/if\}\}/g;
-    let result = template;
-    let match;
-
-    while ((match = ifPattern.exec(template)) !== null) {
-        const [fullMatch, pathExpression, blockContent] = match;
-        const value = getValueFromContext(context, pathExpression.trim());
-        const isTruthy = value !== undefined && value !== null && value !== false && value !== '';
-        result = result.replace(fullMatch, isTruthy ? blockContent : '');
-    }
-
-    return result;
-}
-
-function processEachBlocks(template, context, lang) {
-    const eachPattern = /\{\{#each\s+([^\s]+)\s+as\s+\|([^|]+)\|\}\}([\s\S]*?)\{\{\/each\}\}/;
-    let result = template;
-    let match = result.match(eachPattern);
-
-    while (match) {
-        const [fullMatch, arrayPathRaw, variableNameRaw, block] = match;
-        const arrayPath = arrayPathRaw.trim();
-        const variableName = variableNameRaw.trim();
-        const array = getValueFromContext(context, arrayPath);
-
-        if (!Array.isArray(array)) {
-            if (array != null) {
-                warnForTemplateIssue(lang, `${arrayPath} is not an array (got ${typeof array})`);
-            } else if (!arrayPath.includes('.')) {
-                warnForTemplateIssue(lang, `${arrayPath} is not an array or not found`);
-            }
-            result = result.replace(fullMatch, '');
-            match = result.match(eachPattern);
-            continue;
-        }
-
-        const rendered = cleanupJsonArtifacts(
-            array.map((item) => {
-                const mergedContext = { ...context, [variableName]: item };
-                const nested = processEachBlocks(block, mergedContext, lang);
-                return replaceVariables(nested, mergedContext, lang);
-            }).join('')
-        );
-
-        result = result.replace(fullMatch, rendered);
-        match = result.match(eachPattern);
-    }
-
-    return result;
-}
-
-function renderTemplate(template, data, lang) {
-    const withIf = processIfBlocks(template, data);
-    const withEach = processEachBlocks(withIf, data, lang);
-    return cleanupJsonArtifacts(replaceVariables(withEach, data, lang));
-}
-
 function buildPage(template, lang) {
     const outputDir = getOutputDirectory(lang);
     const outputPath = getOutputPath(lang);
@@ -517,7 +366,7 @@ function buildPage(template, lang) {
     console.log(`📁 Output saved to: ${outputPath}`);
 }
 
-function main() {
+async function main() {
     const missing = getMissingTranslationFiles();
     if (missing.length > 0) {
         console.error(
@@ -525,8 +374,6 @@ function main() {
         );
         process.exit(1);
     }
-
-    writeUrlsFile();
 
     const template = fs.readFileSync(TEMPLATE_PATH, 'utf8');
     const defaultData = preparePageData(readJsonFile(getJsonPath(DEFAULT_LANGUAGE)), DEFAULT_LANGUAGE);
@@ -540,6 +387,24 @@ function main() {
             process.exit(1);
         }
     }
+
+    let blogUrls = [];
+    try {
+        blogUrls = await buildBlog({
+            buildTimestamp: BUILD_TIMESTAMP,
+            buildDateIso: BUILD_DATE_ISO,
+            currentYear: CURRENT_YEAR
+        });
+    } catch (error) {
+        console.error('❌ Error building blog:', error.message);
+        process.exit(1);
+    }
+
+    writeUrlsFile(blogUrls);
+    generateSitemap();
 }
 
-main();
+main().catch((error) => {
+    console.error('❌ Build failed:', error.message);
+    process.exit(1);
+});
