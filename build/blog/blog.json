@@ -28,7 +28,12 @@
     "pagination_prev": "Newer posts",
     "pagination_next": "Older posts",
     "page_of": "Page",
-    "no_posts": "No articles yet. Check back soon."
+    "no_posts": "No articles yet. Check back soon.",
+    "summarize_with": "Summarize with:",
+    "ai_chatgpt": "ChatGPT",
+    "ai_perplexity": "Perplexity",
+    "ai_claude": "Claude",
+    "ai_grok": "Grok"
   },
   "footer": {
     "blog_link": "Blog",
