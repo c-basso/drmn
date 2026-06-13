@@ -152,20 +152,66 @@ function enrichPosts(posts) {
             datePublishedDisplay: formatDisplayDate(post.datePublished),
             dateModifiedDisplay: formatDisplayDate(dateModified),
             datePublishedRss: formatRssDate(post.datePublished),
-            tags: Array.isArray(post.tags) ? post.tags : []
+            tags: Array.isArray(post.tags) ? post.tags : [],
+            content: addNofollowToExternalLinks(post.content)
         };
     });
 
     enriched.forEach((post, index) => {
-        post.prev = index > 0
-            ? { title: enriched[index - 1].title, url: enriched[index - 1].url, has_prev: true }
+        // Previous = older post; Next = newer post (index is sorted newest-first).
+        post.prev = index < enriched.length - 1
+            ? { title: enriched[index + 1].title, url: enriched[index + 1].url, has_prev: true }
             : { has_prev: false };
-        post.next = index < enriched.length - 1
-            ? { title: enriched[index + 1].title, url: enriched[index + 1].url, has_next: true }
+        post.next = index > 0
+            ? { title: enriched[index - 1].title, url: enriched[index - 1].url, has_next: true }
             : { has_next: false };
     });
 
     return enriched;
+}
+
+function addNofollowToExternalLinks(html) {
+    if (typeof html !== 'string' || !html.includes('<a')) {
+        return html;
+    }
+
+    const siteOrigin = new URL(SITE_URL).origin;
+
+    return html.replace(
+        /<a\s+([^>]*?)href=(["'])([^"']+)\2([^>]*)>/gi,
+        (full, pre, quote, href, post) => {
+            if (/^(\/|#|mailto:|tel:)/.test(href)) {
+                return full;
+            }
+
+            let isExternal = false;
+            try {
+                isExternal = new URL(href, SITE_URL).origin !== siteOrigin;
+            } catch {
+                return full;
+            }
+
+            if (!isExternal) {
+                return full;
+            }
+
+            const attrs = `${pre}href=${quote}${href}${quote}${post}`;
+            if (/\brel\s*=/.test(attrs)) {
+                return full.replace(
+                    /\brel=(["'])([^"']*)\1/i,
+                    (match, relQuote, relValue) => {
+                        const relParts = new Set(relValue.split(/\s+/).filter(Boolean));
+                        relParts.add('nofollow');
+                        relParts.add('noopener');
+                        relParts.add('noreferrer');
+                        return `rel=${relQuote}${[...relParts].join(' ')}${relQuote}`;
+                    }
+                );
+            }
+
+            return `<a ${pre}href=${quote}${href}${quote}${post} rel="nofollow noopener noreferrer">`;
+        }
+    );
 }
 
 function buildBlogPostingSchema(post, siteName) {
