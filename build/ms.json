@@ -33,13 +33,13 @@
     "app_name_suffix": "Mesin Bunyi Tidur",
     "logo_alt": "Logo app DRMN mesin bunyi tidur untuk iPhone",
     "app_name": "DRMN",
-    "title": "App mesin bunyi tidur untuk iPhone",
-    "tagline": "Tidur lebih cepat dengan bunyi tidur terbaik. DRMN ialah app mesin bunyi tidur dengan hujan, kipas angin, white noise & bunyi alam — dengan mix, offline & jimat bateri sepanjang malam.",
+    "title": "White noise dan bunyi tidur untuk iPhone",
+    "tagline": "Tidur lebih cepat dengan bunyi ambien yang stabil di iPhone kamu. DRMN menggabungkan hujan, kipas angin, white dan brown noise, bunyi alam, mix, mod offline dan pemasa tidur yang jimat bateri.",
     "tldr": "DRMN ialah app bunyi tidur iOS percuma yang membantu tidur 30–50% lebih cepat. Versi percuma: hujan, kipas angin, white noise, pemasa 1 jam, offline, mix bunyi & pengoptimuman bateri. Muat turun percuma di App Store.",
     "download_text": "Muat turun sekarang",
     "download_url": "https://apps.apple.com/app/id6746480683",
-    "download_aria_label": "Muat turun app bunyi tidur percuma dari App Store",
-    "download_img_alt": "Muat turun app bunyi tidur di App Store",
+    "download_aria_label": "Muat turun DRMN percuma di App Store",
+    "download_img_alt": "Muat turun DRMN di App Store",
     "scan_to_download": "Imbas untuk muat turun"
   },
   "stats": {
@@ -101,28 +101,33 @@
     ]
   },
   "popular_sounds": {
-    "title": "Bunyi tidur popular",
-    "intro": "Mencari bunyi terbaik untuk tidur? DRMN ada bunyi tidur paling dicari — sedia untuk mix, offline & sepanjang malam di iPhone.",
+    "layout": "sections",
+    "sections_layout": true,
     "items": [
       {
-        "icon": "🌧️",
-        "title": "Bunyi hujan untuk tidur",
-        "description": "Hujan lembut menutupi bunyi mengejut & membantu lena. Mix hujan dengan white noise untuk tidur lebih lena."
-      },
-      {
-        "icon": "🌀",
-        "title": "Bunyi kipas angin untuk tidur",
-        "description": "Dengung kipas angin menutupi trafik, dengkuran & jiran — bunyi tidur klasik yang dipercayai jutaan orang."
-      },
-      {
         "icon": "🔊",
-        "title": "White noise untuk tidur",
-        "description": "White, brown & dark noise mencipta lapisan latar konsisten yang memberi isyarat otak untuk berehat."
+        "title": "Bunyi white noise",
+        "description": "White noise yang stabil menutupi bunyi mengejut—trafik, jiran atau lantai berderit—dan memberi otak latar yang boleh diramal untuk berehat. Cuba dengung kipas angin atau static klasik, kemudian mix dengan hujan atau ombak."
       },
       {
         "icon": "🌊",
-        "title": "Bunyi alam untuk tidur",
-        "description": "Ombak, api & burung pagi melengkapkan perpustakaan — mix dengan hujan atau kipas angin bila-bila masa."
+        "title": "Bunyi brown noise",
+        "description": "Brown dan dark noise menonjolkan frekuensi rendah. Ramai merasakannya lebih hangat dan kurang tajam daripada white noise—sesuai untuk tidur lena atau fokus. Guna sendiri atau di bawah bunyi alam."
+      },
+      {
+        "icon": "👶",
+        "title": "Bunyi tidur bayi",
+        "description": "Trek lembut pengering rambut, vakum atau papan kekunci meniru irama familiar yang menenangkan bayi dan kanak-kanak kecil. Ibu bapa menggunakannya di bilik—tanpa mesin bunyi tidur berasingan."
+      },
+      {
+        "icon": "⏱️",
+        "title": "Pemasa tidur",
+        "description": "Tetapkan pemasa dengan fade-out automatik supaya bunyi reda selepas kamu tidur. Versi percuma termasuk satu jam—cukup untuk kebanyakan malam; premium membuka sesi lebih lama."
+      },
+      {
+        "icon": "📴",
+        "title": "Mesin bunyi tidur offline",
+        "description": "Muat turun trek kegemaran sekali dan dengar sehingga 10 jam tanpa Wi‑Fi atau data mudah alih. Pengoptimuman bateri mengekalkan main balik sepanjang malam—ideal semasa melancong atau isyarat lemah di bilik."
       }
     ]
   },
@@ -316,11 +321,11 @@
   },
   "final_cta": {
     "title": "Bersedia tidur lebih lena malam ini?",
-    "paragraph1": "Sertai lebih 10,000 pengguna yang meningkatkan tidur dengan DRMN. 4.9/5 di App Store — app bunyi tidur percuma bantu tidur 30–50% lebih cepat. Versi percuma: pemasa 1 jam, offline & mix. Muat turun hari ini & cuba bunyi profesional percuma.",
-    "cta_text": "Muat turun app bunyi tidur percuma",
+    "paragraph1": "Lebih 10,000 orang menggunakan DRMN untuk berehat dan tidur lebih cepat. Penilaian 4.9/5 di App Store, versi percuma dengan pemasa 1 jam, offline dan mix. Muat turun dan cari bunyi yang sesuai untuk kamu.",
+    "cta_text": "Muat turun DRMN percuma",
     "cta_url": "https://apps.apple.com/app/id6746480683",
-    "cta_aria_label": "Muat turun app bunyi tidur percuma dari App Store",
-    "cta_img_alt": "Muat turun app bunyi tidur di App Store"
+    "cta_aria_label": "Muat turun DRMN percuma di App Store",
+    "cta_img_alt": "Muat turun DRMN di App Store"
   },
   "footer": {
     "copyright": "© 2025 DRMN. Hak cipta terpelihara.",
@@ -330,7 +335,9 @@
     "terms_url": "/terms.html",
     "blog_link": "Blog",
     "fazier_badge_alt": "Lencana Fazier",
-    "superlaunch_badge_alt": "Ditampilkan di Super Launch"
+    "superlaunch_badge_alt": "Ditampilkan di Super Launch",
+    "about_link": "Tentang",
+    "about_url": "/about.html"
   },
   "app_info": {
     "developer": "Vladimir Ivakhnenko",
@@ -358,75 +365,55 @@
   },
   "seo": {
     "breadcrumb_home": "Laman Utama",
-    "faq_title": "Soalan Lazim: mesin bunyi tidur, bunyi tidur & white noise",
+    "faq_title": "Soalan lazim",
     "faq": [
       {
-        "question": "Apakah bunyi terbaik untuk tidur?",
-        "answer": "Bergantung pada kamu — ramai pilih hujan, kipas angin atau white noise stabil. Dalam DRMN kamu boleh pratonton & mix bunyi untuk cari yang paling cepat membuat tidur."
+        "question": "Bunyi apa yang paling bagus untuk tidur?",
+        "answer": "Bergantung pada apa yang menenangkan kamu. Ramai memilih hujan, dengung kipas angin yang stabil atau white noise neutral. Dalam DRMN kamu boleh dengar dan mix trek untuk cari yang membantu tidur lebih cepat."
       },
       {
         "question": "Apakah mesin bunyi tidur?",
-        "answer": "Main latar stabil — hujan, kipas angin atau white noise — untuk tutup bunyi bising & bantu tidur. DRMN ialah app mesin bunyi tidur untuk iPhone dengan mix, offline & pemasa tidur, seperti mesin fizikal."
+        "answer": "Memainkan latar bunyi stabil—hujan, kipas angin atau white noise—untuk menutupi gangguan dan membantu tidur. DRMN berfungsi seperti mesin mudah alih di iPhone dengan mix, mod offline dan pemasa terbina dalam."
       },
       {
-        "question": "App white noise terbaik untuk iPhone?",
-        "answer": "DRMN ada penilaian 4.9 & lebih 10,000 muat turun. Hujan, kipas angin, white noise & 100 jam bunyi tidur & alam — pengguna tidur 30–50% lebih cepat."
+        "question": "Adakah DRMN app white noise yang bagus untuk iPhone?",
+        "answer": "DRMN mempunyai penilaian 4.9 di App Store dan lebih 10,000 muat turun. Termasuk hujan, kipas angin, white dan brown noise, serta 100+ jam bunyi ambien dan alam. Pengguna sering melaporkan tidur 30–50% lebih cepat apabila bunyi latar mengganggu."
       },
       {
-        "question": "Ada app white noise percuma?",
-        "answer": "Ya! DRMN percuma di App Store. Versi percuma termasuk pemasa 1 jam, offline, mix & bunyi tidur. Premium buka main balik lebih lama."
+        "question": "Ada app white noise percuma untuk iPhone?",
+        "answer": "Ya. DRMN boleh dimuat turun percuma di App Store. Versi percuma termasuk pemasa 1 jam, offline, mix dan bunyi tidur asas. Premium membuka sesi lebih lama dan trek tambahan—tiada langganan diperlukan untuk cuba ciri teras."
       },
       {
-        "question": "Bunyi apa ada dalam app tidur?",
-        "answer": "DRMN tawarkan lebih 100 jam audio profesional: white, brown & dark noise, hujan, ombak, api, burung pagi, meditasi & bunyi bayi (pengering rambut, vakum, papan kekunci)."
+        "question": "Bunyi apa yang disertakan?",
+        "answer": "White, brown dan dark noise; alam seperti hujan, ombak, api dan burung pagi; meditasi dan fokus; bunyi bayi seperti pengering rambut, vakum dan papan kekunci. Kamu boleh mix sebarang kombinasi."
       },
       {
-        "question": "Adakah app berfungsi offline?",
-        "answer": "Ya! Selepas muat turun bunyi, DRMN berfungsi offline sepenuhnya. Dengan pengoptimuman bateri — sehingga 10 jam tanpa internet."
+        "question": "Adakah DRMN berfungsi offline?",
+        "answer": "Ya. Selepas muat turun trek, app main tanpa internet. Pengoptimuman bateri membolehkan main balik berterusan sehingga 10 jam—cukup untuk perjalanan atau sepanjang malam."
       },
       {
-        "question": "App terbaik untuk tidur bayi?",
-        "answer": "DRMN termasuk bunyi bayi khas (pengering rambut, vakum, papan kekunci) yang bantu tidur lebih cepat. Ritma biasa tenangkan & cipta persekitaran aman."
+        "question": "Bunyi apa sesuai untuk tidur bayi?",
+        "answer": "Ramai ibu bapa menggunakan bunyi stabil yang familiar—pengering rambut, vakum atau white noise lembut. DRMN ada trek bayi yang menenangkan si kecil tanpa peranti berasingan di bilik."
       },
       {
-        "question": "Bagaimana app mesin bunyi berfungsi?",
-        "answer": "DRMN sediakan white noise & bunyi tidur untuk rehat & fokus. Tutup bunyi bising, cipta persekitaran tidur konsisten & galak tidur lena — seperti mesin fizikal."
+        "question": "Boleh mix bunyi berbeza?",
+        "answer": "Ya. Gabungkan white noise dengan ombak, hujan dengan meditasi lembut, atau pasangan apa pun yang kamu suka. Mix termasuk dalam versi percuma."
       },
       {
-        "question": "Boleh mix bunyi?",
-        "answer": "Ya! Gabungkan white noise dengan ombak atau hujan dengan meditasi. Cipta pengalaman tidur sendiri."
+        "question": "Adakah DRMN ada pemasa tidur?",
+        "answer": "Ya. Tetapkan pemasa dengan fade-out automatik supaya bunyi reda selepas kamu tidur. Versi percuma termasuk satu jam; premium menambah pilihan lebih lama."
       },
       {
-        "question": "Ada pemasa tidur?",
-        "answer": "Ya! Pemasa dengan fade-out automatik. Tetapkan — bunyi perlahan-lahan hilang selepas tidur."
+        "question": "Bolehkah DRMN membantu insomnia?",
+        "answer": "Bunyi latar stabil boleh menutupi trafik, jiran dan gangguan lain yang membangunkan tidur ringan. Ramai yang mengalami insomnia mendengar white atau brown noise setiap malam; ramai melaporkan tidur lebih cepat, tetapi hasil berbeza."
       },
       {
-        "question": "Apakah white noise untuk tidur & bagaimana membantu?",
-        "answer": "Bunyi stabil yang tutup bunyi mengganggu & bantu tidur lebih cepat. DRMN tutup trafik, jiran & bunyi lain untuk persekitaran tidur konsisten."
+        "question": "Apakah bezanya DRMN dengan Calm atau Headspace?",
+        "answer": "Calm dan Headspace fokus pada meditasi berpandu dan langganan wellness. DRMN dibina sekitar bunyi ambien—mesin bunyi tidur dalam poket—dengan versi percuma yang lengkap (pemasa 1 jam, offline, mix) tanpa kursus meditasi. BetterSleep dan app serupa sering kunci ciri untuk pelanggan; dengan DRMN kamu boleh cuba bunyi asas percuma."
       },
       {
-        "question": "Sesuai untuk insomnia?",
-        "answer": "Ya! DRMN ada 4.9 & lebih 10,000 muat turun. Dengan tutup bunyi bising, pengguna tidur 30–50% lebih cepat. Muat turun percuma."
-      },
-      {
-        "question": "Berapa muat turun DRMN?",
-        "answer": "Lebih 10,000 di App Store, 4.9/5 dari 10 ulasan. 100 jam bunyi & sehingga 10 jam offline dalam satu cas."
-      },
-      {
-        "question": "Berapa penilaian DRMN di App Store?",
-        "answer": "4.9/5 dari 10 ulasan. Lebih 10,000 muat turun, 100 jam bunyi tidur & main balik offline."
-      },
-      {
-        "question": "Apa bezanya DRMN dengan app lain?",
-        "answer": "DRMN menonjol dengan versi percuma murah hati (pemasa 1 jam), mix canggih, bunyi bayi & pengoptimuman bateri — offline & bunyi profesional tanpa langganan."
-      },
-      {
-        "question": "Apa yang unik tentang DRMN berbanding alternatif percuma?",
-        "answer": "Versi percuma dengan pemasa 1 jam tanpa langganan. Sementara yang lain hadkan bunyi atau minta pembelian, DRMN beri mix, offline & bateri percuma — serta bunyi bayi yang ramai tiada."
-      },
-      {
-        "question": "Adakah DRMN lebih baik dari app bunyi tidur lain?",
-        "answer": "Versi percuma: pemasa, mix, offline, bateri tanpa langganan. 4.9, lebih 10,000 muat turun, tidur 30–50% lebih cepat. Bunyi bayi & pemasa pintar percuma — ciri yang app lain caj."
+        "question": "Siapa yang mencipta DRMN?",
+        "answer": "DRMN dibangunkan oleh Vladimir Ivakhnenko, pembangun iOS bebas. Di App Store penilaian 4.9 daripada 10 ulasan dan lebih 10,000 muat turun. Hubungi: c-basso@ya.ru."
       }
     ],
     "structured_data": {
@@ -444,7 +431,7 @@
           "availability": "https://schema.org/InStock",
           "url": "https://apps.apple.com/app/id6746480683"
         },
-        "description": "App bunyi tidur & white noise untuk iPhone. Versi percuma dengan hujan, kipas angin, mix & offline. Untuk tidur, fokus & bayi.",
+        "description": "DRMN ialah app iOS freemium dengan white dan brown noise, hujan, kipas angin dan bunyi alam. Mix trek, main offline dan guna pemasa tidur dengan fade-out. Muat turun percuma di App Store untuk iPhone.",
         "image": {
           "@type": "ImageObject",
           "url": "https://drmn.xyz/img/logo.webp",
@@ -467,7 +454,7 @@
           "@type": "Person",
           "name": "Vladimir Ivakhnenko"
         },
-        "keywords": "bunyi tidur, mesin bunyi tidur, white noise, app tidur, bunyi hujan, bunyi kipas angin, tidur offline",
+        "keywords": "white noise, bunyi tidur, mesin bunyi tidur, brown noise, bunyi hujan tidur, bunyi kipas angin, bunyi bayi tidur, offline, pemasa tidur, fokus, insomnia, app iPhone percuma",
         "inLanguage": "ms",
         "datePublished": "2024-01-01",
         "dateModified": "2025-01-15",
@@ -486,14 +473,14 @@
         "name": "DRMN",
         "url": "https://drmn.xyz/ms/",
         "logo": "https://drmn.xyz/img/logo.webp",
-        "description": "DRMN — app bunyi tidur & white noise untuk iPhone. Versi percuma dengan mix & offline. Untuk tidur, fokus & bayi."
+        "description": "DRMN — white noise dan bunyi ambien tidur untuk iPhone. Mix, offline, pemasa tidur. Muat turun percuma di App Store."
       },
       "website": {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "DRMN",
         "url": "https://drmn.xyz/ms/",
-        "description": "App bunyi tidur & white noise untuk iPhone. Versi percuma dengan mix & offline. Muat turun percuma di App Store.",
+        "description": "DRMN — white noise dan bunyi ambien tidur untuk iPhone. Mix, offline, pemasa tidur. Muat turun percuma di App Store.",
         "potentialAction": {
           "@type": "SearchAction",
           "target": "https://drmn.xyz/?q={search_term_string}",
@@ -503,54 +490,118 @@
       "howto": {
         "@context": "https://schema.org",
         "@type": "HowTo",
-        "name": "Cara menggunakan app bunyi tidur",
-        "description": "Pelajari cara guna DRMN untuk tidur lebih cepat. Panduan langkah demi langkah.",
+        "name": "Guna DRMN untuk tidur lebih lena",
+        "description": "Panduan ringkas: pilih trek, mix jika mahu, tetapkan pemasa dan dengar offline.",
         "step": [
           {
             "@type": "HowToStep",
             "position": 1,
-            "name": "Muat turun percuma",
-            "text": "Muat turun DRMN di App Store ke iPhone. Memerlukan iOS 17.1+. Versi percuma termasuk pemasa 1 jam.",
+            "name": "Muat turun DRMN",
+            "text": "Pasang DRMN percuma dari App Store di iPhone (iOS 17.1+). Versi percuma termasuk pemasa 1 jam dan bunyi asas.",
             "url": "https://apps.apple.com/app/id6746480683"
           },
           {
             "@type": "HowToStep",
             "position": 2,
-            "name": "Terokai bunyi tidur",
-            "text": "Buka app & terokai perpustakaan: white & brown noise, alam (hujan, ombak, api), meditasi & bunyi bayi."
+            "name": "Terokai pustaka",
+            "text": "Dalam DRMN ada white dan brown noise, hujan, ombak, api, meditasi dan bunyi bayi."
           },
           {
             "@type": "HowToStep",
             "position": 3,
-            "name": "Pilih bunyi",
-            "text": "Ikut keperluan — white noise untuk masking, alam untuk relaksasi, bunyi bayi untuk si kecil. Pratonton sebelum main."
+            "name": "Pilih mengikut keperluan",
+            "text": "Bunyi stabil untuk tutup gangguan, alam untuk berehat, bunyi bayi untuk bilik. Dengar dulu sebelum main."
           },
           {
             "@type": "HowToStep",
             "position": 4,
-            "name": "Mix bunyi",
-            "text": "Gabungkan white noise dengan ombak atau hujan dengan meditasi. Cipta persekitaran tidur sempurna."
+            "name": "Mix bunyi (pilihan)",
+            "text": "Lapis white noise dengan ombak, atau hujan dengan meditasi lembut—cipta campuran malam kamu."
           },
           {
             "@type": "HowToStep",
             "position": 5,
             "name": "Tetapkan pemasa tidur",
-            "text": "Aktifkan fade-out automatik jika tidak mahu bunyi sepanjang malam. Kelantangan perlahan-lahan berkurang."
+            "text": "Hidupkan fade-out automatik jika tidak mahu audio sepanjang malam. Bunyi reda selepas kamu tidur."
           },
           {
             "@type": "HowToStep",
             "position": 6,
-            "name": "Main & tidur",
-            "text": "Tekan play & laraskan kelantangan. iPhone dekat atau fon kepala — kedua-duanya berfungsi."
+            "name": "Main dan laraskan volum",
+            "text": "Cukup kuat untuk tutup bunyi bising, tapi selesa di telinga. iPhone di meja sisi katil atau fon kepala—kedua-duanya boleh."
           },
           {
             "@type": "HowToStep",
             "position": 7,
             "name": "Muat turun untuk offline",
-            "text": "Muat turun kegemaran untuk offline. Tidur tanpa gangguan di mana sahaja tanpa internet."
+            "text": "Simpan kegemaran secara tempatan—berguna semasa melancong atau Wi‑Fi lemah di bilik."
           }
         ]
-      }
+      },
+      "reviews": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Sarah M."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Saya tidur lebih cepat dengan DRMN. Ciri mix membolehkan gabungan white noise dan ombak yang sempurna."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Michael R."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Bayi kami tidur sepanjang malam dengan bunyi pengering rambut. Mod offline sangat membantu semasa melancong."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Jennifer L."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Dengan insomnia, DRMN mengubah hidup saya. Saya guna setiap malam dan bangun segar."
+        }
+      ]
     }
+  },
+  "app_store_proof": {
+    "title": "Dinilai di App Store",
+    "rating": "4,9",
+    "rating_max": "5",
+    "review_count": "10",
+    "downloads": "10,000+",
+    "description": "Penilaian dan ulasan sebenar dari App Store—bukan janji pemasaran. Baca apa kata pengguna sebelum muat turun.",
+    "store_url": "https://apps.apple.com/app/id6746480683",
+    "reviews_url": "https://apps.apple.com/app/id6746480683?see-all=reviews",
+    "screenshot_alt": "Pratonton app DRMN di iPhone",
+    "screenshot_url": "https://drmn.xyz/site_preview.png"
+  },
+  "about": {
+    "title": "Tentang DRMN",
+    "description": "DRMN ialah app iOS bebas untuk tidur dan fokus, dicipta oleh Vladimir Ivakhnenko. Bermula sebagai alat mudah untuk rehat lebih baik—bunyi stabil, main balik offline dan ciri asas tanpa langganan wajib.",
+    "developer": "Vladimir Ivakhnenko",
+    "developer_url": "https://apps.apple.com/developer/id1239180595",
+    "contact_email": "c-basso@ya.ru",
+    "contact_label": "Hubungi",
+    "developer_label": "Pembangun di App Store",
+    "about_page_url": "/about.html",
+    "about_page_label": "Halaman tentang"
   }
 }

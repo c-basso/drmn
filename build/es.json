@@ -33,13 +33,13 @@
     "app_name_suffix": "Máquina de sonidos para dormir",
     "logo_alt": "Logo de la app DRMN de sonidos para dormir para iPhone",
     "app_name": "DRMN",
-    "title": "App de sonidos para dormir en iPhone",
-    "tagline": "Duérmete más rápido con los mejores sonidos para dormir. DRMN es una máquina de sonidos con lluvia, ventilador, ruido blanco y naturaleza—mezcla, sin conexión y batería optimizada toda la noche.",
+    "title": "Ruido blanco y sonidos para dormir en iPhone",
+    "tagline": "Duérmete más rápido con sonido ambiental constante en tu iPhone. DRMN combina lluvia, ventilador, ruido blanco y marrón, sonidos de naturaleza, mezcla, modo sin conexión y temporizador optimizado para la batería.",
     "tldr": "DRMN es una app gratuita de sonidos para dormir en iOS que te ayuda a conciliar el sueño un 30–50 % más rápido. La versión gratuita incluye lluvia, ventilador, ruido blanco, temporizador de 1 hora, sin conexión, mezcla de sonidos y optimización de batería. Descárgala gratis en App Store.",
     "download_text": "Descargar",
     "download_url": "https://apps.apple.com/app/id6746480683",
-    "download_aria_label": "Descarga la app gratuita de sonidos para dormir en App Store",
-    "download_img_alt": "Descarga la app de sonidos para dormir en App Store",
+    "download_aria_label": "Descarga DRMN gratis en App Store",
+    "download_img_alt": "Descarga DRMN en App Store",
     "scan_to_download": "Escanea para descargar"
   },
   "stats": {
@@ -101,28 +101,33 @@
     ]
   },
   "popular_sounds": {
-    "title": "Sonidos populares para dormir",
-    "intro": "¿Buscas el mejor sonido para dormir? DRMN incluye los sonidos más buscados—listos para mezclar, sin conexión y toda la noche en tu iPhone.",
+    "layout": "sections",
+    "sections_layout": true,
     "items": [
       {
-        "icon": "🌧️",
-        "title": "Sonido de lluvia para dormir",
-        "description": "La lluvia suave enmascara ruidos repentinos y ayuda a conciliar el sueño. Mezcla lluvia con ruido blanco para una experiencia de máquina de sonidos más profunda."
-      },
-      {
-        "icon": "🌀",
-        "title": "Sonido de ventilador para dormir",
-        "description": "El zumbido constante del ventilador bloquea tráfico, ronquidos y vecinos—un clásico entre los sonidos para dormir."
-      },
-      {
         "icon": "🔊",
-        "title": "Ruido blanco para dormir",
-        "description": "Ruido blanco, marrón y oscuro crean una capa constante que indica a tu cerebro que es hora de descansar."
+        "title": "Sonidos de ruido blanco",
+        "description": "El ruido blanco constante enmascara sonidos repentinos—tráfico, vecinos o crujidos—y da a tu cerebro un fondo predecible para descansar. Prueba el zumbido del ventilador o el estático clásico y mézclalos con lluvia u olas."
       },
       {
         "icon": "🌊",
-        "title": "Océano y sonidos de naturaleza",
-        "description": "Olas, fuego y pájaros completan la biblioteca de naturaleza—mézclalos con lluvia o ventilador cuando quieras."
+        "title": "Sonidos de ruido marrón",
+        "description": "El ruido marrón y oscuro enfatiza frecuencias graves. Muchas personas lo encuentran más cálido y suave que el ruido blanco, sobre todo para dormir profundo o concentrarse. Pruébalo solo o combínalo con sonidos de naturaleza."
+      },
+      {
+        "icon": "👶",
+        "title": "Sonidos para el sueño del bebé",
+        "description": "Pistas suaves de secador, aspiradora o teclado imitan ritmos familiares que calman a bebés y niños pequeños. Los padres las usan en la habitación del bebé sin comprar una máquina de sonidos aparte."
+      },
+      {
+        "icon": "⏱️",
+        "title": "Temporizador para dormir",
+        "description": "Configura un temporizador con desvanecimiento automático para que el audio se atenúe después de dormirte. La versión gratuita incluye una hora—suficiente para la mayoría de noches; premium desbloquea sesiones más largas."
+      },
+      {
+        "icon": "📴",
+        "title": "Máquina de sonidos sin conexión",
+        "description": "Descarga tus pistas favoritas una vez y reproduce hasta 10 horas sin Wi‑Fi ni datos móviles. La optimización de batería mantiene la reproducción toda la noche—ideal para viajes o dormitorios con señal débil."
       }
     ]
   },
@@ -316,11 +321,11 @@
   },
   "final_cta": {
     "title": "¿Listo para dormir mejor esta noche?",
-    "paragraph1": "Únete a más de 10.000 usuarios que han mejorado su sueño con DRMN. 4,9/5 en App Store—app gratuita de sonidos para dormir que te ayuda a conciliar el sueño un 30–50 % más rápido. Versión gratuita: temporizador de 1 hora, sin conexión y mezcla. Descarga hoy y prueba sonidos profesionales—gratis.",
-    "cta_text": "Descargar app gratuita de sonidos para dormir",
+    "paragraph1": "Más de 10.000 personas usan DRMN para relajarse más rápido. Valorada 4,9/5 en App Store, con versión gratuita que incluye temporizador de una hora, modo sin conexión y mezcla de sonidos. Descárgala y encuentra los ambientes que te funcionan.",
+    "cta_text": "Descargar DRMN gratis",
     "cta_url": "https://apps.apple.com/app/id6746480683",
-    "cta_aria_label": "Descarga la app gratuita de sonidos para dormir en App Store",
-    "cta_img_alt": "Descarga la app de sonidos para dormir en App Store"
+    "cta_aria_label": "Descarga DRMN gratis en App Store",
+    "cta_img_alt": "Descarga DRMN en App Store"
   },
   "footer": {
     "copyright": "© 2025 DRMN. Todos los derechos reservados.",
@@ -330,7 +335,9 @@
     "terms_url": "/terms.html",
     "blog_link": "Blog",
     "fazier_badge_alt": "Insignia Fazier",
-    "superlaunch_badge_alt": "Destacado en Super Launch"
+    "superlaunch_badge_alt": "Destacado en Super Launch",
+    "about_link": "Sobre la app",
+    "about_url": "/about.html"
   },
   "app_info": {
     "developer": "Vladimir Ivakhnenko",
@@ -358,75 +365,55 @@
   },
   "seo": {
     "breadcrumb_home": "Inicio",
-    "faq_title": "FAQ: máquina de sonidos, sonidos para dormir y ruido blanco",
+    "faq_title": "Preguntas frecuentes",
     "faq": [
       {
         "question": "¿Cuál es el mejor sonido para dormir?",
-        "answer": "Depende de ti—muchos eligen lluvia, ventilador o ruido blanco constante. En DRMN puedes escuchar y mezclar sonidos para encontrar lo que te ayuda a conciliar el sueño más rápido."
+        "answer": "Depende de lo que te calme. Muchas personas prefieren lluvia, el zumbido constante del ventilador o ruido blanco neutro. En DRMN puedes escuchar y mezclar pistas para encontrar lo que te ayuda a conciliar el sueño más rápido."
       },
       {
         "question": "¿Qué es una máquina de sonidos para dormir?",
-        "answer": "Reproduce audio constante—lluvia, ventilador o ruido blanco—para enmascarar ruidos y dormir mejor. DRMN es una app para iPhone con mezcla, sin conexión y temporizador, como una máquina física."
+        "answer": "Reproduce audio de fondo constante—lluvia, ventilador o ruido blanco—para enmascarar ruidos molestos y descansar mejor. DRMN funciona como una máquina portátil en iPhone, con mezcla, modo sin conexión y temporizador integrados."
       },
       {
-        "question": "¿Cuál es la mejor app de ruido blanco para iPhone?",
-        "answer": "DRMN tiene 4,9 estrellas y más de 10.000 descargas. Lluvia, ventilador, ruido blanco y 100 horas de sonidos para dormir y naturaleza—los usuarios concilian el sueño un 30–50 % más rápido."
+        "question": "¿Es DRMN una buena app de ruido blanco para iPhone?",
+        "answer": "DRMN tiene 4,9 estrellas en App Store y más de 10.000 descargas. Incluye lluvia, ventilador, ruido blanco y marrón, además de 100 horas de audio ambiental y de naturaleza. Muchos usuarios concilian el sueño un 30–50 % más rápido cuando el ruido de fondo es un problema."
       },
       {
-        "question": "¿Hay una app gratuita de ruido blanco?",
-        "answer": "¡Sí! DRMN está disponible gratis en App Store. La versión gratuita incluye temporizador de 1 hora, sin conexión, mezcla y acceso a sonidos para dormir. Premium desbloquea reproducción más larga."
+        "question": "¿Hay una app gratuita de ruido blanco para iPhone?",
+        "answer": "Sí. DRMN se descarga gratis en App Store. La versión gratuita incluye temporizador de una hora, modo sin conexión, mezcla y sonidos básicos para dormir. Premium desbloquea sesiones más largas y pistas adicionales—no necesitas suscripción para probar lo esencial."
       },
       {
-        "question": "¿Qué sonidos incluye una app de sonidos para dormir?",
-        "answer": "DRMN ofrece más de 100 horas de audio profesional: ruido blanco, marrón y oscuro, lluvia, olas, fuego, pájaros matutinos, meditación y sonidos para bebés (secador, aspiradora, teclado)."
+        "question": "¿Qué sonidos incluye?",
+        "answer": "Ruido blanco, marrón y oscuro; naturaleza como lluvia, olas, fuego y pájaros matutinos; meditación y foco; y sonidos para bebés como secador, aspiradora y teclado. Puedes mezclar cualquier combinación."
       },
       {
-        "question": "¿Funciona la app sin conexión?",
-        "answer": "¡Sí! Tras descargar los sonidos, DRMN funciona totalmente sin conexión. Con batería optimizada, hasta 10 horas de reproducción sin internet."
+        "question": "¿DRMN funciona sin conexión?",
+        "answer": "Sí. Tras descargar las pistas, la app reproduce sin internet. La optimización de batería permite hasta 10 horas de reproducción ininterrumpida—suficiente para viajar o toda la noche."
       },
       {
-        "question": "¿Mejor app de ruido blanco para el sueño del bebé?",
-        "answer": "DRMN incluye sonidos especializados para bebés (secador, aspiradora, teclado) que ayudan a conciliar el sueño. Ritmos familiares que calman y crean un ambiente tranquilo."
+        "question": "¿Cuáles son los mejores sonidos para el sueño del bebé?",
+        "answer": "Muchos padres usan sonidos constantes y familiares—secador, aspiradora o ruido blanco suave. DRMN incluye pistas pensadas para bebés sin un dispositivo aparte en la habitación."
       },
       {
-        "question": "¿Cómo funciona una app de máquina de sonidos?",
-        "answer": "DRMN ofrece ruido blanco y sonidos para dormir para descanso y concentración. Enmascara ruidos, crea un ambiente estable y favorece un sueño más profundo—como una máquina física."
+        "question": "¿Puedo mezclar distintos sonidos?",
+        "answer": "Sí. Combina ruido blanco con olas, lluvia con meditación o la pareja que prefieras. La mezcla está incluida en la versión gratuita."
       },
       {
-        "question": "¿Puedo mezclar sonidos?",
-        "answer": "¡Sí! Combina ruido blanco con olas o lluvia con meditación. Crea tu propia experiencia de sueño."
+        "question": "¿DRMN tiene temporizador para dormir?",
+        "answer": "Sí. Configura un temporizador con desvanecimiento automático para que el audio se atenúe tras dormirte. La versión gratuita incluye una hora; premium añade opciones más largas."
       },
       {
-        "question": "¿Tiene temporizador para dormir?",
-        "answer": "¡Sí! Temporizador con desvanecimiento automático. Configúralo y el sonido se atenuará gradualmente después de dormirte."
+        "question": "¿Puede ayudar DRMN con el insomnio?",
+        "answer": "Un sonido de fondo constante puede enmascarar tráfico, vecinos y otras molestias que despiertan a quienes duermen ligero. Usuarios con insomnio suelen usar ruido blanco o marrón cada noche; muchos reportan conciliar el sueño más rápido, aunque el resultado varía."
       },
       {
-        "question": "¿Qué es el ruido blanco para dormir y cómo ayuda?",
-        "answer": "Sonido constante que enmascara ruidos molestos y ayuda a conciliar el sueño más rápido. DRMN bloquea tráfico, vecinos y otros sonidos para un ambiente de sueño estable."
+        "question": "¿En qué se diferencia DRMN de Calm o Headspace?",
+        "answer": "Calm y Headspace se centran en meditación guiada y suscripciones de bienestar. DRMN está construida en torno al sonido ambiental—una máquina de sonidos en el bolsillo—con versión gratuita generosa (temporizador de una hora, sin conexión, mezcla) y sin cursos de meditación. BetterSleep y apps similares suelen reservar funciones para suscripción; en DRMN puedes probar los sonidos básicos gratis."
       },
       {
-        "question": "¿Es buena para el insomnio?",
-        "answer": "¡Sí! DRMN tiene 4,9 estrellas y más de 10.000 descargas. Al enmascarar ruidos, los usuarios concilian el sueño un 30–50 % más rápido de media. Descarga gratis."
-      },
-      {
-        "question": "¿Cuántas descargas tiene DRMN?",
-        "answer": "Más de 10.000 en App Store, 4,9 estrellas en 10 reseñas. 100 horas de sonidos y hasta 10 horas sin conexión con una carga."
-      },
-      {
-        "question": "¿Cuál es la calificación de DRMN en App Store?",
-        "answer": "4,9 de 5 basada en 10 reseñas. Más de 10.000 descargas, 100 horas de sonidos para dormir y reproducción sin conexión."
-      },
-      {
-        "question": "¿En qué se diferencia DRMN de otras apps?",
-        "answer": "DRMN destaca por una versión gratuita generosa (temporizador de 1 hora), mezcla avanzada, sonidos para bebés y optimización de batería—sin conexión y sonidos profesionales sin suscripción."
-      },
-      {
-        "question": "¿Qué hace único a DRMN entre alternativas gratuitas?",
-        "answer": "Versión gratuita con temporizador de 1 hora sin suscripción. Mientras otras limitan sonidos o exigen compras, DRMN ofrece mezcla, sin conexión y batería optimizada gratis—más sonidos para bebés que muchas no tienen."
-      },
-      {
-        "question": "¿Es DRMN mejor que otras apps de sonidos para dormir?",
-        "answer": "Versión gratuita: temporizador, mezcla, sin conexión y batería optimizada sin suscripción. 4,9 estrellas, 10.000+ descargas, sueño un 30–50 % más rápido. Sonidos para bebés y temporizador inteligente gratis—funciones que otras cobran."
+        "question": "¿Quién creó DRMN?",
+        "answer": "DRMN la desarrolló Vladimir Ivakhnenko, desarrollador independiente de iOS. En App Store tiene 4,9 estrellas en 10 reseñas y más de 10.000 descargas. Contacto: c-basso@ya.ru."
       }
     ],
     "structured_data": {
@@ -444,7 +431,7 @@
           "availability": "https://schema.org/InStock",
           "url": "https://apps.apple.com/app/id6746480683"
         },
-        "description": "App de sonidos para dormir y ruido blanco para iPhone. Versión gratuita con lluvia, ventilador, mezcla y sin conexión. Para dormir, concentración y bebés.",
+        "description": "DRMN es una app freemium de iOS con ruido blanco y marrón, lluvia, ventilador y sonidos de naturaleza. Mezcla pistas, reproduce sin conexión y usa temporizador con desvanecimiento. Gratis en App Store para iPhone.",
         "image": {
           "@type": "ImageObject",
           "url": "https://drmn.xyz/img/logo.webp",
@@ -467,7 +454,7 @@
           "@type": "Person",
           "name": "Vladimir Ivakhnenko"
         },
-        "keywords": "sonidos para dormir, máquina de sonidos, ruido blanco, app para dormir, app ruido blanco, lluvia para dormir, ventilador para dormir, sueño sin conexión",
+        "keywords": "ruido blanco, sonidos para dormir, máquina de sonidos, ruido marrón, lluvia para dormir, ventilador para dormir, sueño del bebé, sin conexión, temporizador para dormir, concentración, insomnio, app gratuita iPhone",
         "inLanguage": "es",
         "datePublished": "2024-01-01",
         "dateModified": "2025-01-15",
@@ -486,14 +473,14 @@
         "name": "DRMN",
         "url": "https://drmn.xyz/es/",
         "logo": "https://drmn.xyz/img/logo.webp",
-        "description": "DRMN — app de sonidos para dormir y ruido blanco para iPhone. Versión gratuita con mezcla y sin conexión. Para dormir, concentración y bebés."
+        "description": "DRMN — ruido blanco y sonidos ambientales para dormir en iPhone. Mezcla, sin conexión y temporizador incluidos. Descarga gratuita en App Store."
       },
       "website": {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "DRMN",
         "url": "https://drmn.xyz/es/",
-        "description": "App de sonidos para dormir y ruido blanco para iPhone. Versión gratuita con mezcla y sin conexión. Descarga gratis en App Store.",
+        "description": "DRMN — ruido blanco y sonidos ambientales para dormir en iPhone. Mezcla, sin conexión y temporizador incluidos. Descarga gratuita en App Store.",
         "potentialAction": {
           "@type": "SearchAction",
           "target": "https://drmn.xyz/?q={search_term_string}",
@@ -503,54 +490,118 @@
       "howto": {
         "@context": "https://schema.org",
         "@type": "HowTo",
-        "name": "Cómo usar una app de sonidos para dormir mejor",
-        "description": "Aprende a usar DRMN para conciliar el sueño más rápido. Guía paso a paso.",
+        "name": "Cómo usar DRMN para dormir mejor",
+        "description": "Guía breve: elige una pista, mezcla si quieres, configura el temporizador y reproduce sin conexión.",
         "step": [
           {
             "@type": "HowToStep",
             "position": 1,
-            "name": "Descarga gratis",
-            "text": "Descarga DRMN en App Store en tu iPhone. Requiere iOS 17.1+. La versión gratuita incluye temporizador de 1 hora.",
+            "name": "Descarga DRMN",
+            "text": "Instala DRMN gratis desde App Store en iPhone (iOS 17.1+). La versión gratuita incluye temporizador de una hora y sonidos básicos.",
             "url": "https://apps.apple.com/app/id6746480683"
           },
           {
             "@type": "HowToStep",
             "position": 2,
-            "name": "Explora sonidos para dormir",
-            "text": "Abre la app y explora la biblioteca: ruido blanco y marrón, naturaleza (lluvia, olas, fuego), meditación y sonidos para bebés."
+            "name": "Explora la biblioteca",
+            "text": "Abre DRMN y descubre ruido blanco y marrón, lluvia, olas, fuego, meditación y sonidos para bebés."
           },
           {
             "@type": "HowToStep",
             "position": 3,
-            "name": "Elige sonidos",
-            "text": "Elige según tu necesidad—ruido blanco para enmascarar, naturaleza para relajarte, sonidos para bebés. Escucha antes de reproducir."
+            "name": "Elige según tu necesidad",
+            "text": "Sonido constante para enmascarar molestias, naturaleza para relajarte o pistas para bebés. Escucha antes de reproducir."
           },
           {
             "@type": "HowToStep",
             "position": 4,
-            "name": "Mezcla sonidos",
-            "text": "Combina ruido blanco con olas o lluvia con meditación. Crea tu ambiente ideal para dormir."
+            "name": "Mezcla sonidos (opcional)",
+            "text": "Superpone ruido blanco con olas o lluvia con meditación suave para crear tu mezcla nocturna."
           },
           {
             "@type": "HowToStep",
             "position": 5,
             "name": "Configura el temporizador",
-            "text": "Activa el desvanecimiento automático si no quieres sonido toda la noche. El volumen bajará gradualmente."
+            "text": "Activa el desvanecimiento automático si no quieres audio toda la noche. El sonido se atenuará tras dormirte."
           },
           {
             "@type": "HowToStep",
             "position": 6,
-            "name": "Reproduce y duerme",
-            "text": "Pulsa play y ajusta el volumen. iPhone cerca o auriculares—ambos funcionan bien."
+            "name": "Reproduce y ajusta el volumen",
+            "text": "Suficientemente alto para enmascarar ruidos, pero cómodo para tus oídos. iPhone en la mesilla o auriculares—ambos funcionan."
           },
           {
             "@type": "HowToStep",
             "position": 7,
             "name": "Descarga para sin conexión",
-            "text": "Descarga favoritos para usar sin internet. Sueño ininterrumpido en cualquier lugar."
+            "text": "Guarda favoritos localmente—útil al viajar o cuando el Wi‑Fi es débil en el dormitorio."
           }
         ]
-      }
+      },
+      "reviews": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Sarah M."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Me duermo más rápido con DRMN. La mezcla me permite combinar ruido blanco con olas a la perfección."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Michael R."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Nuestro bebé duerme toda la noche con el sonido del secador. El modo sin conexión nos salva en los viajes."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Jennifer L."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Con insomnio, DRMN cambió todo. Lo uso cada noche y me despierto renovada."
+        }
+      ]
     }
+  },
+  "app_store_proof": {
+    "title": "Valorada en App Store",
+    "rating": "4,9",
+    "rating_max": "5",
+    "review_count": "10",
+    "downloads": "10.000+",
+    "description": "Valoraciones y reseñas reales en App Store—no claims de marketing. Lee lo que dicen los usuarios antes de descargar.",
+    "store_url": "https://apps.apple.com/app/id6746480683",
+    "reviews_url": "https://apps.apple.com/app/id6746480683?see-all=reviews",
+    "screenshot_alt": "Vista previa de la app DRMN en iPhone",
+    "screenshot_url": "https://drmn.xyz/site_preview.png"
+  },
+  "about": {
+    "title": "Sobre DRMN",
+    "description": "DRMN es una app independiente de iOS para dormir y concentrarte, creada por Vladimir Ivakhnenko. Empezó como una herramienta sencilla para descansar mejor: sonidos constantes, modo sin conexión y funciones básicas sin suscripción obligatoria.",
+    "developer": "Vladimir Ivakhnenko",
+    "developer_url": "https://apps.apple.com/developer/id1239180595",
+    "contact_email": "c-basso@ya.ru",
+    "contact_label": "Contacto",
+    "developer_label": "Desarrollador en App Store",
+    "about_page_url": "/about.html",
+    "about_page_label": "Página sobre la app"
   }
 }

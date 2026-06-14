@@ -27,7 +27,7 @@ function generateSitemap({ projectRoot = path.join(__dirname, '..') } = {}) {
 
     const lastmod = new Date().toISOString().slice(0, 10);
     const siteOrigin = SITE_URL.replace(/\/$/, '');
-    const legalUrls = [`${siteOrigin}/privacy.html`, `${siteOrigin}/terms.html`];
+    const legalUrls = [`${siteOrigin}/privacy.html`, `${siteOrigin}/terms.html`, `${siteOrigin}/about.html`];
     const blogUrls = getBlogSitemapUrls(siteOrigin);
 
     const lines = [];

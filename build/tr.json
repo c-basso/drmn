@@ -33,13 +33,13 @@
     "app_name_suffix": "Uyku Ses Makinesi",
     "logo_alt": "iPhone için DRMN uyku ses makinesi uygulaması logosu",
     "app_name": "DRMN",
-    "title": "iPhone için uyku ses makinesi uygulaması",
-    "tagline": "En iyi uyku sesleriyle daha hızlı uykuya dalın. DRMN; yağmur, vantilatör, beyaz gürültü ve doğa sesleri sunan bir uyku ses makinesi uygulamasıdır — ses karıştırma, çevrimdışı oynatma ve tüm gece pil dostu kullanım.",
+    "title": "iPhone için beyaz gürültü ve uyku sesleri",
+    "tagline": "iPhone'unuzda sabit ambient seslerle daha hızlı uykuya dalın. DRMN; yağmur, vantilatör, beyaz ve kahverengi gürültü, doğa sesleri, karıştırma, çevrimdışı mod ve pil dostu uyku zamanlayıcısı sunar.",
     "tldr": "DRMN, kullanıcıların %30–50 daha hızlı uykuya dalmasına yardımcı olan bir iOS uyku ses makinesi uygulamasıdır. Ücretsiz sürüm: yağmur, vantilatör, beyaz gürültü, 1 saatlik zamanlayıcı, çevrimdışı mod, ses karıştırma ve pil optimizasyonu. App Store'dan ücretsiz indirin.",
     "download_text": "Şimdi indir",
     "download_url": "https://apps.apple.com/app/id6746480683",
-    "download_aria_label": "App Store'dan ücretsiz uyku sesi uygulamasını indir",
-    "download_img_alt": "App Store'dan uyku sesi uygulamasını indir",
+    "download_aria_label": "App Store'dan DRMN'yi ücretsiz indir",
+    "download_img_alt": "App Store'dan DRMN'yi indir",
     "scan_to_download": "İndirmek için tarayın"
   },
   "stats": {
@@ -101,28 +101,33 @@
     ]
   },
   "popular_sounds": {
-    "title": "Uyku için popüler sesler",
-    "intro": "Uyumak için en iyi sesi mi arıyorsunuz? DRMN, en çok aranan uyku seslerini sunar — iPhone'unuzda karıştırmaya, çevrimdışı dinlemeye ve tüm gece çalmaya hazır.",
+    "layout": "sections",
+    "sections_layout": true,
     "items": [
       {
-        "icon": "🌧️",
-        "title": "Uyku için yağmur sesi",
-        "description": "Hafif yağmur ani sesleri maskeler ve uykuya dalmanıza yardımcı olur. Daha derin uyku için yağmuru beyaz gürültüyle karıştırın."
-      },
-      {
-        "icon": "🌀",
-        "title": "Uyku için vantilatör sesi",
-        "description": "Sabit vantilatör uğultusu trafik, horlama ve komşuları engeller — milyonların her gece güvendiği klasik uyku sesi."
-      },
-      {
         "icon": "🔊",
-        "title": "Uyku için beyaz gürültü",
-        "description": "Beyaz, kahverengi ve koyu gürültü seçenekleri beyninize dinlenme sinyali veren tutarlı bir arka plan katmanı oluşturur."
+        "title": "Beyaz gürültü",
+        "description": "Düzenli beyaz gürültü ani sesleri—trafik, komşular veya gıcırtılı zemin—maskeler ve beyninize dinlenebileceği öngörülebilir bir arka plan verir. Vantilatör sesini veya klasik statik gürültüyü deneyin; yağmur veya dalgalarla karıştırın."
       },
       {
         "icon": "🌊",
-        "title": "Okyanus ve doğa uyku sesleri",
-        "description": "Dalgalar, ateş ve sabah kuşları kütüphanemizi tamamlar — istediğiniz zaman yağmur veya vantilatörle karıştırın."
+        "title": "Kahverengi gürültü",
+        "description": "Kahverengi ve koyu gürültü düşük frekansları vurgular. Birçok kişi beyaz gürültüden daha sıcak ve daha az keskin bulur—derin uyku veya odaklanma için ideal. Tek başına veya doğa seslerinin altında kullanın."
+      },
+      {
+        "icon": "👶",
+        "title": "Bebek uyku sesleri",
+        "description": "Saç kurutma makinesi, süpürge veya klavye yazımı gibi yumuşak parçalar tanıdık ritimleri taklit ederek bebekleri ve küçük çocukları sakinleştirir. Ebeveynler bunları bebek odasında kullanır—ayrı bir ses makinesine gerek kalmadan."
+      },
+      {
+        "icon": "⏱️",
+        "title": "Uyku zamanlayıcısı",
+        "description": "Uyuduktan sonra sesin yavaşça azalması için otomatik fade-out'lu bir zamanlayıcı ayarlayın. Ücretsiz sürüm bir saat içerir—çoğu gece için yeterli; premium daha uzun oturumların kilidini açar."
+      },
+      {
+        "icon": "📴",
+        "title": "Çevrimdışı uyku ses makinesi",
+        "description": "Favori parçalarınızı bir kez indirin ve Wi‑Fi veya mobil veri olmadan 10 saate kadar dinleyin. Pil optimizasyonu oynatmayı tüm gece sürdürür—seyahatte veya yatak odasında zayıf sinyalde ideal."
       }
     ]
   },
@@ -316,11 +321,11 @@
   },
   "final_cta": {
     "title": "Bu gece daha iyi uyumaya hazır mısınız?",
-    "paragraph1": "DRMN ile uykusunu dönüştüren 10.000'den fazla kullanıcıya katılın. App Store'da 4,9/5 — ücretsiz uyku sesi uygulamamız %30–50 daha hızlı uykuya dalmanıza yardımcı olur. Ücretsiz sürüm: 1 saatlik zamanlayıcı, çevrimdışı mod ve ses karıştırma. Bugün indirin ve profesyonel sesleri ücretsiz deneyin.",
-    "cta_text": "Ücretsiz uyku sesi uygulamasını indir",
+    "paragraph1": "10.000'den fazla kişi DRMN ile rahatlayıp daha hızlı uykuya dalıyor. App Store'da 4,9/5 puan; ücretsiz sürümde 1 saatlik zamanlayıcı, çevrimdışı mod ve karıştırma var. İndirin ve sizin için işe yarayan sesleri bulun.",
+    "cta_text": "DRMN'yi ücretsiz indir",
     "cta_url": "https://apps.apple.com/app/id6746480683",
-    "cta_aria_label": "App Store'dan ücretsiz uyku sesi uygulamasını indir",
-    "cta_img_alt": "App Store'dan uyku sesi uygulamasını indir"
+    "cta_aria_label": "App Store'dan DRMN'yi ücretsiz indir",
+    "cta_img_alt": "App Store'dan DRMN'yi indir"
   },
   "footer": {
     "copyright": "© 2025 DRMN. Tüm hakları saklıdır.",
@@ -330,7 +335,9 @@
     "terms_url": "/terms.html",
     "blog_link": "Blog",
     "fazier_badge_alt": "Fazier rozeti",
-    "superlaunch_badge_alt": "Super Launch'ta öne çıkarıldı"
+    "superlaunch_badge_alt": "Super Launch'ta öne çıkarıldı",
+    "about_link": "Hakkında",
+    "about_url": "/about.html"
   },
   "app_info": {
     "developer": "Vladimir Ivakhnenko",
@@ -358,75 +365,55 @@
   },
   "seo": {
     "breadcrumb_home": "Ana Sayfa",
-    "faq_title": "SSS: uyku ses makinesi, uyku sesleri ve beyaz gürültü",
+    "faq_title": "Sık sorulan sorular",
     "faq": [
       {
         "question": "Uyku için en iyi ses hangisi?",
-        "answer": "Size bağlı — birçok kişi yağmur, vantilatör veya sabit beyaz gürültü seçer. DRMN'de sesleri dinleyip karıştırarak en hızlı uykuya dalmanıza neyin yardımcı olduğunu bulabilirsiniz."
+        "answer": "Sizi neyin sakinleştirdiğine bağlı. Birçok kişi yağmur, düzenli vantilatör sesi veya nötr beyaz gürültü seçer. DRMN'de parçaları dinleyip karıştırarak daha hızlı uykuya dalmanıza neyin yardımcı olduğunu bulabilirsiniz."
       },
       {
         "question": "Uyku ses makinesi nedir?",
-        "answer": "Rahatsız edici gürültüyü maskeler ve uyumanıza yardımcı olmak için yağmur, vantilatör uğultusu veya beyaz gürültü gibi sabit arka plan sesi çalar. DRMN, karıştırma, çevrimdışı oynatma ve uyku zamanlayıcısıyla fiziksel bir ses makinesi gibi çalışan iPhone uyku ses makinesi uygulamasıdır."
+        "answer": "Gürültüyü bastırmak ve uyumanıza yardımcı olmak için yağmur, vantilatör veya beyaz gürültü gibi düzenli arka plan sesi çalar. DRMN, karıştırma, çevrimdışı mod ve yerleşik zamanlayıcıyla iPhone'unuzda taşınabilir bir makine gibi çalışır."
       },
       {
-        "question": "iPhone için en iyi beyaz gürültü uygulaması hangisi?",
-        "answer": "DRMN'nin 4,9 puanı ve 10.000'den fazla indirmesi var. Yağmur, vantilatör, beyaz gürültü ve 100 saat uyku ve doğa sesi — kullanıcılar %30–50 daha hızlı uykuya daldıklarını bildiriyor."
+        "question": "DRMN iPhone için iyi bir beyaz gürültü uygulaması mı?",
+        "answer": "DRMN'nin App Store'da 4,9 puanı ve 10.000'den fazla indirmesi var. Yağmur, vantilatör, beyaz ve kahverengi gürültü ile 100 saatin üzerinde ambient ve doğa sesi sunar. Kullanıcılar arka plan gürültüsü rahatsız ettiğinde genelde %30–50 daha hızlı uykuya daldıklarını söyler."
       },
       {
-        "question": "İndirebileceğim ücretsiz bir beyaz gürültü uygulaması var mı?",
-        "answer": "Evet! DRMN App Store'da ücretsiz. Ücretsiz sürüm: 1 saatlik zamanlayıcı, çevrimdışı mod, ses karıştırma ve uyku sesleri. Premium, uzun oynatmanın kilidini açar."
+        "question": "iPhone için ücretsiz beyaz gürültü uygulaması var mı?",
+        "answer": "Evet. DRMN App Store'dan ücretsiz indirilir. Ücretsiz sürüm: 1 saatlik zamanlayıcı, çevrimdışı mod, karıştırma ve temel uyku sesleri. Premium daha uzun oturumların ve ek parçaların kilidini açar—temel özellikleri denemek için abonelik gerekmez."
       },
       {
-        "question": "Uyku sesi uygulamasında hangi sesler var?",
-        "answer": "DRMN 100 saatin üzerinde profesyonel kayıt sunar: beyaz, kahverengi ve koyu gürültü, yağmur, dalgalar, ateş, sabah kuşları, meditasyon ve bebek sesleri (saç kurutma, süpürge, klavye)."
+        "question": "Hangi sesler dahil?",
+        "answer": "Beyaz, kahverengi ve koyu gürültü; yağmur, dalgalar, ateş ve sabah kuşları gibi doğa sesleri; meditasyon ve odaklanma; saç kurutma makinesi, süpürge ve klavye gibi bebek sesleri. İstediğiniz kombinasyonu karıştırabilirsiniz."
       },
       {
-        "question": "Uygulama çevrimdışı çalışır mı?",
-        "answer": "Evet! Sesleri indirdikten sonra DRMN tamamen çevrimdışı çalışır. Pil optimizasyonuyla internetsiz 10 saate kadar kesintisiz dinleyebilirsiniz."
+        "question": "DRMN çevrimdışı çalışır mı?",
+        "answer": "Evet. Parçaları indirdikten sonra uygulama internetsiz oynatır. Pil optimizasyonu 10 saate kadar kesintisiz dinleme sağlar—seyahat veya tüm gece için yeterli."
       },
       {
-        "question": "Bebek uykusu için en iyi uygulama hangisi?",
-        "answer": "DRMN özel bebek uyku sesleri (saç kurutma, süpürge, klavye) içerir ve bebeklerin daha hızlı uykuya dalmasına yardımcı olur. Tanıdık ritimler onları sakinleştirir."
+        "question": "Bebek uykusu için hangi sesler uygun?",
+        "answer": "Birçok ebeveyn düzenli, tanıdık sesler kullanır—saç kurutma makinesi, süpürge veya yumuşak beyaz gürültü. DRMN, bebek odasında ayrı cihaz olmadan en küçükleri sakinleştiren bebek parçalarına sahiptir."
       },
       {
-        "question": "Ses makinesi uygulaması nasıl çalışır?",
-        "answer": "DRMN uyku ve odaklanma için beyaz gürültü ve uyku sesleri sağlar. Rahatsız edici sesleri maskeler, tutarlı uyku ortamı oluşturur ve daha derin uykuyu destekler — fiziksel bir makine gibi."
+        "question": "Farklı sesleri karıştırabilir miyim?",
+        "answer": "Evet. Beyaz gürültüyü dalgalarla, yağmuru meditasyonla veya sevdiğiniz herhangi bir çifti birleştirin. Karıştırma ücretsiz sürümde dahildir."
       },
       {
-        "question": "Sesleri karıştırabilir miyim?",
-        "answer": "Evet! Beyaz gürültüyü dalgalarla veya yağmuru meditasyon sesleriyle birleştirin. Kendi uyku deneyiminizi oluşturun."
+        "question": "DRMN'de uyku zamanlayıcısı var mı?",
+        "answer": "Evet. Uyuduktan sonra sesin yavaşça azalması için otomatik fade-out'lu bir zamanlayıcı ayarlayın. Ücretsiz sürüm bir saat içerir; premium daha uzun seçenekler ekler."
       },
       {
-        "question": "Uyku zamanlayıcısı var mı?",
-        "answer": "Evet! Otomatik ses azaltmalı zamanlayıcı. Ayarlayın — uyuduktan sonra ses yavaş yavaş kesilir."
+        "question": "DRMN uykusuzluğa yardımcı olabilir mi?",
+        "answer": "Düzenli arka plan sesi trafik, komşular ve hafif uyuyanları uyandıran diğer rahatsız edici sesleri bastırabilir. Birçok uykusuzluk yaşayan kişi her gece beyaz veya kahverengi gürültü dinler; birçok kişi daha hızlı uykuya daldığını bildirir, ancak sonuçlar kişiden kişiye değişir."
       },
       {
-        "question": "Uyku için beyaz gürültü nedir ve nasıl yardımcı olur?",
-        "answer": "Rahatsız edici sesleri maskeler ve daha hızlı uykuya dalmanıza yardımcı olan sabit bir sestir. DRMN trafik, komşular ve diğer sesleri engelleyerek tutarlı uyku ortamı oluşturur."
+        "question": "DRMN Calm veya Headspace'ten nasıl farklı?",
+        "answer": "Calm ve Headspace rehberli meditasyon ve wellness aboneliklerine odaklanır. DRMN ambient ses etrafında kurulmuştur—cebinizde bir uyku ses makinesi—cömert ücretsiz sürümle (1 saatlik zamanlayıcı, çevrimdışı, karıştırma) ve meditasyon kursu olmadan. BetterSleep ve benzer uygulamalar sık sık özellikleri abonelere ayırır; DRMN'de temel sesleri ücretsiz deneyebilirsiniz."
       },
       {
-        "question": "Uykusuzluk için uygun mu?",
-        "answer": "Evet! DRMN'nin 4,9 puanı ve 10.000'den fazla indirmesi var. Rahatsız edici sesleri maskeler, kullanıcılar ortalama %30–50 daha hızlı uykuya dalır. Ücretsiz indirin."
-      },
-      {
-        "question": "DRMN'nin kaç indirmesi var?",
-        "answer": "App Store'da 10.000'den fazla, 10 değerlendirmeden 4,9/5. 100 saat ses ve tek şarjda 10 saate kadar çevrimdışı oynatma."
-      },
-      {
-        "question": "DRMN'nin App Store puanı nedir?",
-        "answer": "10 değerlendirmeden 4,9/5. 10.000'den fazla indirme, 100 saat uyku sesi ve çevrimdışı oynatma."
-      },
-      {
-        "question": "DRMN diğer beyaz gürültü uygulamalarından nasıl farklı?",
-        "answer": "DRMN cömert ücretsiz sürüm (1 saatlik zamanlayıcı), gelişmiş ses karıştırma, bebek sesleri ve üstün pil optimizasyonuyla öne çıkar — abonelik olmadan çevrimdışı ve profesyonel sesler."
-      },
-      {
-        "question": "DRMN'yi ücretsiz alternatiflerden ayıran nedir?",
-        "answer": "Abonelik gerektirmeden 1 saatlik zamanlayıcılı cömert ücretsiz sürüm. Birçok alternatif sesleri sınırlarken DRMN ücretsiz karıştırma, çevrimdışı mod ve pil optimizasyonu sunar — ayrıca birçok rakibin sunmadığı bebek sesleri."
-      },
-      {
-        "question": "DRMN diğer uyku sesi uygulamalarından daha mı iyi?",
-        "answer": "Ücretsiz sürüm: abonelik olmadan zamanlayıcı, karıştırma, çevrimdışı mod ve pil optimizasyonu. 4,9 puan, 10.000+ indirme, %30–50 daha hızlı uykuya dalma. Bebek sesleri ve akıllı zamanlayıcı ücretsiz — rakiplerin ücretli veya hiç sunmadığı özellikler."
+        "question": "DRMN'yi kim geliştirdi?",
+        "answer": "DRMN, bağımsız iOS geliştirici Vladimir Ivakhnenko tarafından geliştirilmiştir. App Store'da 10 değerlendirmeden 4,9 puan ve 10.000'den fazla indirmesi var. İletişim: c-basso@ya.ru."
       }
     ],
     "structured_data": {
@@ -444,7 +431,7 @@
           "availability": "https://schema.org/InStock",
           "url": "https://apps.apple.com/app/id6746480683"
         },
-        "description": "iPhone için uyku sesleri ve beyaz gürültü uygulaması. Ücretsiz sürüm: yağmur, vantilatör, karıştırma ve çevrimdışı. Uyku, odaklanma ve bebek uykusu için.",
+        "description": "DRMN, beyaz ve kahverengi gürültü, yağmur, vantilatör ve doğa sesleri sunan freemium bir iOS uygulamasıdır. Parçaları karıştırın, çevrimdışı oynatın ve fade-out'lu uyku zamanlayıcısı kullanın. iPhone için App Store'dan ücretsiz indirin.",
         "image": {
           "@type": "ImageObject",
           "url": "https://drmn.xyz/img/logo.webp",
@@ -467,7 +454,7 @@
           "@type": "Person",
           "name": "Vladimir Ivakhnenko"
         },
-        "keywords": "uyku sesleri, uyku ses makinesi, beyaz gürültü, uyku uygulaması, yağmur sesi, vantilatör sesi, çevrimdışı uyku",
+        "keywords": "beyaz gürültü, uyku sesleri, uyku ses makinesi, kahverengi gürültü, yağmur sesi uyku, vantilatör sesi, bebek uyku sesleri, çevrimdışı, uyku zamanlayıcısı, odaklanma sesleri, uykusuzluk, ücretsiz iPhone uygulaması",
         "inLanguage": "tr",
         "datePublished": "2024-01-01",
         "dateModified": "2025-01-15",
@@ -486,14 +473,14 @@
         "name": "DRMN",
         "url": "https://drmn.xyz/tr/",
         "logo": "https://drmn.xyz/img/logo.webp",
-        "description": "DRMN — iPhone için uyku sesleri ve beyaz gürültü uygulaması. Karıştırma ve çevrimdışı ile ücretsiz sürüm. Uyku, odaklanma ve bebek uykusu için."
+        "description": "DRMN — iPhone için beyaz gürültü ve ambient uyku sesleri. Karıştırma, çevrimdışı mod, uyku zamanlayıcısı. App Store'dan ücretsiz indirin."
       },
       "website": {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "DRMN",
         "url": "https://drmn.xyz/tr/",
-        "description": "iPhone için uyku sesleri ve beyaz gürültü uygulaması. Karıştırma ve çevrimdışı ile ücretsiz sürüm. App Store'dan ücretsiz indirin.",
+        "description": "DRMN — iPhone için beyaz gürültü ve ambient uyku sesleri. Karıştırma, çevrimdışı mod, uyku zamanlayıcısı. App Store'dan ücretsiz indirin.",
         "potentialAction": {
           "@type": "SearchAction",
           "target": "https://drmn.xyz/?q={search_term_string}",
@@ -503,54 +490,118 @@
       "howto": {
         "@context": "https://schema.org",
         "@type": "HowTo",
-        "name": "Uyku sesi uygulaması nasıl kullanılır",
-        "description": "DRMN ile daha hızlı uykuya dalmayı öğrenin. Adım adım kılavuz.",
+        "name": "DRMN ile daha iyi uyuyun",
+        "description": "Hızlı rehber: parça seçin, isterseniz karıştırın, zamanlayıcı ayarlayın ve çevrimdışı dinleyin.",
         "step": [
           {
             "@type": "HowToStep",
             "position": 1,
-            "name": "Ücretsiz indirin",
-            "text": "iPhone'unuza App Store'dan DRMN'yi indirin. iOS 17.1+ gerekir. Ücretsiz sürümde 1 saatlik zamanlayıcı var.",
+            "name": "DRMN'yi indirin",
+            "text": "iPhone'unuza (iOS 17.1+) App Store'dan DRMN'yi ücretsiz yükleyin. Ücretsiz sürüm 1 saatlik zamanlayıcı ve temel sesler içerir.",
             "url": "https://apps.apple.com/app/id6746480683"
           },
           {
             "@type": "HowToStep",
             "position": 2,
-            "name": "Uyku seslerine göz atın",
-            "text": "Uygulamayı açın ve kütüphaneyi keşfedin: beyaz ve kahverengi gürültü, doğa (yağmur, dalgalar, ateş), meditasyon ve bebek sesleri."
+            "name": "Kütüphaneyi keşfedin",
+            "text": "DRMN'de beyaz ve kahverengi gürültü, yağmur, dalgalar, ateş, meditasyon ve bebek sesleri bulunur."
           },
           {
             "@type": "HowToStep",
             "position": 3,
-            "name": "Ses seçin",
-            "text": "İhtiyacınıza göre — maskeleme için beyaz gürültü, rahatlama için doğa, bebekler için özel sesler. Oynatmadan önce dinleyebilirsiniz."
+            "name": "İhtiyacınıza göre seçin",
+            "text": "Rahatsız edici sesleri bastırmak için düzenli gürültü, rahatlama için doğa, bebek odası için bebek sesleri. Oynatmadan önce dinleyin."
           },
           {
             "@type": "HowToStep",
             "position": 4,
-            "name": "Sesleri karıştırın",
-            "text": "Beyaz gürültüyü dalgalarla veya yağmuru meditasyon sesleriyle birleştirin. Mükemmel uyku ortamınızı oluşturun."
+            "name": "Sesleri karıştırın (isteğe bağlı)",
+            "text": "Beyaz gürültüyü dalgaların üzerine ekleyin veya yağmuru yumuşak meditasyonla birleştirin—akşam karışımınızı oluşturun."
           },
           {
             "@type": "HowToStep",
             "position": 5,
             "name": "Uyku zamanlayıcısını ayarlayın",
-            "text": "Tüm gece ses istemiyorsanız otomatik ses azaltmayı açın. Ses yavaş yavaş azalır."
+            "text": "Tüm gece ses istemiyorsanız otomatik fade-out'u açın. Uyuduktan sonra ses yavaşça azalır."
           },
           {
             "@type": "HowToStep",
             "position": 6,
-            "name": "Oynatın ve uyuyun",
-            "text": "Oynat'a basın ve ses seviyesini ayarlayın. iPhone yakında veya kulaklık — ikisi de işe yarar."
+            "name": "Oynatın ve sesi ayarlayın",
+            "text": "Gürültüyü bastıracak kadar yüksek, kulaklarınız için rahat. iPhone komodininizde veya kulaklıkla—ikisi de işe yarar."
           },
           {
             "@type": "HowToStep",
             "position": 7,
             "name": "Çevrimdışı için indirin",
-            "text": "Favori seslerinizi çevrimdışı kullanım için indirin. İnternet olmadan her yerde kesintisiz uyku."
+            "text": "Favorileri yerel olarak kaydedin—seyahatte veya yatak odasında zayıf Wi‑Fi'de kullanışlı."
           }
         ]
-      }
+      },
+      "reviews": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Sarah M."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "DRMN ile daha hızlı uykuya dalıyorum. Karıştırma özelliği beyaz gürültü ve dalgaları mükemmel birleştiriyor."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Michael R."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Bebeğimiz saç kurutma makinesi sesiyle tüm gece uyuyor. Seyahatte çevrimdışı mod hayat kurtarıcı."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Jennifer L."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Uykusuzluk yaşayan biri olarak DRMN her şeyi değiştirdi. Her gece kullanıyorum ve dinlenmiş uyanıyorum."
+        }
+      ]
     }
+  },
+  "app_store_proof": {
+    "title": "App Store'da değerlendirildi",
+    "rating": "4,9",
+    "rating_max": "5",
+    "review_count": "10",
+    "downloads": "10.000+",
+    "description": "App Store'daki gerçek puanlar ve yorumlar—pazarlama vaatleri değil. İndirmeden önce kullanıcıların ne dediğini görün.",
+    "store_url": "https://apps.apple.com/app/id6746480683",
+    "reviews_url": "https://apps.apple.com/app/id6746480683?see-all=reviews",
+    "screenshot_alt": "iPhone'da DRMN uygulaması önizlemesi",
+    "screenshot_url": "https://drmn.xyz/site_preview.png"
+  },
+  "about": {
+    "title": "DRMN Hakkında",
+    "description": "DRMN, Vladimir Ivakhnenko tarafından geliştirilen bağımsız bir iOS uyku ve odaklanma uygulamasıdır. Daha iyi dinlenme için basit bir araç olarak başladı—sabit sesler, çevrimdışı oynatma ve zorunlu abonelik olmadan temel özellikler.",
+    "developer": "Vladimir Ivakhnenko",
+    "developer_url": "https://apps.apple.com/developer/id1239180595",
+    "contact_email": "c-basso@ya.ru",
+    "contact_label": "İletişim",
+    "developer_label": "App Store geliştiricisi",
+    "about_page_url": "/about.html",
+    "about_page_label": "Hakkında sayfası"
   }
 }

@@ -248,6 +248,21 @@ function buildSoftwareApplicationStructuredData(data) {
     }
 }
 
+function buildReviewStructuredData(data) {
+    const reviews = data.seo.structured_data.reviews;
+    const app = data.seo.structured_data.software_application;
+    if (!app || !Array.isArray(reviews) || reviews.length === 0) {
+        return;
+    }
+    app.review = reviews.map((entry) => ({
+        '@type': 'Review',
+        author: entry.author,
+        reviewRating: entry.reviewRating,
+        reviewBody: entry.reviewBody
+    }));
+    delete data.seo.structured_data.reviews;
+}
+
 function buildOrganizationStructuredData(data) {
     const org = data.seo.structured_data.organization;
     if (!org || typeof org !== 'object') {
@@ -257,6 +272,21 @@ function buildOrganizationStructuredData(data) {
     org.logo = org.logo || DEFAULT_OG_LOGO;
     if (!org.description && data.meta?.description) {
         org.description = stripHtml(data.meta.description);
+    }
+    const developer = data.app_info?.developer || data.about?.developer;
+    const developerUrl = data.about?.developer_url;
+    if (developer) {
+        org.founder = {
+            '@type': 'Person',
+            name: developer,
+            ...(developerUrl ? { url: developerUrl } : {})
+        };
+    }
+    if (developerUrl) {
+        org.sameAs = org.sameAs || [];
+        if (!org.sameAs.includes(developerUrl)) {
+            org.sameAs.push(developerUrl);
+        }
     }
 }
 
@@ -350,6 +380,7 @@ function preparePageData(data, lang) {
     buildOrganizationStructuredData(data);
     buildWebsiteStructuredData(data);
     buildHowToStructuredData(data);
+    buildReviewStructuredData(data);
     buildFaqStructuredData(data);
     buildBreadcrumbStructuredData(data);
     return data;

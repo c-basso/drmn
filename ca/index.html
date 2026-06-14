@@ -1,4 +1,4 @@
-<!-- Version: 1781428169148 -->
+<!-- Version: 1781450507318 -->
 <!DOCTYPE html>
 <html lang="ca" dir="ltr">
 
@@ -663,6 +663,138 @@
       font-weight: 600;
     }
 
+    /* Sound category sections (H2 per category) */
+    .sound-section {
+      padding: 3.5rem 0;
+      background: var(--color-bg-primary);
+    }
+
+    .sound-section:nth-child(even) {
+      background: var(--color-bg-secondary);
+    }
+
+    .sound-section h2 {
+      color: var(--color-text-primary);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .sound-section-icon {
+      font-size: 1.75rem;
+      line-height: 1;
+    }
+
+    .sound-section p {
+      color: var(--color-text-secondary);
+      line-height: 1.8;
+      max-width: 720px;
+    }
+
+    /* App Store proof / E-E-A-T */
+    .app-store-proof {
+      padding: 4rem 0;
+      background: var(--color-bg-secondary);
+    }
+
+    .app-store-proof-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    .app-store-proof h2 {
+      color: var(--color-text-primary);
+      margin-bottom: 1rem;
+    }
+
+    .app-store-proof p {
+      color: var(--color-text-secondary);
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+
+    .app-store-rating {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+
+    .app-store-rating-value {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--color-accent);
+      line-height: 1;
+    }
+
+    .app-store-rating-meta {
+      color: var(--color-text-secondary);
+      font-size: 0.95rem;
+    }
+
+    .app-store-links a {
+      color: var(--color-accent-light);
+      text-decoration: none;
+      margin-right: 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    .app-store-links a:hover {
+      text-decoration: underline;
+    }
+
+    .app-store-screenshot {
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid rgba(107, 127, 215, 0.15);
+    }
+
+    .app-store-screenshot img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* About / developer E-E-A-T */
+    .about-section {
+      padding: 4rem 0;
+      background: var(--color-bg-primary);
+    }
+
+    .about-section h2 {
+      color: var(--color-text-primary);
+      margin-bottom: 1rem;
+    }
+
+    .about-section p {
+      color: var(--color-text-secondary);
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+
+    .about-meta {
+      margin-top: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem 2rem;
+    }
+
+    .about-meta a {
+      color: var(--color-accent-light);
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .about-meta a:hover {
+      text-decoration: underline;
+    }
+
     /* Comparison Section */
     .comparison-section {
       padding: 5rem 0;
@@ -883,6 +1015,10 @@
         min-width: 600px;
       }
 
+      .app-store-proof-inner {
+        grid-template-columns: 1fr;
+      }
+
       .footer-links {
         flex-direction: column;
         gap: 1rem;
@@ -937,18 +1073,18 @@
 <body>
   <header role="banner">
     <div class="container">
-      <a href="https://apps.apple.com/app/id6746480683" class="header-link" aria-label="Descarrega l'app gratuïta de sons per dormir des de l'App Store" rel="noopener noreferrer">
+      <a href="https://apps.apple.com/app/id6746480683" class="header-link" aria-label="Descarrega DRMN gratis des de l'App Store" rel="noopener noreferrer">
         <div class="header-content">
           <div class="app-logo">
             <img src="/img/logo.webp" alt="Logotip de l'app DRMN màquina de soroll per dormir per a iPhone" width="120" height="120" loading="eager" decoding="async">
           </div>
-          <h1>App de màquina de soroll per dormir per a iPhone</h1>
-          <p class="tagline">Adorm-te més ràpid amb els millors sons per dormir. DRMN és una app amb pluja, ventilador, soroll blanc i sons de la natura — mix, reproducció offline i estalvi de bateria tota la nit.</p>
+          <h1>Soroll blanc i sons per dormir per a iPhone</h1>
+          <p class="tagline">Adorm-te més ràpid amb so ambient estable al teu iPhone. DRMN combina pluja, ventilador, soroll blanc i marró, sons de la natura, mix, mode fora de línia i un temporitzador de son respectuós amb la bateria.</p>
           <div class="hero-cta">
             <!-- Mobile: Download button -->
             <div class="hero-cta-mobile">
               <div class="download-btn">
-                <img src="/img/download.svg" alt="Descarrega l'app de sons per dormir a l'App Store" width="200" height="60" loading="eager" decoding="async">
+                <img src="/img/download.svg" alt="Descarrega DRMN a l'App Store" width="200" height="60" loading="eager" decoding="async">
               </div>
             </div>
             <!-- Desktop: QR code -->
@@ -1010,40 +1146,72 @@
       </div>
     </section>
 
-    <!-- Popular Sleep Sounds (keyword mapping) -->
+    <!-- Sound category sections or grid -->
     
-    <section class="popular-sounds" aria-labelledby="popular-sounds-heading">
+    
+    <section class="sound-section" aria-labelledby="sound-section-heading">
+      <div class="container-narrow">
+        <h2 id="sound-section-heading"><span class="sound-section-icon" aria-hidden="true">🔊</span> Soroll blanc</h2>
+        <p>El soroll blanc constant emmascara sons sobtats—trànsit, veïns o esquerdadures—i dóna al cervell un fons previsible per relaxar-se. Prova el brunzit del ventilador o l'estàtic clàssic i fes mix amb pluja o ones.</p>
+      </div>
+    </section>
+    
+    <section class="sound-section" aria-labelledby="sound-section-heading">
+      <div class="container-narrow">
+        <h2 id="sound-section-heading"><span class="sound-section-icon" aria-hidden="true">🌊</span> Soroll marró</h2>
+        <p>El soroll marró i fosc accentua les freqüències greus. Molta gent el troba més càlid i menys estrident que el soroll blanc—bo per a un son profund o la concentració. Utilitza'l sol o sota sons de natura.</p>
+      </div>
+    </section>
+    
+    <section class="sound-section" aria-labelledby="sound-section-heading">
+      <div class="container-narrow">
+        <h2 id="sound-section-heading"><span class="sound-section-icon" aria-hidden="true">👶</span> Sons per dormir del nadó</h2>
+        <p>Pistes suaus d'assecador, aspirador o teclat imiten ritmes familiars que calmen nadons i infants petits. Els pares les fan servir a l'habitació del nadó—sense una màquina de soroll apart.</p>
+      </div>
+    </section>
+    
+    <section class="sound-section" aria-labelledby="sound-section-heading">
+      <div class="container-narrow">
+        <h2 id="sound-section-heading"><span class="sound-section-icon" aria-hidden="true">⏱️</span> Temporitzador de son</h2>
+        <p>Configura un temporitzador amb desvaneciment automàtic perquè l'àudio s'atenuï després d'adormir-te. La versió gratuïta inclou una hora—prou per a la majoria de nits; premium desbloqueja sessions més llargues.</p>
+      </div>
+    </section>
+    
+    <section class="sound-section" aria-labelledby="sound-section-heading">
+      <div class="container-narrow">
+        <h2 id="sound-section-heading"><span class="sound-section-icon" aria-hidden="true">📴</span> Màquina de soroll fora de línia</h2>
+        <p>Descarrega les teves pistes preferides una vegada i reprodueix fins a 10 hores sense Wi‑Fi ni dades mòbils. L'optimització de bateria manté la reproducció tota la nit—ideal en viatges o amb senyal feble al dormitori.</p>
+      </div>
+    </section>
+    
+    
+    
+
+    <!-- App Store proof (E-E-A-T) -->
+    
+    <section class="app-store-proof" aria-labelledby="app-store-proof-heading">
       <div class="container">
-        <h2 id="popular-sounds-heading">Sons populars per dormir</h2>
-        
-        <p class="section-intro">Busques el millor so per adormir-te? DRMN té els sons per dormir més cercats — llestos per mixar, reproduir offline i usar tota la nit a l'iPhone.</p>
-        
-        <div class="features-grid">
-          
-          <article class="feature-card">
-            <div class="feature-icon" aria-hidden="true">🌧️</div>
-            <h3>So de pluja per adormir-se</h3>
-            <p>La pluja suau emmascara sorolls sobtats i t'ajuda a adormir-te. Mixa pluja amb soroll blanc per a un son més profund.</p>
-          </article>
-          
-          <article class="feature-card">
-            <div class="feature-icon" aria-hidden="true">🌀</div>
-            <h3>So de ventilador per adormir-se</h3>
-            <p>El brunzit constant del ventilador atenua el trànsit, els roncs i els veïns — un so clàssic per dormir en què confien milions.</p>
-          </article>
-          
-          <article class="feature-card">
-            <div class="feature-icon" aria-hidden="true">🔊</div>
-            <h3>Soroll blanc per adormir-se</h3>
-            <p>El soroll blanc, marró i fosc creen una capa de fons estable que senyala al cervell que és hora de descansar.</p>
-          </article>
-          
-          <article class="feature-card">
-            <div class="feature-icon" aria-hidden="true">🌊</div>
-            <h3>Sons de la natura per adormir-se</h3>
-            <p>Ones, foc i ocells del matí complementen la biblioteca — mixa'ls en qualsevol moment amb pluja o ventilador.</p>
-          </article>
-          
+        <div class="app-store-proof-inner">
+          <div>
+            <h2 id="app-store-proof-heading">Valorada a l'App Store</h2>
+            <p>Valoracions i ressenyes reals de l'App Store—no promeses de màrqueting. Llegeix què diuen els usuaris abans de descarregar l'app.</p>
+            <div class="app-store-rating">
+              <div class="app-store-rating-value">4,9<span style="font-size:1.25rem;color:var(--color-text-muted)">/5</span></div>
+              <div class="app-store-rating-meta">
+                <div>10 App Store reviews</div>
+                <div>10 000+ downloads</div>
+              </div>
+            </div>
+            <div class="app-store-links">
+              <a href="https://apps.apple.com/app/id6746480683" rel="noopener noreferrer">View on App Store</a>
+              <a href="https://apps.apple.com/app/id6746480683?see-all=reviews" rel="noopener noreferrer">Read all reviews</a>
+            </div>
+          </div>
+          <div class="app-store-screenshot">
+            <a href="https://apps.apple.com/app/id6746480683" rel="noopener noreferrer">
+              <img src="https://drmn.xyz/site_preview.png" alt="Previsualització de l'app DRMN a l'iPhone" width="600" height="315" loading="lazy" decoding="async">
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -1362,125 +1530,90 @@
     <!-- FAQ Section for SEO -->
     <section class="content-section" aria-labelledby="faq-heading">
       <div class="container-narrow">
-        <h2 id="faq-heading">FAQ: màquina de soroll per dormir, sons per dormir i soroll blanc</h2>
+        <h2 id="faq-heading">Preguntes freqüents</h2>
         <div style="margin-top: 2rem;">
           
           <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Quin so és el millor per adormir-se?</h3>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Quin so és el millor per dormir?</h3>
             <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">Depèn de tu — molts trien pluja, ventilador o soroll blanc constant. A DRMN pots preescoltar i mixar sons per trobar el que t'ajuda a adormir-te més ràpid.</p>
+              <p style="color: var(--color-text-secondary); line-height: 1.8;">Depèn del que et calmi. Molta gent tria pluja, el brunzit constant del ventilador o soroll blanc neutre. A DRMN pots escoltar i fer mix de pistes per trobar el que t'ajuda a adormir-te més ràpid.</p>
             </div>
           </div>
           
           <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
             <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Què és una màquina de soroll per dormir?</h3>
             <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">Reprodueix un fons constant — pluja, ventilador o soroll blanc — per emmascarar soroll i ajudar-te a dormir. DRMN és una app per a iPhone amb mix, reproducció offline i temporitzador de son, com una màquina física.</p>
+              <p style="color: var(--color-text-secondary); line-height: 1.8;">Reprodueix un fons constant—pluja, ventilador o soroll blanc—que emmascara sorolls i ajuda a dormir. DRMN funciona com una màquina portàtil a l'iPhone amb mix, mode fora de línia i temporitzador integrat.</p>
             </div>
           </div>
           
           <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Millor app de soroll blanc per a iPhone?</h3>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">És DRMN una bona app de soroll blanc per a iPhone?</h3>
             <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">DRMN té valoració 4,9 i més de 10.000 descàrregues. Pluja, ventilador, soroll blanc i 100 hores de sons per dormir i natura — els usuaris s'adormen un 30–50 % més ràpid.</p>
+              <p style="color: var(--color-text-secondary); line-height: 1.8;">DRMN té 4,9 estrelles a l'App Store i més de 10.000 descàrregues. Inclou pluja, ventilador, soroll blanc i marró, a més de més de 100 hores d'àudio ambiental i de natura. Molts usuaris s'adormen un 30–50 % més ràpid quan el soroll de fons els molesta.</p>
             </div>
           </div>
           
           <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Hi ha una app gratuïta de soroll blanc?</h3>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Hi ha una app gratuïta de soroll blanc per a iPhone?</h3>
             <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">Sí! DRMN és gratuïta a l'App Store. La versió gratuïta inclou temporitzador d'1 hora, offline, mix i sons per dormir. Premium desbloqueja reproducció més llarga.</p>
+              <p style="color: var(--color-text-secondary); line-height: 1.8;">Sí. DRMN es descarrega gratis a l'App Store. La versió gratuïta inclou temporitzador d'una hora, fora de línia, mix i sons bàsics per dormir. Premium desbloqueja sessions més llargues i pistes addicionals—no cal subscripció per provar l'essencial.</p>
             </div>
           </div>
           
           <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Quins sons té l'app per dormir?</h3>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Quins sons inclou?</h3>
             <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">DRMN ofereix més de 100 hores d'àudio professional: soroll blanc, marró i fosc, pluja, ones, foc, ocells del matí, meditació i sons per a nadons (assecador, aspiradora, teclat).</p>
+              <p style="color: var(--color-text-secondary); line-height: 1.8;">Soroll blanc, marró i fosc; natura com pluja, ones, foc i ocells del matí; meditació i concentració; sons per nadons com assecador, aspirador i teclat. Pots fer mix de qualsevol combinació.</p>
             </div>
           </div>
           
           <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">L'app funciona offline?</h3>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">DRMN funciona fora de línia?</h3>
             <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">Sí! Després de descarregar els sons, DRMN funciona completament offline. Amb optimització de bateria — fins a 10 hores sense internet.</p>
+              <p style="color: var(--color-text-secondary); line-height: 1.8;">Sí. Després de descarregar les pistes, l'app reprodueix sense internet. L'optimització de bateria permet fins a 10 hores de reproducció contínua—prou per viatjar o tota la nit.</p>
             </div>
           </div>
           
           <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Millor app per al son del nadó?</h3>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Quins sons són adequats per al son del nadó?</h3>
             <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">DRMN inclou sons especials per a nadons (assecador, aspiradora, teclat) que ajuden a adormir-se més ràpid. Ritmes coneguts els calmen i creen un entorn tranquil.</p>
+              <p style="color: var(--color-text-secondary); line-height: 1.8;">Molts pares fan servir sons constants i familiars—assecador, aspirador o soroll blanc suau. DRMN inclou pistes per nadons que calmen els més petits sense un dispositiu apart a l'habitació.</p>
             </div>
           </div>
           
           <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Com funciona una app de màquina de soroll?</h3>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Puc fer mix de diferents sons?</h3>
             <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">DRMN ofereix soroll blanc i sons per dormir per a calma i focus. Emmascara soroll, crea un entorn de son estable i fomenta un son més profund — com una màquina física.</p>
+              <p style="color: var(--color-text-secondary); line-height: 1.8;">Sí. Combina soroll blanc amb ones, pluja amb meditació o la parella que vulguis. El mix està inclòs a la versió gratuïta.</p>
             </div>
           </div>
           
           <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Puc mixar sons?</h3>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">DRMN té temporitzador de son?</h3>
             <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">Sí! Combina soroll blanc amb ones o pluja amb meditació. Crea la teva pròpia experiència de son.</p>
+              <p style="color: var(--color-text-secondary); line-height: 1.8;">Sí. Configura un temporitzador amb desvaneciment automàtic perquè l'àudio s'atenuï després d'adormir-te. La versió gratuïta inclou una hora; premium afegeix opcions més llargues.</p>
             </div>
           </div>
           
           <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">L'app té temporitzador de son?</h3>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">DRMN pot ajudar amb l'insomni?</h3>
             <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">Sí! Temporitzador amb esvaïment automàtic. Configura'l — el so s'esvaeix gradualment després d'adormir-te.</p>
+              <p style="color: var(--color-text-secondary); line-height: 1.8;">Un fons constant pot emmascarar trànsit, veïns i altres molèsties que desperten qui dorm lleuger. Persones amb insomni sovint escolten soroll blanc o marró cada nit; moltes informen d'adormir-se més ràpid, però els resultats varien.</p>
             </div>
           </div>
           
           <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Què és el soroll blanc per dormir i com ajuda?</h3>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">En què es diferencia DRMN de Calm o Headspace?</h3>
             <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">So constant que emmascara soroll molest i t'ajuda a adormir-te més ràpid. DRMN atenua trànsit, veïns i altres sons per a un entorn de son estable.</p>
+              <p style="color: var(--color-text-secondary); line-height: 1.8;">Calm i Headspace se centren en meditació guiada i subscripcions de benestar. DRMN està construïda al voltant del so ambient—una màquina de soroll a la butxaca—amb versió gratuïta generosa (temporitzador d'una hora, fora de línia, mix) i sense cursos de meditació. BetterSleep i apps similars sovint reserven funcions per a subscriptors; amb DRMN pots provar els sons bàsics gratis.</p>
             </div>
           </div>
           
           <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">És adequat per a insomni?</h3>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Qui ha creat DRMN?</h3>
             <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">Sí! DRMN té 4,9 i més de 10.000 descàrregues. Emmascarant el soroll, els usuaris s'adormen de mitjana un 30–50 % més ràpid. Descarrega gratis.</p>
-            </div>
-          </div>
-          
-          <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Quantes descàrregues té DRMN?</h3>
-            <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">Més de 10.000 a l'App Store, 4,9/5 de 10 ressenyes. 100 hores de sons i fins a 10 hores offline en una càrrega.</p>
-            </div>
-          </div>
-          
-          <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Quina és la valoració de DRMN a l'App Store?</h3>
-            <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">4,9/5 basat en 10 ressenyes. Més de 10.000 descàrregues, 100 hores de sons per dormir i reproducció offline.</p>
-            </div>
-          </div>
-          
-          <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">En què es diferencia DRMN d'altres apps?</h3>
-            <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">DRMN destaca per una versió gratuïta generosa (temporitzador d'1 hora), mix avançat, sons per a nadons i optimització de bateria — offline i sons professionals sense subscripció.</p>
-            </div>
-          </div>
-          
-          <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Què fa DRMN únic entre alternatives gratuïtes?</h3>
-            <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">Versió gratuïta amb temporitzador d'1 hora sense subscripció. Mentre altres limiten sons o demanen compres, DRMN ofereix mix, offline i bateria gratis — més sons per a nadons que moltes no tenen.</p>
-            </div>
-          </div>
-          
-          <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">DRMN és millor que altres apps de sons per dormir?</h3>
-            <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">Versió gratuïta: temporitzador, mix, offline, bateria sense subscripció. 4,9, més de 10.000 descàrregues, adormir-se un 30–50 % més ràpid. Sons per a nadons i temporitzador intel·ligent gratis — funcions per les quals altres cobren.</p>
+              <p style="color: var(--color-text-secondary); line-height: 1.8;">DRMN la va desenvolupar Vladimir Ivakhnenko, desenvolupador iOS independent. A l'App Store té 4,9 estrelles en 10 ressenyes i més de 10.000 descàrregues. Contacte: c-basso@ya.ru.</p>
             </div>
           </div>
           
@@ -1488,15 +1621,30 @@
       </div>
     </section>
 
+    <!-- About / developer (E-E-A-T) -->
+    
+    <section class="about-section" aria-labelledby="about-heading">
+      <div class="container-narrow">
+        <h2 id="about-heading">Sobre DRMN</h2>
+        <p>DRMN és una app iOS independent per al son i la concentració, creada per Vladimir Ivakhnenko. Va començar com una eina senzilla per descansar millor—sons estables, reproducció fora de línia i funcions bàsiques sense subscripció obligatòria.</p>
+        <div class="about-meta">
+          <a href="https://apps.apple.com/developer/id1239180595" rel="noopener noreferrer">Desenvolupador a l'App Store: Vladimir Ivakhnenko</a>
+          <a href="mailto:c-basso@ya.ru">Contacte: c-basso@ya.ru</a>
+          <a href="/about.html">Pàgina Sobre</a>
+        </div>
+      </div>
+    </section>
+    
+
     <!-- CTA Section -->
     <section class="cta-section" aria-labelledby="cta-heading">
       <div class="container">
         <div class="cta-content">
           <h2 id="cta-heading">Preparat per dormir millor aquesta nit?</h2>
-          <p>Uneix-te a més de 10.000 usuaris que han millorat el son amb DRMN. 4,9/5 a l'App Store — app gratuïta de sons per dormir que t'ajuda a adormir-te un 30–50 % més ràpid. Versió gratuïta: temporitzador d'1 hora, offline i mix. Descarrega avui i prova sons professionals gratis.</p>
+          <p>Més de 10.000 persones utilitzen DRMN per relaxar-se i adormir-se més ràpid. Valorada 4,9/5 a l'App Store, amb versió gratuïta que inclou temporitzador d'una hora, fora de línia i mix. Descarrega i troba els sons que et funcionen.</p>
           <div class="hero-cta">
-            <a href="https://apps.apple.com/app/id6746480683" class="download-btn" aria-label="Descarrega l'app gratuïta de sons per dormir des de l'App Store" rel="noopener noreferrer">
-              <img src="/img/download.svg" alt="Descarrega l'app de sons per dormir a l'App Store" width="200" height="60" loading="lazy" decoding="async">
+            <a href="https://apps.apple.com/app/id6746480683" class="download-btn" aria-label="Descarrega DRMN gratis des de l'App Store" rel="noopener noreferrer">
+              <img src="/img/download.svg" alt="Descarrega DRMN a l'App Store" width="200" height="60" loading="lazy" decoding="async">
             </a>
           </div>
         </div>
@@ -1507,6 +1655,9 @@
   <footer role="contentinfo">
     <div class="container">
       <div class="footer-links">
+        
+        <a href="/about.html">Sobre l'app</a>
+        
         <a href="/blog/">Blog</a>
         <a href="/privacy.html">Política de privadesa</a>
         <a href="/terms.html">Condicions d'ús</a>
@@ -1526,23 +1677,23 @@
 
   <!-- Structured Data (JSON-LD) for SEO -->
   <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"MobileApplication","name":"DRMN","alternateName":"DRMN App per dormir","applicationCategory":"HealthApplication","operatingSystem":"iOS","offers":{"@type":"Offer","price":"0","priceCurrency":"USD","availability":"https://schema.org/InStock","url":"https://apps.apple.com/app/id6746480683"},"description":"App de sons per dormir i soroll blanc per a iPhone. Versió gratuïta amb pluja, ventilador, mix i offline. Per a son, focus i nadons.","image":{"@type":"ImageObject","url":"https://drmn.xyz/img/logo.webp","width":176,"height":176,"caption":"Logotip de l'app DRMN"},"screenshot":{"@type":"ImageObject","url":"https://drmn.xyz/img/logo.webp","width":176,"height":176},"url":"https://drmn.xyz/ca/","author":{"@type":"Person","name":"Vladimir Ivakhnenko"},"publisher":{"@type":"Person","name":"Vladimir Ivakhnenko"},"keywords":"sons per dormir, màquina de soroll per dormir, soroll blanc, app per dormir, so de pluja, so de ventilador, son offline","inLanguage":"ca","datePublished":"2024-01-01","dateModified":"2026-06-14","softwareVersion":"1.5","fileSize":"49.2MB","softwareRequirements":"Requereix iOS 17.1 o posterior","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"10"},"downloadUrl":"https://apps.apple.com/app/id6746480683"}
+    {"@context":"https://schema.org","@type":"MobileApplication","name":"DRMN","alternateName":"DRMN App per dormir","applicationCategory":"HealthApplication","operatingSystem":"iOS","offers":{"@type":"Offer","price":"0","priceCurrency":"USD","availability":"https://schema.org/InStock","url":"https://apps.apple.com/app/id6746480683"},"description":"DRMN és una app iOS freemium amb soroll blanc i marró, pluja, ventilador i sons de natura. Fes mix de pistes, reprodueix fora de línia i utilitza el temporitzador de son amb desvaneciment. Descàrrega gratuïta a l'App Store per a iPhone.","image":{"@type":"ImageObject","url":"https://drmn.xyz/img/logo.webp","width":176,"height":176,"caption":"Logotip de l'app DRMN"},"screenshot":{"@type":"ImageObject","url":"https://drmn.xyz/img/logo.webp","width":176,"height":176},"url":"https://drmn.xyz/ca/","author":{"@type":"Person","name":"Vladimir Ivakhnenko"},"publisher":{"@type":"Person","name":"Vladimir Ivakhnenko"},"keywords":"soroll blanc, sons per dormir, màquina de soroll per dormir, soroll marró, so de pluja per dormir, so de ventilador, sons per nadó, fora de línia, temporitzador de son, concentració, insomni, app gratuïta iPhone","inLanguage":"ca","datePublished":"2024-01-01","dateModified":"2026-06-14","softwareVersion":"1.5","fileSize":"49.2MB","softwareRequirements":"Requereix iOS 17.1 o posterior","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"10"},"downloadUrl":"https://apps.apple.com/app/id6746480683","review":[{"@type":"Review","author":{"@type":"Person","name":"Sarah M."},"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"reviewBody":"M'adormo més ràpid amb DRMN. La funció de mix em permet combinar soroll blanc i ones perfectament."},{"@type":"Review","author":{"@type":"Person","name":"Michael R."},"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"reviewBody":"El nostre nadó dorm tota la nit amb el so de l'assecador. El mode fora de línia ens salva en viatges."},{"@type":"Review","author":{"@type":"Person","name":"Jennifer L."},"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"reviewBody":"Amb insomni, DRMN m'ha canviat tot. L'utilitzo cada nit i em despert descansada."}]}
   </script>
   
   <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"Organization","name":"DRMN","url":"https://drmn.xyz/ca/","logo":"https://drmn.xyz/img/logo.webp","description":"DRMN — app de sons per dormir i soroll blanc per a iPhone. Versió gratuïta amb mix i offline. Per a son, focus i nadons."}
+    {"@context":"https://schema.org","@type":"Organization","name":"DRMN","url":"https://drmn.xyz/ca/","logo":"https://drmn.xyz/img/logo.webp","description":"DRMN — soroll blanc i sons ambientals per dormir per a iPhone. Mix, fora de línia, temporitzador de son. Descàrrega gratuïta a l'App Store.","founder":{"@type":"Person","name":"Vladimir Ivakhnenko","url":"https://apps.apple.com/developer/id1239180595"},"sameAs":["https://apps.apple.com/developer/id1239180595"]}
   </script>
   
   <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"WebSite","name":"DRMN","url":"https://drmn.xyz/ca/","description":"App de sons per dormir i soroll blanc per a iPhone. Versió gratuïta amb mix i offline. Descarrega gratis a l'App Store.","inLanguage":"ca"}
+    {"@context":"https://schema.org","@type":"WebSite","name":"DRMN","url":"https://drmn.xyz/ca/","description":"DRMN — soroll blanc i sons ambientals per dormir per a iPhone. Mix, fora de línia, temporitzador de son. Descàrrega gratuïta a l'App Store.","inLanguage":"ca"}
   </script>
   
   <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"HowTo","name":"Com usar una app de sons per dormir","description":"Aprèn a usar DRMN per adormir-te més ràpid. Guia pas a pas.","step":[{"@type":"HowToStep","position":1,"name":"Descarrega gratis","text":"Descarrega DRMN a l'App Store al teu iPhone. Requereix iOS 17.1+. La versió gratuïta inclou temporitzador d'1 hora.","url":"https://apps.apple.com/app/id6746480683"},{"@type":"HowToStep","position":2,"name":"Explora sons per dormir","text":"Obre l'app i explora la biblioteca: soroll blanc i marró, natura (pluja, ones, foc), meditació i sons per a nadons."},{"@type":"HowToStep","position":3,"name":"Tria sons","text":"Segons la necessitat — soroll blanc per emmascarar, natura per relaxar, sons per a nadons per als més petits. Preescolta abans de reproduir."},{"@type":"HowToStep","position":4,"name":"Mixa sons","text":"Combina soroll blanc amb ones o pluja amb meditació. Crea el teu entorn de son ideal."},{"@type":"HowToStep","position":5,"name":"Configura el temporitzador de son","text":"Activa l'esvaïment automàtic si no vols so tota la nit. El volum disminueix gradualment."},{"@type":"HowToStep","position":6,"name":"Reprodueix i dorm","text":"Prem play i ajusta el volum. iPhone a prop o auriculars — ambdós funcionen."},{"@type":"HowToStep","position":7,"name":"Descarrega per a offline","text":"Descarrega favorits per a ús offline. Son ininterromput a qualsevol lloc sense internet."}]}
+    {"@context":"https://schema.org","@type":"HowTo","name":"Utilitzar DRMN per dormir millor","description":"Guia ràpida: tria una pista, fes mix si vols, configura el temporitzador i escolta fora de línia.","step":[{"@type":"HowToStep","position":1,"name":"Descarrega DRMN","text":"Instal·la DRMN gratis des de l'App Store a l'iPhone (iOS 17.1+). La versió gratuïta inclou temporitzador d'una hora i sons bàsics.","url":"https://apps.apple.com/app/id6746480683"},{"@type":"HowToStep","position":2,"name":"Explora la biblioteca","text":"A DRMN trobaràs soroll blanc i marró, pluja, ones, foc, meditació i sons per nadons."},{"@type":"HowToStep","position":3,"name":"Tria segons la necessitat","text":"So constant per emmascarar molèsties, natura per relaxar-te, sons per nadons a l'habitació. Escolta abans de reproduir."},{"@type":"HowToStep","position":4,"name":"Fes mix de sons (opcional)","text":"Afegeix soroll blanc sobre ones, o pluja amb meditació suau—crea la teva barreja de vespre."},{"@type":"HowToStep","position":5,"name":"Configura el temporitzador de son","text":"Activa el desvaneciment automàtic si no vols so tota la nit. El volum baixa gradualment després d'adormir-te."},{"@type":"HowToStep","position":6,"name":"Reprodueix i ajusta el volum","text":"Prou fort per emmascarar sorolls, però còmode per a les orelles. iPhone a la tauleta de nit o auriculars—ambdós funcionen."},{"@type":"HowToStep","position":7,"name":"Descarrega per fora de línia","text":"Desa els preferits localment—útil en viatges o amb Wi‑Fi feble al dormitori."}]}
   </script>
   
   <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Quin so és el millor per adormir-se?","acceptedAnswer":{"@type":"Answer","text":"Depèn de tu — molts trien pluja, ventilador o soroll blanc constant. A DRMN pots preescoltar i mixar sons per trobar el que t'ajuda a adormir-te més ràpid."}},{"@type":"Question","name":"Què és una màquina de soroll per dormir?","acceptedAnswer":{"@type":"Answer","text":"Reprodueix un fons constant — pluja, ventilador o soroll blanc — per emmascarar soroll i ajudar-te a dormir. DRMN és una app per a iPhone amb mix, reproducció offline i temporitzador de son, com una màquina física."}},{"@type":"Question","name":"Millor app de soroll blanc per a iPhone?","acceptedAnswer":{"@type":"Answer","text":"DRMN té valoració 4,9 i més de 10.000 descàrregues. Pluja, ventilador, soroll blanc i 100 hores de sons per dormir i natura — els usuaris s'adormen un 30–50 % més ràpid."}},{"@type":"Question","name":"Hi ha una app gratuïta de soroll blanc?","acceptedAnswer":{"@type":"Answer","text":"Sí! DRMN és gratuïta a l'App Store. La versió gratuïta inclou temporitzador d'1 hora, offline, mix i sons per dormir. Premium desbloqueja reproducció més llarga."}},{"@type":"Question","name":"Quins sons té l'app per dormir?","acceptedAnswer":{"@type":"Answer","text":"DRMN ofereix més de 100 hores d'àudio professional: soroll blanc, marró i fosc, pluja, ones, foc, ocells del matí, meditació i sons per a nadons (assecador, aspiradora, teclat)."}},{"@type":"Question","name":"L'app funciona offline?","acceptedAnswer":{"@type":"Answer","text":"Sí! Després de descarregar els sons, DRMN funciona completament offline. Amb optimització de bateria — fins a 10 hores sense internet."}},{"@type":"Question","name":"Millor app per al son del nadó?","acceptedAnswer":{"@type":"Answer","text":"DRMN inclou sons especials per a nadons (assecador, aspiradora, teclat) que ajuden a adormir-se més ràpid. Ritmes coneguts els calmen i creen un entorn tranquil."}},{"@type":"Question","name":"Com funciona una app de màquina de soroll?","acceptedAnswer":{"@type":"Answer","text":"DRMN ofereix soroll blanc i sons per dormir per a calma i focus. Emmascara soroll, crea un entorn de son estable i fomenta un son més profund — com una màquina física."}},{"@type":"Question","name":"Puc mixar sons?","acceptedAnswer":{"@type":"Answer","text":"Sí! Combina soroll blanc amb ones o pluja amb meditació. Crea la teva pròpia experiència de son."}},{"@type":"Question","name":"L'app té temporitzador de son?","acceptedAnswer":{"@type":"Answer","text":"Sí! Temporitzador amb esvaïment automàtic. Configura'l — el so s'esvaeix gradualment després d'adormir-te."}},{"@type":"Question","name":"Què és el soroll blanc per dormir i com ajuda?","acceptedAnswer":{"@type":"Answer","text":"So constant que emmascara soroll molest i t'ajuda a adormir-te més ràpid. DRMN atenua trànsit, veïns i altres sons per a un entorn de son estable."}},{"@type":"Question","name":"És adequat per a insomni?","acceptedAnswer":{"@type":"Answer","text":"Sí! DRMN té 4,9 i més de 10.000 descàrregues. Emmascarant el soroll, els usuaris s'adormen de mitjana un 30–50 % més ràpid. Descarrega gratis."}},{"@type":"Question","name":"Quantes descàrregues té DRMN?","acceptedAnswer":{"@type":"Answer","text":"Més de 10.000 a l'App Store, 4,9/5 de 10 ressenyes. 100 hores de sons i fins a 10 hores offline en una càrrega."}},{"@type":"Question","name":"Quina és la valoració de DRMN a l'App Store?","acceptedAnswer":{"@type":"Answer","text":"4,9/5 basat en 10 ressenyes. Més de 10.000 descàrregues, 100 hores de sons per dormir i reproducció offline."}},{"@type":"Question","name":"En què es diferencia DRMN d'altres apps?","acceptedAnswer":{"@type":"Answer","text":"DRMN destaca per una versió gratuïta generosa (temporitzador d'1 hora), mix avançat, sons per a nadons i optimització de bateria — offline i sons professionals sense subscripció."}},{"@type":"Question","name":"Què fa DRMN únic entre alternatives gratuïtes?","acceptedAnswer":{"@type":"Answer","text":"Versió gratuïta amb temporitzador d'1 hora sense subscripció. Mentre altres limiten sons o demanen compres, DRMN ofereix mix, offline i bateria gratis — més sons per a nadons que moltes no tenen."}},{"@type":"Question","name":"DRMN és millor que altres apps de sons per dormir?","acceptedAnswer":{"@type":"Answer","text":"Versió gratuïta: temporitzador, mix, offline, bateria sense subscripció. 4,9, més de 10.000 descàrregues, adormir-se un 30–50 % més ràpid. Sons per a nadons i temporitzador intel·ligent gratis — funcions per les quals altres cobren."}}]}
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Quin so és el millor per dormir?","acceptedAnswer":{"@type":"Answer","text":"Depèn del que et calmi. Molta gent tria pluja, el brunzit constant del ventilador o soroll blanc neutre. A DRMN pots escoltar i fer mix de pistes per trobar el que t'ajuda a adormir-te més ràpid."}},{"@type":"Question","name":"Què és una màquina de soroll per dormir?","acceptedAnswer":{"@type":"Answer","text":"Reprodueix un fons constant—pluja, ventilador o soroll blanc—que emmascara sorolls i ajuda a dormir. DRMN funciona com una màquina portàtil a l'iPhone amb mix, mode fora de línia i temporitzador integrat."}},{"@type":"Question","name":"És DRMN una bona app de soroll blanc per a iPhone?","acceptedAnswer":{"@type":"Answer","text":"DRMN té 4,9 estrelles a l'App Store i més de 10.000 descàrregues. Inclou pluja, ventilador, soroll blanc i marró, a més de més de 100 hores d'àudio ambiental i de natura. Molts usuaris s'adormen un 30–50 % més ràpid quan el soroll de fons els molesta."}},{"@type":"Question","name":"Hi ha una app gratuïta de soroll blanc per a iPhone?","acceptedAnswer":{"@type":"Answer","text":"Sí. DRMN es descarrega gratis a l'App Store. La versió gratuïta inclou temporitzador d'una hora, fora de línia, mix i sons bàsics per dormir. Premium desbloqueja sessions més llargues i pistes addicionals—no cal subscripció per provar l'essencial."}},{"@type":"Question","name":"Quins sons inclou?","acceptedAnswer":{"@type":"Answer","text":"Soroll blanc, marró i fosc; natura com pluja, ones, foc i ocells del matí; meditació i concentració; sons per nadons com assecador, aspirador i teclat. Pots fer mix de qualsevol combinació."}},{"@type":"Question","name":"DRMN funciona fora de línia?","acceptedAnswer":{"@type":"Answer","text":"Sí. Després de descarregar les pistes, l'app reprodueix sense internet. L'optimització de bateria permet fins a 10 hores de reproducció contínua—prou per viatjar o tota la nit."}},{"@type":"Question","name":"Quins sons són adequats per al son del nadó?","acceptedAnswer":{"@type":"Answer","text":"Molts pares fan servir sons constants i familiars—assecador, aspirador o soroll blanc suau. DRMN inclou pistes per nadons que calmen els més petits sense un dispositiu apart a l'habitació."}},{"@type":"Question","name":"Puc fer mix de diferents sons?","acceptedAnswer":{"@type":"Answer","text":"Sí. Combina soroll blanc amb ones, pluja amb meditació o la parella que vulguis. El mix està inclòs a la versió gratuïta."}},{"@type":"Question","name":"DRMN té temporitzador de son?","acceptedAnswer":{"@type":"Answer","text":"Sí. Configura un temporitzador amb desvaneciment automàtic perquè l'àudio s'atenuï després d'adormir-te. La versió gratuïta inclou una hora; premium afegeix opcions més llargues."}},{"@type":"Question","name":"DRMN pot ajudar amb l'insomni?","acceptedAnswer":{"@type":"Answer","text":"Un fons constant pot emmascarar trànsit, veïns i altres molèsties que desperten qui dorm lleuger. Persones amb insomni sovint escolten soroll blanc o marró cada nit; moltes informen d'adormir-se més ràpid, però els resultats varien."}},{"@type":"Question","name":"En què es diferencia DRMN de Calm o Headspace?","acceptedAnswer":{"@type":"Answer","text":"Calm i Headspace se centren en meditació guiada i subscripcions de benestar. DRMN està construïda al voltant del so ambient—una màquina de soroll a la butxaca—amb versió gratuïta generosa (temporitzador d'una hora, fora de línia, mix) i sense cursos de meditació. BetterSleep i apps similars sovint reserven funcions per a subscriptors; amb DRMN pots provar els sons bàsics gratis."}},{"@type":"Question","name":"Qui ha creat DRMN?","acceptedAnswer":{"@type":"Answer","text":"DRMN la va desenvolupar Vladimir Ivakhnenko, desenvolupador iOS independent. A l'App Store té 4,9 estrelles en 10 ressenyes i més de 10.000 descàrregues. Contacte: c-basso@ya.ru."}}]}
   </script>
   
   <!-- BreadcrumbList Schema -->

@@ -597,6 +597,138 @@
       font-weight: 600;
     }
 
+    /* Sound category sections (H2 per category) */
+    .sound-section {
+      padding: 3.5rem 0;
+      background: var(--color-bg-primary);
+    }
+
+    .sound-section:nth-child(even) {
+      background: var(--color-bg-secondary);
+    }
+
+    .sound-section h2 {
+      color: var(--color-text-primary);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .sound-section-icon {
+      font-size: 1.75rem;
+      line-height: 1;
+    }
+
+    .sound-section p {
+      color: var(--color-text-secondary);
+      line-height: 1.8;
+      max-width: 720px;
+    }
+
+    /* App Store proof / E-E-A-T */
+    .app-store-proof {
+      padding: 4rem 0;
+      background: var(--color-bg-secondary);
+    }
+
+    .app-store-proof-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    .app-store-proof h2 {
+      color: var(--color-text-primary);
+      margin-bottom: 1rem;
+    }
+
+    .app-store-proof p {
+      color: var(--color-text-secondary);
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+
+    .app-store-rating {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+
+    .app-store-rating-value {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--color-accent);
+      line-height: 1;
+    }
+
+    .app-store-rating-meta {
+      color: var(--color-text-secondary);
+      font-size: 0.95rem;
+    }
+
+    .app-store-links a {
+      color: var(--color-accent-light);
+      text-decoration: none;
+      margin-right: 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    .app-store-links a:hover {
+      text-decoration: underline;
+    }
+
+    .app-store-screenshot {
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid rgba(107, 127, 215, 0.15);
+    }
+
+    .app-store-screenshot img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* About / developer E-E-A-T */
+    .about-section {
+      padding: 4rem 0;
+      background: var(--color-bg-primary);
+    }
+
+    .about-section h2 {
+      color: var(--color-text-primary);
+      margin-bottom: 1rem;
+    }
+
+    .about-section p {
+      color: var(--color-text-secondary);
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+
+    .about-meta {
+      margin-top: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem 2rem;
+    }
+
+    .about-meta a {
+      color: var(--color-accent-light);
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .about-meta a:hover {
+      text-decoration: underline;
+    }
+
     /* Comparison Section */
     .comparison-section {
       padding: 5rem 0;
@@ -817,6 +949,10 @@
         min-width: 600px;
       }
 
+      .app-store-proof-inner {
+        grid-template-columns: 1fr;
+      }
+
       .footer-links {
         flex-direction: column;
         gap: 1rem;
@@ -926,14 +1062,22 @@
       </div>
     </section>
 
-    <!-- Popular Sleep Sounds (keyword mapping) -->
+    <!-- Sound category sections or grid -->
+    {{#if popular_sounds.sections_layout}}
+    {{#each popular_sounds.items as |sound|}}
+    <section class="sound-section" aria-labelledby="sound-section-heading">
+      <div class="container-narrow">
+        <h2 id="sound-section-heading"><span class="sound-section-icon" aria-hidden="true">{{sound.icon}}</span> {{sound.title}}</h2>
+        <p>{{sound.description}}</p>
+      </div>
+    </section>
+    {{/each}}
+    {{/if}}
     {{#if popular_sounds.title}}
     <section class="popular-sounds" aria-labelledby="popular-sounds-heading">
       <div class="container">
         <h2 id="popular-sounds-heading">{{popular_sounds.title}}</h2>
-        {{#if popular_sounds.intro}}
         <p class="section-intro">{{popular_sounds.intro}}</p>
-        {{/if}}
         <div class="features-grid">
           {{#each popular_sounds.items as |sound|}}
           <article class="feature-card">
@@ -942,6 +1086,36 @@
             <p>{{sound.description}}</p>
           </article>
           {{/each}}
+        </div>
+      </div>
+    </section>
+    {{/if}}
+
+    <!-- App Store proof (E-E-A-T) -->
+    {{#if app_store_proof.title}}
+    <section class="app-store-proof" aria-labelledby="app-store-proof-heading">
+      <div class="container">
+        <div class="app-store-proof-inner">
+          <div>
+            <h2 id="app-store-proof-heading">{{app_store_proof.title}}</h2>
+            <p>{{app_store_proof.description}}</p>
+            <div class="app-store-rating">
+              <div class="app-store-rating-value">{{app_store_proof.rating}}<span style="font-size:1.25rem;color:var(--color-text-muted)">/{{app_store_proof.rating_max}}</span></div>
+              <div class="app-store-rating-meta">
+                <div>{{app_store_proof.review_count}} App Store reviews</div>
+                <div>{{app_store_proof.downloads}} downloads</div>
+              </div>
+            </div>
+            <div class="app-store-links">
+              <a href="{{app_store_proof.store_url}}" rel="noopener noreferrer">View on App Store</a>
+              <a href="{{app_store_proof.reviews_url}}" rel="noopener noreferrer">Read all reviews</a>
+            </div>
+          </div>
+          <div class="app-store-screenshot">
+            <a href="{{app_store_proof.store_url}}" rel="noopener noreferrer">
+              <img src="{{app_store_proof.screenshot_url}}" alt="{{app_store_proof.screenshot_alt}}" width="600" height="315" loading="lazy" decoding="async">
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -1099,6 +1273,21 @@
       </div>
     </section>
 
+    <!-- About / developer (E-E-A-T) -->
+    {{#if about.title}}
+    <section class="about-section" aria-labelledby="about-heading">
+      <div class="container-narrow">
+        <h2 id="about-heading">{{about.title}}</h2>
+        <p>{{about.description}}</p>
+        <div class="about-meta">
+          <a href="{{about.developer_url}}" rel="noopener noreferrer">{{about.developer_label}}: {{about.developer}}</a>
+          <a href="mailto:{{about.contact_email}}">{{about.contact_label}}: {{about.contact_email}}</a>
+          <a href="{{about.about_page_url}}">{{about.about_page_label}}</a>
+        </div>
+      </div>
+    </section>
+    {{/if}}
+
     <!-- CTA Section -->
     <section class="cta-section" aria-labelledby="cta-heading">
       <div class="container">
@@ -1118,6 +1307,9 @@
   <footer role="contentinfo">
     <div class="container">
       <div class="footer-links">
+        {{#if footer.about_link}}
+        <a href="{{footer.about_url}}">{{footer.about_link}}</a>
+        {{/if}}
         <a href="{{footer.blog_url}}">{{footer.blog_link}}</a>
         <a href="{{footer.privacy_url}}">{{footer.privacy_link}}</a>
         <a href="{{footer.terms_url}}">{{footer.terms_link}}</a>

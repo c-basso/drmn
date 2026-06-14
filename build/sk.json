@@ -33,13 +33,13 @@
     "app_name_suffix": "Prístroj na Spanie",
     "logo_alt": "Logo aplikácie DRMN prístroj na spanie pre iPhone",
     "app_name": "DRMN",
-    "title": "Aplikácia prístroja na spanie pre iPhone",
-    "tagline": "Zaspávaj rýchlejšie s najlepšími spánkovými zvukmi. DRMN je aplikácia s dažďom, ventilátorom, bielym šumom a prírodnými zvukmi — mix, offline prehrávanie a šetrnosť k batérii celú noc.",
+    "title": "Biely šum a spánkové zvuky pre iPhone",
+    "tagline": "Zaspávaj rýchlejšie so stabilným ambient zvukom na iPhone. DRMN kombinuje dážď, ventilátor, biely a hnedý šum, prírodné zvuky, mix, offline režim a šetrný časovač spánku.",
     "tldr": "DRMN je bezplatná iOS aplikácia spánkových zvukov, ktorá pomáha zaspávať o 30–50 % rýchlejšie. Bezplatná verzia obsahuje dážď, ventilátor, biely šum, hodinový časovač, offline režim, mix zvukov a optimalizáciu batérie. Stiahnite zadarmo z App Store.",
     "download_text": "Stiahnuť teraz",
     "download_url": "https://apps.apple.com/app/id6746480683",
-    "download_aria_label": "Stiahnuť bezplatnú aplikáciu spánkových zvukov z App Store",
-    "download_img_alt": "Stiahnuť aplikáciu spánkových zvukov v App Store",
+    "download_aria_label": "Stiahnuť DRMN zadarmo z App Store",
+    "download_img_alt": "Stiahnuť DRMN v App Store",
     "scan_to_download": "Naskenujte na stiahnutie"
   },
   "stats": {
@@ -101,28 +101,33 @@
     ]
   },
   "popular_sounds": {
-    "title": "Obľúbené zvuky na spanie",
-    "intro": "Hľadáš najlepší zvuk na spanie? DRMN obsahuje najvyhľadávanejšie spánkové zvuky — mix, offline prehrávanie a celonočné použitie na iPhone.",
+    "layout": "sections",
+    "sections_layout": true,
     "items": [
       {
-        "icon": "🌧️",
-        "title": "Zvuk dažďa na spanie",
-        "description": "Jemný dážď maskuje náhly hluk a pomáha zaspať. Zmixuj dážď s bielym šumom pre hlbší zážitok z prístroja na spanie."
-      },
-      {
-        "icon": "🌀",
-        "title": "Zvuk ventilátora na spanie",
-        "description": "Stále hučanie ventilátora blokuje premávku, chrápanie a susedov — klasický zvuk, na ktorý sa mnohí spoliehajú každú noc."
-      },
-      {
         "icon": "🔊",
-        "title": "Biely šum na spanie",
-        "description": "Biely, hnedý a tmavý šum vytvára stabilnú vrstvu, ktorá signalizuje mozgu, že je čas odpočívať."
+        "title": "Biely šum",
+        "description": "Stály biely šum maskuje náhle zvuky—premávku, susedov alebo vrzajúcu podlahu—a dáva mozgu predvídateľné pozadie na relaxáciu. Vyskúšaj hučanie ventilátora alebo klasický statický šum a zmiešaj ho s dažďom či vlnami."
       },
       {
         "icon": "🌊",
-        "title": "Prírodné zvuky na spanie",
-        "description": "Vlny, oheň a ranné vtáky dopĺňajú knižnicu — zmixuj ich kedykoľvek s dažďom alebo ventilátorom."
+        "title": "Hnedý šum",
+        "description": "Hnedý a tmavý šum zdôrazňuje nízke frekvencie. Mnohí ho vnímajú ako teplejší a menej ostrý než biely šum—vhodný na hlboký spánok alebo sústredenie. Použi ho samostatne alebo pod prírodnými zvukmi."
+      },
+      {
+        "icon": "👶",
+        "title": "Spánkové zvuky pre bábätko",
+        "description": "Jemné stopy fénu, vysávača alebo klávesnice napodobňujú známe rytmy, ktoré upokojujú dojčatá a batoľatá. Rodičia ich používajú v detskej izbe—bez samostatného prístroja na spanie."
+      },
+      {
+        "icon": "⏱️",
+        "title": "Časovač spánku",
+        "description": "Nastav časovač s automatickým stlmením, aby sa zvuk postupne stíšil po zaspatí. Bezplatná verzia obsahuje hodinu—pre väčšinu nocí stačí; prémiové funkcie odomknú dlhšie relácie."
+      },
+      {
+        "icon": "📴",
+        "title": "Offline prístroj na spanie",
+        "description": "Stiahni obľúbené stopy raz a počúvaj až 10 hodín bez Wi‑Fi alebo mobilných dát. Optimalizácia batérie udrží prehrávanie celú noc—ideálne na cestách alebo so slabým signálom v spálni."
       }
     ]
   },
@@ -315,12 +320,12 @@
     ]
   },
   "final_cta": {
-    "title": "Pripravený lepšie spať dnes večer?",
-    "paragraph1": "Pridaj sa k viac ako 10 000 používateľom, ktorí si zlepšili spánok s DRMN. 4,9/5 v App Store — bezplatná aplikácia spánkových zvukov pomáha zaspávať o 30–50 % rýchlejšie. Bezplatná verzia: hodinový časovač, offline a mix. Stiahni dnes a vyskúšaj profesionálne zvuky zadarmo.",
-    "cta_text": "Stiahnuť bezplatnú aplikáciu spánkových zvukov",
+    "title": "Pripravený spať lepšie dnes večer?",
+    "paragraph1": "Viac ako 10 000 ľudí používa DRMN na rýchlejšiu relaxáciu a zaspávanie. Hodnotenie 4,9/5 v App Store, bezplatná verzia s hodinovým časovačom, offline režimom a mixom. Stiahni a nájdi zvuky, ktoré ti vyhovujú.",
+    "cta_text": "Stiahnuť DRMN zadarmo",
     "cta_url": "https://apps.apple.com/app/id6746480683",
-    "cta_aria_label": "Stiahnuť bezplatnú aplikáciu spánkových zvukov z App Store",
-    "cta_img_alt": "Stiahnuť aplikáciu spánkových zvukov v App Store"
+    "cta_aria_label": "Stiahnuť DRMN zadarmo z App Store",
+    "cta_img_alt": "Stiahnuť DRMN v App Store"
   },
   "footer": {
     "copyright": "© 2025 DRMN. Všetky práva vyhradené.",
@@ -330,7 +335,9 @@
     "terms_url": "/terms.html",
     "blog_link": "Blog",
     "fazier_badge_alt": "Odznak Fazier",
-    "superlaunch_badge_alt": "Odporúčané na Super Launch"
+    "superlaunch_badge_alt": "Odporúčané na Super Launch",
+    "about_link": "O aplikácii",
+    "about_url": "/about.html"
   },
   "app_info": {
     "developer": "Vladimir Ivakhnenko",
@@ -358,75 +365,55 @@
   },
   "seo": {
     "breadcrumb_home": "Domov",
-    "faq_title": "FAQ: prístroj na spanie, spánkové zvuky a biely šum",
+    "faq_title": "Často kladené otázky",
     "faq": [
       {
         "question": "Aký zvuk je najlepší na spanie?",
-        "answer": "Záleží od teba — mnohí volia dážď, ventilátor alebo stabilný biely šum. V DRMN si zvuky vypočuješ a zmixuješ, aby si našiel, čo ti najviac pomáha zaspať."
+        "answer": "Záleží od toho, čo ťa upokojí. Mnohí volia dážď, stále hučanie ventilátora alebo neutrálny biely šum. V DRMN si zvuky vypočuješ a zmiešaš, aby si našiel, čo ti pomáha zaspávať rýchlejšie."
       },
       {
         "question": "Čo je prístroj na spanie?",
-        "answer": "Prehráva stabilné pozadie — dážď, ventilátor alebo biely šum — ktoré maskuje rušivé zvuky a pomáha spať. DRMN je aplikácia pre iPhone s mixom, offline prehrávaním a časovačom spánku."
+        "answer": "Prehráva stabilné pozadie—dážď, ventilátor alebo biely šum—ktoré maskuje rušivé zvuky a pomáha spať. DRMN funguje ako prenosný prístroj na iPhone s mixom, offline režimom a integrovaným časovačom."
       },
       {
-        "question": "Aká je najlepšia aplikácia bieleho šumu pre iPhone?",
-        "answer": "DRMN má hodnotenie 4,9 a viac ako 10 000 stiahnutí. Obsahuje dážď, ventilátor, biely šum a 100 hodín spánkových a prírodných zvukov — používatelia zaspávajú o 30–50 % rýchlejšie."
+        "question": "Je DRMN dobrou aplikáciou bieleho šumu pre iPhone?",
+        "answer": "DRMN má v App Store hodnotenie 4,9 a viac ako 10 000 stiahnutí. Obsahuje dážď, ventilátor, biely a hnedý šum plus viac ako 100 hodín ambientného a prírodného audia. Používatelia často uvádzajú rýchlejšie zaspávanie o 30–50 %, keď ich ruší okolitý hluk."
       },
       {
-        "question": "Existuje bezplatná aplikácia bieleho šumu?",
-        "answer": "Áno! DRMN je k dispozícii zadarmo v App Store. Bezplatná verzia obsahuje hodinový časovač, offline režim, mix zvukov a prístup k spánkovým zvukom. Prémiové funkcie odomknú dlhšie prehrávanie."
+        "question": "Existuje bezplatná aplikácia bieleho šumu pre iPhone?",
+        "answer": "Áno. DRMN si stiahneš zadarmo z App Store. Bezplatná verzia obsahuje hodinový časovač, offline režim, mix a základné spánkové zvuky. Prémiové funkcie odomknú dlhšie relácie a ďalšie stopy—na vyskúšanie základov nepotrebuješ predplatné."
       },
       {
-        "question": "Aké zvuky aplikácia spánkových zvukov obsahuje?",
-        "answer": "DRMN ponúka viac ako 100 hodín profesionálne nahraného audia: biely, hnedý a tmavý šum, dážď, vlny, oheň, ranné vtáky, meditačné zvuky a zvuky pre bábätko (fén, vysávač, klávesnica)."
+        "question": "Aké zvuky sú zahrnuté?",
+        "answer": "Biely, hnedý a tmavý šum; príroda ako dážď, vlny, oheň a ranné vtáky; meditácia a sústredenie; zvuky pre bábätko ako fén, vysávač a klávesnica. Ľubovoľné kombinácie môžeš mixovať."
       },
       {
-        "question": "Funguje aplikácia offline?",
-        "answer": "Áno! Po stiahnutí zvukov DRMN funguje plne offline. Vďaka optimalizácii batérie až 10 hodín nepretržitého prehrávania aj bez internetu."
+        "question": "Funguje DRMN offline?",
+        "answer": "Áno. Po stiahnutí stôp aplikácia prehráva bez internetu. Optimalizácia batérie umožní až 10 hodín nepretržitého prehrávania—dosť na cesty alebo celú noc."
       },
       {
-        "question": "Najlepšia aplikácia bieleho šumu pre bábätko?",
-        "answer": "DRMN obsahuje špecializované zvuky pre bábätko (fén, vysávač, klávesnica), ktoré pomáhajú rýchlejšie zaspávať. Známe rytmy upokojujú a vytvárajú pokojné prostredie."
+        "question": "Ktoré zvuky sa hodia na spánok bábätka?",
+        "answer": "Mnohí rodičia používajú stále známe zvuky—fén, vysávač alebo jemný biely šum. DRMN obsahuje stopy pre bábätko, ktoré upokoja malé deti bez samostatného prístroja v spálni."
       },
       {
-        "question": "Ako funguje aplikácia prístroja na spanie?",
-        "answer": "DRMN poskytuje biely šum a spánkové zvuky na spanie aj sústredenie. Maskuje rušivé zvuky, vytvára stabilné prostredie a podporuje hlbší spánok — ako fyzický prístroj bieleho šumu."
+        "question": "Môžem mixovať rôzne zvuky?",
+        "answer": "Áno. Kombinuj biely šum s vlnami, dážď s meditáciou alebo ľubovoľnú dvojicu podľa chuti. Mix je súčasťou bezplatnej verzie."
       },
       {
-        "question": "Môžem mixovať zvuky?",
-        "answer": "Áno! Kombinuj biely šum s vlnami alebo dážď s meditačnými zvukmi. Vytvor si vlastný spánkový zážitok."
+        "question": "Má DRMN časovač spánku?",
+        "answer": "Áno. Nastav časovač s automatickým stlmením, aby sa zvuk stíšil po zaspatí. Bezplatná verzia obsahuje hodinu; prémiové funkcie pridajú dlhšie možnosti."
       },
       {
-        "question": "Má aplikácia časovač spánku?",
-        "answer": "Áno! Časovač s automatickým ztlmením. Nastav ho a zvuk postupne ztiší po zaspatí."
+        "question": "Môže DRMN pomôcť pri nespavosti?",
+        "answer": "Stále pozadie môže maskovať premávku, susedov a ďalšie rušenie, ktoré budí ľahkých spáčov. Ľudia s nespavosťou často počúvajú biely alebo hnedý šum každú noc; mnohí hlásia rýchlejšie zaspávanie, výsledky sa ale líšia."
       },
       {
-        "question": "Čo je biely šum na spanie a ako pomáha?",
-        "answer": "Stabilný zvuk, ktorý maskuje rušivý hluk a pomáha rýchlejšie zaspať. DRMN blokuje premávku, susedov a ďalšie zvuky pre konzistentné spánkové prostredie."
+        "question": "Čím sa DRMN líši od Calm alebo Headspace?",
+        "answer": "Calm a Headspace sa zameriavajú na vedenú meditáciu a wellness predplatné. DRMN stavia na ambientnom zvuku—prístroji na spanie vo vrecku—so štedrou bezplatnou verziou (hodinový časovač, offline, mix) a bez meditačných kurzov. BetterSleep a podobné aplikácie často držia funkcie za paywallom; s DRMN vyskúšaš základné zvuky zadarmo."
       },
       {
-        "question": "Je to dobrá aplikácia pri nespavosti?",
-        "answer": "Áno! DRMN má hodnotenie 4,9 a 10 000+ stiahnutí. Maskovaním rušivých zvukov používatelia v priemere zaspávajú o 30–50 % rýchlejšie. Stiahni zadarmo."
-      },
-      {
-        "question": "Koľko stiahnutí má DRMN?",
-        "answer": "Viac ako 10 000 stiahnutí z App Store a hodnotenie 4,9 z 10 recenzií. 100 hodín nahraných zvukov a až 10 hodín offline na jedno nabitie."
-      },
-      {
-        "question": "Aké je hodnotenie DRMN v App Store?",
-        "answer": "4,9 z 5 hviezdičiek na základe 10 recenzií. Viac ako 10 000 stiahnutí, 100 hodín spánkových zvukov a offline prehrávanie."
-      },
-      {
-        "question": "Čím sa DRMN líši od iných aplikácií bieleho šumu?",
-        "answer": "DRMN vyniká štedrým bezplatným plánom (hodinový časovač), pokročilým mixom, zvukmi pre bábätko a vynikajúcou optimalizáciou batérie. Bezplatná verzia ponúka offline, profesionálne zvuky a mix — bez predplatného."
-      },
-      {
-        "question": "Čo robí DRMN jedinečným medzi bezplatnými alternatívami?",
-        "answer": "Bezplatná verzia s hodinovým časovačom bez predplatného. Zatiaľ čo konkurencia obmedzuje výber alebo vyžaduje nákupy, DRMN ponúka mix, offline a optimalizáciu batérie zadarmo. Plus zvuky pre bábätko, ktoré mnohí konkurenti nemajú."
-      },
-      {
-        "question": "Je DRMN lepší ako iné aplikácie spánkových zvukov?",
-        "answer": "Bezplatná verzia: hodinový časovač, mix, offline, optimalizácia batérie bez predplatného. Hodnotenie 4,9, 10 000+ stiahnutí, zaspávanie o 30–50 % rýchlejšie. Zvuky pre bábätko a inteligentný časovač v bezplatnej verzii — funkcie, za ktoré konkurencia účtuje."
+        "question": "Kto vytvoril DRMN?",
+        "answer": "DRMN vyvinul nezávislý iOS vývojár Vladimir Ivakhnenko. V App Store má hodnotenie 4,9 z 10 recenzií a viac ako 10 000 stiahnutí. Kontakt: c-basso@ya.ru."
       }
     ],
     "structured_data": {
@@ -444,7 +431,7 @@
           "availability": "https://schema.org/InStock",
           "url": "https://apps.apple.com/app/id6746480683"
         },
-        "description": "Aplikácia spánkových zvukov a bieleho šumu pre iPhone. Bezplatná verzia s dažďom, ventilátorom, mixom a offline. Na spanie, sústredenie a bábätká.",
+        "description": "DRMN je freemium iOS aplikácia s bielym a hnedým šumom, dažďom, ventilátorom a prírodnými zvukmi. Mixuj stopy, prehrávaj offline a používaj časovač spánku so stlmením. Zadarmo v App Store pre iPhone.",
         "image": {
           "@type": "ImageObject",
           "url": "https://drmn.xyz/img/logo.webp",
@@ -467,7 +454,7 @@
           "@type": "Person",
           "name": "Vladimir Ivakhnenko"
         },
-        "keywords": "spánkové zvuky, prístroj na spanie, biely šum, aplikácia na spanie, biely šum aplikácia, dážď na spanie, ventilátor spanie, zvuky na spanie, offline spánok",
+        "keywords": "biely šum, spánkové zvuky, prístroj na spanie, hnedý šum, dážď na spanie, ventilátor spanie, spánok bábätka, offline, časovač spánku, sústredenie, nespavosť, bezplatná aplikácia iPhone",
         "inLanguage": "sk",
         "datePublished": "2024-01-01",
         "dateModified": "2025-01-15",
@@ -486,14 +473,14 @@
         "name": "DRMN",
         "url": "https://drmn.xyz/sk/",
         "logo": "https://drmn.xyz/img/logo.webp",
-        "description": "DRMN — aplikácia spánkových zvukov a bieleho šumu pre iPhone. Bezplatná verzia s mixom a offline. Na spanie, sústredenie a bábätká."
+        "description": "DRMN — biely šum a ambientné zvuky na spanie pre iPhone. Mix, offline, časovač spánku. Bezplatné stiahnutie v App Store."
       },
       "website": {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "DRMN",
         "url": "https://drmn.xyz/sk/",
-        "description": "Aplikácia spánkových zvukov a bieleho šumu pre iPhone. Bezplatná verzia s mixom a offline. Stiahnite zadarmo v App Store.",
+        "description": "DRMN — biely šum a ambientné zvuky na spanie pre iPhone. Mix, offline, časovač spánku. Bezplatné stiahnutie v App Store.",
         "potentialAction": {
           "@type": "SearchAction",
           "target": "https://drmn.xyz/?q={search_term_string}",
@@ -503,54 +490,118 @@
       "howto": {
         "@context": "https://schema.org",
         "@type": "HowTo",
-        "name": "Ako používať aplikáciu spánkových zvukov pre lepší spánok",
-        "description": "Nauč sa používať DRMN na rýchlejšie zaspávanie. Sprievodca krok za krokom.",
+        "name": "Používať DRMN na lepší spánok",
+        "description": "Rýchly návod: vyber stopu, prípadne mixuj, nastav časovač a počúvaj offline.",
         "step": [
           {
             "@type": "HowToStep",
             "position": 1,
-            "name": "Stiahni zadarmo",
-            "text": "Stiahni DRMN z App Store na iPhone. Vyžaduje iOS 17.1+. Bezplatná verzia obsahuje hodinový časovač.",
+            "name": "Stiahni DRMN",
+            "text": "Nainštaluj DRMN zadarmo z App Store na iPhone (iOS 17.1+). Bezplatná verzia obsahuje hodinový časovač a základné zvuky.",
             "url": "https://apps.apple.com/app/id6746480683"
           },
           {
             "@type": "HowToStep",
             "position": 2,
-            "name": "Prehliadaj spánkové zvuky",
-            "text": "Spusti aplikáciu a preskúmaj knižnicu: biely a hnedý šum, prírodné zvuky (dážď, vlny, oheň), meditácia a zvuky pre bábätko."
+            "name": "Preskúmaj knižnicu",
+            "text": "V DRMN nájdeš biely a hnedý šum, dážď, vlny, oheň, meditáciu a zvuky pre bábätko."
           },
           {
             "@type": "HowToStep",
             "position": 3,
-            "name": "Vyber zvuky",
-            "text": "Vyber podľa potreby — biely šum na maskovanie, prírodné zvuky na relaxáciu, zvuky pre bábätko. Pred prehrávaním si vypočuj ukážku."
+            "name": "Vyber podľa potreby",
+            "text": "Stály zvuk na maskovanie rušenia, príroda na relaxáciu, zvuky pre bábätko do detskej izby. Vypočuj si pred prehrávaním."
           },
           {
             "@type": "HowToStep",
             "position": 4,
-            "name": "Mixuj zvuky",
-            "text": "Kombinuj biely šum s vlnami alebo dážď s meditačnou hudbou. Vytvor ideálne spánkové prostredie."
+            "name": "Mixuj zvuky (voliteľné)",
+            "text": "Pridaj biely šum k vlnám alebo dážď k jemnej meditácii—vytvor si večernú zmes."
           },
           {
             "@type": "HowToStep",
             "position": 5,
             "name": "Nastav časovač spánku",
-            "text": "Nastav automatické ztlmenie, ak nechceš celonočné prehrávanie. Zvuk postupne ztiší po zaspatí."
+            "text": "Zapni automatické stlmenie, ak nechceš zvuk celú noc. Po zaspatí sa hlasitosť postupne znižuje."
           },
           {
             "@type": "HowToStep",
             "position": 6,
-            "name": "Prehrávaj a zaspávaj",
-            "text": "Stlač prehrávanie a uprav hlasitosť. Telefón nablízku alebo slúchadlá — oboje funguje skvele."
+            "name": "Prehraj a uprav hlasitosť",
+            "text": "Dosť hlasno na maskovanie hluku, ale príjemne pre uši. iPhone na nočnom stolíku alebo slúchadlá—oboje funguje."
           },
           {
             "@type": "HowToStep",
             "position": 7,
-            "name": "Stiahni pre offline",
-            "text": "Stiahni obľúbené zvuky na offline použitie. Neprerušený spánok kdekoľvek, aj bez internetu."
+            "name": "Stiahni na offline",
+            "text": "Ulož obľúbené lokálne—užitočné na cestách alebo so slabým Wi‑Fi v spálni."
           }
         ]
-      }
+      },
+      "reviews": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Sarah M."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "S DRMN zaspávam rýchlejšie. Mix mi umožní kombinovať biely šum s vlnami perfektne."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Michael R."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Naše bábätko spí celú noc so zvukom fénu. Offline režim nás zachráni na cestách."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Jennifer L."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Pri nespavosti mi DRMN zmenil všetko. Používam ho každú noc a budím sa oddýchnutá."
+        }
+      ]
     }
+  },
+  "app_store_proof": {
+    "title": "Hodnotené v App Store",
+    "rating": "4,9",
+    "rating_max": "5",
+    "review_count": "10",
+    "downloads": "10 000+",
+    "description": "Skutočné hodnotenia a recenzie z App Store—nie marketingové sľuby. Prečítaj si, čo hovoria používatelia, než stiahneš aplikáciu.",
+    "store_url": "https://apps.apple.com/app/id6746480683",
+    "reviews_url": "https://apps.apple.com/app/id6746480683?see-all=reviews",
+    "screenshot_alt": "Náhľad aplikácie DRMN na iPhone",
+    "screenshot_url": "https://drmn.xyz/site_preview.png"
+  },
+  "about": {
+    "title": "O aplikácii DRMN",
+    "description": "DRMN je nezávislá iOS aplikácia na spánok a sústredenie od Vladimíra Ivakhnenka. Začala ako jednoduchý nástroj na lepší odpočinok—stabilné zvuky, offline prehrávanie a základné funkcie bez povinného predplatného.",
+    "developer": "Vladimir Ivakhnenko",
+    "developer_url": "https://apps.apple.com/developer/id1239180595",
+    "contact_email": "c-basso@ya.ru",
+    "contact_label": "Kontakt",
+    "developer_label": "Vývojár v App Store",
+    "about_page_url": "/about.html",
+    "about_page_label": "Stránka o aplikácii"
   }
 }

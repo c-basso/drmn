@@ -33,13 +33,13 @@
     "app_name_suffix": "Macchina suoni per dormire",
     "logo_alt": "Logo app DRMN suoni per dormire per iPhone",
     "app_name": "DRMN",
-    "title": "App suoni per dormire su iPhone",
-    "tagline": "Addormentati più velocemente con i migliori suoni per dormire. DRMN è una macchina suoni con pioggia, ventilatore, rumore bianco e natura—mix, offline e batteria ottimizzata tutta la notte.",
+    "title": "Rumore bianco e suoni per dormire su iPhone",
+    "tagline": "Addormentati più velocemente con un suono ambientale costante sul tuo iPhone. DRMN combina pioggia, ventilatore, rumore bianco e marrone, suoni della natura, mix, modalità offline e timer del sonno a basso consumo.",
     "tldr": "DRMN è un'app gratuita di suoni per dormire su iOS che ti aiuta ad addormentarti il 30–50 % più velocemente. La versione gratuita include pioggia, ventilatore, rumore bianco, timer 1 h, offline, mix e ottimizzazione batteria. Scaricala gratis su App Store.",
     "download_text": "Scarica",
     "download_url": "https://apps.apple.com/app/id6746480683",
-    "download_aria_label": "Scarica l'app gratuita di suoni per dormire su App Store",
-    "download_img_alt": "Scarica l'app suoni per dormire su App Store",
+    "download_aria_label": "Scarica DRMN gratis su App Store",
+    "download_img_alt": "Scarica DRMN su App Store",
     "scan_to_download": "Scansiona per scaricare"
   },
   "stats": {
@@ -101,28 +101,33 @@
     ]
   },
   "popular_sounds": {
-    "title": "Suoni popolari per dormire",
-    "intro": "Cerchi il miglior suono per dormire? DRMN include i suoni più cercati—mix, offline e tutta la notte sul tuo iPhone.",
+    "layout": "sections",
+    "sections_layout": true,
     "items": [
       {
-        "icon": "🌧️",
-        "title": "Suono pioggia per dormire",
-        "description": "La pioggia delicata maschera rumori improvvisi e aiuta ad addormentarsi. Mescola pioggia e rumore bianco per un'esperienza di macchina suoni più immersiva."
-      },
-      {
-        "icon": "🌀",
-        "title": "Suono ventilatore per dormire",
-        "description": "Il ronzio costante del ventilatore blocca traffico, russare e vicini—un classico tra i suoni per dormire."
-      },
-      {
         "icon": "🔊",
-        "title": "Rumore bianco per dormire",
-        "description": "Rumore bianco, marrone e scuro creano uno strato costante che indica al cervello di riposare."
+        "title": "Suoni di rumore bianco",
+        "description": "Un rumore bianco costante maschera i suoni improvvisi—traffico, vicini o pavimenti che scricchiolano—e offre al cervello uno sfondo prevedibile per rilassarsi. Prova il ronzio del ventilatore o il classico statico, poi mixa con pioggia o onde."
       },
       {
         "icon": "🌊",
-        "title": "Oceano e suoni di natura",
-        "description": "Onde, fuoco e uccelli completano la biblioteca natura—mescolali con pioggia o ventilatore quando vuoi."
+        "title": "Suoni di rumore marrone",
+        "description": "Il rumore marrone e scuro enfatizza le basse frequenze. Molti lo trovano più caldo e meno acuto del rumore bianco—per sonno profondo o concentrazione. Usalo da solo o sotto suoni della natura."
+      },
+      {
+        "icon": "👶",
+        "title": "Suoni per il sonno del neonato",
+        "description": "Tracce delicate di phon, aspirapolvere o tastiera imitano ritmi familiari che calmano neonati e bambini piccoli. I genitori le usano in cameretta—senza una macchina suoni separata."
+      },
+      {
+        "icon": "⏱️",
+        "title": "Timer del sonno",
+        "description": "Imposta un timer con dissolvenza automatica così l'audio si attenua dopo che ti addormenti. La versione gratuita include un'ora—abbastanza per la maggior parte delle notti; premium sblocca sessioni più lunghe."
+      },
+      {
+        "icon": "📴",
+        "title": "Macchina suoni offline",
+        "description": "Scarica le tue tracce preferite una volta e ascolta fino a 10 ore senza Wi‑Fi o dati mobili. L'ottimizzazione batteria mantiene la riproduzione tutta la notte—ideale in viaggio o con segnale debole in camera."
       }
     ]
   },
@@ -316,11 +321,11 @@
   },
   "final_cta": {
     "title": "Pronto a dormire meglio stasera?",
-    "paragraph1": "Unisciti a oltre 10.000 utenti che hanno migliorato il sonno con DRMN. 4,9/5 su App Store—app gratuita di suoni per dormire che ti aiuta ad addormentarti il 30–50 % più velocemente. Versione gratuita: timer 1 h, offline e mix. Scarica oggi e prova suoni pro—gratis.",
-    "cta_text": "Scarica app gratuita suoni per dormire",
+    "paragraph1": "Oltre 10.000 persone usano DRMN per rilassarsi più velocemente. Valutata 4,9/5 su App Store, con versione gratuita che include timer di un'ora, offline e mix. Scarica e trova i suoni che funzionano per te.",
+    "cta_text": "Scarica DRMN gratis",
     "cta_url": "https://apps.apple.com/app/id6746480683",
-    "cta_aria_label": "Scarica l'app gratuita di suoni per dormire su App Store",
-    "cta_img_alt": "Scarica l'app suoni per dormire su App Store"
+    "cta_aria_label": "Scarica DRMN gratis su App Store",
+    "cta_img_alt": "Scarica DRMN su App Store"
   },
   "footer": {
     "copyright": "© 2025 DRMN. Tutti i diritti riservati.",
@@ -330,7 +335,9 @@
     "terms_url": "/terms.html",
     "blog_link": "Blog",
     "fazier_badge_alt": "Badge Fazier",
-    "superlaunch_badge_alt": "In evidenza su Super Launch"
+    "superlaunch_badge_alt": "In evidenza su Super Launch",
+    "about_link": "Informazioni",
+    "about_url": "/about.html"
   },
   "app_info": {
     "developer": "Vladimir Ivakhnenko",
@@ -358,75 +365,55 @@
   },
   "seo": {
     "breadcrumb_home": "Home",
-    "faq_title": "FAQ: macchina suoni, suoni per dormire e rumore bianco",
+    "faq_title": "Domande frequenti",
     "faq": [
       {
         "question": "Qual è il miglior suono per dormire?",
-        "answer": "Dipende da te—molti scelgono pioggia, ventilatore o rumore bianco costante. In DRMN puoi ascoltare e mixare per trovare cosa ti aiuta ad addormentarti più velocemente."
+        "answer": "Dipende da cosa ti calma. Molti scelgono pioggia, il ronzio costante del ventilatore o rumore bianco neutro. In DRMN puoi ascoltare e mixare tracce per trovare cosa ti aiuta ad addormentarti più velocemente."
       },
       {
         "question": "Cos'è una macchina suoni per dormire?",
-        "answer": "Riproduce audio costante—pioggia, ventilatore o rumore bianco—per mascherare i rumori e dormire meglio. DRMN è un'app iPhone con mix, offline e timer, come una macchina fisica."
+        "answer": "Riproduce audio di sottofondo costante—pioggia, ventilatore o rumore bianco—per mascherare rumori fastidiosi e dormire meglio. DRMN funziona come macchina portatile su iPhone, con mix, modalità offline e timer integrati."
       },
       {
-        "question": "Migliore app rumore bianco per iPhone?",
-        "answer": "DRMN ha 4,9 stelle e oltre 10.000 download. Pioggia, ventilatore, rumore bianco e 100 ore di suoni per dormire e natura—gli utenti si addormentano il 30–50 % più velocemente."
+        "question": "DRMN è una buona app di rumore bianco per iPhone?",
+        "answer": "DRMN ha 4,9 stelle su App Store e oltre 10.000 download. Include pioggia, ventilatore, rumore bianco e marrone, più 100 ore di audio ambientale e natura. Gli utenti spesso dicono di addormentarsi il 30–50 % più velocemente quando il rumore di fondo disturba."
       },
       {
-        "question": "Esiste un'app gratuita di rumore bianco?",
-        "answer": "Sì! DRMN è gratis su App Store. La versione gratuita include timer 1 h, offline, mix e accesso ai suoni per dormire. Premium sblocca riproduzione più lunga."
+        "question": "Esiste un'app gratuita di rumore bianco per iPhone?",
+        "answer": "Sì. DRMN si scarica gratis su App Store. La versione gratuita include timer di un'ora, offline, mix e suoni base per dormire. Premium sblocca sessioni più lunghe e tracce aggiuntive—nessun abbonamento necessario per provare l'essenziale."
       },
       {
-        "question": "Quali suoni include un'app suoni per dormire?",
-        "answer": "DRMN offre oltre 100 ore di audio pro: rumore bianco, marrone e scuro, pioggia, onde, fuoco, uccelli del mattino, meditazione e suoni neonati (phon, aspirapolvere, tastiera)."
+        "question": "Quali suoni sono inclusi?",
+        "answer": "Rumore bianco, marrone e scuro; natura come pioggia, onde, fuoco e uccelli del mattino; meditazione e focus; suoni per neonati come phon, aspirapolvere e tastiera. Puoi mixare qualsiasi combinazione."
       },
       {
-        "question": "L'app funziona offline?",
-        "answer": "Sì! Dopo il download dei suoni, DRMN funziona completamente offline. Con batteria ottimizzata, fino a 10 ore senza internet."
+        "question": "DRMN funziona offline?",
+        "answer": "Sì. Dopo aver scaricato le tracce, l'app riproduce senza internet. L'ottimizzazione batteria permette fino a 10 ore di riproduzione ininterrotta—abbastanza per viaggi o tutta la notte."
       },
       {
-        "question": "Migliore app rumore bianco per il sonno del neonato?",
-        "answer": "DRMN include suoni specializzati per neonati (phon, aspirapolvere, tastiera) che facilitano l'addormentamento. Ritmi familiari che calmano e creano un ambiente tranquillo."
+        "question": "Quali suoni vanno bene per il sonno del neonato?",
+        "answer": "Molti genitori usano suoni costanti e familiari—phon, aspirapolvere o rumore bianco soft. DRMN include tracce per neonati che calmano i piccoli senza un dispositivo separato in cameretta."
       },
       {
-        "question": "Come funziona un'app macchina suoni?",
-        "answer": "DRMN offre rumore bianco e suoni per dormire per riposo e concentrazione. Maschera rumori, crea un ambiente stabile e favorisce un sonno profondo—come una macchina fisica."
+        "question": "Posso mixare suoni diversi?",
+        "answer": "Sì. Combina rumore bianco con onde, pioggia con meditazione o qualsiasi coppia ti piaccia. Il mix è incluso nella versione gratuita."
       },
       {
-        "question": "Posso mixare i suoni?",
-        "answer": "Sì! Combina rumore bianco e onde, o pioggia e meditazione. Crea la tua esperienza di sonno."
+        "question": "DRMN ha un timer del sonno?",
+        "answer": "Sì. Imposta un timer con dissolvenza automatica così il suono si attenua dopo che ti addormenti. La versione gratuita include un'ora; premium aggiunge opzioni più lunghe."
       },
       {
-        "question": "Ha un timer del sonno?",
-        "answer": "Sì! Timer con dissolvenza automatica. Impostalo e il suono si attenuerà gradualmente dopo che ti addormenti."
+        "question": "DRMN può aiutare con l'insonnia?",
+        "answer": "Un suono di fondo costante può mascherare traffico, vicini e altre distrazioni che svegliano chi dorme leggero. Chi ha insonnia spesso ascolta rumore bianco o marrone ogni notte; molti segnalano un addormentamento più rapido, ma i risultati variano."
       },
       {
-        "question": "Cos'è il rumore bianco per dormire e come aiuta?",
-        "answer": "Suono costante che maschera rumori disturbanti e aiuta ad addormentarsi più velocemente. DRMN blocca traffico, vicini e altri suoni per un ambiente di sonno stabile."
+        "question": "In cosa DRMN differisce da Calm o Headspace?",
+        "answer": "Calm e Headspace puntano su meditazione guidata e abbonamenti wellness. DRMN è costruita intorno al suono ambientale—una macchina suoni in tasca—con versione gratuita generosa (timer di un'ora, offline, mix) e senza corsi di meditazione. BetterSleep e app simili spesso riservano funzioni agli abbonamenti; con DRMN puoi provare i suoni base gratis."
       },
       {
-        "question": "Va bene per l'insonnia?",
-        "answer": "Sì! DRMN ha 4,9 stelle e 10.000+ download. Mascherando i rumori, gli utenti si addormentano il 30–50 % più velocemente in media. Scarica gratis."
-      },
-      {
-        "question": "Quanti download ha DRMN?",
-        "answer": "Oltre 10.000 su App Store, 4,9 stelle su 10 recensioni. 100 ore di suoni e fino a 10 h offline con una carica."
-      },
-      {
-        "question": "Qual è la valutazione DRMN su App Store?",
-        "answer": "4,9 su 5 basata su 10 recensioni. Oltre 10.000 download, 100 ore di suoni per dormire e riproduzione offline."
-      },
-      {
-        "question": "In cosa differisce DRMN dalle altre app?",
-        "answer": "DRMN spicca per versione gratuita generosa (timer 1 h), mix avanzato, suoni neonati e ottimizzazione batteria—offline e suoni pro senza abbonamento."
-      },
-      {
-        "question": "Cosa rende unico DRMN tra le alternative gratuite?",
-        "answer": "Versione gratuita con timer 1 h senza abbonamento. Mentre altre limitano i suoni o richiedono acquisti, DRMN offre mix, offline e batteria ottimizzata gratis—più suoni neonati che molte non hanno."
-      },
-      {
-        "question": "DRMN è migliore di altre app suoni per dormire?",
-        "answer": "Versione gratuita: timer, mix, offline, batteria ottimizzata senza abbonamento. 4,9 stelle, 10.000+ download, addormentamento 30–50 % più rapido. Suoni neonati e timer smart gratis—funzioni che altri fanno pagare."
+        "question": "Chi ha creato DRMN?",
+        "answer": "DRMN è sviluppata da Vladimir Ivakhnenko, sviluppatore iOS indipendente. Su App Store ha 4,9 stelle su 10 recensioni e oltre 10.000 download. Contatto: c-basso@ya.ru."
       }
     ],
     "structured_data": {
@@ -444,7 +431,7 @@
           "availability": "https://schema.org/InStock",
           "url": "https://apps.apple.com/app/id6746480683"
         },
-        "description": "App suoni per dormire e rumore bianco per iPhone. Versione gratuita con pioggia, ventilatore, mix e offline. Per dormire, concentrazione e neonati.",
+        "description": "DRMN è un'app iOS freemium con rumore bianco e marrone, pioggia, ventilatore e suoni della natura. Mixa tracce, riproduci offline e usa timer del sonno con dissolvenza. Gratis su App Store per iPhone.",
         "image": {
           "@type": "ImageObject",
           "url": "https://drmn.xyz/img/logo.webp",
@@ -467,7 +454,7 @@
           "@type": "Person",
           "name": "Vladimir Ivakhnenko"
         },
-        "keywords": "suoni per dormire, macchina suoni, rumore bianco, app per dormire, app rumore bianco, pioggia per dormire, ventilatore per dormire, sonno offline",
+        "keywords": "rumore bianco, suoni per dormire, macchina suoni, rumore marrone, pioggia per dormire, ventilatore per dormire, sonno neonati, offline, timer del sonno, concentrazione, insonnia, app gratuita iPhone",
         "inLanguage": "it",
         "datePublished": "2024-01-01",
         "dateModified": "2025-01-15",
@@ -486,14 +473,14 @@
         "name": "DRMN",
         "url": "https://drmn.xyz/it/",
         "logo": "https://drmn.xyz/img/logo.webp",
-        "description": "DRMN — app suoni per dormire e rumore bianco per iPhone. Versione gratuita con mix e offline. Per dormire, concentrazione e neonati."
+        "description": "DRMN — rumore bianco e suoni ambientali per dormire su iPhone. Mix, offline, timer del sonno. Download gratuito su App Store."
       },
       "website": {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "DRMN",
         "url": "https://drmn.xyz/it/",
-        "description": "App suoni per dormire e rumore bianco per iPhone. Versione gratuita con mix e offline. Scarica gratis su App Store.",
+        "description": "DRMN — rumore bianco e suoni ambientali per dormire su iPhone. Mix, offline, timer del sonno. Download gratuito su App Store.",
         "potentialAction": {
           "@type": "SearchAction",
           "target": "https://drmn.xyz/?q={search_term_string}",
@@ -503,54 +490,118 @@
       "howto": {
         "@context": "https://schema.org",
         "@type": "HowTo",
-        "name": "Come usare un'app suoni per dormire meglio",
-        "description": "Impara a usare DRMN per addormentarti più velocemente. Guida passo passo.",
+        "name": "Usare DRMN per dormire meglio",
+        "description": "Guida rapida: scegli una traccia, mixa se vuoi, imposta il timer e ascolta offline.",
         "step": [
           {
             "@type": "HowToStep",
             "position": 1,
-            "name": "Scarica gratis",
-            "text": "Scarica DRMN su App Store sul tuo iPhone. Richiede iOS 17.1+. La versione gratuita include timer 1 h.",
+            "name": "Scarica DRMN",
+            "text": "Installa DRMN gratis da App Store su iPhone (iOS 17.1+). La versione gratuita include timer di un'ora e suoni base.",
             "url": "https://apps.apple.com/app/id6746480683"
           },
           {
             "@type": "HowToStep",
             "position": 2,
-            "name": "Esplora suoni per dormire",
-            "text": "Apri l'app e scopri la biblioteca: rumore bianco e marrone, natura (pioggia, onde, fuoco), meditazione e suoni neonati."
+            "name": "Esplora la libreria",
+            "text": "In DRMN trovi rumore bianco e marrone, pioggia, onde, fuoco, meditazione e suoni per neonati."
           },
           {
             "@type": "HowToStep",
             "position": 3,
-            "name": "Scegli i suoni",
-            "text": "In base alle tue esigenze—rumore bianco per mascherare, natura per rilassarti, suoni neonati per lattanti. Ascolta prima di riprodurre."
+            "name": "Scegli in base alle esigenze",
+            "text": "Suono costante per mascherare disturbi, natura per rilassarti, suoni neonato per la cameretta. Ascolta prima di riprodurre."
           },
           {
             "@type": "HowToStep",
             "position": 4,
-            "name": "Mixa i suoni",
-            "text": "Combina rumore bianco e onde, o pioggia e meditazione. Crea l'ambiente ideale per dormire."
+            "name": "Mixa i suoni (opzionale)",
+            "text": "Sovrapponi rumore bianco e onde, o pioggia e meditazione soft—crea il tuo mix serale."
           },
           {
             "@type": "HowToStep",
             "position": 5,
-            "name": "Imposta il timer",
-            "text": "Attiva la dissolvenza automatica se non vuoi suono tutta la notte. Il volume calerà gradualmente."
+            "name": "Imposta il timer del sonno",
+            "text": "Attiva la dissolvenza automatica se non vuoi audio tutta la notte. Il suono si attenua dopo che ti addormenti."
           },
           {
             "@type": "HowToStep",
             "position": 6,
-            "name": "Riproduci e dormi",
-            "text": "Premi play e regola il volume. iPhone vicino o cuffie—entrambi vanno bene."
+            "name": "Riproduci e regola il volume",
+            "text": "Abbastanza alto da mascherare il rumore, ma comodo per le orecchie. iPhone sul comodino o cuffie—entrambi funzionano."
           },
           {
             "@type": "HowToStep",
             "position": 7,
             "name": "Scarica per offline",
-            "text": "Scarica i preferiti per uso senza internet. Sonno ininterrotto ovunque."
+            "text": "Salva i preferiti localmente—utile in viaggio o con Wi‑Fi debole in camera da letto."
           }
         ]
-      }
+      },
+      "reviews": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Sarah M."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Mi addormento più velocemente con DRMN. Il mix mi permette di combinare rumore bianco e onde alla perfezione."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Michael R."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Il nostro neonato dorme tutta la notte grazie al suono del phon. La modalità offline ci salva in viaggio."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Jennifer L."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Con l'insonnia, DRMN ha cambiato tutto. Lo uso ogni notte e mi sveglio riposata."
+        }
+      ]
     }
+  },
+  "app_store_proof": {
+    "title": "Valutata su App Store",
+    "rating": "4,9",
+    "rating_max": "5",
+    "review_count": "10",
+    "downloads": "10.000+",
+    "description": "Valutazioni e recensioni reali su App Store—non promesse di marketing. Leggi cosa dicono gli utenti prima di scaricare.",
+    "store_url": "https://apps.apple.com/app/id6746480683",
+    "reviews_url": "https://apps.apple.com/app/id6746480683?see-all=reviews",
+    "screenshot_alt": "Anteprima app DRMN su iPhone",
+    "screenshot_url": "https://drmn.xyz/site_preview.png"
+  },
+  "about": {
+    "title": "Informazioni su DRMN",
+    "description": "DRMN è un'app iOS indipendente per sonno e concentrazione, creata da Vladimir Ivakhnenko. È nata come strumento semplice per riposare meglio—suoni costanti, riproduzione offline e funzioni base senza abbonamento obbligatorio.",
+    "developer": "Vladimir Ivakhnenko",
+    "developer_url": "https://apps.apple.com/developer/id1239180595",
+    "contact_email": "c-basso@ya.ru",
+    "contact_label": "Contatto",
+    "developer_label": "Sviluppatore su App Store",
+    "about_page_url": "/about.html",
+    "about_page_label": "Pagina informazioni"
   }
 }

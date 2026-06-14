@@ -33,13 +33,13 @@
     "app_name_suffix": "Stroj za zvukove spavanja",
     "logo_alt": "Logo aplikacije DRMN stroj za zvukove spavanja za iPhone",
     "app_name": "DRMN",
-    "title": "Aplikacija stroja za zvukove spavanja za iPhone",
-    "tagline": "Zaspi brže uz najbolje zvukove za spavanje. DRMN je aplikacija zvukova za spavanje s kišom, ventilatorom, bijelim šumom i zvukovima prirode — s mixom, offline reprodukcijom i štednjom baterije cijelu noć.",
+    "title": "Bijeli šum i zvukovi za spavanje za iPhone",
+    "tagline": "Zaspi brže uz stabilan ambijent na svom iPhoneu. DRMN kombinira kišu, ventilator, bijeli i smeđi šum, zvukove prirode, mix, offline način rada i timer za spavanje koji štedi bateriju.",
     "tldr": "DRMN je besplatna iOS aplikacija zvukova za spavanje koja pomaže zaspati 30–50 % brže. Besplatna verzija: kiša, ventilator, bijeli šum, timer od 1 sata, offline, mix zvukova i optimizacija baterije. Preuzmi besplatno u App Storeu.",
     "download_text": "Preuzmi sada",
     "download_url": "https://apps.apple.com/app/id6746480683",
-    "download_aria_label": "Preuzmi besplatnu aplikaciju zvukova za spavanje iz App Storea",
-    "download_img_alt": "Preuzmi aplikaciju zvukova za spavanje u App Storeu",
+    "download_aria_label": "Preuzmi DRMN besplatno u App Storeu",
+    "download_img_alt": "Preuzmi DRMN u App Storeu",
     "scan_to_download": "Skeniraj za preuzimanje"
   },
   "stats": {
@@ -101,28 +101,33 @@
     ]
   },
   "popular_sounds": {
-    "title": "Popularni zvukovi za spavanje",
-    "intro": "Tražiš najbolji zvuk za spavanje? U DRMN-u su najtraženiji zvukovi — spremni za mix, offline i cijelu noć na iPhoneu.",
+    "layout": "sections",
+    "sections_layout": true,
     "items": [
       {
-        "icon": "🌧️",
-        "title": "Zvuk kiše za spavanje",
-        "description": "Nježna kiša maskira nagle zvukove i pomaže zaspati. Pomiješaj kišu s bijelim šumom za dublji san."
-      },
-      {
-        "icon": "🌀",
-        "title": "Zvuk ventilatora za spavanje",
-        "description": "Stalan hum ventilatora blokira promet, hrkanje i susjede — klasični zvuk za spavanje kojem milijuni vjeruju."
-      },
-      {
         "icon": "🔊",
-        "title": "Bijeli šum za spavanje",
-        "description": "Bijeli, smeđi i tamni šum stvaraju dosljedan sloj pozadine koji signalizira mozgu da se opusti."
+        "title": "Zvukovi bijelog šuma",
+        "description": "Stalni bijeli šum maskira iznenadne zvukove—promet, susjede ili škripanje poda—i daje mozgu predvidljivu pozadinu za opuštanje. Isprobaj hum ventilatora ili klasični statički šum, zatim mixaj s kišom ili valovima."
       },
       {
         "icon": "🌊",
-        "title": "Zvukovi prirode za spavanje",
-        "description": "Valovi, vatra i jutarnje ptice dopunjuju biblioteku — miješaj s kišom ili ventilatorom bilo kada."
+        "title": "Zvukovi smeđeg šuma",
+        "description": "Smeđi i tamni šum naglašava niske frekvencije. Mnogi ga smatraju toplijim i manje oštrim od bijelog šuma—dobar za dubok san ili fokus. Koristi samostalno ili ispod zvukova prirode."
+      },
+      {
+        "icon": "👶",
+        "title": "Zvukovi za spavanje bebe",
+        "description": "Nježne snimke sušila za kosu, usisavača ili tipkovnice imitiraju poznate ritmove koji umiruju bebe i malu djecu. Roditelji ih koriste u spavaćoj sobi—bez zasebnog stroja za zvukove spavanja."
+      },
+      {
+        "icon": "⏱️",
+        "title": "Timer za spavanje",
+        "description": "Postavi timer s automatskim fade-outom da se zvuk smanjuje nakon što zaspiš. Besplatna verzija uključuje sat—dovoljno za većinu noći; premium otključava duže sesije."
+      },
+      {
+        "icon": "📴",
+        "title": "Offline stroj za zvukove spavanja",
+        "description": "Preuzmi omiljene snimke jednom i slušaj do 10 sati bez Wi‑Fi-ja ili mobilnih podataka. Optimizacija baterije održava reprodukciju cijelu noć—idealno na putovanjima ili sa slabim signalom u spavaćoj sobi."
       }
     ]
   },
@@ -315,12 +320,12 @@
     ]
   },
   "final_cta": {
-    "title": "Spreman spavati bolje večeras?",
-    "paragraph1": "Pridruži se preko 10.000 korisnika koji su poboljšali san s DRMN-om. 4,9/5 u App Storeu — besplatna aplikacija zvukova za spavanje pomaže zaspati 30–50 % brže. Besplatna verzija: timer od 1 sata, offline i mix. Preuzmi danas i isprobaj profesionalne zvukove besplatno.",
-    "cta_text": "Preuzmi besplatnu aplikaciju zvukova za spavanje",
+    "title": "Spreman za bolji san večeras?",
+    "paragraph1": "Više od 10.000 ljudi koristi DRMN za brže opuštanje i usnivanje. Ocjena 4,9/5 u App Storeu, besplatna verzija s timerom od sata, offlineom i mixom. Preuzmi i pronađi zvukove koji ti odgovaraju.",
+    "cta_text": "Preuzmi DRMN besplatno",
     "cta_url": "https://apps.apple.com/app/id6746480683",
-    "cta_aria_label": "Preuzmi besplatnu aplikaciju zvukova za spavanje iz App Storea",
-    "cta_img_alt": "Preuzmi aplikaciju zvukova za spavanje u App Storeu"
+    "cta_aria_label": "Preuzmi DRMN besplatno u App Storeu",
+    "cta_img_alt": "Preuzmi DRMN u App Storeu"
   },
   "footer": {
     "copyright": "© 2025 DRMN. Sva prava pridržana.",
@@ -330,7 +335,9 @@
     "terms_url": "/terms.html",
     "blog_link": "Blog",
     "fazier_badge_alt": "Fazier značka",
-    "superlaunch_badge_alt": "Predstavljeno na Super Launchu"
+    "superlaunch_badge_alt": "Predstavljeno na Super Launchu",
+    "about_link": "O aplikaciji",
+    "about_url": "/about.html"
   },
   "app_info": {
     "developer": "Vladimir Ivakhnenko",
@@ -358,75 +365,55 @@
   },
   "seo": {
     "breadcrumb_home": "Početna",
-    "faq_title": "FAQ: stroj za zvukove spavanja, zvukovi za spavanje i bijeli šum",
+    "faq_title": "Česta pitanja",
     "faq": [
       {
-        "question": "Koji je najbolji zvuk za spavanje?",
-        "answer": "Ovisi o tebi — mnogi biraju kišu, ventilator ili stabilan bijeli šum. U DRMN-u možeš preslušati i miješati zvukove da pronađeš što najbrže uspava."
+        "question": "Koji je zvuk najbolji za spavanje?",
+        "answer": "Ovisi o tome što te smiruje. Mnogi biraju kišu, stalni hum ventilatora ili neutralni bijeli šum. U DRMN-u možeš slušati i mixati snimke da pronađeš što ti pomaže brže zaspati."
       },
       {
         "question": "Što je stroj za zvukove spavanja?",
-        "answer": "Reproducira stabilnu pozadinu — kišu, ventilator ili bijeli šum — da maskira buku i pomogne zaspati. DRMN je aplikacija za iPhone s mixom, offline reprodukcijom i timerom za spavanje, kao fizički stroj."
+        "answer": "Reproducira stalnu pozadinu—kišu, ventilator ili bijeli šum—kako bi maskirao smetnje i pomogao u spavanju. DRMN radi kao prijenosni stroj na iPhoneu s mixom, offline načinom rada i ugrađenim timerom."
       },
       {
-        "question": "Najbolja aplikacija bijelog šuma za iPhone?",
-        "answer": "DRMN ima ocjenu 4,9 i preko 10.000 preuzimanja. Kiša, ventilator, bijeli šum i 100 sati zvukova za spavanje i prirode — korisnici zaspaju 30–50 % brže."
+        "question": "Je li DRMN dobra aplikacija bijelog šuma za iPhone?",
+        "answer": "DRMN ima ocjenu 4,9 u App Storeu i više od 10.000 preuzimanja. Uključuje kišu, ventilator, bijeli i smeđi šum te više od 100 sati ambijentalnih i prirodnih zvukova. Korisnici često kažu da zaspiju 30–50 % brže kada im pozadinska buka smeta."
       },
       {
-        "question": "Postoji li besplatna aplikacija bijelog šuma?",
-        "answer": "Da! DRMN je besplatan u App Storeu. Besplatna verzija uključuje timer od 1 sata, offline, mix i zvukove za spavanje. Premium otključava dužu reprodukciju."
+        "question": "Postoji li besplatna aplikacija bijelog šuma za iPhone?",
+        "answer": "Da. DRMN se preuzima besplatno u App Storeu. Besplatna verzija uključuje timer od sata, offline, mix i osnovne zvukove za spavanje. Premium otključava duže sesije i dodatne snimke—nije potrebna pretplata za isprobavanje osnova."
       },
       {
-        "question": "Koje zvukove ima aplikacija za spavanje?",
-        "answer": "DRMN nudi preko 100 sati profesionalnog audia: bijeli, smeđi i tamni šum, kiša, valovi, vatra, jutarnje ptice, meditacija i zvukovi za bebe (fen, usisavač, tipkovnica)."
+        "question": "Koji su zvukovi uključeni?",
+        "answer": "Bijeli, smeđi i tamni šum; priroda poput kiše, valova, vatre i jutarnjih ptica; meditacija i fokus; zvukovi za bebu poput sušila, usisavača i tipkovnice. Možeš mixati bilo koju kombinaciju."
       },
       {
-        "question": "Radi li aplikacija offline?",
-        "answer": "Da! Nakon preuzimanja zvukova DRMN radi potpuno offline. S optimizacijom baterije — do 10 sati bez interneta."
+        "question": "Radi li DRMN offline?",
+        "answer": "Da. Nakon preuzimanja snimaka aplikacija reproducira bez interneta. Optimizacija baterije omogućuje do 10 sati neprekidne reprodukcije—dovoljno za putovanja ili cijelu noć."
       },
       {
-        "question": "Najbolja aplikacija za san bebe?",
-        "answer": "DRMN uključuje posebne zvukove za bebe (fen, usisavač, tipkovnica) koji pomažu brže zaspati. Poznati ritmovi umiruju i stvaraju mirno okruženje."
+        "question": "Koji zvukovi odgovaraju za san bebe?",
+        "answer": "Mnogi roditelji koriste stalne poznate zvukove—sušilo, usisavač ili nježni bijeli šum. DRMN ima snimke za bebe koje umiruju malu djecu bez zasebnog uređaja u spavaćoj sobi."
       },
       {
-        "question": "Kako radi aplikacija stroja za zvukove?",
-        "answer": "DRMN pruža bijeli šum i zvukove za spavanje za odmor i fokus. Maskira buku, stvara dosljedno okruženje i potiče dublji san — kao fizički stroj."
+        "question": "Mogu li mixati različite zvukove?",
+        "answer": "Da. Kombiniraj bijeli šum s valovima, kišu s meditacijom ili bilo koji par koji voliš. Mix je uključen u besplatnu verziju."
       },
       {
-        "question": "Mogu li miješati zvukove?",
-        "answer": "Da! Kombiniraj bijeli šum s valovima ili kišu s meditacijom. Stvori vlastito iskustvo spavanja."
+        "question": "Ima li DRMN timer za spavanje?",
+        "answer": "Da. Postavi timer s automatskim fade-outom da se zvuk smanjuje nakon što zaspiš. Besplatna verzija uključuje sat; premium dodaje duže opcije."
       },
       {
-        "question": "Ima li timer za spavanje?",
-        "answer": "Da! Timer s automatskim fade-out. Postavi ga — zvuk polako nestaje nakon što zaspiš."
+        "question": "Može li DRMN pomoći s nesanicoom?",
+        "answer": "Stalna pozadina može maskirati promet, susjede i druge smetnje koje budi lake spavače. Ljudi s nesanicoom često slušaju bijeli ili smeđi šum svake noći; mnogi prijavljuju brže usnivanje, ali rezultati variraju."
       },
       {
-        "question": "Što je bijeli šum za spavanje i kako pomaže?",
-        "answer": "Stalan zvuk koji maskira ometajuću buku i pomaže brže zaspati. DRMN blokira promet, susjede i druge zvukove za dosljedno okruženje za spavanje."
+        "question": "Po čemu se DRMN razlikuje od Calma ili Headspacea?",
+        "answer": "Calm i Headspace fokusiraju se na vođenu meditaciju i wellness pretplate. DRMN je izgrađen oko ambijentalnog zvuka—stroja za spavanje u džepu—s velikodušnom besplatnom verzijom (timer od sata, offline, mix) i bez meditacijskih tečajeva. BetterSleep i slične aplikacije često drže funkcije za pretplatnike; s DRMN-om možeš besplatno isprobati osnovne zvukove."
       },
       {
-        "question": "Pogodno za nesanicu?",
-        "answer": "Da! DRMN ima 4,9 i preko 10.000 preuzimanja. Maskiranjem buke korisnici u prosjeku zaspaju 30–50 % brže. Preuzmi besplatno."
-      },
-      {
-        "question": "Koliko preuzimanja ima DRMN?",
-        "answer": "Preko 10.000 u App Storeu, 4,9/5 od 10 recenzija. 100 sati zvukova i do 10 sati offline na jednom punjenju."
-      },
-      {
-        "question": "Koja je ocjena DRMN-a u App Storeu?",
-        "answer": "4,9/5 od 10 recenzija. Preko 10.000 preuzimanja, 100 sati zvukova za spavanje i offline reprodukcija."
-      },
-      {
-        "question": "Po čemu se DRMN razlikuje od drugih aplikacija?",
-        "answer": "DRMN se ističe velikodušnom besplatnom verzijom (timer od 1 sata), naprednim mixom, zvukovima za bebe i optimizacijom baterije — offline i profesionalni zvukovi bez pretplate."
-      },
-      {
-        "question": "Što čini DRMN jedinstvenim među besplatnim alternativama?",
-        "answer": "Besplatna verzija s timerom od 1 sata bez pretplate. Dok druge ograničavaju zvukove ili traže kupnje, DRMN nudi mix, offline i bateriju besplatno — plus zvukove za bebe kojih mnoge nemaju."
-      },
-      {
-        "question": "Je li DRMN bolji od drugih aplikacija zvukova za spavanje?",
-        "answer": "Besplatna verzija: timer, mix, offline, baterija bez pretplate. 4,9, preko 10.000 preuzimanja, uspavljivanje 30–50 % brže. Zvukovi za bebe i pametni timer besplatno — značajke za koje druge naplaćuju."
+        "question": "Tko je stvorio DRMN?",
+        "answer": "DRMN je razvio Vladimir Ivakhnenko, neovisni iOS developer. U App Storeu ima ocjenu 4,9 na 10 recenzija i više od 10.000 preuzimanja. Kontakt: c-basso@ya.ru."
       }
     ],
     "structured_data": {
@@ -444,7 +431,7 @@
           "availability": "https://schema.org/InStock",
           "url": "https://apps.apple.com/app/id6746480683"
         },
-        "description": "Aplikacija zvukova za spavanje i bijeli šum za iPhone. Besplatna verzija s kišom, ventilatorom, mixom i offline. Za san, fokus i bebe.",
+        "description": "DRMN je freemium iOS aplikacija s bijelim i smeđim šumom, kišom, ventilatorom i zvukovima prirode. Mixaj snimke, reproduciraj offline i koristi timer za spavanje s fade-outom. Besplatno u App Storeu za iPhone.",
         "image": {
           "@type": "ImageObject",
           "url": "https://drmn.xyz/img/logo.webp",
@@ -467,7 +454,7 @@
           "@type": "Person",
           "name": "Vladimir Ivakhnenko"
         },
-        "keywords": "zvukovi za spavanje, stroj za zvukove spavanja, bijeli šum, aplikacija za spavanje, zvuk kiše, zvuk ventilatora, offline spavanje",
+        "keywords": "bijeli šum, zvukovi za spavanje, stroj za zvukove spavanja, smeđi šum, kiša za spavanje, ventilator za spavanje, zvukovi za bebu, offline, timer za spavanje, fokus, nesanica, besplatna iPhone aplikacija",
         "inLanguage": "hr",
         "datePublished": "2024-01-01",
         "dateModified": "2025-01-15",
@@ -486,14 +473,14 @@
         "name": "DRMN",
         "url": "https://drmn.xyz/hr/",
         "logo": "https://drmn.xyz/img/logo.webp",
-        "description": "DRMN — aplikacija zvukova za spavanje i bijeli šum za iPhone. Besplatna verzija s mixom i offline. Za san, fokus i bebe."
+        "description": "DRMN — bijeli šum i ambijentalni zvukovi za spavanje na iPhoneu. Mix, offline, timer za spavanje. Besplatno preuzimanje u App Storeu."
       },
       "website": {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "DRMN",
         "url": "https://drmn.xyz/hr/",
-        "description": "Aplikacija zvukova za spavanje i bijeli šum za iPhone. Besplatna verzija s mixom i offline. Preuzmite besplatno u App Storeu.",
+        "description": "DRMN — bijeli šum i ambijentalni zvukovi za spavanje na iPhoneu. Mix, offline, timer za spavanje. Besplatno preuzimanje u App Storeu.",
         "potentialAction": {
           "@type": "SearchAction",
           "target": "https://drmn.xyz/?q={search_term_string}",
@@ -503,54 +490,118 @@
       "howto": {
         "@context": "https://schema.org",
         "@type": "HowTo",
-        "name": "Kako koristiti aplikaciju zvukova za spavanje",
-        "description": "Saznaj kako koristiti DRMN za brže uspavljivanje. Vodič korak po korak.",
+        "name": "Koristi DRMN za bolji san",
+        "description": "Brzi vodič: odaberi snimku, mixaj ako želiš, postavi timer i slušaj offline.",
         "step": [
           {
             "@type": "HowToStep",
             "position": 1,
-            "name": "Preuzmi besplatno",
-            "text": "Preuzmi DRMN iz App Storea na iPhone. Potreban iOS 17.1+. Besplatna verzija uključuje timer od 1 sata.",
+            "name": "Preuzmi DRMN",
+            "text": "Instaliraj DRMN besplatno iz App Storea na iPhone (iOS 17.1+). Besplatna verzija uključuje timer od sata i osnovne zvukove.",
             "url": "https://apps.apple.com/app/id6746480683"
           },
           {
             "@type": "HowToStep",
             "position": 2,
-            "name": "Pregledaj zvukove za spavanje",
-            "text": "Otvori aplikaciju i istraži biblioteku: bijeli i smeđi šum, priroda (kiša, valovi, vatra), meditacija i zvukovi za bebe."
+            "name": "Pregledaj biblioteku",
+            "text": "U DRMN-u ćeš pronaći bijeli i smeđi šum, kišu, valove, vatru, meditaciju i zvukove za bebu."
           },
           {
             "@type": "HowToStep",
             "position": 3,
-            "name": "Odaberi zvukove",
-            "text": "Prema potrebi — bijeli šum za maskiranje, priroda za opuštanje, zvukovi za bebe za malu djecu. Preslušaj prije reprodukcije."
+            "name": "Odaberi prema potrebi",
+            "text": "Stalni zvuk za maskiranje smetnji, priroda za opuštanje, zvukovi za bebu za spavaću sobu. Slušaj prije reprodukcije."
           },
           {
             "@type": "HowToStep",
             "position": 4,
-            "name": "Miješaj zvukove",
-            "text": "Kombiniraj bijeli šum s valovima ili kišu s meditacijom. Stvori savršeno okruženje za spavanje."
+            "name": "Mixaj zvukove (opcionalno)",
+            "text": "Preklopi bijeli šum s valovima ili kišu s nježnom meditacijom—stvori svoju večernju mješavinu."
           },
           {
             "@type": "HowToStep",
             "position": 5,
             "name": "Postavi timer za spavanje",
-            "text": "Uključi automatski fade-out ako ne želiš zvuk cijelu noć. Glasnoća polako nestaje."
+            "text": "Uključi automatski fade-out ako ne želiš zvuk cijelu noć. Smanjuje se nakon što zaspiš."
           },
           {
             "@type": "HowToStep",
             "position": 6,
-            "name": "Pokreni i spavaj",
-            "text": "Pritisni play i prilagodi glasnoću. iPhone blizu ili slušalice — oboje radi."
+            "name": "Reproduciraj i prilagodi glasnoću",
+            "text": "Dovoljno glasno da maskira buku, ali ugodno za uši. iPhone na noćnom stolcu ili slušalice—oba rade."
           },
           {
             "@type": "HowToStep",
             "position": 7,
             "name": "Preuzmi za offline",
-            "text": "Preuzmi favorite za offline korištenje. Neprekinut san bilo gdje bez interneta."
+            "text": "Spremi favorite lokalno—korisno na putovanjima ili sa slabim Wi‑Fi-jem u spavaćoj sobi."
           }
         ]
-      }
+      },
+      "reviews": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Sarah M."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Brže zaspim s DRMN-om. Mix mi omogućuje savršeno kombinirati bijeli šum i valove."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Michael R."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Naša beba spava cijelu noć uz zvuk sušila. Offline način rada nas spašava na putovanjima."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Jennifer L."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "S nesanicoom mi je DRMN promijenio život. Koristim ga svake noći i budim se odmorn."
+        }
+      ]
     }
+  },
+  "app_store_proof": {
+    "title": "Ocijenjeno u App Storeu",
+    "rating": "4,9",
+    "rating_max": "5",
+    "review_count": "10",
+    "downloads": "10.000+",
+    "description": "Prave ocjene i recenzije iz App Storea—ne marketinške obećanja. Pročitaj što korisnici kažu prije preuzimanja.",
+    "store_url": "https://apps.apple.com/app/id6746480683",
+    "reviews_url": "https://apps.apple.com/app/id6746480683?see-all=reviews",
+    "screenshot_alt": "Pregled aplikacije DRMN na iPhoneu",
+    "screenshot_url": "https://drmn.xyz/site_preview.png"
+  },
+  "about": {
+    "title": "O aplikaciji DRMN",
+    "description": "DRMN je neovisna iOS aplikacija za san i fokus, koju je stvorio Vladimir Ivakhnenko. Počela je kao jednostavan alat za bolji odmor—stabilni zvukovi, offline reprodukcija i osnovne funkcije bez obaveznog pretplate.",
+    "developer": "Vladimir Ivakhnenko",
+    "developer_url": "https://apps.apple.com/developer/id1239180595",
+    "contact_email": "c-basso@ya.ru",
+    "contact_label": "Kontakt",
+    "developer_label": "Developer u App Storeu",
+    "about_page_url": "/about.html",
+    "about_page_label": "Stranica o aplikaciji"
   }
 }

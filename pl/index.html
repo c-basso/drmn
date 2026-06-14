@@ -1,4 +1,4 @@
-<!-- Version: 1781428169148 -->
+<!-- Version: 1781450507318 -->
 <!DOCTYPE html>
 <html lang="pl" dir="ltr">
 
@@ -663,6 +663,138 @@
       font-weight: 600;
     }
 
+    /* Sound category sections (H2 per category) */
+    .sound-section {
+      padding: 3.5rem 0;
+      background: var(--color-bg-primary);
+    }
+
+    .sound-section:nth-child(even) {
+      background: var(--color-bg-secondary);
+    }
+
+    .sound-section h2 {
+      color: var(--color-text-primary);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .sound-section-icon {
+      font-size: 1.75rem;
+      line-height: 1;
+    }
+
+    .sound-section p {
+      color: var(--color-text-secondary);
+      line-height: 1.8;
+      max-width: 720px;
+    }
+
+    /* App Store proof / E-E-A-T */
+    .app-store-proof {
+      padding: 4rem 0;
+      background: var(--color-bg-secondary);
+    }
+
+    .app-store-proof-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    .app-store-proof h2 {
+      color: var(--color-text-primary);
+      margin-bottom: 1rem;
+    }
+
+    .app-store-proof p {
+      color: var(--color-text-secondary);
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+
+    .app-store-rating {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+
+    .app-store-rating-value {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--color-accent);
+      line-height: 1;
+    }
+
+    .app-store-rating-meta {
+      color: var(--color-text-secondary);
+      font-size: 0.95rem;
+    }
+
+    .app-store-links a {
+      color: var(--color-accent-light);
+      text-decoration: none;
+      margin-right: 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    .app-store-links a:hover {
+      text-decoration: underline;
+    }
+
+    .app-store-screenshot {
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid rgba(107, 127, 215, 0.15);
+    }
+
+    .app-store-screenshot img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* About / developer E-E-A-T */
+    .about-section {
+      padding: 4rem 0;
+      background: var(--color-bg-primary);
+    }
+
+    .about-section h2 {
+      color: var(--color-text-primary);
+      margin-bottom: 1rem;
+    }
+
+    .about-section p {
+      color: var(--color-text-secondary);
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+
+    .about-meta {
+      margin-top: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem 2rem;
+    }
+
+    .about-meta a {
+      color: var(--color-accent-light);
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .about-meta a:hover {
+      text-decoration: underline;
+    }
+
     /* Comparison Section */
     .comparison-section {
       padding: 5rem 0;
@@ -883,6 +1015,10 @@
         min-width: 600px;
       }
 
+      .app-store-proof-inner {
+        grid-template-columns: 1fr;
+      }
+
       .footer-links {
         flex-direction: column;
         gap: 1rem;
@@ -937,18 +1073,18 @@
 <body>
   <header role="banner">
     <div class="container">
-      <a href="https://apps.apple.com/app/id6746480683" class="header-link" aria-label="Pobierz darmową aplikację dźwięków do snu z App Store" rel="noopener noreferrer">
+      <a href="https://apps.apple.com/app/id6746480683" class="header-link" aria-label="Pobierz DRMN za darmo z App Store" rel="noopener noreferrer">
         <div class="header-content">
           <div class="app-logo">
             <img src="/img/logo.webp" alt="Logo aplikacji DRMN maszyna do snu na iPhone" width="120" height="120" loading="eager" decoding="async">
           </div>
-          <h1>Aplikacja maszyny do snu na iPhone</h1>
-          <p class="tagline">Zasypiaj szybciej dzięki najlepszym dźwiękom do snu. DRMN to aplikacja z deszczem, wentylatorem, białym szumem i dźwiękami natury — mix, odtwarzanie offline i oszczędzanie baterii przez całą noc.</p>
+          <h1>Biały szum i dźwięki do snu na iPhone</h1>
+          <p class="tagline">Zasypiaj szybciej dzięki stabilnemu dźwiękowi ambient na iPhonie. DRMN łączy deszcz, wentylator, biały i brązowy szum, dźwięki natury, mix, tryb offline i oszczędny timer snu.</p>
           <div class="hero-cta">
             <!-- Mobile: Download button -->
             <div class="hero-cta-mobile">
               <div class="download-btn">
-                <img src="/img/download.svg" alt="Pobierz aplikację dźwięków do snu w App Store" width="200" height="60" loading="eager" decoding="async">
+                <img src="/img/download.svg" alt="Pobierz DRMN w App Store" width="200" height="60" loading="eager" decoding="async">
               </div>
             </div>
             <!-- Desktop: QR code -->
@@ -1010,40 +1146,72 @@
       </div>
     </section>
 
-    <!-- Popular Sleep Sounds (keyword mapping) -->
+    <!-- Sound category sections or grid -->
     
-    <section class="popular-sounds" aria-labelledby="popular-sounds-heading">
+    
+    <section class="sound-section" aria-labelledby="sound-section-heading">
+      <div class="container-narrow">
+        <h2 id="sound-section-heading"><span class="sound-section-icon" aria-hidden="true">🔊</span> Biały szum</h2>
+        <p>Stały biały szum maskuje nagłe dźwięki—ruch uliczny, sąsiadów czy skrzypiącą podłogę—i daje mózgowi przewidywalne tło do relaksu. Wypróbuj szum wentylatora lub klasyczny szum statyczny i zmiksuj go z deszczem albo falami.</p>
+      </div>
+    </section>
+    
+    <section class="sound-section" aria-labelledby="sound-section-heading">
+      <div class="container-narrow">
+        <h2 id="sound-section-heading"><span class="sound-section-icon" aria-hidden="true">🌊</span> Brązowy szum</h2>
+        <p>Brązowy i ciemny szum podkreśla niskie częstotliwości. Wielu uważa go za cieplejszy i mniej ostry niż biały szum—dobry na głęboki sen lub koncentrację. Używaj solo albo pod dźwiękami natury.</p>
+      </div>
+    </section>
+    
+    <section class="sound-section" aria-labelledby="sound-section-heading">
+      <div class="container-narrow">
+        <h2 id="sound-section-heading"><span class="sound-section-icon" aria-hidden="true">👶</span> Dźwięki do snu dla dziecka</h2>
+        <p>Delikatne ścieżki suszarki, odkurzacza lub klawiatury naśladują znane rytmy, które uspokajają niemowlęta i maluchy. Rodzice używają ich w pokoju dziecka—bez osobnej maszyny do snu.</p>
+      </div>
+    </section>
+    
+    <section class="sound-section" aria-labelledby="sound-section-heading">
+      <div class="container-narrow">
+        <h2 id="sound-section-heading"><span class="sound-section-icon" aria-hidden="true">⏱️</span> Timer snu</h2>
+        <p>Ustaw timer z automatycznym wyciszaniem, żeby dźwięk stopniowo zanikał po zaśnięciu. Darmowa wersja obejmuje godzinę—wystarczy na większość nocy; premium odblokowuje dłuższe sesje.</p>
+      </div>
+    </section>
+    
+    <section class="sound-section" aria-labelledby="sound-section-heading">
+      <div class="container-narrow">
+        <h2 id="sound-section-heading"><span class="sound-section-icon" aria-hidden="true">📴</span> Offline maszyna do snu</h2>
+        <p>Pobierz ulubione ścieżki raz i słuchaj do 10 godzin bez Wi‑Fi ani danych komórkowych. Optymalizacja baterii utrzymuje odtwarzanie przez całą noc—idealnie w podróży lub przy słabym sygnale w sypialni.</p>
+      </div>
+    </section>
+    
+    
+    
+
+    <!-- App Store proof (E-E-A-T) -->
+    
+    <section class="app-store-proof" aria-labelledby="app-store-proof-heading">
       <div class="container">
-        <h2 id="popular-sounds-heading">Popularne dźwięki do snu</h2>
-        
-        <p class="section-intro">Szukasz najlepszego dźwięku, by zasnąć? DRMN ma najczęściej wyszukiwane dźwięki do snu — gotowe do mixowania, odtwarzania offline i używania całą noc na iPhone.</p>
-        
-        <div class="features-grid">
-          
-          <article class="feature-card">
-            <div class="feature-icon" aria-hidden="true">🌧️</div>
-            <h3>Dźwięk deszczu do zasypiania</h3>
-            <p>Łagodny deszcz maskuje nagłe dźwięki i pomaga zasnąć. Mixuj deszcz z białym szumem dla głębszego snu.</p>
-          </article>
-          
-          <article class="feature-card">
-            <div class="feature-icon" aria-hidden="true">🌀</div>
-            <h3>Dźwięk wentylatora do zasypiania</h3>
-            <p>Stały szum wentylatora tłumi ruch uliczny, chrapanie i sąsiadów — klasyczny dźwięk do snu, któremu ufa miliony.</p>
-          </article>
-          
-          <article class="feature-card">
-            <div class="feature-icon" aria-hidden="true">🔊</div>
-            <h3>Biały szum do zasypiania</h3>
-            <p>Biały, brązowy i ciemny szum tworzą stałą warstwę tła, która sygnalizuje mózgowi czas na odpoczynek.</p>
-          </article>
-          
-          <article class="feature-card">
-            <div class="feature-icon" aria-hidden="true">🌊</div>
-            <h3>Dźwięki natury do zasypiania</h3>
-            <p>Fale, ogień i poranne ptaki uzupełniają bibliotekę — mixuj je w dowolnym momencie z deszczem lub wentylatorem.</p>
-          </article>
-          
+        <div class="app-store-proof-inner">
+          <div>
+            <h2 id="app-store-proof-heading">Oceniane w App Store</h2>
+            <p>Prawdziwe oceny i recenzje z App Store—to nie obietnice marketingowe. Przeczytaj, co mówią użytkownicy, zanim pobierzesz aplikację.</p>
+            <div class="app-store-rating">
+              <div class="app-store-rating-value">4,9<span style="font-size:1.25rem;color:var(--color-text-muted)">/5</span></div>
+              <div class="app-store-rating-meta">
+                <div>10 App Store reviews</div>
+                <div>10 000+ downloads</div>
+              </div>
+            </div>
+            <div class="app-store-links">
+              <a href="https://apps.apple.com/app/id6746480683" rel="noopener noreferrer">View on App Store</a>
+              <a href="https://apps.apple.com/app/id6746480683?see-all=reviews" rel="noopener noreferrer">Read all reviews</a>
+            </div>
+          </div>
+          <div class="app-store-screenshot">
+            <a href="https://apps.apple.com/app/id6746480683" rel="noopener noreferrer">
+              <img src="https://drmn.xyz/site_preview.png" alt="Podgląd aplikacji DRMN na iPhonie" width="600" height="315" loading="lazy" decoding="async">
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -1362,125 +1530,90 @@
     <!-- FAQ Section for SEO -->
     <section class="content-section" aria-labelledby="faq-heading">
       <div class="container-narrow">
-        <h2 id="faq-heading">FAQ: maszyna do snu, dźwięki do snu i biały szum</h2>
+        <h2 id="faq-heading">Często zadawane pytania</h2>
         <div style="margin-top: 2rem;">
           
           <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
             <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Jaki dźwięk najlepiej pomaga zasnąć?</h3>
             <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">To zależy od Ciebie — wielu wybiera deszcz, wentylator lub stały biały szum. W DRMN możesz odsłuchać i mixować dźwięki, by znaleźć to, co najszybciej pomaga zasnąć.</p>
+              <p style="color: var(--color-text-secondary); line-height: 1.8;">To zależy od tego, co Cię uspokaja. Wielu wybiera deszcz, stały szum wentylatora lub neutralny biały szum. W DRMN możesz odsłuchać i zmiksować ścieżki, żeby znaleźć to, co pomaga zasnąć szybciej.</p>
             </div>
           </div>
           
           <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
             <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Czym jest maszyna do snu?</h3>
             <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">Odtwarza stałe tło — deszcz, wentylator lub biały szum — by maskować hałas i pomóc zasnąć. DRMN to aplikacja na iPhone z mixem, odtwarzaniem offline i timerem snu, jak fizyczna maszyna.</p>
+              <p style="color: var(--color-text-secondary); line-height: 1.8;">Odtwarza stałe tło—deszcz, wentylator lub biały szum—które maskuje hałas i pomaga spać. DRMN działa jak przenośna maszyna na iPhonie z mixem, trybem offline i wbudowanym timerem.</p>
             </div>
           </div>
           
           <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Najlepsza aplikacja białego szumu na iPhone?</h3>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Czy DRMN to dobra aplikacja białego szumu na iPhone?</h3>
             <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">DRMN ma ocenę 4,9 i ponad 10 000 pobrań. Deszcz, wentylator, biały szum i 100 godzin dźwięków do snu i natury — użytkownicy zasypiają o 30–50 % szybciej.</p>
+              <p style="color: var(--color-text-secondary); line-height: 1.8;">DRMN ma ocenę 4,9 w App Store i ponad 10 000 pobrań. Zawiera deszcz, wentylator, biały i brązowy szum oraz ponad 100 godzin ambientu i dźwięków natury. Użytkownicy często zasypiają o 30–50 % szybciej, gdy przeszkadza im hałas w tle.</p>
             </div>
           </div>
           
           <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Czy jest darmowa aplikacja białego szumu?</h3>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Czy jest darmowa aplikacja białego szumu na iPhone?</h3>
             <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">Tak! DRMN jest darmowy w App Store. Darmowa wersja obejmuje timer 1 h, offline, mix i dźwięki do snu. Premium odblokowuje dłuższe odtwarzanie.</p>
+              <p style="color: var(--color-text-secondary); line-height: 1.8;">Tak. DRMN pobierzesz za darmo z App Store. Darmowa wersja obejmuje godzinny timer, offline, mix i podstawowe dźwięki do snu. Premium odblokowuje dłuższe sesje i dodatkowe ścieżki—do wypróbowania podstaw nie potrzebujesz subskrypcji.</p>
             </div>
           </div>
           
           <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Jakie dźwięki ma aplikacja do snu?</h3>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Jakie dźwięki są w aplikacji?</h3>
             <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">DRMN oferuje ponad 100 godzin profesjonalnego audio: biały, brązowy i ciemny szum, deszcz, fale, ogień, poranne ptaki, medytacja i dźwięki dla niemowląt (suszarka, odkurzacz, klawiatura).</p>
+              <p style="color: var(--color-text-secondary); line-height: 1.8;">Biały, brązowy i ciemny szum; natura jak deszcz, fale, ogień i poranne ptaki; medytacja i koncentracja; dźwięki dla dziecka jak suszarka, odkurzacz i klawiatura. Dowolną kombinację możesz zmiksować.</p>
             </div>
           </div>
           
           <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Czy aplikacja działa offline?</h3>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Czy DRMN działa offline?</h3>
             <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">Tak! Po pobraniu dźwięków DRMN działa w pełni offline. Dzięki optymalizacji baterii — do 10 godzin bez internetu.</p>
+              <p style="color: var(--color-text-secondary); line-height: 1.8;">Tak. Po pobraniu ścieżek aplikacja odtwarza bez internetu. Optymalizacja baterii pozwala na do 10 godzin ciągłego odtwarzania—wystarczy na podróż lub całą noc.</p>
             </div>
           </div>
           
           <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Najlepsza aplikacja do snu dziecka?</h3>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Jakie dźwięki pasują do snu dziecka?</h3>
             <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">DRMN ma specjalne dźwięki dla niemowląt (suszarka, odkurzacz, klawiatura), które pomagają szybciej zasnąć. Znane rytmy uspokajają i tworzą spokojne otoczenie.</p>
+              <p style="color: var(--color-text-secondary); line-height: 1.8;">Wielu rodziców używa stałych, znanych dźwięków—suszarki, odkurzacza lub delikatnego białego szumu. DRMN ma ścieżki dla niemowląt, które uspokajają maluchy bez osobnego urządzenia w pokoju.</p>
             </div>
           </div>
           
           <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Jak działa aplikacja maszyny do snu?</h3>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Czy mogę mixować różne dźwięki?</h3>
             <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">DRMN dostarcza biały szum i dźwięki do snu dla spokoju i koncentracji. Maskuje hałas, tworzy stałe środowisko snu i wspiera głębszy sen — jak fizyczna maszyna.</p>
+              <p style="color: var(--color-text-secondary); line-height: 1.8;">Tak. Połącz biały szum z falami, deszcz z medytacją albo dowolną parę według uznania. Mix jest w darmowej wersji.</p>
             </div>
           </div>
           
           <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Czy mogę mixować dźwięki?</h3>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Czy DRMN ma timer snu?</h3>
             <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">Tak! Łącz biały szum z falami lub deszcz z medytacją. Stwórz własne doświadczenie snu.</p>
+              <p style="color: var(--color-text-secondary); line-height: 1.8;">Tak. Ustaw timer z automatycznym wyciszaniem, żeby dźwięk zanikał po zaśnięciu. Darmowa wersja obejmuje godzinę; premium dodaje dłuższe opcje.</p>
             </div>
           </div>
           
           <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Czy aplikacja ma timer snu?</h3>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Czy DRMN może pomóc przy bezsenności?</h3>
             <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">Tak! Timer z automatycznym wyciszaniem. Ustaw go — dźwięk stopniowo zanika po zaśnięciu.</p>
+              <p style="color: var(--color-text-secondary); line-height: 1.8;">Stałe tło może maskować ruch uliczny, sąsiadów i inne zakłócenia budzące lekkich śpiących. Osoby z bezsennością często słuchają białego lub brązowego szumu każdej nocy; wielu zgłasza szybsze zasypianie, choć efekty się różnią.</p>
             </div>
           </div>
           
           <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Czym jest biały szum do snu i jak pomaga?</h3>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Czym DRMN różni się od Calm lub Headspace?</h3>
             <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">Stały dźwięk maskujący rozpraszający hałas i pomagający szybciej zasnąć. DRMN tłumi ruch uliczny, sąsiadów i inne dźwięki dla stałego środowiska snu.</p>
+              <p style="color: var(--color-text-secondary); line-height: 1.8;">Calm i Headspace skupiają się na prowadzonej medytacji i subskrypcjach wellness. DRMN opiera się na dźwięku ambient—maszynie do snu w kieszeni—z hojną darmową wersją (godzinny timer, offline, mix) i bez kursów medytacji. BetterSleep i podobne aplikacje często trzymają funkcje za paywallem; z DRMN podstawowe dźwięki wypróbujesz za darmo.</p>
             </div>
           </div>
           
           <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Czy nadaje się przy bezsenności?</h3>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Kto stworzył DRMN?</h3>
             <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">Tak! DRMN ma 4,9 i ponad 10 000 pobrań. Maskując hałas, użytkownicy zasypiają średnio o 30–50 % szybciej. Pobierz za darmo.</p>
-            </div>
-          </div>
-          
-          <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Ile pobrań ma DRMN?</h3>
-            <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">Ponad 10 000 w App Store, 4,9/5 z 10 recenzji. 100 godzin dźwięków i do 10 godzin offline na jednym ładowaniu.</p>
-            </div>
-          </div>
-          
-          <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Jaka jest ocena DRMN w App Store?</h3>
-            <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">4,9/5 na podstawie 10 recenzji. Ponad 10 000 pobrań, 100 godzin dźwięków do snu i odtwarzanie offline.</p>
-            </div>
-          </div>
-          
-          <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Czym DRMN różni się od innych aplikacji?</h3>
-            <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">DRMN wyróżnia się hojną darmową wersją (timer 1 h), zaawansowanym mixem, dźwiękami dla niemowląt i optymalizacją baterii — offline i profesjonalne dźwięki bez subskrypcji.</p>
-            </div>
-          </div>
-          
-          <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Co czyni DRMN wyjątkowym wśród darmowych alternatyw?</h3>
-            <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">Darmowa wersja z timerem 1 h bez subskrypcji. Podczas gdy inne ograniczają dźwięki lub wymagają zakupów, DRMN daje mix, offline i baterię za darmo — plus dźwięki dla niemowląt, których wielu nie ma.</p>
-            </div>
-          </div>
-          
-          <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Czy DRMN jest lepszy od innych aplikacji dźwięków do snu?</h3>
-            <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">Darmowa wersja: timer, mix, offline, bateria bez subskrypcji. 4,9, ponad 10 000 pobrań, 30–50 % szybsze zasypianie. Dźwięki dla niemowląt i inteligentny timer za darmo — funkcje, za które inne biorą opłaty.</p>
+              <p style="color: var(--color-text-secondary); line-height: 1.8;">DRMN stworzył niezależny deweloper iOS Vladimir Ivakhnenko. W App Store ma ocenę 4,9 na podstawie 10 recenzji i ponad 10 000 pobrań. Kontakt: c-basso@ya.ru.</p>
             </div>
           </div>
           
@@ -1488,15 +1621,30 @@
       </div>
     </section>
 
+    <!-- About / developer (E-E-A-T) -->
+    
+    <section class="about-section" aria-labelledby="about-heading">
+      <div class="container-narrow">
+        <h2 id="about-heading">O DRMN</h2>
+        <p>DRMN to niezależna aplikacja iOS do snu i koncentracji, stworzona przez Vladimira Ivakhnenka. Zaczęła jako proste narzędzie do lepszego odpoczynku—stabilne dźwięki, odtwarzanie offline i podstawowe funkcje bez obowiązkowej subskrypcji.</p>
+        <div class="about-meta">
+          <a href="https://apps.apple.com/developer/id1239180595" rel="noopener noreferrer">Deweloper w App Store: Vladimir Ivakhnenko</a>
+          <a href="mailto:c-basso@ya.ru">Kontakt: c-basso@ya.ru</a>
+          <a href="/about.html">Strona o aplikacji</a>
+        </div>
+      </div>
+    </section>
+    
+
     <!-- CTA Section -->
     <section class="cta-section" aria-labelledby="cta-heading">
       <div class="container">
         <div class="cta-content">
           <h2 id="cta-heading">Gotowy, by lepiej spać dziś wieczorem?</h2>
-          <p>Dołącz do ponad 10 000 użytkowników, którzy poprawili sen dzięki DRMN. 4,9/5 w App Store — darmowa aplikacja dźwięków do snu pomaga zasypiać o 30–50 % szybciej. Darmowa wersja: timer 1 h, offline i mix. Pobierz dziś i wypróbuj profesjonalne dźwięki za darmo.</p>
+          <p>Ponad 10 000 osób używa DRMN, żeby szybciej się zrelaksować i zasnąć. Ocena 4,9/5 w App Store, darmowa wersja z godzinnym timerem, offline i mixem. Pobierz i znajdź dźwięki, które działają dla Ciebie.</p>
           <div class="hero-cta">
-            <a href="https://apps.apple.com/app/id6746480683" class="download-btn" aria-label="Pobierz darmową aplikację dźwięków do snu z App Store" rel="noopener noreferrer">
-              <img src="/img/download.svg" alt="Pobierz aplikację dźwięków do snu w App Store" width="200" height="60" loading="lazy" decoding="async">
+            <a href="https://apps.apple.com/app/id6746480683" class="download-btn" aria-label="Pobierz DRMN za darmo z App Store" rel="noopener noreferrer">
+              <img src="/img/download.svg" alt="Pobierz DRMN w App Store" width="200" height="60" loading="lazy" decoding="async">
             </a>
           </div>
         </div>
@@ -1507,6 +1655,9 @@
   <footer role="contentinfo">
     <div class="container">
       <div class="footer-links">
+        
+        <a href="/about.html">O aplikacji</a>
+        
         <a href="/blog/">Blog</a>
         <a href="/privacy.html">Polityka prywatności</a>
         <a href="/terms.html">Warunki korzystania</a>
@@ -1526,23 +1677,23 @@
 
   <!-- Structured Data (JSON-LD) for SEO -->
   <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"MobileApplication","name":"DRMN","alternateName":"DRMN Aplikacja do snu","applicationCategory":"HealthApplication","operatingSystem":"iOS","offers":{"@type":"Offer","price":"0","priceCurrency":"USD","availability":"https://schema.org/InStock","url":"https://apps.apple.com/app/id6746480683"},"description":"Aplikacja dźwięków do snu i białego szumu na iPhone. Darmowa wersja z deszczem, wentylatorem, mixem i offline. Do snu, koncentracji i niemowląt.","image":{"@type":"ImageObject","url":"https://drmn.xyz/img/logo.webp","width":176,"height":176,"caption":"Logo aplikacji DRMN"},"screenshot":{"@type":"ImageObject","url":"https://drmn.xyz/img/logo.webp","width":176,"height":176},"url":"https://drmn.xyz/pl/","author":{"@type":"Person","name":"Vladimir Ivakhnenko"},"publisher":{"@type":"Person","name":"Vladimir Ivakhnenko"},"keywords":"dźwięki do snu, maszyna do snu, biały szum, aplikacja do snu, dźwięk deszczu, dźwięk wentylatora, sen offline","inLanguage":"pl","datePublished":"2024-01-01","dateModified":"2026-06-14","softwareVersion":"1.5","fileSize":"49.2MB","softwareRequirements":"Wymaga iOS 17.1 lub nowszego","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"10"},"downloadUrl":"https://apps.apple.com/app/id6746480683"}
+    {"@context":"https://schema.org","@type":"MobileApplication","name":"DRMN","alternateName":"DRMN Aplikacja do snu","applicationCategory":"HealthApplication","operatingSystem":"iOS","offers":{"@type":"Offer","price":"0","priceCurrency":"USD","availability":"https://schema.org/InStock","url":"https://apps.apple.com/app/id6746480683"},"description":"DRMN to freemium aplikacja iOS z białym i brązowym szumem, deszczem, wentylatorem i dźwiękami natury. Mixuj ścieżki, odtwarzaj offline i używaj timera snu z wyciszaniem. Darmowe pobranie w App Store na iPhone.","image":{"@type":"ImageObject","url":"https://drmn.xyz/img/logo.webp","width":176,"height":176,"caption":"Logo aplikacji DRMN"},"screenshot":{"@type":"ImageObject","url":"https://drmn.xyz/img/logo.webp","width":176,"height":176},"url":"https://drmn.xyz/pl/","author":{"@type":"Person","name":"Vladimir Ivakhnenko"},"publisher":{"@type":"Person","name":"Vladimir Ivakhnenko"},"keywords":"biały szum, dźwięki do snu, maszyna do snu, brązowy szum, dźwięk deszczu do snu, dźwięk wentylatora do snu, dźwięki dla dziecka, offline, timer snu, koncentracja, bezsenność, darmowa aplikacja iPhone","inLanguage":"pl","datePublished":"2024-01-01","dateModified":"2026-06-14","softwareVersion":"1.5","fileSize":"49.2MB","softwareRequirements":"Wymaga iOS 17.1 lub nowszego","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"10"},"downloadUrl":"https://apps.apple.com/app/id6746480683","review":[{"@type":"Review","author":{"@type":"Person","name":"Sarah M."},"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"reviewBody":"Zasypiam szybciej z DRMN. Mix pozwala mi idealnie połączyć biały szum z falami."},{"@type":"Review","author":{"@type":"Person","name":"Michael R."},"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"reviewBody":"Nasze dziecko śpi całą noc przy dźwięku suszarki. Tryb offline ratuje nas w podróży."},{"@type":"Review","author":{"@type":"Person","name":"Jennifer L."},"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"reviewBody":"Przy bezsenności DRMN wszystko zmienił. Używam go każdej nocy i budzę się wypoczęta."}]}
   </script>
   
   <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"Organization","name":"DRMN","url":"https://drmn.xyz/pl/","logo":"https://drmn.xyz/img/logo.webp","description":"DRMN — aplikacja dźwięków do snu i białego szumu na iPhone. Darmowa wersja z mixem i offline. Do snu, koncentracji i niemowląt."}
+    {"@context":"https://schema.org","@type":"Organization","name":"DRMN","url":"https://drmn.xyz/pl/","logo":"https://drmn.xyz/img/logo.webp","description":"DRMN — biały szum i ambientowe dźwięki do snu na iPhone. Mix, offline, timer snu. Darmowe pobranie w App Store.","founder":{"@type":"Person","name":"Vladimir Ivakhnenko","url":"https://apps.apple.com/developer/id1239180595"},"sameAs":["https://apps.apple.com/developer/id1239180595"]}
   </script>
   
   <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"WebSite","name":"DRMN","url":"https://drmn.xyz/pl/","description":"Aplikacja dźwięków do snu i białego szumu na iPhone. Darmowa wersja z mixem i offline. Pobierz za darmo z App Store.","inLanguage":"pl"}
+    {"@context":"https://schema.org","@type":"WebSite","name":"DRMN","url":"https://drmn.xyz/pl/","description":"DRMN — biały szum i ambientowe dźwięki do snu na iPhone. Mix, offline, timer snu. Darmowe pobranie w App Store.","inLanguage":"pl"}
   </script>
   
   <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"HowTo","name":"Jak korzystać z aplikacji dźwięków do snu","description":"Dowiedz się, jak używać DRMN, by szybciej zasypiać. Przewodnik krok po kroku.","step":[{"@type":"HowToStep","position":1,"name":"Pobierz za darmo","text":"Pobierz DRMN z App Store na iPhone. Wymaga iOS 17.1+. Darmowa wersja obejmuje timer 1 h.","url":"https://apps.apple.com/app/id6746480683"},{"@type":"HowToStep","position":2,"name":"Przeglądaj dźwięki do snu","text":"Otwórz aplikację i odkryj bibliotekę: biały i brązowy szum, natura (deszcz, fale, ogień), medytacja i dźwięki dla niemowląt."},{"@type":"HowToStep","position":3,"name":"Wybierz dźwięki","text":"Według potrzeb — biały szum do maskowania, natura do relaksu, dźwięki dla niemowląt dla maluchów. Odsłuchaj przed odtwarzaniem."},{"@type":"HowToStep","position":4,"name":"Mixuj dźwięki","text":"Połącz biały szum z falami lub deszcz z medytacją. Stwórz idealne środowisko snu."},{"@type":"HowToStep","position":5,"name":"Ustaw timer snu","text":"Włącz automatyczne wyciszanie, jeśli nie chcesz dźwięku całą noc. Głośność stopniowo maleje."},{"@type":"HowToStep","position":6,"name":"Włącz i śpij","text":"Naciśnij play i dostosuj głośność. iPhone w pobliżu lub słuchawki — oba działają."},{"@type":"HowToStep","position":7,"name":"Pobierz do offline","text":"Pobierz ulubione do użytku offline. Nieprzerwany sen wszędzie bez internetu."}]}
+    {"@context":"https://schema.org","@type":"HowTo","name":"Jak używać DRMN do lepszego snu","description":"Szybki przewodnik: wybierz ścieżkę, opcjonalnie zmiksuj, ustaw timer i słuchaj offline.","step":[{"@type":"HowToStep","position":1,"name":"Pobierz DRMN","text":"Zainstaluj DRMN za darmo z App Store na iPhonie (iOS 17.1+). Darmowa wersja obejmuje godzinny timer i podstawowe dźwięki.","url":"https://apps.apple.com/app/id6746480683"},{"@type":"HowToStep","position":2,"name":"Przeglądaj bibliotekę","text":"W DRMN znajdziesz biały i brązowy szum, deszcz, fale, ogień, medytację i dźwięki dla dziecka."},{"@type":"HowToStep","position":3,"name":"Wybierz według potrzeb","text":"Stały dźwięk do maskowania zakłóceń, natura do relaksu, dźwięki dziecka do pokoju malucha. Posłuchaj przed odtwarzaniem."},{"@type":"HowToStep","position":4,"name":"Mixuj dźwięki (opcjonalnie)","text":"Nałóż biały szum na fale albo deszcz na delikatną medytację—stwórz wieczorną mieszankę."},{"@type":"HowToStep","position":5,"name":"Ustaw timer snu","text":"Włącz automatyczne wyciszanie, jeśli nie chcesz dźwięku przez całą noc. Po zaśnięciu głośność stopniowo spada."},{"@type":"HowToStep","position":6,"name":"Odtwarzaj i reguluj głośność","text":"Wystarczająco głośno, by maskować hałas, ale wygodnie dla uszu. iPhone na stoliku nocnym albo słuchawki—oba działają."},{"@type":"HowToStep","position":7,"name":"Pobierz do offline","text":"Zapisz ulubione lokalnie—przydatne w podróży albo przy słabym Wi‑Fi w sypialni."}]}
   </script>
   
   <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Jaki dźwięk najlepiej pomaga zasnąć?","acceptedAnswer":{"@type":"Answer","text":"To zależy od Ciebie — wielu wybiera deszcz, wentylator lub stały biały szum. W DRMN możesz odsłuchać i mixować dźwięki, by znaleźć to, co najszybciej pomaga zasnąć."}},{"@type":"Question","name":"Czym jest maszyna do snu?","acceptedAnswer":{"@type":"Answer","text":"Odtwarza stałe tło — deszcz, wentylator lub biały szum — by maskować hałas i pomóc zasnąć. DRMN to aplikacja na iPhone z mixem, odtwarzaniem offline i timerem snu, jak fizyczna maszyna."}},{"@type":"Question","name":"Najlepsza aplikacja białego szumu na iPhone?","acceptedAnswer":{"@type":"Answer","text":"DRMN ma ocenę 4,9 i ponad 10 000 pobrań. Deszcz, wentylator, biały szum i 100 godzin dźwięków do snu i natury — użytkownicy zasypiają o 30–50 % szybciej."}},{"@type":"Question","name":"Czy jest darmowa aplikacja białego szumu?","acceptedAnswer":{"@type":"Answer","text":"Tak! DRMN jest darmowy w App Store. Darmowa wersja obejmuje timer 1 h, offline, mix i dźwięki do snu. Premium odblokowuje dłuższe odtwarzanie."}},{"@type":"Question","name":"Jakie dźwięki ma aplikacja do snu?","acceptedAnswer":{"@type":"Answer","text":"DRMN oferuje ponad 100 godzin profesjonalnego audio: biały, brązowy i ciemny szum, deszcz, fale, ogień, poranne ptaki, medytacja i dźwięki dla niemowląt (suszarka, odkurzacz, klawiatura)."}},{"@type":"Question","name":"Czy aplikacja działa offline?","acceptedAnswer":{"@type":"Answer","text":"Tak! Po pobraniu dźwięków DRMN działa w pełni offline. Dzięki optymalizacji baterii — do 10 godzin bez internetu."}},{"@type":"Question","name":"Najlepsza aplikacja do snu dziecka?","acceptedAnswer":{"@type":"Answer","text":"DRMN ma specjalne dźwięki dla niemowląt (suszarka, odkurzacz, klawiatura), które pomagają szybciej zasnąć. Znane rytmy uspokajają i tworzą spokojne otoczenie."}},{"@type":"Question","name":"Jak działa aplikacja maszyny do snu?","acceptedAnswer":{"@type":"Answer","text":"DRMN dostarcza biały szum i dźwięki do snu dla spokoju i koncentracji. Maskuje hałas, tworzy stałe środowisko snu i wspiera głębszy sen — jak fizyczna maszyna."}},{"@type":"Question","name":"Czy mogę mixować dźwięki?","acceptedAnswer":{"@type":"Answer","text":"Tak! Łącz biały szum z falami lub deszcz z medytacją. Stwórz własne doświadczenie snu."}},{"@type":"Question","name":"Czy aplikacja ma timer snu?","acceptedAnswer":{"@type":"Answer","text":"Tak! Timer z automatycznym wyciszaniem. Ustaw go — dźwięk stopniowo zanika po zaśnięciu."}},{"@type":"Question","name":"Czym jest biały szum do snu i jak pomaga?","acceptedAnswer":{"@type":"Answer","text":"Stały dźwięk maskujący rozpraszający hałas i pomagający szybciej zasnąć. DRMN tłumi ruch uliczny, sąsiadów i inne dźwięki dla stałego środowiska snu."}},{"@type":"Question","name":"Czy nadaje się przy bezsenności?","acceptedAnswer":{"@type":"Answer","text":"Tak! DRMN ma 4,9 i ponad 10 000 pobrań. Maskując hałas, użytkownicy zasypiają średnio o 30–50 % szybciej. Pobierz za darmo."}},{"@type":"Question","name":"Ile pobrań ma DRMN?","acceptedAnswer":{"@type":"Answer","text":"Ponad 10 000 w App Store, 4,9/5 z 10 recenzji. 100 godzin dźwięków i do 10 godzin offline na jednym ładowaniu."}},{"@type":"Question","name":"Jaka jest ocena DRMN w App Store?","acceptedAnswer":{"@type":"Answer","text":"4,9/5 na podstawie 10 recenzji. Ponad 10 000 pobrań, 100 godzin dźwięków do snu i odtwarzanie offline."}},{"@type":"Question","name":"Czym DRMN różni się od innych aplikacji?","acceptedAnswer":{"@type":"Answer","text":"DRMN wyróżnia się hojną darmową wersją (timer 1 h), zaawansowanym mixem, dźwiękami dla niemowląt i optymalizacją baterii — offline i profesjonalne dźwięki bez subskrypcji."}},{"@type":"Question","name":"Co czyni DRMN wyjątkowym wśród darmowych alternatyw?","acceptedAnswer":{"@type":"Answer","text":"Darmowa wersja z timerem 1 h bez subskrypcji. Podczas gdy inne ograniczają dźwięki lub wymagają zakupów, DRMN daje mix, offline i baterię za darmo — plus dźwięki dla niemowląt, których wielu nie ma."}},{"@type":"Question","name":"Czy DRMN jest lepszy od innych aplikacji dźwięków do snu?","acceptedAnswer":{"@type":"Answer","text":"Darmowa wersja: timer, mix, offline, bateria bez subskrypcji. 4,9, ponad 10 000 pobrań, 30–50 % szybsze zasypianie. Dźwięki dla niemowląt i inteligentny timer za darmo — funkcje, za które inne biorą opłaty."}}]}
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Jaki dźwięk najlepiej pomaga zasnąć?","acceptedAnswer":{"@type":"Answer","text":"To zależy od tego, co Cię uspokaja. Wielu wybiera deszcz, stały szum wentylatora lub neutralny biały szum. W DRMN możesz odsłuchać i zmiksować ścieżki, żeby znaleźć to, co pomaga zasnąć szybciej."}},{"@type":"Question","name":"Czym jest maszyna do snu?","acceptedAnswer":{"@type":"Answer","text":"Odtwarza stałe tło—deszcz, wentylator lub biały szum—które maskuje hałas i pomaga spać. DRMN działa jak przenośna maszyna na iPhonie z mixem, trybem offline i wbudowanym timerem."}},{"@type":"Question","name":"Czy DRMN to dobra aplikacja białego szumu na iPhone?","acceptedAnswer":{"@type":"Answer","text":"DRMN ma ocenę 4,9 w App Store i ponad 10 000 pobrań. Zawiera deszcz, wentylator, biały i brązowy szum oraz ponad 100 godzin ambientu i dźwięków natury. Użytkownicy często zasypiają o 30–50 % szybciej, gdy przeszkadza im hałas w tle."}},{"@type":"Question","name":"Czy jest darmowa aplikacja białego szumu na iPhone?","acceptedAnswer":{"@type":"Answer","text":"Tak. DRMN pobierzesz za darmo z App Store. Darmowa wersja obejmuje godzinny timer, offline, mix i podstawowe dźwięki do snu. Premium odblokowuje dłuższe sesje i dodatkowe ścieżki—do wypróbowania podstaw nie potrzebujesz subskrypcji."}},{"@type":"Question","name":"Jakie dźwięki są w aplikacji?","acceptedAnswer":{"@type":"Answer","text":"Biały, brązowy i ciemny szum; natura jak deszcz, fale, ogień i poranne ptaki; medytacja i koncentracja; dźwięki dla dziecka jak suszarka, odkurzacz i klawiatura. Dowolną kombinację możesz zmiksować."}},{"@type":"Question","name":"Czy DRMN działa offline?","acceptedAnswer":{"@type":"Answer","text":"Tak. Po pobraniu ścieżek aplikacja odtwarza bez internetu. Optymalizacja baterii pozwala na do 10 godzin ciągłego odtwarzania—wystarczy na podróż lub całą noc."}},{"@type":"Question","name":"Jakie dźwięki pasują do snu dziecka?","acceptedAnswer":{"@type":"Answer","text":"Wielu rodziców używa stałych, znanych dźwięków—suszarki, odkurzacza lub delikatnego białego szumu. DRMN ma ścieżki dla niemowląt, które uspokajają maluchy bez osobnego urządzenia w pokoju."}},{"@type":"Question","name":"Czy mogę mixować różne dźwięki?","acceptedAnswer":{"@type":"Answer","text":"Tak. Połącz biały szum z falami, deszcz z medytacją albo dowolną parę według uznania. Mix jest w darmowej wersji."}},{"@type":"Question","name":"Czy DRMN ma timer snu?","acceptedAnswer":{"@type":"Answer","text":"Tak. Ustaw timer z automatycznym wyciszaniem, żeby dźwięk zanikał po zaśnięciu. Darmowa wersja obejmuje godzinę; premium dodaje dłuższe opcje."}},{"@type":"Question","name":"Czy DRMN może pomóc przy bezsenności?","acceptedAnswer":{"@type":"Answer","text":"Stałe tło może maskować ruch uliczny, sąsiadów i inne zakłócenia budzące lekkich śpiących. Osoby z bezsennością często słuchają białego lub brązowego szumu każdej nocy; wielu zgłasza szybsze zasypianie, choć efekty się różnią."}},{"@type":"Question","name":"Czym DRMN różni się od Calm lub Headspace?","acceptedAnswer":{"@type":"Answer","text":"Calm i Headspace skupiają się na prowadzonej medytacji i subskrypcjach wellness. DRMN opiera się na dźwięku ambient—maszynie do snu w kieszeni—z hojną darmową wersją (godzinny timer, offline, mix) i bez kursów medytacji. BetterSleep i podobne aplikacje często trzymają funkcje za paywallem; z DRMN podstawowe dźwięki wypróbujesz za darmo."}},{"@type":"Question","name":"Kto stworzył DRMN?","acceptedAnswer":{"@type":"Answer","text":"DRMN stworzył niezależny deweloper iOS Vladimir Ivakhnenko. W App Store ma ocenę 4,9 na podstawie 10 recenzji i ponad 10 000 pobrań. Kontakt: c-basso@ya.ru."}}]}
   </script>
   
   <!-- BreadcrumbList Schema -->

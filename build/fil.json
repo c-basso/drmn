@@ -33,13 +33,13 @@
     "app_name_suffix": "Makinang Tunog sa Pagtulog",
     "logo_alt": "Logo ng DRMN sleep sound machine app para sa iPhone",
     "app_name": "DRMN",
-    "title": "Sleep Sound Machine App para sa iPhone",
-    "tagline": "Makatulog nang mas mabilis gamit ang pinakamagandang tunog sa pagtulog. Ang DRMN ay sleep sound machine app na may ulan, bentilador, white noise at tunog ng kalikasan — plus mix, offline playback at battery-friendly buong gabi.",
+    "title": "White noise at tunog sa pagtulog sa iPhone",
+    "tagline": "Makatulog nang mas mabilis gamit ang steady na ambient sound sa iPhone mo. Pinagsasama ng DRMN ang ulan, bentilador, white at brown noise, tunog ng kalikasan, mix, offline mode, at battery-friendly na timer sa pagtulog.",
     "tldr": "Ang DRMN ay libreng iOS sleep sound app na tumutulong makatulog nang 30–50% mas mabilis. Libreng bersyon: ulan, bentilador, white noise, 1-oras na timer, offline, sound mixing at battery optimization. I-download nang libre sa App Store.",
     "download_text": "I-download ngayon",
     "download_url": "https://apps.apple.com/app/id6746480683",
-    "download_aria_label": "I-download ang libreng sleep sounds app mula sa App Store",
-    "download_img_alt": "I-download ang sleep sounds app sa App Store",
+    "download_aria_label": "I-download ang DRMN nang libre sa App Store",
+    "download_img_alt": "I-download ang DRMN sa App Store",
     "scan_to_download": "I-scan para i-download"
   },
   "stats": {
@@ -101,28 +101,33 @@
     ]
   },
   "popular_sounds": {
-    "title": "Sikat na tunog sa pagtulog",
-    "intro": "Hinahanap ang pinakamagandang tunog para makatulog? May DRMN ang pinaka-hinahanap na sleep sounds — handa nang i-mix, i-play offline at tumakbo buong gabi sa iPhone mo.",
+    "layout": "sections",
+    "sections_layout": true,
     "items": [
       {
-        "icon": "🌧️",
-        "title": "Tunog ng ulan sa pagtulog",
-        "description": "Banayad na ulan ay tumatakip sa biglang ingay at tumutulong makatulog. I-mix ang ulan sa white noise para sa mas malalim na tulog."
-      },
-      {
-        "icon": "🌀",
-        "title": "Tunog ng bentilador sa pagtulog",
-        "description": "Steady na bentilador hum ay humaharang sa trapiko, hilik at kapitbahay — classic sleep sound na pinagkakatiwalaan ng milyon."
-      },
-      {
         "icon": "🔊",
-        "title": "White noise sa pagtulog",
-        "description": "White, brown at dark noise ay lumilikha ng consistent background layer na nagsasabi sa utak mo na oras na magpahinga."
+        "title": "White noise sounds",
+        "description": "Ang steady na white noise ay tumatakip sa biglang ingay—traffik, kapitbahay, o lumalagutok na sahig—at nagbibigay sa utak ng predictable na background para mag-relax. Subukan ang bentilador hum o classic static, tapos i-mix sa ulan o alon."
       },
       {
         "icon": "🌊",
-        "title": "Tunog ng kalikasan sa pagtulog",
-        "description": "Alon, apoy at umagang ibon ay kumpleto sa library — i-mix sa ulan o bentilador anumang oras."
+        "title": "Brown noise sounds",
+        "description": "Ang brown at dark noise ay binibigyang-diin ang mababang frequency. Marami ang mas mainit at hindi gaanong matalim kaysa white noise—maganda para sa malalim na tulog o focus. Gamitin mag-isa o sa ilalim ng tunog ng kalikasan."
+      },
+      {
+        "icon": "👶",
+        "title": "Tunog sa pagtulog ng sanggol",
+        "description": "Malambot na hair dryer, vacuum, o keyboard tracks na ginagaya ang pamilyar na rhythm na nakakapakalma sa sanggol at maliliit na bata. Ginagamit ng mga magulang sa kwarto—walang hiwalay na sleep sound machine."
+      },
+      {
+        "icon": "⏱️",
+        "title": "Timer sa pagtulog",
+        "description": "Mag-set ng timer na may auto fade-out para bumaba ang tunog pagkatapos mong makatulog. Kasama sa libreng bersyon ang isang oras—sapat para sa karamihan ng gabi; ang premium ay nagbubukas ng mas mahahabang session."
+      },
+      {
+        "icon": "📴",
+        "title": "Offline sleep sound machine",
+        "description": "I-download ang paboritong tracks isang beses at makinig nang hanggang 10 oras nang walang Wi‑Fi o mobile data. Ang battery optimization ay tumutulong sa buong gabing playback—ideal sa biyahe o mahina ang signal sa kwarto."
       }
     ]
   },
@@ -316,11 +321,11 @@
   },
   "final_cta": {
     "title": "Handa ka na bang mas magandang tulog ngayong gabi?",
-    "paragraph1": "Sumali sa mahigit 10,000 user na nag-improve ng tulog gamit ang DRMN. 4.9/5 sa App Store — ang libreng sleep sounds app ay tumutulong makatulog nang 30–50% mas mabilis. Libreng bersyon: 1-oras na timer, offline at mix. I-download ngayon at subukan ang propesyonal na tunog nang libre.",
-    "cta_text": "I-download ang libreng sleep sounds app",
+    "paragraph1": "Mahigit 10,000 ang gumagamit ng DRMN para mas mabilis mag-relax at makatulog. Rated 4.9/5 sa App Store, may libreng bersyon na may 1-oras na timer, offline, at mix. I-download at hanapin ang tunog na swak sa iyo.",
+    "cta_text": "I-download ang DRMN nang libre",
     "cta_url": "https://apps.apple.com/app/id6746480683",
-    "cta_aria_label": "I-download ang libreng sleep sounds app mula sa App Store",
-    "cta_img_alt": "I-download ang sleep sounds app sa App Store"
+    "cta_aria_label": "I-download ang DRMN nang libre sa App Store",
+    "cta_img_alt": "I-download ang DRMN sa App Store"
   },
   "footer": {
     "copyright": "© 2025 DRMN. Lahat ng karapatan ay nakalaan.",
@@ -330,7 +335,9 @@
     "terms_url": "/terms.html",
     "blog_link": "Blog",
     "fazier_badge_alt": "Fazier badge",
-    "superlaunch_badge_alt": "Featured sa Super Launch"
+    "superlaunch_badge_alt": "Featured sa Super Launch",
+    "about_link": "Tungkol",
+    "about_url": "/about.html"
   },
   "app_info": {
     "developer": "Vladimir Ivakhnenko",
@@ -358,75 +365,55 @@
   },
   "seo": {
     "breadcrumb_home": "Home",
-    "faq_title": "FAQ: Sleep Sound Machine, Tunog sa Pagtulog at White Noise",
+    "faq_title": "Mga madalas itanong",
     "faq": [
       {
-        "question": "Ano ang pinakamagandang tunog para makatulog?",
-        "answer": "Depende sa iyo — marami ang pumipili ng ulan, bentilador o steady white noise. Sa DRMN pwede mong i-preview at i-mix ang tunog para mahanap ang pinakamabilis makatulog."
+        "question": "Anong tunog ang pinakamaganda sa pagtulog?",
+        "answer": "Depende sa kung ano ang nakakapakalma sa iyo. Marami ang pumipili ng ulan, steady na bentilador hum, o neutral na white noise. Sa DRMN, puwede kang makinig at mag-mix ng tracks para mahanap ang tumutulong sa iyo na makatulog nang mas mabilis."
       },
       {
         "question": "Ano ang sleep sound machine?",
-        "answer": "Tumutugtog ng steady background — ulan, bentilador o white noise — para takpan ang ingay at makatulog. Ang DRMN ay sleep sound machine app para sa iPhone na may mix, offline playback at sleep timer, parang physical sound machine."
+        "answer": "Nagpe-play ito ng steady na background audio—ulan, bentilador, o white noise—para takpan ang ingay at tumulong sa mas magandang tulog. Ang DRMN ay parang portable machine sa iPhone na may mix, offline mode, at built-in timer."
       },
       {
-        "question": "Pinakamagandang white noise app para sa iPhone?",
-        "answer": "May 4.9-star rating ang DRMN at mahigit 10,000 download. May ulan, bentilador, white noise at 100 oras ng sleep at nature audio — ang users ay nakakatulog nang 30–50% mas mabilis."
+        "question": "Maganda ba ang DRMN bilang white noise app sa iPhone?",
+        "answer": "May 4.9 stars ang DRMN sa App Store at mahigit 10,000 downloads. May ulan, bentilador, white at brown noise, plus 100+ oras ng ambient at nature sounds. Madalas sinasabi ng users na 30–50% mas mabilis silang makatulog kapag nakakagambala ang background noise."
       },
       {
-        "question": "May libreng white noise app ba?",
-        "answer": "Oo! Libre ang DRMN sa App Store. Kasama sa libreng bersyon ang 1-oras na timer, offline mode, mix at sleep sounds. Ang premium ay nagbubukas ng mas mahabang playback."
+        "question": "May libreng white noise app ba para sa iPhone?",
+        "answer": "Oo. Puwede mong i-download ang DRMN nang libre sa App Store. Kasama sa libreng bersyon ang 1-oras na timer, offline, mix, at basic sleep sounds. Ang premium ay nagbubukas ng mas mahahabang session at extra tracks—hindi kailangan ng subscription para subukan ang essentials."
       },
       {
-        "question": "Anong tunog ang may sleep sounds app?",
-        "answer": "Nag-aalok ang DRMN ng mahigit 100 oras ng propesyonal na audio: white, brown at dark noise, ulan, alon, apoy, umagang ibon, meditation at baby sounds (hair dryer, vacuum, keyboard)."
+        "question": "Anong mga tunog ang kasama?",
+        "answer": "White, brown, at dark noise; kalikasan tulad ng ulan, alon, apoy, at umagang ibon; meditation at focus; baby sounds tulad ng hair dryer, vacuum, at keyboard. Puwede mong i-mix ang anumang kombinasyon."
       },
       {
-        "question": "Gumagana ba ang app offline?",
-        "answer": "Oo! Pagkatapos i-download ang tunog, gumagana nang full offline ang DRMN. Hanggang 10 oras na may battery optimization kahit walang internet."
+        "question": "Gumagana ba ang DRMN offline?",
+        "answer": "Oo. Pagkatapos i-download ang tracks, nagpe-play ang app nang walang internet. Ang battery optimization ay nagpapahintulot ng hanggang 10 oras na tuloy-tuloy na playback—sapat sa biyahe o buong gabi."
       },
       {
-        "question": "Pinakamagandang app para sa tulog ng sanggol?",
-        "answer": "May espesyal na baby sleep sounds ang DRMN (hair dryer, vacuum, keyboard) na tumutulong makatulog nang mas mabilis. Ang pamilyar na rhythms ay nakakapagpakalma at lumilikha ng payapang environment."
+        "question": "Anong tunog ang bagay sa tulog ng sanggol?",
+        "answer": "Maraming magulang ang gumagamit ng steady at pamilyar na tunog—hair dryer, vacuum, o soft white noise. May baby tracks ang DRMN na nakakapakalma sa maliliit nang walang hiwalay na device sa kwarto."
       },
       {
-        "question": "Paano gumagana ang sound machine app?",
-        "answer": "Nagbibigay ang DRMN ng white noise at sleep sounds para sa pahinga at focus. Tumatakip sa ingay, lumilikha ng consistent sleep environment at nagpo-promote ng mas malalim na tulog — parang physical sound machine."
+        "question": "Puwede ba akong mag-mix ng iba't ibang tunog?",
+        "answer": "Oo. Pagsamahin ang white noise at alon, ulan at soft meditation, o anumang pair na gusto mo. Kasama ang mixing sa libreng bersyon."
       },
       {
-        "question": "Pwede bang i-mix ang tunog?",
-        "answer": "Oo! Pagsamahin ang white noise sa alon o ulan sa meditation. Gumawa ng sarili mong sleep experience."
+        "question": "May timer ba ang DRMN sa pagtulog?",
+        "answer": "Oo. Mag-set ng timer na may auto fade-out para bumaba ang tunog pagkatapos mong makatulog. Kasama sa libreng bersyon ang isang oras; ang premium ay nagdadagdag ng mas mahahabang option."
       },
       {
-        "question": "May sleep timer ba?",
-        "answer": "Oo! Timer na may automatic fade-out. I-set lang — unti-unting hihina ang tunog pagkatapos makatulog."
+        "question": "Makakatulong ba ang DRMN sa insomnia?",
+        "answer": "Ang steady na background sound ay puwedeng tumakip sa traffik, kapitbahay, at iba pang distraction na nagigising sa light sleepers. Maraming may insomnia ang nakikinig ng white o brown noise gabi-gabi; marami ang nag-uulat ng mas mabilis na pagtulog, pero nag-iiba ang resulta."
       },
       {
-        "question": "Ano ang white noise sa pagtulog at paano tumutulong?",
-        "answer": "Steady na tunog na tumatakip sa disruptive noise at tumutulong makatulog nang mas mabilis. Hinaharangan ng DRMN ang trapiko, kapitbahay at iba pang ingay para sa consistent sleep environment."
+        "question": "Paano naiiba ang DRMN sa Calm o Headspace?",
+        "answer": "Ang Calm at Headspace ay focused sa guided meditation at wellness subscriptions. Ang DRMN ay built around ambient sound—isang sleep sound machine sa bulsa—na may generous na libreng bersyon (1-oras na timer, offline, mix) at walang meditation courses. Ang BetterSleep at katulad na apps ay madalas naglalock ng features sa subscribers; sa DRMN, puwede mong subukan ang basic sounds nang libre."
       },
       {
-        "question": "Angkop ba para sa insomnia?",
-        "answer": "Oo! May 4.9 ang DRMN at mahigit 10,000 download. Sa pagtakip sa ingay, ang users ay nakakatulog nang 30–50% mas mabilis. I-download nang libre."
-      },
-      {
-        "question": "Ilang download ang may DRMN?",
-        "answer": "Mahigit 10,000 sa App Store, 4.9/5 mula sa 10 review. 100 oras ng tunog at hanggang 10 oras offline sa isang charge."
-      },
-      {
-        "question": "Ano ang App Store rating ng DRMN?",
-        "answer": "4.9/5 mula sa 10 review. Mahigit 10,000 download, 100 oras ng sleep sounds at offline playback."
-      },
-      {
-        "question": "Paano naiiba ang DRMN sa ibang apps?",
-        "answer": "Namumukod-tangi ang DRMN sa mapagbigay na libreng bersyon (1-oras na timer), advanced mix, baby sounds at battery optimization — offline at propesyonal na tunog nang walang subscription."
-      },
-      {
-        "question": "Ano ang unique sa DRMN kumpara sa libreng alternatives?",
-        "answer": "Libreng bersyon na may 1-oras na timer nang walang subscription. Habang ang iba ay limitado ang tunog o kailangan ng purchase, nagbibigay ang DRMN ng mix, offline at battery optimization nang libre — plus baby sounds na wala sa marami."
-      },
-      {
-        "question": "Mas maganda ba ang DRMN kaysa ibang sleep sound apps?",
-        "answer": "Libreng bersyon: timer, mix, offline, battery nang walang subscription. 4.9, mahigit 10,000 download, makatulog nang 30–50% mas mabilis. Baby sounds at smart timer nang libre — features na sinisingil ng iba."
+        "question": "Sino ang gumawa ng DRMN?",
+        "answer": "Ginawa ang DRMN ni Vladimir Ivakhnenko, independent iOS developer. May 4.9 stars sa 10 reviews sa App Store at mahigit 10,000 downloads. Contact: c-basso@ya.ru."
       }
     ],
     "structured_data": {
@@ -444,7 +431,7 @@
           "availability": "https://schema.org/InStock",
           "url": "https://apps.apple.com/app/id6746480683"
         },
-        "description": "Sleep sounds app at white noise para sa iPhone. Libreng bersyon na may ulan, bentilador, mix at offline. Para sa pagtulog, focus at tulog ng sanggol.",
+        "description": "Ang DRMN ay freemium iOS app na may white at brown noise, ulan, bentilador, at tunog ng kalikasan. Mag-mix ng tracks, mag-play offline, at gumamit ng fade-out sleep timer. Libreng download sa App Store para sa iPhone.",
         "image": {
           "@type": "ImageObject",
           "url": "https://drmn.xyz/img/logo.webp",
@@ -467,7 +454,7 @@
           "@type": "Person",
           "name": "Vladimir Ivakhnenko"
         },
-        "keywords": "tunog sa pagtulog, sleep sound machine, white noise, sleep app, tunog ng ulan, tunog ng bentilador, offline sleep",
+        "keywords": "white noise, tunog sa pagtulog, sleep sound machine, brown noise, tunog ng ulan sa pagtulog, tunog ng bentilador, baby sleep sounds, offline, timer sa pagtulog, focus sounds, insomnia, libreng iPhone app",
         "inLanguage": "fil",
         "datePublished": "2024-01-01",
         "dateModified": "2025-01-15",
@@ -486,14 +473,14 @@
         "name": "DRMN",
         "url": "https://drmn.xyz/fil/",
         "logo": "https://drmn.xyz/img/logo.webp",
-        "description": "DRMN — sleep sounds app at white noise para sa iPhone. Libreng bersyon na may mix at offline. Para sa pagtulog, focus at tulog ng sanggol."
+        "description": "DRMN — white noise at ambient sleep sounds sa iPhone. Mix, offline, timer sa pagtulog. Libreng download sa App Store."
       },
       "website": {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "DRMN",
         "url": "https://drmn.xyz/fil/",
-        "description": "Sleep sounds app at white noise para sa iPhone. Libreng bersyon na may mix at offline. I-download nang libre sa App Store.",
+        "description": "DRMN — white noise at ambient sleep sounds sa iPhone. Mix, offline, timer sa pagtulog. Libreng download sa App Store.",
         "potentialAction": {
           "@type": "SearchAction",
           "target": "https://drmn.xyz/?q={search_term_string}",
@@ -503,54 +490,118 @@
       "howto": {
         "@context": "https://schema.org",
         "@type": "HowTo",
-        "name": "Paano gamitin ang sleep sounds app",
-        "description": "Alamin kung paano gamitin ang DRMN para makatulog nang mas mabilis. Step-by-step guide.",
+        "name": "Gamitin ang DRMN para mas magandang tulog",
+        "description": "Mabilis na guide: pumili ng track, mag-mix kung gusto, i-set ang timer, at makinig offline.",
         "step": [
           {
             "@type": "HowToStep",
             "position": 1,
-            "name": "I-download nang libre",
-            "text": "I-download ang DRMN sa App Store sa iPhone mo. Kailangan ng iOS 17.1+. Kasama sa libreng bersyon ang 1-oras na timer.",
+            "name": "I-download ang DRMN",
+            "text": "I-install ang DRMN nang libre mula sa App Store sa iPhone (iOS 17.1+). Kasama sa libreng bersyon ang 1-oras na timer at basic sounds.",
             "url": "https://apps.apple.com/app/id6746480683"
           },
           {
             "@type": "HowToStep",
             "position": 2,
-            "name": "Tingnan ang sleep sounds",
-            "text": "Buksan ang app at galugarin ang library: white at brown noise, kalikasan (ulan, alon, apoy), meditation at baby sounds."
+            "name": "Tingnan ang library",
+            "text": "Sa DRMN may white at brown noise, ulan, alon, apoy, meditation, at baby sounds."
           },
           {
             "@type": "HowToStep",
             "position": 3,
-            "name": "Pumili ng tunog",
-            "text": "Ayon sa pangangailangan — white noise para sa masking, kalikasan para sa relaxation, baby sounds para sa sanggol. I-preview bago i-play."
+            "name": "Pumili ayon sa need",
+            "text": "Steady sound para takpan ang distraction, kalikasan para mag-relax, baby sounds para sa kwarto. Makinig muna bago mag-play."
           },
           {
             "@type": "HowToStep",
             "position": 4,
-            "name": "I-mix ang tunog",
-            "text": "Pagsamahin ang white noise sa alon o ulan sa meditation. Gumawa ng perpektong sleep environment."
+            "name": "Mag-mix ng tunog (optional)",
+            "text": "I-layer ang white noise sa alon, o ulan sa soft meditation—gumawa ng bedtime blend mo."
           },
           {
             "@type": "HowToStep",
             "position": 5,
             "name": "I-set ang sleep timer",
-            "text": "I-on ang automatic fade-out kung ayaw mo ng tunog buong gabi. Unti-unting hihina ang volume."
+            "text": "I-on ang auto fade-out kung ayaw mo ng audio buong gabi. Bumababa ang tunog pagkatapos mong makatulog."
           },
           {
             "@type": "HowToStep",
             "position": 6,
-            "name": "I-play at matulog",
-            "text": "Pindutin ang play at ayusin ang volume. iPhone malapit o headphones — parehong gumagana."
+            "name": "Mag-play at ayusin ang volume",
+            "text": "Sapat na malakas para takpan ang ingay, pero komportable sa tenga. iPhone sa bedside o headphones—pareho gumagana."
           },
           {
             "@type": "HowToStep",
             "position": 7,
             "name": "I-download para sa offline",
-            "text": "I-download ang favorites para sa offline use. Uninterrupted sleep kahit saan walang internet."
+            "text": "I-save ang favorites locally—kapaki-pakinabang sa biyahe o mahina ang Wi‑Fi sa kwarto."
           }
         ]
-      }
+      },
+      "reviews": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Sarah M."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Mas mabilis akong makatulog gamit ang DRMN. Ang mix feature ay nagpapahintulot sa akin na pagsamahin ang white noise at alon nang perpekto."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Michael R."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Tulog buong gabi ang sanggol namin sa tunog ng hair dryer. Ang offline mode ay life-saver sa biyahe."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Jennifer L."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Sa insomnia, binago ng DRMN ang buhay ko. Ginagamit ko gabi-gabi at gising na refreshed."
+        }
+      ]
     }
+  },
+  "app_store_proof": {
+    "title": "Na-rate sa App Store",
+    "rating": "4.9",
+    "rating_max": "5",
+    "review_count": "10",
+    "downloads": "10,000+",
+    "description": "Tunay na rating at review mula sa App Store—hindi marketing promise. Basahin muna ang sinasabi ng users bago mag-download.",
+    "store_url": "https://apps.apple.com/app/id6746480683",
+    "reviews_url": "https://apps.apple.com/app/id6746480683?see-all=reviews",
+    "screenshot_alt": "Preview ng DRMN app sa iPhone",
+    "screenshot_url": "https://drmn.xyz/site_preview.png"
+  },
+  "about": {
+    "title": "Tungkol sa DRMN",
+    "description": "Ang DRMN ay independent na iOS app para sa tulog at focus, ginawa ni Vladimir Ivakhnenko. Nagsimula bilang simpleng tool para mas magandang pahinga—steady sounds, offline playback, at basic features nang walang required na subscription.",
+    "developer": "Vladimir Ivakhnenko",
+    "developer_url": "https://apps.apple.com/developer/id1239180595",
+    "contact_email": "c-basso@ya.ru",
+    "contact_label": "Contact",
+    "developer_label": "Developer sa App Store",
+    "about_page_url": "/about.html",
+    "about_page_label": "About page"
   }
 }

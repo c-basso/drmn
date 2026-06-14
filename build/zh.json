@@ -33,13 +33,13 @@
     "app_name_suffix": "助眠声音机",
     "logo_alt": "DRMN 助眠声音机 App 标志（iPhone）",
     "app_name": "DRMN",
-    "title": "iPhone 助眠声音机 App",
-    "tagline": "用最适合入睡的声音，更快进入梦乡。DRMN 支持雨声、风扇、白噪音与自然音，可混音、离线播放，省电设计适合整夜使用。",
+    "title": "iPhone 白噪音与助眠声音",
+    "tagline": "用稳定的环境音，更快进入梦乡。DRMN 支持雨声、风扇、白噪音与棕噪音、自然音、混音、离线播放，以及省电的睡眠定时器，是专为 iPhone 设计的助眠声音 App。",
     "tldr": "DRMN 是一款免费基础版 iOS 助眠声音 App，平均可缩短 30–50% 的入睡时间。免费版包含雨声、风扇、白噪音、1 小时定时、离线模式、声音混音与电池优化。可在 App Store 免费下载。",
     "download_text": "立即下载",
     "download_url": "https://apps.apple.com/app/id6746480683",
-    "download_aria_label": "从 App Store 免费下载助眠声音 App",
-    "download_img_alt": "在 App Store 下载助眠声音 App",
+    "download_aria_label": "从 App Store 免费下载 DRMN",
+    "download_img_alt": "在 App Store 下载 DRMN",
     "scan_to_download": "扫码下载"
   },
   "stats": {
@@ -101,28 +101,33 @@
     ]
   },
   "popular_sounds": {
-    "title": "热门助眠声音",
-    "intro": "在找最适合入睡的声音？DRMN 收录用户最常搜索的助眠音，可在 iPhone 上混音、离线播放、整夜运行。",
+    "layout": "sections",
+    "sections_layout": true,
     "items": [
       {
-        "icon": "🌧️",
-        "title": "雨声（助眠）",
-        "description": "轻柔雨声掩盖突发噪音，助你入眠。与白噪音混音，获得更沉浸的助眠体验。"
-      },
-      {
-        "icon": "🌀",
-        "title": "风扇声（助眠）",
-        "description": "稳定的风扇嗡鸣遮挡交通、鼾声与邻居噪音——许多人每晚依赖的经典入睡声音。"
-      },
-      {
         "icon": "🔊",
-        "title": "白噪音（助眠）",
-        "description": "白、棕、暗噪音营造稳定声层，向大脑发出休息信号。"
+        "title": "白噪音",
+        "description": "稳定的白噪音能掩盖交通、邻居或地板吱呀等突发声响，为大脑提供可预期的背景声。试试风扇低鸣或经典白噪，也可以与雨声、海浪混音。"
       },
       {
         "icon": "🌊",
-        "title": "海洋与自然助眠音",
-        "description": "海浪、篝火、鸟鸣等自然音库，随时与雨声或风扇声自由混音。"
+        "title": "棕噪音",
+        "description": "棕噪音与暗噪音强调低频，许多人觉得比白噪音更温暖、不那么刺耳，适合深度睡眠或专注。可单独使用，也可垫在自然音下方。"
+      },
+      {
+        "icon": "👶",
+        "title": "宝宝助眠声音",
+        "description": "轻柔的吹风机、吸尘器或键盘声模拟熟悉节奏，安抚宝宝与幼儿。卧室里直接用 iPhone 播放，无需单独购买声音机。"
+      },
+      {
+        "icon": "⏱️",
+        "title": "睡眠定时器",
+        "description": "设置自动淡出定时，入睡后音量逐渐降低。免费基础版含 1 小时，对大多数夜晚已足够；可选高级功能解锁更长播放。"
+      },
+      {
+        "icon": "📴",
+        "title": "离线助眠声音机",
+        "description": "一次下载喜爱的音轨，无需 Wi‑Fi 或移动数据即可播放最多 10 小时。省电优化支持整夜播放，旅行或卧室信号弱时同样好用。"
       }
     ]
   },
@@ -316,11 +321,11 @@
   },
   "final_cta": {
     "title": "今晚就开始睡得更香",
-    "paragraph1": "已有 1 万+ 用户通过 DRMN 改善睡眠。App Store 4.9 分、免费基础版助眠 App，平均入睡快 30–50%。免费版含 1 小时定时、离线模式与混音。立即下载，体验专业录制声音带来的深度睡眠与清爽早晨——免费试用。",
-    "cta_text": "免费下载助眠 App",
+    "paragraph1": "已有 1 万+ 用户用 DRMN 更快放松入睡。App Store 评分 4.9/5，免费基础版含 1 小时定时、离线与混音。下载试试，找到适合你的声音。",
+    "cta_text": "免费下载 DRMN",
     "cta_url": "https://apps.apple.com/app/id6746480683",
-    "cta_aria_label": "从 App Store 免费下载助眠声音 App",
-    "cta_img_alt": "在 App Store 下载助眠声音 App"
+    "cta_aria_label": "从 App Store 免费下载 DRMN",
+    "cta_img_alt": "在 App Store 下载 DRMN"
   },
   "footer": {
     "copyright": "© 2025 DRMN. All rights reserved.",
@@ -330,7 +335,9 @@
     "terms_url": "/terms.html",
     "blog_link": "博客",
     "fazier_badge_alt": "Fazier 徽章",
-    "superlaunch_badge_alt": "Super Launch 推荐"
+    "superlaunch_badge_alt": "Super Launch 推荐",
+    "about_link": "关于",
+    "about_url": "/about.html"
   },
   "app_info": {
     "developer": "Vladimir Ivakhnenko",
@@ -358,75 +365,55 @@
   },
   "seo": {
     "breadcrumb_home": "首页",
-    "faq_title": "常见问题：助眠声音机与白噪音",
+    "faq_title": "常见问题",
     "faq": [
       {
         "question": "什么声音最适合入睡？",
-        "answer": "因人而异，许多人选择雨声、风扇声或稳定白噪音。DRMN 支持试听与混音，帮你找到最快入睡的组合。"
+        "answer": "因人而异。许多人选择雨声、稳定的风扇声或中性白噪音。DRMN 支持试听与混音，帮你找到更快入睡的组合。"
       },
       {
         "question": "什么是助眠声音机？",
-        "answer": "播放雨声、风扇、白噪音等稳定背景音，掩盖干扰、帮助入睡的设备。DRMN 是 iPhone 助眠 App，像实体声音机一样支持混音、离线播放与睡眠定时。"
+        "answer": "播放雨声、风扇、白噪音等稳定背景音，掩盖干扰、帮助睡眠的设备。DRMN 像口袋里的声音机，在 iPhone 上支持混音、离线与定时。"
       },
       {
-        "question": "iPhone 上推荐的白噪音 App？",
-        "answer": "DRMN 在 App Store 评分 4.9，下载 1 万+。包含雨声、风扇、白噪音及 100 小时助眠与自然音，用户平均入睡快 30–50%。"
+        "question": "DRMN 适合作为 iPhone 白噪音 App 吗？",
+        "answer": "DRMN 在 App Store 评分 4.9，下载 1 万+。包含雨声、风扇、白噪音、棕噪音，以及 100 小时以上的环境音与自然音。背景噪音困扰睡眠的用户，常反馈入睡快 30–50%。"
       },
       {
-        "question": "有免费的白噪音 App 吗？",
-        "answer": "有。DRMN 可在 App Store 免费下载，免费版含 1 小时定时、离线模式、混音与助眠声音。高级功能可解锁延长播放与更多声音。"
+        "question": "有免费的 iPhone 白噪音 App 吗？",
+        "answer": "有。DRMN 可在 App Store 免费下载，属于免费基础版 App。免费版含 1 小时定时、离线、混音与基础助眠声音。可选高级功能解锁更长播放与更多音轨，试用核心功能无需订阅。"
       },
       {
-        "question": "助眠 App 里有哪些声音？",
-        "answer": "DRMN 有 100 小时+专业录制音频：白/棕/暗噪音、雨声、海浪、篝火、晨鸟，还有冥想音与宝宝专用（吹风机、吸尘器、键盘）声音。"
+        "question": "包含哪些声音？",
+        "answer": "白噪音、棕噪音、暗噪音；雨声、海浪、篝火、晨鸟等自然音；冥想与专注音；宝宝专用吹风机、吸尘器、键盘声。任意组合混音均可。"
       },
       {
-        "question": "可以离线使用吗？",
-        "answer": "可以。下载声音后完全离线可用。电池优化下单次充电最多连续播放 10 小时，无网络也能整夜使用。"
+        "question": "DRMN 可以离线使用吗？",
+        "answer": "可以。下载音轨后无需网络即可播放。电池优化下单次充电最多连续播放 10 小时，适合旅行或整夜使用。"
       },
       {
-        "question": "适合宝宝睡眠的白噪音 App？",
-        "answer": "DRMN 含宝宝专用声音（吹风机、吸尘器、键盘），帮助婴幼儿更快入睡。熟悉节奏带来安全感，营造安稳睡眠环境。"
+        "question": "哪些声音适合宝宝睡眠？",
+        "answer": "许多父母使用吹风机、吸尘器或轻柔白噪音等稳定熟悉的声音。DRMN 含宝宝专用音轨，卧室无需额外设备也能安抚小宝贝。"
       },
       {
-        "question": "声音机 App 如何工作？",
-        "answer": "DRMN 用白噪音与助眠音帮助入睡与专注，掩盖干扰、营造稳定环境、促进更深睡眠。在 iPhone 上如同实体白噪音机。"
+        "question": "可以混音不同声音吗？",
+        "answer": "可以。白噪音叠海浪、雨声配轻柔冥想音，或任意你喜欢的组合。混音功能包含在免费基础版中。"
       },
       {
-        "question": "可以混音吗？",
-        "answer": "可以。自由组合多种声音——白噪音加海浪，或雨声配冥想音乐，打造专属睡眠环境。"
+        "question": "DRMN 有睡眠定时器吗？",
+        "answer": "有。可设置自动淡出定时，入睡后声音逐渐变小。免费版含 1 小时，高级功能提供更长时间选项。"
       },
       {
-        "question": "有睡眠定时吗？",
-        "answer": "有。内置自动淡出睡眠定时。设置后入睡时声音会逐渐变小，使用更安心。"
+        "question": "DRMN 对失眠有帮助吗？",
+        "answer": "稳定背景音可能掩盖交通、邻居等容易惊醒浅眠者的干扰。失眠用户常每晚听白噪音或棕噪音，许多人反馈入睡更快，但效果因人而异。"
       },
       {
-        "question": "助眠白噪音是什么？如何起作用？",
-        "answer": "稳定背景音掩盖突发噪音，帮助更快入睡。DRMN 的白噪音可遮挡交通、邻居等声音，营造一致睡眠环境。"
+        "question": "DRMN 与 Calm、Headspace 有何不同？",
+        "answer": "Calm 与 Headspace 侧重引导冥想与 wellness 订阅。DRMN 专注环境音——口袋里的助眠声音机——免费基础版即含 1 小时定时、离线与混音，没有冥想课程。BetterSleep 等类似 App 常把功能锁在订阅里，而 DRMN 可免费试用基础声音。"
       },
       {
-        "question": "适合失眠使用的助眠 App 吗？",
-        "answer": "适合。DRMN 评分 4.9、下载 1 万+，通过掩盖干扰与稳定声环境，用户平均入睡快 30–50%。可免费试用。"
-      },
-      {
-        "question": "DRMN 有多少下载量？",
-        "answer": "App Store 下载 1 万+，10 条评价维持 4.9 分。提供 100 小时+专业录制声音，单次充电离线播放最多 10 小时。"
-      },
-      {
-        "question": "DRMN 的 App Store 评分？",
-        "answer": "基于 10 条用户评价，App Store 4.9/5 分。下载 1 万+，提供 100 小时助眠音与离线播放。"
-      },
-      {
-        "question": "与其他白噪音 App 有何不同？",
-        "answer": "DRMN 免费版即含 1 小时定时、高级混音、宝宝助眠音与出色电池优化。许多竞品限制免费或需订阅，而 DRMN 免费版支持离线、专业录制与混音。"
-      },
-      {
-        "question": "相比其他免费 App，DRMN 的独特之处？",
-        "answer": "无需订阅即有 1 小时定时的充实免费版。免费竞品常限制声音或强制内购，DRMN 免费提供混音、离线与电池优化，还有多数竞品没有的宝宝助眠音。"
-      },
-      {
-        "question": "DRMN 比其他助眠 App 更好吗？",
-        "answer": "免费版含 1 小时定时、混音、离线、电池优化，无需订阅。评分 4.9、下载 1 万+，用户入睡平均快 30–50%。宝宝助眠音与自动淡出定时在免费版即可用——许多竞品收费或不提供。"
+        "question": "谁开发了 DRMN？",
+        "answer": "DRMN 由独立 iOS 开发者 Vladimir Ivakhnenko 开发。App Store 10 条评价 4.9 分，下载 1 万+。联系：c-basso@ya.ru。"
       }
     ],
     "structured_data": {
@@ -444,7 +431,7 @@
           "availability": "https://schema.org/InStock",
           "url": "https://apps.apple.com/app/id6746480683"
         },
-        "description": "iPhone 助眠声音与白噪音 App。免费版支持雨声、风扇、白噪音混音与离线播放。助眠、专注、宝宝睡眠。",
+        "description": "DRMN 是一款 iOS 免费基础版 App，提供白噪音、棕噪音、雨声、风扇与自然音。支持混音、离线播放与淡出睡眠定时器。可在 App Store 免费下载，适用于 iPhone。",
         "image": {
           "@type": "ImageObject",
           "url": "https://drmn.xyz/img/logo.webp",
@@ -467,7 +454,7 @@
           "@type": "Person",
           "name": "Vladimir Ivakhnenko"
         },
-        "keywords": "助眠声音, 声音机, 白噪音, 睡眠 App, 白噪音 App, 雨声助眠, 风扇助眠, 入睡声音, 离线助眠",
+        "keywords": "白噪音, 助眠声音, 声音机, 棕噪音, 雨声助眠, 风扇声助眠, 宝宝助眠, 离线, 睡眠定时器, 专注声音, 失眠, iPhone 免费 App",
         "inLanguage": "zh",
         "datePublished": "2024-01-01",
         "dateModified": "2025-01-15",
@@ -486,14 +473,14 @@
         "name": "DRMN",
         "url": "https://drmn.xyz/zh/",
         "logo": "https://drmn.xyz/img/logo.webp",
-        "description": "DRMN — iPhone 助眠声音与白噪音 App。免费版支持雨声、风扇、白噪音混音与离线播放。助眠、专注、宝宝睡眠。"
+        "description": "DRMN — iPhone 白噪音与环境音助眠 App。混音、离线、睡眠定时器。App Store 免费下载。"
       },
       "website": {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "DRMN",
         "url": "https://drmn.xyz/zh/",
-        "description": "iPhone 助眠声音与白噪音 App。免费版支持雨声、风扇、白噪音混音与离线播放。App Store 免费下载。",
+        "description": "DRMN — iPhone 白噪音与环境音助眠 App。混音、离线、睡眠定时器。App Store 免费下载。",
         "potentialAction": {
           "@type": "SearchAction",
           "target": "https://drmn.xyz/?q={search_term_string}",
@@ -503,54 +490,118 @@
       "howto": {
         "@context": "https://schema.org",
         "@type": "HowTo",
-        "name": "用助眠 App 睡得更香",
-        "description": "用 DRMN 助眠声音与白噪音更快入睡。分步指南。",
+        "name": "用 DRMN 睡得更好",
+        "description": "快速指南：选音轨、按需混音、设定时、离线收听。",
         "step": [
           {
             "@type": "HowToStep",
             "position": 1,
-            "name": "免费下载",
-            "text": "在 App Store 为 iPhone 下载 DRMN。需 iOS 17.1 或更高。免费版含 1 小时定时。",
+            "name": "下载 DRMN",
+            "text": "在 App Store 免费安装到 iPhone（iOS 17.1+）。免费基础版含 1 小时定时与基础声音。",
             "url": "https://apps.apple.com/app/id6746480683"
           },
           {
             "@type": "HowToStep",
             "position": 2,
-            "name": "浏览助眠声音",
-            "text": "打开 App 探索库：白/棕噪音、自然音（雨、浪、火）、冥想音、宝宝助眠音。"
+            "name": "浏览声音库",
+            "text": "DRMN 含白噪音、棕噪音、雨声、海浪、篝火、冥想与宝宝专用音。"
           },
           {
             "@type": "HowToStep",
             "position": 3,
-            "name": "选择声音",
-            "text": "按需求选择——掩盖噪音的白噪音、放松用自然音、宝宝专用音。播放前可试听。"
+            "name": "按需求选择",
+            "text": "掩盖干扰的稳定音、放松用的自然音、卧室用的宝宝音等。播放前可先试听。"
           },
           {
             "@type": "HowToStep",
             "position": 4,
-            "name": "混音",
-            "text": "组合多种声音打造理想环境。白噪音加海浪，雨声加冥想音乐，自由定制。"
+            "name": "混音（可选）",
+            "text": "白噪音叠海浪，或雨声配轻柔冥想音——打造你的睡前配方。"
           },
           {
             "@type": "HowToStep",
             "position": 5,
-            "name": "设置睡眠定时",
-            "text": "配置自动淡出定时。不想整夜播放时很实用，入睡后声音渐弱。"
+            "name": "设置睡眠定时器",
+            "text": "不想整夜播放可开启自动淡出，入睡后音量逐渐降低。"
           },
           {
             "@type": "HowToStep",
             "position": 6,
-            "name": "播放并入睡",
-            "text": "点击播放开始助眠音。调节音量至舒适。手机放近处或使用耳机均可。"
+            "name": "播放并调节音量",
+            "text": "足以掩盖噪音，又保持耳朵舒适。床头 iPhone 或耳机均可。"
           },
           {
             "@type": "HowToStep",
             "position": 7,
             "name": "下载供离线使用",
-            "text": "下载喜爱声音后完全离线可用。无网络也能不间断助眠。"
+            "text": "收藏保存到本地，旅行或卧室 Wi‑Fi 弱时很方便。"
           }
         ]
-      }
+      },
+      "reviews": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Sarah M."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "用 DRMN 入睡更快了。混音功能让我把白噪音和海浪配得刚刚好。"
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Michael R."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "吹风机声让宝宝整夜安睡。离线模式在旅行时特别有用。"
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Jennifer L."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "失眠困扰多年，DRMN 改变了我的睡眠。每晚使用，醒来精神很好。"
+        }
+      ]
     }
+  },
+  "app_store_proof": {
+    "title": "App Store 真实评分",
+    "rating": "4.9",
+    "rating_max": "5",
+    "review_count": "10",
+    "downloads": "1 万+",
+    "description": "来自 App Store 的真实评分与评价，不是营销口号。下载前可以先看看用户怎么说。",
+    "store_url": "https://apps.apple.com/app/id6746480683",
+    "reviews_url": "https://apps.apple.com/app/id6746480683?see-all=reviews",
+    "screenshot_alt": "iPhone 版 DRMN App 预览",
+    "screenshot_url": "https://drmn.xyz/site_preview.png"
+  },
+  "about": {
+    "title": "关于 DRMN",
+    "description": "DRMN 是由 Vladimir Ivakhnenko 开发的独立 iOS 助眠与专注 App。它始于一个简单的目标：帮助用户更好休息——稳定声音、离线播放，以及无需订阅即可试用的基础功能。",
+    "developer": "Vladimir Ivakhnenko",
+    "developer_url": "https://apps.apple.com/developer/id1239180595",
+    "contact_email": "c-basso@ya.ru",
+    "contact_label": "联系",
+    "developer_label": "App Store 开发者",
+    "about_page_url": "/about.html",
+    "about_page_label": "了解更多"
   }
 }

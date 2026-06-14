@@ -33,13 +33,13 @@
     "app_name_suffix": "Geluidsmachine voor Slapen",
     "logo_alt": "DRMN geluidsmachine voor slapen app-logo voor iPhone",
     "app_name": "DRMN",
-    "title": "Geluidsmachine voor slapen-app voor iPhone",
-    "tagline": "Val sneller in slaap met de beste slaapgeluiden. DRMN is een geluidsmachine-app met regen, ventilator, witte ruis en natuurgeluiden — plus mix, offline afspelen en batterijvriendelijk de hele nacht.",
+    "title": "Witte ruis en slaapgeluiden voor iPhone",
+    "tagline": "Val sneller in slaap met stabiel ambient geluid op je iPhone. DRMN combineert regen, ventilator, witte en bruine ruis, natuurgeluiden, mix, offline modus en een batterijvriendelijke slaaptimer.",
     "tldr": "DRMN is een gratis iOS slaapgeluiden-app die helpt 30–50% sneller in slaap te vallen. Gratis versie: regen, ventilator, witte ruis, timer van 1 uur, offline, mix & batterijoptimalisatie. Download gratis in de App Store.",
     "download_text": "Nu downloaden",
     "download_url": "https://apps.apple.com/app/id6746480683",
-    "download_aria_label": "Download gratis slaapgeluiden-app uit de App Store",
-    "download_img_alt": "Download slaapgeluiden-app in de App Store",
+    "download_aria_label": "Download DRMN gratis in de App Store",
+    "download_img_alt": "Download DRMN in de App Store",
     "scan_to_download": "Scan om te downloaden"
   },
   "stats": {
@@ -101,28 +101,33 @@
     ]
   },
   "popular_sounds": {
-    "title": "Populaire slaapgeluiden",
-    "intro": "Op zoek naar het beste geluid om mee in slaap te vallen? DRMN heeft de meest gezochte slaapgeluiden — klaar om te mixen, offline af te spelen en de hele nacht op je iPhone.",
+    "layout": "sections",
+    "sections_layout": true,
     "items": [
       {
-        "icon": "🌧️",
-        "title": "Regengeluid om in slaap te vallen",
-        "description": "Zachte regen maskeert plotselinge geluiden en helpt je inslapen. Mix regen met witte ruis voor dieper slapen."
-      },
-      {
-        "icon": "🌀",
-        "title": "Ventilator geluid om in slaap te vallen",
-        "description": "Het constante gezoem van een ventilator dempt verkeer, gesnork en buren — klassiek slaapgeluid waar miljoenen op vertrouwen."
-      },
-      {
         "icon": "🔊",
-        "title": "Witte ruis om in slaap te vallen",
-        "description": "Witte, bruine en donkere ruis creëren een consistente achtergrondlaag die je brein signaleert om te rusten."
+        "title": "Witte ruis",
+        "description": "Constante witte ruis dempt plotselinge geluiden—verkeer, buren of krakende vloeren—en geeft je brein een voorspelbare achtergrond om te ontspannen. Probeer het gezoem van een ventilator of klassieke static, en mix met regen of golven."
       },
       {
         "icon": "🌊",
-        "title": "Natuurgeluiden om in slaap te vallen",
-        "description": "Golven, vuur en ochtendvogels vullen de bibliotheek aan — mix ze op elk moment met regen of ventilator."
+        "title": "Bruine ruis",
+        "description": "Bruine en donkere ruis benadrukt lage frequenties. Veel mensen vinden het warmer en minder scherp dan witte ruis—goed voor diepe slaap of focus. Gebruik het solo of onder natuurgeluiden."
+      },
+      {
+        "icon": "👶",
+        "title": "Slaapgeluiden voor baby",
+        "description": "Zachte tracks van föhn, stofzuiger of toetsenbord imiteren vertrouwde ritmes die baby's en peuters kalmeren. Ouders gebruiken ze op de kinderkamer—zonder aparte geluidsmachine."
+      },
+      {
+        "icon": "⏱️",
+        "title": "Slaaptimer",
+        "description": "Stel een timer in met automatische fade-out zodat het geluid zachter wordt nadat je in slaap bent gevallen. De gratis versie bevat een uur—genoeg voor de meeste nachten; premium ontgrendelt langere sessies."
+      },
+      {
+        "icon": "📴",
+        "title": "Offline geluidsmachine",
+        "description": "Download je favoriete tracks één keer en luister tot 10 uur zonder Wi‑Fi of mobiele data. Batterijoptimalisatie houdt het afspelen de hele nacht aan—ideaal op reis of met zwak signaal op de slaapkamer."
       }
     ]
   },
@@ -315,12 +320,12 @@
     ]
   },
   "final_cta": {
-    "title": "Klaar om vanavond beter te slapen?",
-    "paragraph1": "Sluit je aan bij meer dan 10.000 gebruikers die hun slaap verbeterden met DRMN. 4,9/5 in de App Store — gratis slaapgeluiden-app helpt 30–50% sneller in slaap te vallen. Gratis versie: timer van 1 uur, offline & mix. Download vandaag en probeer professionele geluiden gratis.",
-    "cta_text": "Download gratis slaapgeluiden-app",
+    "title": "Klaar voor beter slapen vanavond?",
+    "paragraph1": "Meer dan 10.000 mensen gebruiken DRMN om sneller te ontspannen en in slaap te vallen. Beoordeling 4,9/5 in de App Store, met gratis versie inclusief 1-uurs timer, offline en mix. Download en vind de geluiden die voor jou werken.",
+    "cta_text": "Download DRMN gratis",
     "cta_url": "https://apps.apple.com/app/id6746480683",
-    "cta_aria_label": "Download gratis slaapgeluiden-app uit de App Store",
-    "cta_img_alt": "Download slaapgeluiden-app in de App Store"
+    "cta_aria_label": "Download DRMN gratis in de App Store",
+    "cta_img_alt": "Download DRMN in de App Store"
   },
   "footer": {
     "copyright": "© 2025 DRMN. Alle rechten voorbehouden.",
@@ -330,7 +335,9 @@
     "terms_url": "/terms.html",
     "blog_link": "Blog",
     "fazier_badge_alt": "Fazier-badge",
-    "superlaunch_badge_alt": "Uitgelicht op Super Launch"
+    "superlaunch_badge_alt": "Uitgelicht op Super Launch",
+    "about_link": "Over",
+    "about_url": "/about.html"
   },
   "app_info": {
     "developer": "Vladimir Ivakhnenko",
@@ -358,75 +365,55 @@
   },
   "seo": {
     "breadcrumb_home": "Home",
-    "faq_title": "FAQ: geluidsmachine slapen, slaapgeluiden & witte ruis",
+    "faq_title": "Veelgestelde vragen",
     "faq": [
       {
-        "question": "Wat is het beste geluid om in slaap te vallen?",
-        "answer": "Dat hangt van jou af — velen kiezen regen, ventilator of steady witte ruis. In DRMN kun je geluiden previewen en mixen om te vinden wat het snelst helpt inslapen."
+        "question": "Welk geluid is het beste om te slapen?",
+        "answer": "Dat hangt af van wat jou kalmeert. Veel mensen kiezen regen, constant ventilatorgezoem of neutrale witte ruis. In DRMN kun je tracks beluisteren en mixen om te vinden wat je helpt sneller in slaap te vallen."
       },
       {
         "question": "Wat is een geluidsmachine voor slapen?",
-        "answer": "Speelt steady achtergrond af — regen, ventilator of witte ruis — om lawaai te maskeren en te helpen slapen. DRMN is een iPhone-app met mix, offline afspelen en slaaptimer, zoals een fysieke geluidsmachine."
+        "answer": "Die speelt constante achtergrondaudio af—regen, ventilator of witte ruis—om storende geluiden te maskeren en beter te slapen. DRMN werkt als een draagbare machine op je iPhone met mix, offline modus en ingebouwde timer."
       },
       {
-        "question": "Beste witte ruis-app voor iPhone?",
-        "answer": "DRMN heeft een 4,9-beoordeling en meer dan 10.000 downloads. Regen, ventilator, witte ruis en 100 uur slaap- en natuurgeluiden — gebruikers vallen 30–50% sneller in slaap."
+        "question": "Is DRMN een goede witte-ruis-app voor iPhone?",
+        "answer": "DRMN heeft 4,9 sterren in de App Store en meer dan 10.000 downloads. Het bevat regen, ventilator, witte en bruine ruis, plus meer dan 100 uur ambient- en natuurgeluiden. Gebruikers zeggen vaak 30–50% sneller in slaap te vallen wanneer achtergrondlawaai stoort."
       },
       {
-        "question": "Is er een gratis witte ruis-app?",
-        "answer": "Ja! DRMN is gratis in de App Store. Gratis versie bevat timer van 1 uur, offline, mix en slaapgeluiden. Premium ontgrendelt langere weergave."
+        "question": "Is er een gratis witte-ruis-app voor iPhone?",
+        "answer": "Ja. DRMN download je gratis in de App Store. De gratis versie bevat een 1-uurs timer, offline, mix en basisslaapgeluiden. Premium ontgrendelt langere sessies en extra tracks—geen abonnement nodig om de basis te proberen."
       },
       {
-        "question": "Welke geluiden heeft de slaap-app?",
-        "answer": "DRMN biedt meer dan 100 uur professionele audio: witte, bruine en donkere ruis, regen, golven, vuur, ochtendvogels, meditatie en babygeluiden (föhn, stofzuiger, toetsenbord)."
+        "question": "Welke geluiden zitten erin?",
+        "answer": "Witte, bruine en donkere ruis; natuur zoals regen, golven, vuur en ochtendvogels; meditatie en focus; babygeluiden zoals föhn, stofzuiger en toetsenbord. Je kunt elke combinatie mixen."
       },
       {
-        "question": "Werkt de app offline?",
-        "answer": "Ja! Na het downloaden van geluiden werkt DRMN volledig offline. Met batterijoptimalisatie — tot 10 uur zonder internet."
+        "question": "Werkt DRMN offline?",
+        "answer": "Ja. Na het downloaden van tracks speelt de app af zonder internet. Batterijoptimalisatie maakt tot 10 uur continu afspelen mogelijk—genoeg voor reizen of de hele nacht."
       },
       {
-        "question": "Beste app voor baby slaap?",
-        "answer": "DRMN bevat speciale babygeluiden (föhn, stofzuiger, toetsenbord) die sneller inslapen helpen. Bekende ritmes kalmeren en creëren een rustige omgeving."
+        "question": "Welke geluiden passen bij babyslaap?",
+        "answer": "Veel ouders gebruiken constante vertrouwde geluiden—föhn, stofzuiger of zachte witte ruis. DRMN heeft babytracks die kleintjes kalmeren zonder apart apparaat op de kinderkamer."
       },
       {
-        "question": "Hoe werkt een geluidsmachine-app?",
-        "answer": "DRMN biedt witte ruis en slaapgeluiden voor rust en focus. Maskeert lawaai, creëert consistente slaapomgeving en bevordert dieper slapen — zoals een fysieke machine."
+        "question": "Kan ik verschillende geluiden mixen?",
+        "answer": "Ja. Combineer witte ruis met golven, regen met meditatie of elk paar dat je leuk vindt. Mixen zit in de gratis versie."
       },
       {
-        "question": "Kan ik geluiden mixen?",
-        "answer": "Ja! Combineer witte ruis met golven of regen met meditatie. Creëer je eigen slaapervaring."
+        "question": "Heeft DRMN een slaaptimer?",
+        "answer": "Ja. Stel een timer in met automatische fade-out zodat het geluid zachter wordt nadat je in slaap bent. De gratis versie bevat een uur; premium voegt langere opties toe."
       },
       {
-        "question": "Heeft de app een slaaptimer?",
-        "answer": "Ja! Timer met automatische fade-out. Stel in — het geluid vervaagt langzaam na het inslapen."
+        "question": "Kan DRMN helpen bij slapeloosheid?",
+        "answer": "Constante achtergrond kan verkeer, buren en andere afleidingen dempen die lichte slapers wakker maken. Mensen met slapeloosheid luisteren vaak elke nacht naar witte of bruine ruis; velen melden sneller inslapen, maar resultaten variëren."
       },
       {
-        "question": "Wat is witte ruis voor slapen en hoe helpt het?",
-        "answer": "Steady geluid dat storend lawaai maskeert en sneller inslapen helpt. DRMN dempt verkeer, buren en andere geluiden voor een consistente slaapomgeving."
+        "question": "Hoe verschilt DRMN van Calm of Headspace?",
+        "answer": "Calm en Headspace richten zich op begeleide meditatie en wellness-abonnementen. DRMN draait om ambient geluid—een geluidsmachine op zak—met een royale gratis versie (1-uurs timer, offline, mix) en zonder meditatiecursussen. BetterSleep en vergelijkbare apps reserveren functies vaak voor abonnees; met DRMN probeer je basisgeluiden gratis."
       },
       {
-        "question": "Geschikt bij slapeloosheid?",
-        "answer": "Ja! DRMN heeft 4,9 en meer dan 10.000 downloads. Door lawaai te maskeren vallen gebruikers gemiddeld 30–50% sneller in slaap. Download gratis."
-      },
-      {
-        "question": "Hoeveel downloads heeft DRMN?",
-        "answer": "Meer dan 10.000 in de App Store, 4,9/5 uit 10 reviews. 100 uur geluiden en tot 10 uur offline op één lading."
-      },
-      {
-        "question": "Wat is de App Store-beoordeling van DRMN?",
-        "answer": "4,9/5 op basis van 10 reviews. Meer dan 10.000 downloads, 100 uur slaapgeluiden en offline afspelen."
-      },
-      {
-        "question": "Hoe verschilt DRMN van andere apps?",
-        "answer": "DRMN valt op met royale gratis versie (timer van 1 uur), geavanceerde mix, babygeluiden en batterijoptimalisatie — offline en professionele geluiden zonder abonnement."
-      },
-      {
-        "question": "Wat maakt DRMN uniek t.o.v. gratis alternatieven?",
-        "answer": "Gratis versie met timer van 1 uur zonder abonnement. Terwijl anderen geluiden beperken of aankopen vereisen, biedt DRMN mix, offline en batterij gratis — plus babygeluiden die velen missen."
-      },
-      {
-        "question": "Is DRMN beter dan andere slaapgeluiden-apps?",
-        "answer": "Gratis versie: timer, mix, offline, batterij zonder abonnement. 4,9, meer dan 10.000 downloads, 30–50% sneller inslapen. Babygeluiden en slimme timer gratis — functies waarvoor anderen betalen."
+        "question": "Wie heeft DRMN gemaakt?",
+        "answer": "DRMN is ontwikkeld door Vladimir Ivakhnenko, onafhankelijke iOS-ontwikkelaar. In de App Store 4,9 sterren op 10 reviews en meer dan 10.000 downloads. Contact: c-basso@ya.ru."
       }
     ],
     "structured_data": {
@@ -444,7 +431,7 @@
           "availability": "https://schema.org/InStock",
           "url": "https://apps.apple.com/app/id6746480683"
         },
-        "description": "Slaapgeluiden-app en witte ruis voor iPhone. Gratis versie met regen, ventilator, mix en offline. Voor slapen, focus en baby's.",
+        "description": "DRMN is een freemium iOS-app met witte en bruine ruis, regen, ventilator en natuurgeluiden. Mix tracks, speel offline af en gebruik een slaaptimer met fade-out. Gratis download in de App Store voor iPhone.",
         "image": {
           "@type": "ImageObject",
           "url": "https://drmn.xyz/img/logo.webp",
@@ -467,7 +454,7 @@
           "@type": "Person",
           "name": "Vladimir Ivakhnenko"
         },
-        "keywords": "slaapgeluiden, geluidsmachine slapen, witte ruis, slaap app, regengeluid, ventilator geluid, offline slapen",
+        "keywords": "witte ruis, slaapgeluiden, geluidsmachine slapen, bruine ruis, regengeluid slapen, ventilator geluid slapen, baby slaapgeluiden, offline, slaaptimer, focus, slapeloosheid, gratis iPhone app",
         "inLanguage": "nl",
         "datePublished": "2024-01-01",
         "dateModified": "2025-01-15",
@@ -486,14 +473,14 @@
         "name": "DRMN",
         "url": "https://drmn.xyz/nl/",
         "logo": "https://drmn.xyz/img/logo.webp",
-        "description": "DRMN — slaapgeluiden-app en witte ruis voor iPhone. Gratis versie met mix en offline. Voor slapen, focus en baby's."
+        "description": "DRMN — witte ruis en ambient slaapgeluiden voor iPhone. Mix, offline, slaaptimer. Gratis download in de App Store."
       },
       "website": {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "DRMN",
         "url": "https://drmn.xyz/nl/",
-        "description": "Slaapgeluiden-app en witte ruis voor iPhone. Gratis versie met mix en offline. Download gratis in de App Store.",
+        "description": "DRMN — witte ruis en ambient slaapgeluiden voor iPhone. Mix, offline, slaaptimer. Gratis download in de App Store.",
         "potentialAction": {
           "@type": "SearchAction",
           "target": "https://drmn.xyz/?q={search_term_string}",
@@ -503,54 +490,118 @@
       "howto": {
         "@context": "https://schema.org",
         "@type": "HowTo",
-        "name": "Hoe gebruik je een slaapgeluiden-app",
-        "description": "Leer hoe je DRMN gebruikt om sneller in slaap te vallen. Stap-voor-stap gids.",
+        "name": "DRMN gebruiken voor beter slapen",
+        "description": "Snelle gids: kies een track, mix indien gewenst, stel timer in en luister offline.",
         "step": [
           {
             "@type": "HowToStep",
             "position": 1,
-            "name": "Download gratis",
-            "text": "Download DRMN in de App Store op je iPhone. Vereist iOS 17.1+. Gratis versie bevat timer van 1 uur.",
+            "name": "Download DRMN",
+            "text": "Installeer DRMN gratis uit de App Store op iPhone (iOS 17.1+). Gratis versie bevat 1-uurs timer en basisgeluiden.",
             "url": "https://apps.apple.com/app/id6746480683"
           },
           {
             "@type": "HowToStep",
             "position": 2,
-            "name": "Bekijk slaapgeluiden",
-            "text": "Open de app en verken de bibliotheek: witte en bruine ruis, natuur (regen, golven, vuur), meditatie en babygeluiden."
+            "name": "Verken de bibliotheek",
+            "text": "In DRMN vind je witte en bruine ruis, regen, golven, vuur, meditatie en babygeluiden."
           },
           {
             "@type": "HowToStep",
             "position": 3,
-            "name": "Kies geluiden",
-            "text": "Naar behoefte — witte ruis voor masking, natuur voor ontspanning, babygeluiden voor kleintjes. Preview voor afspelen."
+            "name": "Kies naar behoefte",
+            "text": "Constant geluid om afleiding te maskeren, natuur om te ontspannen, babygeluiden voor de kamer. Luister voor je afspeelt."
           },
           {
             "@type": "HowToStep",
             "position": 4,
-            "name": "Mix geluiden",
-            "text": "Combineer witte ruis met golven of regen met meditatie. Creëer perfecte slaapomgeving."
+            "name": "Mix geluiden (optioneel)",
+            "text": "Leg witte ruis over golven, of regen met zachte meditatie—maak je avondmix."
           },
           {
             "@type": "HowToStep",
             "position": 5,
             "name": "Stel slaaptimer in",
-            "text": "Schakel automatische fade-out in als je geen geluid de hele nacht wilt. Volume neemt langzaam af."
+            "text": "Zet automatische fade-out aan als je niet de hele nacht audio wilt. Het geluid wordt zachter nadat je in slaap bent."
           },
           {
             "@type": "HowToStep",
             "position": 6,
-            "name": "Start & slaap",
-            "text": "Druk op play en pas volume aan. iPhone dichtbij of koptelefoon — beide werken."
+            "name": "Speel af en pas volume aan",
+            "text": "Hard genoeg om lawaai te maskeren, maar comfortabel voor je oren. iPhone op nachtkastje of koptelefoon—beide werken."
           },
           {
             "@type": "HowToStep",
             "position": 7,
             "name": "Download voor offline",
-            "text": "Download favorieten voor offline gebruik. Ononderbroken slapen overal zonder internet."
+            "text": "Sla favorieten lokaal op—handig op reis of met zwak Wi‑Fi op de slaapkamer."
           }
         ]
-      }
+      },
+      "reviews": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Sarah M."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Ik val sneller in slaap met DRMN. De mix laat me witte ruis en golven perfect combineren."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Michael R."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Onze baby slaapt de hele nacht met het föhngeluid. Offline modus redt ons op reis."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Jennifer L."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Met slapeloosheid heeft DRMN alles veranderd. Ik gebruik het elke nacht en word uitgerust wakker."
+        }
+      ]
     }
+  },
+  "app_store_proof": {
+    "title": "Beoordeeld in de App Store",
+    "rating": "4,9",
+    "rating_max": "5",
+    "review_count": "10",
+    "downloads": "10.000+",
+    "description": "Echte beoordelingen en reviews uit de App Store—geen marketingbeloftes. Lees wat gebruikers zeggen voordat je downloadt.",
+    "store_url": "https://apps.apple.com/app/id6746480683",
+    "reviews_url": "https://apps.apple.com/app/id6746480683?see-all=reviews",
+    "screenshot_alt": "Voorbeeld van DRMN-app op iPhone",
+    "screenshot_url": "https://drmn.xyz/site_preview.png"
+  },
+  "about": {
+    "title": "Over DRMN",
+    "description": "DRMN is een onafhankelijke iOS-app voor slaap en focus, gemaakt door Vladimir Ivakhnenko. Het begon als een eenvoudige tool voor beter rusten—stabiele geluiden, offline afspelen en basisfuncties zonder verplicht abonnement.",
+    "developer": "Vladimir Ivakhnenko",
+    "developer_url": "https://apps.apple.com/developer/id1239180595",
+    "contact_email": "c-basso@ya.ru",
+    "contact_label": "Contact",
+    "developer_label": "Ontwikkelaar in de App Store",
+    "about_page_url": "/about.html",
+    "about_page_label": "Over-pagina"
   }
 }

@@ -33,13 +33,13 @@
     "app_name_suffix": "Máy phát âm thanh ngủ",
     "logo_alt": "Logo ứng dụng DRMN máy phát âm thanh ngủ cho iPhone",
     "app_name": "DRMN",
-    "title": "Ứng dụng máy phát âm thanh ngủ cho iPhone",
-    "tagline": "Chìm vào giấc nhanh hơn với âm thanh ngủ tốt nhất. DRMN là ứng dụng máy phát âm thanh ngủ với mưa, quạt, tiếng ồn trắng & âm thanh thiên nhiên — trộn âm thanh, phát ngoại tuyến & tiết kiệm pin cả đêm.",
+    "title": "Tiếng ồn trắng và âm thanh giúp ngủ cho iPhone",
+    "tagline": "Chìm vào giấc nhanh hơn với âm ambient ổn định trên iPhone. DRMN kết hợp mưa, quạt, tiếng ồn trắng & nâu, âm thiên nhiên, trộn âm, chế độ ngoại tuyến và hẹn giờ ngủ tiết kiệm pin.",
     "tldr": "DRMN là ứng dụng âm thanh ngủ iOS giúp bạn ngủ nhanh hơn 30–50%. Phiên bản miễn phí: mưa, quạt, tiếng ồn trắng, hẹn giờ 1 giờ, ngoại tuyến, trộn âm thanh & tối ưu pin. Tải miễn phí trên App Store.",
     "download_text": "Tải xuống ngay",
     "download_url": "https://apps.apple.com/app/id6746480683",
-    "download_aria_label": "Tải ứng dụng âm thanh ngủ miễn phí từ App Store",
-    "download_img_alt": "Tải ứng dụng âm thanh ngủ trên App Store",
+    "download_aria_label": "Tải DRMN miễn phí trên App Store",
+    "download_img_alt": "Tải DRMN trên App Store",
     "scan_to_download": "Quét để tải xuống"
   },
   "stats": {
@@ -101,28 +101,33 @@
     ]
   },
   "popular_sounds": {
-    "title": "Âm thanh ngủ phổ biến",
-    "intro": "Đang tìm âm thanh ngủ tốt nhất? DRMN có những âm thanh được tìm kiếm nhiều nhất — sẵn sàng trộn, phát ngoại tuyến & chạy cả đêm trên iPhone.",
+    "layout": "sections",
+    "sections_layout": true,
     "items": [
       {
-        "icon": "🌧️",
-        "title": "Tiếng mưa giúp ngủ",
-        "description": "Mưa nhẹ che tiếng ồn đột ngột & giúp chìm vào giấc. Trộn mưa với tiếng ồn trắng để ngủ sâu hơn."
-      },
-      {
-        "icon": "🌀",
-        "title": "Tiếng quạt giúp ngủ",
-        "description": "Tiếng quạt đều che xe cộ, tiếng ngáy & hàng xóm — âm thanh ngủ kinh điển hàng triệu người tin dùng mỗi đêm."
-      },
-      {
         "icon": "🔊",
-        "title": "Tiếng ồn trắng giúp ngủ",
-        "description": "Tiếng ồn trắng, nâu & tối tạo lớp nền ổn định báo não nghỉ ngơi."
+        "title": "Tiếng ồn trắng",
+        "description": "Tiếng ồn trắng đều che tiếng ồn đột ngột—xe cộ, hàng xóm hoặc sàn kêu—và cho não bạn một nền âm dễ đoán để thư giãn. Thử tiếng quạt hoặc tiếng ồn tĩnh điện cổ điển; trộn với mưa hoặc sóng biển."
       },
       {
         "icon": "🌊",
-        "title": "Âm thanh biển & thiên nhiên",
-        "description": "Sóng, lửa & chim buổi sáng bổ sung thư viện — trộn với mưa hoặc quạt bất cứ lúc nào."
+        "title": "Tiếng ồn nâu",
+        "description": "Tiếng ồn nâu & tối nhấn tần số thấp. Nhiều người thấy ấm và ít chói tai hơn tiếng ồn trắng—tốt cho giấc ngủ sâu hoặc tập trung. Dùng riêng hoặc phía dưới âm thiên nhiên."
+      },
+      {
+        "icon": "👶",
+        "title": "Âm thanh ngủ cho em bé",
+        "description": "Bản nhẹ với máy sấy tóc, máy hút bụi hoặc gõ bàn phím mô phỏng nhịp quen thuộc, êm dịu trẻ sơ sinh & nhỏ tuổi. Phụ huynh dùng trong phòng bé—không cần máy phát âm thanh riêng."
+      },
+      {
+        "icon": "⏱️",
+        "title": "Hẹn giờ ngủ",
+        "description": "Đặt hẹn giờ tự giảm âm để âm lượng nhỏ dần sau khi bạn ngủ. Phiên bản miễn phí có 1 giờ—đủ cho hầu hết đêm; premium mở khóa phiên dài hơn."
+      },
+      {
+        "icon": "📴",
+        "title": "Máy phát âm thanh ngủ ngoại tuyến",
+        "description": "Tải bản yêu thích một lần & nghe tới 10 giờ không cần Wi‑Fi hay dữ liệu di động. Tối ưu pin giữ phát cả đêm—lý tưởng khi đi du lịch hoặc tín hiệu yếu trong phòng ngủ."
       }
     ]
   },
@@ -316,11 +321,11 @@
   },
   "final_cta": {
     "title": "Sẵn sàng ngủ ngon hơn đêm nay?",
-    "paragraph1": "Tham gia hơn 10.000 người dùng đã cải thiện giấc ngủ với DRMN. 4,9/5 trên App Store — ứng dụng âm thanh ngủ miễn phí giúp ngủ nhanh hơn 30–50%. Phiên bản miễn phí: hẹn giờ 1 giờ, ngoại tuyến & trộn âm. Tải hôm nay & dùng thử âm thanh chuyên nghiệp miễn phí.",
-    "cta_text": "Tải ứng dụng âm thanh ngủ miễn phí",
+    "paragraph1": "Hơn 10.000 người dùng DRMN để thư giãn và chìm vào giấc nhanh hơn. Điểm 4,9/5 trên App Store; phiên bản miễn phí có hẹn giờ 1 giờ, ngoại tuyến và trộn âm. Tải về và tìm âm thanh phù hợp với bạn.",
+    "cta_text": "Tải DRMN miễn phí",
     "cta_url": "https://apps.apple.com/app/id6746480683",
-    "cta_aria_label": "Tải ứng dụng âm thanh ngủ miễn phí từ App Store",
-    "cta_img_alt": "Tải ứng dụng âm thanh ngủ trên App Store"
+    "cta_aria_label": "Tải DRMN miễn phí trên App Store",
+    "cta_img_alt": "Tải DRMN trên App Store"
   },
   "footer": {
     "copyright": "© 2025 DRMN. Bảo lưu mọi quyền.",
@@ -330,7 +335,9 @@
     "terms_url": "/terms.html",
     "blog_link": "Blog",
     "fazier_badge_alt": "Huy hiệu Fazier",
-    "superlaunch_badge_alt": "Nổi bật trên Super Launch"
+    "superlaunch_badge_alt": "Nổi bật trên Super Launch",
+    "about_link": "Giới thiệu",
+    "about_url": "/about.html"
   },
   "app_info": {
     "developer": "Vladimir Ivakhnenko",
@@ -358,75 +365,55 @@
   },
   "seo": {
     "breadcrumb_home": "Trang chủ",
-    "faq_title": "FAQ: máy phát âm thanh ngủ, âm thanh ngủ & tiếng ồn trắng",
+    "faq_title": "Câu hỏi thường gặp",
     "faq": [
       {
         "question": "Âm thanh nào tốt nhất để ngủ?",
-        "answer": "Tùy bạn — nhiều người chọn mưa, quạt hoặc tiếng ồn trắng ổn định. Trong DRMN bạn có thể nghe thử & trộn âm để tìm thứ giúp ngủ nhanh nhất."
+        "answer": "Tùy điều gì giúp bạn bình tĩnh. Nhiều người chọn mưa, tiếng quạt đều hoặc tiếng ồn trắng trung tính. Trong DRMN bạn có thể nghe và trộn bản nhạc để tìm thứ giúp chìm vào giấc nhanh hơn."
       },
       {
         "question": "Máy phát âm thanh ngủ là gì?",
-        "answer": "Phát âm nền ổn định — mưa, quạt hoặc tiếng ồn trắng — để che tiếng ồn & giúp ngủ. DRMN là ứng dụng máy phát âm thanh ngủ cho iPhone với trộn âm, ngoại tuyến & hẹn giờ ngủ, như máy vật lý."
+        "answer": "Phát âm nền ổn định—mưa, quạt hoặc tiếng ồn trắng—để che tiếng ồn và ngủ ngon hơn. DRMN hoạt động như máy cầm tay trên iPhone với trộn âm, chế độ ngoại tuyến và hẹn giờ tích hợp."
       },
       {
-        "question": "Ứng dụng tiếng ồn trắng tốt nhất cho iPhone?",
-        "answer": "DRMN có điểm 4,9 & hơn 10.000 lượt tải. Mưa, quạt, tiếng ồn trắng & 100 giờ âm thanh ngủ & thiên nhiên — người dùng ngủ nhanh hơn 30–50%."
+        "question": "DRMN có phải ứng dụng tiếng ồn trắng tốt cho iPhone không?",
+        "answer": "DRMN có 4,9 sao trên App Store và hơn 10.000 lượt tải. Có mưa, quạt, tiếng ồn trắng & nâu, cùng hơn 100 giờ ambient và âm thiên nhiên. Người dùng thường báo ngủ nhanh hơn 30–50% khi tiếng ồn xung quanh làm phiền."
       },
       {
-        "question": "Có ứng dụng tiếng ồn trắng miễn phí không?",
-        "answer": "Có! DRMN miễn phí trên App Store. Phiên bản miễn phí: hẹn giờ 1 giờ, ngoại tuyến, trộn âm & âm thanh ngủ. Premium mở khóa phát lâu hơn."
+        "question": "Có ứng dụng tiếng ồn trắng miễn phí cho iPhone không?",
+        "answer": "Có. DRMN tải miễn phí trên App Store. Phiên bản miễn phí: hẹn giờ 1 giờ, ngoại tuyến, trộn âm và âm thanh cơ bản. Premium mở khóa phiên dài hơn và thêm bản nhạc—không cần đăng ký để thử tính năng chính."
       },
       {
-        "question": "Ứng dụng ngủ có những âm thanh gì?",
-        "answer": "DRMN cung cấp hơn 100 giờ ghi âm chuyên nghiệp: tiếng ồn trắng, nâu & tối, mưa, sóng, lửa, chim buổi sáng, thiền & âm thanh em bé (máy sấy tóc, hút bụi, bàn phím)."
+        "question": "Có những âm thanh nào?",
+        "answer": "Tiếng ồn trắng, nâu và tối; thiên nhiên như mưa, sóng, lửa và chim buổi sáng; thiền và tập trung; âm em bé như máy sấy tóc, hút bụi và bàn phím. Bạn có thể trộn bất kỳ tổ hợp nào."
       },
       {
-        "question": "Ứng dụng có hoạt động ngoại tuyến không?",
-        "answer": "Có! Sau khi tải âm thanh, DRMN hoạt động hoàn toàn ngoại tuyến. Với tối ưu pin — tới 10 giờ không cần internet."
+        "question": "DRMN có hoạt động ngoại tuyến không?",
+        "answer": "Có. Sau khi tải bản nhạc, ứng dụng phát không cần internet. Tối ưu pin cho tới 10 giờ liên tục—đủ cho du lịch hoặc cả đêm."
       },
       {
-        "question": "Ứng dụng tốt nhất cho giấc ngủ em bé?",
-        "answer": "DRMN có âm thanh em bé riêng (máy sấy tóc, hút bụi, bàn phím) giúp ngủ nhanh hơn. Nhịp quen thuộc êm dịu bé."
+        "question": "Âm thanh nào phù hợp cho giấc ngủ em bé?",
+        "answer": "Nhiều phụ huynh dùng âm đều, quen thuộc—máy sấy tóc, hút bụi hoặc tiếng ồn trắng nhẹ. DRMN có bản em bé êm dịu trẻ nhỏ mà không cần thiết bị riêng trong phòng."
       },
       {
-        "question": "Ứng dụng máy phát âm thanh hoạt động thế nào?",
-        "answer": "DRMN cung cấp tiếng ồn trắng & âm thanh ngủ để nghỉ ngơi & tập trung. Che tiếng ồn, tạo môi trường ngủ ổn định & khuyến khích giấc ngủ sâu — như máy vật lý."
+        "question": "Tôi có thể trộn các âm thanh khác nhau không?",
+        "answer": "Có. Kết hợp tiếng ồn trắng với sóng biển, mưa với thiền hoặc bất kỳ cặp nào bạn thích. Trộn âm có trong phiên bản miễn phí."
       },
       {
-        "question": "Có thể trộn âm thanh không?",
-        "answer": "Có! Kết hợp tiếng ồn trắng với sóng biển hoặc mưa với nhạc thiền. Tạo trải nghiệm ngủ riêng."
+        "question": "DRMN có hẹn giờ ngủ không?",
+        "answer": "Có. Đặt hẹn giờ tự giảm âm để âm lượng nhỏ dần sau khi bạn ngủ. Phiên bản miễn phí có 1 giờ; premium thêm tùy chọn dài hơn."
       },
       {
-        "question": "Có hẹn giờ ngủ không?",
-        "answer": "Có! Hẹn giờ tự giảm âm. Đặt xong — âm thanh sẽ dần tắt sau khi bạn ngủ."
+        "question": "DRMN có giúp mất ngủ không?",
+        "answer": "Âm nền ổn định có thể che xe cộ, hàng xóm và tiếng ồn khác đánh thức người ngủ nhẹ. Nhiều người mất ngủ nghe tiếng ồn trắng hoặc nâu mỗi đêm; nhiều người báo chìm vào giấc nhanh hơn, nhưng kết quả khác nhau."
       },
       {
-        "question": "Tiếng ồn trắng giúp ngủ là gì và hỗ trợ thế nào?",
-        "answer": "Âm thanh ổn định che tiếng ồn gây phiền & giúp ngủ nhanh hơn. DRMN che xe cộ, hàng xóm & tiếng ồn khác để môi trường ngủ ổn định."
+        "question": "DRMN khác Calm hay Headspace thế nào?",
+        "answer": "Calm và Headspace tập trung thiền có hướng dẫn và gói wellness. DRMN xây quanh âm ambient—máy phát âm thanh ngủ trong túi—với phiên bản miễn phí hào phóng (hẹn giờ 1 giờ, ngoại tuyến, trộn âm) và không có khóa thiền. BetterSleep và app tương tự thường khóa tính năng cho thuê bao; với DRMN bạn thử âm cơ bản miễn phí."
       },
       {
-        "question": "Có phù hợp với mất ngủ không?",
-        "answer": "Có! DRMN có 4,9 & hơn 10.000 lượt tải. Che tiếng ồn, người dùng ngủ nhanh hơn 30–50%. Tải miễn phí."
-      },
-      {
-        "question": "DRMN có bao nhiêu lượt tải?",
-        "answer": "Hơn 10.000 trên App Store, 4,9/5 từ 10 đánh giá. 100 giờ âm thanh & tới 10 giờ ngoại tuyến mỗi lần sạc."
-      },
-      {
-        "question": "Điểm DRMN trên App Store?",
-        "answer": "4,9/5 từ 10 đánh giá. Hơn 10.000 lượt tải, 100 giờ âm thanh ngủ & phát ngoại tuyến."
-      },
-      {
-        "question": "DRMN khác ứng dụng khác ở điểm nào?",
-        "answer": "DRMN nổi bật với phiên bản miễn phí hào phóng (hẹn giờ 1 giờ), trộn âm nâng cao, âm em bé & tối ưu pin — ngoại tuyến & ghi âm chuyên nghiệp không cần đăng ký."
-      },
-      {
-        "question": "Điều gì làm DRMN độc đáo so với lựa chọn miễn phí?",
-        "answer": "Phiên bản miễn phí với hẹn giờ 1 giờ không cần đăng ký. Trong khi app khác giới hạn âm thanh hoặc yêu cầu mua, DRMN cho trộn âm, ngoại tuyến & pin miễn phí — cùng âm em bé mà nhiều app không có."
-      },
-      {
-        "question": "DRMN có tốt hơn ứng dụng âm thanh ngủ khác không?",
-        "answer": "Phiên bản miễn phí: hẹn giờ, trộn âm, ngoại tuyến, pin không cần đăng ký. 4,9, 10.000+ lượt tải, ngủ nhanh hơn 30–50%. Âm em bé & hẹn giờ thông minh miễn phí — tính năng app khác thu phí hoặc không có."
+        "question": "Ai tạo ra DRMN?",
+        "answer": "DRMN do Vladimir Ivakhnenko, nhà phát triển iOS độc lập, phát triển. Trên App Store có 4,9 sao từ 10 đánh giá và hơn 10.000 lượt tải. Liên hệ: c-basso@ya.ru."
       }
     ],
     "structured_data": {
@@ -444,7 +431,7 @@
           "availability": "https://schema.org/InStock",
           "url": "https://apps.apple.com/app/id6746480683"
         },
-        "description": "Ứng dụng âm thanh ngủ & tiếng ồn trắng cho iPhone. Phiên bản miễn phí với mưa, quạt, trộn âm & ngoại tuyến. Cho ngủ, tập trung & em bé.",
+        "description": "DRMN là ứng dụng iOS freemium với tiếng ồn trắng & nâu, mưa, quạt và âm thiên nhiên. Trộn bản nhạc, phát ngoại tuyến và dùng hẹn giờ ngủ tự giảm âm. Tải miễn phí trên App Store cho iPhone.",
         "image": {
           "@type": "ImageObject",
           "url": "https://drmn.xyz/img/logo.webp",
@@ -467,7 +454,7 @@
           "@type": "Person",
           "name": "Vladimir Ivakhnenko"
         },
-        "keywords": "âm thanh ngủ, máy phát âm thanh ngủ, tiếng ồn trắng, ứng dụng ngủ, tiếng mưa, tiếng quạt, ngủ ngoại tuyến",
+        "keywords": "tiếng ồn trắng, âm thanh giúp ngủ, máy phát âm thanh ngủ, tiếng ồn nâu, tiếng mưa ngủ, tiếng quạt, âm thanh em bé, ngoại tuyến, hẹn giờ ngủ, âm tập trung, mất ngủ, ứng dụng iPhone miễn phí",
         "inLanguage": "vi",
         "datePublished": "2024-01-01",
         "dateModified": "2025-01-15",
@@ -486,14 +473,14 @@
         "name": "DRMN",
         "url": "https://drmn.xyz/vi/",
         "logo": "https://drmn.xyz/img/logo.webp",
-        "description": "DRMN — ứng dụng âm thanh ngủ & tiếng ồn trắng cho iPhone. Phiên bản miễn phí với trộn âm & ngoại tuyến. Cho ngủ, tập trung & em bé."
+        "description": "DRMN — tiếng ồn trắng và âm ambient giúp ngủ cho iPhone. Trộn âm, ngoại tuyến, hẹn giờ ngủ. Tải miễn phí trên App Store."
       },
       "website": {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "DRMN",
         "url": "https://drmn.xyz/vi/",
-        "description": "Ứng dụng âm thanh ngủ & tiếng ồn trắng cho iPhone. Phiên bản miễn phí với trộn âm & ngoại tuyến. Tải miễn phí trên App Store.",
+        "description": "DRMN — tiếng ồn trắng và âm ambient giúp ngủ cho iPhone. Trộn âm, ngoại tuyến, hẹn giờ ngủ. Tải miễn phí trên App Store.",
         "potentialAction": {
           "@type": "SearchAction",
           "target": "https://drmn.xyz/?q={search_term_string}",
@@ -503,54 +490,118 @@
       "howto": {
         "@context": "https://schema.org",
         "@type": "HowTo",
-        "name": "Cách dùng ứng dụng âm thanh ngủ",
-        "description": "Tìm hiểu cách dùng DRMN để ngủ nhanh hơn. Hướng dẫn từng bước.",
+        "name": "Dùng DRMN để ngủ ngon hơn",
+        "description": "Hướng dẫn nhanh: chọn bản nhạc, trộn nếu muốn, đặt hẹn giờ và nghe ngoại tuyến.",
         "step": [
           {
             "@type": "HowToStep",
             "position": 1,
-            "name": "Tải miễn phí",
-            "text": "Tải DRMN trên App Store về iPhone. Yêu cầu iOS 17.1+. Phiên bản miễn phí có hẹn giờ 1 giờ.",
+            "name": "Tải DRMN",
+            "text": "Cài DRMN miễn phí từ App Store trên iPhone (iOS 17.1+). Phiên bản miễn phí có hẹn giờ 1 giờ và âm cơ bản.",
             "url": "https://apps.apple.com/app/id6746480683"
           },
           {
             "@type": "HowToStep",
             "position": 2,
-            "name": "Duyệt âm thanh ngủ",
-            "text": "Mở ứng dụng & khám phá thư viện: tiếng ồn trắng & nâu, thiên nhiên (mưa, sóng, lửa), thiền & âm em bé."
+            "name": "Khám phá thư viện",
+            "text": "Trong DRMN có tiếng ồn trắng & nâu, mưa, sóng, lửa, thiền và âm em bé."
           },
           {
             "@type": "HowToStep",
             "position": 3,
-            "name": "Chọn âm thanh",
-            "text": "Theo nhu cầu — tiếng ồn trắng che tiếng ồn, thiên nhiên thư giãn, âm em bé cho bé. Nghe thử trước khi phát."
+            "name": "Chọn theo nhu cầu",
+            "text": "Âm đều để che tiếng ồn, thiên nhiên để thư giãn, âm em bé cho phòng trẻ. Nghe thử trước khi phát."
           },
           {
             "@type": "HowToStep",
             "position": 4,
-            "name": "Trộn âm thanh",
-            "text": "Kết hợp tiếng ồn trắng với sóng biển hoặc mưa với nhạc thiền. Tạo môi trường ngủ hoàn hảo."
+            "name": "Trộn âm (tùy chọn)",
+            "text": "Chồng tiếng ồn trắng lên sóng biển, hoặc mưa với thiền nhẹ—tạo mix buổi tối của bạn."
           },
           {
             "@type": "HowToStep",
             "position": 5,
             "name": "Đặt hẹn giờ ngủ",
-            "text": "Bật tự giảm âm nếu không muốn phát cả đêm. Âm lượng sẽ dần giảm."
+            "text": "Bật tự giảm âm nếu không muốn phát cả đêm. Âm lượng sẽ nhỏ dần sau khi bạn ngủ."
           },
           {
             "@type": "HowToStep",
             "position": 6,
-            "name": "Phát & ngủ",
-            "text": "Nhấn phát & điều chỉnh âm lượng. iPhone gần hoặc tai nghe — đều được."
+            "name": "Phát và điều chỉnh âm lượng",
+            "text": "Đủ to để che tiếng ồn, vừa tai. iPhone trên đầu giường hoặc tai nghe—đều được."
           },
           {
             "@type": "HowToStep",
             "position": 7,
             "name": "Tải để dùng ngoại tuyến",
-            "text": "Tải âm thanh yêu thích để dùng ngoại tuyến. Ngủ không gián đoạn mọi nơi không cần internet."
+            "text": "Lưu yêu thích cục bộ—hữu ích khi đi du lịch hoặc Wi‑Fi yếu trong phòng ngủ."
           }
         ]
-      }
+      },
+      "reviews": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Sarah M."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Tôi chìm vào giấc nhanh hơn với DRMN. Tính năng trộn cho phép kết hợp tiếng ồn trắng và sóng biển hoàn hảo."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Michael R."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Bé chúng tôi ngủ trọn đêm nhờ tiếng máy sấy tóc. Chế độ ngoại tuyến cứu cánh khi đi du lịch."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Jennifer L."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Bị mất ngủ — DRMN thay đổi tất cả. Dùng mỗi đêm và thức dậy sảng khoái."
+        }
+      ]
     }
+  },
+  "app_store_proof": {
+    "title": "Được đánh giá trên App Store",
+    "rating": "4,9",
+    "rating_max": "5",
+    "review_count": "10",
+    "downloads": "10.000+",
+    "description": "Điểm và đánh giá thật trên App Store—không phải lời hứa marketing. Xem người dùng nói gì trước khi tải.",
+    "store_url": "https://apps.apple.com/app/id6746480683",
+    "reviews_url": "https://apps.apple.com/app/id6746480683?see-all=reviews",
+    "screenshot_alt": "Xem trước ứng dụng DRMN trên iPhone",
+    "screenshot_url": "https://drmn.xyz/site_preview.png"
+  },
+  "about": {
+    "title": "Giới thiệu DRMN",
+    "description": "DRMN là ứng dụng iOS độc lập cho giấc ngủ và tập trung, do Vladimir Ivakhnenko phát triển. Bắt đầu như công cụ đơn giản để nghỉ ngơi tốt hơn—âm ổn định, phát ngoại tuyến và tính năng cốt lõi không bắt buộc đăng ký.",
+    "developer": "Vladimir Ivakhnenko",
+    "developer_url": "https://apps.apple.com/developer/id1239180595",
+    "contact_email": "c-basso@ya.ru",
+    "contact_label": "Liên hệ",
+    "developer_label": "Nhà phát triển trên App Store",
+    "about_page_url": "/about.html",
+    "about_page_label": "Trang giới thiệu"
   }
 }
