@@ -5,16 +5,24 @@
     <link>https://drmn.xyz/blog/</link>
     <description>Guides on white noise, sleep sounds, and focus audio for better rest and concentration.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 13 Jun 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jun 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://drmn.xyz/blog/feed.xml" rel="self" type="application/rss+xml"/>
     
+    <item>
+      <title><![CDATA[Rain Sounds for Sleep: Why They Work and How to Use Them]]></title>
+      <link>https://drmn.xyz/blog/rain-sounds-for-sleep/</link>
+      <guid isPermaLink="true">https://drmn.xyz/blog/rain-sounds-for-sleep/</guid>
+      <pubDate>Sun, 14 Jun 2026 12:00:00 GMT</pubDate>
+      <description><![CDATA[Rain loops feel natural at bedtime, but the wrong track can loop awkwardly or stay too bright. Here is how to pick rain sounds that actually help you rest.]]></description>
+      <enclosure url="https://drmn.xyz/blog/img/sleep-sound2.webp" type="image/webp" length="221028"/>
+    </item>
     <item>
       <title><![CDATA[Sleep Music That Actually Works: How to Pick Sounds for Better Rest]]></title>
       <link>https://drmn.xyz/blog/sleep-music-what-actually-works/</link>
       <guid isPermaLink="true">https://drmn.xyz/blog/sleep-music-what-actually-works/</guid>
       <pubDate>Sat, 13 Jun 2026 12:00:00 GMT</pubDate>
       <description><![CDATA[Rain sounds and piano playlists feel relaxing, yet some nights your mind stays wide awake. Here is how to choose audio that supports sleep instead of competing with it.]]></description>
-      <enclosure url="https://drmn.xyz/blog/img/sleep-sound1.webp" type="image/webp" length="2351314"/>
+      <enclosure url="https://drmn.xyz/blog/img/sleep-sound1.webp" type="image/webp" length="99414"/>
     </item>
     <item>
       <title><![CDATA[Can White Noise Really Help You Sleep Better? What the Research Says]]></title>
@@ -22,7 +30,7 @@
       <guid isPermaLink="true">https://drmn.xyz/blog/can-white-noise-help-you-sleep-better/</guid>
       <pubDate>Mon, 16 Mar 2026 12:00:00 GMT</pubDate>
       <description><![CDATA[White noise can mask outside sounds and cue your brain for sleep, but studies disagree. Here is a balanced look at benefits, risks, and safer use.]]></description>
-      <enclosure url="https://drmn.xyz/blog/img/sleep1.webp" type="image/webp" length="417998"/>
+      <enclosure url="https://drmn.xyz/blog/img/sleep1.webp" type="image/webp" length="54982"/>
     </item>
     <item>
       <title><![CDATA[White Noise for Sleep: What It Is, Why It Works, and How to Use It]]></title>
