@@ -111,20 +111,46 @@ function loadPosts() {
     return posts;
 }
 
+function resolveHeroImagePaths(hero) {
+    const baseName = path.parse(hero.src).name;
+    const outputName = hero.src.endsWith('.webp') ? hero.src : `${baseName}.webp`;
+
+    if (hero.source) {
+        const sourcePath = path.join(IMAGES_SRC_DIR, hero.source);
+        if (fs.existsSync(sourcePath)) {
+            return { sourcePath, outputName };
+        }
+    }
+
+    const candidates = [hero.src, `${baseName}.webp`, `${baseName}.jpg`, `${baseName}.jpeg`, `${baseName}.png`];
+    for (const name of candidates) {
+        const sourcePath = path.join(IMAGES_SRC_DIR, name);
+        if (fs.existsSync(sourcePath)) {
+            return { sourcePath, outputName };
+        }
+    }
+
+    return null;
+}
+
 async function buildBlogImages(posts) {
     ensureDirectoryExists(BLOG_IMG_OUT_DIR);
 
     for (const post of posts) {
-        const srcPath = path.join(IMAGES_SRC_DIR, post.hero.src);
-        const destPath = path.join(BLOG_IMG_OUT_DIR, post.hero.src);
-
-        if (!fs.existsSync(srcPath)) {
-            throw new Error(`Missing blog image for "${post.slug}": ${srcPath}`);
+        const resolved = resolveHeroImagePaths(post.hero);
+        if (!resolved) {
+            throw new Error(`Missing blog image for "${post.slug}" in ${IMAGES_SRC_DIR}`);
         }
 
-        await sharp(srcPath)
+        const { sourcePath, outputName } = resolved;
+        const destPath = path.join(BLOG_IMG_OUT_DIR, outputName);
+
+        await sharp(sourcePath)
+            .resize({ width: 1920, withoutEnlargement: true })
             .webp({ quality: 82 })
             .toFile(destPath);
+
+        post.hero.src = outputName;
 
         const meta = await sharp(destPath).metadata();
         post.hero.width = post.hero.width || meta.width;
