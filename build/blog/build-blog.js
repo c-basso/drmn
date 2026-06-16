@@ -146,7 +146,7 @@ async function buildBlogImages(posts) {
         const destPath = path.join(BLOG_IMG_OUT_DIR, outputName);
 
         await sharp(sourcePath)
-            .resize({ width: 1920, withoutEnlargement: true })
+            .resize({ width: 1920, height: 1280, fit: 'cover', position: 'centre' })
             .webp({ quality: 82 })
             .toFile(destPath);
 

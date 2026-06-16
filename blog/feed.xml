@@ -5,9 +5,17 @@
     <link>https://drmn.xyz/blog/</link>
     <description>Guides on white noise, sleep sounds, and focus audio for better rest and concentration.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 15 Jun 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jun 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://drmn.xyz/blog/feed.xml" rel="self" type="application/rss+xml"/>
     
+    <item>
+      <title><![CDATA[Pink Noise for Deep Sleep: How It Boosts Slow-Wave Waves]]></title>
+      <link>https://drmn.xyz/blog/pink-noise-for-deep-sleep/</link>
+      <guid isPermaLink="true">https://drmn.xyz/blog/pink-noise-for-deep-sleep/</guid>
+      <pubDate>Tue, 16 Jun 2026 12:00:00 GMT</pubDate>
+      <description><![CDATA[Pink noise isn’t just background sound—it’s a proven tool for enhancing deep sleep by amplifying slow-wave brain activity. Find out how to integrate it into your nightly routine for better rest.]]></description>
+      <enclosure url="https://drmn.xyz/blog/img/pink-noise-for-deep-sleep.webp" type="image/webp" length="52130"/>
+    </item>
     <item>
       <title><![CDATA[Rain Sounds for Focus: Why Steady Rain Helps You Concentrate]]></title>
       <link>https://drmn.xyz/blog/rain-sounds-for-focus/</link>
@@ -22,7 +30,7 @@
       <guid isPermaLink="true">https://drmn.xyz/blog/rain-sounds-for-sleep/</guid>
       <pubDate>Sun, 14 Jun 2026 12:00:00 GMT</pubDate>
       <description><![CDATA[Rain loops feel natural at bedtime, but the wrong track can loop awkwardly or stay too bright. Here is how to pick rain sounds that actually help you rest.]]></description>
-      <enclosure url="https://drmn.xyz/blog/img/sleep-sound2.webp" type="image/webp" length="221028"/>
+      <enclosure url="https://drmn.xyz/blog/img/sleep-sound2.webp" type="image/webp" length="285212"/>
     </item>
     <item>
       <title><![CDATA[Sleep Music That Actually Works: How to Pick Sounds for Better Rest]]></title>
@@ -46,7 +54,7 @@
       <guid isPermaLink="true">https://drmn.xyz/blog/white-noise-for-sleep/</guid>
       <pubDate>Thu, 12 Jun 2025 12:00:00 GMT</pubDate>
       <description><![CDATA[White noise masks sudden sounds that wake you at night. Here is how it works, how loud it should be, and how to build a simple bedtime routine around it.]]></description>
-      <enclosure url="https://drmn.xyz/blog/img/white-noise-for-sleep-hero.webp" type="image/webp" length="90362"/>
+      <enclosure url="https://drmn.xyz/blog/img/white-noise-for-sleep-hero.webp" type="image/webp" length="91976"/>
     </item>
   </channel>
 </rss>

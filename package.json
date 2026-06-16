@@ -7,12 +7,16 @@
     "start": "npx http-server",
     "site:preview": "node build/preview.js",
     "index:now": "node build/indexnow.js",
+    "blog:new": "node tasks/generate-blog-post.js",
     "push": "git add . && git commit -m 'wip' && git push origin main",
     "deploy": "npm run build && npm run validate && npm run sitemap && npm run push"
   },
   "dependencies": {
+    "@openrouter/sdk": "^0.13.7",
     "@playwright/test": "^1.59.1",
+    "dotenv": "^17.4.2",
     "jsonld": "^9.0.0",
-    "sharp": "^0.34.5"
+    "sharp": "^0.34.5",
+    "unsplash-js": "^8.0.0"
   }
 }
