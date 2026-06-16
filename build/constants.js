@@ -7,6 +7,7 @@ const { buildOgLocaleMap } = require('./locales');
 
 const APP_ID = '6746480683';
 const APP_STORE_URL = `https://apps.apple.com/app/id${APP_ID}`;
+const AUTHOR_URL = 'https://apps.apple.com/developer/id1239180595';
 
 const FOOTER_PRIVACY_URL = '/privacy.html';
 const FOOTER_TERMS_URL = '/terms.html';
@@ -129,6 +130,7 @@ module.exports = {
     LANGUAGES,
     APP_ID,
     APP_STORE_URL,
+    AUTHOR_URL,
     FOOTER_PRIVACY_URL,
     FOOTER_TERMS_URL,
     FOOTER_BLOG_URL,

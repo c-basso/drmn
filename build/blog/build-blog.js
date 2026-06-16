@@ -6,6 +6,7 @@ const { renderTemplate, stripHtml } = require('../template-engine');
 const {
     SITE_URL,
     DEFAULT_OG_LOGO,
+    AUTHOR_URL,
     FOOTER_PRIVACY_URL,
     FOOTER_TERMS_URL,
     FOOTER_BLOG_URL,
@@ -55,6 +56,13 @@ function formatDisplayDate(isoDate) {
 
 function formatRssDate(isoDate) {
     return new Date(`${isoDate}T12:00:00Z`).toUTCString();
+}
+
+function formatSchemaDate(isoDate) {
+    if (/T\d{2}:\d{2}/.test(isoDate)) {
+        return isoDate;
+    }
+    return `${isoDate}T12:00:00+00:00`;
 }
 
 function estimateReadingTimeMinutes(content, explicit) {
@@ -247,11 +255,12 @@ function buildBlogPostingSchema(post, siteName) {
         headline: post.title,
         description: post.description,
         image: post.hero.absolute_url,
-        datePublished: post.datePublished,
-        dateModified: post.dateModified,
+        datePublished: formatSchemaDate(post.datePublished),
+        dateModified: formatSchemaDate(post.dateModified),
         author: {
             '@type': 'Person',
-            name: post.author || 'Vladimir Ivakhnenko'
+            name: post.author || 'Vladimir Ivakhnenko',
+            url: AUTHOR_URL
         },
         publisher: {
             '@type': 'Organization',
@@ -373,8 +382,8 @@ function preparePostContext(post, blogConfig, buildTimestamp) {
             og_description: post.description,
             twitter_title: post.title,
             twitter_description: post.description,
-            article_published_time: post.datePublished,
-            article_modified_time: post.dateModified
+            article_published_time: formatSchemaDate(post.datePublished),
+            article_modified_time: formatSchemaDate(post.dateModified)
         },
         post: {
             ...post,
