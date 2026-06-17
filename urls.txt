@@ -36,6 +36,7 @@ https://drmn.xyz/uk/
 https://drmn.xyz/vi/
 https://drmn.xyz/blog/
 https://drmn.xyz/blog/feed.xml
+https://drmn.xyz/blog/brown-noise-concentration-benefits/
 https://drmn.xyz/blog/pink-noise-for-deep-sleep/
 https://drmn.xyz/blog/rain-sounds-for-focus/
 https://drmn.xyz/blog/rain-sounds-for-sleep/
