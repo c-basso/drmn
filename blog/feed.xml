@@ -5,9 +5,17 @@
     <link>https://drmn.xyz/blog/</link>
     <description>Guides on white noise, sleep sounds, and focus audio for better rest and concentration.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Jun 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jun 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://drmn.xyz/blog/feed.xml" rel="self" type="application/rss+xml"/>
     
+    <item>
+      <title><![CDATA[Sound Masking for Focus: How Background Noise Boosts Productivity]]></title>
+      <link>https://drmn.xyz/blog/sound-masking-focus-open-office/</link>
+      <guid isPermaLink="true">https://drmn.xyz/blog/sound-masking-focus-open-office/</guid>
+      <pubDate>Thu, 18 Jun 2026 12:00:00 GMT</pubDate>
+      <description><![CDATA[Find out why adding a gentle hum of background noise can sharpen concentration and help you power through tasks without feeling overwhelmed.]]></description>
+      <enclosure url="https://drmn.xyz/blog/img/sound-masking-focus-open-office.webp" type="image/webp" length="26138"/>
+    </item>
     <item>
       <title><![CDATA[Brown Noise for Concentration: How Deep Sound Improves Focus]]></title>
       <link>https://drmn.xyz/blog/brown-noise-concentration-benefits/</link>
