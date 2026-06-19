@@ -78,6 +78,17 @@ function stripHtmlFences(text) {
   return html;
 }
 
+function isValidArticleHtml(content) {
+  const html = String(content).trim();
+  if (!html.startsWith('<')) {
+    return false;
+  }
+  if (/^user safety:/i.test(html)) {
+    return false;
+  }
+  return /<(p|h2|h3|ul|ol|blockquote)\b/i.test(html);
+}
+
 function deriveUnsplashSearchQuery(metadata) {
   const topic = [
     metadata.title,
@@ -189,6 +200,12 @@ function validateGeneratedPost(generated, existingSlugs) {
 
   if (/<h1[\s>]/i.test(generated.content)) {
     throw new Error('Content must not contain <h1> tags');
+  }
+
+  if (!isValidArticleHtml(generated.content)) {
+    throw new Error(
+      'Generated content is not valid HTML — model may have returned a safety stub or non-HTML text',
+    );
   }
 }
 

@@ -168,6 +168,15 @@ function validateXmlWithXmllint(filePath) {
     return { ok: false, error: message || 'xmllint failed' };
 }
 
+function decodeXmlEntities(value) {
+    return String(value)
+        .replace(/&amp;/g, '&')
+        .replace(/&lt;/g, '<')
+        .replace(/&gt;/g, '>')
+        .replace(/&quot;/g, '"')
+        .replace(/&apos;/g, "'");
+}
+
 function extractRssItems(xml) {
     const items = [];
     const itemRe = /<item>([\s\S]*?)<\/item>/gi;
@@ -180,7 +189,7 @@ function extractRssItems(xml) {
                 return cdata[1].trim();
             }
             const plain = block.match(new RegExp(`<${tag}>([^<]*)</${tag}>`, 'i'));
-            return plain ? plain[1].trim() : null;
+            return plain ? decodeXmlEntities(plain[1].trim()) : null;
         };
         items.push({
             title: pick('title'),

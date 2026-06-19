@@ -534,11 +534,11 @@ function writeRssFeed(posts, buildDateIso) {
 
         return `
     <item>
-      <title><![CDATA[${post.title}]]></title>
+      <title>${escapeXml(post.title)}</title>
       <link>${post.canonical}</link>
       <guid isPermaLink="true">${post.canonical}</guid>
       <pubDate>${post.datePublishedRss}</pubDate>
-      <description><![CDATA[${post.excerpt}]]></description>
+      <description>${escapeXml(post.excerpt)}</description>
       <enclosure url="${post.hero.absolute_url}" type="image/webp" length="${enclosureSize}"/>
     </item>`;
     }).join('');
