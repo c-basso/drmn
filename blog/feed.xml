@@ -5,9 +5,17 @@
     <link>https://drmn.xyz/blog/</link>
     <description>Guides on white noise, sleep sounds, and focus audio for better rest and concentration.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Jun 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jun 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://drmn.xyz/blog/feed.xml" rel="self" type="application/rss+xml"/>
     
+    <item>
+      <title>Understanding How Different Sounds Shape Your Brainwaves</title>
+      <link>https://drmn.xyz/blog/the-science-of-sound-for-focus/</link>
+      <guid isPermaLink="true">https://drmn.xyz/blog/the-science-of-sound-for-focus/</guid>
+      <pubDate>Sat, 20 Jun 2026 12:00:00 GMT</pubDate>
+      <description>Learn which sound frequencies optimize focus and relaxation for better mental performance.</description>
+      <enclosure url="https://drmn.xyz/blog/img/the-science-of-sound-for-focus.webp" type="image/webp" length="49984"/>
+    </item>
     <item>
       <title>Sound Frequency &amp; Circadian Rhythms: How Audio Shapes Your Sleep</title>
       <link>https://drmn.xyz/blog/sound-frequency-circadian-rhythms/</link>
