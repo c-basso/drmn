@@ -5,9 +5,17 @@
     <link>https://drmn.xyz/blog/</link>
     <description>Guides on white noise, sleep sounds, and focus audio for better rest and concentration.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Jun 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jun 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://drmn.xyz/blog/feed.xml" rel="self" type="application/rss+xml"/>
     
+    <item>
+      <title>How to Combine White Noise and Nature Sounds for Better Sleep and Focus</title>
+      <link>https://drmn.xyz/blog/combining-sounds-for-sleep-focus/</link>
+      <guid isPermaLink="true">https://drmn.xyz/blog/combining-sounds-for-sleep-focus/</guid>
+      <pubDate>Sun, 21 Jun 2026 12:00:00 GMT</pubDate>
+      <description>Explore the science behind combining white noise and nature sounds to improve sleep and focus. Practical advice for optimizing your DRMN experience.</description>
+      <enclosure url="https://drmn.xyz/blog/img/combining-sounds-for-sleep-focus.webp" type="image/webp" length="67768"/>
+    </item>
     <item>
       <title>Understanding How Different Sounds Shape Your Brainwaves</title>
       <link>https://drmn.xyz/blog/the-science-of-sound-for-focus/</link>
