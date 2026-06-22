@@ -37,7 +37,7 @@ const JSON_METADATA_SCHEMA = `Respond with a single JSON object only — no mark
   "excerpt": "1–2 sentences for the blog index card — engaging, specific, not duplicate of description",
   "tags": ["4 to 6 lowercase SEO tags"],
   "readingTimeMinutes": 7,
-  "unsplashSearchQuery": "REQUIRED. 3–6 English words for a horizontal landscape hero on Unsplash (e.g. \"rain window bedroom night\", \"minimal desk focus workspace\")",
+  "unsplashSearchQuery": "REQUIRED. 3–6 specific English words for a unique horizontal landscape hero on Unsplash. Vary the scene — do NOT reuse generic queries like \"cozy bedroom night\" if similar posts already exist. Examples: \"rain window bedroom night\", \"headphones pillow soft light\", \"desk lamp focus workspace\"",
   "hero": {
     "alt": "Descriptive accessible alt text for the hero image (no 'image of' prefix)"
   },

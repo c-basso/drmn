@@ -5,9 +5,17 @@
     <link>https://drmn.xyz/blog/</link>
     <description>Guides on white noise, sleep sounds, and focus audio for better rest and concentration.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 21 Jun 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jun 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://drmn.xyz/blog/feed.xml" rel="self" type="application/rss+xml"/>
     
+    <item>
+      <title>Sound Volume and Sleep Quality: How Loudness Shapes Your Rest</title>
+      <link>https://drmn.xyz/blog/sound-volume-sleep-quality/</link>
+      <guid isPermaLink="true">https://drmn.xyz/blog/sound-volume-sleep-quality/</guid>
+      <pubDate>Mon, 22 Jun 2026 12:00:00 GMT</pubDate>
+      <description>Too loud or too quiet? Find out the sweet spot for ambient sounds that keeps you relaxed and keeps the snooze alarms at bay.</description>
+      <enclosure url="https://drmn.xyz/blog/img/sound-volume-sleep-quality.webp" type="image/webp" length="55942"/>
+    </item>
     <item>
       <title>How to Combine White Noise and Nature Sounds for Better Sleep and Focus</title>
       <link>https://drmn.xyz/blog/combining-sounds-for-sleep-focus/</link>
@@ -30,7 +38,7 @@
       <guid isPermaLink="true">https://drmn.xyz/blog/sound-frequency-circadian-rhythms/</guid>
       <pubDate>Fri, 19 Jun 2026 12:00:00 GMT</pubDate>
       <description>This guide delves into the science behind how certain sound frequencies can sync with your body&apos;s circadian clock, boosting sleep quality. You&apos;ll find evidence-backed techniques to weave audio cues into your nightly ritual.</description>
-      <enclosure url="https://drmn.xyz/blog/img/sound-frequency-circadian-rhythms.webp" type="image/webp" length="52130"/>
+      <enclosure url="https://drmn.xyz/blog/img/sound-frequency-circadian-rhythms.webp" type="image/webp" length="60198"/>
     </item>
     <item>
       <title>Sound Masking for Focus: How Background Noise Boosts Productivity</title>

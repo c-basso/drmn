@@ -42,7 +42,11 @@ function loadExistingPosts() {
     .filter((name) => name.endsWith('.json'))
     .map((name) => {
       const post = JSON.parse(fs.readFileSync(path.join(POSTS_DIR, name), 'utf8'));
-      return { slug: post.slug, title: post.title };
+      return {
+        slug: post.slug,
+        title: post.title,
+        unsplashId: post.hero?.unsplashId || null,
+      };
     })
     .sort((a, b) => a.slug.localeCompare(b.slug));
 }
@@ -112,6 +116,14 @@ function deriveUnsplashSearchQuery(metadata) {
     scene = 'soft nursery light';
   } else if (/forest|nature|bird|wind/.test(topic)) {
     scene = 'misty forest morning';
+  } else if (/circadian|melatonin|body.?clock|rhythm/.test(topic)) {
+    scene = 'bedroom curtains morning light';
+  } else if (/volume|decibel|loud|quiet|loudness/.test(topic)) {
+    scene = 'headphones pillow dim bedroom';
+  } else if (/frequency|hz|binaural|wave/.test(topic)) {
+    scene = 'abstract sound waves calm';
+  } else if (/combin|mix|layer|blend/.test(topic)) {
+    scene = 'speaker bedside nightstand';
   } else if (/anxiety|stress|calm|meditat/.test(topic)) {
     scene = 'peaceful dim room';
   }
@@ -209,12 +221,26 @@ function validateGeneratedPost(generated, existingSlugs) {
   }
 }
 
+function getUsedUnsplashIds(existingPosts) {
+  return existingPosts
+    .map((post) => post.unsplashId)
+    .filter(Boolean);
+}
+
 function todayIsoDate() {
   return new Date().toISOString().slice(0, 10);
 }
 
-function buildPostRecord(generated, imageBaseName) {
+function buildPostRecord(generated, imageBaseName, photo) {
   const today = todayIsoDate();
+  const hero = {
+    src: `${imageBaseName}.webp`,
+    source: `${imageBaseName}.jpg`,
+    alt: generated.hero.alt.trim(),
+  };
+  if (photo?.id) {
+    hero.unsplashId = photo.id;
+  }
   return {
     slug: generated.slug,
     title: generated.title.trim(),
@@ -225,11 +251,7 @@ function buildPostRecord(generated, imageBaseName) {
     author: AUTHOR,
     tags: generated.tags.map((tag) => String(tag).trim().toLowerCase()).filter(Boolean),
     readingTimeMinutes: Number(generated.readingTimeMinutes) || 7,
-    hero: {
-      src: `${imageBaseName}.webp`,
-      source: `${imageBaseName}.jpg`,
-      alt: generated.hero.alt.trim(),
-    },
+    hero,
     content: generated.content.trim(),
   };
 }
@@ -283,10 +305,10 @@ async function generatePostDraft(topic, existingPosts) {
   };
 }
 
-async function fetchHeroImage(generated, imagePath) {
+async function fetchHeroImage(generated, imagePath, excludeIds) {
   const query = String(generated.unsplashSearchQuery).trim();
   console.log(`[unsplash] query: "${query}"`);
-  const photo = await fetchBackgroundPhoto(query, imagePath);
+  const photo = await fetchBackgroundPhoto(query, imagePath, { excludeIds });
   console.log(`[unsplash] photo by ${photo.user} (id=${photo.id})`);
   return photo;
 }
@@ -320,6 +342,7 @@ async function main() {
 
   const imageBaseName = generated.slug;
   const imagePath = path.join(IMAGES_DIR, `${imageBaseName}.jpg`);
+  const excludeIds = getUsedUnsplashIds(existingPosts);
   const post = buildPostRecord(generated, imageBaseName);
 
   console.log('\n--- Draft summary ---');
@@ -335,17 +358,25 @@ async function main() {
   }
 
   fs.mkdirSync(IMAGES_DIR, { recursive: true });
-  await fetchHeroImage(generated, imagePath);
-  writePostJson(post);
+  const photo = await fetchHeroImage(generated, imagePath, excludeIds);
+  const postWithPhoto = buildPostRecord(generated, imageBaseName, photo);
+  writePostJson(postWithPhoto);
   runBuild();
 
   console.log('\n✅ Blog post ready');
-  console.log(`   Page:  /blog/${post.slug}/`);
-  console.log(`   Local: blog/${post.slug}/index.html`);
+  console.log(`   Page:  /blog/${postWithPhoto.slug}/`);
+  console.log(`   Local: blog/${postWithPhoto.slug}/index.html`);
   console.log('   Deploy: npm run deploy');
 }
 
-main().catch((err) => {
-  console.error(`\n❌ ${err.message || err}`);
-  process.exit(1);
-});
+if (require.main === module) {
+  main().catch((err) => {
+    console.error(`\n❌ ${err.message || err}`);
+    process.exit(1);
+  });
+}
+
+module.exports = {
+  deriveUnsplashSearchQuery,
+  getUsedUnsplashIds,
+};
