@@ -5,9 +5,17 @@
     <link>https://drmn.xyz/blog/</link>
     <description>Guides on white noise, sleep sounds, and focus audio for better rest and concentration.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Jun 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jun 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://drmn.xyz/blog/feed.xml" rel="self" type="application/rss+xml"/>
     
+    <item>
+      <title>How Noise-Canceling Headphones Improve Sleep and Focus</title>
+      <link>https://drmn.xyz/blog/noise-canceling-headphones-sleep/</link>
+      <guid isPermaLink="true">https://drmn.xyz/blog/noise-canceling-headphones-sleep/</guid>
+      <pubDate>Fri, 26 Jun 2026 12:00:00 GMT</pubDate>
+      <description>Learn how noise-canceling headphones create a quiet environment for better sleep and deeper focus. Tips for choosing the right pair.</description>
+      <enclosure url="https://drmn.xyz/blog/img/noise-canceling-headphones-sleep.webp" type="image/webp" length="33044"/>
+    </item>
     <item>
       <title>Understanding Sound Frequency &amp; Sleep Quality</title>
       <link>https://drmn.xyz/blog/sleep-sound-guide/</link>
