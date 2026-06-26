@@ -12,6 +12,7 @@ const {
 const { chatCompletion, DEFAULT_MODEL } = require('./openrouter-client');
 const { fetchBackgroundPhoto } = require('./unsplash-photos');
 const { deriveUnsplashSearchQuery, getUsedUnsplashIds } = require('./generate-blog-post');
+const { validateTelegraphContent } = require('./telegraph-content-utils');
 const { htmlToTelegraphNodes } = require('../build/telegraph/html-to-nodes');
 const { publishPage } = require('../build/telegraph/telegraph-client');
 const { updateTelegraphHub } = require('../build/telegraph/update-hub');
@@ -21,7 +22,27 @@ const POSTS_DIR = path.join(ROOT_DIR, 'build', 'telegraph', 'posts');
 const IMAGES_DIR = path.join(ROOT_DIR, 'build', 'telegraph', 'images');
 const BLOG_POSTS_DIR = path.join(ROOT_DIR, 'build', 'blog', 'posts');
 const AUTHOR = 'Vladimir Ivakhnenko';
-const SLUG_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+const SLUG_RE = /^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$/;
+
+function normalizeSlug(slug) {
+  let cleaned = String(slug)
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/-+/g, '-')
+    .replace(/^-|-$/g, '');
+
+  if (/^[0-9]/.test(cleaned)) {
+    const moved = cleaned.match(/^([0-9][a-z0-9]*?)-(.+)$/);
+    if (moved) {
+      cleaned = `${moved[2]}-${moved[1]}`;
+    } else {
+      cleaned = `sound-${cleaned}`;
+    }
+  }
+
+  return cleaned;
+}
 
 function parseArgs(argv) {
   const args = { topic: '', dryRun: false, publishOnly: false, slug: '' };
@@ -104,6 +125,15 @@ function isValidArticleHtml(content) {
 function normalizeMetadata(metadata) {
   const normalized = { ...metadata };
 
+  if (normalized.slug) {
+    const rawSlug = String(normalized.slug);
+    const cleanedSlug = normalizeSlug(rawSlug);
+    if (cleanedSlug !== rawSlug) {
+      console.warn(`[telegraph] slug normalized: "${rawSlug}" → "${cleanedSlug}"`);
+    }
+    normalized.slug = cleanedSlug;
+  }
+
   const unsplashRaw =
     normalized.unsplashSearchQuery ||
     normalized.unsplash_search_query ||
@@ -139,10 +169,35 @@ function normalizeMetadata(metadata) {
       : [];
   }
 
+  if (!Array.isArray(normalized.inlineImages)) {
+    normalized.inlineImages = [];
+  }
+  normalized.inlineImages = normalized.inlineImages
+    .map((item, index) => ({
+      unsplashSearchQuery: String(
+        item?.unsplashSearchQuery || item?.query || deriveUnsplashSearchQuery(normalized),
+      ).trim(),
+      alt: String(item?.alt || `${normalized.title} — illustration ${index + 1}`).trim(),
+      placement: item?.placement || '',
+    }))
+    .filter((item) => item.unsplashSearchQuery && item.alt);
+
+  while (normalized.inlineImages.length < 2) {
+    const index = normalized.inlineImages.length;
+    normalized.inlineImages.push({
+      unsplashSearchQuery: index === 0
+        ? 'audio waveform frequency spectrum'
+        : 'sleep tracker graph night',
+      alt: `${normalized.title} — supporting visual ${index + 1}`,
+      placement: '',
+    });
+    console.warn(`[telegraph] inlineImages[${index}] missing — using fallback query`);
+  }
+
   return normalized;
 }
 
-function validateGeneratedPost(generated, existingSlugs) {
+function validateGeneratedPost(generated, existingSlugs, existingPosts) {
   const required = ['slug', 'title', 'description', 'excerpt', 'content'];
   for (const field of required) {
     if (!generated[field] || !String(generated[field]).trim()) {
@@ -151,7 +206,7 @@ function validateGeneratedPost(generated, existingSlugs) {
   }
 
   if (!SLUG_RE.test(generated.slug)) {
-    throw new Error(`Invalid slug "${generated.slug}" — use kebab-case`);
+    throw new Error(`Invalid slug "${generated.slug}" — use kebab-case starting with a letter`);
   }
 
   if (existingSlugs.has(generated.slug)) {
@@ -173,13 +228,21 @@ function validateGeneratedPost(generated, existingSlugs) {
   if (!isValidArticleHtml(generated.content)) {
     throw new Error('Generated content is not valid HTML');
   }
+
+  const publishedTelegraphCount = existingPosts.filter((p) => p.telegraphUrl).length;
+  const quality = validateTelegraphContent(generated.content, { publishedTelegraphCount });
+  if (quality.errors.length) {
+    throw new Error(`Content quality check failed: ${quality.errors.join('; ')}`);
+  }
+
+  return quality;
 }
 
 function todayIsoDate() {
   return new Date().toISOString().slice(0, 10);
 }
 
-function buildPostRecord(generated, imageBaseName, photo) {
+function buildPostRecord(generated, imageBaseName, photo, inlinePhotos = []) {
   const today = todayIsoDate();
   const hero = {
     src: `${imageBaseName}.jpg`,
@@ -192,26 +255,63 @@ function buildPostRecord(generated, imageBaseName, photo) {
     hero.url = photo.url;
   }
 
+  const inlineImages = inlinePhotos.map((item, index) => ({
+    src: `${imageBaseName}-inline-${index + 1}.jpg`,
+    alt: item.alt,
+    url: item.url,
+    unsplashId: item.unsplashId || undefined,
+    placement: item.placement || undefined,
+  }));
+
   return {
     slug: generated.slug,
     title: generated.title.trim(),
     description: generated.description.trim(),
     excerpt: generated.excerpt.trim(),
+    uniqueAngle: generated.uniqueAngle?.trim() || undefined,
     dateCreated: today,
     dateModified: today,
     author: AUTHOR,
     tags: generated.tags.map((tag) => String(tag).trim().toLowerCase()).filter(Boolean),
+    readingTimeMinutes: Number(generated.readingTimeMinutes) || 8,
     hero,
+    inlineImages,
     content: generated.content.trim(),
     telegraph: generated.telegraph || null,
   };
 }
 
-async function generatePostDraft(topic, existingPosts, blogPosts) {
+async function fetchInlineImages(metadata, slug, excludeIds) {
+  const usedIds = new Set(excludeIds);
+  const results = [];
+
+  for (let i = 0; i < metadata.inlineImages.length; i += 1) {
+    const item = metadata.inlineImages[i];
+    const imagePath = path.join(IMAGES_DIR, `${slug}-inline-${i + 1}.jpg`);
+    console.log(`[unsplash] inline ${i + 1} query: "${item.unsplashSearchQuery}"`);
+    const photo = await fetchBackgroundPhoto(item.unsplashSearchQuery, imagePath, {
+      excludeIds: [...usedIds],
+    });
+    if (photo.id) usedIds.add(photo.id);
+    results.push({
+      alt: item.alt,
+      placement: item.placement,
+      url: photo.url,
+      unsplashId: photo.id,
+      user: photo.user,
+    });
+    console.log(`[unsplash] inline ${i + 1} by ${photo.user} (id=${photo.id})`);
+  }
+
+  return results;
+}
+
+async function generatePostDraft(topic, existingPosts, blogPosts, validationFeedback = '') {
   const metadataPrompt = buildTelegraphPostMetadataPrompt({
     topic,
     existingPosts,
     blogPosts,
+    validationFeedback,
   });
 
   console.log(`[openrouter] model=${DEFAULT_MODEL}`);
@@ -221,13 +321,14 @@ async function generatePostDraft(topic, existingPosts, blogPosts) {
     console.log('[openrouter] topic: (auto)');
   }
 
-  console.log('[openrouter] step 1/2: metadata');
+  console.log('[openrouter] step 1/3: metadata');
   const metadataResult = await chatCompletion({
     model: DEFAULT_MODEL,
     messages: [
       {
         role: 'system',
-        content: 'You are a precise SEO assistant. Output only valid JSON matching the requested schema.',
+        content:
+          'You are a precise editorial assistant. Output only valid JSON matching the requested schema.',
       },
       { role: 'user', content: metadataPrompt },
     ],
@@ -235,15 +336,45 @@ async function generatePostDraft(topic, existingPosts, blogPosts) {
   });
 
   const metadata = normalizeMetadata(parseJsonFromContent(metadataResult.content));
+  if (metadata.uniqueAngle) {
+    console.log(`[telegraph] angle: ${metadata.uniqueAngle}`);
+  }
 
-  console.log('[openrouter] step 2/2: article HTML');
-  const contentPrompt = buildTelegraphPostContentPrompt(metadata, existingPosts);
+  const imageBaseName = metadata.slug;
+  const excludeIds = [
+    ...getUsedUnsplashIds(existingPosts),
+    ...getUsedUnsplashIds(blogPosts),
+  ];
+
+  console.log('[openrouter] step 2/3: fetch images');
+  fs.mkdirSync(IMAGES_DIR, { recursive: true });
+  const heroPath = path.join(IMAGES_DIR, `${imageBaseName}.jpg`);
+  const heroQuery = metadata.unsplashSearchQuery || deriveUnsplashSearchQuery(metadata);
+  console.log(`[unsplash] hero query: "${heroQuery}"`);
+  const heroPhoto = await fetchBackgroundPhoto(heroQuery, heroPath, { excludeIds });
+  console.log(`[unsplash] hero by ${heroPhoto.user} (id=${heroPhoto.id})`);
+
+  const inlinePhotos = await fetchInlineImages(
+    metadata,
+    imageBaseName,
+    [...excludeIds, heroPhoto.id],
+  );
+
+  console.log('[openrouter] step 3/3: article HTML');
+  const contentPrompt = buildTelegraphPostContentPrompt(
+    metadata,
+    existingPosts,
+    blogPosts,
+    inlinePhotos,
+    validationFeedback,
+  );
   const contentResult = await chatCompletion({
     model: DEFAULT_MODEL,
     messages: [
       {
         role: 'system',
-        content: 'You write clean HTML for DRMN Telegraph SEO posts. Output only HTML fragments.',
+        content:
+          'You write in-depth HTML articles for DRMN Telegraph. Value-first, evidence-backed, minimal promotion. Output only HTML fragments.',
       },
       { role: 'user', content: contentPrompt },
     ],
@@ -251,11 +382,45 @@ async function generatePostDraft(topic, existingPosts, blogPosts) {
   });
 
   console.log(`[openrouter] done (model=${contentResult.model})`);
-  const { sectionOutline: _outline, ...meta } = metadata;
+  const { sectionOutline: _outline, inlineImages: _inline, ...meta } = metadata;
   return {
     ...meta,
     content: stripHtmlFences(contentResult.content),
+    _heroPhoto: heroPhoto,
+    _inlinePhotos: inlinePhotos,
   };
+}
+
+async function generatePostDraftWithRetry(topic, existingPosts, blogPosts) {
+  let validationFeedback = '';
+  let lastError = null;
+
+  for (let attempt = 1; attempt <= 2; attempt += 1) {
+    const draft = await generatePostDraft(
+      topic,
+      existingPosts,
+      blogPosts,
+      validationFeedback,
+    );
+
+    const publishedTelegraphCount = existingPosts.filter((p) => p.telegraphUrl).length;
+    const quality = validateTelegraphContent(draft.content, { publishedTelegraphCount });
+
+    console.log(
+      `[telegraph] quality: ${quality.words} words, ${quality.blogLinks} blog links, `
+      + `${quality.telegraphLinks} telegraph links, ${quality.inlineImages} images`,
+    );
+
+    if (!quality.errors.length) {
+      return { draft, quality };
+    }
+
+    lastError = quality.errors.join('; ');
+    validationFeedback = lastError;
+    console.warn(`[telegraph] content retry ${attempt}/2 — ${lastError}`);
+  }
+
+  throw new Error(`Content quality check failed after 2 attempts: ${lastError}`);
 }
 
 function writePostJson(post) {
@@ -330,37 +495,33 @@ async function main() {
   console.log(`[telegraph] existing posts: ${existingPosts.length}`);
   console.log(`[telegraph] blog posts (for dedup): ${blogPosts.length}`);
 
-  const generated = await generatePostDraft(topic, existingPosts, blogPosts);
-  validateGeneratedPost(generated, existingSlugs);
-
-  const imageBaseName = generated.slug;
-  const imagePath = path.join(IMAGES_DIR, `${imageBaseName}.jpg`);
-  const excludeIds = [
-    ...getUsedUnsplashIds(existingPosts),
-    ...getUsedUnsplashIds(blogPosts),
-  ];
+  const { draft: generated, quality } = await generatePostDraftWithRetry(
+    topic,
+    existingPosts,
+    blogPosts,
+  );
+  validateGeneratedPost(generated, existingSlugs, existingPosts);
 
   console.log('\n--- Draft summary ---');
   console.log(`slug:  ${generated.slug}`);
   console.log(`title: ${generated.title}`);
   console.log(`tags:  ${generated.tags.join(', ')}`);
+  console.log(`words: ${quality.words}`);
+  console.log(`links: ${quality.blogLinks} blog, ${quality.telegraphLinks} telegraph`);
+  console.log(`images: 1 hero + ${quality.inlineImages} inline`);
   console.log('---------------------\n');
 
   if (dryRun) {
-    console.log('[dry-run] skipping Unsplash, file write, and Telegraph publish');
+    console.log('[dry-run] skipping file write and Telegraph publish');
     return;
   }
 
-  fs.mkdirSync(IMAGES_DIR, { recursive: true });
-  const query = generated.unsplashSearchQuery || deriveUnsplashSearchQuery(generated);
-  console.log(`[unsplash] query: "${query}"`);
-  const photo = await fetchBackgroundPhoto(query, imagePath, { excludeIds });
-  console.log(`[unsplash] photo by ${photo.user} (id=${photo.id})`);
-
-  const post = buildPostRecord(generated, imageBaseName, {
-    ...photo,
-    url: photo.url,
-  });
+  const post = buildPostRecord(
+    generated,
+    generated.slug,
+    generated._heroPhoto,
+    generated._inlinePhotos,
+  );
   writePostJson(post);
 
   console.log('[telegraph] publishing…');
@@ -390,4 +551,5 @@ if (require.main === module) {
 module.exports = {
   loadJsonPosts,
   publishPostToTelegraph,
+  normalizeSlug,
 };
