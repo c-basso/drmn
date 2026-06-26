@@ -14,6 +14,7 @@ const { fetchBackgroundPhoto } = require('./unsplash-photos');
 const { deriveUnsplashSearchQuery, getUsedUnsplashIds } = require('./generate-blog-post');
 const { htmlToTelegraphNodes } = require('../build/telegraph/html-to-nodes');
 const { publishPage } = require('../build/telegraph/telegraph-client');
+const { updateTelegraphHub } = require('../build/telegraph/update-hub');
 
 const ROOT_DIR = path.join(__dirname, '..');
 const POSTS_DIR = path.join(ROOT_DIR, 'build', 'telegraph', 'posts');
@@ -319,8 +320,10 @@ async function main() {
     }
 
     const updated = await publishExistingPost(target);
+    const hub = await updateTelegraphHub();
     console.log('\n✅ Published to Telegraph');
     console.log(`   URL: ${updated.telegraph.url}`);
+    console.log(`   Hub: ${hub.telegraph.url}`);
     return;
   }
 
@@ -369,9 +372,12 @@ async function main() {
   };
   writePostJson(published);
 
+  const hub = await updateTelegraphHub();
+
   console.log('\n✅ Telegraph post ready');
   console.log(`   JSON:  build/telegraph/posts/${published.slug}.json`);
   console.log(`   URL:   ${published.telegraph.url}`);
+  console.log(`   Hub:   ${hub.telegraph.url}`);
 }
 
 if (require.main === module) {

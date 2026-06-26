@@ -221,11 +221,35 @@ function flattenChildren($, el) {
 
 /**
  * @param {string} html
+ * @returns {string}
+ */
+function ensureClickableLinks(html) {
+  let out = String(html);
+  const hasSiteLink = /<a\b[^>]*href=["']https:\/\/drmn\.xyz\/?["']/i.test(out);
+  const hasAppLink = /<a\b[^>]*href=["']https:\/\/apps\.apple\.com\/app\/id6746480683["']/i.test(out);
+
+  if (!hasSiteLink) {
+    out = out.replace(
+      /https:\/\/drmn\.xyz\/?/gi,
+      '<a href="https://drmn.xyz">DRMN website</a>',
+    );
+  }
+  if (!hasAppLink) {
+    out = out.replace(
+      /https:\/\/apps\.apple\.com\/app\/id6746480683/gi,
+      '<a href="https://apps.apple.com/app/id6746480683">App Store</a>',
+    );
+  }
+  return out;
+}
+
+/**
+ * @param {string} html
  * @param {{ heroImageUrl?: string, heroAlt?: string }} [options]
  * @returns {Array<string | object>}
  */
 function htmlToTelegraphNodes(html, options = {}) {
-  const wrapped = `<body>${String(html).trim()}</body>`;
+  const wrapped = `<body>${ensureClickableLinks(String(html).trim())}</body>`;
   const $ = cheerio.load(wrapped, { xml: false });
   const nodes = [];
 
@@ -256,5 +280,6 @@ function htmlToTelegraphNodes(html, options = {}) {
 }
 
 module.exports = {
+  ensureClickableLinks,
   htmlToTelegraphNodes,
 };

@@ -27,8 +27,8 @@ HTML content rules:
   5. One <blockquote> with a brief medical disclaimer
   6. Final <h3> "Try it tonight" or similar — closing <p> with links to ${SITE_LINK} and the iOS app (${APP_LINK})
 - The LAST paragraph MUST include:
-  - An <a href="${SITE_LINK}"> link to the DRMN website
-  - An <a href="${APP_LINK}"> link to download the iOS app
+  - An <a href="${SITE_LINK}">DRMN website</a> link — NEVER paste a bare URL like ${SITE_LINK}
+  - An <a href="${APP_LINK}">App Store</a> link — NEVER paste a bare App Store URL
 - Do NOT link to competing apps. No external study URLs unless essential.
 - Do NOT duplicate angles from existing Telegraph or blog posts listed below.`;
 
