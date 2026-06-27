@@ -5,9 +5,17 @@
     <link>https://drmn.xyz/blog/</link>
     <description>Guides on white noise, sleep sounds, and focus audio for better rest and concentration.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 26 Jun 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jun 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://drmn.xyz/blog/feed.xml" rel="self" type="application/rss+xml"/>
     
+    <item>
+      <title>Sound Masking &amp; Sleep: How to Block Sudden Noises</title>
+      <link>https://drmn.xyz/blog/auditory-distractions-and-sleep-latency/</link>
+      <guid isPermaLink="true">https://drmn.xyz/blog/auditory-distractions-and-sleep-latency/</guid>
+      <pubDate>Sat, 27 Jun 2026 12:00:00 GMT</pubDate>
+      <description>Ever wake up because of a car door slamming outside? Discover how consistent sound masking prevents sudden auditory spikes from disrupting your sleep cycle.</description>
+      <enclosure url="https://drmn.xyz/blog/img/auditory-distractions-and-sleep-latency.webp" type="image/webp" length="339814"/>
+    </item>
     <item>
       <title>How Noise-Canceling Headphones Improve Sleep and Focus</title>
       <link>https://drmn.xyz/blog/noise-canceling-headphones-sleep/</link>
