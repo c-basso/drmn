@@ -12,6 +12,7 @@ const {
 const { chatCompletion, DEFAULT_MODEL } = require('./openrouter-client');
 const { fetchBackgroundPhoto } = require('./unsplash-photos');
 const { deriveUnsplashSearchQuery, getUsedUnsplashIds } = require('./generate-blog-post');
+const { ARCHETYPE_IDS, getArchetype } = require('./telegraph-article-archetypes');
 const { validateTelegraphContent } = require('./telegraph-content-utils');
 const { htmlToTelegraphNodes } = require('../build/telegraph/html-to-nodes');
 const { publishPage } = require('../build/telegraph/telegraph-client');
@@ -75,6 +76,7 @@ function loadJsonPosts(dir) {
       return {
         slug: post.slug,
         title: post.title,
+        articleArchetype: post.articleArchetype || null,
         unsplashId: post.hero?.unsplashId || null,
         telegraphUrl: post.telegraph?.url || null,
         filePath: path.join(dir, name),
@@ -194,6 +196,15 @@ function normalizeMetadata(metadata) {
     console.warn(`[telegraph] inlineImages[${index}] missing — using fallback query`);
   }
 
+  const archetypeId = String(normalized.articleArchetype || '').trim();
+  if (!ARCHETYPE_IDS.includes(archetypeId)) {
+    const fallbackId = ARCHETYPE_IDS[normalized.slug.length % ARCHETYPE_IDS.length];
+    normalized.articleArchetype = fallbackId;
+    console.warn(
+      `[telegraph] articleArchetype missing or invalid — using fallback: "${fallbackId}"`,
+    );
+  }
+
   return normalized;
 }
 
@@ -229,8 +240,7 @@ function validateGeneratedPost(generated, existingSlugs, existingPosts) {
     throw new Error('Generated content is not valid HTML');
   }
 
-  const publishedTelegraphCount = existingPosts.filter((p) => p.telegraphUrl).length;
-  const quality = validateTelegraphContent(generated.content, { publishedTelegraphCount });
+  const quality = validateTelegraphContent(generated.content);
   if (quality.errors.length) {
     throw new Error(`Content quality check failed: ${quality.errors.join('; ')}`);
   }
@@ -269,6 +279,7 @@ function buildPostRecord(generated, imageBaseName, photo, inlinePhotos = []) {
     description: generated.description.trim(),
     excerpt: generated.excerpt.trim(),
     uniqueAngle: generated.uniqueAngle?.trim() || undefined,
+    articleArchetype: generated.articleArchetype || undefined,
     dateCreated: today,
     dateModified: today,
     author: AUTHOR,
@@ -336,6 +347,8 @@ async function generatePostDraft(topic, existingPosts, blogPosts, validationFeed
   });
 
   const metadata = normalizeMetadata(parseJsonFromContent(metadataResult.content));
+  const archetype = getArchetype(metadata.articleArchetype);
+  console.log(`[telegraph] archetype: ${archetype.id} (${archetype.label})`);
   if (metadata.uniqueAngle) {
     console.log(`[telegraph] angle: ${metadata.uniqueAngle}`);
   }
@@ -374,11 +387,11 @@ async function generatePostDraft(topic, existingPosts, blogPosts, validationFeed
       {
         role: 'system',
         content:
-          'You write in-depth HTML articles for DRMN Telegraph. Value-first, evidence-backed, minimal promotion. Output only HTML fragments.',
+          'You write in-depth HTML articles for DRMN Telegraph. Value-first, experiential and evidence-informed, minimal promotion. Avoid invented precise statistics. Output only HTML fragments.',
       },
       { role: 'user', content: contentPrompt },
     ],
-    temperature: 0.75,
+    temperature: 0.82,
   });
 
   console.log(`[openrouter] done (model=${contentResult.model})`);
@@ -403,8 +416,7 @@ async function generatePostDraftWithRetry(topic, existingPosts, blogPosts) {
       validationFeedback,
     );
 
-    const publishedTelegraphCount = existingPosts.filter((p) => p.telegraphUrl).length;
-    const quality = validateTelegraphContent(draft.content, { publishedTelegraphCount });
+    const quality = validateTelegraphContent(draft.content);
 
     console.log(
       `[telegraph] quality: ${quality.words} words, ${quality.blogLinks} blog links, `
@@ -505,6 +517,7 @@ async function main() {
   console.log('\n--- Draft summary ---');
   console.log(`slug:  ${generated.slug}`);
   console.log(`title: ${generated.title}`);
+  console.log(`archetype: ${generated.articleArchetype || '(unknown)'}`);
   console.log(`tags:  ${generated.tags.join(', ')}`);
   console.log(`words: ${quality.words}`);
   console.log(`links: ${quality.blogLinks} blog, ${quality.telegraphLinks} telegraph`);

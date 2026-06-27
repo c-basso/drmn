@@ -1,5 +1,6 @@
 'use strict';
 
+const { findTemplateHeadings } = require('./telegraph-article-archetypes');
 const { SITE_LINK } = require('./telegraph-post-prompt');
 
 const MIN_WORDS = 750;
@@ -22,9 +23,8 @@ function countPattern(html, pattern) {
 
 /**
  * @param {string} html
- * @param {{ publishedTelegraphCount?: number }} [options]
  */
-function validateTelegraphContent(html, options = {}) {
+function validateTelegraphContent(html) {
   const words = countWords(html);
   const blogLinks = countPattern(html, /href=["']https:\/\/drmn\.xyz\/blog\/[^"']+/gi);
   const telegraphLinks = countPattern(html, /href=["']https:\/\/telegra\.ph\/[^"']+/gi);
@@ -41,14 +41,18 @@ function validateTelegraphContent(html, options = {}) {
   if (blogLinks < MIN_BLOG_LINKS) {
     errors.push(`need ≥${MIN_BLOG_LINKS} blog links to ${SITE_LINK}/blog/... (found ${blogLinks})`);
   }
-  if ((options.publishedTelegraphCount || 0) >= 2 && telegraphLinks < 1) {
-    errors.push('need ≥1 cross-link to another Telegraph article');
-  }
   if (inlineImages < MIN_INLINE_IMAGES) {
     errors.push(`need ≥${MIN_INLINE_IMAGES} inline <img> tags (found ${inlineImages})`);
   }
   if (drmnMentions > MAX_DRMN_MENTIONS) {
     errors.push(`too promotional (${drmnMentions} "DRMN" mentions, max ${MAX_DRMN_MENTIONS})`);
+  }
+
+  const templateHeadings = findTemplateHeadings(html);
+  if (templateHeadings.length) {
+    errors.push(
+      `section headings look like the old template (${templateHeadings.slice(0, 2).join('; ')}) — use natural topic-specific <h3> titles`,
+    );
   }
 
   return {
