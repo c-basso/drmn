@@ -37,6 +37,7 @@ https://drmn.xyz/vi/
 https://drmn.xyz/blog/
 https://drmn.xyz/blog/feed.xml
 https://drmn.xyz/blog/page/2/
+https://drmn.xyz/blog/layered-sound-sleep-focus/
 https://drmn.xyz/blog/auditory-distractions-and-sleep-latency/
 https://drmn.xyz/blog/noise-canceling-headphones-sleep/
 https://drmn.xyz/blog/sleep-sound-guide/
