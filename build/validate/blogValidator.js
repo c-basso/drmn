@@ -260,21 +260,21 @@ function validateBlogRss(feedPath, posts) {
 }
 
 function validateBlogUrlsInSitemap(projectRoot, expectedUrls) {
-    const sitemapPath = path.join(projectRoot, 'sitemap.xml');
+    const blogSitemapPath = path.join(projectRoot, 'sitemaps', 'blog.xml');
     const errors = [];
 
     if (expectedUrls.length === 0) {
         return { ok: true, errors: [] };
     }
 
-    if (!fs.existsSync(sitemapPath)) {
-        return { ok: false, errors: ['missing sitemap.xml (run build or npm run sitemap)'] };
+    if (!fs.existsSync(blogSitemapPath)) {
+        return { ok: false, errors: ['missing sitemaps/blog.xml (run build or npm run sitemap)'] };
     }
 
-    const sitemap = fs.readFileSync(sitemapPath, 'utf8');
+    const sitemap = fs.readFileSync(blogSitemapPath, 'utf8');
     for (const url of expectedUrls) {
         if (!sitemap.includes(`<loc>${url}</loc>`)) {
-            errors.push(`sitemap.xml missing blog URL: ${url}`);
+            errors.push(`sitemaps/blog.xml missing blog URL: ${url}`);
         }
     }
 
@@ -337,7 +337,7 @@ async function validateBlog() {
     if (!sitemapResult.ok) {
         allOk = false;
     } else {
-        console.log(`  sitemap.xml: OK (${manifest.urls.length} blog URL(s))`);
+        console.log(`  sitemaps/blog.xml: OK (${manifest.urls.length} blog URL(s))`);
     }
 
     if (!allOk) {
@@ -355,7 +355,7 @@ async function validateBlog() {
             rssResult.errors.forEach((error) => console.error(`  ❌ ${error}`));
         }
         if (!sitemapResult.ok) {
-            console.error('\n- sitemap.xml');
+            console.error('\n- sitemaps/blog.xml');
             sitemapResult.errors.forEach((error) => console.error(`  ❌ ${error}`));
         }
     } else {

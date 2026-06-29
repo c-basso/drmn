@@ -4,6 +4,14 @@ const path = require('path');
 const { SITE_URL, URLS, DEFAULT_LANGUAGE, BLOG_POSTS_PER_PAGE } = require('./constants');
 const { loadPosts, collectBlogUrls } = require('./blog/build-blog');
 
+const SITEMAP_CHILD_DIR = 'sitemaps';
+const SITEMAP_INDEX_FILE = 'sitemap.xml';
+const SITEMAP_CHILD_FILES = {
+    pages: 'pages.xml',
+    legal: 'legal.xml',
+    blog: 'blog.xml'
+};
+
 function getBlogSitemapUrls(siteOrigin) {
     try {
         const posts = loadPosts();
@@ -21,58 +29,148 @@ function getBlogSitemapUrls(siteOrigin) {
     }
 }
 
+function urlsetOpen(withHreflang) {
+    const lines = [
+        '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>',
+        '<urlset',
+        '  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"'
+    ];
+    if (withHreflang) {
+        lines.push('  xmlns:xhtml="http://www.w3.org/1999/xhtml">');
+    } else {
+        lines.push('>');
+    }
+    lines.push('  ');
+    return lines;
+}
+
+function urlsetClose() {
+    return ['</urlset>'];
+}
+
+function simpleUrlEntry(loc, lastmod, priority) {
+    return [
+        '  <url>',
+        `    <loc>${loc}</loc>`,
+        `    <lastmod>${lastmod}</lastmod>`,
+        `    <priority>${priority}</priority>`,
+        '  </url>',
+        ''
+    ];
+}
+
+function localizedPageEntry(loc, lastmod, alternates, defaultUrl) {
+    const lines = [
+        '  <url>',
+        `    <loc>${loc}</loc>`
+    ];
+    for (const { lang, url } of alternates) {
+        lines.push(`    <xhtml:link rel="alternate" hreflang="${lang}" href="${url}" />`);
+    }
+    lines.push(`    <xhtml:link rel="alternate" hreflang="x-default" href="${defaultUrl}" />`);
+    lines.push(`    <lastmod>${lastmod}</lastmod>`);
+    lines.push('    <priority>1.0</priority>');
+    lines.push('  </url>');
+    lines.push('');
+    return lines;
+}
+
+function buildPagesSitemap(lastmod) {
+    const defaultUrl = URLS.find(({ slug }) => slug === DEFAULT_LANGUAGE)?.url ?? SITE_URL;
+    const lines = urlsetOpen(true);
+    for (const { url: loc } of URLS) {
+        lines.push(...localizedPageEntry(loc, lastmod, URLS, defaultUrl));
+    }
+    lines.push(...urlsetClose());
+    return lines.join('\n') + '\n';
+}
+
+function buildLegalSitemap(siteOrigin, lastmod) {
+    const legalUrls = [
+        `${siteOrigin}/privacy.html`,
+        `${siteOrigin}/terms.html`,
+        `${siteOrigin}/about.html`
+    ];
+    const lines = urlsetOpen(false);
+    for (const loc of legalUrls) {
+        lines.push(...simpleUrlEntry(loc, lastmod, '0.5'));
+    }
+    lines.push(...urlsetClose());
+    return lines.join('\n') + '\n';
+}
+
+function buildBlogSitemap(blogUrls, lastmod) {
+    const lines = urlsetOpen(false);
+    for (const loc of blogUrls) {
+        const isFeed = loc.endsWith('feed.xml');
+        lines.push(...simpleUrlEntry(loc, lastmod, isFeed ? '0.4' : '0.8'));
+    }
+    lines.push(...urlsetClose());
+    return lines.join('\n') + '\n';
+}
+
+function buildSitemapIndex(childSitemaps, lastmod) {
+    const lines = [
+        '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>',
+        '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+        '  '
+    ];
+    for (const loc of childSitemaps) {
+        lines.push('  <sitemap>');
+        lines.push(`    <loc>${loc}</loc>`);
+        lines.push(`    <lastmod>${lastmod}</lastmod>`);
+        lines.push('  </sitemap>');
+        lines.push('');
+    }
+    lines.push('</sitemapindex>');
+    return lines.join('\n') + '\n';
+}
+
+function writeFileEnsuringDir(filePath, content) {
+    fs.mkdirSync(path.dirname(filePath), { recursive: true });
+    fs.writeFileSync(filePath, content, 'utf8');
+}
+
 function generateSitemap({ projectRoot = path.join(__dirname, '..') } = {}) {
-    const sitemapPath = path.join(projectRoot, 'sitemap.xml');
+    const indexPath = path.join(projectRoot, SITEMAP_INDEX_FILE);
+    const childDir = path.join(projectRoot, SITEMAP_CHILD_DIR);
     const robotsPath = path.join(projectRoot, 'robots.txt');
 
     const lastmod = new Date().toISOString().slice(0, 10);
     const siteOrigin = SITE_URL.replace(/\/$/, '');
-    const legalUrls = [`${siteOrigin}/privacy.html`, `${siteOrigin}/terms.html`, `${siteOrigin}/about.html`];
     const blogUrls = getBlogSitemapUrls(siteOrigin);
 
-    const lines = [];
-    lines.push('<?xml version="1.0" encoding="UTF-8" standalone="yes"?>');
-    lines.push('<urlset ');
-    lines.push('  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"');
-    lines.push('  xmlns:xhtml="http://www.w3.org/1999/xhtml">');
-    lines.push('  ');
-    const defaultUrl = URLS.find(({ slug }) => slug === DEFAULT_LANGUAGE)?.url ?? SITE_URL;
-    for (const { url: loc } of URLS) {
-        lines.push('  <url>');
-        lines.push(`    <loc>${loc}</loc>`);
-        for (const { lang, url } of URLS) {
-            lines.push(`    <xhtml:link rel="alternate" hreflang="${lang}" href="${url}" />`);
-        }
-        lines.push(`    <xhtml:link rel="alternate" hreflang="x-default" href="${defaultUrl}" />`);
-        lines.push(`    <lastmod>${lastmod}</lastmod>`);
-        lines.push('    <priority>1.0</priority>');
-        lines.push('  </url>');
-        lines.push('');
-    }
-    for (const loc of legalUrls) {
-        lines.push('  <url>');
-        lines.push(`    <loc>${loc}</loc>`);
-        lines.push(`    <lastmod>${lastmod}</lastmod>`);
-        lines.push('    <priority>0.5</priority>');
-        lines.push('  </url>');
-        lines.push('');
-    }
-    for (const loc of blogUrls) {
-        const isFeed = loc.endsWith('feed.xml');
-        lines.push('  <url>');
-        lines.push(`    <loc>${loc}</loc>`);
-        lines.push(`    <lastmod>${lastmod}</lastmod>`);
-        lines.push(`    <priority>${isFeed ? '0.4' : '0.8'}</priority>`);
-        lines.push('  </url>');
-        lines.push('');
-    }
-    lines.push('</urlset>');
+    const childSitemapUrls = [];
+    const writtenChildFiles = [];
 
-    fs.writeFileSync(sitemapPath, lines.join('\n') + '\n', 'utf8');
-    console.log('✅ Successfully built sitemap.xml');
-    console.log(`📁 Output saved to: ${sitemapPath}`);
+    const pagesPath = path.join(childDir, SITEMAP_CHILD_FILES.pages);
+    writeFileEnsuringDir(pagesPath, buildPagesSitemap(lastmod));
+    childSitemapUrls.push(`${SITE_URL}${SITEMAP_CHILD_DIR}/${SITEMAP_CHILD_FILES.pages}`);
+    writtenChildFiles.push({ name: SITEMAP_CHILD_FILES.pages, urlCount: URLS.length });
+
+    const legalPath = path.join(childDir, SITEMAP_CHILD_FILES.legal);
+    writeFileEnsuringDir(legalPath, buildLegalSitemap(siteOrigin, lastmod));
+    childSitemapUrls.push(`${SITE_URL}${SITEMAP_CHILD_DIR}/${SITEMAP_CHILD_FILES.legal}`);
+    writtenChildFiles.push({ name: SITEMAP_CHILD_FILES.legal, urlCount: 3 });
+
     if (blogUrls.length > 0) {
-        console.log(`📰 Sitemap includes ${blogUrls.length} blog URL(s)`);
+        const blogPath = path.join(childDir, SITEMAP_CHILD_FILES.blog);
+        writeFileEnsuringDir(blogPath, buildBlogSitemap(blogUrls, lastmod));
+        childSitemapUrls.push(`${SITE_URL}${SITEMAP_CHILD_DIR}/${SITEMAP_CHILD_FILES.blog}`);
+        writtenChildFiles.push({ name: SITEMAP_CHILD_FILES.blog, urlCount: blogUrls.length });
+    } else {
+        const staleBlogPath = path.join(childDir, SITEMAP_CHILD_FILES.blog);
+        if (fs.existsSync(staleBlogPath)) {
+            fs.unlinkSync(staleBlogPath);
+        }
+    }
+
+    fs.writeFileSync(indexPath, buildSitemapIndex(childSitemapUrls, lastmod), 'utf8');
+
+    console.log(`✅ Successfully built ${SITEMAP_INDEX_FILE} (sitemap index)`);
+    console.log(`📁 Output saved to: ${indexPath}`);
+    for (const { name, urlCount } of writtenChildFiles) {
+        console.log(`   ↳ ${SITEMAP_CHILD_DIR}/${name} (${urlCount} URL(s))`);
     }
     console.log();
 
@@ -80,14 +178,20 @@ function generateSitemap({ projectRoot = path.join(__dirname, '..') } = {}) {
 User-agent: *
 Allow: /
 
-Sitemap: ${SITE_URL}sitemap.xml 
+Sitemap: ${SITE_URL}${SITEMAP_INDEX_FILE}
   `;
     fs.writeFileSync(robotsPath, robots.trim() + '\n', 'utf8');
     console.log('✅ Successfully built robots.txt');
     console.log(`📁 Output saved to: ${robotsPath}`);
     console.log();
 
-    return { sitemapPath, robotsPath, blogUrls };
+    return {
+        sitemapPath: indexPath,
+        childDir,
+        robotsPath,
+        blogUrls,
+        childSitemapUrls
+    };
 }
 
 if (require.main === module) {
@@ -96,5 +200,8 @@ if (require.main === module) {
 
 module.exports = {
     generateSitemap,
-    getBlogSitemapUrls
+    getBlogSitemapUrls,
+    SITEMAP_CHILD_DIR,
+    SITEMAP_INDEX_FILE,
+    SITEMAP_CHILD_FILES
 };
