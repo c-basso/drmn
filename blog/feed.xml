@@ -5,9 +5,17 @@
     <link>https://drmn.xyz/blog/</link>
     <description>Guides on white noise, sleep sounds, and focus audio for better rest and concentration.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Jun 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jun 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://drmn.xyz/blog/feed.xml" rel="self" type="application/rss+xml"/>
     
+    <item>
+      <title>Ocean Wave Sounds for Sleep: Why Rhythmic Surf Improves Rest</title>
+      <link>https://drmn.xyz/blog/ocean-wave-sounds-sleep/</link>
+      <guid isPermaLink="true">https://drmn.xyz/blog/ocean-wave-sounds-sleep/</guid>
+      <pubDate>Mon, 29 Jun 2026 12:00:00 GMT</pubDate>
+      <description>Learn why the steady rhythm of ocean waves can mask sudden noises, calm the mind, and help you fall asleep faster — plus simple ways to add this soundscape to your nightly routine.</description>
+      <enclosure url="https://drmn.xyz/blog/img/ocean-wave-sounds-sleep.webp" type="image/webp" length="150174"/>
+    </item>
     <item>
       <title>Layered Sound Tactics: Sleep &amp; Focus with White, Pink, Brown Noise</title>
       <link>https://drmn.xyz/blog/layered-sound-sleep-focus/</link>

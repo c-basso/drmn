@@ -157,12 +157,17 @@ function findTemplateHeadings(html) {
   );
 }
 
+function hasImageCaptions(html) {
+  return /<img\b[^>]*>\s*<p>\s*<em\b/i.test(String(html));
+}
+
 module.exports = {
   ARTICLE_ARCHETYPES,
   ARCHETYPE_IDS,
   TEMPLATE_HEADING_PATTERNS,
   buildArchetypeStyleRules,
   findTemplateHeadings,
+  hasImageCaptions,
   formatArchetypeCatalog,
   getArchetype,
   getRecentArchetypeIds,

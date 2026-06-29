@@ -34,9 +34,10 @@ function formatTelegraphLinkCatalog(existingPosts, excludeSlug) {
 
 function formatInlineImageCatalog(inlineImages) {
   if (!inlineImages?.length) return '(images will be provided)';
-  return inlineImages
+  const lines = inlineImages
     .map((img, i) => `Image ${i + 1}: <img src="${img.url}" alt="${img.alt}">`)
     .join('\n');
+  return `Stock photos — you have NOT seen them. Embed each tag exactly; use the alt as given. Do NOT add captions or prose describing what is in the photo.\n${lines}`;
 }
 
 function buildStyleRules(metadata) {
@@ -59,8 +60,10 @@ Content pillars — include ALL somewhere in the article, but order and shape fo
 - Science/mechanism section explaining frequencies, masking, or entrainment in accessible prose — concepts over numbers.
 - Practical guidance: at least one <ul> or <ol>, unless the archetype explicitly limits lists (then embed steps in prose).
 - One <blockquote> with a brief medical disclaimer.
-- BOTH inline images on their own line near relevant sections — each followed by a short <p> caption in <em>.
-- Blog links woven into body paragraphs — no standalone "Related reading" heading.
+- BOTH inline images on their own line near relevant sections — use the provided <img> tags exactly.
+- Do NOT add captions under images. You have not seen these Unsplash photos — never write <p><em>…</em></p> (or similar) claiming what the photo shows (waveforms, spectrograms, bedside setups, etc.).
+- Keep <img alt="…"> generic and mood-based; do not describe specific visible details in alt text or surrounding prose.
+- At least one link to ${SITE_LINK} somewhere in the body (homepage or blog) — woven naturally, no standalone "Related reading" heading.
 
 Heading rules — IMPORTANT:
 - <h3> titles must be specific, natural, and topic-driven (e.g. "Why the slower pulse felt easier to ignore", "If your partner hears every tick").
@@ -68,7 +71,8 @@ Heading rules — IMPORTANT:
 - Vary heading length and rhythm across sections. Some posts may use <h4> subheads inside a section.
 
 Internal linking:
-- Link to at least 2 articles on the main blog using absolute URLs: ${SITE_LINK}/blog/SLUG/
+- Include at least one absolute link to ${SITE_LINK} in the article body (homepage or a blog article — ${SITE_LINK}/blog/SLUG/ when relevant).
+- Blog links are optional extras — use only where they fit naturally.
 - Cross-links to other Telegraph articles are optional — add one only if it fits naturally.
 - Use natural anchor text — not "click here". Weave links into sentences.
 
@@ -94,16 +98,16 @@ function buildJsonMetadataSchema(recentArchetypeIds) {
   "articleArchetype": "one of: ${ARCHETYPE_IDS.join(' | ')} — pick the best fit for the topic; avoid recently used archetypes when another works equally well",
   "readingTimeMinutes": 8,
   "unsplashSearchQuery": "REQUIRED hero image. 4–6 words. Prefer specific scenes: waveform monitor, spectrogram screen, headphones on nightstand, sleep tracker graph — NOT generic cozy bedroom if overused.",
-  "hero": { "alt": "Descriptive alt text for hero image" },
+  "hero": { "alt": "Brief accessibility alt — topic mood only; do not describe specific objects or scene details" },
   "inlineImages": [
     {
       "unsplashSearchQuery": "4–6 words for a SUPPORTING visual — e.g. audio waveform display, frequency spectrum, sleep diary notebook, sound equalizer",
-      "alt": "Alt text describing the educational visual",
+      "alt": "Generic alt for accessibility — mood or topic, not a claim about what the photo contains",
       "placement": "which section this supports — match the planned outline, not a fixed slot"
     },
     {
       "unsplashSearchQuery": "different query from image 1 — e.g. dim bedroom speaker, noise meter reading, meditation timer",
-      "alt": "Alt text",
+      "alt": "Generic alt — mood or topic only",
       "placement": "which section — should differ from image 1 placement"
     }
   ],
@@ -205,10 +209,10 @@ ${outline || '(derive headings from the archetype — still use natural titles o
 
 ${buildStyleRules(metadata)}
 
-Inline images — embed BOTH exactly as shown (full <img> tag on its own line):
+Inline images — embed BOTH exactly as shown (full <img> tag on its own line). No captions afterward:
 ${formatInlineImageCatalog(inlineImages)}
 
-Blog articles to link (pick ≥2, absolute URLs):
+Blog articles you may link when relevant (optional):
 ${formatBlogLinkCatalog(blogPosts)}
 
 Other Telegraph articles (optional cross-links — use only if relevant):

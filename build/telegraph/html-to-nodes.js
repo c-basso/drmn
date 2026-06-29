@@ -258,12 +258,6 @@ function htmlToTelegraphNodes(html, options = {}) {
       tag: 'img',
       attrs: { src: options.heroImageUrl },
     });
-    if (options.heroAlt) {
-      nodes.push({
-        tag: 'p',
-        children: [{ tag: 'em', children: [options.heroAlt] }],
-      });
-    }
   }
 
   $('body').children().each((_, el) => {

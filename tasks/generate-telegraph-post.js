@@ -387,7 +387,7 @@ async function generatePostDraft(topic, existingPosts, blogPosts, validationFeed
       {
         role: 'system',
         content:
-          'You write in-depth HTML articles for DRMN Telegraph. Value-first, experiential and evidence-informed, minimal promotion. Avoid invented precise statistics. Output only HTML fragments.',
+          'You write in-depth HTML articles for DRMN Telegraph. Value-first, experiential and evidence-informed, minimal promotion. Avoid invented precise statistics. Stock photos are unseen — never caption or describe their contents. Output only HTML fragments.',
       },
       { role: 'user', content: contentPrompt },
     ],
@@ -419,8 +419,8 @@ async function generatePostDraftWithRetry(topic, existingPosts, blogPosts) {
     const quality = validateTelegraphContent(draft.content);
 
     console.log(
-      `[telegraph] quality: ${quality.words} words, ${quality.blogLinks} blog links, `
-      + `${quality.telegraphLinks} telegraph links, ${quality.inlineImages} images`,
+      `[telegraph] quality: ${quality.words} words, ${quality.siteLinks} site links, `
+      + `${quality.blogLinks} blog, ${quality.telegraphLinks} telegraph, ${quality.inlineImages} images`,
     );
 
     if (!quality.errors.length) {
@@ -520,7 +520,7 @@ async function main() {
   console.log(`archetype: ${generated.articleArchetype || '(unknown)'}`);
   console.log(`tags:  ${generated.tags.join(', ')}`);
   console.log(`words: ${quality.words}`);
-  console.log(`links: ${quality.blogLinks} blog, ${quality.telegraphLinks} telegraph`);
+  console.log(`links: ${quality.siteLinks} site, ${quality.blogLinks} blog, ${quality.telegraphLinks} telegraph`);
   console.log(`images: 1 hero + ${quality.inlineImages} inline`);
   console.log('---------------------\n');
 
