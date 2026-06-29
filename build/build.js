@@ -120,7 +120,7 @@ function writeLlmsFile(defaultLocaleData) {
         '',
         '## Language Pages',
         '',
-        ...URLS.map(({ lang, url }) => `- [${lang}](${url})`),
+        ...URLS.map(({ slug, url }) => `- [${slug}](${url})`),
         '',
         '## App Store',
         '',
@@ -290,7 +290,7 @@ function buildOrganizationStructuredData(data) {
     }
 }
 
-function buildWebsiteStructuredData(data) {
+function buildWebsiteStructuredData(data, lang) {
     const fallbackName = data.meta?.og_site_name || data.header?.app_name || DEFAULT_SITE_NAME;
     const website = data.seo.structured_data.website;
 
@@ -300,7 +300,7 @@ function buildWebsiteStructuredData(data) {
             '@type': 'WebSite',
             name: fallbackName,
             description: stripHtml(data.meta?.description),
-            inLanguage: data.meta?.lang,
+            inLanguage: getHtmlLang(lang),
             url: data.meta?.canonical || SITE_URL
         };
         return;
@@ -309,7 +309,7 @@ function buildWebsiteStructuredData(data) {
     website.url = data.meta?.canonical;
     website.name = website.name || fallbackName;
     website.description = website.description || stripHtml(data.meta?.description);
-    website.inLanguage = website.inLanguage || data.meta?.lang;
+    website.inLanguage = website.inLanguage || getHtmlLang(lang);
     delete website.potentialAction;
 }
 
@@ -378,7 +378,7 @@ function preparePageData(data, lang) {
     data.analytics = getAnalyticsContext();
     buildSoftwareApplicationStructuredData(data);
     buildOrganizationStructuredData(data);
-    buildWebsiteStructuredData(data);
+    buildWebsiteStructuredData(data, lang);
     buildHowToStructuredData(data);
     buildReviewStructuredData(data);
     buildFaqStructuredData(data);

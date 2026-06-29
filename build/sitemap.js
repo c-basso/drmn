@@ -36,7 +36,7 @@ function generateSitemap({ projectRoot = path.join(__dirname, '..') } = {}) {
     lines.push('  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"');
     lines.push('  xmlns:xhtml="http://www.w3.org/1999/xhtml">');
     lines.push('  ');
-    const defaultUrl = URLS.find(({ lang }) => lang === DEFAULT_LANGUAGE)?.url ?? SITE_URL;
+    const defaultUrl = URLS.find(({ slug }) => slug === DEFAULT_LANGUAGE)?.url ?? SITE_URL;
     for (const { url: loc } of URLS) {
         lines.push('  <url>');
         lines.push(`    <loc>${loc}</loc>`);

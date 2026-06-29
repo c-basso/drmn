@@ -3,7 +3,7 @@
 const SITE_URL = 'https://drmn.xyz/';
 const DEFAULT_LANGUAGE = 'en';
 
-const { buildOgLocaleMap } = require('./locales');
+const { buildOgLocaleMap, getHreflangCode } = require('./locales');
 
 const APP_ID = '6746480683';
 const APP_STORE_URL = `https://apps.apple.com/app/id${APP_ID}`;
@@ -39,7 +39,7 @@ const LANGUAGES = [
     'da',
     'el',
     'fi',   // Suomi
-    'fil',  // Filipino
+    'fil',  // Filipino (hreflang: tl)
     'he',   // עברית (RTL)
     'hr',   // Hrvatski
     'hu',   // Magyar
@@ -63,14 +63,17 @@ const LANGUAGES = [
     'vi'    // Tiếng Việt
 ];
 
-const URLS = LANGUAGES.map((lang) => ({
-    lang,
-    url: lang === DEFAULT_LANGUAGE ? SITE_URL : `${SITE_URL}${lang}/`
+const URLS = LANGUAGES.map((slug) => ({
+    slug,
+    lang: getHreflangCode(slug),
+    url: slug === DEFAULT_LANGUAGE ? SITE_URL : `${SITE_URL}${slug}/`
 }));
 
 const OG_LOCALE_BY_LANGUAGE = buildOgLocaleMap(LANGUAGES);
 
-const CANONICAL_URL_BY_LANGUAGE = new Map(URLS.map(({ lang, url }) => [lang, url]));
+const CANONICAL_URL_BY_LANGUAGE = new Map(
+    LANGUAGES.map((slug) => [slug, slug === DEFAULT_LANGUAGE ? SITE_URL : `${SITE_URL}${slug}/`])
+);
 
 const ADDITIONAL_URLS = [`${SITE_URL}llms.txt`];
 
