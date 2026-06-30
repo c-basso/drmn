@@ -5,9 +5,17 @@
     <link>https://drmn.xyz/blog/</link>
     <description>Guides on white noise, sleep sounds, and focus audio for better rest and concentration.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 29 Jun 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 30 Jun 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://drmn.xyz/blog/feed.xml" rel="self" type="application/rss+xml"/>
     
+    <item>
+      <title>Green Noise for Sleep: How Mid‑Frequency Sound Improves Rest</title>
+      <link>https://drmn.xyz/blog/green-noise-sleep-benefits/</link>
+      <guid isPermaLink="true">https://drmn.xyz/blog/green-noise-sleep-benefits/</guid>
+      <pubDate>Tue, 30 Jun 2026 12:00:00 GMT</pubDate>
+      <description>Green noise sits between pink and brown on the spectrum, offering a soothing rumble that masks disruptions without feeling heavy. Learn why it works and how to add it to your nightly routine.</description>
+      <enclosure url="https://drmn.xyz/blog/img/green-noise-sleep-benefits.webp" type="image/webp" length="281840"/>
+    </item>
     <item>
       <title>Ocean Wave Sounds for Sleep: Why Rhythmic Surf Improves Rest</title>
       <link>https://drmn.xyz/blog/ocean-wave-sounds-sleep/</link>
