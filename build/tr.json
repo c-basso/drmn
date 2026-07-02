@@ -269,35 +269,6 @@
       ]
     }
   },
-  "testimonials": {
-    "title": "Kullanıcılar DRMN hakkında ne diyor",
-    "items": [
-      {
-        "quote": "DRMN ile %40 daha hızlı uykuya dalıyorum. Ses karıştırma özelliği beyaz gürültü ve okyanus dalgalarının mükemmel birleşimini oluşturuyor. Yıllardır en iyi uykum!",
-        "name": "Sarah M.",
-        "location": "California, ABD",
-        "role": "Çalışan profesyonel"
-      },
-      {
-        "quote": "Bebeğimiz artık saç kurutma makinesi sesi sayesinde tüm gece uyuyor. Tutarlı işe yarayan tek şey bu. Seyahatte çevrimdışı mod hayat kurtarıcı.",
-        "name": "Michael R.",
-        "location": "Texas, ABD",
-        "role": "Ebeveyn"
-      },
-      {
-        "quote": "Uykusuzluk çeken biri olarak DRMN oyunu değiştirdi. Her gece kullanıyorum ve dinlenmiş uyanıyorum. Pil optimizasyonu sayesinde telefonumun bitmesinden endişelenmiyorum.",
-        "name": "Jennifer L.",
-        "location": "New York, ABD",
-        "role": "Uykusuzluk yaşayan"
-      },
-      {
-        "quote": "İşte odaklanmak için DRMN kullanıyorum. Ses karıştırma mükemmel konsantrasyon ortamı oluşturuyor. Ücretsiz 1 saatlik zamanlayıcı — harika değer!",
-        "name": "David K.",
-        "location": "Londra, Birleşik Krallık",
-        "role": "Uzaktan çalışan"
-      }
-    ]
-  },
   "whats_new": {
     "title": "Yenilikler",
     "description": "DRMN'deki son güncellemeler",
@@ -480,12 +451,7 @@
         "@type": "WebSite",
         "name": "DRMN",
         "url": "https://drmn.xyz/tr/",
-        "description": "DRMN — iPhone için beyaz gürültü ve ambient uyku sesleri. Karıştırma, çevrimdışı mod, uyku zamanlayıcısı. App Store'dan ücretsiz indirin.",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://drmn.xyz/?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
+        "description": "DRMN — iPhone için beyaz gürültü ve ambient uyku sesleri. Karıştırma, çevrimdışı mod, uyku zamanlayıcısı. App Store'dan ücretsiz indirin."
       },
       "howto": {
         "@context": "https://schema.org",

@@ -269,35 +269,6 @@
       ]
     }
   },
-  "testimonials": {
-    "title": "Što korisnici kažu o DRMN-u",
-    "items": [
-      {
-        "quote": "Zaspim 40 % brže s DRMN-om. Mix omogućuje kombinaciju bijelog šuma i valova. Najbolji san godinama!",
-        "name": "Sarah M.",
-        "location": "Kalifornija, SAD",
-        "role": "Profesionalac"
-      },
-      {
-        "quote": "Naša beba spava cijelu noć zahvaljujući zvuku fena. Jedino što dosljedno djeluje. Offline spašava na putovanjima.",
-        "name": "Michael R.",
-        "location": "Teksas, SAD",
-        "role": "Roditelj"
-      },
-      {
-        "quote": "S nespavaćom DRMN je promijenio sve. Koristim svaku noć i budim se odmorno. Više ne brinem o bateriji.",
-        "name": "Jennifer L.",
-        "location": "New York, SAD",
-        "role": "Osoba s nespavaćom"
-      },
-      {
-        "quote": "Koristim DRMN za fokus na poslu. Mix stvara savršenu atmosferu. Besplatni timer od 1 sata — odlična vrijednost!",
-        "name": "David K.",
-        "location": "London, UK",
-        "role": "Radnik na daljinu"
-      }
-    ]
-  },
   "whats_new": {
     "title": "Što je novo",
     "description": "Nedavna ažuriranja DRMN-a",
@@ -480,12 +451,7 @@
         "@type": "WebSite",
         "name": "DRMN",
         "url": "https://drmn.xyz/hr/",
-        "description": "DRMN — bijeli šum i ambijentalni zvukovi za spavanje na iPhoneu. Mix, offline, timer za spavanje. Besplatno preuzimanje u App Storeu.",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://drmn.xyz/?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
+        "description": "DRMN — bijeli šum i ambijentalni zvukovi za spavanje na iPhoneu. Mix, offline, timer za spavanje. Besplatno preuzimanje u App Storeu."
       },
       "howto": {
         "@context": "https://schema.org",

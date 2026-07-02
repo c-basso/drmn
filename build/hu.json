@@ -269,35 +269,6 @@
       ]
     }
   },
-  "testimonials": {
-    "title": "Mit mondanak a felhasználók a DRMN-ről",
-    "items": [
-      {
-        "quote": "40%-kal gyorsabban alszom el a DRMN-nel. A mix lehetővé teszi a fehér zaj és hullámok kombinálását. A legjobb alvás évek óta!",
-        "name": "Sarah M.",
-        "location": "Kalifornia, USA",
-        "role": "Szakember"
-      },
-      {
-        "quote": "A babánk egész éjjel alszik a hajszárító hangnak köszönhetően. Az egyetlen, ami következetesen működik. Az offline életmentő utazáskor.",
-        "name": "Michael R.",
-        "location": "Texas, USA",
-        "role": "Szülő"
-      },
-      {
-        "quote": "Álmatlansággal a DRMN mindent megváltoztatott. Minden éjjel használom és frissen ébredek. Nem aggódom többé az akkumulátor miatt.",
-        "name": "Jennifer L.",
-        "location": "New York, USA",
-        "role": "Álmatlanságban szenvedő"
-      },
-      {
-        "quote": "A DRMN-t munka közben használom fókuszhoz. A mix tökéletes hangulatot teremt. Az ingyenes 1 órás időzítő — remek érték!",
-        "name": "David K.",
-        "location": "London, UK",
-        "role": "Távmunkás"
-      }
-    ]
-  },
   "whats_new": {
     "title": "Újdonságok",
     "description": "Legutóbbi DRMN frissítések",
@@ -480,12 +451,7 @@
         "@type": "WebSite",
         "name": "DRMN",
         "url": "https://drmn.xyz/hu/",
-        "description": "DRMN — fehér zaj és ambient alvási hangok iPhone-ra. Mix, offline, alvási időzítő. Ingyenes letöltés az App Store-ból.",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://drmn.xyz/?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
+        "description": "DRMN — fehér zaj és ambient alvási hangok iPhone-ra. Mix, offline, alvási időzítő. Ingyenes letöltés az App Store-ból."
       },
       "howto": {
         "@context": "https://schema.org",

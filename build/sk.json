@@ -269,35 +269,6 @@
       ]
     }
   },
-  "testimonials": {
-    "title": "Čo hovoria používatelia o DRMN",
-    "items": [
-      {
-        "quote": "Zaspávam o 40 % rýchlejšie s DRMN. Mix mi umožňuje kombinovať biely šum a vlny. Najlepší spánok za roky!",
-        "name": "Sarah M.",
-        "location": "Kalifornia, USA",
-        "role": "Profesionálka"
-      },
-      {
-        "quote": "Naše bábätko spí celú noc vďaka zvuku fénu. Jediné, čo konzistentne funguje. Offline nás zachráni na cestách.",
-        "name": "Michael R.",
-        "location": "Texas, USA",
-        "role": "Rodič"
-      },
-      {
-        "quote": "Pri nespavosti mi DRMN všetko zmenil. Používam ho každú noc a budím sa oddýchnutý. Optimalizácia batérie — bez obáv z vybitia.",
-        "name": "Jennifer L.",
-        "location": "New York, USA",
-        "role": "Nespavosť"
-      },
-      {
-        "quote": "Používam DRMN na sústredenie v práci. Mix vytvára ideálnu atmosféru. Bezplatný hodinový časovač — skvelá hodnota!",
-        "name": "David K.",
-        "location": "Londýn, Veľká Británia",
-        "role": "Práca z domu"
-      }
-    ]
-  },
   "whats_new": {
     "title": "Čo je nové",
     "description": "Najnovšie aktualizácie DRMN",
@@ -480,12 +451,7 @@
         "@type": "WebSite",
         "name": "DRMN",
         "url": "https://drmn.xyz/sk/",
-        "description": "DRMN — biely šum a ambientné zvuky na spanie pre iPhone. Mix, offline, časovač spánku. Bezplatné stiahnutie v App Store.",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://drmn.xyz/?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
+        "description": "DRMN — biely šum a ambientné zvuky na spanie pre iPhone. Mix, offline, časovač spánku. Bezplatné stiahnutie v App Store."
       },
       "howto": {
         "@context": "https://schema.org",

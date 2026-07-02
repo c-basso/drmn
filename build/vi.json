@@ -269,35 +269,6 @@
       ]
     }
   },
-  "testimonials": {
-    "title": "Người dùng nói gì về DRMN",
-    "items": [
-      {
-        "quote": "Tôi ngủ nhanh hơn 40% với DRMN. Tính năng trộn cho phép kết hợp tiếng ồn trắng & sóng biển. Giấc ngủ tốt nhất trong nhiều năm!",
-        "name": "Sarah M.",
-        "location": "California, Hoa Kỳ",
-        "role": "Chuyên gia"
-      },
-      {
-        "quote": "Bé chúng tôi ngủ trọn đêm nhờ tiếng máy sấy tóc. Thứ duy nhất luôn hiệu quả. Ngoại tuyến cứu cánh khi đi du lịch.",
-        "name": "Michael R.",
-        "location": "Texas, Hoa Kỳ",
-        "role": "Phụ huynh"
-      },
-      {
-        "quote": "Bị mất ngủ — DRMN thay đổi tất cả. Dùng mỗi đêm & thức dậy sảng khoái. Không lo pin hết nữa.",
-        "name": "Jennifer L.",
-        "location": "New York, Hoa Kỳ",
-        "role": "Người mất ngủ"
-      },
-      {
-        "quote": "Dùng DRMN để tập trung khi làm việc. Trộn âm tạo không khí hoàn hảo. Hẹn giờ 1 giờ miễn phí — giá trị tuyệt vời!",
-        "name": "David K.",
-        "location": "London, Vương quốc Anh",
-        "role": "Nhân viên làm việc từ xa"
-      }
-    ]
-  },
   "whats_new": {
     "title": "Có gì mới",
     "description": "Cập nhật DRMN gần đây",
@@ -480,12 +451,7 @@
         "@type": "WebSite",
         "name": "DRMN",
         "url": "https://drmn.xyz/vi/",
-        "description": "DRMN — tiếng ồn trắng và âm ambient giúp ngủ cho iPhone. Trộn âm, ngoại tuyến, hẹn giờ ngủ. Tải miễn phí trên App Store.",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://drmn.xyz/?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
+        "description": "DRMN — tiếng ồn trắng và âm ambient giúp ngủ cho iPhone. Trộn âm, ngoại tuyến, hẹn giờ ngủ. Tải miễn phí trên App Store."
       },
       "howto": {
         "@context": "https://schema.org",

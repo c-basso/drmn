@@ -269,35 +269,6 @@
       ]
     }
   },
-  "testimonials": {
-    "title": "उपयोगकर्ता DRMN के बारे में क्या कहते हैं",
-    "items": [
-      {
-        "quote": "DRMN से मैं 40% तेज़ी से सो जाती हूँ। मिक्स से वाइट नॉइज़ और लहरें मिलाती हूँ। सालों में सबसे अच्छी नींद!",
-        "name": "Sarah M.",
-        "location": "कैलिफ़ोर्निया, USA",
-        "role": "वर्किंग प्रोफ़ेशनल"
-      },
-      {
-        "quote": "हेयर ड्रायर की आवाज़ से हमारा बच्चा अब पूरी रात सोता है। सिर्फ़ यही लगातार काम करता है। यात्रा में ऑफ़लाइन जीवन रक्षक है।",
-        "name": "Michael R.",
-        "location": "टेक्सास, USA",
-        "role": "माता-पिता"
-      },
-      {
-        "quote": "अनिद्रा से परेशान हूँ — DRMN ने सब बदल दिया। हर रात इस्तेमाल करती हूँ और तरोताज़ा उठती हूँ। बैटरी ऑप्टिमाइज़ेशन — रात भर चिंता नहीं।",
-        "name": "Jennifer L.",
-        "location": "न्यूयॉर्क, USA",
-        "role": "अनिद्रा से पीड़ित"
-      },
-      {
-        "quote": "काम पर फ़ोकस के लिए DRMN इस्तेमाल करता हूँ। मिक्स से परफ़ेक्ट एकाग्रता का माहौल। मुफ़्त 1 घंटे का टाइमर — शानदार वैल्यू!",
-        "name": "David K.",
-        "location": "लंदन, UK",
-        "role": "रिमोट वर्कर"
-      }
-    ]
-  },
   "whats_new": {
     "title": "नया क्या है",
     "description": "DRMN में हाल के अपडेट",
@@ -480,12 +451,7 @@
         "@type": "WebSite",
         "name": "DRMN",
         "url": "https://drmn.xyz/hi/",
-        "description": "DRMN — iPhone के लिए वाइट नॉइज़ और ambient नींद की ध्वनियाँ। मिक्स, ऑफ़लाइन, नींद टाइमर। App Store पर मुफ़्त डाउनलोड।",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://drmn.xyz/?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
+        "description": "DRMN — iPhone के लिए वाइट नॉइज़ और ambient नींद की ध्वनियाँ। मिक्स, ऑफ़लाइन, नींद टाइमर। App Store पर मुफ़्त डाउनलोड।"
       },
       "howto": {
         "@context": "https://schema.org",

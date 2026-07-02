@@ -269,35 +269,6 @@
       ]
     }
   },
-  "testimonials": {
-    "title": "ユーザーの声",
-    "items": [
-      {
-        "quote": "DRMNで入眠が40%早くなりました。サウンドミックスでホワイトノイズと波の音を組み合わせ、数年ぶりの最高の睡眠です。",
-        "name": "Sarah M.",
-        "location": "カリフォルニア州、アメリカ",
-        "role": "会社員"
-      },
-      {
-        "quote": "ドライヤー音のおかげで、赤ちゃんが一晩中眠れるようになりました。旅行時のオフラインモードも本当に助かります。",
-        "name": "Michael R.",
-        "location": "テキサス州、アメリカ",
-        "role": "パパ"
-      },
-      {
-        "quote": "不眠症の私にとって、DRMNはゲームチェンジャーです。毎晩使い、すっきり目覚められます。バッテリー最適化のおかげで、夜中に電池が切れる心配もありません。",
-        "name": "Jennifer L.",
-        "location": "ニューヨーク州、アメリカ",
-        "role": "不眠症でお悩みの方"
-      },
-      {
-        "quote": "仕事の集中にDRMNを使っています。サウンドをミックスして最適な環境を作れ、無料の1時間タイマーは作業セッションにぴったり—コスパ最高です。",
-        "name": "David K.",
-        "location": "ロンドン、イギリス",
-        "role": "リモートワーカー"
-      }
-    ]
-  },
   "whats_new": {
     "title": "新着情報",
     "description": "DRMNの最近のアップデート",
@@ -480,12 +451,7 @@
         "@type": "WebSite",
         "name": "DRMN",
         "url": "https://drmn.xyz/ja/",
-        "description": "DRMN — iPhone向けホワイトノイズと環境音で睡眠をサポート。ミックス、オフライン、睡眠タイマー。App Storeで無料ダウンロード。",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://drmn.xyz/?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
+        "description": "DRMN — iPhone向けホワイトノイズと環境音で睡眠をサポート。ミックス、オフライン、睡眠タイマー。App Storeで無料ダウンロード。"
       },
       "howto": {
         "@context": "https://schema.org",

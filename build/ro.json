@@ -269,35 +269,6 @@
       ]
     }
   },
-  "testimonials": {
-    "title": "Ce spun utilizatorii despre DRMN",
-    "items": [
-      {
-        "quote": "Adorm cu 40 % mai repede cu DRMN. Mixul îmi permite să combin zgomot alb și valuri. Cel mai bun somn din ultimii ani!",
-        "name": "Sarah M.",
-        "location": "California, SUA",
-        "role": "Profesionistă"
-      },
-      {
-        "quote": "Bebelușul nostru doarme toată noaptea datorită sunetului de uscător. Singurul lucru care funcționează constant. Offline ne salvează în călătorii.",
-        "name": "Michael R.",
-        "location": "Texas, SUA",
-        "role": "Părinte"
-      },
-      {
-        "quote": "Cu insomnie, DRMN a schimbat totul. Îl folosesc în fiecare noapte și mă trezesc odihnit. Optimizarea bateriei — fără griji de descărcare.",
-        "name": "Jennifer L.",
-        "location": "New York, SUA",
-        "role": "Insomnie"
-      },
-      {
-        "quote": "Folosesc DRMN pentru concentrare la muncă. Mixul creează atmosfera perfectă. Cronometru gratuit de 1 oră — valoare excelentă!",
-        "name": "David K.",
-        "location": "Londra, Marea Britanie",
-        "role": "Muncă de acasă"
-      }
-    ]
-  },
   "whats_new": {
     "title": "Noutăți",
     "description": "Ultimele actualizări DRMN",
@@ -480,12 +451,7 @@
         "@type": "WebSite",
         "name": "DRMN",
         "url": "https://drmn.xyz/ro/",
-        "description": "DRMN — zgomot alb și sunete ambient de somn pentru iPhone. Mix, offline, cronometru de somn. Descărcare gratuită în App Store.",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://drmn.xyz/?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
+        "description": "DRMN — zgomot alb și sunete ambient de somn pentru iPhone. Mix, offline, cronometru de somn. Descărcare gratuită în App Store."
       },
       "howto": {
         "@context": "https://schema.org",

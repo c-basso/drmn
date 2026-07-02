@@ -269,35 +269,6 @@
       ]
     }
   },
-  "testimonials": {
-    "title": "Ano ang sinasabi ng users tungkol sa DRMN",
-    "items": [
-      {
-        "quote": "Nakakatulog ako nang 40% mas mabilis gamit ang DRMN. Ang mix feature ay nagpapahintulot sa white noise at alon. Pinakamagandang tulog sa mga taon!",
-        "name": "Sarah M.",
-        "location": "California, USA",
-        "role": "Working Professional"
-      },
-      {
-        "quote": "Natutulog na buong gabi ang sanggol ko dahil sa hair dryer sound. Ang tanging bagay na consistent na gumagana. Ang offline mode ay lifesaver sa travel.",
-        "name": "Michael R.",
-        "location": "Texas, USA",
-        "role": "Magulang"
-      },
-      {
-        "quote": "May insomnia ako at game-changer ang DRMN. Ginagamit ko bawat gabi at gumigising nang refreshed. Hindi na ako nag-aalala sa battery overnight.",
-        "name": "Jennifer L.",
-        "location": "New York, USA",
-        "role": "May insomnia"
-      },
-      {
-        "quote": "Ginagamit ko ang DRMN para sa focus sa trabaho. Ang mix ay gumagawa ng perpektong concentration environment. Ang libreng 1-oras na timer — amazing value!",
-        "name": "David K.",
-        "location": "London, UK",
-        "role": "Remote Worker"
-      }
-    ]
-  },
   "whats_new": {
     "title": "Ano ang bago",
     "description": "Kamakailang update sa DRMN",
@@ -480,12 +451,7 @@
         "@type": "WebSite",
         "name": "DRMN",
         "url": "https://drmn.xyz/fil/",
-        "description": "DRMN — white noise at ambient sleep sounds sa iPhone. Mix, offline, timer sa pagtulog. Libreng download sa App Store.",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://drmn.xyz/?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
+        "description": "DRMN — white noise at ambient sleep sounds sa iPhone. Mix, offline, timer sa pagtulog. Libreng download sa App Store."
       },
       "howto": {
         "@context": "https://schema.org",

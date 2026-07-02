@@ -269,35 +269,6 @@
       ]
     }
   },
-  "testimonials": {
-    "title": "ผู้ใช้พูดถึง DRMN อย่างไร",
-    "items": [
-      {
-        "quote": "หลับเร็วขึ้น 40% ด้วย DRMN ฟีเจอร์ผสมเสียงให้ไวท์นอยส์ & คลื่น นอนหลับดีที่สุดในรอบหลายปี!",
-        "name": "Sarah M.",
-        "location": "California, สหรัฐอเมริกา",
-        "role": "มืออาชีพทำงาน"
-      },
-      {
-        "quote": "ลูกนอนทั้งคืนด้วยเสียงเครื่องเป่าผม สิ่งเดียวที่ใช้ได้สม่ำเสมอ ออฟไลน์ช่วยมากตอนเดินทาง",
-        "name": "Michael R.",
-        "location": "Texas, สหรัฐอเมริกา",
-        "role": "ผู้ปกครอง"
-      },
-      {
-        "quote": "นอนไม่หลับ — DRMN เปลี่ยนทุกอย่าง ใช้ทุกคืน & ตื่นมาสดชื่น ไม่กังวลแบตหมดอีกแล้ว",
-        "name": "Jennifer L.",
-        "location": "New York, สหรัฐอเมริกา",
-        "role": "ผู้ที่นอนไม่หลับ"
-      },
-      {
-        "quote": "ใช้ DRMN โฟกัสตอนทำงาน ผสมเสียงสร้างบรรยากาศสมาธิ ตัวจับเวลา 1 ชม. ฟรี — คุ้มมาก!",
-        "name": "David K.",
-        "location": "London, สหราชอาณาจักร",
-        "role": "พนักงานทำงานระยะไกล"
-      }
-    ]
-  },
   "whats_new": {
     "title": "มีอะไรใหม่",
     "description": "อัปเดต DRMN ล่าสุด",
@@ -480,12 +451,7 @@
         "@type": "WebSite",
         "name": "DRMN",
         "url": "https://drmn.xyz/th/",
-        "description": "DRMN — ไวท์นอยส์ & เสียง ambient ช่วยนอนสำหรับ iPhone ผสมเสียง ออฟไลน์ ตัวจับเวลานอน ดาวน์โหลดฟรีบน App Store",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://drmn.xyz/?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
+        "description": "DRMN — ไวท์นอยส์ & เสียง ambient ช่วยนอนสำหรับ iPhone ผสมเสียง ออฟไลน์ ตัวจับเวลานอน ดาวน์โหลดฟรีบน App Store"
       },
       "howto": {
         "@context": "https://schema.org",

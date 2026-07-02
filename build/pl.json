@@ -269,35 +269,6 @@
       ]
     }
   },
-  "testimonials": {
-    "title": "Co mówią użytkownicy o DRMN",
-    "items": [
-      {
-        "quote": "Zasypiam o 40 % szybciej dzięki DRMN. Mix pozwala łączyć biały szum z falami. Najlepszy sen od lat!",
-        "name": "Sarah M.",
-        "location": "Kalifornia, USA",
-        "role": "Profesjonalistka"
-      },
-      {
-        "quote": "Nasze dziecko śpi całą noc dzięki dźwiękowi suszarki. Jedyne, co działa konsekwentnie. Offline ratuje nas w podróży.",
-        "name": "Michael R.",
-        "location": "Teksas, USA",
-        "role": "Rodzic"
-      },
-      {
-        "quote": "Przy bezsenności DRMN wszystko zmienił. Używam go każdej nocy i budzę się wypoczęty. Optymalizacja baterii — bez obaw o rozładowanie.",
-        "name": "Jennifer L.",
-        "location": "Nowy Jork, USA",
-        "role": "Bezsenność"
-      },
-      {
-        "quote": "Używam DRMN do koncentracji w pracy. Mix tworzy idealną atmosferę skupienia. Darmowy timer 1 h — świetna wartość!",
-        "name": "David K.",
-        "location": "Londyn, Wielka Brytania",
-        "role": "Praca zdalna"
-      }
-    ]
-  },
   "whats_new": {
     "title": "Co nowego",
     "description": "Najnowsze aktualizacje DRMN",
@@ -480,12 +451,7 @@
         "@type": "WebSite",
         "name": "DRMN",
         "url": "https://drmn.xyz/pl/",
-        "description": "DRMN — biały szum i ambientowe dźwięki do snu na iPhone. Mix, offline, timer snu. Darmowe pobranie w App Store.",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://drmn.xyz/?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
+        "description": "DRMN — biały szum i ambientowe dźwięki do snu na iPhone. Mix, offline, timer snu. Darmowe pobranie w App Store."
       },
       "howto": {
         "@context": "https://schema.org",

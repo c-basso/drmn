@@ -269,35 +269,6 @@
       ]
     }
   },
-  "testimonials": {
-    "title": "Lo que dicen los usuarios sobre DRMN",
-    "items": [
-      {
-        "quote": "Me duermo un 40 % más rápido con DRMN. La mezcla de sonidos me permite combinar ruido blanco con olas. ¡El mejor sueño en años!",
-        "name": "Sarah M.",
-        "location": "California, EE. UU.",
-        "role": "Profesional"
-      },
-      {
-        "quote": "Nuestro bebé duerme toda la noche con el sonido del secador. Lo único que funciona de verdad. El modo sin conexión nos salva en los viajes.",
-        "name": "Michael R.",
-        "location": "Texas, EE. UU.",
-        "role": "Padre"
-      },
-      {
-        "quote": "Con insomnio, DRMN cambió todo. Lo uso cada noche y me despierto renovada. La batería optimizada—ya no me preocupa que se agote.",
-        "name": "Jennifer L.",
-        "location": "Nueva York, EE. UU.",
-        "role": "Con insomnio"
-      },
-      {
-        "quote": "Uso DRMN para concentrarme en el trabajo. La mezcla crea el ambiente perfecto. El temporizador gratuito de 1 hora encaja genial—¡muy buena relación calidad-precio!",
-        "name": "David K.",
-        "location": "Londres, Reino Unido",
-        "role": "Teletrabajador"
-      }
-    ]
-  },
   "whats_new": {
     "title": "Novedades",
     "description": "Actualizaciones recientes de DRMN",
@@ -480,12 +451,7 @@
         "@type": "WebSite",
         "name": "DRMN",
         "url": "https://drmn.xyz/es/",
-        "description": "DRMN — ruido blanco y sonidos ambientales para dormir en iPhone. Mezcla, sin conexión y temporizador incluidos. Descarga gratuita en App Store.",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://drmn.xyz/?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
+        "description": "DRMN — ruido blanco y sonidos ambientales para dormir en iPhone. Mezcla, sin conexión y temporizador incluidos. Descarga gratuita en App Store."
       },
       "howto": {
         "@context": "https://schema.org",

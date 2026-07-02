@@ -269,35 +269,6 @@
       ]
     }
   },
-  "testimonials": {
-    "title": "Ce que disent les utilisateurs de DRMN",
-    "items": [
-      {
-        "quote": "Je m'endors 40 % plus vite avec DRMN. Le mixage me permet de combiner bruit blanc et vagues. Meilleur sommeil depuis des années !",
-        "name": "Sarah M.",
-        "location": "Californie, États-Unis",
-        "role": "Professionnelle"
-      },
-      {
-        "quote": "Notre bébé dort toute la nuit grâce au sèche-cheveux. La seule chose qui marche vraiment. Le mode hors ligne nous sauve en voyage.",
-        "name": "Michael R.",
-        "location": "Texas, États-Unis",
-        "role": "Parent"
-      },
-      {
-        "quote": "Avec l'insomnie, DRMN a tout changé. Je l'utilise chaque nuit et me réveille fraîche. Batterie optimisée—plus de stress pour la nuit.",
-        "name": "Jennifer L.",
-        "location": "New York, États-Unis",
-        "role": "Insomniaque"
-      },
-      {
-        "quote": "J'utilise DRMN pour me concentrer au travail. Le mixage crée l'environnement parfait. Le minuteur gratuit 1 h est idéal—excellent rapport qualité-prix !",
-        "name": "David K.",
-        "location": "Londres, Royaume-Uni",
-        "role": "Télétravailleur"
-      }
-    ]
-  },
   "whats_new": {
     "title": "Nouveautés",
     "description": "Mises à jour récentes de DRMN",
@@ -480,12 +451,7 @@
         "@type": "WebSite",
         "name": "DRMN",
         "url": "https://drmn.xyz/fr/",
-        "description": "DRMN — bruit blanc et sons ambient pour dormir sur iPhone. Mixage, hors ligne, minuteur de sommeil. Téléchargement gratuit sur l'App Store.",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://drmn.xyz/?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
+        "description": "DRMN — bruit blanc et sons ambient pour dormir sur iPhone. Mixage, hors ligne, minuteur de sommeil. Téléchargement gratuit sur l'App Store."
       },
       "howto": {
         "@context": "https://schema.org",

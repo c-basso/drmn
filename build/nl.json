@@ -269,35 +269,6 @@
       ]
     }
   },
-  "testimonials": {
-    "title": "Wat gebruikers zeggen over DRMN",
-    "items": [
-      {
-        "quote": "Ik val 40% sneller in slaap met DRMN. De mix-functie laat me witte ruis en golven combineren. Beste slaap in jaren!",
-        "name": "Sarah M.",
-        "location": "Californië, VS",
-        "role": "Professional"
-      },
-      {
-        "quote": "Onze baby slaapt dankzij het föhngeluid de hele nacht door. Het enige dat consistent werkt. Offline redt ons op reis.",
-        "name": "Michael R.",
-        "location": "Texas, VS",
-        "role": "Ouder"
-      },
-      {
-        "quote": "Met slapeloosheid heeft DRMN alles veranderd. Gebruik het elke nacht en word uitgerust wakker. Geen zorgen meer over een lege batterij.",
-        "name": "Jennifer L.",
-        "location": "New York, VS",
-        "role": "Slapeloosheid"
-      },
-      {
-        "quote": "Ik gebruik DRMN voor focus tijdens werk. Mix creëert de perfecte concentratie-sfeer. Gratis timer van 1 uur — geweldige waarde!",
-        "name": "David K.",
-        "location": "Londen, VK",
-        "role": "Thuiswerker"
-      }
-    ]
-  },
   "whats_new": {
     "title": "Wat is nieuw",
     "description": "Recente DRMN-updates",
@@ -480,12 +451,7 @@
         "@type": "WebSite",
         "name": "DRMN",
         "url": "https://drmn.xyz/nl/",
-        "description": "DRMN — witte ruis en ambient slaapgeluiden voor iPhone. Mix, offline, slaaptimer. Gratis download in de App Store.",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://drmn.xyz/?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
+        "description": "DRMN — witte ruis en ambient slaapgeluiden voor iPhone. Mix, offline, slaaptimer. Gratis download in de App Store."
       },
       "howto": {
         "@context": "https://schema.org",

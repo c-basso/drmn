@@ -269,35 +269,6 @@
       ]
     }
   },
-  "testimonials": {
-    "title": "מה משתמשים אומרים על DRMN",
-    "items": [
-      {
-        "quote": "נרדמת 40% מהר יותר עם DRMN. המיקס מאפשר לשלב רעש לבן וגלים. השינה הטובה ביותר בשנים!",
-        "name": "Sarah M.",
-        "location": "קליפורניה, ארה\"ב",
-        "role": "איש מקצוע"
-      },
-      {
-        "quote": "התינוק שלנו ישן כל הלילה בזכות צליל מייבש השיער. הדבר היחיד שעובד בעקביות. אופליין מציל בנסיעות.",
-        "name": "Michael R.",
-        "location": "טקסס, ארה\"ב",
-        "role": "הורה"
-      },
-      {
-        "quote": "עם נדודי שינה DRMN שינתה הכל. משתמשת כל לילה וקמה רעננה. לא דואגת יותר לסוללה.",
-        "name": "Jennifer L.",
-        "location": "ניו יורק, ארה\"ב",
-        "role": "נדודי שינה"
-      },
-      {
-        "quote": "משתמש ב-DRMN לריכוז בעבודה. המיקס יוצר סביבה מושלמת. טיימר שעה חינמי — ערך מדהים!",
-        "name": "David K.",
-        "location": "לונדון, בריטניה",
-        "role": "עובד מהבית"
-      }
-    ]
-  },
   "whats_new": {
     "title": "מה חדש",
     "description": "עדכונים אחרונים ב-DRMN",
@@ -480,12 +451,7 @@
         "@type": "WebSite",
         "name": "DRMN",
         "url": "https://drmn.xyz/he/",
-        "description": "DRMN — רעש לבן וצלילי ambient לשינה ב-iPhone. מיקס, אופליין, טיימר שינה. הורדה חינמית ב-App Store.",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://drmn.xyz/?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
+        "description": "DRMN — רעש לבן וצלילי ambient לשינה ב-iPhone. מיקס, אופליין, טיימר שינה. הורדה חינמית ב-App Store."
       },
       "howto": {
         "@context": "https://schema.org",

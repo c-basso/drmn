@@ -269,35 +269,6 @@
       ]
     }
   },
-  "testimonials": {
-    "title": "用户评价",
-    "items": [
-      {
-        "quote": "用 DRMN 后入睡快了 40%。混音功能让我把白噪音和海浪配在一起，是多年来睡得最好的一次。",
-        "name": "Sarah M.",
-        "location": "美国加利福尼亚",
-        "role": "职场人士"
-      },
-      {
-        "quote": "多亏了吹风机声音，宝宝现在能睡整夜。这是唯一稳定有效的办法。旅行时离线模式特别救命。",
-        "name": "Michael R.",
-        "location": "美国得克萨斯",
-        "role": "家长"
-      },
-      {
-        "quote": "作为失眠患者，DRMN 改变了游戏规则。每晚都用，醒来精神很好。电池优化让我不用担心手机半夜没电。",
-        "name": "Jennifer L.",
-        "location": "美国纽约",
-        "role": "受失眠困扰的用户"
-      },
-      {
-        "quote": "工作时用 DRMN 提升专注。混音营造理想环境，免费 1 小时定时刚好适合工作时段——性价比很高。",
-        "name": "David K.",
-        "location": "英国伦敦",
-        "role": "远程工作者"
-      }
-    ]
-  },
   "whats_new": {
     "title": "最新动态",
     "description": "DRMN 近期更新",
@@ -480,12 +451,7 @@
         "@type": "WebSite",
         "name": "DRMN",
         "url": "https://drmn.xyz/zh/",
-        "description": "DRMN — iPhone 白噪音与环境音助眠 App。混音、离线、睡眠定时器。App Store 免费下载。",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://drmn.xyz/?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
+        "description": "DRMN — iPhone 白噪音与环境音助眠 App。混音、离线、睡眠定时器。App Store 免费下载。"
       },
       "howto": {
         "@context": "https://schema.org",

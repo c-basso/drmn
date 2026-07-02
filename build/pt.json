@@ -269,35 +269,6 @@
       ]
     }
   },
-  "testimonials": {
-    "title": "O que os usuários dizem sobre o DRMN",
-    "items": [
-      {
-        "quote": "Adormeço 40 % mais rápido com o DRMN. A mixagem me permite combinar ruído branco e ondas. Melhor sono em anos!",
-        "name": "Sarah M.",
-        "location": "Califórnia, EUA",
-        "role": "Profissional"
-      },
-      {
-        "quote": "Nosso bebê dorme a noite toda com o som do secador. A única coisa que funciona de verdade. O modo offline salva nas viagens.",
-        "name": "Michael R.",
-        "location": "Texas, EUA",
-        "role": "Pai/Mãe"
-      },
-      {
-        "quote": "Com insônia, o DRMN mudou tudo. Uso toda noite e acordo revigorada. Bateria otimizada—sem ansiedade de descarregar.",
-        "name": "Jennifer L.",
-        "location": "Nova York, EUA",
-        "role": "Com insônia"
-      },
-      {
-        "quote": "Uso o DRMN para me concentrar no trabalho. A mixagem cria o ambiente perfeito. O timer grátis de 1 h é ideal—ótimo custo-benefício!",
-        "name": "David K.",
-        "location": "Londres, Reino Unido",
-        "role": "Trabalho remoto"
-      }
-    ]
-  },
   "whats_new": {
     "title": "Novidades",
     "description": "Atualizações recentes do DRMN",
@@ -480,12 +451,7 @@
         "@type": "WebSite",
         "name": "DRMN",
         "url": "https://drmn.xyz/pt/",
-        "description": "DRMN — ruído branco e sons ambientais para dormir no iPhone. Mixagem, offline, timer para dormir. Download gratuito na App Store.",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://drmn.xyz/?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
+        "description": "DRMN — ruído branco e sons ambientais para dormir no iPhone. Mixagem, offline, timer para dormir. Download gratuito na App Store."
       },
       "howto": {
         "@context": "https://schema.org",

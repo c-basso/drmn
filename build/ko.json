@@ -269,35 +269,6 @@
       ]
     }
   },
-  "testimonials": {
-    "title": "사용자 후기",
-    "items": [
-      {
-        "quote": "DRMN 덕분에 40% 더 빨리 잠들어요. 사운드 믹스로 화이트 노이즈와 파도 소리를 조합해, 몇 년 만에 최고의 수면을 하고 있어요.",
-        "name": "Sarah M.",
-        "location": "캘리포니아, 미국",
-        "role": "직장인"
-      },
-      {
-        "quote": "드라이어 소리 덕분에 아기가 이제 밤새 잠을 자요. 꾸준히 효과가 있는 유일한 방법이에요. 여행할 때 오프라인 모드가 정말 큰 도움이 됩니다.",
-        "name": "Michael R.",
-        "location": "텍사스, 미국",
-        "role": "부모"
-      },
-      {
-        "quote": "불면증이 있는 저에게 DRMN은 게임 체인저예요. 매일 밤 쓰고 상쾌하게 일어나요. 배터리 최적화 덕분에 밤에 폰이 꺼질 걱정도 없어요.",
-        "name": "Jennifer L.",
-        "location": "뉴욕, 미국",
-        "role": "불면으로 고민하는 분"
-      },
-      {
-        "quote": "일할 때 집중용으로 DRMN을 써요. 사운드를 믹스해 최적의 환경을 만들 수 있고, 무료 1시간 타이머는 작업 세션에 딱—가성비 최고예요.",
-        "name": "David K.",
-        "location": "런던, 영국",
-        "role": "재택 근무자"
-      }
-    ]
-  },
   "whats_new": {
     "title": "새로운 소식",
     "description": "DRMN 최근 업데이트",
@@ -480,12 +451,7 @@
         "@type": "WebSite",
         "name": "DRMN",
         "url": "https://drmn.xyz/ko/",
-        "description": "DRMN — iPhone용 화이트 노이즈와 환경음으로 수면을 돕는 앱. 믹스, 오프라인, 수면 타이머. App Store 무료 다운로드.",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://drmn.xyz/?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
+        "description": "DRMN — iPhone용 화이트 노이즈와 환경음으로 수면을 돕는 앱. 믹스, 오프라인, 수면 타이머. App Store 무료 다운로드."
       },
       "howto": {
         "@context": "https://schema.org",

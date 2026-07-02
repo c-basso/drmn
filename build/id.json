@@ -269,35 +269,6 @@
       ]
     }
   },
-  "testimonials": {
-    "title": "Apa kata pengguna tentang DRMN",
-    "items": [
-      {
-        "quote": "Saya tidur 40% lebih cepat dengan DRMN. Fitur mix memungkinkan kombinasi white noise & ombak. Tidur terbaik bertahun-tahun!",
-        "name": "Sarah M.",
-        "location": "California, AS",
-        "role": "Profesional"
-      },
-      {
-        "quote": "Bayi kami tidur sepanjang malam berkat suara pengering rambut. Satu-satunya yang konsisten bekerja. Offline penyelamat saat traveling.",
-        "name": "Michael R.",
-        "location": "Texas, AS",
-        "role": "Orang tua"
-      },
-      {
-        "quote": "Dengan insomnia, DRMN mengubah segalanya. Pakai setiap malam & bangun segar. Tidak khawatir baterai habis lagi.",
-        "name": "Jennifer L.",
-        "location": "New York, AS",
-        "role": "Penderita insomnia"
-      },
-      {
-        "quote": "Pakai DRMN untuk fokus kerja. Mix menciptakan atmosfer sempurna. Timer 1 jam gratis — nilai luar biasa!",
-        "name": "David K.",
-        "location": "London, UK",
-        "role": "Pekerja remote"
-      }
-    ]
-  },
   "whats_new": {
     "title": "Apa yang baru",
     "description": "Pembaruan DRMN terbaru",
@@ -480,12 +451,7 @@
         "@type": "WebSite",
         "name": "DRMN",
         "url": "https://drmn.xyz/id/",
-        "description": "DRMN — white noise dan suara ambient tidur untuk iPhone. Mix, offline, timer tidur. Unduh gratis di App Store.",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://drmn.xyz/?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
+        "description": "DRMN — white noise dan suara ambient tidur untuk iPhone. Mix, offline, timer tidur. Unduh gratis di App Store."
       },
       "howto": {
         "@context": "https://schema.org",

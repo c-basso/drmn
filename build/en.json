@@ -292,35 +292,6 @@
       ]
     }
   },
-  "testimonials": {
-    "title": "What Users Say About DRMN",
-    "items": [
-      {
-        "quote": "I fall asleep 40% faster with DRMN. The sound mixing feature lets me create the perfect combination of white noise and ocean waves. Best sleep I've had in years!",
-        "name": "Sarah M.",
-        "location": "California, USA",
-        "role": "Working Professional"
-      },
-      {
-        "quote": "My baby sleeps through the night now thanks to DRMN's hair dryer sound. It's the only thing that works consistently. The offline mode is a lifesaver when we travel.",
-        "name": "Michael R.",
-        "location": "Texas, USA",
-        "role": "Parent"
-      },
-      {
-        "quote": "As someone with insomnia, DRMN has been a game-changer. I use it every night and wake up feeling refreshed. The battery optimization means I don't worry about my phone dying overnight.",
-        "name": "Jennifer L.",
-        "location": "New York, USA",
-        "role": "Insomnia Sufferer"
-      },
-      {
-        "quote": "I use DRMN for focus during work. The ability to mix sounds helps me create the perfect concentration environment. The free 1-hour timer is perfect for my work sessions—amazing value!",
-        "name": "David K.",
-        "location": "London, UK",
-        "role": "Remote Worker"
-      }
-    ]
-  },
   "whats_new": {
     "title": "What's New",
     "description": "Recent updates and improvements to DRMN",
@@ -503,12 +474,7 @@
         "@type": "WebSite",
         "name": "DRMN",
         "url": "https://drmn.xyz/",
-        "description": "DRMN — white noise and ambient sleep sounds for iPhone. Mix tracks, play offline, sleep timer included. Free download on the App Store.",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://drmn.xyz/?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
+        "description": "DRMN — white noise and ambient sleep sounds for iPhone. Mix tracks, play offline, sleep timer included. Free download on the App Store."
       },
       "howto": {
         "@context": "https://schema.org",
@@ -564,20 +530,41 @@
       "reviews": [
         {
           "@type": "Review",
-          "author": { "@type": "Person", "name": "Sarah M." },
-          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "author": {
+            "@type": "Person",
+            "name": "Sarah M."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
           "reviewBody": "I fall asleep faster with DRMN. The sound mixing feature lets me create the perfect combination of white noise and ocean waves."
         },
         {
           "@type": "Review",
-          "author": { "@type": "Person", "name": "Michael R." },
-          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "author": {
+            "@type": "Person",
+            "name": "Michael R."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
           "reviewBody": "My baby sleeps through the night now thanks to DRMN's hair dryer sound. The offline mode is a lifesaver when we travel."
         },
         {
           "@type": "Review",
-          "author": { "@type": "Person", "name": "Jennifer L." },
-          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "author": {
+            "@type": "Person",
+            "name": "Jennifer L."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
           "reviewBody": "As someone with insomnia, DRMN has been a game-changer. I use it every night and wake up feeling refreshed."
         }
       ]

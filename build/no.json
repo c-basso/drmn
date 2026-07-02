@@ -269,35 +269,6 @@
       ]
     }
   },
-  "testimonials": {
-    "title": "Hva brukerne sier om DRMN",
-    "items": [
-      {
-        "quote": "Jeg sovner 40 % raskere med DRMN. Lydmix lar meg kombinere hvit støy og bølger. Beste søvnen på årevis!",
-        "name": "Sarah M.",
-        "location": "California, USA",
-        "role": "Profesjonell"
-      },
-      {
-        "quote": "Babyen vår sover hele natten takket være hårfønerlyden. Det eneste som fungerer konsekvent. Offline redder oss på reise.",
-        "name": "Michael R.",
-        "location": "Texas, USA",
-        "role": "Forelder"
-      },
-      {
-        "quote": "Som søvnløs har DRMN endret alt. Bruker det hver natt og våkner uthvilt. Batterioptimalisering — ingen bekymring for tom batteri.",
-        "name": "Jennifer L.",
-        "location": "New York, USA",
-        "role": "Søvnløshet"
-      },
-      {
-        "quote": "Jeg bruker DRMN til fokus på jobb. Mix skaper det perfekte konsentrasjonsmiljøet. Gratis 1-times timer — fantastisk verdi!",
-        "name": "David K.",
-        "location": "London, Storbritannia",
-        "role": "Hjemmekontor"
-      }
-    ]
-  },
   "whats_new": {
     "title": "Hva er nytt",
     "description": "Siste oppdateringer i DRMN",
@@ -480,12 +451,7 @@
         "@type": "WebSite",
         "name": "DRMN",
         "url": "https://drmn.xyz/no/",
-        "description": "DRMN — hvit støy og ambient søvnlyder for iPhone. Mix, offline, søvntimer. Gratis nedlasting i App Store.",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://drmn.xyz/?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
+        "description": "DRMN — hvit støy og ambient søvnlyder for iPhone. Mix, offline, søvntimer. Gratis nedlasting i App Store."
       },
       "howto": {
         "@context": "https://schema.org",

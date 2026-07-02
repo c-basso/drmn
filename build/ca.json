@@ -269,35 +269,6 @@
       ]
     }
   },
-  "testimonials": {
-    "title": "Què diuen els usuaris sobre DRMN",
-    "items": [
-      {
-        "quote": "M'adormo un 40 % més ràpid amb DRMN. El mix em permet combinar soroll blanc i ones. El millor son en anys!",
-        "name": "Sarah M.",
-        "location": "Califòrnia, EUA",
-        "role": "Professional"
-      },
-      {
-        "quote": "El nostre nadó dorm tota la nit gràcies al so de l'assecador. L'únic que funciona de manera consistent. L'offline ens salva en viatges.",
-        "name": "Michael R.",
-        "location": "Texas, EUA",
-        "role": "Pare"
-      },
-      {
-        "quote": "Amb insomni, DRMN ho ha canviat tot. L'uso cada nit i em despert descansat. Optimització de bateria — sense por de quedar-me sense.",
-        "name": "Jennifer L.",
-        "location": "Nova York, EUA",
-        "role": "Insomni"
-      },
-      {
-        "quote": "Faig servir DRMN per al focus a la feina. El mix crea l'atmosfera perfecta de concentració. Temporitzador gratuït d'1 hora — gran valor!",
-        "name": "David K.",
-        "location": "Londres, Regne Unit",
-        "role": "Teletreball"
-      }
-    ]
-  },
   "whats_new": {
     "title": "Novetats",
     "description": "Últimes actualitzacions de DRMN",
@@ -480,12 +451,7 @@
         "@type": "WebSite",
         "name": "DRMN",
         "url": "https://drmn.xyz/ca/",
-        "description": "DRMN — soroll blanc i sons ambientals per dormir per a iPhone. Mix, fora de línia, temporitzador de son. Descàrrega gratuïta a l'App Store.",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://drmn.xyz/?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
+        "description": "DRMN — soroll blanc i sons ambientals per dormir per a iPhone. Mix, fora de línia, temporitzador de son. Descàrrega gratuïta a l'App Store."
       },
       "howto": {
         "@context": "https://schema.org",

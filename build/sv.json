@@ -269,35 +269,6 @@
       ]
     }
   },
-  "testimonials": {
-    "title": "Vad användare säger om DRMN",
-    "items": [
-      {
-        "quote": "Jag somnar 40 % snabbare med DRMN. Ljudmixen låter mig kombinera vitt brus och vågor. Bästa sömnen på åratal!",
-        "name": "Sarah M.",
-        "location": "Kalifornien, USA",
-        "role": "Professionell"
-      },
-      {
-        "quote": "Vår bebis sover hela natten tack vare hårtorksljudet. Det enda som fungerar konsekvent. Offline räddar oss på resor.",
-        "name": "Michael R.",
-        "location": "Texas, USA",
-        "role": "Förälder"
-      },
-      {
-        "quote": "Med sömnlöshet har DRMN förändrat allt. Jag använder det varje natt och vaknar utvilad. Batterioptimering — inga bekymmer om urladdning.",
-        "name": "Jennifer L.",
-        "location": "New York, USA",
-        "role": "Sömnlöshet"
-      },
-      {
-        "quote": "Jag använder DRMN för fokus på jobbet. Mixen skapar den perfekta koncentrationsmiljön. Gratis 1-timmes timer — fantastiskt värde!",
-        "name": "David K.",
-        "location": "London, Storbritannien",
-        "role": "Distansarbete"
-      }
-    ]
-  },
   "whats_new": {
     "title": "Nyheter",
     "description": "Senaste uppdateringarna i DRMN",
@@ -480,12 +451,7 @@
         "@type": "WebSite",
         "name": "DRMN",
         "url": "https://drmn.xyz/sv/",
-        "description": "DRMN — vitt brus och ambienta sömnljud för iPhone. Mix, offline, sömntimer. Gratis nedladdning i App Store.",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://drmn.xyz/?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
+        "description": "DRMN — vitt brus och ambienta sömnljud för iPhone. Mix, offline, sömntimer. Gratis nedladdning i App Store."
       },
       "howto": {
         "@context": "https://schema.org",

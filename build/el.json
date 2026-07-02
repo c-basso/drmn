@@ -269,35 +269,6 @@
       ]
     }
   },
-  "testimonials": {
-    "title": "Τι Λένε οι Χρήστες για το DRMN",
-    "items": [
-      {
-        "quote": "Κοιμάμαι 40% πιο γρήγορα με το DRMN. Το mix με λευκό θόρυβο και κύματα—ο καλύτερος ύπνος εδώ και χρόνια!",
-        "name": "Sarah M.",
-        "location": "Καλιφόρνια, ΗΠΑ",
-        "role": "Επαγγελματίας"
-      },
-      {
-        "quote": "Το μωρό μας κοιμάται όλη τη νύχτα με τον ήχο πιστολάκι. Το μόνο που δουλεύει σταθερά. Το offline σώζει στα ταξίδια.",
-        "name": "Michael R.",
-        "location": "Τέξας, ΗΠΑ",
-        "role": "Γονέας"
-      },
-      {
-        "quote": "Με αϋπνία, το DRMN άλλαξε τα πάντα. Το χρησιμοποιώ κάθε βράδυ και ξυπνάω φρέσκος. Η μπαταρία δεν με ανησυχεί πια.",
-        "name": "Jennifer L.",
-        "location": "Νέα Υόρκη, ΗΠΑ",
-        "role": "Με αϋπνία"
-      },
-      {
-        "quote": "Χρησιμοποιώ το DRMN για εστίαση στη δουλειά. Το mix δημιουργεί τέλειο περιβάλλον. Δωρεάν 1 ώρα—εξαιρετική αξία!",
-        "name": "David K.",
-        "location": "Λονδίνο, ΗΒ",
-        "role": "Remote εργαζόμενος"
-      }
-    ]
-  },
   "whats_new": {
     "title": "Τι Νέο Υπάρχει",
     "description": "Πρόσφατες ενημερώσεις DRMN",
@@ -480,12 +451,7 @@
         "@type": "WebSite",
         "name": "DRMN",
         "url": "https://drmn.xyz/el/",
-        "description": "DRMN — λευκός θόρυβος και ambient ήχοι ύπνου για iPhone. Mix, offline, χρονοδιακόπτης ύπνου. Δωρεάν λήψη από App Store.",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://drmn.xyz/?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
+        "description": "DRMN — λευκός θόρυβος και ambient ήχοι ύπνου για iPhone. Mix, offline, χρονοδιακόπτης ύπνου. Δωρεάν λήψη από App Store."
       },
       "howto": {
         "@context": "https://schema.org",

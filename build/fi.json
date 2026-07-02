@@ -269,35 +269,6 @@
       ]
     }
   },
-  "testimonials": {
-    "title": "Mitä käyttäjät sanovat DRMN:stä",
-    "items": [
-      {
-        "quote": "Nukun 40 % nopeammin DRMN:n kanssa. Mix mahdollistaa valkoisen kohinan ja aaltojen yhdistämisen. Paras uni vuosiin!",
-        "name": "Sarah M.",
-        "location": "Kalifornia, USA",
-        "role": "Ammattilainen"
-      },
-      {
-        "quote": "Vauvamme nukkuu yöllä hiustenkuivaajaäänen ansiosta. Ainoa joka toimii johdonmukaisesti. Offline pelastaa matkoilla.",
-        "name": "Michael R.",
-        "location": "Texas, USA",
-        "role": "Vanhempi"
-      },
-      {
-        "quote": "Unettomuuden kanssa DRMN muutti kaiken. Käytän joka yö ja herään virkeänä. Akkuoptimointi — ei enää huolta tyhjentymisestä.",
-        "name": "Jennifer L.",
-        "location": "New York, USA",
-        "role": "Unettomuudesta kärsivä"
-      },
-      {
-        "quote": "Käytän DRMN:ää keskittymiseen töissä. Mix luo täydellisen tunnelman. Ilmainen 1 tunnin ajastin — loistava arvo!",
-        "name": "David K.",
-        "location": "Lontoo, UK",
-        "role": "Etätyöntekijä"
-      }
-    ]
-  },
   "whats_new": {
     "title": "Uutta",
     "description": "Viimeisimmät DRMN-päivitykset",
@@ -480,12 +451,7 @@
         "@type": "WebSite",
         "name": "DRMN",
         "url": "https://drmn.xyz/fi/",
-        "description": "DRMN — valkoinen kohina ja ambient-unen äänet iPhonelle. Mix, offline, uniajastin. Ilmainen lataus App Storesta.",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://drmn.xyz/?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
+        "description": "DRMN — valkoinen kohina ja ambient-unen äänet iPhonelle. Mix, offline, uniajastin. Ilmainen lataus App Storesta."
       },
       "howto": {
         "@context": "https://schema.org",

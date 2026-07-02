@@ -8,7 +8,6 @@ const LOOP_PLACEHOLDER_ROOTS = new Set([
     'faq',
     'row',
     'header',
-    'testimonial',
     'post',
     'page',
     'tag',

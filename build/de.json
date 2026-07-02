@@ -269,35 +269,6 @@
       ]
     }
   },
-  "testimonials": {
-    "title": "Was Nutzer über DRMN sagen",
-    "items": [
-      {
-        "quote": "Ich schlafe 40 % schneller mit DRMN ein. Der Sound-Mix lässt mich weißes Rauschen mit Wellen kombinieren. Bester Schlaf seit Jahren!",
-        "name": "Sarah M.",
-        "location": "Kalifornien, USA",
-        "role": "Berufstätige"
-      },
-      {
-        "quote": "Unser Baby schläft dank Fön-Klang die ganze Nacht. Das Einzige, was zuverlässig funktioniert. Offline-Modus rettet uns auf Reisen.",
-        "name": "Michael R.",
-        "location": "Texas, USA",
-        "role": "Elternteil"
-      },
-      {
-        "quote": "Mit Schlaflosigkeit war DRMN ein Wendepunkt. Jede Nacht im Einsatz, morgens erholt. Akku-Optimierung—keine Sorge mehr wegen leerem Akku.",
-        "name": "Jennifer L.",
-        "location": "New York, USA",
-        "role": "Mit Schlaflosigkeit"
-      },
-      {
-        "quote": "Ich nutze DRMN für Fokus bei der Arbeit. Der Mix schafft die perfekte Umgebung. Der kostenlose 1-Stunden-Timer passt perfekt—top Preis-Leistung!",
-        "name": "David K.",
-        "location": "London, UK",
-        "role": "Remote-Arbeiter"
-      }
-    ]
-  },
   "whats_new": {
     "title": "Neuigkeiten",
     "description": "Aktuelle Updates für DRMN",
@@ -480,12 +451,7 @@
         "@type": "WebSite",
         "name": "DRMN",
         "url": "https://drmn.xyz/de/",
-        "description": "DRMN — weißes Rauschen und Ambient-Klänge zum Einschlafen auf dem iPhone. Mix, Offline, Schlaf-Timer. Kostenloser Download im App Store.",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://drmn.xyz/?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
+        "description": "DRMN — weißes Rauschen und Ambient-Klänge zum Einschlafen auf dem iPhone. Mix, Offline, Schlaf-Timer. Kostenloser Download im App Store."
       },
       "howto": {
         "@context": "https://schema.org",

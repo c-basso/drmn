@@ -269,35 +269,6 @@
       ]
     }
   },
-  "testimonials": {
-    "title": "Cosa dicono gli utenti di DRMN",
-    "items": [
-      {
-        "quote": "Mi addormento il 40 % più velocemente con DRMN. Il mix mi permette di combinare rumore bianco e onde. Miglior sonno da anni!",
-        "name": "Sarah M.",
-        "location": "California, Stati Uniti",
-        "role": "Professionista"
-      },
-      {
-        "quote": "Il nostro neonato dorme tutta la notte con il suono del phon. L'unica cosa che funziona davvero. La modalità offline ci salva in viaggio.",
-        "name": "Michael R.",
-        "location": "Texas, Stati Uniti",
-        "role": "Genitore"
-      },
-      {
-        "quote": "Con l'insonnia, DRMN ha cambiato tutto. Lo uso ogni notte e mi sveglio fresca. Batteria ottimizzata—niente più ansia per la scarica.",
-        "name": "Jennifer L.",
-        "location": "New York, Stati Uniti",
-        "role": "Con insonnia"
-      },
-      {
-        "quote": "Uso DRMN per concentrarmi al lavoro. Il mix crea l'ambiente perfetto. Il timer gratuito 1 h è ideale—ottimo rapporto qualità-prezzo!",
-        "name": "David K.",
-        "location": "Londra, Regno Unito",
-        "role": "Smart worker"
-      }
-    ]
-  },
   "whats_new": {
     "title": "Novità",
     "description": "Aggiornamenti recenti di DRMN",
@@ -480,12 +451,7 @@
         "@type": "WebSite",
         "name": "DRMN",
         "url": "https://drmn.xyz/it/",
-        "description": "DRMN — rumore bianco e suoni ambientali per dormire su iPhone. Mix, offline, timer del sonno. Download gratuito su App Store.",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://drmn.xyz/?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
+        "description": "DRMN — rumore bianco e suoni ambientali per dormire su iPhone. Mix, offline, timer del sonno. Download gratuito su App Store."
       },
       "howto": {
         "@context": "https://schema.org",

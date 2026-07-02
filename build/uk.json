@@ -269,35 +269,6 @@
       ]
     }
   },
-  "testimonials": {
-    "title": "Що кажуть користувачі про DRMN",
-    "items": [
-      {
-        "quote": "Засинаю на 40 % швидше з DRMN. Мікш дозволяє поєднувати білий шум і хвилі. Найкращий сон за роки!",
-        "name": "Sarah M.",
-        "location": "Каліфорнія, США",
-        "role": "Фахівець"
-      },
-      {
-        "quote": "Наш малюк спить всю ніч зі звуком фена. Єдине, що працює стабільно. Офлайн рятує в подорожах.",
-        "name": "Michael R.",
-        "location": "Техас, США",
-        "role": "Батьки"
-      },
-      {
-        "quote": "При безсонні DRMN змінив усе. Використовую щоночі й прокидаюся відпочившою. Батарея — більше не хвилююся про розряд.",
-        "name": "Jennifer L.",
-        "location": "Нью-Йорк, США",
-        "role": "З безсонням"
-      },
-      {
-        "quote": "Використовую DRMN для фокусу на роботі. Мікш створює ідеальну атмосферу. Безкоштовний таймер 1 год — чудове співвідношення ціни й якості!",
-        "name": "David K.",
-        "location": "Лондон, Велика Британія",
-        "role": "Віддалений працівник"
-      }
-    ]
-  },
   "whats_new": {
     "title": "Що нового",
     "description": "Останні оновлення DRMN",
@@ -480,12 +451,7 @@
         "@type": "WebSite",
         "name": "DRMN",
         "url": "https://drmn.xyz/uk/",
-        "description": "DRMN — білий шум і ambient-звуки для сну на iPhone. Мікш, офлайн, таймер сну. Безкоштовне завантаження в App Store.",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://drmn.xyz/?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
+        "description": "DRMN — білий шум і ambient-звуки для сну на iPhone. Мікш, офлайн, таймер сну. Безкоштовне завантаження в App Store."
       },
       "howto": {
         "@context": "https://schema.org",
