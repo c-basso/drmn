@@ -18,7 +18,7 @@
 - Category: Health & Fitness
 - Developer: Vladimir Ivakhnenko
 - App Store Rating: 4.9/5 stars (10 reviews)
-- Users report: 30-50% faster sleep onset
+- User-reported: App Store reviewers often cite faster sleep onset when masking background noise (individual results vary)
 
 ## Features
 
@@ -30,6 +30,12 @@
 - Offline mode
 - Battery-optimized
 - Sleep timer with auto-fade
+
+## Comparison Guides (Blog)
+
+- [DRMN vs Calm](https://drmn.xyz/blog/drmn-vs-calm-sleep-sounds/): Sleep sounds vs meditation apps
+- [BetterSleep Alternative](https://drmn.xyz/blog/bettersleep-alternative-iphone/): Free white noise for iPhone
+- [Best White Noise Apps Compared](https://drmn.xyz/blog/best-white-noise-apps-iphone-compared/): DRMN, Calm, BetterSleep, White Noise Lite, myNoise
 
 ## Language Pages
 

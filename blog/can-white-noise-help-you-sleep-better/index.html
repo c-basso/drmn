@@ -1,4 +1,4 @@
-<!-- Version: 1782995684812 -->
+<!-- Version: 1782996832710 -->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -221,6 +221,25 @@
       color: var(--color-text-secondary);
       font-style: italic;
     }
+    .article-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0 2rem;
+      font-size: 0.92rem;
+    }
+    .article-content th,
+    .article-content td {
+      border: 1px solid rgba(107, 127, 215, 0.2);
+      padding: 0.65rem 0.75rem;
+      text-align: left;
+      vertical-align: top;
+      color: var(--color-text-secondary);
+    }
+    .article-content th {
+      background: rgba(26, 27, 46, 0.8);
+      color: var(--color-text-primary);
+      font-weight: 600;
+    }
     .article-content figure {
       margin: 2rem 0;
     }
@@ -365,6 +384,36 @@
     .back-to-blog:hover {
       border-color: var(--color-accent);
       color: var(--color-text-primary);
+    }
+    .post-faq {
+      margin-top: 2.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(107, 127, 215, 0.15);
+    }
+    .post-faq h2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+    .post-faq-item {
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid rgba(107, 127, 215, 0.1);
+    }
+    .post-faq-item:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+    .post-faq-item h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: var(--color-text-primary);
+    }
+    .post-faq-item p {
+      color: var(--color-text-secondary);
+      margin: 0;
     }
     footer {
       padding: 2.5rem 0;
@@ -550,6 +599,38 @@
         
       </div>
       
+
+      
+      <section class="post-faq" aria-labelledby="post-faq-heading">
+        <h2 id="post-faq-heading">Frequently Asked Questions</h2>
+        
+        <div class="post-faq-item">
+          <h3>Does white noise actually help you sleep?</h3>
+          <p>Studies show mixed results. White noise may help some people fall asleep faster and wake less often by masking environmental sounds, especially in noisy settings. A systematic review in Sleep Medicine Reviews found limited overall benefit across pooled studies—individual response varies.</p>
+        </div>
+        
+        <div class="post-faq-item">
+          <h3>What did Harvard Health say about white noise?</h3>
+          <p>Harvard Health Publishing notes white noise can mask disruptive sounds and may cue bedtime, but warns against excessive volume because loud noise may interfere with deep sleep and REM stages.</p>
+        </div>
+        
+        <div class="post-faq-item">
+          <h3>Is pink noise better than white noise?</h3>
+          <p>Pink noise sounds deeper and softer because it emphasizes lower frequencies. Some research in older adults links timed pink noise to improved deep sleep, but everyday benefits are still being studied.</p>
+        </div>
+        
+        <div class="post-faq-item">
+          <h3>How long should I play white noise?</h3>
+          <p>Many clinicians suggest starting at bedtime and using a timer if you only need help falling asleep. Playing sound only while drifting off may be preferable to all-night playback at high volume.</p>
+        </div>
+        
+        <div class="post-faq-item">
+          <h3>When should I see a doctor instead of using white noise?</h3>
+          <p>If poor sleep lasts weeks, you snore loudly, or you feel exhausted despite long time in bed, talk to a clinician. White noise is not a substitute for treating sleep disorders.</p>
+        </div>
+        
+      </section>
+      
     </article>
 
     <nav class="post-nav" aria-label="Post navigation">
@@ -589,6 +670,11 @@
   <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://drmn.xyz/"},{"@type":"ListItem","position":2,"name":"DRMN Blog","item":"https://drmn.xyz/blog/"},{"@type":"ListItem","position":3,"name":"Can White Noise Really Help You Sleep Better? What the Research Says","item":"https://drmn.xyz/blog/can-white-noise-help-you-sleep-better/"}]}
   </script>
+  
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does white noise actually help you sleep?","acceptedAnswer":{"@type":"Answer","text":"Studies show mixed results. White noise may help some people fall asleep faster and wake less often by masking environmental sounds, especially in noisy settings. A systematic review in Sleep Medicine Reviews found limited overall benefit across pooled studies—individual response varies."}},{"@type":"Question","name":"What did Harvard Health say about white noise?","acceptedAnswer":{"@type":"Answer","text":"Harvard Health Publishing notes white noise can mask disruptive sounds and may cue bedtime, but warns against excessive volume because loud noise may interfere with deep sleep and REM stages."}},{"@type":"Question","name":"Is pink noise better than white noise?","acceptedAnswer":{"@type":"Answer","text":"Pink noise sounds deeper and softer because it emphasizes lower frequencies. Some research in older adults links timed pink noise to improved deep sleep, but everyday benefits are still being studied."}},{"@type":"Question","name":"How long should I play white noise?","acceptedAnswer":{"@type":"Answer","text":"Many clinicians suggest starting at bedtime and using a timer if you only need help falling asleep. Playing sound only while drifting off may be preferable to all-night playback at high volume."}},{"@type":"Question","name":"When should I see a doctor instead of using white noise?","acceptedAnswer":{"@type":"Answer","text":"If poor sleep lasts weeks, you snore loudly, or you feel exhausted despite long time in bed, talk to a clinician. White noise is not a substitute for treating sleep disorders."}}]}
+  </script>
+  
     <!-- Yandex.Metrika counter -->
   <script type="text/javascript">
     (function() {

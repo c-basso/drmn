@@ -1,5 +1,8 @@
-// Optional: set meta.google_site_verification and meta.ms_validate in each build/<lang>.json
-// after domain verification in Google Search Console and Bing Webmaster Tools.
+// After domain verification, paste codes from Search Console / Bing Webmaster Tools.
+// ChatGPT Search uses Bing — submit sitemap at https://www.bing.com/webmasters
+const GOOGLE_SITE_VERIFICATION = '';
+const MS_VALIDATE = 'E15B500A4986A32DDDF23064D5A94A0F';
+
 const SITE_URL = 'https://drmn.xyz/';
 const DEFAULT_LANGUAGE = 'en';
 
@@ -143,6 +146,8 @@ function getAnalyticsContext() {
 }
 
 module.exports = {
+    GOOGLE_SITE_VERIFICATION,
+    MS_VALIDATE,
     SITE_URL,
     URLS,
     DEFAULT_LANGUAGE,

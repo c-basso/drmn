@@ -307,6 +307,37 @@ function buildBreadcrumbSchema(items) {
     };
 }
 
+function buildFaqPageSchema(faqItems) {
+    if (!Array.isArray(faqItems) || faqItems.length === 0) {
+        return null;
+    }
+
+    return {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: faqItems.map((faq) => ({
+            '@type': 'Question',
+            name: stripHtml(faq?.question),
+            acceptedAnswer: {
+                '@type': 'Answer',
+                text: stripHtml(faq?.answer)
+            }
+        }))
+    };
+}
+
+function normalizePostFaq(post) {
+    const faq = Array.isArray(post.faq)
+        ? post.faq.filter((item) => item?.question && item?.answer)
+        : [];
+
+    return {
+        items: faq,
+        has_faq: faq.length > 0,
+        title: post.faq_title || 'Frequently Asked Questions'
+    };
+}
+
 function buildBlogIndexSchema(posts, canonical, siteName) {
     return {
         '@context': 'https://schema.org',
@@ -356,6 +387,20 @@ function preparePostContext(post, blogConfig, buildTimestamp) {
         has_next: true
     } : { has_next: false };
 
+    const faq = normalizePostFaq(post);
+    const structuredData = {
+        blog_posting: buildBlogPostingSchema(post, siteName),
+        breadcrumb_list: buildBreadcrumbSchema([
+            { name: blogConfig.labels.home, url: homeUrl },
+            { name: blogConfig.labels.blog_title, url: blogIndexUrl },
+            { name: post.title, url: post.canonical }
+        ])
+    };
+    const faqpage = buildFaqPageSchema(faq.items);
+    if (faqpage) {
+        structuredData.faqpage = faqpage;
+    }
+
     return {
         ...blogConfig,
         meta: {
@@ -390,17 +435,11 @@ function preparePostContext(post, blogConfig, buildTimestamp) {
             content: post.content,
             prev: prevNav,
             next: nextNav,
-            ai_share: buildAiShareLinks(post.canonical)
+            ai_share: buildAiShareLinks(post.canonical),
+            faq
         },
         seo: {
-            structured_data: {
-                blog_posting: buildBlogPostingSchema(post, siteName),
-                breadcrumb_list: buildBreadcrumbSchema([
-                    { name: blogConfig.labels.home, url: homeUrl },
-                    { name: blogConfig.labels.blog_title, url: blogIndexUrl },
-                    { name: post.title, url: post.canonical }
-                ])
-            }
+            structured_data: structuredData
         },
         site_url: SITE_URL.replace(/\/?$/, '/'),
         feed_url: '/blog/feed.xml',

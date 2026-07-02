@@ -1,4 +1,4 @@
-<!-- Version: 1782995684812 -->
+<!-- Version: 1782996832710 -->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -221,6 +221,25 @@
       color: var(--color-text-secondary);
       font-style: italic;
     }
+    .article-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0 2rem;
+      font-size: 0.92rem;
+    }
+    .article-content th,
+    .article-content td {
+      border: 1px solid rgba(107, 127, 215, 0.2);
+      padding: 0.65rem 0.75rem;
+      text-align: left;
+      vertical-align: top;
+      color: var(--color-text-secondary);
+    }
+    .article-content th {
+      background: rgba(26, 27, 46, 0.8);
+      color: var(--color-text-primary);
+      font-weight: 600;
+    }
     .article-content figure {
       margin: 2rem 0;
     }
@@ -365,6 +384,36 @@
     .back-to-blog:hover {
       border-color: var(--color-accent);
       color: var(--color-text-primary);
+    }
+    .post-faq {
+      margin-top: 2.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(107, 127, 215, 0.15);
+    }
+    .post-faq h2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+    .post-faq-item {
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid rgba(107, 127, 215, 0.1);
+    }
+    .post-faq-item:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+    .post-faq-item h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: var(--color-text-primary);
+    }
+    .post-faq-item p {
+      color: var(--color-text-secondary);
+      margin: 0;
     }
     footer {
       padding: 2.5rem 0;
@@ -550,6 +599,38 @@
         
       </div>
       
+
+      
+      <section class="post-faq" aria-labelledby="post-faq-heading">
+        <h2 id="post-faq-heading">Frequently Asked Questions</h2>
+        
+        <div class="post-faq-item">
+          <h3>Why are rain sounds good for sleep?</h3>
+          <p>Steady rain provides predictable, non-threatening audio that masks sudden noises. Acoustically it resembles pink noise—softer than white noise—which many listeners find easier to sleep through.</p>
+        </div>
+        
+        <div class="post-faq-item">
+          <h3>Are rain sounds better than white noise?</h3>
+          <p>Neither is universally better. Rain suits people who find static irritating or want natural texture. White or brown noise may mask sharp urban sounds more aggressively.</p>
+        </div>
+        
+        <div class="post-faq-item">
+          <h3>What rain sounds should I avoid at bedtime?</h3>
+          <p>Avoid obvious loops, loud thunderclaps, heavy hiss, and tracks with lyrics or spoken intros. Seamless, low-drama rain beds work best.</p>
+        </div>
+        
+        <div class="post-faq-item">
+          <h3>How loud should rain sounds be for sleep?</h3>
+          <p>Aim for about 40–50 decibels—soft enough that normal conversation is still audible over the sound. Place the speaker away from your pillow.</p>
+        </div>
+        
+        <div class="post-faq-item">
+          <h3>Can rain sounds help babies sleep?</h3>
+          <p>Some parents use gentle rain or similar steady sounds, but pediatric guidelines emphasize low volume and distance from the crib. Ask your pediatrician for nursery-specific advice.</p>
+        </div>
+        
+      </section>
+      
     </article>
 
     <nav class="post-nav" aria-label="Post navigation">
@@ -589,6 +670,11 @@
   <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://drmn.xyz/"},{"@type":"ListItem","position":2,"name":"DRMN Blog","item":"https://drmn.xyz/blog/"},{"@type":"ListItem","position":3,"name":"Rain Sounds for Sleep: Why They Work and How to Use Them","item":"https://drmn.xyz/blog/rain-sounds-for-sleep/"}]}
   </script>
+  
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why are rain sounds good for sleep?","acceptedAnswer":{"@type":"Answer","text":"Steady rain provides predictable, non-threatening audio that masks sudden noises. Acoustically it resembles pink noise—softer than white noise—which many listeners find easier to sleep through."}},{"@type":"Question","name":"Are rain sounds better than white noise?","acceptedAnswer":{"@type":"Answer","text":"Neither is universally better. Rain suits people who find static irritating or want natural texture. White or brown noise may mask sharp urban sounds more aggressively."}},{"@type":"Question","name":"What rain sounds should I avoid at bedtime?","acceptedAnswer":{"@type":"Answer","text":"Avoid obvious loops, loud thunderclaps, heavy hiss, and tracks with lyrics or spoken intros. Seamless, low-drama rain beds work best."}},{"@type":"Question","name":"How loud should rain sounds be for sleep?","acceptedAnswer":{"@type":"Answer","text":"Aim for about 40–50 decibels—soft enough that normal conversation is still audible over the sound. Place the speaker away from your pillow."}},{"@type":"Question","name":"Can rain sounds help babies sleep?","acceptedAnswer":{"@type":"Answer","text":"Some parents use gentle rain or similar steady sounds, but pediatric guidelines emphasize low volume and distance from the crib. Ask your pediatrician for nursery-specific advice."}}]}
+  </script>
+  
     <!-- Yandex.Metrika counter -->
   <script type="text/javascript">
     (function() {

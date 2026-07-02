@@ -8,6 +8,8 @@ const {
     LANGUAGES,
     APP_ID,
     APP_STORE_URL,
+    GOOGLE_SITE_VERIFICATION,
+    MS_VALIDATE,
     FOOTER_PRIVACY_URL,
     FOOTER_TERMS_URL,
     FOOTER_BLOG_URL,
@@ -105,7 +107,7 @@ function writeLlmsFile(defaultLocaleData) {
         '- Category: Health & Fitness',
         `- Developer: ${defaultLocaleData.app_info?.developer || 'Vladimir Ivakhnenko'}`,
         '- App Store Rating: 4.9/5 stars (10 reviews)',
-        '- Users report: 30-50% faster sleep onset',
+        '- User-reported: App Store reviewers often cite faster sleep onset when masking background noise (individual results vary)',
         '',
         '## Features',
         '',
@@ -117,6 +119,12 @@ function writeLlmsFile(defaultLocaleData) {
         '- Offline mode',
         '- Battery-optimized',
         '- Sleep timer with auto-fade',
+        '',
+        '## Comparison Guides (Blog)',
+        '',
+        `- [DRMN vs Calm](${absoluteSiteUrl('blog/drmn-vs-calm-sleep-sounds/')}): Sleep sounds vs meditation apps`,
+        `- [BetterSleep Alternative](${absoluteSiteUrl('blog/bettersleep-alternative-iphone/')}): Free white noise for iPhone`,
+        `- [Best White Noise Apps Compared](${absoluteSiteUrl('blog/best-white-noise-apps-iphone-compared/')}): DRMN, Calm, BetterSleep, White Noise Lite, myNoise`,
         '',
         '## Language Pages',
         '',
@@ -204,6 +212,17 @@ function normalizeMeta(data, lang) {
     data.meta.og_site_name = data.meta.og_site_name || data.header?.app_name || DEFAULT_SITE_NAME;
     data.meta.og_locale = data.meta.og_locale || OG_LOCALE_BY_LANGUAGE[lang] || OG_LOCALE_BY_LANGUAGE.en;
     data.meta.last_updated_iso = BUILD_DATE_ISO;
+
+    if (GOOGLE_SITE_VERIFICATION) {
+        data.meta.google_site_verification = GOOGLE_SITE_VERIFICATION;
+    } else {
+        delete data.meta.google_site_verification;
+    }
+    if (MS_VALIDATE) {
+        data.meta.ms_validate = MS_VALIDATE;
+    } else {
+        delete data.meta.ms_validate;
+    }
 }
 
 function normalizeHeader(data) {
@@ -286,6 +305,19 @@ function buildOrganizationStructuredData(data) {
         org.sameAs = org.sameAs || [];
         if (!org.sameAs.includes(developerUrl)) {
             org.sameAs.push(developerUrl);
+        }
+    }
+
+    const extraSameAs = [
+        'https://twitter.com/c__basso',
+        'https://fazier.com/launches/drmn.xyz',
+        'https://www.superlaun.ch/products/909',
+        APP_STORE_URL
+    ];
+    org.sameAs = org.sameAs || [];
+    for (const url of extraSameAs) {
+        if (!org.sameAs.includes(url)) {
+            org.sameAs.push(url);
         }
     }
 }
