@@ -5,9 +5,17 @@
     <link>https://drmn.xyz/blog/</link>
     <description>Guides on white noise, sleep sounds, and focus audio for better rest and concentration.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Jul 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jul 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://drmn.xyz/blog/feed.xml" rel="self" type="application/rss+xml"/>
     
+    <item>
+      <title>How Sound Therapy Can Alleviate Tinnitus and Improve Sleep Quality</title>
+      <link>https://drmn.xyz/blog/tinnitus-sound-therapy-for-sleep/</link>
+      <guid isPermaLink="true">https://drmn.xyz/blog/tinnitus-sound-therapy-for-sleep/</guid>
+      <pubDate>Thu, 02 Jul 2026 12:00:00 GMT</pubDate>
+      <description>Discover how specific sound frequencies can ease tinnitus and promote better rest. Practical guide for managing ear-related sleep challenges.</description>
+      <enclosure url="https://drmn.xyz/blog/img/tinnitus-sound-therapy-for-sleep.webp" type="image/webp" length="51986"/>
+    </item>
     <item>
       <title>Choosing Sleep Sounds by Stage: How to Pick the Right Audio</title>
       <link>https://drmn.xyz/blog/choose-sleep-sounds-by-stage/</link>
