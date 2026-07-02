@@ -530,7 +530,13 @@ function prepareIndexContext(blogConfig, posts, pageNumber, totalPages, buildTim
             og_title: pageTitle,
             og_description: blogConfig.meta.description,
             twitter_title: pageTitle,
-            twitter_description: blogConfig.meta.description
+            twitter_description: blogConfig.meta.description,
+            pagination_rel_prev: prevPage.has_prev
+                ? absoluteBlogUrl(prevPage.url.replace(/^\//, ''))
+                : null,
+            pagination_rel_next: nextPage.has_next
+                ? absoluteBlogUrl(nextPage.url.replace(/^\//, ''))
+                : null
         },
         index: {
             posts,

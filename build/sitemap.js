@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const { SITE_URL, URLS, DEFAULT_LANGUAGE, BLOG_POSTS_PER_PAGE } = require('./constants');
+const { SITE_URL, URLS, DEFAULT_LANGUAGE, BLOG_POSTS_PER_PAGE, ADDITIONAL_URLS } = require('./constants');
 const { loadPosts, collectBlogUrls } = require('./blog/build-blog');
 
 const SITEMAP_CHILD_DIR = 'sitemaps';
@@ -89,7 +89,8 @@ function buildLegalSitemap(siteOrigin, lastmod) {
     const legalUrls = [
         `${siteOrigin}/privacy.html`,
         `${siteOrigin}/terms.html`,
-        `${siteOrigin}/about.html`
+        `${siteOrigin}/about.html`,
+        ...ADDITIONAL_URLS.filter((url) => url.startsWith(siteOrigin))
     ];
     const lines = urlsetOpen(false);
     for (const loc of legalUrls) {
@@ -151,7 +152,7 @@ function generateSitemap({ projectRoot = path.join(__dirname, '..') } = {}) {
     const legalPath = path.join(childDir, SITEMAP_CHILD_FILES.legal);
     writeFileEnsuringDir(legalPath, buildLegalSitemap(siteOrigin, lastmod));
     childSitemapUrls.push(`${SITE_URL}${SITEMAP_CHILD_DIR}/${SITEMAP_CHILD_FILES.legal}`);
-    writtenChildFiles.push({ name: SITEMAP_CHILD_FILES.legal, urlCount: 3 });
+    writtenChildFiles.push({ name: SITEMAP_CHILD_FILES.legal, urlCount: 3 + ADDITIONAL_URLS.filter((url) => url.startsWith(siteOrigin)).length });
 
     if (blogUrls.length > 0) {
         const blogPath = path.join(childDir, SITEMAP_CHILD_FILES.blog);

@@ -1,6 +1,6 @@
 // After domain verification, paste codes from Search Console / Bing Webmaster Tools.
 // ChatGPT Search uses Bing — submit sitemap at https://www.bing.com/webmasters
-const GOOGLE_SITE_VERIFICATION = '';
+const GOOGLE_SITE_VERIFICATION = ''; // verified by DNS TXT record
 const MS_VALIDATE = 'E15B500A4986A32DDDF23064D5A94A0F';
 
 const SITE_URL = 'https://drmn.xyz/';

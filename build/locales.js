@@ -10,7 +10,7 @@ const LOCALE_CONFIG = {
     el: { ogLocale: 'el_GR', htmlLang: 'el', htmlDir: 'ltr', footer: { intl: 'el-GR', prefix: 'Τελευταία ενημέρωση: ' } },
     es: { ogLocale: 'es_ES', htmlLang: 'es', htmlDir: 'ltr', footer: { intl: 'es-ES', prefix: 'Última actualización: ' } },
     fi: { ogLocale: 'fi_FI', htmlLang: 'fi', htmlDir: 'ltr', footer: { intl: 'fi-FI', prefix: 'Viimeksi päivitetty: ' } },
-    fil: { ogLocale: 'fil_PH', htmlLang: 'tl', htmlDir: 'ltr', footer: { intl: 'fil-PH', prefix: 'Huling na-update: ' } },
+    fil: { ogLocale: 'tl_PH', htmlLang: 'tl', htmlDir: 'ltr', footer: { intl: 'fil-PH', prefix: 'Huling na-update: ' } },
     fr: { ogLocale: 'fr_FR', htmlLang: 'fr', htmlDir: 'ltr', footer: { intl: 'fr-FR', prefix: 'Dernière mise à jour : ' } },
     he: { ogLocale: 'he_IL', htmlLang: 'he', htmlDir: 'rtl', footer: { intl: 'he-IL', prefix: 'עודכן לאחרונה: ' } },
     hr: { ogLocale: 'hr_HR', htmlLang: 'hr', htmlDir: 'ltr', footer: { intl: 'hr-HR', prefix: 'Zadnje ažuriranje: ' } },
@@ -55,7 +55,8 @@ function getOgLocale(lang) {
 
 /** URL slug -> ISO 639-1 hreflang when they differ (e.g. /fil/ -> tl). */
 const HREFLANG_BY_SLUG = {
-    fil: 'tl'
+    fil: 'tl',
+    no: 'nb'
 };
 
 function getHreflangCode(slug) {

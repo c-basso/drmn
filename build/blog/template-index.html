@@ -8,6 +8,12 @@
   <meta name="description" content="{{meta.description}}">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="{{meta.canonical}}">
+  {{#if meta.pagination_rel_prev}}
+  <link rel="prev" href="{{meta.pagination_rel_prev}}">
+  {{/if}}
+  {{#if meta.pagination_rel_next}}
+  <link rel="next" href="{{meta.pagination_rel_next}}">
+  {{/if}}
   <link rel="alternate" type="application/rss+xml" title="{{labels.rss_title}}" href="{{feed_url}}">
   <meta property="og:title" content="{{meta.og_title}}">
   <meta property="og:description" content="{{meta.og_description}}">
