@@ -495,7 +495,9 @@
 .page-header h1 {
   font-family: 'Outfit', sans-serif;
   font-size: clamp(2rem, 5vw, 2.75rem);
-  margin-bottom: 0.75rem;
+  margin: 0 auto 0.75rem;
+  text-align: center;
+  max-width: none;
 }
 .page-header p {
   color: var(--color-text-secondary);
