@@ -32,7 +32,7 @@ HTML content rules:
 const JSON_METADATA_SCHEMA = `Respond with a single JSON object only — no markdown fences, no commentary. Schema:
 {
   "slug": "kebab-case-url-slug (3–6 words, lowercase, hyphens only)",
-  "title": "Human-readable headline (Title: Subtitle pattern). Must NOT be the slug, NOT '... Guide' alone, 50–70 chars",
+  "title": "Human-readable headline (Title: Subtitle pattern). Must NOT be the slug, NOT '... Guide' alone, ≤73 characters (blog adds ' | DRMN Blog'; hard max 85 total)",
   "description": "Meta description, 150–160 characters, includes primary keyword",
   "excerpt": "1–2 sentences for the blog index card — engaging, specific, not duplicate of description",
   "tags": ["4 to 6 lowercase SEO tags"],

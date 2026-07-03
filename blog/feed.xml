@@ -5,9 +5,17 @@
     <link>https://drmn.xyz/blog/</link>
     <description>Guides on white noise, sleep sounds, and focus audio for better rest and concentration.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Jul 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 03 Jul 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://drmn.xyz/blog/feed.xml" rel="self" type="application/rss+xml"/>
     
+    <item>
+      <title>Binaural Beats for Sleep and Focus: How to Choose the Right Frequency</title>
+      <link>https://drmn.xyz/blog/binaural-beats-sleep-focus/</link>
+      <guid isPermaLink="true">https://drmn.xyz/blog/binaural-beats-sleep-focus/</guid>
+      <pubDate>Fri, 03 Jul 2026 12:00:00 GMT</pubDate>
+      <description>Discover how to pick the perfect binaural beat frequency for restful nights. Learn simple habits to maximize their calming effect and boost daytime focus.</description>
+      <enclosure url="https://drmn.xyz/blog/img/binaural-beats-sleep-focus.webp" type="image/webp" length="474800"/>
+    </item>
     <item>
       <title>DRMN vs Calm: Sleep Sounds vs Meditation Apps (2026)</title>
       <link>https://drmn.xyz/blog/drmn-vs-calm-sleep-sounds/</link>
@@ -15,14 +23,6 @@
       <pubDate>Thu, 02 Jul 2026 12:00:00 GMT</pubDate>
       <description>Calm and DRMN both help you wind down, but they solve different problems. Here is a factual comparison of sleep sounds vs meditation apps on iPhone.</description>
       <enclosure url="https://drmn.xyz/blog/img/sleep-sound-guide.webp" type="image/webp" length="83098"/>
-    </item>
-    <item>
-      <title>Layered Sound Blends for Sleep and Focus</title>
-      <link>https://drmn.xyz/blog/layered-sound-blends-for-sleep-focus/</link>
-      <guid isPermaLink="true">https://drmn.xyz/blog/layered-sound-blends-for-sleep-focus/</guid>
-      <pubDate>Thu, 02 Jul 2026 12:00:00 GMT</pubDate>
-      <description>Explore the science of layered sound blending—how merging white, pink, and nature audio creates custom environments for faster sleep and sharper focus.</description>
-      <enclosure url="https://drmn.xyz/blog/img/layered-sound-blends-for-sleep-focus.webp" type="image/webp" length="92804"/>
     </item>
     <item>
       <title>Tinnitus Sound Therapy for Better Sleep</title>

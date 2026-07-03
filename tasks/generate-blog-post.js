@@ -186,7 +186,30 @@ function normalizeMetadata(metadata) {
   return normalized;
 }
 
-function validateGeneratedPost(generated, existingSlugs) {
+function normalizeCompareText(value) {
+  return String(value).toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+}
+
+function titlesTooSimilar(a, b) {
+  const left = normalizeCompareText(a);
+  const right = normalizeCompareText(b);
+  if (!left || !right) {
+    return false;
+  }
+  if (left === right) {
+    return true;
+  }
+  const leftWords = new Set(left.split(' ').filter((word) => word.length > 3));
+  const rightWords = right.split(' ').filter((word) => word.length > 3);
+  if (rightWords.length === 0) {
+    return false;
+  }
+  const shared = rightWords.filter((word) => leftWords.has(word)).length;
+  return shared >= 4 && shared / rightWords.length >= 0.75;
+}
+
+function validateGeneratedPost(generated, existingPosts) {
+  const existingSlugs = new Set(existingPosts.map((post) => post.slug));
   const required = ['slug', 'title', 'description', 'excerpt', 'content'];
   for (const field of required) {
     if (!generated[field] || !String(generated[field]).trim()) {
@@ -200,6 +223,20 @@ function validateGeneratedPost(generated, existingSlugs) {
 
   if (existingSlugs.has(generated.slug)) {
     throw new Error(`Slug "${generated.slug}" already exists — re-run or pass a different topic`);
+  }
+
+  const similar = existingPosts.find((post) => titlesTooSimilar(generated.title, post.title));
+  if (similar) {
+    throw new Error(
+      `Title "${generated.title}" is too similar to existing post "${similar.slug}" (${similar.title})`,
+    );
+  }
+
+  const blogTitleMax = 73;
+  if (generated.title.length > blogTitleMax) {
+    throw new Error(
+      `Title is ${generated.title.length} characters — max ${blogTitleMax} before " | DRMN Blog" suffix (85 total)`,
+    );
   }
 
   if (!generated.hero?.alt?.trim()) {
@@ -334,7 +371,7 @@ async function main() {
   console.log(`[blog] existing posts: ${existingPosts.length}`);
 
   const generated = await generatePostDraft(topic, existingPosts);
-  validateGeneratedPost(generated, existingSlugs);
+  validateGeneratedPost(generated, existingPosts);
 
   if (!generated.unsplashSearchQuery?.trim()) {
     generated.unsplashSearchQuery = deriveUnsplashSearchQuery(generated);
