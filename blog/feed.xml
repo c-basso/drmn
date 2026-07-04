@@ -5,9 +5,17 @@
     <link>https://drmn.xyz/blog/</link>
     <description>Guides on white noise, sleep sounds, and focus audio for better rest and concentration.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 Jul 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 04 Jul 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://drmn.xyz/blog/feed.xml" rel="self" type="application/rss+xml"/>
     
+    <item>
+      <title>Understanding the Science Behind Sleep Sounds</title>
+      <link>https://drmn.xyz/blog/sleep-sounds-basics/</link>
+      <guid isPermaLink="true">https://drmn.xyz/blog/sleep-sounds-basics/</guid>
+      <pubDate>Sat, 04 Jul 2026 12:00:00 GMT</pubDate>
+      <description>Learn how white noise, brown noise, and nature loops actually shape your brain waves for deeper sleep and sharper concentration.</description>
+      <enclosure url="https://drmn.xyz/blog/img/sleep-sounds-basics.webp" type="image/webp" length="137044"/>
+    </item>
     <item>
       <title>Binaural Beats for Sleep and Focus: How to Choose the Right Frequency</title>
       <link>https://drmn.xyz/blog/binaural-beats-sleep-focus/</link>
