@@ -5,9 +5,17 @@
     <link>https://drmn.xyz/blog/</link>
     <description>Guides on white noise, sleep sounds, and focus audio for better rest and concentration.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Jul 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jul 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://drmn.xyz/blog/feed.xml" rel="self" type="application/rss+xml"/>
     
+    <item>
+      <title>Adaptive Soundscapes for Shift Workers: Align Audio to Your Clock</title>
+      <link>https://drmn.xyz/blog/adaptive-soundscapes-for-shift-workers/</link>
+      <guid isPermaLink="true">https://drmn.xyz/blog/adaptive-soundscapes-for-shift-workers/</guid>
+      <pubDate>Sun, 05 Jul 2026 12:00:00 GMT</pubDate>
+      <description>Shift workers can finally match their sound environment to irregular schedules. Adaptive soundscapes adjust timing and tone to support sleep and focus when the clock says otherwise.</description>
+      <enclosure url="https://drmn.xyz/blog/img/adaptive-soundscapes-for-shift-workers.webp" type="image/webp" length="36294"/>
+    </item>
     <item>
       <title>Understanding the Science Behind Sleep Sounds</title>
       <link>https://drmn.xyz/blog/sleep-sounds-basics/</link>
