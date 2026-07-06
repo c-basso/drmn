@@ -5,9 +5,17 @@
     <link>https://drmn.xyz/blog/</link>
     <description>Guides on white noise, sleep sounds, and focus audio for better rest and concentration.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Jul 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 06 Jul 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://drmn.xyz/blog/feed.xml" rel="self" type="application/rss+xml"/>
     
+    <item>
+      <title>Sleep Sounds Travel Hacks: Flying Rest Easy</title>
+      <link>https://drmn.xyz/blog/sleep-sounds-travel-hacks/</link>
+      <guid isPermaLink="true">https://drmn.xyz/blog/sleep-sounds-travel-hacks/</guid>
+      <pubDate>Mon, 06 Jul 2026 12:00:00 GMT</pubDate>
+      <description>Even on long flights, the right audio can drown out cabin noise and ease you into deep sleep. We test which soundscapes work best for travelers.</description>
+      <enclosure url="https://drmn.xyz/blog/img/sleep-sounds-travel-hacks.webp" type="image/webp" length="30394"/>
+    </item>
     <item>
       <title>Adaptive Soundscapes for Shift Workers: Align Audio to Your Clock</title>
       <link>https://drmn.xyz/blog/adaptive-soundscapes-for-shift-workers/</link>
