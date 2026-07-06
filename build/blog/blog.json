@@ -33,7 +33,13 @@
     "ai_chatgpt": "ChatGPT",
     "ai_perplexity": "Perplexity",
     "ai_claude": "Claude",
-    "ai_grok": "Grok"
+    "ai_grok": "Grok",
+    "by": "By",
+    "author_about_url": "/about.html",
+    "cta_title": "Try DRMN on iPhone",
+    "cta_text": "Free sleep sound machine with rain, fan, white noise, mixing, offline playback, and a sleep timer.",
+    "cta_button": "Download on the App Store",
+    "cta_aria_label": "Download DRMN free from the App Store"
   },
   "footer": {
     "blog_link": "Blog",

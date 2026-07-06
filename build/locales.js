@@ -53,10 +53,91 @@ function getOgLocale(lang) {
     return LOCALE_CONFIG[lang]?.ogLocale ?? 'en_US';
 }
 
-/** URL slug -> ISO 639-1 hreflang when they differ (e.g. /fil/ -> tl). */
+/** URL slug -> hreflang when they differ from the path slug (e.g. /fil/ -> tl, /pt/ -> pt-BR). */
 const HREFLANG_BY_SLUG = {
     fil: 'tl',
-    no: 'nb'
+    no: 'nb',
+    pt: 'pt-BR',
+    zh: 'zh-CN'
+};
+
+/** Native language names for the footer language switcher. */
+const NATIVE_NAMES = {
+    en: 'English',
+    ru: 'Русский',
+    es: 'Español',
+    fr: 'Français',
+    de: 'Deutsch',
+    it: 'Italiano',
+    pt: 'Português',
+    ja: '日本語',
+    ko: '한국어',
+    zh: '中文',
+    cs: 'Čeština',
+    da: 'Dansk',
+    el: 'Ελληνικά',
+    fi: 'Suomi',
+    fil: 'Filipino',
+    he: 'עברית',
+    hr: 'Hrvatski',
+    hu: 'Magyar',
+    id: 'Bahasa Indonesia',
+    ms: 'Bahasa Melayu',
+    nl: 'Nederlands',
+    no: 'Norsk',
+    pl: 'Polski',
+    ro: 'Română',
+    sk: 'Slovenčina',
+    sv: 'Svenska',
+    bg: 'Български',
+    sl: 'Slovenščina',
+    ca: 'Català',
+    hi: 'हिन्दी',
+    bn: 'বাংলা',
+    ml: 'മലയാളം',
+    th: 'ไทย',
+    tr: 'Türkçe',
+    uk: 'Українська',
+    vi: 'Tiếng Việt'
+};
+
+const LANGUAGE_LABELS = {
+    en: 'Language',
+    ru: 'Язык',
+    es: 'Idioma',
+    fr: 'Langue',
+    de: 'Sprache',
+    it: 'Lingua',
+    pt: 'Idioma',
+    ja: '言語',
+    ko: '언어',
+    zh: '语言',
+    cs: 'Jazyk',
+    da: 'Sprog',
+    el: 'Γλώσσα',
+    fi: 'Kieli',
+    fil: 'Wika',
+    he: 'שפה',
+    hr: 'Jezik',
+    hu: 'Nyelv',
+    id: 'Bahasa',
+    ms: 'Bahasa',
+    nl: 'Taal',
+    no: 'Språk',
+    pl: 'Język',
+    ro: 'Limbă',
+    sk: 'Jazyk',
+    sv: 'Språk',
+    bg: 'Език',
+    sl: 'Jezik',
+    ca: 'Idioma',
+    hi: 'भाषा',
+    bn: 'ভাষা',
+    ml: 'ഭാഷ',
+    th: 'ภาษา',
+    tr: 'Dil',
+    uk: 'Мова',
+    vi: 'Ngôn ngữ'
 };
 
 function getHreflangCode(slug) {
@@ -79,6 +160,14 @@ function buildOgLocaleMap(languages) {
     return Object.fromEntries(languages.map((lang) => [lang, getOgLocale(lang)]));
 }
 
+function getNativeName(slug) {
+    return NATIVE_NAMES[slug] ?? slug;
+}
+
+function getLanguageLabel(slug) {
+    return LANGUAGE_LABELS[slug] ?? 'Language';
+}
+
 module.exports = {
     LOCALE_CONFIG,
     ALL_LOCALE_CODES,
@@ -88,5 +177,7 @@ module.exports = {
     getHtmlLang,
     getHtmlDir,
     getFooterLastUpdatedConfig,
-    buildOgLocaleMap
+    buildOgLocaleMap,
+    getNativeName,
+    getLanguageLabel
 };

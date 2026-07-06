@@ -2,6 +2,8 @@
 // ChatGPT Search uses Bing — submit sitemap at https://www.bing.com/webmasters
 const GOOGLE_SITE_VERIFICATION = ''; // verified by DNS TXT record
 const MS_VALIDATE = 'E15B500A4986A32DDDF23064D5A94A0F';
+// Paste GA4 measurement ID (G-XXXXXXXXXX) to enable Google Analytics.
+const GA_MEASUREMENT_ID = '';
 
 const SITE_URL = 'https://drmn.xyz/';
 const DEFAULT_LANGUAGE = 'en';
@@ -20,11 +22,17 @@ const BLOG_POSTS_PER_PAGE = 10;
 
 const DEFAULT_OG_LOGO = `${SITE_URL}img/logo.webp`;
 
-const SOFTWARE_APPLICATION_AGGREGATE_RATING = {
-    '@type': 'AggregateRating',
-    ratingValue: '4.9',
-    ratingCount: '10'
+// Retired locale paths that should 301-redirect to the default site (no hreflang entry).
+const STALE_LOCALE_REDIRECTS = {
+    ta: SITE_URL
 };
+
+const FEATURED_BLOG_SLUGS = [
+    'drmn-vs-calm-sleep-sounds',
+    'bettersleep-alternative-iphone',
+    'best-white-noise-apps-iphone-compared',
+    'white-noise-for-sleep'
+];
 
 // Shipped locales are active; uncomment a line after adding build/<code>.json.
 const LANGUAGES = [
@@ -125,9 +133,24 @@ const YANDEX_METRIKA_SNIPPET = `
 
 `;
 
+function getGa4Snippet() {
+    if (!GA_MEASUREMENT_ID) {
+        return '';
+    }
+    return `  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '${GA_MEASUREMENT_ID}');
+  </script>`;
+}
+
 function getAnalyticsContext() {
     return {
-        yandex_metrika: YANDEX_METRIKA_SNIPPET
+        yandex_metrika: YANDEX_METRIKA_SNIPPET,
+        ga4: getGa4Snippet()
     };
 }
 
@@ -146,7 +169,9 @@ module.exports = {
     FOOTER_BLOG_URL,
     BLOG_POSTS_PER_PAGE,
     DEFAULT_OG_LOGO,
-    SOFTWARE_APPLICATION_AGGREGATE_RATING,
+    GA_MEASUREMENT_ID,
+    STALE_LOCALE_REDIRECTS,
+    FEATURED_BLOG_SLUGS,
     OG_LOCALE_BY_LANGUAGE,
     CANONICAL_URL_BY_LANGUAGE,
     EXPECTED_JSON_LD_TYPES,
@@ -156,5 +181,6 @@ module.exports = {
     INDEX_NOW_ENGINES,
     ADDITIONAL_URLS,
     YANDEX_METRIKA_SNIPPET,
+    getGa4Snippet,
     getAnalyticsContext
 };

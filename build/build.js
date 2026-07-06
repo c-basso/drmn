@@ -14,18 +14,21 @@ const {
     FOOTER_TERMS_URL,
     FOOTER_BLOG_URL,
     DEFAULT_OG_LOGO,
-    SOFTWARE_APPLICATION_AGGREGATE_RATING,
     OG_LOCALE_BY_LANGUAGE,
     CANONICAL_URL_BY_LANGUAGE,
+    STALE_LOCALE_REDIRECTS,
+    FEATURED_BLOG_SLUGS,
     getAnalyticsContext
 } = require('./constants');
 const {
     getHtmlLang,
     getHtmlDir,
-    getFooterLastUpdatedConfig
+    getFooterLastUpdatedConfig,
+    getNativeName,
+    getLanguageLabel
 } = require('./locales');
 const { renderTemplate } = require('./template-engine');
-const { buildBlog } = require('./blog/build-blog');
+const { buildBlog, loadPosts } = require('./blog/build-blog');
 const { generateSitemap } = require('./sitemap');
 
 const ROOT_DIR = path.join(__dirname, '..');
@@ -38,6 +41,15 @@ const BUILD_DATE_ISO = new Date(BUILD_TIMESTAMP).toISOString().slice(0, 10);
 const CURRENT_YEAR = new Date(BUILD_TIMESTAMP).getFullYear();
 
 const DEFAULT_SITE_NAME = 'DRMN';
+
+let cachedEnLocaleData = null;
+
+function getEnLocaleData() {
+    if (!cachedEnLocaleData) {
+        cachedEnLocaleData = readJsonFile(getJsonPath(DEFAULT_LANGUAGE));
+    }
+    return cachedEnLocaleData;
+}
 
 function writeUrlsFile(blogUrls = []) {
     const allUrls = [...URLS.map(({ url }) => url), ...blogUrls];
@@ -211,6 +223,10 @@ function normalizeMeta(data, lang) {
     data.meta.og_logo = data.meta.og_logo || DEFAULT_OG_LOGO;
     data.meta.og_site_name = data.meta.og_site_name || data.header?.app_name || DEFAULT_SITE_NAME;
     data.meta.og_locale = data.meta.og_locale || OG_LOCALE_BY_LANGUAGE[lang] || OG_LOCALE_BY_LANGUAGE.en;
+    data.meta.og_locale_alternates = URLS
+        .filter(({ slug }) => slug !== lang)
+        .map(({ slug }) => OG_LOCALE_BY_LANGUAGE[slug])
+        .filter(Boolean);
     data.meta.last_updated_iso = BUILD_DATE_ISO;
 
     if (GOOGLE_SITE_VERIFICATION) {
@@ -248,6 +264,62 @@ function normalizeFooter(data, lang) {
     data.footer.last_updated_iso = BUILD_DATE_ISO;
 }
 
+function normalizeBlogPromo(data) {
+    const enPromo = getEnLocaleData().blog_promo || {};
+    const promo = { ...enPromo, ...(data.blog_promo || {}) };
+    promo.url = FOOTER_BLOG_URL;
+    const postsBySlug = new Map(loadPosts().map((post) => [post.slug, post]));
+    promo.featured = FEATURED_BLOG_SLUGS.map((slug) => {
+        const post = postsBySlug.get(slug);
+        if (!post) {
+            return null;
+        }
+        return {
+            title: post.title,
+            url: `/blog/${slug}/`
+        };
+    }).filter(Boolean);
+    data.blog_promo = promo;
+}
+
+function normalizeLanguageSwitcher(data, lang) {
+    data.language_switcher = {
+        label: getLanguageLabel(lang),
+        locales: URLS.map(({ slug, url, lang: hreflang }) => ({
+            slug,
+            url,
+            hreflang,
+            name: getNativeName(slug),
+            is_current: slug === lang
+        }))
+    };
+}
+
+function writeStaleLocaleRedirects() {
+    for (const [slug, targetUrl] of Object.entries(STALE_LOCALE_REDIRECTS)) {
+        const dir = path.join(ROOT_DIR, slug);
+        ensureDirectoryExists(dir);
+        const html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="${targetUrl}">
+  <meta http-equiv="refresh" content="0; url=${targetUrl}">
+  <title>Redirecting…</title>
+</head>
+<body>
+  <p><a href="${targetUrl}">Continue to DRMN</a></p>
+</body>
+</html>
+`;
+        const outputPath = path.join(dir, 'index.html');
+        fs.writeFileSync(outputPath, html, 'utf8');
+        console.log(`✅ Wrote stale-locale redirect: ${slug}/index.html → ${targetUrl}`);
+    }
+}
+
 function ensureSeoShape(data) {
     data.seo = data.seo || {};
     data.seo.structured_data = data.seo.structured_data || {};
@@ -261,7 +333,7 @@ function buildSoftwareApplicationStructuredData(data) {
     app.url = data.meta?.canonical;
     app.downloadUrl = APP_STORE_URL;
     app.dateModified = BUILD_DATE_ISO;
-    app.aggregateRating = { ...SOFTWARE_APPLICATION_AGGREGATE_RATING };
+    delete app.aggregateRating;
     if (app.offers && typeof app.offers === 'object') {
         app.offers.url = APP_STORE_URL;
     }
@@ -406,6 +478,8 @@ function preparePageData(data, lang) {
     normalizeMeta(data, lang);
     normalizeHeader(data);
     normalizeFooter(data, lang);
+    normalizeBlogPromo(data);
+    normalizeLanguageSwitcher(data, lang);
     ensureSeoShape(data);
     data.analytics = getAnalyticsContext();
     buildSoftwareApplicationStructuredData(data);
@@ -452,6 +526,8 @@ async function main() {
             process.exit(1);
         }
     }
+
+    writeStaleLocaleRedirects();
 
     let blogUrls = [];
     try {

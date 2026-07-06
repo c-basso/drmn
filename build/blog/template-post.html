@@ -66,12 +66,19 @@
           <span>{{post.readingTimeMinutes}} {{labels.min_read}}</span>
         </div>
         <h1>{{post.title}}</h1>
+        <p class="article-byline">{{labels.by}} <a href="{{labels.author_about_url}}">{{post.author}}</a></p>
         <img class="hero-image" src="{{post.hero.url}}" alt="{{post.hero.alt}}" width="{{post.hero.width}}" height="{{post.hero.height}}" fetchpriority="high">
       </header>
 
       <div class="article-content">
         {{post.content}}
       </div>
+
+      <aside class="post-cta" aria-labelledby="post-cta-heading">
+        <h2 id="post-cta-heading">{{labels.cta_title}}</h2>
+        <p>{{labels.cta_text}}</p>
+        <a class="post-cta-btn" href="{{cta.url}}" aria-label="{{labels.cta_aria_label}}" rel="noopener noreferrer">{{labels.cta_button}}</a>
+      </aside>
 
       <div class="ai-share" role="group" aria-labelledby="ai-share-heading">
         <span class="ai-share-label" id="ai-share-heading">{{labels.summarize_with}}</span>
@@ -159,5 +166,6 @@
   </script>
   {{/if}}
   {{analytics.yandex_metrika}}
+  {{analytics.ga4}}
 </body>
 </html>

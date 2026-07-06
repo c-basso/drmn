@@ -292,6 +292,11 @@
       ]
     }
   },
+  "blog_promo": {
+    "title": "Sleep & Focus Guides",
+    "intro": "Science-backed articles on white noise, rain sounds, and sound masking—written to help you pick the right audio for sleep and concentration.",
+    "all_link_text": "Browse all articles"
+  },
   "whats_new": {
     "title": "What's New",
     "description": "Recent updates and improvements to DRMN",
@@ -299,7 +304,9 @@
       {
         "date": "July 2026",
         "title": "GEO & Blog: Competitor Comparison Guides",
-        "description": "New blog articles comparing DRMN vs Calm, BetterSleep alternatives, and the best white noise apps for iPhone—with FAQ sections for easier reference."
+        "description": "New blog articles comparing DRMN vs Calm, BetterSleep alternatives, and the best white noise apps for iPhone—with FAQ sections for easier reference.",
+        "link_url": "/blog/",
+        "link_text": "Read the blog"
       },
       {
         "date": "January 2025",

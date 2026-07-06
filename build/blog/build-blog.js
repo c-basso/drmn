@@ -7,6 +7,7 @@ const {
     SITE_URL,
     DEFAULT_OG_LOGO,
     AUTHOR_URL,
+    APP_STORE_URL,
     FOOTER_PRIVACY_URL,
     FOOTER_TERMS_URL,
     FOOTER_BLOG_URL,
@@ -260,7 +261,7 @@ function buildBlogPostingSchema(post, siteName) {
         author: {
             '@type': 'Person',
             name: post.author || 'Vladimir Ivakhnenko',
-            url: AUTHOR_URL
+            url: `${SITE_URL.replace(/\/?$/, '/')}about.html`
         },
         publisher: {
             '@type': 'Organization',
@@ -443,6 +444,9 @@ function preparePostContext(post, blogConfig, buildTimestamp) {
         },
         site_url: SITE_URL.replace(/\/?$/, '/'),
         feed_url: '/blog/feed.xml',
+        cta: {
+            url: APP_STORE_URL
+        },
         analytics: getAnalyticsContext()
     };
 }

@@ -58,6 +58,9 @@
   <meta property="og:url" content="{{meta.og_url}}">
   <meta property="og:site_name" content="{{header.app_name}}">
   <meta property="og:locale" content="{{meta.og_locale}}">
+  {{#each meta.og_locale_alternates as |alt|}}
+  <meta property="og:locale:alternate" content="{{alt}}">
+  {{/each}}
   
   <!-- Twitter Cards -->
   <meta name="twitter:card" content="{{meta.twitter_card}}">
@@ -305,6 +308,26 @@
     </section>
     {{/if}}
 
+    <!-- Blog guides (internal linking for SEO) -->
+    {{#if blog_promo.title}}
+    <section class="blog-promo-section" aria-labelledby="blog-promo-heading">
+      <div class="container-narrow">
+        <h2 id="blog-promo-heading">{{blog_promo.title}}</h2>
+        {{#if blog_promo.intro}}
+        <p class="blog-promo-intro">{{blog_promo.intro}}</p>
+        {{/if}}
+        {{#if blog_promo.featured}}
+        <ul class="blog-promo-list">
+          {{#each blog_promo.featured as |article|}}
+          <li><a href="{{article.url}}">{{article.title}}</a></li>
+          {{/each}}
+        </ul>
+        {{/if}}
+        <p class="blog-promo-cta"><a href="{{blog_promo.url}}" class="blog-promo-link">{{blog_promo.all_link_text}}</a></p>
+      </div>
+    </section>
+    {{/if}}
+
     <!-- What's New Section -->
     {{#if whats_new.title}}
     <section class="content-section whats-new-section" aria-labelledby="whats-new-heading">
@@ -319,6 +342,9 @@
             <div class="whats-new-date">{{item.date}}</div>
             <h3>{{item.title}}</h3>
             <p>{{item.description}}</p>
+            {{#if item.link_url}}
+            <p class="whats-new-link"><a href="{{item.link_url}}">{{item.link_text}}</a></p>
+            {{/if}}
           </div>
           {{/each}}
         </div>
@@ -384,6 +410,19 @@
         <a href="{{footer.privacy_url}}">{{footer.privacy_link}}</a>
         <a href="{{footer.terms_url}}">{{footer.terms_link}}</a>
       </div>
+      <div class="language-switcher">
+        <label for="lang-select" class="visually-hidden">{{language_switcher.label}}</label>
+        <select id="lang-select" class="lang-select" aria-label="{{language_switcher.label}}">
+          {{#each language_switcher.locales as |loc|}}
+          <option value="{{loc.url}}"{{#if loc.is_current}} selected{{/if}}>{{loc.name}}</option>
+          {{/each}}
+        </select>
+      </div>
+      <script>
+        document.getElementById('lang-select')?.addEventListener('change', function () {
+          if (this.value) { window.location.href = this.value; }
+        });
+      </script>
       <div class="footer-badges">
         <a href="https://fazier.com/launches/drmn.xyz" target="_blank" rel="noopener">
           <img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=dark" width="120" alt="{{footer.fazier_badge_alt}}">
@@ -424,6 +463,7 @@
   </script>
 
   {{analytics.yandex_metrika}}
+  {{analytics.ga4}}
 
 
 </body>

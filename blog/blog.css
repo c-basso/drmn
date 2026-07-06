@@ -135,6 +135,47 @@
       background: rgba(107, 127, 215, 0.45);
       flex-shrink: 0;
     }
+    .article-byline {
+      color: var(--color-text-muted);
+      font-size: 0.9rem;
+      margin: -0.5rem 0 1.25rem;
+      max-width: var(--max-width);
+    }
+    .article-byline a {
+      color: var(--color-accent-light);
+      text-decoration: none;
+    }
+    .article-byline a:hover { text-decoration: underline; }
+    .post-cta {
+      margin: 2.5rem 0;
+      padding: 1.75rem;
+      border-radius: 12px;
+      background: linear-gradient(135deg, rgba(107, 127, 215, 0.12), rgba(107, 127, 215, 0.04));
+      border: 1px solid rgba(107, 127, 215, 0.2);
+      max-width: var(--max-width);
+    }
+    .post-cta h2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.25rem;
+      margin: 0 0 0.75rem;
+      color: var(--color-text-primary);
+    }
+    .post-cta p {
+      color: var(--color-text-secondary);
+      margin: 0 0 1.25rem;
+      line-height: 1.6;
+    }
+    .post-cta-btn {
+      display: inline-block;
+      padding: 0.75rem 1.25rem;
+      border-radius: 8px;
+      background: var(--color-accent);
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.2s ease;
+    }
+    .post-cta-btn:hover { background: var(--color-accent-light); }
     h1 {
       font-family: 'Outfit', sans-serif;
       font-size: clamp(1.75rem, 4vw, 2.5rem);
