@@ -70,17 +70,7 @@
         <img class="hero-image" src="{{post.hero.url}}" alt="{{post.hero.alt}}" width="{{post.hero.width}}" height="{{post.hero.height}}" fetchpriority="high">
       </header>
 
-      <div class="article-content">
-        {{post.content}}
-      </div>
-
-      <aside class="post-cta" aria-labelledby="post-cta-heading">
-        <h2 id="post-cta-heading">{{labels.cta_title}}</h2>
-        <p>{{labels.cta_text}}</p>
-        <a class="post-cta-btn" href="{{cta.url}}" aria-label="{{labels.cta_aria_label}}" rel="noopener noreferrer">{{labels.cta_button}}</a>
-      </aside>
-
-      <div class="ai-share" role="group" aria-labelledby="ai-share-heading">
+      <div class="ai-share ai-share--intro" role="group" aria-labelledby="ai-share-heading">
         <span class="ai-share-label" id="ai-share-heading">{{labels.summarize_with}}</span>
         <div class="ai-share-buttons">
           <a class="ai-share-btn" href="{{post.ai_share.chatgpt}}" target="_blank" rel="nofollow noopener noreferrer">
@@ -101,6 +91,16 @@
           </a>
         </div>
       </div>
+
+      <div class="article-content">
+        {{post.content}}
+      </div>
+
+      <aside class="post-cta" aria-labelledby="post-cta-heading">
+        <h2 id="post-cta-heading">{{labels.cta_title}}</h2>
+        <p>{{labels.cta_text}}</p>
+        <a class="post-cta-btn" href="{{cta.url}}" aria-label="{{labels.cta_aria_label}}" rel="noopener noreferrer">{{labels.cta_button}}</a>
+      </aside>
 
       {{#if post.tags}}
       <div class="tags" aria-label="{{labels.tags}}">
