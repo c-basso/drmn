@@ -5,19 +5,40 @@ The blog promotes the app indirectly — practical science-backed guides, not sa
 
 const STYLE_RULES = `Writing style (match existing DRMN blog posts):
 - Expert, calm, practical tone — like a good sleep-science explainer, not marketing hype.
-- Second person ("you") where natural; short paragraphs; concrete numbers when useful (e.g. 40–50 dB, 30–60 minutes).
+- Second person ("you") where natural; short paragraphs (2–4 sentences); concrete numbers when useful (e.g. 40–50 dB).
 - ~1,200–1,800 words in the HTML body (roughly 7–9 minute read).
-- Use em dashes sparingly (—) like existing posts.
+- Use em dashes sparingly (max ~1 per 300 words). Prefer commas or periods.
 - American English spelling.
+- Sound human: avoid AI tells (unpack, delve, in conclusion, surprisingly, game-changer, in today's, at its core).
+- Never insert non-English characters, gibberish tokens, or hallucinated words.
+- Do not invent precise statistics (e.g. "15% more deep sleep") without hedging ("some studies suggest", "evidence is mixed").
+- Vary vocabulary — do not repeat the primary keyword in every paragraph (density under ~3.5%).
+
+SEO rules:
+- One clear search intent per post; title + description + H2s must align.
+- Meta description: 150–160 characters, includes primary keyword, no hype.
+- Title ≤73 characters (blog adds " | DRMN Blog").
+- Differentiate from existing posts — no cannibalization of the same angle.
+- Include 2–4 internal links: href="/blog/slug/" with trailing slash.
+- Include <h2>Key takeaways</h2> with 4–5 bullets.
+
+GEO rules (AI search / citations):
+- First paragraph must define the topic in 1–2 clear sentences (entity clarity).
+- Add quotable, standalone facts — specific numbers where honest, otherwise qualitative.
+- FAQ is required (see JSON schema) — questions phrased how users ask ChatGPT/Perplexity.
+- Use lists and tables for comparisons where helpful.
+- Neutral, factual tone — not sales copy.
 
 HTML content rules:
 - Return ONLY valid HTML fragments for the "content" field — no markdown.
-- Allowed tags: <p>, <h2>, <h3>, <ul>, <ol>, <li>, <strong>, <em>, <blockquote>, <a>.
+- Allowed tags: <p>, <h2>, <h3>, <ul>, <ol>, <li>, <strong>, <em>, <blockquote>, <a>, and for comparisons <table>, <thead>, <tbody>, <tr>, <th>, <td>.
 - Do NOT use <h1>. Start with 1–2 intro <p> paragraphs, then <h2> sections.
+- Do NOT add custom HTML attributes (no gru=, id=, class= on body tags).
+- Every <ul>/<ol> must contain only proper <li> children — no loose text in lists.
 - Typical structure:
-  1. Hook intro (2 short paragraphs)
+  1. Hook intro with clear definition (2 short paragraphs)
   2. Why it works (science/psychology, with <h2>)
-  3. Comparisons or "what to choose" (<h2>, often with <ul>)
+  3. Comparisons or "what to choose" (<h2>, often with <ul> or <table>)
   4. What to avoid (<h2>)
   5. Practical setup: volume, timing, devices (<h2>)
   6. One <blockquote> with a medical disclaimer (sleep/focus audio supports habits; not a substitute for clinical care)
@@ -43,6 +64,12 @@ const JSON_METADATA_SCHEMA = `Respond with a single JSON object only — no mark
   },
   "sectionOutline": [
     "Short label for each planned h2 section in order (8–10 sections including Key takeaways)"
+  ],
+  "faq": [
+    {
+      "question": "Natural-language question users ask AI search (include primary keyword)",
+      "answer": "Direct 2–4 sentence answer — quotable, factual, no hype"
+    }
   ]
 }`;
 
@@ -69,7 +96,7 @@ ${existingList}
 
 Plan metadata only — do NOT write article body HTML yet.
 
-Every field in the schema is required — especially "unsplashSearchQuery" and "hero.alt".
+Every field in the schema is required — especially "unsplashSearchQuery", "hero.alt", and "faq" (4–6 items).
 
 ${JSON_METADATA_SCHEMA}`;
 }
@@ -99,6 +126,9 @@ Tags: ${(metadata.tags || []).join(', ')}
 
 Planned sections:
 ${outline}
+
+Planned FAQ (${(metadata.faq || []).length} items — also rendered as FAQPage schema):
+${(metadata.faq || []).map((f) => `- Q: ${f.question}`).join('\n') || '(none)'}
 
 ${STYLE_RULES}
 

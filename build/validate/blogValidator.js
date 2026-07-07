@@ -9,6 +9,7 @@ const {
 const { getBlogBuildManifest } = require('../blog/build-blog');
 const { extractDocumentTitle } = require('./seoValidator');
 const { extractMetaTags } = require('./opengraphValidator');
+const { auditBlogPost } = require('./blogPostContentQuality');
 const {
     extractJsonLdBlocks,
     parseJsonLdBlock,
@@ -259,6 +260,38 @@ function validateBlogRss(feedPath, posts) {
     return { ok: errors.length === 0, errors, warnings };
 }
 
+function validateBlogPostSources(projectRoot, posts) {
+    const errors = [];
+    const warnings = [];
+    const postsDir = path.join(projectRoot, 'build', 'blog', 'posts');
+
+    for (const post of posts) {
+        const filePath = path.join(postsDir, `${post.slug}.json`);
+        if (!fs.existsSync(filePath)) {
+            errors.push(`missing source JSON for post: ${post.slug}`);
+            continue;
+        }
+
+        const source = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+        const audit = auditBlogPost(source, {
+            otherPosts: posts.map((p) => ({ slug: p.slug, title: p.title }))
+        });
+
+        if (audit.critical.length > 0) {
+            errors.push(`post "${post.slug}": ${audit.critical.join('; ')}`);
+        }
+
+        for (const item of audit.quality) {
+            warnings.push(`post "${post.slug}" quality: ${item}`);
+        }
+        for (const item of audit.warnings) {
+            warnings.push(`post "${post.slug}": ${item}`);
+        }
+    }
+
+    return { ok: errors.length === 0, errors, warnings };
+}
+
 function validateBlogUrlsInSitemap(projectRoot, expectedUrls) {
     const blogSitemapPath = path.join(projectRoot, 'sitemaps', 'blog.xml');
     const errors = [];
@@ -333,6 +366,14 @@ async function validateBlog() {
         rssResult.warnings.forEach((warning) => console.log(`    ⚠️  ${warning}`));
     }
 
+    const contentQualityResult = validateBlogPostSources(projectRoot, manifest.posts);
+    if (!contentQualityResult.ok) {
+        allOk = false;
+    } else {
+        console.log(`  blog/post-sources: OK (${manifest.posts.length} JSON file(s))`);
+        contentQualityResult.warnings.forEach((warning) => console.log(`    ⚠️  ${warning}`));
+    }
+
     const sitemapResult = validateBlogUrlsInSitemap(projectRoot, manifest.urls);
     if (!sitemapResult.ok) {
         allOk = false;
@@ -358,6 +399,10 @@ async function validateBlog() {
             console.error('\n- sitemaps/blog.xml');
             sitemapResult.errors.forEach((error) => console.error(`  ❌ ${error}`));
         }
+        if (!contentQualityResult.ok) {
+            console.error('\n- blog post source JSON');
+            contentQualityResult.errors.forEach((error) => console.error(`  ❌ ${error}`));
+        }
     } else {
         console.log('\n✅ Blog validation OK: pages, RSS, and sitemap');
     }
@@ -366,7 +411,8 @@ async function validateBlog() {
         ok: allOk,
         pageResults,
         rssResult,
-        sitemapResult
+        sitemapResult,
+        contentQualityResult
     };
 }
 

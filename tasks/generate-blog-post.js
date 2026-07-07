@@ -8,6 +8,7 @@ const {
   buildBlogPostMetadataPrompt,
   buildBlogPostContentPrompt,
 } = require('./blog-post-prompt');
+const { auditBlogPost } = require('../build/validate/blogPostContentQuality');
 const { chatCompletion, DEFAULT_MODEL } = require('./openrouter-client');
 const { fetchBackgroundPhoto } = require('./unsplash-photos');
 
@@ -183,6 +184,17 @@ function normalizeMetadata(metadata) {
       : [];
   }
 
+  if (!Array.isArray(normalized.faq)) {
+    normalized.faq = [];
+  } else {
+    normalized.faq = normalized.faq
+      .filter((item) => item?.question && item?.answer)
+      .map((item) => ({
+        question: String(item.question).trim(),
+        answer: String(item.answer).trim(),
+      }));
+  }
+
   return normalized;
 }
 
@@ -232,13 +244,6 @@ function validateGeneratedPost(generated, existingPosts) {
     );
   }
 
-  const blogTitleMax = 73;
-  if (generated.title.length > blogTitleMax) {
-    throw new Error(
-      `Title is ${generated.title.length} characters — max ${blogTitleMax} before " | DRMN Blog" suffix (85 total)`,
-    );
-  }
-
   if (!generated.hero?.alt?.trim()) {
     throw new Error('Generated post is missing hero.alt');
   }
@@ -247,14 +252,16 @@ function validateGeneratedPost(generated, existingPosts) {
     throw new Error('Generated post must include at least 3 tags');
   }
 
-  if (/<h1[\s>]/i.test(generated.content)) {
-    throw new Error('Content must not contain <h1> tags');
-  }
-
   if (!isValidArticleHtml(generated.content)) {
     throw new Error(
       'Generated content is not valid HTML — model may have returned a safety stub or non-HTML text',
     );
+  }
+
+  const audit = auditBlogPost(generated, { strict: true, otherPosts: existingPosts });
+  if (!audit.ok) {
+    const details = [...audit.critical, ...audit.quality, ...audit.errors].join('; ');
+    throw new Error(`Generated post failed SEO/quality checks: ${details}`);
   }
 }
 
@@ -289,6 +296,7 @@ function buildPostRecord(generated, imageBaseName, photo) {
     tags: generated.tags.map((tag) => String(tag).trim().toLowerCase()).filter(Boolean),
     readingTimeMinutes: Number(generated.readingTimeMinutes) || 7,
     hero,
+    faq: Array.isArray(generated.faq) ? generated.faq : [],
     content: generated.content.trim(),
   };
 }
@@ -338,6 +346,7 @@ async function generatePostDraft(topic, existingPosts) {
   const { sectionOutline: _outline, ...meta } = metadata;
   return {
     ...meta,
+    faq: metadata.faq || [],
     content: stripHtmlFences(contentResult.content),
   };
 }
