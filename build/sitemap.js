@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const { SITE_URL, URLS, DEFAULT_LANGUAGE, BLOG_POSTS_PER_PAGE, ADDITIONAL_URLS } = require('./constants');
-const { loadPosts, collectBlogUrls } = require('./blog/build-blog');
+const { loadPosts, collectBlogSitemapEntries } = require('./blog/build-blog');
 
 const SITEMAP_CHILD_DIR = 'sitemaps';
 const SITEMAP_INDEX_FILE = 'sitemap.xml';
@@ -12,14 +12,14 @@ const SITEMAP_CHILD_FILES = {
     blog: 'blog.xml'
 };
 
-function getBlogSitemapUrls(siteOrigin) {
+function getBlogSitemapEntries(siteOrigin) {
     try {
         const posts = loadPosts();
         if (posts.length === 0) {
             return [];
         }
         const totalPages = Math.max(1, Math.ceil(posts.length / BLOG_POSTS_PER_PAGE));
-        return collectBlogUrls(posts.map((post) => ({
+        return collectBlogSitemapEntries(posts.map((post) => ({
             ...post,
             canonical: `${siteOrigin}/blog/${post.slug}/`
         })), totalPages);
@@ -27,6 +27,10 @@ function getBlogSitemapUrls(siteOrigin) {
         console.warn(`Warning: blog URLs omitted from sitemap (${error.message})`);
         return [];
     }
+}
+
+function getBlogSitemapUrls(siteOrigin) {
+    return getBlogSitemapEntries(siteOrigin).map(({ loc }) => loc);
 }
 
 function urlsetOpen(withHreflang) {
@@ -100,9 +104,9 @@ function buildLegalSitemap(siteOrigin, lastmod) {
     return lines.join('\n') + '\n';
 }
 
-function buildBlogSitemap(blogUrls, lastmod) {
+function buildBlogSitemap(blogEntries) {
     const lines = urlsetOpen(false);
-    for (const loc of blogUrls) {
+    for (const { loc, lastmod } of blogEntries) {
         const isFeed = loc.endsWith('feed.xml');
         lines.push(...simpleUrlEntry(loc, lastmod, isFeed ? '0.4' : '0.8'));
     }
@@ -110,16 +114,16 @@ function buildBlogSitemap(blogUrls, lastmod) {
     return lines.join('\n') + '\n';
 }
 
-function buildSitemapIndex(childSitemaps, lastmod) {
+function buildSitemapIndex(childSitemaps, childLastmods) {
     const lines = [
         '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>',
         '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
         '  '
     ];
-    for (const loc of childSitemaps) {
+    for (const [index, loc] of childSitemaps.entries()) {
         lines.push('  <sitemap>');
         lines.push(`    <loc>${loc}</loc>`);
-        lines.push(`    <lastmod>${lastmod}</lastmod>`);
+        lines.push(`    <lastmod>${childLastmods[index]}</lastmod>`);
         lines.push('  </sitemap>');
         lines.push('');
     }
@@ -139,26 +143,34 @@ function generateSitemap({ projectRoot = path.join(__dirname, '..') } = {}) {
 
     const lastmod = new Date().toISOString().slice(0, 10);
     const siteOrigin = SITE_URL.replace(/\/$/, '');
-    const blogUrls = getBlogSitemapUrls(siteOrigin);
+    const blogEntries = getBlogSitemapEntries(siteOrigin);
+    const blogUrls = blogEntries.map(({ loc }) => loc);
 
     const childSitemapUrls = [];
+    const childSitemapLastmods = [];
     const writtenChildFiles = [];
 
     const pagesPath = path.join(childDir, SITEMAP_CHILD_FILES.pages);
     writeFileEnsuringDir(pagesPath, buildPagesSitemap(lastmod));
     childSitemapUrls.push(`${SITE_URL}${SITEMAP_CHILD_DIR}/${SITEMAP_CHILD_FILES.pages}`);
+    childSitemapLastmods.push(lastmod);
     writtenChildFiles.push({ name: SITEMAP_CHILD_FILES.pages, urlCount: URLS.length });
 
     const legalPath = path.join(childDir, SITEMAP_CHILD_FILES.legal);
     writeFileEnsuringDir(legalPath, buildLegalSitemap(siteOrigin, lastmod));
     childSitemapUrls.push(`${SITE_URL}${SITEMAP_CHILD_DIR}/${SITEMAP_CHILD_FILES.legal}`);
+    childSitemapLastmods.push(lastmod);
     writtenChildFiles.push({ name: SITEMAP_CHILD_FILES.legal, urlCount: 3 + ADDITIONAL_URLS.filter((url) => url.startsWith(siteOrigin)).length });
 
-    if (blogUrls.length > 0) {
+    if (blogEntries.length > 0) {
         const blogPath = path.join(childDir, SITEMAP_CHILD_FILES.blog);
-        writeFileEnsuringDir(blogPath, buildBlogSitemap(blogUrls, lastmod));
+        const blogLastmod = blogEntries
+            .map(({ lastmod: entryLastmod }) => entryLastmod)
+            .reduce((max, entryLastmod) => (entryLastmod > max ? entryLastmod : max));
+        writeFileEnsuringDir(blogPath, buildBlogSitemap(blogEntries));
         childSitemapUrls.push(`${SITE_URL}${SITEMAP_CHILD_DIR}/${SITEMAP_CHILD_FILES.blog}`);
-        writtenChildFiles.push({ name: SITEMAP_CHILD_FILES.blog, urlCount: blogUrls.length });
+        childSitemapLastmods.push(blogLastmod);
+        writtenChildFiles.push({ name: SITEMAP_CHILD_FILES.blog, urlCount: blogEntries.length });
     } else {
         const staleBlogPath = path.join(childDir, SITEMAP_CHILD_FILES.blog);
         if (fs.existsSync(staleBlogPath)) {
@@ -166,7 +178,11 @@ function generateSitemap({ projectRoot = path.join(__dirname, '..') } = {}) {
         }
     }
 
-    fs.writeFileSync(indexPath, buildSitemapIndex(childSitemapUrls, lastmod), 'utf8');
+    fs.writeFileSync(
+        indexPath,
+        buildSitemapIndex(childSitemapUrls, childSitemapLastmods),
+        'utf8'
+    );
 
     console.log(`✅ Successfully built ${SITEMAP_INDEX_FILE} (sitemap index)`);
     console.log(`📁 Output saved to: ${indexPath}`);
@@ -201,6 +217,7 @@ if (require.main === module) {
 
 module.exports = {
     generateSitemap,
+    getBlogSitemapEntries,
     getBlogSitemapUrls,
     SITEMAP_CHILD_DIR,
     SITEMAP_INDEX_FILE,

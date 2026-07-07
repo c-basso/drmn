@@ -610,18 +610,56 @@ function writeRssFeed(posts, buildDateIso) {
     console.log('✅ Successfully built blog/feed.xml');
 }
 
+function postLastmod(post) {
+    return String(post.dateModified || post.datePublished).slice(0, 10);
+}
+
+function maxLastmod(dates) {
+    if (dates.length === 0) {
+        throw new Error('maxLastmod requires at least one date');
+    }
+    return dates.reduce((max, date) => (date > max ? date : max), dates[0]);
+}
+
 function collectBlogUrls(posts, totalPages) {
-    const urls = [absoluteBlogUrl('blog/'), absoluteBlogUrl('blog/feed.xml').replace(/\/$/, '')];
+    return collectBlogSitemapEntries(posts, totalPages).map(({ loc }) => loc);
+}
+
+function collectBlogSitemapEntries(posts, totalPages) {
+    const entries = [];
+    const postsWithLastmod = posts.map((post) => ({
+        ...post,
+        lastmod: postLastmod(post)
+    }));
+    const allLastmods = postsWithLastmod.map((post) => post.lastmod);
+
+    const pageOnePosts = postsWithLastmod.slice(0, BLOG_POSTS_PER_PAGE);
+    entries.push({
+        loc: absoluteBlogUrl('blog/'),
+        lastmod: maxLastmod(pageOnePosts.map((post) => post.lastmod))
+    });
+    entries.push({
+        loc: absoluteBlogUrl('blog/feed.xml').replace(/\/$/, ''),
+        lastmod: maxLastmod(allLastmods)
+    });
 
     for (let page = 2; page <= totalPages; page += 1) {
-        urls.push(absoluteBlogUrl(`blog/page/${page}/`));
+        const start = (page - 1) * BLOG_POSTS_PER_PAGE;
+        const pagePosts = postsWithLastmod.slice(start, start + BLOG_POSTS_PER_PAGE);
+        entries.push({
+            loc: absoluteBlogUrl(`blog/page/${page}/`),
+            lastmod: maxLastmod(pagePosts.map((post) => post.lastmod))
+        });
     }
 
-    for (const post of posts) {
-        urls.push(post.canonical);
+    for (const post of postsWithLastmod) {
+        entries.push({
+            loc: post.canonical,
+            lastmod: post.lastmod
+        });
     }
 
-    return urls;
+    return entries;
 }
 
 async function buildBlog({ buildTimestamp, buildDateIso, currentYear }) {
@@ -691,6 +729,8 @@ module.exports = {
     buildBlog,
     loadPosts,
     collectBlogUrls,
+    collectBlogSitemapEntries,
+    postLastmod,
     getBlogBuildManifest
 };
 
