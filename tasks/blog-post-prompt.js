@@ -74,16 +74,42 @@ const JSON_METADATA_SCHEMA = `Respond with a single JSON object only — no mark
 }`;
 
 /**
- * @param {{ topic?: string, existingPosts: Array<{ slug: string, title: string }> }}
+ * @param {{
+ *   topic?: string,
+ *   keywordTopic?: object,
+ *   existingPosts: Array<{ slug: string, title: string }>,
+ *   formatTopicForPrompt?: (topic: object) => string,
+ * }}
  */
-function buildBlogPostMetadataPrompt({ topic, existingPosts }) {
+function buildBlogPostMetadataPrompt({
+  topic,
+  keywordTopic,
+  existingPosts,
+  formatTopicForPrompt,
+}) {
   const existingList = existingPosts.length
     ? existingPosts.map((p) => `- ${p.slug}: ${p.title}`).join('\n')
     : '(none yet)';
 
-  const topicInstruction = topic
-    ? `Write a new blog article about: ${topic}`
-    : `Pick ONE fresh article topic for the DRMN blog about sleep sounds, focus audio, white/pink/brown noise, nature sounds, sound masking, or sleep hygiene. Do NOT duplicate any existing slug or angle.`;
+  let topicInstruction;
+  if (topic) {
+    topicInstruction = `Write a new blog article about: ${topic}`;
+    if (keywordTopic && formatTopicForPrompt) {
+      topicInstruction += `\n\n${formatTopicForPrompt(keywordTopic)}`;
+    }
+  } else if (keywordTopic) {
+    topicInstruction = `Write a new blog article for this planned editorial topic:\n${keywordTopic.topicPrompt || keywordTopic.primaryKeyword}`;
+    if (formatTopicForPrompt) {
+      topicInstruction += `\n\n${formatTopicForPrompt(keywordTopic)}`;
+    }
+  } else {
+    topicInstruction =
+      'Pick ONE fresh article topic for the DRMN blog about sleep sounds, focus audio, white/pink/brown noise, nature sounds, sound masking, or sleep hygiene. Do NOT duplicate any existing slug or angle.';
+  }
+
+  const primaryKeywordRule = keywordTopic?.primaryKeyword
+    ? `\n- Primary keyword "${keywordTopic.primaryKeyword}" must appear in title, description, first paragraph, and at least one FAQ question.`
+  : '';
 
   return `You are an editorial planner for the DRMN blog.
 
@@ -96,7 +122,7 @@ ${existingList}
 
 Plan metadata only — do NOT write article body HTML yet.
 
-Every field in the schema is required — especially "unsplashSearchQuery", "hero.alt", and "faq" (4–6 items).
+Every field in the schema is required — especially "unsplashSearchQuery", "hero.alt", and "faq" (4–6 items).${primaryKeywordRule}
 
 ${JSON_METADATA_SCHEMA}`;
 }
@@ -104,8 +130,9 @@ ${JSON_METADATA_SCHEMA}`;
 /**
  * @param {object} metadata
  * @param {Array<{ slug: string, title: string }>} existingPosts
+ * @param {object} [keywordTopic]
  */
-function buildBlogPostContentPrompt(metadata, existingPosts) {
+function buildBlogPostContentPrompt(metadata, existingPosts, keywordTopic) {
   const existingList = existingPosts
     .map((p) => `- /blog/${p.slug}/ — ${p.title}`)
     .join('\n');
@@ -123,6 +150,8 @@ Write the full article HTML body for this planned post:
 Title: ${metadata.title}
 Slug: ${metadata.slug}
 Tags: ${(metadata.tags || []).join(', ')}
+${keywordTopic?.primaryKeyword ? `Primary keyword: ${keywordTopic.primaryKeyword}` : ''}
+${keywordTopic?.secondaryKeywords?.length ? `Secondary keywords: ${keywordTopic.secondaryKeywords.join(', ')}` : ''}
 
 Planned sections:
 ${outline}

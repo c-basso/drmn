@@ -1,0 +1,439 @@
+{
+  "version": 1,
+  "source": "Google Trends related queries",
+  "sourceFile": "relatedQueries.csv",
+  "updatedAt": "2026-07-07",
+  "clusters": [
+    {
+      "id": "core-sound-machine",
+      "name": "Sound / noise machine core",
+      "topics": [
+        {
+          "id": "sleep-sound-machine-guide",
+          "action": "new_post",
+          "status": "pending",
+          "recommendedNext": false,
+          "priority": 4,
+          "plannedSlug": "sleep-sound-machine-guide",
+          "primaryKeyword": "sleep sound machine",
+          "secondaryKeywords": [
+            "sound machine",
+            "noise machine",
+            "sleep machine",
+            "sleep noise machine",
+            "sound machines",
+            "sound machine for sleep",
+            "sound machine noise"
+          ],
+          "relatedQueries": [
+            {
+              "query": "sound machine",
+              "score": 100
+            },
+            {
+              "query": "noise machine",
+              "score": 59
+            },
+            {
+              "query": "sleep machine",
+              "score": 18
+            },
+            {
+              "query": "sleep sound machine",
+              "score": 10
+            },
+            {
+              "query": "sound machines",
+              "score": 6
+            },
+            {
+              "query": "sleep noise machine",
+              "score": 6
+            },
+            {
+              "query": "sound machine for sleep",
+              "score": 5
+            },
+            {
+              "query": "sound machine noise",
+              "score": 14
+            }
+          ],
+          "titleHint": "Sleep Sound Machine Guide: Types, Volume, and Phone vs Hardware",
+          "topicPrompt": "Sleep sound machine guide covering what a sound machine and noise machine are, how they mask bedroom noise, bedside hardware vs iPhone app, volume setup, and when a portable phone app replaces a dedicated device.",
+          "coveredBy": null,
+          "relatedPosts": [
+            "sleep-sounds-basics",
+            "sleep-sound-guide",
+            "sound-volume-sleep-quality"
+          ],
+          "avoidCannibalization": "Do not repeat the sound-type primer in sleep-sounds-basics — focus on the device/category (sound machine), not physics of white vs pink noise.",
+          "notes": "Pillar post for the highest-volume cluster. Landing page mentions sound machine but lacks a dedicated blog anchor."
+        },
+        {
+          "id": "sleep-sound-guide-keywords",
+          "action": "update_post",
+          "status": "partial",
+          "recommendedNext": false,
+          "priority": 6,
+          "plannedSlug": null,
+          "primaryKeyword": "sound machine for sleep",
+          "secondaryKeywords": [
+            "portable sound machine"
+          ],
+          "relatedQueries": [
+            {
+              "query": "sound machine for sleep",
+              "score": 5
+            },
+            {
+              "query": "portable sound machine",
+              "score": 5
+            }
+          ],
+          "titleHint": null,
+          "topicPrompt": "Refresh sleep-sound-guide title/description to include 'sound machine for sleep' and add a short section on portable sound machine / phone app travel use.",
+          "coveredBy": "sleep-sound-guide",
+          "relatedPosts": [
+            "sleep-sounds-travel-hacks",
+            "sleep-sound-machine-guide"
+          ],
+          "avoidCannibalization": null,
+          "notes": "Existing picker guide — add keyword phrases, do not create a new post."
+        },
+        {
+          "id": "landing-sound-machine",
+          "action": "landing_page",
+          "status": "partial",
+          "recommendedNext": false,
+          "priority": 99,
+          "plannedSlug": null,
+          "primaryKeyword": "sound machine",
+          "secondaryKeywords": [
+            "sleep sound machine",
+            "sleep machine"
+          ],
+          "relatedQueries": [
+            {
+              "query": "sound machine",
+              "score": 100
+            },
+            {
+              "query": "sleep machine",
+              "score": 18
+            }
+          ],
+          "titleHint": null,
+          "topicPrompt": null,
+          "coveredBy": "/",
+          "relatedPosts": [
+            "sleep-sound-machine-guide"
+          ],
+          "avoidCannibalization": null,
+          "notes": "Homepage already targets sound machine in meta — link to pillar post once published."
+        }
+      ]
+    },
+    {
+      "id": "white-noise-machine",
+      "name": "White noise machine",
+      "topics": [
+        {
+          "id": "white-noise-machine-guide",
+          "action": "new_post",
+          "status": "pending",
+          "recommendedNext": true,
+          "priority": 3,
+          "plannedSlug": "white-noise-machine-guide",
+          "primaryKeyword": "white noise machine",
+          "secondaryKeywords": [
+            "white sound machine",
+            "white noise sound machine",
+            "white noise sound"
+          ],
+          "relatedQueries": [
+            {
+              "query": "white noise machine",
+              "score": 40
+            },
+            {
+              "query": "white sound machine",
+              "score": 8
+            },
+            {
+              "query": "white noise sound",
+              "score": 8
+            },
+            {
+              "query": "white noise sound machine",
+              "score": 7
+            }
+          ],
+          "titleHint": "White Noise Machine: How It Works, Volume, and App Alternatives",
+          "topicPrompt": "White noise machine guide: what the device category is, how it differs from a fan or app, safe bedroom volume, bedside hardware vs iPhone white noise app, and setup checklist.",
+          "coveredBy": null,
+          "relatedPosts": [
+            "white-noise-for-sleep",
+            "why-white-noise-sleep",
+            "can-white-noise-help-you-sleep-better"
+          ],
+          "avoidCannibalization": "white-noise-for-sleep covers the sound type; this post covers the machine/device category and purchase/setup intent.",
+          "notes": "Second-highest unmet demand after baby cluster."
+        },
+        {
+          "id": "white-noise-sound-covered",
+          "action": "covered",
+          "status": "covered",
+          "recommendedNext": false,
+          "priority": 99,
+          "plannedSlug": null,
+          "primaryKeyword": "white noise",
+          "secondaryKeywords": [
+            "white noise sound"
+          ],
+          "relatedQueries": [
+            {
+              "query": "white noise",
+              "score": 44
+            },
+            {
+              "query": "white noise sound",
+              "score": 8
+            }
+          ],
+          "titleHint": null,
+          "topicPrompt": null,
+          "coveredBy": "white-noise-for-sleep",
+          "relatedPosts": [
+            "why-white-noise-sleep",
+            "can-white-noise-help-you-sleep-better"
+          ],
+          "avoidCannibalization": null,
+          "notes": "Core white noise intent already covered by multiple posts."
+        }
+      ]
+    },
+    {
+      "id": "baby-sound-machine",
+      "name": "Baby sound machine",
+      "topics": [
+        {
+          "id": "sound-machine-for-baby-sleep",
+          "action": "new_post",
+          "status": "covered",
+          "recommendedNext": false,
+          "priority": 2,
+          "plannedSlug": "sound-machine-for-baby-sleep",
+          "primaryKeyword": "sound machine baby",
+          "secondaryKeywords": [
+            "sound machine for baby",
+            "baby noise machine",
+            "baby sleep sounds"
+          ],
+          "relatedQueries": [
+            {
+              "query": "sound machine baby",
+              "score": 15
+            },
+            {
+              "query": "baby noise machine",
+              "score": 4
+            },
+            {
+              "query": "sound machine for baby",
+              "score": 4
+            }
+          ],
+          "titleHint": "Sound Machine for Baby Sleep: Safe Volume, Sounds, and Setup",
+          "topicPrompt": "Sound machine for baby sleep: nursery-safe volume (around 50 dB max), distance from crib, best steady sounds (white noise, hair dryer, vacuum hum), timer vs all night, and phone app vs dedicated nursery device.",
+          "coveredBy": "sound-machine-for-baby-sleep",
+          "relatedPosts": [
+            "sleep-sounds-basics",
+            "sound-volume-sleep-quality",
+            "all-night-sleep-sounds-vs-timer"
+          ],
+          "avoidCannibalization": "Landing page has baby FAQ — this post goes deeper on safety and setup, not a repeat of app feature list.",
+          "notes": "Highest-priority new post in the baby sub-cluster."
+        }
+      ]
+    },
+    {
+      "id": "best-sound-machine",
+      "name": "Best sound machine (commercial)",
+      "topics": [
+        {
+          "id": "best-sound-machine-for-sleep",
+          "action": "new_post",
+          "status": "pending",
+          "recommendedNext": false,
+          "priority": 5,
+          "plannedSlug": "best-sound-machine-for-sleep",
+          "primaryKeyword": "best sound machine",
+          "secondaryKeywords": [
+            "best noise machine",
+            "best white noise machine"
+          ],
+          "relatedQueries": [
+            {
+              "query": "best sound machine",
+              "score": 8
+            },
+            {
+              "query": "best noise machine",
+              "score": 6
+            },
+            {
+              "query": "best white noise machine",
+              "score": 4
+            }
+          ],
+          "titleHint": "Best Sound Machine for Sleep: Hardware Picks vs iPhone Apps",
+          "topicPrompt": "Best sound machine for sleep comparison: bedside hardware devices vs iPhone sleep sound apps, what features matter (offline, timer, mixing, volume), and who should skip hardware for a phone app.",
+          "coveredBy": null,
+          "relatedPosts": [
+            "best-white-noise-apps-iphone-compared",
+            "sleep-sound-machine-guide",
+            "white-noise-machine-guide"
+          ],
+          "avoidCannibalization": "best-white-noise-apps-iphone-compared is app-only; this post leads with hardware category then includes apps.",
+          "notes": "Commercial intent — table format recommended."
+        },
+        {
+          "id": "best-white-noise-machine-partial",
+          "action": "update_post",
+          "status": "partial",
+          "recommendedNext": false,
+          "priority": 7,
+          "plannedSlug": null,
+          "primaryKeyword": "best white noise machine",
+          "secondaryKeywords": [],
+          "relatedQueries": [
+            {
+              "query": "best white noise machine",
+              "score": 4
+            }
+          ],
+          "titleHint": null,
+          "topicPrompt": "Add a 'bedside white noise machine vs app' section to best-white-noise-apps-iphone-compared or cross-link to best-sound-machine-for-sleep once published.",
+          "coveredBy": "best-white-noise-apps-iphone-compared",
+          "relatedPosts": [
+            "best-sound-machine-for-sleep"
+          ],
+          "avoidCannibalization": null,
+          "notes": "Partially covered — apps angle only, not hardware machines."
+        }
+      ]
+    },
+    {
+      "id": "trending-nature",
+      "name": "Trending nature sounds",
+      "topics": [
+        {
+          "id": "ocean-waves-sound-machine-update",
+          "action": "update_post",
+          "status": "partial",
+          "recommendedNext": false,
+          "priority": 1,
+          "plannedSlug": null,
+          "primaryKeyword": "ocean waves sound machine",
+          "secondaryKeywords": [
+            "ocean wave sounds",
+            "ocean sounds sleep"
+          ],
+          "relatedQueries": [
+            {
+              "query": "ocean waves sound machine",
+              "score": "+180%",
+              "trending": true
+            }
+          ],
+          "titleHint": "Ocean Waves Sound Machine: Why Wave Audio Helps You Sleep",
+          "topicPrompt": "Update ocean-wave-sounds-sleep to target 'ocean waves sound machine': define the category, compare bedside device vs app, keep existing science on wave rhythm and volume.",
+          "coveredBy": "ocean-wave-sounds-sleep",
+          "relatedPosts": [
+            "rain-sounds-for-sleep",
+            "sleep-sounds-basics"
+          ],
+          "avoidCannibalization": "Do not create a second ocean post — refresh the existing slug only.",
+          "notes": "Fast win: +180% trending query. Manual update, not auto-generated."
+        },
+        {
+          "id": "ocean-waves-base-covered",
+          "action": "covered",
+          "status": "covered",
+          "recommendedNext": false,
+          "priority": 99,
+          "plannedSlug": null,
+          "primaryKeyword": "ocean wave sounds for sleep",
+          "secondaryKeywords": [
+            "ocean sounds"
+          ],
+          "relatedQueries": [],
+          "titleHint": null,
+          "topicPrompt": null,
+          "coveredBy": "ocean-wave-sounds-sleep",
+          "relatedPosts": [],
+          "avoidCannibalization": null,
+          "notes": "Base ocean sounds topic exists; missing 'sound machine' keyword angle."
+        }
+      ]
+    },
+    {
+      "id": "supporting-covered",
+      "name": "Already covered (reference)",
+      "topics": [
+        {
+          "id": "sleep-sounds-basics-covered",
+          "action": "covered",
+          "status": "covered",
+          "recommendedNext": false,
+          "priority": 99,
+          "plannedSlug": null,
+          "primaryKeyword": "sleep sounds",
+          "secondaryKeywords": [
+            "sleep sounds basics",
+            "sound masking"
+          ],
+          "relatedQueries": [],
+          "titleHint": null,
+          "topicPrompt": null,
+          "coveredBy": "sleep-sounds-basics",
+          "relatedPosts": [
+            "sleep-sound-guide"
+          ],
+          "avoidCannibalization": null,
+          "notes": "Beginner primer — link from pillar posts."
+        },
+        {
+          "id": "sound-colors-partial",
+          "action": "update_post",
+          "status": "partial",
+          "recommendedNext": false,
+          "priority": 8,
+          "plannedSlug": null,
+          "primaryKeyword": "sound machine noise",
+          "secondaryKeywords": [
+            "white noise",
+            "pink noise",
+            "brown noise"
+          ],
+          "relatedQueries": [
+            {
+              "query": "sound machine noise",
+              "score": 14
+            }
+          ],
+          "titleHint": null,
+          "topicPrompt": "Add H2 'Sound machine noise types' to sound-colors-impact-sleep-quality mapping colors to machine presets.",
+          "coveredBy": "sound-colors-impact-sleep-quality",
+          "relatedPosts": [
+            "white-noise-for-sleep",
+            "pink-noise-for-deep-sleep"
+          ],
+          "avoidCannibalization": null,
+          "notes": "Ambiguous query — likely users choosing noise type on a machine."
+        }
+      ]
+    }
+  ]
+}

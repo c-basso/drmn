@@ -9,6 +9,7 @@
     "index:now": "node build/indexnow.js",
     "index:google": "node build/gindexnow.js",
     "blog:new": "node tasks/generate-blog-post.js",
+    "blog:clusters": "node tasks/generate-blog-post.js --list",
     "blog:audit": "node build/validate/audit-blog-post.js",
     "telegraph:new": "node tasks/generate-telegraph-post.js",
     "blog:refresh-images": "node tasks/refresh-duplicate-blog-images.js",

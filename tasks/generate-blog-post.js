@@ -8,6 +8,16 @@ const {
   buildBlogPostMetadataPrompt,
   buildBlogPostContentPrompt,
 } = require('./blog-post-prompt');
+const {
+  loadKeywordClusters,
+  saveKeywordClusters,
+  syncClusterStatus,
+  getNextTopic,
+  markTopicCovered,
+  formatTopicForPrompt,
+  buildTopicInstruction,
+  printClusterStatus,
+} = require('./blog-keyword-clusters');
 const { auditBlogPost } = require('../build/validate/blogPostContentQuality');
 const { chatCompletion, DEFAULT_MODEL } = require('./openrouter-client');
 const { fetchBackgroundPhoto } = require('./unsplash-photos');
@@ -19,18 +29,47 @@ const AUTHOR = 'Vladimir Ivakhnenko';
 const SLUG_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
 function parseArgs(argv) {
-  const args = { topic: '', dryRun: false };
+  const args = { topic: '', dryRun: false, list: false, clusterTopic: '' };
   for (let i = 2; i < argv.length; i += 1) {
     const arg = argv[i];
     if (arg === '--dry-run') {
       args.dryRun = true;
+    } else if (arg === '--list') {
+      args.list = true;
     } else if (arg === '--topic' && argv[i + 1]) {
       args.topic = argv[++i].trim();
+    } else if (arg === '--cluster-topic' && argv[i + 1]) {
+      args.clusterTopic = argv[++i].trim();
     } else if (!arg.startsWith('-') && !args.topic) {
       args.topic = arg.trim();
     }
   }
   return args;
+}
+
+function resolveGenerationPlan({ topic, clusterTopicId, existingPosts }) {
+  let clustersData = syncClusterStatus(loadKeywordClusters(), existingPosts);
+  let keywordTopic = null;
+  let resolvedTopic = topic;
+
+  if (clusterTopicId) {
+    keywordTopic = getNextTopic(clustersData, clusterTopicId);
+    if (!resolvedTopic) {
+      resolvedTopic = buildTopicInstruction(keywordTopic);
+    }
+  } else if (!resolvedTopic) {
+    keywordTopic = getNextTopic(clustersData);
+    if (keywordTopic) {
+      resolvedTopic = buildTopicInstruction(keywordTopic);
+      console.log(`[cluster] next topic: ${keywordTopic.id} (${keywordTopic.primaryKeyword})`);
+    }
+  }
+
+  return {
+    clustersData,
+    keywordTopic,
+    topic: resolvedTopic,
+  };
 }
 
 function loadExistingPosts() {
@@ -301,14 +340,22 @@ function buildPostRecord(generated, imageBaseName, photo) {
   };
 }
 
-async function generatePostDraft(topic, existingPosts) {
-  const metadataPrompt = buildBlogPostMetadataPrompt({ topic, existingPosts });
+async function generatePostDraft(topic, existingPosts, keywordTopic) {
+  const metadataPrompt = buildBlogPostMetadataPrompt({
+    topic,
+    keywordTopic,
+    existingPosts,
+    formatTopicForPrompt,
+  });
 
   console.log(`[openrouter] model=${DEFAULT_MODEL}`);
   if (topic) {
-    console.log(`[openrouter] topic: ${topic}`);
+    console.log(`[openrouter] topic: ${topic.split('\n')[0]}`);
   } else {
     console.log('[openrouter] topic: (auto — model will choose)');
+  }
+  if (keywordTopic) {
+    console.log(`[cluster] keywords: ${keywordTopic.primaryKeyword}`);
   }
 
   console.log('[openrouter] step 1/2: metadata');
@@ -328,7 +375,7 @@ async function generatePostDraft(topic, existingPosts) {
   const metadata = normalizeMetadata(parseJsonFromContent(metadataResult.content));
 
   console.log('[openrouter] step 2/2: article HTML');
-  const contentPrompt = buildBlogPostContentPrompt(metadata, existingPosts);
+  const contentPrompt = buildBlogPostContentPrompt(metadata, existingPosts, keywordTopic);
   const contentResult = await chatCompletion({
     model: DEFAULT_MODEL,
     messages: [
@@ -373,13 +420,26 @@ function runBuild() {
 }
 
 async function main() {
-  const { topic, dryRun } = parseArgs(process.argv);
+  const { topic: cliTopic, dryRun, list, clusterTopic } = parseArgs(process.argv);
   const existingPosts = loadExistingPosts();
-  const existingSlugs = new Set(existingPosts.map((p) => p.slug));
 
   console.log(`[blog] existing posts: ${existingPosts.length}`);
 
-  const generated = await generatePostDraft(topic, existingPosts);
+  if (list) {
+    const clustersData = syncClusterStatus(loadKeywordClusters(), existingPosts);
+    printClusterStatus(clustersData);
+    saveKeywordClusters(clustersData);
+    return;
+  }
+
+  const { clustersData, keywordTopic, topic } = resolveGenerationPlan({
+    topic: cliTopic,
+    clusterTopicId: clusterTopic,
+    existingPosts,
+  });
+  saveKeywordClusters(clustersData);
+
+  const generated = await generatePostDraft(topic, existingPosts, keywordTopic);
   validateGeneratedPost(generated, existingPosts);
 
   if (!generated.unsplashSearchQuery?.trim()) {
@@ -407,6 +467,13 @@ async function main() {
   const photo = await fetchHeroImage(generated, imagePath, excludeIds);
   const postWithPhoto = buildPostRecord(generated, imageBaseName, photo);
   writePostJson(postWithPhoto);
+
+  if (keywordTopic) {
+    markTopicCovered(clustersData, keywordTopic.id, postWithPhoto.slug);
+    saveKeywordClusters(clustersData);
+    console.log(`[cluster] marked "${keywordTopic.id}" as covered → ${postWithPhoto.slug}`);
+  }
+
   runBuild();
 
   console.log('\n✅ Blog post ready');
@@ -425,4 +492,5 @@ if (require.main === module) {
 module.exports = {
   deriveUnsplashSearchQuery,
   getUsedUnsplashIds,
+  resolveGenerationPlan,
 };
