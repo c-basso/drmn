@@ -5,9 +5,17 @@
     <link>https://drmn.xyz/blog/</link>
     <description>Guides on white noise, sleep sounds, and focus audio for better rest and concentration.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Jul 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jul 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://drmn.xyz/blog/feed.xml" rel="self" type="application/rss+xml"/>
     
+    <item>
+      <title>White Noise Machine: How It Works, Volume, and App Alternatives</title>
+      <link>https://drmn.xyz/blog/white-noise-machine-guide/</link>
+      <guid isPermaLink="true">https://drmn.xyz/blog/white-noise-machine-guide/</guid>
+      <pubDate>Wed, 08 Jul 2026 12:00:00 GMT</pubDate>
+      <description>Dedicated hardware, a bedside fan, or your iPhone can all mask bedroom noise. This guide compares each option, safe dB levels, and a nightstand setup checklist.</description>
+      <enclosure url="https://drmn.xyz/blog/img/white-noise-machine-guide.webp" type="image/webp" length="70360"/>
+    </item>
     <item>
       <title>Sleep Sounds All Night vs Timer: What Works</title>
       <link>https://drmn.xyz/blog/all-night-sleep-sounds-vs-timer/</link>

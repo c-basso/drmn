@@ -2,7 +2,7 @@
   "version": 1,
   "source": "Google Trends related queries",
   "sourceFile": "relatedQueries.csv",
-  "updatedAt": "2026-07-07",
+  "updatedAt": "2026-07-08",
   "clusters": [
     {
       "id": "core-sound-machine",
@@ -12,7 +12,7 @@
           "id": "sleep-sound-machine-guide",
           "action": "new_post",
           "status": "pending",
-          "recommendedNext": false,
+          "recommendedNext": true,
           "priority": 4,
           "plannedSlug": "sleep-sound-machine-guide",
           "primaryKeyword": "sleep sound machine",
@@ -141,8 +141,8 @@
         {
           "id": "white-noise-machine-guide",
           "action": "new_post",
-          "status": "pending",
-          "recommendedNext": true,
+          "status": "covered",
+          "recommendedNext": false,
           "priority": 3,
           "plannedSlug": "white-noise-machine-guide",
           "primaryKeyword": "white noise machine",
@@ -171,7 +171,7 @@
           ],
           "titleHint": "White Noise Machine: How It Works, Volume, and App Alternatives",
           "topicPrompt": "White noise machine guide: what the device category is, how it differs from a fan or app, safe bedroom volume, bedside hardware vs iPhone white noise app, and setup checklist.",
-          "coveredBy": null,
+          "coveredBy": "white-noise-machine-guide",
           "relatedPosts": [
             "white-noise-for-sleep",
             "why-white-noise-sleep",
