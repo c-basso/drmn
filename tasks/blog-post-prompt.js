@@ -81,11 +81,22 @@ const JSON_METADATA_SCHEMA = `Respond with a single JSON object only — no mark
  *   formatTopicForPrompt?: (topic: object) => string,
  * }}
  */
+function formatValidationFeedback(validationFeedback) {
+  if (!validationFeedback?.trim()) {
+    return '';
+  }
+  return `
+
+IMPORTANT — your previous draft failed automated validation. Fix every issue below; do not repeat the same mistakes:
+${validationFeedback.trim()}`;
+}
+
 function buildBlogPostMetadataPrompt({
   topic,
   keywordTopic,
   existingPosts,
   formatTopicForPrompt,
+  validationFeedback = '',
 }) {
   const existingList = existingPosts.length
     ? existingPosts.map((p) => `- ${p.slug}: ${p.title}`).join('\n')
@@ -122,7 +133,7 @@ ${existingList}
 
 Plan metadata only — do NOT write article body HTML yet.
 
-Every field in the schema is required — especially "unsplashSearchQuery", "hero.alt", and "faq" (4–6 items).${primaryKeywordRule}
+Every field in the schema is required — especially "unsplashSearchQuery", "hero.alt", and "faq" (4–6 items).${primaryKeywordRule}${formatValidationFeedback(validationFeedback)}
 
 ${JSON_METADATA_SCHEMA}`;
 }
@@ -132,7 +143,7 @@ ${JSON_METADATA_SCHEMA}`;
  * @param {Array<{ slug: string, title: string }>} existingPosts
  * @param {object} [keywordTopic]
  */
-function buildBlogPostContentPrompt(metadata, existingPosts, keywordTopic) {
+function buildBlogPostContentPrompt(metadata, existingPosts, keywordTopic, validationFeedback = '') {
   const existingList = existingPosts
     .map((p) => `- /blog/${p.slug}/ — ${p.title}`)
     .join('\n');
@@ -162,15 +173,101 @@ ${(metadata.faq || []).map((f) => `- Q: ${f.question}`).join('\n') || '(none)'}
 ${STYLE_RULES}
 
 Existing posts you may link to (use relative href="/blog/SLUG/"):
-${existingList}
+${existingList}${formatValidationFeedback(validationFeedback)}
 
 Output ONLY raw HTML — no JSON, no markdown fences, no preamble or closing remarks outside the HTML. Start with <p> and end with </p>.`;
+}
+
+/**
+ * @param {object} metadata
+ * @param {string[]} issues
+ * @param {Array<{ slug: string, title: string }>} existingPosts
+ * @param {object} [keywordTopic]
+ */
+function buildBlogPostMetadataRepairPrompt(metadata, issues, existingPosts, keywordTopic) {
+  const existingList = existingPosts.length
+    ? existingPosts.map((p) => `- ${p.slug}: ${p.title}`).join('\n')
+    : '(none yet)';
+
+  const currentJson = JSON.stringify(
+    {
+      slug: metadata.slug,
+      title: metadata.title,
+      description: metadata.description,
+      excerpt: metadata.excerpt,
+      tags: metadata.tags,
+      readingTimeMinutes: metadata.readingTimeMinutes,
+      unsplashSearchQuery: metadata.unsplashSearchQuery,
+      hero: metadata.hero,
+      sectionOutline: metadata.sectionOutline,
+      faq: metadata.faq,
+    },
+    null,
+    2,
+  );
+
+  return `You are an editorial planner for the DRMN blog.
+
+${SITE_CONTEXT}
+
+The metadata draft below failed validation. Return a corrected JSON object that fixes every issue while keeping the same topic and editorial angle when possible.
+
+Validation errors to fix:
+${issues.map((issue) => `- ${issue}`).join('\n')}
+
+Existing articles (slug must be unique; title must not cannibalize these):
+${existingList}
+${keywordTopic?.primaryKeyword ? `\nPrimary keyword: ${keywordTopic.primaryKeyword}` : ''}
+
+Current draft:
+${currentJson}
+
+${JSON_METADATA_SCHEMA}`;
+}
+
+/**
+ * @param {object} metadata
+ * @param {string} content
+ * @param {string[]} issues
+ * @param {Array<{ slug: string, title: string }>} existingPosts
+ * @param {object} [keywordTopic]
+ */
+function buildBlogPostContentRepairPrompt(metadata, content, issues, existingPosts, keywordTopic) {
+  const existingList = existingPosts
+    .map((p) => `- /blog/${p.slug}/ — ${p.title}`)
+    .join('\n');
+
+  return `You are an editorial writer for the DRMN blog.
+
+${SITE_CONTEXT}
+
+The HTML article body below failed validation. Rewrite the full article HTML so every issue is fixed. Keep the same topic, title, and overall structure unless a change is required to pass validation.
+
+Title: ${metadata.title}
+Slug: ${metadata.slug}
+Tags: ${(metadata.tags || []).join(', ')}
+${keywordTopic?.primaryKeyword ? `Primary keyword: ${keywordTopic.primaryKeyword}` : ''}
+
+Validation errors to fix:
+${issues.map((issue) => `- ${issue}`).join('\n')}
+
+${STYLE_RULES}
+
+Existing posts you may link to (use relative href="/blog/SLUG/"):
+${existingList}
+
+Current HTML draft:
+${content}
+
+Output ONLY the corrected raw HTML — no JSON, no markdown fences, no preamble. Start with <p> and end with </p>.`;
 }
 
 module.exports = {
   buildBlogPostPrompt: buildBlogPostMetadataPrompt,
   buildBlogPostMetadataPrompt,
   buildBlogPostContentPrompt,
+  buildBlogPostMetadataRepairPrompt,
+  buildBlogPostContentRepairPrompt,
   SITE_CONTEXT,
   STYLE_RULES,
 };

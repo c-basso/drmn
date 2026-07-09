@@ -7,6 +7,8 @@ const { execSync } = require('child_process');
 const {
   buildBlogPostMetadataPrompt,
   buildBlogPostContentPrompt,
+  buildBlogPostMetadataRepairPrompt,
+  buildBlogPostContentRepairPrompt,
 } = require('./blog-post-prompt');
 const {
   loadKeywordClusters,
@@ -27,6 +29,7 @@ const POSTS_DIR = path.join(ROOT_DIR, 'build', 'blog', 'posts');
 const IMAGES_DIR = path.join(ROOT_DIR, 'build', 'blog', 'images');
 const AUTHOR = 'Vladimir Ivakhnenko';
 const SLUG_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+const MAX_VALIDATION_ATTEMPTS = 4;
 
 function parseArgs(argv) {
   const args = { topic: '', dryRun: false, list: false, clusterTopic: '' };
@@ -259,48 +262,85 @@ function titlesTooSimilar(a, b) {
   return shared >= 4 && shared / rightWords.length >= 0.75;
 }
 
-function validateGeneratedPost(generated, existingPosts) {
+function collectValidationIssues(generated, existingPosts) {
+  const errors = [];
+  const metadataIssues = [];
+  const contentIssues = [];
+
+  const add = (message, kind) => {
+    errors.push(message);
+    if (kind === 'metadata') {
+      metadataIssues.push(message);
+    } else {
+      contentIssues.push(message);
+    }
+  };
+
   const existingSlugs = new Set(existingPosts.map((post) => post.slug));
   const required = ['slug', 'title', 'description', 'excerpt', 'content'];
   for (const field of required) {
     if (!generated[field] || !String(generated[field]).trim()) {
-      throw new Error(`Generated post is missing required field "${field}"`);
+      add(`Generated post is missing required field "${field}"`, field === 'content' ? 'content' : 'metadata');
     }
   }
 
-  if (!SLUG_RE.test(generated.slug)) {
-    throw new Error(`Invalid slug "${generated.slug}" — use kebab-case`);
+  if (generated.slug && !SLUG_RE.test(generated.slug)) {
+    add(`Invalid slug "${generated.slug}" — use kebab-case`, 'metadata');
   }
 
-  if (existingSlugs.has(generated.slug)) {
-    throw new Error(`Slug "${generated.slug}" already exists — re-run or pass a different topic`);
+  if (generated.slug && existingSlugs.has(generated.slug)) {
+    add(`Slug "${generated.slug}" already exists — choose a different slug`, 'metadata');
   }
 
   const similar = existingPosts.find((post) => titlesTooSimilar(generated.title, post.title));
   if (similar) {
-    throw new Error(
+    add(
       `Title "${generated.title}" is too similar to existing post "${similar.slug}" (${similar.title})`,
+      'metadata',
     );
   }
 
   if (!generated.hero?.alt?.trim()) {
-    throw new Error('Generated post is missing hero.alt');
+    add('Generated post is missing hero.alt', 'metadata');
   }
 
   if (!Array.isArray(generated.tags) || generated.tags.length < 3) {
-    throw new Error('Generated post must include at least 3 tags');
+    add('Generated post must include at least 3 tags', 'metadata');
   }
 
-  if (!isValidArticleHtml(generated.content)) {
-    throw new Error(
+  if (generated.content && !isValidArticleHtml(generated.content)) {
+    add(
       'Generated content is not valid HTML — model may have returned a safety stub or non-HTML text',
+      'content',
     );
   }
 
   const audit = auditBlogPost(generated, { strict: true, otherPosts: existingPosts });
   if (!audit.ok) {
-    const details = [...audit.critical, ...audit.quality, ...audit.errors].join('; ');
-    throw new Error(`Generated post failed SEO/quality checks: ${details}`);
+    for (const issue of [...audit.critical, ...audit.quality, ...audit.errors]) {
+      if (errors.includes(issue)) {
+        continue;
+      }
+      const kind = /^(title|description|excerpt|faq|hero|slug|tags|missing meta description)/i.test(issue)
+        ? 'metadata'
+        : 'content';
+      add(issue, kind);
+    }
+  }
+
+  return {
+    ok: errors.length === 0,
+    errors,
+    metadataIssues,
+    contentIssues,
+    audit,
+  };
+}
+
+function validateGeneratedPost(generated, existingPosts) {
+  const issues = collectValidationIssues(generated, existingPosts);
+  if (!issues.ok) {
+    throw new Error(`Generated post failed validation: ${issues.errors.join('; ')}`);
   }
 }
 
@@ -340,25 +380,15 @@ function buildPostRecord(generated, imageBaseName, photo) {
   };
 }
 
-async function generatePostDraft(topic, existingPosts, keywordTopic) {
+async function generatePostMetadata(topic, existingPosts, keywordTopic, validationFeedback = '') {
   const metadataPrompt = buildBlogPostMetadataPrompt({
     topic,
     keywordTopic,
     existingPosts,
     formatTopicForPrompt,
+    validationFeedback,
   });
 
-  console.log(`[openrouter] model=${DEFAULT_MODEL}`);
-  if (topic) {
-    console.log(`[openrouter] topic: ${topic.split('\n')[0]}`);
-  } else {
-    console.log('[openrouter] topic: (auto — model will choose)');
-  }
-  if (keywordTopic) {
-    console.log(`[cluster] keywords: ${keywordTopic.primaryKeyword}`);
-  }
-
-  console.log('[openrouter] step 1/2: metadata');
   const metadataResult = await chatCompletion({
     model: DEFAULT_MODEL,
     messages: [
@@ -372,10 +402,16 @@ async function generatePostDraft(topic, existingPosts, keywordTopic) {
     temperature: 0.7,
   });
 
-  const metadata = normalizeMetadata(parseJsonFromContent(metadataResult.content));
+  return normalizeMetadata(parseJsonFromContent(metadataResult.content));
+}
 
-  console.log('[openrouter] step 2/2: article HTML');
-  const contentPrompt = buildBlogPostContentPrompt(metadata, existingPosts, keywordTopic);
+async function generatePostContent(metadata, existingPosts, keywordTopic, validationFeedback = '') {
+  const contentPrompt = buildBlogPostContentPrompt(
+    metadata,
+    existingPosts,
+    keywordTopic,
+    validationFeedback,
+  );
   const contentResult = await chatCompletion({
     model: DEFAULT_MODEL,
     messages: [
@@ -389,13 +425,166 @@ async function generatePostDraft(topic, existingPosts, keywordTopic) {
     temperature: 0.75,
   });
 
-  console.log(`[openrouter] done (model=${contentResult.model})`);
+  return stripHtmlFences(contentResult.content);
+}
+
+async function repairPostMetadata(metadata, issues, existingPosts, keywordTopic) {
+  const repairPrompt = buildBlogPostMetadataRepairPrompt(
+    metadata,
+    issues,
+    existingPosts,
+    keywordTopic,
+  );
+
+  console.log('[openrouter] repairing metadata…');
+  const metadataResult = await chatCompletion({
+    model: DEFAULT_MODEL,
+    messages: [
+      {
+        role: 'system',
+        content:
+          'You fix blog post metadata JSON. Output only valid JSON matching the requested schema.',
+      },
+      { role: 'user', content: repairPrompt },
+    ],
+    temperature: 0.4,
+  });
+
+  return normalizeMetadata(parseJsonFromContent(metadataResult.content));
+}
+
+async function repairPostContent(metadata, content, issues, existingPosts, keywordTopic) {
+  const repairPrompt = buildBlogPostContentRepairPrompt(
+    metadata,
+    content,
+    issues,
+    existingPosts,
+    keywordTopic,
+  );
+
+  console.log('[openrouter] repairing article HTML…');
+  const contentResult = await chatCompletion({
+    model: DEFAULT_MODEL,
+    messages: [
+      {
+        role: 'system',
+        content:
+          'You fix HTML article bodies for the DRMN blog. Output only corrected HTML fragments — no JSON, no markdown.',
+      },
+      { role: 'user', content: repairPrompt },
+    ],
+    temperature: 0.5,
+  });
+
+  return stripHtmlFences(contentResult.content);
+}
+
+function mergeDraft(metadata, content) {
   const { sectionOutline: _outline, ...meta } = metadata;
   return {
     ...meta,
     faq: metadata.faq || [],
-    content: stripHtmlFences(contentResult.content),
+    content,
   };
+}
+
+async function generatePostDraft(topic, existingPosts, keywordTopic, validationFeedback = '') {
+  console.log(`[openrouter] model=${DEFAULT_MODEL}`);
+  if (topic) {
+    console.log(`[openrouter] topic: ${topic.split('\n')[0]}`);
+  } else {
+    console.log('[openrouter] topic: (auto — model will choose)');
+  }
+  if (keywordTopic) {
+    console.log(`[cluster] keywords: ${keywordTopic.primaryKeyword}`);
+  }
+
+  console.log('[openrouter] step 1/2: metadata');
+  const metadata = await generatePostMetadata(
+    topic,
+    existingPosts,
+    keywordTopic,
+    validationFeedback,
+  );
+
+  console.log('[openrouter] step 2/2: article HTML');
+  const content = await generatePostContent(metadata, existingPosts, keywordTopic, validationFeedback);
+
+  console.log('[openrouter] draft ready');
+  return mergeDraft(metadata, content);
+}
+
+async function generatePostDraftWithRetry(topic, existingPosts, keywordTopic) {
+  let draft = await generatePostDraft(topic, existingPosts, keywordTopic);
+  let lastIssues = collectValidationIssues(draft, existingPosts);
+
+  for (let attempt = 1; attempt <= MAX_VALIDATION_ATTEMPTS; attempt += 1) {
+    if (lastIssues.ok) {
+      if (attempt > 1) {
+        console.log(`[blog] validation passed after ${attempt} attempt(s)`);
+      }
+      return draft;
+    }
+
+    console.warn(
+      `[blog] validation attempt ${attempt}/${MAX_VALIDATION_ATTEMPTS} — ${lastIssues.errors.length} issue(s)`,
+    );
+    lastIssues.errors.forEach((issue) => console.warn(`  - ${issue}`));
+
+    if (attempt === MAX_VALIDATION_ATTEMPTS) {
+      break;
+    }
+
+    let metadata = {
+      slug: draft.slug,
+      title: draft.title,
+      description: draft.description,
+      excerpt: draft.excerpt,
+      tags: draft.tags,
+      readingTimeMinutes: draft.readingTimeMinutes,
+      unsplashSearchQuery: draft.unsplashSearchQuery,
+      hero: draft.hero,
+      sectionOutline: draft.sectionOutline,
+      faq: draft.faq,
+    };
+    let content = draft.content;
+    const previousSlug = metadata.slug;
+    const previousTitle = metadata.title;
+
+    if (lastIssues.metadataIssues.length > 0) {
+      metadata = await repairPostMetadata(
+        metadata,
+        lastIssues.metadataIssues,
+        existingPosts,
+        keywordTopic,
+      );
+    }
+
+    const metadataChanged = metadata.slug !== previousSlug || metadata.title !== previousTitle;
+
+    if (lastIssues.contentIssues.length > 0 || metadataChanged) {
+      const repairIssues = [
+        ...lastIssues.contentIssues,
+        ...(metadataChanged
+          ? [`Metadata changed — align the article with slug "${metadata.slug}" and title "${metadata.title}"`]
+          : []),
+      ];
+      content = await repairPostContent(
+        metadata,
+        content,
+        repairIssues,
+        existingPosts,
+        keywordTopic,
+      );
+    }
+
+    draft = mergeDraft(metadata, content);
+    lastIssues = collectValidationIssues(draft, existingPosts);
+  }
+
+  throw new Error(
+    `Generated post failed validation after ${MAX_VALIDATION_ATTEMPTS} attempts: ${lastIssues.errors.join('; ')}`,
+  );
 }
 
 async function fetchHeroImage(generated, imagePath, excludeIds) {
@@ -439,7 +628,7 @@ async function main() {
   });
   saveKeywordClusters(clustersData);
 
-  const generated = await generatePostDraft(topic, existingPosts, keywordTopic);
+  const generated = await generatePostDraftWithRetry(topic, existingPosts, keywordTopic);
   validateGeneratedPost(generated, existingPosts);
 
   if (!generated.unsplashSearchQuery?.trim()) {
@@ -493,4 +682,7 @@ module.exports = {
   deriveUnsplashSearchQuery,
   getUsedUnsplashIds,
   resolveGenerationPlan,
+  collectValidationIssues,
+  validateGeneratedPost,
+  generatePostDraftWithRetry,
 };

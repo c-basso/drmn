@@ -2,7 +2,7 @@
   "version": 1,
   "source": "Google Trends related queries",
   "sourceFile": "relatedQueries.csv",
-  "updatedAt": "2026-07-08",
+  "updatedAt": "2026-07-09",
   "clusters": [
     {
       "id": "core-sound-machine",
@@ -11,8 +11,8 @@
         {
           "id": "sleep-sound-machine-guide",
           "action": "new_post",
-          "status": "pending",
-          "recommendedNext": true,
+          "status": "covered",
+          "recommendedNext": false,
           "priority": 4,
           "plannedSlug": "sleep-sound-machine-guide",
           "primaryKeyword": "sleep sound machine",
@@ -61,7 +61,7 @@
           ],
           "titleHint": "Sleep Sound Machine Guide: Types, Volume, and Phone vs Hardware",
           "topicPrompt": "Sleep sound machine guide covering what a sound machine and noise machine are, how they mask bedroom noise, bedside hardware vs iPhone app, volume setup, and when a portable phone app replaces a dedicated device.",
-          "coveredBy": null,
+          "coveredBy": "sleep-sound-machine-guide",
           "relatedPosts": [
             "sleep-sounds-basics",
             "sleep-sound-guide",
@@ -265,7 +265,7 @@
           "id": "best-sound-machine-for-sleep",
           "action": "new_post",
           "status": "pending",
-          "recommendedNext": false,
+          "recommendedNext": true,
           "priority": 5,
           "plannedSlug": "best-sound-machine-for-sleep",
           "primaryKeyword": "best sound machine",

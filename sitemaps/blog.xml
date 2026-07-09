@@ -5,13 +5,13 @@
   
   <url>
     <loc>https://drmn.xyz/blog/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://drmn.xyz/blog/feed.xml</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <priority>0.4</priority>
   </url>
 
@@ -30,6 +30,12 @@
   <url>
     <loc>https://drmn.xyz/blog/page/4/</loc>
     <lastmod>2026-07-07</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://drmn.xyz/blog/sleep-sound-machine-guide/</loc>
+    <lastmod>2026-07-09</lastmod>
     <priority>0.8</priority>
   </url>
 

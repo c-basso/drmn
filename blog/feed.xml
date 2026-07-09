@@ -5,9 +5,17 @@
     <link>https://drmn.xyz/blog/</link>
     <description>Guides on white noise, sleep sounds, and focus audio for better rest and concentration.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 08 Jul 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jul 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://drmn.xyz/blog/feed.xml" rel="self" type="application/rss+xml"/>
     
+    <item>
+      <title>Sleep Sound Machine Guide: Types, Volume, and Phone vs Hardware</title>
+      <link>https://drmn.xyz/blog/sleep-sound-machine-guide/</link>
+      <guid isPermaLink="true">https://drmn.xyz/blog/sleep-sound-machine-guide/</guid>
+      <pubDate>Thu, 09 Jul 2026 12:00:00 GMT</pubDate>
+      <description>Compare bedside sound machines and phone apps, set volume safely, and choose a setup that fits light sleepers, shift workers, and frequent travelers.</description>
+      <enclosure url="https://drmn.xyz/blog/img/sleep-sound-machine-guide.webp" type="image/webp" length="37984"/>
+    </item>
     <item>
       <title>White Noise Machine: How It Works, Volume, and App Alternatives</title>
       <link>https://drmn.xyz/blog/white-noise-machine-guide/</link>
