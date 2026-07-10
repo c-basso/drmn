@@ -50,6 +50,9 @@ function buildStyleRules(metadata) {
 - Include a unique angle: a personal mini-experiment, a counter-intuitive takeaway, or a niche use case most articles skip.
 - Prefer qualitative, experiential language ("noticeably calmer", "low volume", "a few nights", "gentler pulsing") over precise measurements. Do NOT invent exact statistics, percentages, dB levels, Hz values, or lab-style figures.
 - Hedge clinical claims ("research suggests", "in one study", "many listeners report") without citing made-up numbers.
+- Sound human: avoid AI tells (unpack, delve, in conclusion, surprisingly, game-changer, in today's, at its core).
+- Never insert non-English characters, gibberish tokens, or hallucinated words.
+- Use em dashes sparingly (max ~1 per 300 words). Prefer commas or periods.
 - Mention "DRMN" or the app at most ONCE in the body before the final CTA paragraph — prefer "a sleep-sounds app" or "your audio player" elsewhere.
 - Do NOT use hype words: "game-changer", "transform", "secret weapon", "must-have", "download now" (except the very last line).
 
@@ -84,6 +87,19 @@ HTML rules:
   - <a href="${SITE_LINK}">DRMN website</a> — NEVER a bare URL
   - <a href="${APP_LINK}">App Store</a> — NEVER a bare App Store URL
 - No competing apps. No fabricated study citations with author names.`;
+}
+
+/**
+ * @param {string} [validationFeedback]
+ */
+function formatValidationFeedback(validationFeedback) {
+  if (!validationFeedback?.trim()) {
+    return '';
+  }
+  return `
+
+IMPORTANT — your previous draft failed automated validation. Fix every issue below; do not repeat the same mistakes:
+${validationFeedback.trim()}`;
 }
 
 function buildJsonMetadataSchema(recentArchetypeIds) {
@@ -141,9 +157,7 @@ function buildTelegraphPostMetadataPrompt({
     ? `Plan a deep Telegraph article about: ${topic}`
     : `Pick ONE fresh topic with a specific angle (not covered below). Prefer topics where you can describe a mini-experiment, compare sound types, or explain a mechanism in plain language.`;
 
-  const feedbackBlock = validationFeedback
-    ? `\nPREVIOUS DRAFT FAILED VALIDATION — fix these issues:\n${validationFeedback}\n`
-    : '';
+  const feedbackBlock = formatValidationFeedback(validationFeedback);
 
   const archetypeHint = recentArchetypeIds.length
     ? `\nRecently used archetypes (prefer a different one unless the topic strongly demands it): ${recentArchetypeIds.join(', ')}\n`
@@ -170,6 +184,62 @@ ${buildJsonMetadataSchema(recentArchetypeIds)}`;
 
 /**
  * @param {object} metadata
+ * @param {string[]} issues
+ * @param {Array} existingPosts
+ * @param {Array} blogPosts
+ */
+function buildTelegraphPostMetadataRepairPrompt(metadata, issues, existingPosts, blogPosts) {
+  const existingList = existingPosts.length
+    ? existingPosts.map((p) => `- ${p.slug}: ${p.title}`).join('\n')
+    : '(none yet)';
+
+  const blogList = blogPosts.length
+    ? blogPosts.slice(0, 20).map((p) => `- ${p.slug}: ${p.title}`).join('\n')
+    : '(none)';
+
+  const recentArchetypeIds = getRecentArchetypeIds(existingPosts);
+  const currentJson = JSON.stringify(
+    {
+      slug: metadata.slug,
+      title: metadata.title,
+      description: metadata.description,
+      excerpt: metadata.excerpt,
+      tags: metadata.tags,
+      uniqueAngle: metadata.uniqueAngle,
+      articleArchetype: metadata.articleArchetype,
+      readingTimeMinutes: metadata.readingTimeMinutes,
+      unsplashSearchQuery: metadata.unsplashSearchQuery,
+      hero: metadata.hero,
+      inlineImages: metadata.inlineImages,
+      sectionOutline: metadata.sectionOutline,
+    },
+    null,
+    2,
+  );
+
+  return `You are an editorial planner for DRMN Telegraph posts.
+
+${SITE_CONTEXT}
+
+The metadata draft below failed validation. Return a corrected JSON object that fixes every issue while keeping the same topic and editorial angle when possible.
+
+Validation errors to fix:
+${issues.map((issue) => `- ${issue}`).join('\n')}
+
+Existing Telegraph posts (slug must be unique; title must not cannibalize these):
+${existingList}
+
+Main blog (do not duplicate these angles):
+${blogList}
+
+Current draft:
+${currentJson}
+
+${buildJsonMetadataSchema(recentArchetypeIds)}`;
+}
+
+/**
+ * @param {object} metadata
  * @param {Array} existingPosts
  * @param {Array} blogPosts
  * @param {Array} inlineImages
@@ -188,14 +258,10 @@ function buildTelegraphPostContentPrompt(
 
   const archetype = getArchetype(metadata.articleArchetype);
 
-  const feedbackBlock = validationFeedback
-    ? `\nFIX THESE VALIDATION ERRORS FROM THE PREVIOUS DRAFT:\n${validationFeedback}\n`
-    : '';
-
   return `You are a depth-first science writer for DRMN Telegraph posts.
 
 ${SITE_CONTEXT}
-${feedbackBlock}
+${formatValidationFeedback(validationFeedback)}
 Write the full article HTML for:
 
 Title: ${metadata.title}
@@ -224,9 +290,61 @@ ${existingPosts.map((p) => `- ${p.slug}: ${p.title}`).join('\n') || '(none)'}
 Output ONLY raw HTML. Start with <p>, end with the single CTA <p> containing links to ${SITE_LINK} and ${APP_LINK}.`;
 }
 
+/**
+ * @param {object} metadata
+ * @param {string} content
+ * @param {string[]} issues
+ * @param {Array} existingPosts
+ * @param {Array} blogPosts
+ * @param {Array} inlineImages
+ */
+function buildTelegraphPostContentRepairPrompt(
+  metadata,
+  content,
+  issues,
+  existingPosts,
+  blogPosts,
+  inlineImages,
+) {
+  const archetype = getArchetype(metadata.articleArchetype);
+
+  return `You are a depth-first science writer for DRMN Telegraph posts.
+
+${SITE_CONTEXT}
+
+The HTML article body below failed validation. Rewrite the full article HTML so every issue is fixed. Keep the same topic, title, and overall structure unless a change is required to pass validation.
+
+Title: ${metadata.title}
+Slug: ${metadata.slug}
+Article archetype: ${archetype.label} (${archetype.id})
+Unique angle: ${metadata.uniqueAngle || '(apply a fresh perspective)'}
+Tags: ${(metadata.tags || []).join(', ')}
+
+Validation errors to fix:
+${issues.map((issue) => `- ${issue}`).join('\n')}
+
+${buildStyleRules(metadata)}
+
+Inline images — embed BOTH exactly as shown (full <img> tag on its own line). No captions afterward:
+${formatInlineImageCatalog(inlineImages)}
+
+Blog articles you may link when relevant (optional):
+${formatBlogLinkCatalog(blogPosts)}
+
+Other Telegraph articles (optional cross-links — use only if relevant):
+${formatTelegraphLinkCatalog(existingPosts, metadata.slug)}
+
+Current HTML draft:
+${content}
+
+Output ONLY the corrected raw HTML. Start with <p>, end with the single CTA <p> containing links to ${SITE_LINK} and ${APP_LINK}.`;
+}
+
 module.exports = {
   buildTelegraphPostMetadataPrompt,
   buildTelegraphPostContentPrompt,
+  buildTelegraphPostMetadataRepairPrompt,
+  buildTelegraphPostContentRepairPrompt,
   formatBlogLinkCatalog,
   formatTelegraphLinkCatalog,
   SITE_LINK,

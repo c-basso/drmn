@@ -29,6 +29,12 @@ Usage notes:
 </skill>
 
 <skill>
+<name>blog-post-seo-optimize</name>
+<description>Audit and rewrite a single DRMN blog post for SEO and GEO. Finds AI garbage, keyword stuffing, missing FAQ schema, cannibalization, and HTML errors; outputs an improved build/blog/posts/{slug}.json. Use when optimizing one blog post, fixing a post URL, improving SEO/GEO of an article, or after blog:audit reports issues.</description>
+<location>project</location>
+</skill>
+
+<skill>
 <name>frontend-design</name>
 <description>Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, artifacts, posters, or applications (examples include websites, landing pages, dashboards, React components, HTML/CSS layouts, or when styling/beautifying any web UI). Generates creative, polished code and UI design that avoids generic AI aesthetics.</description>
 <location>project</location>
@@ -41,14 +47,14 @@ Usage notes:
 </skill>
 
 <skill>
-<name>blog-post-seo-optimize</name>
-<description>Audit and rewrite a single DRMN blog post for SEO and GEO. Finds AI garbage, keyword stuffing, missing FAQ schema, cannibalization, and HTML errors; outputs an improved build/blog/posts/{slug}.json. Use when optimizing one blog post, fixing a post URL, improving SEO/GEO of an article, or after blog:audit reports issues.</description>
+<name>seo-audit</name>
+<description>When the user wants to audit, review, or diagnose SEO issues on their site. Also use when the user mentions "SEO audit," "technical SEO," "why am I not ranking," "SEO issues," "on-page SEO," "meta tags review," "SEO health check," "my traffic dropped," "lost rankings," "not showing up in Google," "site isn't ranking," "Google update hit me," "page speed," "core web vitals," "crawl errors," or "indexing issues." Use this even if the user just says something vague like "my SEO is bad" or "help with SEO" — start with an audit. For building pages at scale to target keywords, see programmatic-seo. For adding structured data, see schema-markup. For AI search optimization, see ai-seo.</description>
 <location>project</location>
 </skill>
 
 <skill>
-<name>seo-audit</name>
-<description>When the user wants to audit, review, or diagnose SEO issues on their site. Also use when the user mentions "SEO audit," "technical SEO," "why am I not ranking," "SEO issues," "on-page SEO," "meta tags review," "SEO health check," "my traffic dropped," "lost rankings," "not showing up in Google," "site isn't ranking," "Google update hit me," "page speed," "core web vitals," "crawl errors," or "indexing issues." Use this even if the user just says something vague like "my SEO is bad" or "help with SEO" — start with an audit. For building pages at scale to target keywords, see programmatic-seo. For adding structured data, see schema-markup. For AI search optimization, see ai-seo.</description>
+<name>stop-slop</name>
+<description>Remove AI writing patterns from prose. Use when drafting, editing, or reviewing text to eliminate predictable AI tells.</description>
 <location>project</location>
 </skill>
 

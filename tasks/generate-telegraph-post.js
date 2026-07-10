@@ -8,12 +8,15 @@ const path = require('path');
 const {
   buildTelegraphPostMetadataPrompt,
   buildTelegraphPostContentPrompt,
+  buildTelegraphPostMetadataRepairPrompt,
+  buildTelegraphPostContentRepairPrompt,
 } = require('./telegraph-post-prompt');
 const { chatCompletion, DEFAULT_MODEL } = require('./openrouter-client');
 const { fetchBackgroundPhoto } = require('./unsplash-photos');
 const { deriveUnsplashSearchQuery, getUsedUnsplashIds } = require('./generate-blog-post');
 const { ARCHETYPE_IDS, getArchetype } = require('./telegraph-article-archetypes');
-const { validateTelegraphContent } = require('./telegraph-content-utils');
+const { auditTelegraphPost } = require('../build/validate/telegraphPostContentQuality');
+const { titlesTooSimilar } = require('../build/validate/blogPostContentQuality');
 const { htmlToTelegraphNodes } = require('../build/telegraph/html-to-nodes');
 const { publishPage } = require('../build/telegraph/telegraph-client');
 const { updateTelegraphHub } = require('../build/telegraph/update-hub');
@@ -24,6 +27,7 @@ const IMAGES_DIR = path.join(ROOT_DIR, 'build', 'telegraph', 'images');
 const BLOG_POSTS_DIR = path.join(ROOT_DIR, 'build', 'blog', 'posts');
 const AUTHOR = 'Vladimir Ivakhnenko';
 const SLUG_RE = /^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$/;
+const MAX_VALIDATION_ATTEMPTS = 4;
 
 function normalizeSlug(slug) {
   let cleaned = String(slug)
@@ -208,44 +212,108 @@ function normalizeMetadata(metadata) {
   return normalized;
 }
 
-function validateGeneratedPost(generated, existingSlugs, existingPosts) {
+function imageFetchKey(metadata) {
+  return JSON.stringify({
+    slug: metadata.slug,
+    hero: metadata.unsplashSearchQuery,
+    inline: (metadata.inlineImages || []).map((item) => item.unsplashSearchQuery),
+  });
+}
+
+function collectValidationIssues(generated, existingPosts, blogPosts) {
+  const errors = [];
+  const metadataIssues = [];
+  const contentIssues = [];
+
+  const add = (message, kind) => {
+    errors.push(message);
+    if (kind === 'metadata') {
+      metadataIssues.push(message);
+    } else {
+      contentIssues.push(message);
+    }
+  };
+
+  const existingSlugs = new Set(existingPosts.map((post) => post.slug));
   const required = ['slug', 'title', 'description', 'excerpt', 'content'];
   for (const field of required) {
     if (!generated[field] || !String(generated[field]).trim()) {
-      throw new Error(`Generated post is missing required field "${field}"`);
+      add(`Generated post is missing required field "${field}"`, field === 'content' ? 'content' : 'metadata');
     }
   }
 
-  if (!SLUG_RE.test(generated.slug)) {
-    throw new Error(`Invalid slug "${generated.slug}" — use kebab-case starting with a letter`);
+  if (generated.slug && !SLUG_RE.test(generated.slug)) {
+    add(`Invalid slug "${generated.slug}" — use kebab-case starting with a letter`, 'metadata');
   }
 
-  if (existingSlugs.has(generated.slug)) {
-    throw new Error(`Slug "${generated.slug}" already exists`);
+  if (generated.slug && existingSlugs.has(generated.slug)) {
+    add(`Slug "${generated.slug}" already exists — choose a different slug`, 'metadata');
+  }
+
+  const comparablePosts = [...existingPosts, ...blogPosts];
+  const similar = comparablePosts.find((post) => titlesTooSimilar(generated.title, post.title));
+  if (similar) {
+    add(
+      `Title "${generated.title}" is too similar to existing post "${similar.slug}" (${similar.title})`,
+      'metadata',
+    );
   }
 
   if (!generated.hero?.alt?.trim()) {
-    throw new Error('Generated post is missing hero.alt');
+    add('Generated post is missing hero.alt', 'metadata');
   }
 
   if (!Array.isArray(generated.tags) || generated.tags.length < 3) {
-    throw new Error('Generated post must include at least 3 tags');
+    add('Generated post must include at least 3 tags', 'metadata');
   }
 
-  if (/<h1[\s>]/i.test(generated.content) || /<h2[\s>]/i.test(generated.content)) {
-    throw new Error('Content must use <h3>/<h4> only, not <h1> or <h2>');
+  if (!generated.uniqueAngle?.trim()) {
+    add('Generated post is missing uniqueAngle', 'metadata');
   }
 
-  if (!isValidArticleHtml(generated.content)) {
-    throw new Error('Generated content is not valid HTML');
+  if (!generated.articleArchetype || !ARCHETYPE_IDS.includes(generated.articleArchetype)) {
+    add('Generated post must include a valid articleArchetype', 'metadata');
   }
 
-  const quality = validateTelegraphContent(generated.content);
-  if (quality.errors.length) {
-    throw new Error(`Content quality check failed: ${quality.errors.join('; ')}`);
+  if (generated.content && !isValidArticleHtml(generated.content)) {
+    add(
+      'Generated content is not valid HTML — model may have returned a safety stub or non-HTML text',
+      'content',
+    );
   }
 
-  return quality;
+  const audit = auditTelegraphPost(generated, {
+    strict: true,
+    otherPosts: existingPosts,
+    blogPosts,
+  });
+  if (!audit.ok) {
+    for (const issue of [...audit.critical, ...audit.quality, ...audit.errors]) {
+      if (errors.includes(issue)) {
+        continue;
+      }
+      const kind = /^(title|description|excerpt|hero|slug|tags|uniqueAngle|articleArchetype|missing meta description)/i.test(issue)
+        ? 'metadata'
+        : 'content';
+      add(issue, kind);
+    }
+  }
+
+  return {
+    ok: errors.length === 0,
+    errors,
+    metadataIssues,
+    contentIssues,
+    audit,
+  };
+}
+
+function validateGeneratedPost(generated, existingPosts, blogPosts) {
+  const issues = collectValidationIssues(generated, existingPosts, blogPosts);
+  if (!issues.ok) {
+    throw new Error(`Generated post failed validation: ${issues.errors.join('; ')}`);
+  }
+  return issues.audit.metrics;
 }
 
 function todayIsoDate() {
@@ -317,49 +385,13 @@ async function fetchInlineImages(metadata, slug, excludeIds) {
   return results;
 }
 
-async function generatePostDraft(topic, existingPosts, blogPosts, validationFeedback = '') {
-  const metadataPrompt = buildTelegraphPostMetadataPrompt({
-    topic,
-    existingPosts,
-    blogPosts,
-    validationFeedback,
-  });
-
-  console.log(`[openrouter] model=${DEFAULT_MODEL}`);
-  if (topic) {
-    console.log(`[openrouter] topic: ${topic}`);
-  } else {
-    console.log('[openrouter] topic: (auto)');
-  }
-
-  console.log('[openrouter] step 1/3: metadata');
-  const metadataResult = await chatCompletion({
-    model: DEFAULT_MODEL,
-    messages: [
-      {
-        role: 'system',
-        content:
-          'You are a precise editorial assistant. Output only valid JSON matching the requested schema.',
-      },
-      { role: 'user', content: metadataPrompt },
-    ],
-    temperature: 0.7,
-  });
-
-  const metadata = normalizeMetadata(parseJsonFromContent(metadataResult.content));
-  const archetype = getArchetype(metadata.articleArchetype);
-  console.log(`[telegraph] archetype: ${archetype.id} (${archetype.label})`);
-  if (metadata.uniqueAngle) {
-    console.log(`[telegraph] angle: ${metadata.uniqueAngle}`);
-  }
-
+async function fetchImagesForDraft(metadata, existingPosts, blogPosts) {
   const imageBaseName = metadata.slug;
   const excludeIds = [
     ...getUsedUnsplashIds(existingPosts),
     ...getUsedUnsplashIds(blogPosts),
   ];
 
-  console.log('[openrouter] step 2/3: fetch images');
   fs.mkdirSync(IMAGES_DIR, { recursive: true });
   const heroPath = path.join(IMAGES_DIR, `${imageBaseName}.jpg`);
   const heroQuery = metadata.unsplashSearchQuery || deriveUnsplashSearchQuery(metadata);
@@ -373,7 +405,40 @@ async function generatePostDraft(topic, existingPosts, blogPosts, validationFeed
     [...excludeIds, heroPhoto.id],
   );
 
-  console.log('[openrouter] step 3/3: article HTML');
+  return { heroPhoto, inlinePhotos, imageKey: imageFetchKey(metadata) };
+}
+
+async function generatePostMetadata(topic, existingPosts, blogPosts, validationFeedback = '') {
+  const metadataPrompt = buildTelegraphPostMetadataPrompt({
+    topic,
+    existingPosts,
+    blogPosts,
+    validationFeedback,
+  });
+
+  const metadataResult = await chatCompletion({
+    model: DEFAULT_MODEL,
+    messages: [
+      {
+        role: 'system',
+        content:
+          'You are a precise editorial assistant. Output only valid JSON matching the requested schema.',
+      },
+      { role: 'user', content: metadataPrompt },
+    ],
+    temperature: 0.7,
+  });
+
+  return normalizeMetadata(parseJsonFromContent(metadataResult.content));
+}
+
+async function generatePostContent(
+  metadata,
+  existingPosts,
+  blogPosts,
+  inlinePhotos,
+  validationFeedback = '',
+) {
   const contentPrompt = buildTelegraphPostContentPrompt(
     metadata,
     existingPosts,
@@ -394,45 +459,198 @@ async function generatePostDraft(topic, existingPosts, blogPosts, validationFeed
     temperature: 0.82,
   });
 
-  console.log(`[openrouter] done (model=${contentResult.model})`);
+  return stripHtmlFences(contentResult.content);
+}
+
+async function repairPostMetadata(metadata, issues, existingPosts, blogPosts) {
+  const repairPrompt = buildTelegraphPostMetadataRepairPrompt(
+    metadata,
+    issues,
+    existingPosts,
+    blogPosts,
+  );
+
+  console.log('[openrouter] repairing metadata…');
+  const metadataResult = await chatCompletion({
+    model: DEFAULT_MODEL,
+    messages: [
+      {
+        role: 'system',
+        content:
+          'You fix Telegraph post metadata JSON. Output only valid JSON matching the requested schema.',
+      },
+      { role: 'user', content: repairPrompt },
+    ],
+    temperature: 0.4,
+  });
+
+  return normalizeMetadata(parseJsonFromContent(metadataResult.content));
+}
+
+async function repairPostContent(
+  metadata,
+  content,
+  issues,
+  existingPosts,
+  blogPosts,
+  inlinePhotos,
+) {
+  const repairPrompt = buildTelegraphPostContentRepairPrompt(
+    metadata,
+    content,
+    issues,
+    existingPosts,
+    blogPosts,
+    inlinePhotos,
+  );
+
+  console.log('[openrouter] repairing article HTML…');
+  const contentResult = await chatCompletion({
+    model: DEFAULT_MODEL,
+    messages: [
+      {
+        role: 'system',
+        content:
+          'You fix HTML article bodies for DRMN Telegraph. Output only corrected HTML fragments — no JSON, no markdown.',
+      },
+      { role: 'user', content: repairPrompt },
+    ],
+    temperature: 0.5,
+  });
+
+  return stripHtmlFences(contentResult.content);
+}
+
+function mergeDraft(metadata, content, heroPhoto, inlinePhotos) {
   const { sectionOutline: _outline, inlineImages: _inline, ...meta } = metadata;
   return {
     ...meta,
-    content: stripHtmlFences(contentResult.content),
+    content,
     _heroPhoto: heroPhoto,
     _inlinePhotos: inlinePhotos,
   };
 }
 
-async function generatePostDraftWithRetry(topic, existingPosts, blogPosts) {
-  let validationFeedback = '';
-  let lastError = null;
-
-  for (let attempt = 1; attempt <= 2; attempt += 1) {
-    const draft = await generatePostDraft(
-      topic,
-      existingPosts,
-      blogPosts,
-      validationFeedback,
-    );
-
-    const quality = validateTelegraphContent(draft.content);
-
-    console.log(
-      `[telegraph] quality: ${quality.words} words, ${quality.siteLinks} site links, `
-      + `${quality.blogLinks} blog, ${quality.telegraphLinks} telegraph, ${quality.inlineImages} images`,
-    );
-
-    if (!quality.errors.length) {
-      return { draft, quality };
-    }
-
-    lastError = quality.errors.join('; ');
-    validationFeedback = lastError;
-    console.warn(`[telegraph] content retry ${attempt}/2 — ${lastError}`);
+async function generatePostDraft(topic, existingPosts, blogPosts, validationFeedback = '') {
+  console.log(`[openrouter] model=${DEFAULT_MODEL}`);
+  if (topic) {
+    console.log(`[openrouter] topic: ${topic}`);
+  } else {
+    console.log('[openrouter] topic: (auto)');
   }
 
-  throw new Error(`Content quality check failed after 2 attempts: ${lastError}`);
+  console.log('[openrouter] step 1/3: metadata');
+  const metadata = await generatePostMetadata(
+    topic,
+    existingPosts,
+    blogPosts,
+    validationFeedback,
+  );
+  const archetype = getArchetype(metadata.articleArchetype);
+  console.log(`[telegraph] archetype: ${archetype.id} (${archetype.label})`);
+  if (metadata.uniqueAngle) {
+    console.log(`[telegraph] angle: ${metadata.uniqueAngle}`);
+  }
+
+  console.log('[openrouter] step 2/3: fetch images');
+  const { heroPhoto, inlinePhotos } = await fetchImagesForDraft(
+    metadata,
+    existingPosts,
+    blogPosts,
+  );
+
+  console.log('[openrouter] step 3/3: article HTML');
+  const content = await generatePostContent(
+    metadata,
+    existingPosts,
+    blogPosts,
+    inlinePhotos,
+    validationFeedback,
+  );
+
+  console.log('[openrouter] draft ready');
+  return mergeDraft(metadata, content, heroPhoto, inlinePhotos);
+}
+
+async function generatePostDraftWithRetry(topic, existingPosts, blogPosts) {
+  let metadata = await generatePostMetadata(topic, existingPosts, blogPosts);
+  let { heroPhoto, inlinePhotos, imageKey } = await fetchImagesForDraft(
+    metadata,
+    existingPosts,
+    blogPosts,
+  );
+  let content = await generatePostContent(
+    metadata,
+    existingPosts,
+    blogPosts,
+    inlinePhotos,
+  );
+  let draft = mergeDraft(metadata, content, heroPhoto, inlinePhotos);
+  let lastIssues = collectValidationIssues(draft, existingPosts, blogPosts);
+
+  for (let attempt = 1; attempt <= MAX_VALIDATION_ATTEMPTS; attempt += 1) {
+    if (lastIssues.ok) {
+      if (attempt > 1) {
+        console.log(`[telegraph] validation passed after ${attempt} attempt(s)`);
+      }
+      return { draft, quality: lastIssues.audit.metrics };
+    }
+
+    console.warn(
+      `[telegraph] validation attempt ${attempt}/${MAX_VALIDATION_ATTEMPTS} — ${lastIssues.errors.length} issue(s)`,
+    );
+    lastIssues.errors.forEach((issue) => console.warn(`  - ${issue}`));
+
+    if (attempt === MAX_VALIDATION_ATTEMPTS) {
+      break;
+    }
+
+    const previousSlug = metadata.slug;
+    const previousTitle = metadata.title;
+    const previousImageKey = imageKey;
+
+    if (lastIssues.metadataIssues.length > 0) {
+      metadata = await repairPostMetadata(
+        metadata,
+        lastIssues.metadataIssues,
+        existingPosts,
+        blogPosts,
+      );
+    }
+
+    const metadataChanged = metadata.slug !== previousSlug || metadata.title !== previousTitle;
+    if (imageFetchKey(metadata) !== previousImageKey) {
+      ({ heroPhoto, inlinePhotos, imageKey } = await fetchImagesForDraft(
+        metadata,
+        existingPosts,
+        blogPosts,
+      ));
+    }
+
+    if (lastIssues.contentIssues.length > 0 || metadataChanged) {
+      const repairIssues = [
+        ...lastIssues.contentIssues,
+        ...(metadataChanged
+          ? [`Metadata changed — align the article with slug "${metadata.slug}" and title "${metadata.title}"`]
+          : []),
+      ];
+      content = await repairPostContent(
+        metadata,
+        content,
+        repairIssues,
+        existingPosts,
+        blogPosts,
+        inlinePhotos,
+      );
+    }
+
+    draft = mergeDraft(metadata, content, heroPhoto, inlinePhotos);
+    lastIssues = collectValidationIssues(draft, existingPosts, blogPosts);
+  }
+
+  throw new Error(
+    `Generated post failed validation after ${MAX_VALIDATION_ATTEMPTS} attempts: ${lastIssues.errors.join('; ')}`,
+  );
 }
 
 function writePostJson(post) {
@@ -483,7 +701,6 @@ async function main() {
   const { topic, dryRun, publishOnly, slug } = parseArgs(process.argv);
   const existingPosts = loadJsonPosts(POSTS_DIR);
   const blogPosts = loadJsonPosts(BLOG_POSTS_DIR);
-  const existingSlugs = new Set(existingPosts.map((p) => p.slug));
 
   if (publishOnly) {
     const target = slug
@@ -512,7 +729,7 @@ async function main() {
     existingPosts,
     blogPosts,
   );
-  validateGeneratedPost(generated, existingSlugs, existingPosts);
+  validateGeneratedPost(generated, existingPosts, blogPosts);
 
   console.log('\n--- Draft summary ---');
   console.log(`slug:  ${generated.slug}`);
@@ -565,4 +782,7 @@ module.exports = {
   loadJsonPosts,
   publishPostToTelegraph,
   normalizeSlug,
+  collectValidationIssues,
+  validateGeneratedPost,
+  generatePostDraftWithRetry,
 };
