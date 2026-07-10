@@ -2,7 +2,7 @@
   "version": 1,
   "source": "Google Trends related queries",
   "sourceFile": "relatedQueries.csv",
-  "updatedAt": "2026-07-09",
+  "updatedAt": "2026-07-10",
   "clusters": [
     {
       "id": "core-sound-machine",
@@ -264,8 +264,8 @@
         {
           "id": "best-sound-machine-for-sleep",
           "action": "new_post",
-          "status": "pending",
-          "recommendedNext": true,
+          "status": "covered",
+          "recommendedNext": false,
           "priority": 5,
           "plannedSlug": "best-sound-machine-for-sleep",
           "primaryKeyword": "best sound machine",
@@ -289,7 +289,7 @@
           ],
           "titleHint": "Best Sound Machine for Sleep: Hardware Picks vs iPhone Apps",
           "topicPrompt": "Best sound machine for sleep comparison: bedside hardware devices vs iPhone sleep sound apps, what features matter (offline, timer, mixing, volume), and who should skip hardware for a phone app.",
-          "coveredBy": null,
+          "coveredBy": "best-sound-machine-for-sleep",
           "relatedPosts": [
             "best-white-noise-apps-iphone-compared",
             "sleep-sound-machine-guide",
