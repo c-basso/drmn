@@ -1,6 +1,6 @@
 ---
 name: blog-post-seo-optimize
-description: Audit and rewrite a single DRMN blog post for SEO and GEO. Finds AI garbage, keyword stuffing, missing FAQ schema, cannibalization, and HTML errors; outputs an improved build/blog/posts/{slug}.json. Use when optimizing one blog post, fixing a post URL, improving SEO/GEO of an article, or after blog:audit reports issues.
+description: Audit and rewrite a single DRMN blog post for SEO and GEO. Finds AI garbage, keyword stuffing, missing FAQ schema, cannibalization, and HTML errors; applies stop-slop for human-sounding prose; outputs an improved build/blog/posts/{slug}.json. Use when optimizing one blog post, fixing a post URL, improving SEO/GEO of an article, or after blog:audit reports issues.
 ---
 
 # Blog Post SEO Optimize
@@ -22,10 +22,11 @@ Copy this checklist and complete every step:
 - [ ] 2. Run automated audit
 - [ ] 3. Read source JSON + 2–3 related posts
 - [ ] 4. Write audit summary (critical vs quality)
-- [ ] 5. Rewrite build/blog/posts/{slug}.json
-- [ ] 6. Re-audit with --strict
-- [ ] 7. npm run build && npm run validate
-- [ ] 8. Present diff summary + improved JSON path
+- [ ] 5. Load stop-slop and de-slop all prose fields
+- [ ] 6. Rewrite build/blog/posts/{slug}.json
+- [ ] 7. Re-audit with --strict
+- [ ] 8. npm run build && npm run validate
+- [ ] 9. Present diff summary + improved JSON path
 ```
 
 ### Step 1 — Resolve slug
@@ -57,7 +58,30 @@ Read:
 
 Pick a **unique angle** vs similar posts (e.g. science vs how-to vs comparison).
 
-### Step 4 — Rewrite rules
+### Step 4 — Audit summary
+
+Group findings from Step 2 into **critical** vs **quality** vs **warnings**. Share with the user before rewriting.
+
+### Step 5 — Humanize prose (stop-slop)
+
+**Required.** Load the stop-slop skill before editing JSON:
+
+```bash
+npx openskills read stop-slop
+```
+
+Apply its rules to `content`, `excerpt`, `description`, and `faq` answers. Run Quick Checks and scoring; revise if below 35/50.
+
+**When stop-slop conflicts with SEO/GEO rules, SEO/GEO wins on structure; stop-slop wins on phrasing:**
+
+| Topic | Rule |
+|-------|------|
+| Em dashes | Prefer none (stop-slop). If needed for clarity, ≤5 per 1000 words (audit limit). |
+| FAQ answers | Keep quotable for AI search, but strip AI filler, passive voice, and throat-clearing. |
+| Key takeaways | Direct facts, not pull-quote slogans. |
+| First `<p>` definition | Clear entity for GEO; no "In today's world" openers. |
+
+### Step 6 — Rewrite rules
 
 Edit **only** `build/blog/posts/{slug}.json`:
 
@@ -77,7 +101,7 @@ Edit **only** `build/blog/posts/{slug}.json`:
 2. `<h2>Key takeaways</h2>` + 4–5 bullets
 3. Medical disclaimer `<blockquote>` (not a substitute for clinical care)
 4. 2–4 internal links: `href="/blog/slug/"` with trailing slash
-5. Short paragraphs; vary vocabulary; em dashes ≤5 per 1000 words
+5. Short paragraphs; vary vocabulary; avoid em dashes (≤5 per 1000 words max if unavoidable)
 6. No invented stats — hedge or remove ("evidence is mixed", "some studies suggest")
 7. No competing app names; no external links unless citing a study
 
@@ -85,7 +109,7 @@ Edit **only** `build/blog/posts/{slug}.json`:
 
 **Never leave in content:** CJK/Arabic/Hebrew/Cyrillic fragments, custom attributes (`gru=`, `collegial=`), broken tags (`<channel|>`), words like `investimento`, `enfranchised`.
 
-### Step 5 — Verify
+### Step 7 — Verify
 
 ```bash
 node build/validate/audit-blog-post.js SLUG --strict
@@ -95,7 +119,7 @@ npm run validate
 
 `--strict` must pass (no critical **or** quality errors) before you finish.
 
-### Step 6 — Deliverable
+### Step 8 — Deliverable
 
 Tell the user:
 
@@ -127,5 +151,6 @@ Do **not** edit `blog/{slug}/index.html` directly — it is generated.
 
 ## Related skills
 
+- `stop-slop` — **required** before rewrite; invoke via `npx openskills read stop-slop`
 - `seo-audit` — site-wide SEO
 - `geo-optimization` — AI search citation patterns

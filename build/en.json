@@ -1,21 +1,21 @@
 {
   "meta": {
     "lang": "en",
-    "title": "DRMN Sleep Sound Machine App — Sounds for Sleep iPhone",
-    "description": "Sleep sound machine app for iPhone: rain, fan & white noise, mix sounds, offline. Download DRMN free on App Store—best sounds for sleep, focus & baby sleep.",
+    "title": "White Noise & Sleep Sound Machine App for iPhone | DRMN",
+    "description": "Fall asleep faster with DRMN, a free white noise and sleep sound machine app for iPhone. Mix rain, fan, and brown noise, set a fade-out timer, play offline.",
     "keywords": "white noise, sleep sounds, sound machine, brown noise, rain sounds, fan sounds, baby sleep sounds, offline sleep app, sleep timer, focus sounds, bedtime audio, free sleep app iPhone",
     "author": "DRMN",
     "og_url": "https://drmn.xyz/",
-    "og_title": "Sleep Sound Machine & Sounds for Sleep | DRMN",
-    "og_description": "Sleep sound machine for iPhone: rain, fan, white noise and nature sounds. Mix tracks, play offline. Download DRMN free on the App Store.",
+    "og_title": "White Noise & Sleep Sound Machine App for iPhone | DRMN",
+    "og_description": "Free white noise and sleep sound app for iPhone. Mix rain, fan, and nature sounds, play offline, set a fade-out sleep timer. Download DRMN on the App Store.",
     "og_image": "https://drmn.xyz/site_preview.png",
-    "og_image_alt": "DRMN App - Sleep Better, Fall Asleep Faster",
+    "og_image_alt": "DRMN white noise and sleep sound machine app on iPhone",
     "og_locale": "en_US",
     "twitter_url": "https://drmn.xyz/",
-    "twitter_title": "Sleep Sound Machine & Sounds for Sleep | DRMN",
-    "twitter_description": "Sleep sound machine for iPhone: rain, fan, white noise and nature sounds. Mix tracks, play offline. Download DRMN free on the App Store.",
+    "twitter_title": "White Noise & Sleep Sound Machine App for iPhone | DRMN",
+    "twitter_description": "Free white noise and sleep sound app for iPhone. Mix rain, fan, and nature sounds, play offline, set a fade-out sleep timer. Download DRMN on the App Store.",
     "twitter_image": "https://drmn.xyz/site_preview.png",
-    "twitter_image_alt": "DRMN App - Sleep Better, Fall Asleep Faster",
+    "twitter_image_alt": "DRMN white noise and sleep sound machine app on iPhone",
     "twitter_site": "@c__basso",
     "twitter_creator": "@c__basso",
     "canonical": "https://drmn.xyz/",
@@ -33,9 +33,9 @@
     "app_name_suffix": "Sleep Sound Machine",
     "logo_alt": "DRMN sleep sound machine app logo for iPhone",
     "app_name": "DRMN",
-    "title": "White Noise App for Better Sleep",
-    "tagline": "Fall asleep faster with steady ambient sounds on your iPhone. DRMN combines rain, fan, white and brown noise, and nature audio—with mixing, offline playback, and a battery-friendly sleep timer.",
-    "tldr": "DRMN is a freemium iOS sleep sound machine app for masking noise and falling asleep faster. App Store reviewers often report shorter sleep onset when background noise is a problem (individual results vary). Free version includes rain, fan, and white noise sounds, a 1-hour timer, offline mode, sound mixing, and battery optimization. Download free from the App Store.",
+    "title": "White Noise & Sleep Sound Machine App for iPhone",
+    "tagline": "Fall asleep faster with steady ambient sound. DRMN combines rain, fan, white and brown noise, and nature audio with unlimited mixing, offline playback, and a battery-friendly sleep timer.",
+    "tldr": "DRMN is a free white noise and sleep sound machine app for iPhone (iOS 17.1+). The free version includes rain, fan, and white noise, a 1-hour fade-out timer, offline playback, and unlimited sound mixing. App Store reviewers report falling asleep faster when background noise is the problem; results vary by person.",
     "download_text": "Download Now",
     "download_url": "https://apps.apple.com/app/id6746480683",
     "download_aria_label": "Download DRMN free from the App Store",
@@ -86,17 +86,17 @@
       {
         "icon": "😴",
         "title": "Fall Asleep Faster, Sleep Deeper",
-        "description": "Struggling to fall asleep? Our scientifically-backed sound therapy masks disruptive noises from traffic, neighbors, or snoring. It creates a consistent sleep environment that signals your brain it's time to rest. Wake up feeling refreshed and energized every morning."
+        "description": "Steady background sound masks traffic, neighbors, and snoring, so sudden noises are less likely to wake you. A consistent audio environment also gives your brain a familiar cue that it's time to rest. Pick one track or build a mix that matches how you fall asleep."
       },
       {
         "icon": "🎯",
         "title": "Focus Better, Work Smarter",
-        "description": "Whether you're meditating, studying, or working from a noisy coffee shop, DRMN creates the perfect atmosphere for concentration. Block out distractions, reduce stress, and boost your productivity. Many users find it helps them stay focused during important tasks."
+        "description": "Studying, deep work, or a noisy coffee shop: steady sound covers conversations and clatter so you can concentrate. Brown noise and ambient tracks work well for long focus sessions, and you can keep a separate mix saved just for work."
       },
       {
         "icon": "👶",
         "title": "Help Your Baby Sleep Peacefully",
-        "description": "Our specialized baby sleep sounds—like hair dryer, vacuum cleaner, and keyboard typing—help infants and toddlers fall asleep faster. These familiar rhythms soothe little ones and create a calming nursery environment that promotes healthy sleep patterns."
+        "description": "Baby sleep sounds like hair dryer, vacuum cleaner, and keyboard typing give infants and toddlers a familiar, steady rhythm to settle to. Play them from your iPhone in the nursery instead of buying a separate bedside sound machine."
       }
     ]
   },
@@ -137,7 +137,7 @@
     "rating_max": "5",
     "review_count": "10",
     "downloads": "10,000+",
-    "description": "Real ratings and reviews on the App Store—not marketing claims. See what users say before you download.",
+    "description": "Ratings and reviews come straight from the App Store. Read what users say before you download.",
     "store_url": "https://apps.apple.com/app/id6746480683",
     "reviews_url": "https://apps.apple.com/app/id6746480683?see-all=reviews",
     "screenshot_alt": "DRMN app preview on iPhone",
@@ -155,8 +155,8 @@
     "about_page_label": "About page"
   },
   "content": {
-    "title": "Transform Your Sleep with a Sound Machine App",
-    "intro": "DRMN is an iOS sleep sound machine app with white noise, rain, fan, and nature sounds to help you fall asleep faster. With over 10,000 downloads and a 4.9-star rating, it gives you the best sounds for sleep whether you need a full sound machine for insomnia, focus at work, or baby sleep.",
+    "title": "A Sound Machine App for Sleep, Focus, and Baby Rest",
+    "intro": "DRMN is a white noise and sleep sound machine app for iPhone with rain, fan, brown noise, and nature sounds. It has over 10,000 downloads and a 4.9-star App Store rating, and covers three main uses: masking noise so you fall asleep faster, backgrounding deep work, and settling babies in the nursery.",
     "sections": [
       {
         "title": "A Sound Library Designed for Your Needs",
@@ -167,34 +167,34 @@
           "<strong>Meditation and focus sounds</strong> - Ambient tracks and soft instrumentals help you concentrate during work or practice mindfulness",
           "<strong>Baby sleep sounds</strong> - Familiar sounds like hair dryer, vacuum cleaner, and keyboard typing help little ones drift off to sleep"
         ],
-        "paragraph2": "The best part? You can mix multiple sounds together to create your perfect blend. Prefer the steady hum of white noise with a hint of ocean waves? Or maybe rain mixed with soft meditation music? You're in complete control."
+        "paragraph2": "You can mix any of these together: white noise under ocean waves, rain over soft meditation music, or whatever combination helps you switch off. Mixing is unlimited and included in the free version."
       },
       {
-        "title": "Science-Backed Sleep Therapy That Actually Works",
-        "paragraph1": "Research shows that consistent background sounds can significantly improve sleep quality. Here's how DRMN helps:",
+        "title": "How Sound Masking Helps You Fall Asleep",
+        "paragraph1": "Sleep research on noise masking points to a simple mechanism: your brain reacts to changes in sound more than to sound itself. Steady audio helps in three ways:",
         "list_items": [
-          "<strong>Blocks disruptive noises</strong> - Traffic, neighbors, snoring, or sudden sounds won't wake you up anymore",
-          "<strong>Signals your brain to rest</strong> - Consistent sound creates a predictable environment that helps your mind wind down",
-          "<strong>Promotes deeper sleep</strong> - Carefully selected frequencies encourage more restorative rest cycles"
+          "<strong>Masks disruptive noise</strong> - Traffic, neighbors, snoring, and sudden sounds blend into the background instead of standing out",
+          "<strong>Signals your brain to rest</strong> - The same track every night becomes a cue that it's time to wind down",
+          "<strong>Reduces nighttime awakenings</strong> - A constant sound floor makes you less likely to be startled awake by one-off noises"
         ],
-        "paragraph2": "With over 10,000 downloads and a 4.9-star App Store rating, DRMN users in reviews often mention falling asleep faster when noise is a problem and experiencing fewer nighttime awakenings. Individual results vary. Wake up feeling refreshed and ready to tackle your day."
+        "paragraph2": "App Store reviewers most often mention falling asleep faster when background noise was the thing keeping them up. Results vary by person, so preview a few tracks and give one a full week before judging it."
       },
       {
-        "title": "Not Just for Sleep—Great for Focus Too",
-        "paragraph1": "DRMN isn't just a sleep app—it's your secret weapon for concentration. Whether you're working from a noisy coffee shop, studying for exams, or practicing meditation, the right sounds can make all the difference:",
+        "title": "Focus Sounds for Work and Study",
+        "paragraph1": "The same masking that helps at night works during the day. If you study in a shared space, work from a coffee shop, or sit in an open office, steady sound covers the conversations and clatter that break concentration:",
         "list_items": [
-          "<strong>Eliminate distractions</strong> - Create your own quiet bubble in any environment",
-          "<strong>Reduce stress</strong> - Calming frequencies help you stay relaxed and focused",
-          "<strong>Boost productivity</strong> - Users report improved focus and productivity when using background sounds",
-          "<strong>Improve concentration</strong> - Perfect for deep work sessions and important tasks"
+          "<strong>Brown noise for deep work</strong> - Lower frequencies feel warmer than white noise and are easier to listen to for hours",
+          "<strong>Ambient and instrumental tracks</strong> - Background texture without lyrics that pull your attention",
+          "<strong>Saved mixes</strong> - Keep one blend for sleep and a separate one for work sessions",
+          "<strong>Offline playback</strong> - Focus sounds keep playing on a plane or anywhere without signal"
         ],
-        "paragraph2": "Whether you're working from home, studying late at night, or just need a moment of peace, DRMN provides the perfect audio backdrop to help you stay in the zone."
+        "paragraph2": "Reviewers who use DRMN during the day mention studying, open-plan offices, and writing sessions as the most common use cases."
       },
       {
-        "title": "Help Your Little One Sleep Through the Night",
-        "paragraph1": "We know how exhausting it can be when your baby won't sleep. That's why we've included specialized sounds designed specifically for infants and toddlers. Gentle hair dryer, vacuum hums, and keyboard typing create familiar rhythms that soothe little ones.",
+        "title": "Baby Sleep Sounds for the Nursery",
+        "paragraph1": "DRMN includes sounds parents already know work: hair dryer, vacuum hum, and keyboard typing. These steady, low-variation rhythms resemble the constant background noise babies heard in the womb, which is why they settle infants when silence doesn't.",
         "list_items": [],
-        "paragraph2": "These consistent, gentle sounds mimic the familiar noises babies heard in the womb, providing comfort and security. With over 10,000 downloads, parents around the world trust DRMN to help their babies sleep longer and more peacefully—which means better rest for you too."
+        "paragraph2": "Set the timer if you only need sound while your baby falls asleep, or use offline playback for all-night sessions without keeping the phone online. An old iPhone in the nursery running DRMN replaces a dedicated bedside sound machine."
       },
       {
         "title": "Built with Care, Designed for Real Life",
@@ -215,13 +215,13 @@
   "benefits": {
     "title": "Why Choose DRMN?",
     "items": [
-      "High-quality, professionally recorded sounds that actually help you sleep",
-      "Mix multiple sounds to create your perfect sleep environment",
-      "Smart timer with automatic fade-out—set it and forget it",
-      "Beautiful, intuitive interface that's easy to use",
-      "Works completely offline once you download sounds",
-      "Battery-optimized to run all night without draining your phone",
-      "Free to download with optional premium features"
+      "100+ hours of professionally recorded sleep and focus sounds",
+      "Unlimited sound mixing, included in the free version",
+      "Sleep timer with automatic fade-out (1 hour free, longer with premium)",
+      "Simple interface: pick a sound and press play, no setup",
+      "Works offline once you download sounds, up to 10 hours per charge",
+      "Battery-optimized for all-night playback",
+      "Free to download, with an optional $19.99 lifetime unlock"
     ]
   },
   "comparison": {
@@ -303,8 +303,8 @@
     "items": [
       {
         "date": "July 2026",
-        "title": "GEO & Blog: Competitor Comparison Guides",
-        "description": "New blog articles comparing DRMN vs Calm, BetterSleep alternatives, and the best white noise apps for iPhone—with FAQ sections for easier reference.",
+        "title": "New Comparison Guides on the Blog",
+        "description": "New articles comparing DRMN vs Calm, BetterSleep alternatives, and the best white noise apps for iPhone, each with an FAQ section for quick reference.",
         "link_url": "/blog/",
         "link_text": "Read the blog"
       },
@@ -442,9 +442,10 @@
         },
         "screenshot": {
           "@type": "ImageObject",
-          "url": "https://drmn.xyz/img/logo.webp",
-          "width": 176,
-          "height": 176
+          "url": "https://drmn.xyz/site_preview.png",
+          "width": 1200,
+          "height": 630,
+          "caption": "DRMN sleep sound machine app preview"
         },
         "url": "https://drmn.xyz/",
         "author": {
@@ -458,7 +459,7 @@
         "keywords": "white noise, sleep sounds, sound machine, brown noise, rain sounds, fan sounds, baby sleep sounds, offline sleep app, sleep timer, focus sounds, insomnia, free sleep app iPhone",
         "inLanguage": "en",
         "datePublished": "2024-01-01",
-        "dateModified": "2026-07-02",
+        "dateModified": "2026-07-10",
         "softwareVersion": "1.5",
         "fileSize": "49.2MB",
         "softwareRequirements": "iOS 17.1 or later",
@@ -533,48 +534,7 @@
             "text": "Save favorite tracks for offline playback—useful when traveling or when your bedroom has weak Wi‑Fi."
           }
         ]
-      },
-      "reviews": [
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Sarah M."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "I fall asleep faster with DRMN. The sound mixing feature lets me create the perfect combination of white noise and ocean waves."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Michael R."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "My baby sleeps through the night now thanks to DRMN's hair dryer sound. The offline mode is a lifesaver when we travel."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Jennifer L."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "As someone with insomnia, DRMN has been a game-changer. I use it every night and wake up feeling refreshed."
-        }
-      ]
+      }
     }
   }
 }
