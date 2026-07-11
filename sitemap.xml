@@ -7,6 +7,11 @@
   </sitemap>
 
   <sitemap>
+    <loc>https://drmn.xyz/sitemaps/guides.xml</loc>
+    <lastmod>2026-07-11</lastmod>
+  </sitemap>
+
+  <sitemap>
     <loc>https://drmn.xyz/sitemaps/legal.xml</loc>
     <lastmod>2026-07-11</lastmod>
   </sitemap>

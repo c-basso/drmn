@@ -1,0 +1,47 @@
+{
+  "slug": "best-sounds-for-sleep",
+  "title": "The Best Sounds for Sleep, Ranked by What Wakes You",
+  "meta_title": "The Best Sounds for Sleep, Ranked by What Wakes You (2026)",
+  "description": "White, pink, and brown noise, rain, fan, and ocean waves compared: which sound to sleep to for traffic, snoring, racing thoughts, or a too-quiet room, and how to test each one.",
+  "kicker": "Guide · Best sounds for sleep",
+  "lede": "“Best sound for sleep” has no universal answer, but it has a personal one. Start from what wakes you, and the ranking writes itself.",
+  "datePublished": "2026-07-11",
+  "dateModified": "2026-07-11",
+  "cta_tagline": "Every sound in this guide, in one free iPhone app",
+  "answer_html": "<p><strong>Short answer:</strong> brown noise for traffic and snoring, rain for a busy mind, fan hum if you have slept next to a fan for years, pink noise for rooms that feel too quiet, and ocean waves for wind-down before bed. Steady beats interesting: any sound that changes will eventually wake you.</p>",
+  "body_html": "<h2>Pick by problem, not by popularity</h2>\n    <table>\n      <thead>\n        <tr><th>What wakes you</th><th>Best sound</th><th>Why</th></tr>\n      </thead>\n      <tbody>\n        <tr><td>Traffic, neighbors, snoring</td><td>Brown noise</td><td>Its energy sits in the same low frequencies as engines and snores</td></tr>\n        <tr><td>Racing thoughts</td><td>Rain</td><td>Natural texture gives the mind a soft anchor without demanding attention</td></tr>\n        <tr><td>Slept with a fan for years</td><td>Fan noise</td><td>Your brain already treats the hum as a sleep cue</td></tr>\n        <tr><td>Room feels too quiet</td><td>Pink noise</td><td>Fills the silence more gently than white noise's hiss</td></tr>\n        <tr><td>Sharp, irregular sounds (doors, clicks)</td><td>White noise</td><td>Full-spectrum energy covers high-pitched interruptions best</td></tr>\n        <tr><td>Tension at bedtime</td><td>Ocean waves</td><td>The slow wave rhythm paces breathing down</td></tr>\n      </tbody>\n    </table>\n\n    <h2>White vs pink vs brown noise</h2>\n    <p>All three are broadband noise; they differ in where the energy sits. <strong>White noise</strong> gives every frequency equal power and reads as a hiss — the most effective masker of sharp sounds and the harshest on the ear. <strong>Pink noise</strong> tapers the highs and sounds like steady rain on a roof. <strong>Brown noise</strong> cuts the highs harder still and rumbles like a waterfall behind a wall; most people who \"can't stand white noise\" settle happily on brown.</p>\n    <p>Green noise, a mid-frequency cousin, sits between white and pink and has grown popular for the same reason: masking without hiss.</p>\n\n    <h2>Steady beats interesting</h2>\n    <p>Music, podcasts, and sleep stories change constantly, and change is what your sleeping brain monitors for. That song you love has quiet passages and loud ones; each transition is a chance to surface out of light sleep. Noise, rain, and fan hum stay flat for hours, which is the whole trick.</p>\n\n    <figure class=\"figure-shot\">\n      <img src=\"/img/screenshot-2-sounds.webp\" alt=\"Sleep sound library in the DRMN app with noise colors, rain, and nature sounds\" width=\"600\" height=\"1300\" loading=\"lazy\">\n      <figcaption>DRMN's library covers every category in this guide: noise colors, rain, fan, ocean, and nature.</figcaption>\n    </figure>\n\n    <h2>How to run the test in DRMN</h2>\n    <div class=\"app-steps\">\n      <ol>\n        <li>Download <strong>Sound Machine Deep Sleep DRMN</strong> free from the App Store.</li>\n        <li>Pick the sound this guide's table suggests for your situation.</li>\n        <li>Set volume just above your room's background noise — conversation level or below.</li>\n        <li>Set the sleep timer (45 minutes to fall asleep, or all night if you wake at 3 a.m.), press play, lock the screen.</li>\n        <li>Give each sound one full night. Rotate to the next candidate the following night and keep the winner.</li>\n        <li>If the winner still feels off, open the mixer and layer it: rain over brown noise is the mix to try first.</li>\n      </ol>\n    </div>",
+  "faq_html": "<h3>What is the best sound to sleep to?</h3>\n    <p>The one that masks your specific problem: brown noise for low rumbles, rain for a busy mind, fan if that is what you grew up with. One full night per sound tells you more than any list.</p>\n    <h3>What is the difference between white, pink, and brown noise?</h3>\n    <p>Energy distribution. White is equal at all frequencies (hiss), pink tapers the highs (steady rain), brown cuts them hardest (deep rumble).</p>\n    <h3>Can I combine two sleep sounds at once?</h3>\n    <p>Yes. Mixes often beat single sounds — rain over brown noise covers highs and lows while sounding natural. DRMN's mixer handles the layering.</p>",
+  "faq": [
+    {
+      "question": "What is the best sound to sleep to?",
+      "answer": "There is no single best sound for everyone. Match the sound to the problem: brown noise for traffic and snoring, rain for racing thoughts, fan hum if you grew up sleeping with a fan, and pink noise for a room that feels too quiet. Test each for one full night before judging."
+    },
+    {
+      "question": "What is the difference between white, pink, and brown noise?",
+      "answer": "All three spread sound across the full frequency range. White noise gives every frequency equal energy and sounds like a hiss. Pink noise reduces the high frequencies and sounds like steady rain. Brown noise cuts highs harder and sounds like a deep rumble or waterfall — the gentlest of the three on most ears."
+    },
+    {
+      "question": "Can I combine two sleep sounds at once?",
+      "answer": "Yes, and mixes often beat single sounds. Rain layered over brown noise covers both high and low frequencies while sounding natural. DRMN's mixer plays several tracks at once with independent volume for each."
+    }
+  ],
+  "related": [
+    {
+      "slug": "deep-sleep-sounds",
+      "title": "Deep sleep sounds: what to play for more restorative sleep"
+    },
+    {
+      "slug": "rain-sounds-for-sleeping",
+      "title": "Rain sounds for sleeping: why they work and how to use them"
+    },
+    {
+      "slug": "block-out-snoring",
+      "title": "How to block out snoring with sound masking"
+    }
+  ],
+  "order": 3,
+  "card_title": "The Best Sounds for Sleep, Ranked by What Wakes You",
+  "card_description": "White vs pink vs brown noise, rain, fan, and ocean — which masking sound fits your bedroom and your brain.",
+  "short_title": "Best sounds for sleep",
+  "in_footer": true
+}

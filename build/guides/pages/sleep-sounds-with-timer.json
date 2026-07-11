@@ -1,0 +1,46 @@
+{
+  "slug": "sleep-sounds-with-timer",
+  "title": "Sleep Sounds With a Timer: Fade Out Instead of Stopping",
+  "meta_title": "Sleep Sounds With a Timer: Fade Out Instead of Stopping (2026)",
+  "description": "A hard audio stop can wake you as surely as a slammed door. Why a gradual fade-out timer matters, all-night audio vs timed playback, and how to set DRMN's 10-hour fade timer.",
+  "kicker": "Guide · Sleep sounds with timer",
+  "lede": "The timer is the most underrated setting in any sleep sound app. Get it wrong and the app that put you to sleep wakes you back up.",
+  "datePublished": "2026-07-11",
+  "dateModified": "2026-07-11",
+  "cta_tagline": "Sleep timer up to 10 hours with gradual fade-out · free download",
+  "answer_html": "<p><strong>Short answer:</strong> match the timer to your problem. Trouble falling asleep: 45–60 minutes with fade-out. Waking up from noise at night: all night, up to 10 hours in DRMN. Either way the audio must end with a gradual fade, because a hard stop registers in your sleeping brain like any other sudden change.</p>",
+  "body_html": "<h2>Why the ending matters as much as the sound</h2>\n    <p>Asleep, your auditory system keeps monitoring the room. It ignores whatever stays constant and flags whatever changes. A steady sound that vanishes in an instant is a change — the acoustic equivalent of a light snapping off in a lit room. Light sleepers surface, check the silence, and now it's 2 a.m. and they're awake.</p>\n    <p>A gradual fade solves this by making the ending too slow to notice. DRMN lowers volume over an extended window, so by the time playback stops, the difference between \"very quiet\" and \"silent\" is beneath your waking threshold.</p>\n\n    <h2>All night vs timed: which do you need?</h2>\n    <table>\n      <thead>\n        <tr><th>Your situation</th><th>Timer setting</th><th>Why</th></tr>\n      </thead>\n      <tbody>\n        <tr><td>Slow to fall asleep, sleep through fine</td><td>45–60 min, fade-out</td><td>Sound does its job at onset; no need to run the speaker for 8 hours</td></tr>\n        <tr><td>Wake from noise mid-night</td><td>8–10 hours</td><td>Masking has to be there when the garbage truck is</td></tr>\n        <tr><td>Wake at the same early hour</td><td>All night</td><td>Early morning is when outside noise ramps up and sleep is lightest</td></tr>\n        <tr><td>Naps</td><td>20–30 min, fade-out</td><td>The fade doubles as a gentle end-of-nap signal</td></tr>\n      </tbody>\n    </table>\n\n    <figure class=\"figure-shot\">\n      <img src=\"/img/screenshot-7-timer.webp\" alt=\"DRMN sleep timer set on iPhone with options up to 10 hours\" width=\"600\" height=\"1300\" loading=\"lazy\">\n      <figcaption>DRMN's timer runs from minutes to 10 hours and always ends in a fade, never a cutoff.</figcaption>\n    </figure>\n\n    <h2>How to set the fade timer in DRMN</h2>\n    <div class=\"app-steps\">\n      <ol>\n        <li>Download <strong>Sound Machine Deep Sleep DRMN</strong> free from the App Store.</li>\n        <li>Start your sound or mix — rain, brown noise, fan, or a layered combination.</li>\n        <li>Open the <strong>timer</strong> and pick your duration: 45–60 minutes for sleep onset, 8–10 hours for all-night masking.</li>\n        <li>Playback fades gradually as the timer ends. No action needed, no hard stop, no 3 a.m. silence shock.</li>\n        <li>Lock the screen. The timer runs in the background and stops playback on its own.</li>\n      </ol>\n    </div>",
+  "faq_html": "<h3>Should sleep sounds play all night or on a timer?</h3>\n    <p>Timer for trouble falling asleep, all night for noise that wakes you later. DRMN handles both, up to 10 hours.</p>\n    <h3>Why does the fade-out matter?</h3>\n    <p>An abrupt stop is a change your sleeping brain notices, like a light snapping off. A slow fade stays below the waking threshold.</p>\n    <h3>Can the iPhone Clock timer do this?</h3>\n    <p>The Clock app's \"Stop Playing\" timer halts audio instantly with no fade. Use the in-app timer instead so the ending stays gentle.</p>",
+  "faq": [
+    {
+      "question": "Should sleep sounds play all night or on a timer?",
+      "answer": "If you only struggle to fall asleep, a 45–60 minute timer with fade-out is enough. If noise wakes you during the night — snoring, traffic, thin walls — run sounds all night. DRMN's timer covers both: from minutes up to 10 hours, always ending in a gradual fade."
+    },
+    {
+      "question": "Why does a fade-out matter for a sleep timer?",
+      "answer": "Your sleeping brain monitors for change. Sound that cuts off abruptly is a change, and it can pull you out of light sleep exactly the way a sudden noise would. A gradual fade lowers volume slowly enough that the ending never crosses your waking threshold."
+    },
+    {
+      "question": "Can the iPhone sleep timer stop any app's audio?",
+      "answer": "The Clock app's 'Stop Playing' timer halts audio, but it stops instantly with no fade. A dedicated timer inside the sound app, like DRMN's, fades volume down gradually, which is the difference between ending playback and getting woken by the ending."
+    }
+  ],
+  "related": [
+    {
+      "slug": "fall-asleep-fast",
+      "title": "How to fall asleep fast using sound"
+    },
+    {
+      "slug": "white-noise-app",
+      "title": "What makes a good white noise app for iPhone"
+    },
+    {
+      "slug": "white-noise-for-babies",
+      "title": "White noise for babies: safe volume, distance, and setup"
+    }
+  ],
+  "order": 6,
+  "card_title": "Sleep Sounds With a Timer: Fade Out Instead of Stopping",
+  "card_description": "All-night audio vs a timed fade — what the research says, and how to set a 10-hour gradual fade in DRMN.",
+  "short_title": "Sleep sounds with timer"
+}

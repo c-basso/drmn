@@ -11,7 +11,10 @@ const LOOP_PLACEHOLDER_ROOTS = new Set([
     'post',
     'page',
     'tag',
-    'related'
+    'related',
+    'loc',
+    'alt',
+    'guide'
 ]);
 
 function getValue(obj, keyPath) {
@@ -120,7 +123,15 @@ function processIfBlocks(template, context) {
             if (/\{\{#if\s+/.test(blockContent)) {
                 return fullMatch;
             }
-            const value = getValueFromContext(context, pathExpression.trim());
+            const path = pathExpression.trim();
+            const root = path.split('.')[0];
+            // Conditions on loop variables must wait until the surrounding
+            // {{#each}} puts the variable in scope; evaluating them against the
+            // root context would silently strip the block.
+            if (LOOP_PLACEHOLDER_ROOTS.has(root) && !(root in context)) {
+                return fullMatch;
+            }
+            const value = getValueFromContext(context, path);
             const isTruthy = value !== undefined && value !== null && value !== false && value !== '';
             return isTruthy ? blockContent : '';
         });
@@ -129,39 +140,66 @@ function processIfBlocks(template, context) {
     return result;
 }
 
-function processEachBlocks(template, context, lang) {
-    const eachPattern = /\{\{#each\s+([^\s]+)\s+as\s+\|([^|]+)\|\}\}([\s\S]*?)\{\{\/each\}\}/;
-    let result = template;
-    let match = result.match(eachPattern);
+/**
+ * Find the first {{#each ...}} block, pairing its {{/each}} with nesting
+ * awareness (a lazy regex would pair an outer open tag with an inner close
+ * tag and corrupt nested loops).
+ */
+function findEachBlock(template, fromIndex = 0) {
+    const openPattern = /\{\{#each\s+([^\s]+)\s+as\s+\|([^|]+)\|\}\}/g;
+    openPattern.lastIndex = fromIndex;
+    const open = openPattern.exec(template);
+    if (!open) {
+        return null;
+    }
 
-    while (match) {
-        const [fullMatch, arrayPathRaw, variableNameRaw, block] = match;
-        const arrayPath = arrayPathRaw.trim();
-        const variableName = variableNameRaw.trim();
+    const tokenPattern = /\{\{#each\s[^}]*\}\}|\{\{\/each\}\}/g;
+    tokenPattern.lastIndex = open.index + open[0].length;
+    let depth = 1;
+    let token;
+    while ((token = tokenPattern.exec(template)) !== null) {
+        depth += token[0].startsWith('{{#each') ? 1 : -1;
+        if (depth === 0) {
+            return {
+                start: open.index,
+                end: token.index + token[0].length,
+                arrayPath: open[1].trim(),
+                variableName: open[2].trim(),
+                block: template.slice(open.index + open[0].length, token.index)
+            };
+        }
+    }
+    return null;
+}
+
+function processEachBlocks(template, context, lang) {
+    let result = template;
+    let found = findEachBlock(result);
+
+    while (found) {
+        const { start, end, arrayPath, variableName, block } = found;
         const array = getValueFromContext(context, arrayPath);
 
+        let rendered = '';
         if (!Array.isArray(array)) {
             if (array != null) {
                 warnForTemplateIssue(lang, `${arrayPath} is not an array (got ${typeof array})`);
             } else if (!arrayPath.includes('.')) {
                 warnForTemplateIssue(lang, `${arrayPath} is not an array or not found`);
             }
-            result = result.replace(fullMatch, '');
-            match = result.match(eachPattern);
-            continue;
+        } else {
+            rendered = cleanupJsonArtifacts(
+                array.map((item) => {
+                    const mergedContext = { ...context, [variableName]: item };
+                    let nested = processEachBlocks(block, mergedContext, lang);
+                    nested = processIfBlocks(nested, mergedContext);
+                    return replaceVariables(nested, mergedContext, lang);
+                }).join('')
+            );
         }
 
-        const rendered = cleanupJsonArtifacts(
-            array.map((item) => {
-                const mergedContext = { ...context, [variableName]: item };
-                let nested = processEachBlocks(block, mergedContext, lang);
-                nested = processIfBlocks(nested, mergedContext);
-                return replaceVariables(nested, mergedContext, lang);
-            }).join('')
-        );
-
-        result = result.replace(fullMatch, rendered);
-        match = result.match(eachPattern);
+        result = result.slice(0, start) + rendered + result.slice(end);
+        found = findEachBlock(result, start + rendered.length);
     }
 
     return result;

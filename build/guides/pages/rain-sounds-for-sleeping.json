@@ -1,0 +1,46 @@
+{
+  "slug": "rain-sounds-for-sleeping",
+  "title": "Rain Sounds for Sleeping: Why They Work and How to Use Them",
+  "meta_title": "Rain Sounds for Sleeping: Why They Work and How to Use Them (2026)",
+  "description": "Rain sounds sit close to pink noise: broadband masking with a natural texture most brains accept instantly. Why rain beats pure white noise for many sleepers, and the rain + brown noise mix to try first.",
+  "kicker": "Guide · Rain sounds for sleeping",
+  "lede": "People who find white noise unbearable usually love rain. That is not a coincidence — rain does the same masking job with a texture your brain already trusts.",
+  "datePublished": "2026-07-11",
+  "dateModified": "2026-07-11",
+  "cta_tagline": "Gapless rain sounds, offline, with a 10-hour fade timer",
+  "answer_html": "<p><strong>Short answer:</strong> rain is natural broadband noise close to pink noise. It masks doors, traffic, and voices while feeling familiar instead of clinical. Play it at conversation volume or below, all night or with a fade-out timer. If low rumbles still get through, layer brown noise underneath it.</p>",
+  "body_html": "<h2>What rain sound actually is</h2>\n    <p>Millions of droplets hitting different surfaces at random produce sound spread across the whole frequency range — the definition of broadband noise. The energy tapers off at high frequencies, which puts rain close to <strong>pink noise</strong> on a spectrum chart. You get white-noise-grade masking without the hiss that makes some people grind their teeth.</p>\n    <p>Rain also carries an association most sounds can't match: it is the weather that historically meant staying in, slowing down, nothing to do. Your brain reads it as permission to stop scanning.</p>\n\n    <h2>Rain vs white noise</h2>\n    <table>\n      <thead>\n        <tr><th></th><th>Rain sounds</th><th>White noise</th></tr>\n      </thead>\n      <tbody>\n        <tr><td>Feel</td><td>Natural, familiar</td><td>Artificial, hissy to some ears</td></tr>\n        <tr><td>Masks low rumbles (traffic, snoring)</td><td>Partially</td><td>Partially — brown noise beats both</td></tr>\n        <tr><td>Masks sharp highs (clicks, beeps)</td><td>Well</td><td>Best</td></tr>\n        <tr><td>All-night tolerance</td><td>High</td><td>Mixed</td></tr>\n      </tbody>\n    </table>\n    <p>The practical rule: start with rain. If something still wakes you, identify whether it is a high sound (add white noise) or a low one (add brown noise). Mixing is exactly what DRMN's sound mixer is for.</p>\n\n    <figure class=\"figure-shot\">\n      <img src=\"/img/screenshot-5-rain.webp\" alt=\"Rain sounds for sleeping playing in the DRMN white noise app on iPhone\" width=\"600\" height=\"1300\" loading=\"lazy\">\n      <figcaption>Rain in DRMN loops gaplessly — no seam, no restart click at 3 a.m.</figcaption>\n    </figure>\n\n    <h2>How to set up rain sounds in DRMN</h2>\n    <div class=\"app-steps\">\n      <ol>\n        <li>Download <strong>Sound Machine Deep Sleep DRMN</strong> free from the App Store.</li>\n        <li>Choose <strong>Rain</strong> from the library. Download it for offline playback so a dropped connection never stops it.</li>\n        <li>Set volume so the rain just blurs your room's background noise. If you have to raise your voice over it, it's too loud.</li>\n        <li><strong>Optional mix:</strong> open the mixer and add <strong>brown noise</strong> at low volume under the rain. The rain gives texture; the brown noise fills in the low end where snoring and traffic live.</li>\n        <li>Set the sleep timer — 45–60 minutes with fade-out for falling asleep, or 8–10 hours to stay covered all night — and press play.</li>\n      </ol>\n    </div>",
+  "faq_html": "<h3>Why do rain sounds help you sleep?</h3>\n    <p>Rain masks sudden noises the way pink noise does, and its natural texture reads as safe and familiar, so more people tolerate it through the night.</p>\n    <h3>Is rain better than white noise for sleeping?</h3>\n    <p>For most ears, rain feels softer and masks nearly as well. White noise still covers sharp high-pitched sounds better; mixing the two covers both.</p>\n    <h3>Can I play rain sounds all night?</h3>\n    <p>Yes, at conversation volume or below. Set DRMN's timer to 8–10 hours with fade-out and download the sound so it plays offline.</p>",
+  "faq": [
+    {
+      "question": "Why do rain sounds help you sleep?",
+      "answer": "Rain is natural broadband noise, close to pink noise in frequency profile. It masks sudden sounds the way white noise does, but with a texture the brain reads as familiar and safe rather than artificial, so more people tolerate it all night."
+    },
+    {
+      "question": "Is rain sound better than white noise for sleeping?",
+      "answer": "For many sleepers, yes. Rain has less high-frequency hiss than pure white noise, so it feels softer while masking nearly as well. White noise still wins for covering sharp, high-pitched interruptions like clicks and beeps."
+    },
+    {
+      "question": "Can I play rain sounds all night?",
+      "answer": "Yes, at a moderate volume — conversation level or below. In DRMN, set the sleep timer to 8–10 hours with gradual fade-out, and download the sound so playback continues offline without streaming all night."
+    }
+  ],
+  "related": [
+    {
+      "slug": "best-sounds-for-sleep",
+      "title": "The best sounds for sleep, ranked by what wakes you"
+    },
+    {
+      "slug": "block-out-snoring",
+      "title": "How to block out snoring with sound masking"
+    },
+    {
+      "slug": "fall-asleep-fast",
+      "title": "How to fall asleep fast using sound"
+    }
+  ],
+  "order": 5,
+  "card_title": "Rain Sounds for Sleeping: Why They Work and How to Use Them",
+  "card_description": "Why rain beats pure white noise for many sleepers, and the rain + brown noise mix worth trying first.",
+  "short_title": "Rain sounds for sleeping"
+}

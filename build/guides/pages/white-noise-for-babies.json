@@ -1,0 +1,47 @@
+{
+  "slug": "white-noise-for-babies",
+  "title": "White Noise for Babies: Safe Volume, Distance, and Setup",
+  "meta_title": "White Noise for Babies: Safe Volume, Distance, and Setup (2026)",
+  "description": "Pediatric guidance for baby white noise: 50 decibels or below, sound source at least 7 feet from the crib, timer instead of loud all-night play. Which sounds settle newborns and how to set up a phone as a baby sound machine.",
+  "kicker": "Guide · White noise for babies",
+  "lede": "White noise settles newborns because it sounds like the womb, which was louder than most nurseries. The safety rules are simple and worth getting exactly right.",
+  "datePublished": "2026-07-11",
+  "dateModified": "2026-07-11",
+  "cta_tagline": "Nursery sounds and adult sleep sounds in one free app",
+  "answer_html": "<p><strong>Short answer:</strong> keep the volume at or below 50 decibels (a quiet conversation), place the phone or speaker at least 7 feet (2 meters) from the crib, use a timer or lower the volume after the baby settles, and never put the device in the crib. With those rules met, white noise is a safe, effective sleep aid for infants.</p>",
+  "body_html": "<h2>Why white noise works on newborns</h2>\n    <p>The womb is not quiet. Blood flow, heartbeat, and digestion produce a constant whoosh that researchers estimate at 70–90 decibels — louder than a vacuum cleaner heard from across a room. A silent nursery is the alien environment; steady noise is home. That is why the classic parent tricks are the hair dryer and the vacuum: rhythmic, unbroken, womb-like.</p>\n    <p>Steady sound also masks household noise — dishes, older siblings, the doorbell — that would otherwise cut naps short.</p>\n\n    <h2>The safety rules, precisely</h2>\n    <ul>\n      <li><strong>50 dB maximum at the baby's head.</strong> That is roughly a quiet conversation or a running refrigerator. Measure with a free decibel meter app placed where the baby's head rests.</li>\n      <li><strong>7 feet (2 meters) minimum distance.</strong> The sound source stays well away from the crib, and never inside it or attached to the rail.</li>\n      <li><strong>Timer over all-night loud play.</strong> Set a fade-out for 30–60 minutes once the baby has settled, or lower the volume for the rest of the night.</li>\n      <li><strong>Start low.</strong> Set the volume before the baby is in the room. Resist matching a crying baby's volume; the sound should soothe under the crying, not compete with it.</li>\n    </ul>\n\n    <h2>Which sounds settle babies fastest</h2>\n    <p>Steady and rhythmic beats melodic. In DRMN, parents reach for:</p>\n    <ul>\n      <li><strong>White noise</strong> — the default, closest to generic womb sound</li>\n      <li><strong>Hair dryer</strong> — the classic, now without running an actual hair dryer</li>\n      <li><strong>Vacuum cleaner</strong> — deeper hum for babies who prefer low frequencies</li>\n      <li><strong>Gentle static</strong> — softer texture for light-sleeping infants</li>\n    </ul>\n\n    <figure class=\"figure-shot\">\n      <img src=\"/img/screenshot-2-sounds.webp\" alt=\"DRMN sound library with white noise, hair dryer, and vacuum sounds for baby sleep\" width=\"600\" height=\"1300\" loading=\"lazy\">\n      <figcaption>Hair dryer, vacuum, and static live in the same library as the adult sleep sounds.</figcaption>\n    </figure>\n\n    <h2>Setting up a phone as a baby sound machine</h2>\n    <div class=\"app-steps\">\n      <ol>\n        <li>Download <strong>Sound Machine Deep Sleep DRMN</strong> free from the App Store — an old or spare phone works well as a dedicated nursery device.</li>\n        <li>Pick <strong>White Noise</strong>, <strong>Hair Dryer</strong>, or <strong>Vacuum Cleaner</strong> from the library.</li>\n        <li>Place the phone at least 7 feet from the crib, out of reach, and enable Do Not Disturb so notifications never interrupt playback.</li>\n        <li>Set the volume, then verify it reads 50 dB or lower at the crib with a decibel meter app.</li>\n        <li>Set the fade-out timer for 30–60 minutes, or run it low all night during sleep regressions and travel.</li>\n      </ol>\n    </div>",
+  "faq_html": "<h3>Is white noise safe for babies?</h3>\n    <p>Yes, within pediatric limits: 50 dB or below at the baby's head, sound source at least 7 feet away, timer or reduced volume after settling, device never in the crib.</p>\n    <h3>What sounds work best for newborn sleep?</h3>\n    <p>Womb-like, rhythmic sounds: white noise, hair dryer, vacuum hum, gentle static. All four are in DRMN's library.</p>\n    <h3>Do I need a dedicated baby sound machine?</h3>\n    <p>No. A phone running DRMN, placed correctly and volume-checked, does the same job — and a spare phone makes a permanent nursery device.</p>",
+  "faq": [
+    {
+      "question": "Is white noise safe for babies?",
+      "answer": "Yes, with two limits from pediatric guidance: keep volume at or below about 50 decibels (a quiet conversation) and place the sound source at least 7 feet (2 meters) from the crib. Use a timer or lower the volume once the baby is in deep sleep, and never put the device inside the crib."
+    },
+    {
+      "question": "What sounds work best for newborn sleep?",
+      "answer": "Newborns respond to steady, rhythmic sounds resembling the womb: white noise, hair dryer, vacuum cleaner hum, and gentle static. DRMN includes all of these specifically for nursery use."
+    },
+    {
+      "question": "Do I need to buy a baby sound machine or can I use my phone?",
+      "answer": "A phone with a sleep sounds app does the same job as a dedicated baby sound machine. Place it at least 7 feet from the crib, out of the baby's reach, set volume near 50 dB, and use the fade-out timer. A spare or old phone works well as a dedicated nursery device."
+    }
+  ],
+  "related": [
+    {
+      "slug": "sound-machine-app",
+      "title": "Sound machine app vs bedside machine: which to choose"
+    },
+    {
+      "slug": "sleep-sounds-with-timer",
+      "title": "Sleep sounds with a timer: fade out instead of stopping"
+    },
+    {
+      "slug": "white-noise-app",
+      "title": "What makes a good white noise app for iPhone"
+    }
+  ],
+  "order": 7,
+  "card_title": "White Noise for Babies: Safe Volume, Distance, and Setup",
+  "card_description": "The 50-decibel rule, the 7-foot rule, and which sounds actually settle newborns — hair dryer, vacuum, static.",
+  "short_title": "White noise for babies",
+  "in_footer": true
+}

@@ -3,11 +3,13 @@ const path = require('path');
 
 const { SITE_URL, URLS, DEFAULT_LANGUAGE, BLOG_POSTS_PER_PAGE, ADDITIONAL_URLS } = require('./constants');
 const { loadPosts, collectBlogSitemapEntries } = require('./blog/build-blog');
+const { collectGuideSitemapEntries } = require('./guides/build-guides');
 
 const SITEMAP_CHILD_DIR = 'sitemaps';
 const SITEMAP_INDEX_FILE = 'sitemap.xml';
 const SITEMAP_CHILD_FILES = {
     pages: 'pages.xml',
+    guides: 'guides.xml',
     legal: 'legal.xml',
     blog: 'blog.xml'
 };
@@ -114,6 +116,15 @@ function buildBlogSitemap(blogEntries) {
     return lines.join('\n') + '\n';
 }
 
+function buildGuidesSitemap(guideEntries) {
+    const lines = urlsetOpen(false);
+    for (const { loc, lastmod } of guideEntries) {
+        lines.push(...simpleUrlEntry(loc, lastmod, '0.9'));
+    }
+    lines.push(...urlsetClose());
+    return lines.join('\n') + '\n';
+}
+
 function buildSitemapIndex(childSitemaps, childLastmods) {
     const lines = [
         '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>',
@@ -155,6 +166,23 @@ function generateSitemap({ projectRoot = path.join(__dirname, '..') } = {}) {
     childSitemapUrls.push(`${SITE_URL}${SITEMAP_CHILD_DIR}/${SITEMAP_CHILD_FILES.pages}`);
     childSitemapLastmods.push(lastmod);
     writtenChildFiles.push({ name: SITEMAP_CHILD_FILES.pages, urlCount: URLS.length });
+
+    let guideEntries = [];
+    try {
+        guideEntries = collectGuideSitemapEntries();
+    } catch (error) {
+        console.warn(`Warning: guide URLs omitted from sitemap (${error.message})`);
+    }
+    if (guideEntries.length > 0) {
+        const guidesPath = path.join(childDir, SITEMAP_CHILD_FILES.guides);
+        const guidesLastmod = guideEntries
+            .map(({ lastmod: entryLastmod }) => entryLastmod)
+            .reduce((max, entryLastmod) => (entryLastmod > max ? entryLastmod : max));
+        writeFileEnsuringDir(guidesPath, buildGuidesSitemap(guideEntries));
+        childSitemapUrls.push(`${SITE_URL}${SITEMAP_CHILD_DIR}/${SITEMAP_CHILD_FILES.guides}`);
+        childSitemapLastmods.push(guidesLastmod);
+        writtenChildFiles.push({ name: SITEMAP_CHILD_FILES.guides, urlCount: guideEntries.length });
+    }
 
     const legalPath = path.join(childDir, SITEMAP_CHILD_FILES.legal);
     writeFileEnsuringDir(legalPath, buildLegalSitemap(siteOrigin, lastmod));

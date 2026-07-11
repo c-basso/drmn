@@ -1,0 +1,46 @@
+{
+  "slug": "deep-sleep-sounds",
+  "title": "Deep Sleep Sounds: What to Play for More Restorative Sleep",
+  "meta_title": "Deep Sleep Sounds: What to Play for More Restorative Sleep (2026)",
+  "description": "Deep sleep happens in your first sleep cycles and is destroyed by micro-awakenings. Low-frequency sounds — brown noise, pink noise, ocean waves — protect it. What to play, at what volume, and for how long.",
+  "kicker": "Guide · Deep sleep sounds",
+  "lede": "Deep sleep is when your body repairs tissue and your brain consolidates memory — and it is the stage most easily shredded by noise. Sound can defend it.",
+  "datePublished": "2026-07-11",
+  "dateModified": "2026-07-11",
+  "cta_tagline": "Built for deep sleep — it's in the name. Free on the App Store.",
+  "answer_html": "<p><strong>Short answer:</strong> play low-frequency steady sound — brown noise, pink noise, or ocean waves — at conversation volume or below, through at least the first 3–4 hours of the night. That window is where most deep sleep happens, and masking micro-awakenings during it is the highest-leverage thing audio can do for sleep quality.</p>",
+  "body_html": "<h2>What deep sleep is, in one paragraph</h2>\n    <p>Sleep runs in roughly 90-minute cycles, and each cycle dips through light sleep into <strong>slow-wave sleep</strong> — the deep stage where growth hormone releases, tissue repairs, and the day's memories get filed. Most of it happens in the first two or three cycles of the night. Miss it early and you cannot make it up at dawn, which is why a noisy first half of the night leaves you wrecked even after eight hours in bed.</p>\n\n    <h2>How noise steals deep sleep without waking you</h2>\n    <p>The cruelest part: noise fragments deep sleep through <strong>micro-awakenings</strong> you never remember. A car door at midnight can bounce you from slow-wave sleep up to light sleep for thirty seconds, and your brain has to work its way back down. String a dozen of those together and you wake up tired with no idea why. Masking exists to stop exactly this.</p>\n\n    <h2>The deep sleep sound shortlist</h2>\n    <ul>\n      <li><strong>Brown noise</strong> — deep, rumbling, and concentrated in the low frequencies where doors, footsteps, and traffic live. The workhorse.</li>\n      <li><strong>Pink noise</strong> — the researched one: studies have linked pink noise during sleep to enhanced slow-wave activity. Sounds like steady rain.</li>\n      <li><strong>Ocean waves</strong> — adds a slow rhythm some sleepers find easier to stay under with; pick a recording without crashing peaks.</li>\n      <li><strong>Avoid:</strong> anything with melody, speech, or variation. Interest is the enemy of slow-wave sleep.</li>\n    </ul>\n    <p>Unsure between them? The <a href=\"/guides/best-sounds-for-sleep/\">best sounds for sleep guide</a> matches each to what wakes you.</p>\n\n    <figure class=\"figure-shot\">\n      <img src=\"/img/screenshot-6-fade.webp\" alt=\"Gradual fade-out setting in the DRMN deep sleep sounds app\" width=\"600\" height=\"1300\" loading=\"lazy\">\n      <figcaption>DRMN's gradual fade ends playback below your waking threshold — no cutoff, no bounce out of deep sleep.</figcaption>\n    </figure>\n\n    <h2>The deep sleep protocol in DRMN</h2>\n    <div class=\"app-steps\">\n      <ol>\n        <li>Download <strong>Sound Machine Deep Sleep DRMN</strong> free from the App Store.</li>\n        <li>Pick <strong>Brown Noise</strong> or <strong>Pink Noise</strong>. For a natural texture, mix ocean waves over either at low volume.</li>\n        <li>Set volume at or below conversation level — masking, not stimulation.</li>\n        <li>Set the sleep timer to at least <strong>4 hours</strong> to cover your deep sleep window, or 8–10 hours if noise runs all night. The gradual fade-out means the ending itself never disturbs a cycle.</li>\n        <li>Keep the same setup every night. Consistent cues shorten the time it takes to reach deep sleep in the first place.</li>\n      </ol>\n    </div>",
+  "faq_html": "<h3>What sounds are best for deep sleep?</h3>\n    <p>Brown noise, pink noise, and ocean waves — steady, low-frequency, no melody. Pink noise carries the most research interest for slow-wave activity.</p>\n    <h3>When does deep sleep happen?</h3>\n    <p>Mostly in the first 3–4 hours of the night. Protect that window from noise and you protect most of your deep sleep.</p>\n    <h3>How loud should the sound be?</h3>\n    <p>Conversation level or below. If you can talk comfortably over it, you're in range.</p>",
+  "faq": [
+    {
+      "question": "What sounds are best for deep sleep?",
+      "answer": "Low-frequency, steady sounds: brown noise, pink noise, and ocean waves. They mask the disruptions that fragment deep sleep without the harsh high frequencies of pure white noise. Research on pink noise has also linked it to enhanced slow-wave brain activity during deep sleep."
+    },
+    {
+      "question": "When during the night does deep sleep happen?",
+      "answer": "Mostly in the first two or three sleep cycles — roughly the first 3 to 4 hours of the night. Protecting those early hours from noise interruptions matters more for deep sleep than anything you do at 5 a.m."
+    },
+    {
+      "question": "How loud should deep sleep sounds be?",
+      "answer": "Conversation level or below — enough to blur sudden noises into the background, not enough to become stimulation itself. If you can comfortably talk over it, the volume is in the right range."
+    }
+  ],
+  "related": [
+    {
+      "slug": "best-sounds-for-sleep",
+      "title": "The best sounds for sleep, ranked by what wakes you"
+    },
+    {
+      "slug": "fall-asleep-fast",
+      "title": "How to fall asleep fast using sound"
+    },
+    {
+      "slug": "block-out-snoring",
+      "title": "How to block out snoring with sound masking"
+    }
+  ],
+  "order": 10,
+  "card_title": "Deep Sleep Sounds: What to Play for More Restorative Sleep",
+  "card_description": "Which sound frequencies support deep sleep stages, and how to run them through your first sleep cycles.",
+  "short_title": "Deep sleep sounds"
+}

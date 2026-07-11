@@ -29,6 +29,7 @@ const {
 } = require('./locales');
 const { renderTemplate } = require('./template-engine');
 const { buildBlog, loadPosts } = require('./blog/build-blog');
+const { buildGuides, loadGuides, getGuideCards } = require('./guides/build-guides');
 const { generateSitemap } = require('./sitemap');
 
 const ROOT_DIR = path.join(__dirname, '..');
@@ -51,8 +52,8 @@ function getEnLocaleData() {
     return cachedEnLocaleData;
 }
 
-function writeUrlsFile(blogUrls = []) {
-    const allUrls = [...URLS.map(({ url }) => url), ...blogUrls];
+function writeUrlsFile(extraUrls = []) {
+    const allUrls = [...URLS.map(({ url }) => url), ...extraUrls];
     fs.writeFileSync(URLS_PATH, allUrls.join('\n'), 'utf8');
     console.log('✅ Successfully built urls.txt file');
     console.log(`📁 Output saved to: ${URLS_PATH}`);
@@ -132,6 +133,12 @@ function writeLlmsFile(defaultLocaleData) {
         '- Battery-optimized',
         '- Sleep timer with auto-fade',
         '',
+        '## How-To Guides',
+        '',
+        ...loadGuides().map(
+            (guide) => `- [${guide.title}](${absoluteSiteUrl(`guides/${guide.slug}/`)}): ${guide.description}`
+        ),
+        '',
         '## Comparison Guides (Blog)',
         '',
         `- [DRMN vs Calm](${absoluteSiteUrl('blog/drmn-vs-calm-sleep-sounds/')}): Sleep sounds vs meditation apps`,
@@ -171,6 +178,28 @@ function ensureDirectoryExists(dirPath) {
 
 function readJsonFile(filePath) {
     return JSON.parse(fs.readFileSync(filePath, 'utf8'));
+}
+
+function isPlainObject(value) {
+    return value !== null && typeof value === 'object' && !Array.isArray(value);
+}
+
+/**
+ * Fill keys missing from a locale with the English values so new template
+ * sections keep working before their translations land. Locale values always
+ * win; arrays and scalars are taken wholesale (never merged element-wise).
+ */
+function mergeWithEnglishFallback(fallback, data) {
+    if (isPlainObject(fallback) && isPlainObject(data)) {
+        const merged = {};
+        for (const key of new Set([...Object.keys(fallback), ...Object.keys(data)])) {
+            merged[key] = key in data
+                ? mergeWithEnglishFallback(fallback[key], data[key])
+                : structuredClone(fallback[key]);
+        }
+        return merged;
+    }
+    return data === undefined ? structuredClone(fallback) : data;
 }
 
 function getOutputDirectory(lang) {
@@ -492,13 +521,19 @@ function preparePageData(data, lang) {
     return data;
 }
 
-function buildPage(template, lang) {
+function buildPage(template, lang, guideCards) {
     const outputDir = getOutputDirectory(lang);
     const outputPath = getOutputPath(lang);
     const jsonPath = getJsonPath(lang);
 
     ensureDirectoryExists(outputDir);
-    const data = preparePageData(readJsonFile(jsonPath), lang);
+    let data = readJsonFile(jsonPath);
+    if (lang !== DEFAULT_LANGUAGE) {
+        data = mergeWithEnglishFallback(getEnLocaleData(), data);
+    }
+    // Guide pages are English-only; cards come from build/guides/pages data.
+    data.guides_section = { ...(data.guides_section || {}), ...guideCards };
+    data = preparePageData(data, lang);
     fs.writeFileSync(outputPath, renderTemplate(template, data, lang), 'utf8');
 
     console.log(`✅ Successfully built index.html from template and ${lang}.json`);
@@ -518,9 +553,11 @@ async function main() {
     const defaultData = preparePageData(readJsonFile(getJsonPath(DEFAULT_LANGUAGE)), DEFAULT_LANGUAGE);
     writeLlmsFile(defaultData);
 
+    const guideCards = getGuideCards();
+
     for (const lang of LANGUAGES) {
         try {
-            buildPage(template, lang);
+            buildPage(template, lang, guideCards);
         } catch (error) {
             console.error(`❌ Error building ${lang}:`, error.message);
             process.exit(1);
@@ -528,6 +565,14 @@ async function main() {
     }
 
     writeStaleLocaleRedirects();
+
+    let guideUrls = [];
+    try {
+        guideUrls = buildGuides({ buildTimestamp: BUILD_TIMESTAMP });
+    } catch (error) {
+        console.error('❌ Error building guides:', error.message);
+        process.exit(1);
+    }
 
     let blogUrls = [];
     try {
@@ -541,7 +586,7 @@ async function main() {
         process.exit(1);
     }
 
-    writeUrlsFile(blogUrls);
+    writeUrlsFile([...guideUrls, ...blogUrls]);
     generateSitemap();
 }
 

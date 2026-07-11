@@ -1,6 +1,6 @@
 # DRMN - White Noise & Sleep Sounds App
 
-> Fall asleep faster with DRMN, a free white noise and sleep sound machine app for iPhone. Mix rain, fan, and brown noise, set a fade-out timer, play offline.
+> DRMN is a free white noise app and sound machine for iPhone. Mix rain, fan, and deep sleep sounds, set a fade-out timer up to 10 hours, and listen offline.
 
 ## Main Sections
 
@@ -30,6 +30,19 @@
 - Offline mode
 - Battery-optimized
 - Sleep timer with auto-fade
+
+## How-To Guides
+
+- [What Makes a Good White Noise App for iPhone](https://drmn.xyz/guides/white-noise-app/): A white noise app for iPhone needs gapless looping, background playback, a fade-out timer, and offline support. How to check for all four and set up DRMN tonight.
+- [Sound Machine App vs Bedside Machine: Which Should You Buy?](https://drmn.xyz/guides/sound-machine-app/): A sound machine app plays the same masking audio as a $50–$100 bedside device, adds mixing and fade timers, and travels with you. When hardware still wins, and how to set up your iPhone as a sleep sound machine.
+- [The Best Sounds for Sleep, Ranked by What Wakes You](https://drmn.xyz/guides/best-sounds-for-sleep/): White, pink, and brown noise, rain, fan, and ocean waves compared: which sound to sleep to for traffic, snoring, racing thoughts, or a too-quiet room, and how to test each one.
+- [How to Fall Asleep Fast Using Sound](https://drmn.xyz/guides/fall-asleep-fast/): How to fall asleep faster with sound conditioning: the same steady audio cue every night trains your brain to switch off. The 15-minute routine, step by step, with exact settings in DRMN.
+- [Rain Sounds for Sleeping: Why They Work and How to Use Them](https://drmn.xyz/guides/rain-sounds-for-sleeping/): Rain sounds sit close to pink noise: broadband masking with a natural texture most brains accept instantly. Why rain beats pure white noise for many sleepers, and the rain + brown noise mix to try first.
+- [Sleep Sounds With a Timer: Fade Out Instead of Stopping](https://drmn.xyz/guides/sleep-sounds-with-timer/): A hard audio stop can wake you as surely as a slammed door. Why a gradual fade-out timer matters, all-night audio vs timed playback, and how to set DRMN's 10-hour fade timer.
+- [White Noise for Babies: Safe Volume, Distance, and Setup](https://drmn.xyz/guides/white-noise-for-babies/): Pediatric guidance for baby white noise: 50 decibels or below, sound source at least 7 feet from the crib, timer instead of loud all-night play. Which sounds settle newborns and how to set up a phone as a baby sound machine.
+- [How to Block Out Snoring With Sound Masking](https://drmn.xyz/guides/block-out-snoring/): Snoring peaks in the low frequencies, so ordinary white noise misses it. Use brown noise or rain layered over brown noise, set just above the snoring volume, with an all-night timer. Setup steps in DRMN.
+- [Fan Noise for Sleep — Without Running a Fan All Night](https://drmn.xyz/guides/fan-noise-for-sleep/): Fan sound for sleep without the cold air, dust, or electricity of a real fan. Why fan hum works as a sleep cue, and how to loop gapless fan noise on your iPhone with a fade timer.
+- [Deep Sleep Sounds: What to Play for More Restorative Sleep](https://drmn.xyz/guides/deep-sleep-sounds/): Deep sleep happens in your first sleep cycles and is destroyed by micro-awakenings. Low-frequency sounds — brown noise, pink noise, ocean waves — protect it. What to play, at what volume, and for how long.
 
 ## Comparison Guides (Blog)
 

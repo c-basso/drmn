@@ -1,0 +1,47 @@
+{
+  "slug": "block-out-snoring",
+  "title": "How to Block Out Snoring With Sound Masking",
+  "meta_title": "How to Block Out Snoring With Sound Masking (2026 Guide)",
+  "description": "Snoring peaks in the low frequencies, so ordinary white noise misses it. Use brown noise or rain layered over brown noise, set just above the snoring volume, with an all-night timer. Setup steps in DRMN.",
+  "kicker": "Guide · Block out snoring",
+  "lede": "You tried white noise and still heard every snore. That is a frequency problem, not a volume problem — and it has a frequency solution.",
+  "datePublished": "2026-07-11",
+  "dateModified": "2026-07-11",
+  "cta_tagline": "Brown noise, rain, and a 10-hour timer — free on the App Store",
+  "answer_html": "<p><strong>Short answer:</strong> snoring lives in the low frequencies, mostly below 500 Hz. Mask it with sound that also lives there: brown noise alone, or rain layered over brown noise. Set the volume just above the snoring's average level at your pillow and run it all night with DRMN's 10-hour timer.</p>",
+  "body_html": "<h2>Why white noise fails against snoring</h2>\n    <p>White noise spreads its energy evenly from low frequencies to high. Snoring doesn't: it rumbles, concentrated in the bottom of the spectrum. When you play white noise against a snore, only a small slice of the noise overlaps the snore's range, so the snore punches through. Turning up the volume eventually covers it — at a level that hisses you awake instead.</p>\n    <p>Brown noise flips the equation. Its energy piles up exactly where snoring sits, so it blurs the snore into the background at a volume you can comfortably sleep in.</p>\n\n    <h2>The masking hierarchy for snoring</h2>\n    <table>\n      <thead>\n        <tr><th>Option</th><th>How well it covers snoring</th><th>Notes</th></tr>\n      </thead>\n      <tbody>\n        <tr><td>Brown noise</td><td>Best</td><td>Low-frequency energy matches the snore's range</td></tr>\n        <tr><td>Rain + brown noise mix</td><td>Best, more natural</td><td>Rain adds texture; brown noise carries the low end</td></tr>\n        <tr><td>Fan noise</td><td>Good</td><td>Decent low-mid coverage, familiar to fan sleepers</td></tr>\n        <tr><td>Pink noise</td><td>Fair</td><td>Softer than white, still light in the lowest range</td></tr>\n        <tr><td>White noise</td><td>Weak at safe volume</td><td>Needs to be loud to cover lows</td></tr>\n      </tbody>\n    </table>\n\n    <figure class=\"figure-shot\">\n      <img src=\"/img/screenshot-3-mix.webp\" alt=\"DRMN sound mixer combining rain and brown noise to mask snoring\" width=\"600\" height=\"1300\" loading=\"lazy\">\n      <figcaption>The anti-snoring mix in DRMN: brown noise as the base layer, rain on top for texture.</figcaption>\n    </figure>\n\n    <h2>Set up the anti-snoring mix in DRMN</h2>\n    <div class=\"app-steps\">\n      <ol>\n        <li>Download <strong>Sound Machine Deep Sleep DRMN</strong> free from the App Store.</li>\n        <li>Start <strong>Brown Noise</strong> from the library.</li>\n        <li>Open the mixer and layer <strong>Rain</strong> on top at a lower volume, if pure brown noise feels too flat.</li>\n        <li>With your partner snoring, raise the volume one step at a time until the snore blurs into the noise. Stop there — you want to mask the average, not the loudest peak.</li>\n        <li>Set the sleep timer to <strong>8–10 hours</strong> so masking lasts as long as the snoring does, and press play.</li>\n      </ol>\n    </div>\n\n    <p>Position helps too: put the phone or a Bluetooth speaker on your side of the bed, between your ear and the snorer. Sound masking works best when the masker is closer to you than the noise.</p>",
+  "faq_html": "<h3>What sound blocks out snoring best?</h3>\n    <p>Brown noise, because its energy sits in the same low range as the snore. Rain over brown noise covers the same range and sounds more natural.</p>\n    <h3>How loud should the masking be?</h3>\n    <p>Just above the snoring's average level at your pillow. Masking blurs the snore into the background; it does not need to drown the peaks.</p>\n    <h3>Does white noise cover snoring?</h3>\n    <p>Only at uncomfortable volume. Its energy spreads across all frequencies, so little lands where the snore lives. Brown noise does it quieter.</p>",
+  "faq": [
+    {
+      "question": "What sound blocks out snoring best?",
+      "answer": "Brown noise. Snoring concentrates its energy below roughly 500 Hz, and brown noise puts its energy in the same low range, so it covers snoring at a lower overall volume than white noise. Rain layered over brown noise works as well and sounds more natural."
+    },
+    {
+      "question": "How loud should masking sound be to cover snoring?",
+      "answer": "Just above the snoring's average level at your pillow, not its loudest peak. Start moderate and raise it one step at a time. Masking works by blurring the snore into the background, not by out-shouting it."
+    },
+    {
+      "question": "Does white noise cover snoring?",
+      "answer": "Partially. White noise spreads energy evenly across all frequencies, so only a fraction lands in the low range where snoring lives. To cover snoring with white noise you must play it uncomfortably loud; brown noise does the job quieter."
+    }
+  ],
+  "related": [
+    {
+      "slug": "best-sounds-for-sleep",
+      "title": "The best sounds for sleep, ranked by what wakes you"
+    },
+    {
+      "slug": "rain-sounds-for-sleeping",
+      "title": "Rain sounds for sleeping: why they work and how to use them"
+    },
+    {
+      "slug": "deep-sleep-sounds",
+      "title": "Deep sleep sounds: what to play for more restorative sleep"
+    }
+  ],
+  "order": 8,
+  "card_title": "How to Block Out Snoring With Sound Masking",
+  "card_description": "Snoring is low-frequency noise, so most white noise fails. Here is the mix that actually covers it.",
+  "short_title": "Block out snoring",
+  "in_footer": true
+}

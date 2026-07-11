@@ -1,0 +1,47 @@
+{
+  "slug": "white-noise-app",
+  "title": "What Makes a Good White Noise App for iPhone",
+  "meta_title": "What Makes a Good White Noise App for iPhone (2026 Guide)",
+  "description": "A white noise app for iPhone needs gapless looping, background playback, a fade-out timer, and offline support. How to check for all four and set up DRMN tonight.",
+  "kicker": "Guide · White noise app",
+  "lede": "Most “white noise apps” are a looping audio file with a play button. The ones you can sleep on share four specific features.",
+  "datePublished": "2026-07-11",
+  "dateModified": "2026-07-11",
+  "cta_tagline": "Free white noise app for iPhone · fade timer up to 10 hours · works offline",
+  "answer_html": "<p><strong>Short answer:</strong> a white noise app is worth installing if it loops without an audible gap, keeps playing with the screen locked, ends with a gradual fade-out timer instead of a hard stop, and works offline. Sound Machine Deep Sleep DRMN, free on the App Store, checks all four.</p>",
+  "body_html": "<h2>The four features that matter</h2>\n\n    <h3>1. Gapless looping</h3>\n    <p>White noise works by staying constant. A half-second gap where the loop restarts is exactly the kind of sudden change that wakes a light sleeper, so it defeats the point of the app. Test this before your first night: play the sound for two minutes with headphones and listen for a seam or a click.</p>\n\n    <h3>2. Background playback</h3>\n    <p>The app has to keep playing when you lock the screen. Apps built on a web view or a cheap template stop when the display sleeps, which you discover at 2 a.m. DRMN uses the same iOS background audio system as a music app, so playback continues with the screen off.</p>\n\n    <h3>3. A fade-out timer</h3>\n    <p>A hard stop can wake you as reliably as a slammed door, because your sleeping brain registers the change. Look for a timer that fades volume down over minutes. DRMN's timer runs up to 10 hours and always ends with a gradual fade. Full details in the <a href=\"/guides/sleep-sounds-with-timer/\">sleep timer guide</a>.</p>\n\n    <h3>4. Offline playback</h3>\n    <p>Hotel Wi-Fi, airplane mode, a dead spot at your in-laws' house: if the app streams every sound, one of these will leave you without it. DRMN downloads sounds to the phone, so playback works with no connection at all.</p>\n\n    <h2>Features that separate good from great</h2>\n    <ul>\n      <li><strong>A sound mixer.</strong> Pure white noise sounds harsh to some ears. Mixing it with rain or a fan hum softens it. DRMN lets you layer several tracks with independent volume per track.</li>\n      <li><strong>More than one noise color.</strong> White, pink, brown, and green noise put their energy at different frequencies. If white noise feels hissy, brown noise usually fixes it. The <a href=\"/guides/best-sounds-for-sleep/\">best sounds for sleep guide</a> compares them.</li>\n      <li><strong>An interface built for the dark.</strong> Big controls, dark background, nothing to squint at when the lights are off.</li>\n    </ul>\n\n    <figure class=\"figure-shot\">\n      <img src=\"/img/screenshot-2-sounds.webp\" alt=\"DRMN white noise app sound library on iPhone showing white noise, rain, and nature sounds\" width=\"600\" height=\"1300\" loading=\"lazy\">\n      <figcaption>The DRMN library: noise colors, rain, ocean, fan, and nature ambience in one place.</figcaption>\n    </figure>\n\n    <h2>How to set up DRMN as your white noise app</h2>\n    <div class=\"app-steps\">\n      <ol>\n        <li>Download <strong>Sound Machine Deep Sleep DRMN</strong> free from the App Store.</li>\n        <li>Open the library and pick <strong>White Noise</strong>. If it sounds sharp, switch to <strong>Brown Noise</strong>.</li>\n        <li>Set the volume so it just covers your room's background noise. Conversation level or lower is enough.</li>\n        <li>Set the sleep timer: 45 to 60 minutes if you only need help falling asleep, or 8 to 10 hours if noise wakes you during the night.</li>\n        <li>Press play, lock the screen, and put the phone face down on the nightstand.</li>\n      </ol>\n    </div>",
+  "faq_html": "<h3>Is there a free white noise app for iPhone?</h3>\n    <p>Yes. DRMN is free to download and plays white, brown, and pink noise, rain, and fan sounds. An optional subscription ($5.99) or a $29.99 lifetime purchase unlocks the full library.</p>\n    <h3>Does the app keep playing when the iPhone is locked?</h3>\n    <p>Yes. DRMN uses iOS background audio, so it plays through the night with the screen off, the same way a music app does.</p>\n    <h3>Does white noise all night drain the battery?</h3>\n    <p>No. Audio with the screen off uses a small fraction of the battery over eight hours, and charging overnight removes the question entirely.</p>",
+  "faq": [
+    {
+      "question": "Is there a free white noise app for iPhone?",
+      "answer": "Yes. Sound Machine Deep Sleep DRMN is free to download on the App Store and plays white noise, brown noise, pink noise, rain, and fan sounds. An optional subscription ($5.99) or lifetime purchase ($29.99) unlocks the full library."
+    },
+    {
+      "question": "Does a white noise app keep playing when the iPhone is locked?",
+      "answer": "A proper white noise app uses iOS background audio, so playback continues with the screen locked, the same way a music app does. DRMN plays through the night with the screen off and pauses only when you tell it to or the sleep timer ends."
+    },
+    {
+      "question": "Does playing white noise all night drain the battery?",
+      "answer": "Audio playback with the screen off uses little power. Eight hours of white noise typically costs a small fraction of an iPhone battery, and charging overnight removes the question entirely."
+    }
+  ],
+  "related": [
+    {
+      "slug": "sound-machine-app",
+      "title": "Sound machine app vs bedside machine: which to choose"
+    },
+    {
+      "slug": "best-sounds-for-sleep",
+      "title": "The best sounds for sleep, ranked by what wakes you"
+    },
+    {
+      "slug": "sleep-sounds-with-timer",
+      "title": "Sleep sounds with a timer: fade out instead of stopping"
+    }
+  ],
+  "order": 1,
+  "card_title": "What Makes a Good White Noise App for iPhone",
+  "card_description": "The four features that separate a real white noise app from a looping audio file — and how to set one up tonight.",
+  "short_title": "White noise app",
+  "in_footer": true
+}

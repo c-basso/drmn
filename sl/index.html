@@ -1,22 +1,22 @@
-<!-- Version: 1783768756830 -->
+<!-- Version: 1783790779763 -->
 <!DOCTYPE html>
 <html lang="sl" dir="ltr">
 
 <head>
   <meta charset="UTF-8">
-  
+
   <!-- Preconnect to external domains for performance -->
   <link rel="preconnect" href="https://apps.apple.com">
   <link rel="preconnect" href="https://mc.yandex.ru">
   <link rel="dns-prefetch" href="https://apps.apple.com">
   <link rel="dns-prefetch" href="https://mc.yandex.ru">
-  
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover">
   <title>DRMN — zvoki za spanje, beli šum in aparat za spanje</title>
-  
+
   <!-- App Store Smart App Banner -->
   <meta name="apple-itunes-app" content="app-id=6746480683">
-  
+
   <!-- Core SEO -->
   <meta name="description" content="Aplikacija z zvoki za spanje za iPhone: dež, ventilator, beli šum, mix in offline. Prenesi DRMN brezplačno v App Store — spanje, fokus in dojenčkov spanje.">
   <meta name="keywords" content="zvoki za spanje, aparat za spanje, beli šum, zvok dežja za spanje, zvok ventilatorja, aplikacija za spanje, beli šum aplikacija, zvoki za dojenčka, fokus, offline spanje">
@@ -30,7 +30,7 @@
   
   <meta name="msvalidate.01" content="E15B500A4986A32DDDF23064D5A94A0F" />
   
-  
+
   <!-- Alternate Language Links -->
   
   <link rel="alternate" hreflang="en" href="https://drmn.xyz/" />
@@ -106,14 +106,14 @@
   <link rel="alternate" hreflang="vi" href="https://drmn.xyz/vi/" />
   
   <link rel="alternate" hreflang="x-default" href="https://drmn.xyz/" />
-  
+
   <!-- PWA & Theming -->
   <meta name="theme-color" content="#1a1b2e">
   <meta name="msapplication-TileColor" content="#1a1b2e">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  
+
   <!-- Open Graph -->
   <meta property="og:title" content="Aparat za spanje in zvoki za spanje | DRMN">
   <meta property="og:description" content="Aparat za spanje za iPhone: dež, ventilator, beli šum in narava. Mix, offline, časovnik. Prenesi DRMN brezplačno v App Store.">
@@ -197,7 +197,7 @@
   
   <meta property="og:locale:alternate" content="vi_VN">
   
-  
+
   <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://drmn.xyz/sl/">
@@ -213,7 +213,7 @@
   
   <meta name="twitter:creator" content="@c__basso">
   
-  
+
   <!-- Icons & Manifest -->
   <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
   <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
@@ -223,554 +223,570 @@
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" type="image/png" sizes="192x192" href="/img/web-app-manifest-192x192.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/img/web-app-manifest-512x512.png">
-  
+
   <!-- Application Name -->
   <meta name="application-name" content="DRMN – Aparat za spanje">
-  
-  <!-- Self-hosted fonts (avoids Google Fonts critical request chain) -->
-  <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/fonts/outfit-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/fonts/fonts.css?v=1783768756830">
-  <link rel="stylesheet" href="/style.css?v=1783768756830">
+
+  <!-- Self-hosted fonts (declared in style.css; avoids Google Fonts critical request chain) -->
+  <link rel="preload" href="/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" href="/img/screenshot-1-cover.webp" type="image/webp">
+  <link rel="stylesheet" href="/style.css?v=1783790779763">
 </head>
 
 <body>
-  <header role="banner">
-    <div class="container">
-      <a href="https://apps.apple.com/app/id6746480683" class="header-link" aria-label="Prenesi DRMN brezplačno iz App Store" rel="noopener noreferrer">
-        <div class="header-content">
-          <div class="app-logo">
-            <img src="/img/logo-240.webp" alt="Logotip aplikacije DRMN aparat za spanje za iPhone" width="120" height="120" loading="eager" decoding="async">
-          </div>
-          <h1>Beli šum in zvoki za spanje za iPhone</h1>
-          <p class="tagline">Zaspi hitreje s stabilnim ambient zvokom na iPhonu. DRMN združuje dež, ventilator, beli in rjav šum, naravne zvoke, mix, offline način in varčen časovnik za spanje.</p>
-          <div class="hero-cta">
-            <!-- Mobile: Download button -->
-            <div class="hero-cta-mobile">
-              <div class="download-btn">
-                <img src="/img/download.svg" alt="Prenesi DRMN v App Store" width="200" height="60" loading="eager" decoding="async">
-              </div>
-            </div>
-            <!-- Desktop: QR code -->
-            <div class="hero-cta-desktop">
-              <div class="qr-code">
-                <img src="/qr.png" alt="Skeniraj za prenos" width="200" height="200" loading="eager" decoding="async">
-              </div>
-              <p class="qr-text">Skeniraj za prenos</p>
-            </div>
-          </div>
-        </div>
+  <div class="sky" aria-hidden="true"></div>
+
+  <nav class="nav" aria-label="Main">
+    <div class="nav-inner">
+      <a class="brand" href="/">
+        <img src="/img/logo-80.webp" alt="Logotip aplikacije DRMN aparat za spanje za iPhone" width="34" height="34" loading="eager" decoding="async">
+        DRMN
       </a>
+      <ul class="nav-links">
+        <li class="nav-link-secondary"><a href="#screenshots">Screenshots</a></li>
+        <li class="nav-link-secondary"><a href="#how-it-works">How it works</a></li>
+        <li><a href="#guides">Guides</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a class="nav-cta" href="https://apps.apple.com/app/id6746480683" rel="noopener noreferrer">Download</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="wrap" role="banner">
+    <div class="hero">
+      <div class="hero-copy">
+        <span class="kicker">White noise · Sleep sounds · Sound machine app</span>
+        <h1>Beli šum in zvoki za spanje za iPhone</h1>
+        <p class="lede">Zaspi hitreje s stabilnim ambient zvokom na iPhonu. DRMN združuje dež, ventilator, beli in rjav šum, naravne zvoke, mix, offline način in varčen časovnik za spanje.</p>
+        <div class="hero-actions">
+          <a class="btn-badge" href="https://apps.apple.com/app/id6746480683" aria-label="Prenesi DRMN brezplačno iz App Store" rel="noopener noreferrer">
+            <img src="/img/app-store-badge.svg" alt="Prenesi DRMN v App Store" width="168" height="56" loading="eager" decoding="async">
+          </a>
+          <a class="btn-ghost" href="#how-it-works">See how it works →</a>
+        </div>
+        <p class="hero-note">Free to download · iPhone, iOS 17.1+ · Health & Fitness</p>
+      </div>
+      <div class="hero-shot">
+        <img src="/img/screenshot-1-cover.webp" alt="Sound Machine Deep Sleep DRMN white noise app home screen on iPhone with the tagline Fall Asleep Faster Tonight" width="600" height="1300" fetchpriority="high">
+      </div>
+    </div>
+
+    <div class="facts" aria-label="DRMN by the numbers">
+      
+      <div class="fact"><strong>10 hrs</strong><span>maximum sleep timer with gradual fade-out</span></div>
+      
+      <div class="fact"><strong>Offline</strong><span>download sounds and play with no connection</span></div>
+      
+      <div class="fact"><strong>Mixer</strong><span>layer rain, noise, and fan sounds into one mix</span></div>
+      
+      <div class="fact"><strong>4.9/5</strong><span>average App Store rating from users</span></div>
+      
     </div>
   </header>
 
   <main role="main">
-    <!-- TL;DR Section -->
+    <!-- TL;DR (GEO summary) -->
     
-    <section class="tldr-section" aria-label="Summary">
-      <div class="container-narrow">
-        <div class="tldr-box">
-          <strong>TL;DR:</strong> DRMN je brezplačna iOS aplikacija z zvoki za spanje, ki ti pomaga zaspati 30–50 % hitreje. Brezplačna različica vključuje dež, ventilator, beli šum, 1-urni časovnik, offline, mix zvokov in optimizacijo baterije. Prenesi brezplačno v App Store.
+    <section class="wrap tldr" aria-label="Summary">
+      <div class="answer-box">
+        <p><strong>TL;DR:</strong> DRMN je brezplačna iOS aplikacija z zvoki za spanje, ki ti pomaga zaspati 30–50 % hitreje. Brezplačna različica vključuje dež, ventilator, beli šum, 1-urni časovnik, offline, mix zvokov in optimizacijo baterije. Prenesi brezplačno v App Store.</p>
+      </div>
+    </section>
+    
+
+    <!-- Download -->
+    <section id="download" class="wrap" aria-labelledby="download-heading">
+      <div class="section-head">
+        <span class="kicker">Download</span>
+        <h2 id="download-heading">A sleep sounds app instead of a $50 bedside machine</h2>
+        <p>DRMN replaces a dedicated white noise machine with the phone already on your nightstand. It is free to download, plays through the night with the screen locked, and keeps sudden noises — traffic, doors, snoring — from waking you.</p>
+      </div>
+      <a class="btn-badge" href="https://apps.apple.com/app/id6746480683" aria-label="Prenesi DRMN brezplačno iz App Store" rel="noopener noreferrer">
+        <img src="/img/app-store-badge.svg" alt="Prenesi DRMN v App Store" width="168" height="56" loading="lazy" decoding="async">
+      </a>
+    </section>
+
+    <!-- Screenshots -->
+    <section id="screenshots" class="wrap" aria-labelledby="screenshots-heading">
+      <div class="section-head">
+        <span class="kicker">Screenshots</span>
+        <h2 id="screenshots-heading">Every screen is built for bedtime</h2>
+        <p>Dark interface, big controls, nothing to squint at when the lights are off.</p>
+      </div>
+      <div class="shots" role="list">
+        
+        <figure class="shot" role="listitem">
+          <img src="/img/screenshot-2-sounds.webp" alt="DRMN sleep sounds library with white noise, rain, ocean, and nature sounds" width="600" height="1300" loading="lazy" decoding="async">
+          <figcaption><strong>Sound library.</strong> White, brown, pink noise, rain, ocean, thunder, and nature ambience.</figcaption>
+        </figure>
+        
+        <figure class="shot" role="listitem">
+          <img src="/img/screenshot-3-mix.webp" alt="DRMN sound mixer layering multiple sleep sounds into one soundscape" width="600" height="1300" loading="lazy" decoding="async">
+          <figcaption><strong>Sound mixer.</strong> Layer several tracks with independent volume to build your soundscape.</figcaption>
+        </figure>
+        
+        <figure class="shot" role="listitem">
+          <img src="/img/screenshot-4-fan.webp" alt="Fan noise for sleep playing in the DRMN sound machine app" width="600" height="1300" loading="lazy" decoding="async">
+          <figcaption><strong>Fan noise.</strong> The steady fan hum light sleepers rely on, without running a fan.</figcaption>
+        </figure>
+        
+        <figure class="shot" role="listitem">
+          <img src="/img/screenshot-5-rain.webp" alt="Rain sounds for sleeping in the DRMN white noise app" width="600" height="1300" loading="lazy" decoding="async">
+          <figcaption><strong>Rain sounds.</strong> Gapless rain loops for falling asleep and staying asleep.</figcaption>
+        </figure>
+        
+        <figure class="shot" role="listitem">
+          <img src="/img/screenshot-6-fade.webp" alt="Gradual fade-out setting in the DRMN sleep sounds app" width="600" height="1300" loading="lazy" decoding="async">
+          <figcaption><strong>Gradual fade.</strong> Audio fades so gently the ending never wakes you.</figcaption>
+        </figure>
+        
+        <figure class="shot" role="listitem">
+          <img src="/img/screenshot-7-timer.webp" alt="Sleep timer up to 10 hours in the DRMN sound machine app" width="600" height="1300" loading="lazy" decoding="async">
+          <figcaption><strong>Sleep timer.</strong> Set minutes or up to 10 hours — playback stops on its own.</figcaption>
+        </figure>
+        
+        <figure class="shot" role="listitem">
+          <img src="/img/screenshot-1-cover.webp" alt="DRMN app cover screen: fall asleep faster tonight" width="600" height="1300" loading="lazy" decoding="async">
+          <figcaption><strong>One tap to sleep.</strong> Open, press play, put the phone down.</figcaption>
+        </figure>
+        
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how-it-works" class="wrap" aria-labelledby="how-it-works-heading">
+      <div class="section-head">
+        <span class="kicker">How it works</span>
+        <h2 id="how-it-works-heading">From “can’t sleep” to asleep in four taps</h2>
+        <p>Steady sound masks the sudden noises that wake you — doors, traffic, snoring. Here is the whole routine.</p>
+      </div>
+      <div class="steps">
+        
+        <div class="step">
+          <h3>Pick a sound</h3>
+          <p>Choose white, brown, or pink noise, rain, ocean, fan, or nature ambience from the library.</p>
         </div>
-      </div>
-    </section>
-    
-
-    <!-- Features Section -->
-    <section class="features" aria-labelledby="features-heading">
-      <div class="container">
-        <h2 id="features-heading">Zvoki za spanje in narava za boljši počitek</h2>
-        <div class="features-grid">
-          
-          <article class="feature-card">
-            <div class="feature-icon" aria-hidden="true">🌊</div>
-            <h3>Bogata knjižnica zvokov za spanje</h3>
-            <p>Izbiraj beli, rjav in temni šum za globoko sprostitev. Razišči naravne zvoke: nežen dež, valovi, ogenj in jutranje ptice. Meditativni ambienti in nežni instrumentali. Mešaj zvoke za popolno okolje za spanje.</p>
-          </article>
-          
-          <article class="feature-card">
-            <div class="feature-icon" aria-hidden="true">😴</div>
-            <h3>Zaspi hitreje, spi globlje</h3>
-            <p>Težko zaspati? Znanstveno podprta zvočna terapija maskira promet, sosede in smrčanje. Ustvari enotno okolje za spanje, ki možganom signalizira počitek. Zjutraj se zbudíš odpočit.</p>
-          </article>
-          
-          <article class="feature-card">
-            <div class="feature-icon" aria-hidden="true">🎯</div>
-            <h3>Bolj se osredotoči, delaj pametneje</h3>
-            <p>Mediteraš, učiš se ali delaš v hrupni kavarni? DRMN ustvari popolno vzdušje za koncentracijo. Blokiraj motnje, zmanjšaj stres in povečaj produktivnost.</p>
-          </article>
-          
-          <article class="feature-card">
-            <div class="feature-icon" aria-hidden="true">👶</div>
-            <h3>Pomagaj dojenčku mirno spati</h3>
-            <p>Posebni zvoki za dojenčke — sušilec za lase, sesalec in tipkanje — pomagajo dojenčkom in malčkom hitreje zaspati. Znani ritmi pomirjajo in spodbujajo zdrave vzorce spanja.</p>
-          </article>
-          
+        
+        <div class="step">
+          <h3>Mix your soundscape</h3>
+          <p>Layer tracks in the mixer — rain over brown noise, thunder under ocean waves — with per-track volume.</p>
         </div>
-      </div>
-    </section>
-
-    <!-- Sound category sections or grid -->
-    
-    
-    <section class="sound-section" aria-labelledby="sound-section-heading">
-      <div class="container-narrow">
-        <h2 id="sound-section-heading"><span class="sound-section-icon" aria-hidden="true">🔊</span> Beli šum</h2>
-        <p>Stalni beli šum maskira nenadne zvoke—promet, sosede ali škripanje tal—in daje možganom predvidljivo ozadje za sprostitev. Poskusi hrup ventilatorja ali klasičen statični šum in ga zmiksaj z dežjem ali valovi.</p>
-      </div>
-    </section>
-    
-    <section class="sound-section" aria-labelledby="sound-section-heading">
-      <div class="container-narrow">
-        <h2 id="sound-section-heading"><span class="sound-section-icon" aria-hidden="true">🌊</span> Rjav šum</h2>
-        <p>Rjav in temen šum poudari nizke frekvence. Mnogi ga dojemajo kot toplejšega in manj ostrega od belega šuma—primeren za globoko spanje ali fokus. Uporabi samostojno ali pod naravnimi zvoki.</p>
-      </div>
-    </section>
-    
-    <section class="sound-section" aria-labelledby="sound-section-heading">
-      <div class="container-narrow">
-        <h2 id="sound-section-heading"><span class="sound-section-icon" aria-hidden="true">👶</span> Zvoki za spanje dojenčka</h2>
-        <p>Nežne posnetke fen, sesalca ali tipkovnice posnemajo znane ritme, ki pomirjajo dojenčke in malčke. Starši jih uporabljajo v otroški sobi—brez ločenega aparata za spanje.</p>
-      </div>
-    </section>
-    
-    <section class="sound-section" aria-labelledby="sound-section-heading">
-      <div class="container-narrow">
-        <h2 id="sound-section-heading"><span class="sound-section-icon" aria-hidden="true">⏱️</span> Časovnik za spanje</h2>
-        <p>Nastavi časovnik z avtomatskim fade-outom, da se zvok postopoma zmanjša po zaspavanju. Brezplačna različica vključuje uro—dovolj za večino noči; premium odklene daljše seje.</p>
-      </div>
-    </section>
-    
-    <section class="sound-section" aria-labelledby="sound-section-heading">
-      <div class="container-narrow">
-        <h2 id="sound-section-heading"><span class="sound-section-icon" aria-hidden="true">📴</span> Offline aparat za spanje</h2>
-        <p>Prenesi priljubljene posnetke enkrat in poslušaj do 10 ur brez Wi‑Fi-ja ali mobilnih podatkov. Optimizacija baterije ohranja predvajanje celo noč—idealno na potovanjih ali s šibkim signalom v spalnici.</p>
-      </div>
-    </section>
-    
-    
-    
-
-    <!-- App Store proof (E-E-A-T) -->
-    
-    <section class="app-store-proof" aria-labelledby="app-store-proof-heading">
-      <div class="container">
-        <div class="app-store-proof-inner">
-          <div>
-            <h2 id="app-store-proof-heading">Ocenjeno v App Store</h2>
-            <p>Prave ocene in mnenja iz App Store—ne marketinške obljube. Preberi, kaj pravijo uporabniki, preden preneseš aplikacijo.</p>
-            <div class="app-store-rating">
-              <div class="app-store-rating-value">4,9<span style="font-size:1.25rem;color:var(--color-text-muted)">/5</span></div>
-              <div class="app-store-rating-meta">
-                <div>10 App Store reviews</div>
-                <div>10 000+ downloads</div>
-              </div>
-            </div>
-            <div class="app-store-links">
-              <a href="https://apps.apple.com/app/id6746480683" rel="noopener noreferrer">View on App Store</a>
-              <a href="https://apps.apple.com/app/id6746480683?see-all=reviews" rel="noopener noreferrer">Read all reviews</a>
-            </div>
-          </div>
-          <div class="app-store-screenshot">
-            <a href="https://apps.apple.com/app/id6746480683" rel="noopener noreferrer">
-              <img src="https://drmn.xyz/site_preview.png" alt="Predogled aplikacije DRMN na iPhonu" width="600" height="315" loading="lazy" decoding="async">
-            </a>
-          </div>
+        
+        <div class="step">
+          <h3>Set the timer</h3>
+          <p>Pick anything up to 10 hours. Playback fades out gradually so the stop never startles you awake.</p>
         </div>
-      </div>
-    </section>
-    
-
-    <!-- DRMN by the Numbers Section -->
-    
-    <section class="stats-section" aria-labelledby="stats-heading">
-      <div class="container">
-        <h2 id="stats-heading">DRMN v številkah</h2>
-        <div class="stats-grid">
-          
-          <div class="stat-card">
-            <div class="stat-value">4,9/5</div>
-            <div class="stat-description">Povprečna ocena v App Store (10 ocen)</div>
-          </div>
-          
-          <div class="stat-card">
-            <div class="stat-value">10.000+</div>
-            <div class="stat-description">Uporabnikov je preneslo DRMN iz App Store</div>
-          </div>
-          
-          <div class="stat-card">
-            <div class="stat-value">30–50 % hitreje</div>
-            <div class="stat-description">Povprečno izboljšanje časa zaspavanja</div>
-          </div>
-          
-          <div class="stat-card">
-            <div class="stat-value">100 ur</div>
-            <div class="stat-description">Profesionalno posneti zvoki za spanje in ambient</div>
-          </div>
-          
-          <div class="stat-card">
-            <div class="stat-value">10 ur</div>
-            <div class="stat-description">Offline predvajanje na enem polnjenju (optimizirana baterija)</div>
-          </div>
-          
-          <div class="stat-card">
-            <div class="stat-value">49,2 MB</div>
-            <div class="stat-description">Velikost aplikacije (optimizirano za vse modele iPhone)</div>
-          </div>
-          
-          <div class="stat-card">
-            <div class="stat-value">iOS 17.1+</div>
-            <div class="stat-description">Združljivo z vsemi sodobnimi iPhone</div>
-          </div>
-          
+        
+        <div class="step">
+          <h3>Press play and sleep</h3>
+          <p>Lock the screen and put the phone down. Sounds keep playing all night — even offline.</p>
         </div>
+        
       </div>
     </section>
-    
 
-    <!-- Detailed Content Section for SEO -->
-    <article class="content-section" aria-labelledby="content-heading">
-      <div class="container-narrow">
-        <header>
-          <h2 id="content-heading">Izboljšaj spanje z aplikacijo aparata za spanje</h2>
-          <p>DRMN je iOS aplikacija aparata za spanje z belim šumom, dežjem, ventilatorjem in naravnimi zvoki za hitrejše zaspavanje. Več kot 10.000 prenosov in ocena 4,9. Idealno pri nespečnosti, fokusu in dojenčkovem spanju.</p>
-        </header>
-        
-        
-        <section>
-          <h3>Knjižnica zvokov za tvoje potrebe</h3>
-          <p>Skrbno smo izbrali kakovostne zvoke za sprostitev, fokus in boljši spanec:</p>
-          
-          
-        </section>
-        
-        <section>
-          <h3>Znanstveno podprta terapija spanja, ki deluje</h3>
-          <p>Raziskave kažejo, da enoten ozadnji zvok izboljša kakovost spanja. Tako pomaga DRMN:</p>
-          
-          
-        </section>
-        
-        <section>
-          <h3>Ne le za spanje — tudi za fokus</h3>
-          <p>DRMN ni le aplikacija za spanje — tvoje skrivno orožje za koncentracijo. Hrupna kavarna, izpit ali meditacija — pravi zvoki naredijo razliko:</p>
-          
-          
-        </section>
-        
-        <section>
-          <h3>Pomagaj najmanjšim spati celo noč</h3>
-          <p>Vemo, kako utrujajoče je, ko dojenček noče spati. Zato obstajajo posebni zvoki za dojenčke in malčke. Nežen sušilec, sesalec in tipkovnica ustvarjajo znane ritme.</p>
-          
-          
-        </section>
-        
-        <section>
-          <h3>Ustvarjeno za resnično življenje</h3>
-          <p>Vsaka podrobnost je premišljena, da DRMN ustreza tvojemu dnevu:</p>
-          
-          
-        </section>
-        
+    <!-- Detailed content (SEO) -->
+    <section class="wrap" aria-labelledby="content-heading">
+      <div class="section-head">
+        <h2 id="content-heading">Izboljšaj spanje z aplikacijo aparata za spanje</h2>
+        <p>DRMN je iOS aplikacija aparata za spanje z belim šumom, dežjem, ventilatorjem in naravnimi zvoki za hitrejše zaspavanje. Več kot 10.000 prenosov in ocena 4,9. Idealno pri nespečnosti, fokusu in dojenčkovem spanju.</p>
       </div>
-    </article>
-
-    <!-- Benefits Section -->
-    <section class="benefits" aria-labelledby="benefits-heading">
-      <div class="container-narrow">
-        <h2 id="benefits-heading">Zakaj DRMN?</h2>
-        <ul class="benefits-list">
+      <article class="prose">
+        
+        <h3>Knjižnica zvokov za tvoje potrebe</h3>
+        <p>Skrbno smo izbrali kakovostne zvoke za sprostitev, fokus in boljši spanec:</p>
+        
+        <ul>
           
-          <li>
-            <span>Kakovostni profesionalni zvoki, ki res pomagajo zaspati</span>
-          </li>
+          <li><strong>Beli, rjav in temni šum</strong> — maskira moteče zvoke in ustvari enotno okolje za spanje</li>
           
-          <li>
-            <span>Mešaj več zvokov za popolno okolje za spanje</span>
-          </li>
+          <li><strong>Naravni zvoki</strong> — dež, valovi, ogenj, ventilator in jutranje ptice te popeljejo na mirno mesto</li>
           
-          <li>
-            <span>Pameten časovnik s samodejnim utišanjem — vklopi in pozabi</span>
-          </li>
+          <li><strong>Meditacija in fokus</strong> — ambienti in nežni instrumentali za delo in mindfulness</li>
           
-          <li>
-            <span>Lep, intuitiven vmesnik, enostaven za uporabo</span>
-          </li>
-          
-          <li>
-            <span>Deluje popolnoma offline po prenosu zvokov</span>
-          </li>
-          
-          <li>
-            <span>Optimizirana baterija za celo noč</span>
-          </li>
-          
-          <li>
-            <span>Brezplačen prenos, premium po izbiri</span>
-          </li>
+          <li><strong>Zvoki za dojenčke</strong> — sušilec, sesalec in tipkovnica pomagajo najmanjšim zaspati</li>
           
         </ul>
-      </div>
+        
+        
+        <p>Najboljše? Lahko mešas več zvokov. Beli šum z valovi ali dež z meditacijo — ti odločaš.</p>
+        
+        
+        <h3>Znanstveno podprta terapija spanja, ki deluje</h3>
+        <p>Raziskave kažejo, da enoten ozadnji zvok izboljša kakovost spanja. Tako pomaga DRMN:</p>
+        
+        <ul>
+          
+          <li><strong>Blokira moteče zvoke</strong> — promet, sosedi in smrčanje te ne bodo več zbudili</li>
+          
+          <li><strong>Signalizira počitek možganom</strong> — enoten zvok pomaga umirjati misli</li>
+          
+          <li><strong>Spodbuja globlji spanec</strong> — izbrane frekvence podpirajo obnovitvene cikle spanja</li>
+          
+        </ul>
+        
+        
+        <p>Več kot 10.000 prenosov in 4,9 v App Store. Uporabniki v povprečju zaspijo 30–50 % hitreje in se ponoči manj zbudijo. Začni dan z energijo.</p>
+        
+        
+        <h3>Ne le za spanje — tudi za fokus</h3>
+        <p>DRMN ni le aplikacija za spanje — tvoje skrivno orožje za koncentracijo. Hrupna kavarna, izpit ali meditacija — pravi zvoki naredijo razliko:</p>
+        
+        <ul>
+          
+          <li><strong>Odstrani motnje</strong> — ustvari tiho cono kjerkoli si</li>
+          
+          <li><strong>Zmanjša stres</strong> — pomirjujoče frekvence ti pomagajo ostati osredotočen</li>
+          
+          <li><strong>Poveča produktivnost</strong> — mnogi se bolje osredotočijo z ozadnjim zvokom</li>
+          
+          <li><strong>Poglobi koncentracijo</strong> — idealno za deep work in pomembne naloge</li>
+          
+        </ul>
+        
+        
+        <p>Delo od doma, nočno učenje ali trenutek miru — DRMN zagotovi popolno zvočno ozadje.</p>
+        
+        
+        <h3>Pomagaj najmanjšim spati celo noč</h3>
+        <p>Vemo, kako utrujajoče je, ko dojenček noče spati. Zato obstajajo posebni zvoki za dojenčke in malčke. Nežen sušilec, sesalec in tipkovnica ustvarjajo znane ritme.</p>
+        
+        <ul>
+          
+        </ul>
+        
+        
+        <p>Enostavni, nežni zvoki spominjajo na maternico in dajejo občutek varnosti. Starši po svetu zaupajo DRMN — in tudi ti bolje spiš.</p>
+        
+        
+        <h3>Ustvarjeno za resnično življenje</h3>
+        <p>Vsaka podrobnost je premišljena, da DRMN ustreza tvojemu dnevu:</p>
+        
+        <ul>
+          
+          <li><strong>Profesionalno posneto</strong> — več kot 100 ur kakovostnega zvoka</li>
+          
+          <li><strong>Mix in kombinacije</strong> — ustvari popolno mešanico</li>
+          
+          <li><strong>Pameten časovnik za spanje</strong> — samodejno utišanje, brez skrbi celo noč</li>
+          
+          <li><strong>Preprost, lep vmesnik</strong> — pripravljen v sekundah</li>
+          
+          <li><strong>Deluje offline</strong> — prenesi priljubljene in poslušaj do 10 ur brez interneta</li>
+          
+          <li><strong>Varčuje baterijo</strong> — celo noč brez prazne iPhone baterije</li>
+          
+          <li><strong>Brezplačen začetek</strong> — poskusi brezplačno, premium po izbiri</li>
+          
+        </ul>
+        
+        
+        <p>DRMN deluje na iPhone z iOS 17.1+. Brezplačna različica: 1-urni časovnik, offline, mix in optimizacija baterije. Premium odklene daljše predvajanje in več zvokov.</p>
+        
+        
+      </article>
     </section>
 
-    <!-- Comparison Section -->
+    <!-- Comparison -->
     
-    <section class="content-section comparison-section" aria-labelledby="comparison-heading">
-      <div class="container-narrow">
+    <section class="wrap" aria-labelledby="comparison-heading">
+      <div class="section-head">
         <h2 id="comparison-heading">Najboljši aparat za spanje — primerjava DRMN</h2>
         
         <p>Kako se DRMN primerja s tipičnimi brezplačnimi in premium aplikacijami. Na podlagi javnih podatkov in povratnih informacij uporabnikov.</p>
         
+      </div>
+      
+      <div class="table-wrap">
+        <table class="compare">
+          <thead>
+            <tr>
+              
+              <th>Funkcija</th>
+              
+              <th>DRMN</th>
+              
+              <th>Tipične brezplačne aplikacije</th>
+              
+              <th>Premium aplikacije</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr>
+              <td><strong>Brezplačna različica</strong></td>
+              <td>1-urni časovnik (dovolj za zaspati)</td>
+              <td>Omejeni zvoki ali oglasi</td>
+              <td>Potrebna naročnina</td>
+            </tr>
+            
+            <tr>
+              <td><strong>Offline</strong></td>
+              <td>Da (10+ ur)</td>
+              <td>Omejeno ali z oglasi</td>
+              <td>Da</td>
+            </tr>
+            
+            <tr>
+              <td><strong>Mix zvokov</strong></td>
+              <td>Da, neomejeno</td>
+              <td>Ne ali omejeno</td>
+              <td>Da</td>
+            </tr>
+            
+            <tr>
+              <td><strong>Optimizacija baterije</strong></td>
+              <td>Da, celo noč</td>
+              <td>Delno</td>
+              <td>Da</td>
+            </tr>
+            
+            <tr>
+              <td><strong>Zvoki za dojenčke</strong></td>
+              <td>Da (sušilec, sesalec, tipkovnica)</td>
+              <td>Ne</td>
+              <td>Včasih</td>
+            </tr>
+            
+            <tr>
+              <td><strong>Časovnik za spanje</strong></td>
+              <td>Samodejno utišanje</td>
+              <td>Osnovno</td>
+              <td>Samodejno utišanje</td>
+            </tr>
+            
+            <tr>
+              <td><strong>Velikost datoteke</strong></td>
+              <td>49,2 MB</td>
+              <td>30–70 MB</td>
+              <td>50–100 MB</td>
+            </tr>
+            
+            <tr>
+              <td><strong>Zahteve iOS</strong></td>
+              <td>17.1+</td>
+              <td>15.0+</td>
+              <td>16.0+</td>
+            </tr>
+            
+            <tr>
+              <td><strong>Ocena App Store</strong></td>
+              <td>4,9/5 (10 ocen)</td>
+              <td>3,5–4,5/5</td>
+              <td>4,0–4,8/5</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+      
+    </section>
+    
+
+    <!-- Guides -->
+    <section id="guides" class="wrap" aria-labelledby="guides-heading">
+      <div class="section-head">
+        <span class="kicker">Guides</span>
+        <h2 id="guides-heading">Sleep sound guides, written for real problems</h2>
+        <p>How to use sound to fall asleep faster, block snoring, calm a baby, and more — each with exact steps in DRMN.</p>
+      </div>
+      <div class="guides">
         
-        <div class="comparison-table-wrapper">
-          <table class="comparison-table">
-            <thead>
-              <tr>
-                
-                <th>Funkcija</th>
-                
-                <th>DRMN</th>
-                
-                <th>Tipične brezplačne aplikacije</th>
-                
-                <th>Premium aplikacije</th>
-                
-              </tr>
-            </thead>
-            <tbody>
-              
-              <tr>
-                <td><strong>Brezplačna različica</strong></td>
-                <td>1-urni časovnik (dovolj za zaspati)</td>
-                <td>Omejeni zvoki ali oglasi</td>
-                <td>Potrebna naročnina</td>
-              </tr>
-              
-              <tr>
-                <td><strong>Offline</strong></td>
-                <td>Da (10+ ur)</td>
-                <td>Omejeno ali z oglasi</td>
-                <td>Da</td>
-              </tr>
-              
-              <tr>
-                <td><strong>Mix zvokov</strong></td>
-                <td>Da, neomejeno</td>
-                <td>Ne ali omejeno</td>
-                <td>Da</td>
-              </tr>
-              
-              <tr>
-                <td><strong>Optimizacija baterije</strong></td>
-                <td>Da, celo noč</td>
-                <td>Delno</td>
-                <td>Da</td>
-              </tr>
-              
-              <tr>
-                <td><strong>Zvoki za dojenčke</strong></td>
-                <td>Da (sušilec, sesalec, tipkovnica)</td>
-                <td>Ne</td>
-                <td>Včasih</td>
-              </tr>
-              
-              <tr>
-                <td><strong>Časovnik za spanje</strong></td>
-                <td>Samodejno utišanje</td>
-                <td>Osnovno</td>
-                <td>Samodejno utišanje</td>
-              </tr>
-              
-              <tr>
-                <td><strong>Velikost datoteke</strong></td>
-                <td>49,2 MB</td>
-                <td>30–70 MB</td>
-                <td>50–100 MB</td>
-              </tr>
-              
-              <tr>
-                <td><strong>Zahteve iOS</strong></td>
-                <td>17.1+</td>
-                <td>15.0+</td>
-                <td>16.0+</td>
-              </tr>
-              
-              <tr>
-                <td><strong>Ocena App Store</strong></td>
-                <td>4,9/5 (10 ocen)</td>
-                <td>3,5–4,5/5</td>
-                <td>4,0–4,8/5</td>
-              </tr>
-              
-            </tbody>
-          </table>
-        </div>
+        <a class="guide-card" href="/guides/white-noise-app/">
+          <h3>What Makes a Good White Noise App for iPhone</h3>
+          <p>The four features that separate a real white noise app from a looping audio file — and how to set one up tonight.</p>
+          <span class="go">Read the guide →</span>
+        </a>
+        
+        <a class="guide-card" href="/guides/sound-machine-app/">
+          <h3>Sound Machine App vs Bedside Machine: Which to Choose</h3>
+          <p>What a $50–$100 sound machine actually does, and when your iPhone does it better for free.</p>
+          <span class="go">Read the guide →</span>
+        </a>
+        
+        <a class="guide-card" href="/guides/best-sounds-for-sleep/">
+          <h3>The Best Sounds for Sleep, Ranked by What Wakes You</h3>
+          <p>White vs pink vs brown noise, rain, fan, and ocean — which masking sound fits your bedroom and your brain.</p>
+          <span class="go">Read the guide →</span>
+        </a>
+        
+        <a class="guide-card" href="/guides/fall-asleep-fast/">
+          <h3>How to Fall Asleep Fast Using Sound</h3>
+          <p>A 15-minute wind-down routine built on sound conditioning — the same cue every night, until sleep is automatic.</p>
+          <span class="go">Read the guide →</span>
+        </a>
+        
+        <a class="guide-card" href="/guides/rain-sounds-for-sleeping/">
+          <h3>Rain Sounds for Sleeping: Why They Work and How to Use Them</h3>
+          <p>Why rain beats pure white noise for many sleepers, and the rain + brown noise mix worth trying first.</p>
+          <span class="go">Read the guide →</span>
+        </a>
+        
+        <a class="guide-card" href="/guides/sleep-sounds-with-timer/">
+          <h3>Sleep Sounds With a Timer: Fade Out Instead of Stopping</h3>
+          <p>All-night audio vs a timed fade — what the research says, and how to set a 10-hour gradual fade in DRMN.</p>
+          <span class="go">Read the guide →</span>
+        </a>
+        
+        <a class="guide-card" href="/guides/white-noise-for-babies/">
+          <h3>White Noise for Babies: Safe Volume, Distance, and Setup</h3>
+          <p>The 50-decibel rule, the 7-foot rule, and which sounds actually settle newborns — hair dryer, vacuum, static.</p>
+          <span class="go">Read the guide →</span>
+        </a>
+        
+        <a class="guide-card" href="/guides/block-out-snoring/">
+          <h3>How to Block Out Snoring With Sound Masking</h3>
+          <p>Snoring is low-frequency noise, so most white noise fails. Here is the mix that actually covers it.</p>
+          <span class="go">Read the guide →</span>
+        </a>
+        
+        <a class="guide-card" href="/guides/fan-noise-for-sleep/">
+          <h3>Fan Noise for Sleep — Without Running a Fan All Night</h3>
+          <p>Keep the fan hum, skip the cold air and the electricity bill. Gapless fan sound on your phone.</p>
+          <span class="go">Read the guide →</span>
+        </a>
+        
+        <a class="guide-card" href="/guides/deep-sleep-sounds/">
+          <h3>Deep Sleep Sounds: What to Play for More Restorative Sleep</h3>
+          <p>Which sound frequencies support deep sleep stages, and how to run them through your first sleep cycles.</p>
+          <span class="go">Read the guide →</span>
+        </a>
         
       </div>
     </section>
-    
 
     <!-- Blog guides (internal linking for SEO) -->
     
-    <section class="blog-promo-section" aria-labelledby="blog-promo-heading">
-      <div class="container-narrow">
+    <section id="blog-promo" class="wrap" aria-labelledby="blog-promo-heading">
+      <div class="section-head">
         <h2 id="blog-promo-heading">Sleep & Focus Guides</h2>
         
-        <p class="blog-promo-intro">Science-backed articles on white noise, rain sounds, and sound masking—written to help you pick the right audio for sleep and concentration.</p>
+        <p>Science-backed articles on white noise, rain sounds, and sound masking—written to help you pick the right audio for sleep and concentration.</p>
         
-        
-        <ul class="blog-promo-list">
-          
-          <li><a href="/blog/drmn-vs-calm-sleep-sounds/">DRMN vs Calm: Sleep Sounds vs Meditation Apps (2026)</a></li>
-          
-          <li><a href="/blog/bettersleep-alternative-iphone/">BetterSleep Alternative for iPhone (2026)</a></li>
-          
-          <li><a href="/blog/best-white-noise-apps-iphone-compared/">Best White Noise Apps for iPhone Compared (2026)</a></li>
-          
-          <li><a href="/blog/white-noise-for-sleep/">White Noise for Sleep: What It Is and How to Use It</a></li>
-          
-        </ul>
-        
-        <p class="blog-promo-cta"><a href="/blog/" class="blog-promo-link">Browse all articles</a></p>
       </div>
+      
+      <ul class="promo-links">
+        
+        <li><a href="/blog/drmn-vs-calm-sleep-sounds/">DRMN vs Calm: Sleep Sounds vs Meditation Apps (2026)</a></li>
+        
+        <li><a href="/blog/bettersleep-alternative-iphone/">BetterSleep Alternative for iPhone (2026)</a></li>
+        
+        <li><a href="/blog/best-white-noise-apps-iphone-compared/">Best White Noise Apps for iPhone Compared (2026)</a></li>
+        
+        <li><a href="/blog/white-noise-for-sleep/">White Noise for Sleep: What It Is and How to Use It</a></li>
+        
+      </ul>
+      
+      <p><a href="/blog/" class="promo-all">Browse all articles</a></p>
     </section>
     
 
-    <!-- What's New Section -->
-    
-    <section class="content-section whats-new-section" aria-labelledby="whats-new-heading">
-      <div class="container-narrow">
-        <h2 id="whats-new-heading">Kaj je novega</h2>
-        
-        <p>Najnovejše posodobitve DRMN</p>
-        
-        <div class="whats-new-list">
-          
-          <div class="whats-new-item">
-            <div class="whats-new-date">Januar 2025</div>
-            <h3>Izboljšana optimizacija baterije</h3>
-            <p>Učinkoviteje celo noč. Do 10 ur neprekinjenega predvajanja na enem polnjenju.</p>
-            
-          </div>
-          
-          <div class="whats-new-item">
-            <div class="whats-new-date">Januar 2025</div>
-            <h3>Novi zvoki za spanje</h3>
-            <p>10 novih profesionalno posnetih zvokov — knjižnica presega 100 ur.</p>
-            
-          </div>
-          
-          <div class="whats-new-item">
-            <div class="whats-new-date">December 2024</div>
-            <h3>Izboljšan mix zvokov</h3>
-            <p>Boljša kakovost zvoka in bolj gladki prehodi med zvoki.</p>
-            
-          </div>
-          
-        </div>
-      </div>
-    </section>
-    
-
-    <!-- FAQ Section for SEO -->
-    <section class="content-section" aria-labelledby="faq-heading">
-      <div class="container-narrow">
+    <!-- FAQ -->
+    <section id="faq" class="wrap" aria-labelledby="faq-heading">
+      <div class="section-head">
+        <span class="kicker">FAQ</span>
         <h2 id="faq-heading">Pogosta vprašanja</h2>
-        <div style="margin-top: 2rem;">
-          
-          <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Kateri zvok je najboljši za spanje?</h3>
-            <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">Odvisno od tega, kaj te pomiri. Mnogi izberejo dež, stalni hrup ventilatorja ali nevtralen beli šum. V DRMN lahko poslušaš in mixaš posnetke, da najdeš, kar ti pomaga hitreje zaspati.</p>
-            </div>
+        <p>Short answers here — full guides one click away.</p>
+      </div>
+      <div class="faq-list">
+        
+        <details>
+          <summary>Kateri zvok je najboljši za spanje?</summary>
+          <div class="faq-body">
+            <p>Odvisno od tega, kaj te pomiri. Mnogi izberejo dež, stalni hrup ventilatorja ali nevtralen beli šum. V DRMN lahko poslušaš in mixaš posnetke, da najdeš, kar ti pomaga hitreje zaspati.</p>
           </div>
-          
-          <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Kaj je aparat za spanje?</h3>
-            <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">Predvaja stabilno ozadje—dež, ventilator ali beli šum—ki maskira motnje in pomaga pri spanju. DRMN deluje kot prenosni aparat na iPhonu z mixom, offline načinom in vgrajenim časovnikom.</p>
-            </div>
+        </details>
+        
+        <details>
+          <summary>Kaj je aparat za spanje?</summary>
+          <div class="faq-body">
+            <p>Predvaja stabilno ozadje—dež, ventilator ali beli šum—ki maskira motnje in pomaga pri spanju. DRMN deluje kot prenosni aparat na iPhonu z mixom, offline načinom in vgrajenim časovnikom.</p>
           </div>
-          
-          <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Je DRMN dobra aplikacija belega šuma za iPhone?</h3>
-            <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">DRMN ima oceno 4,9 v App Store in več kot 10 000 prenosov. Vključuje dež, ventilator, beli in rjav šum ter več kot 100 ur ambientnih in naravnih zvokov. Uporabniki pogosto zaspijo 30–50 % hitreje, ko jih moti hrup v ozadju.</p>
-            </div>
+        </details>
+        
+        <details>
+          <summary>Je DRMN dobra aplikacija belega šuma za iPhone?</summary>
+          <div class="faq-body">
+            <p>DRMN ima oceno 4,9 v App Store in več kot 10 000 prenosov. Vključuje dež, ventilator, beli in rjav šum ter več kot 100 ur ambientnih in naravnih zvokov. Uporabniki pogosto zaspijo 30–50 % hitreje, ko jih moti hrup v ozadju.</p>
           </div>
-          
-          <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Obstaja brezplačna aplikacija belega šuma za iPhone?</h3>
-            <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">Da. DRMN preneseš brezplačno iz App Store. Brezplačna različica vključuje 1-urni časovnik, offline, mix in osnovne zvoke za spanje. Premium odklene daljše seje in dodatne posnetke—za preizkus osnov ne potrebuješ naročnine.</p>
-            </div>
+        </details>
+        
+        <details>
+          <summary>Obstaja brezplačna aplikacija belega šuma za iPhone?</summary>
+          <div class="faq-body">
+            <p>Da. DRMN preneseš brezplačno iz App Store. Brezplačna različica vključuje 1-urni časovnik, offline, mix in osnovne zvoke za spanje. Premium odklene daljše seje in dodatne posnetke—za preizkus osnov ne potrebuješ naročnine.</p>
           </div>
-          
-          <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Kateri zvoki so vključeni?</h3>
-            <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">Beli, rjav in temen šum; narava kot dež, valovi, ogenj in jutranje ptice; meditacija in fokus; zvoki za dojenčka kot fen, sesalec in tipkovnica. Lahko mixaš katero koli kombinacijo.</p>
-            </div>
+        </details>
+        
+        <details>
+          <summary>Kateri zvoki so vključeni?</summary>
+          <div class="faq-body">
+            <p>Beli, rjav in temen šum; narava kot dež, valovi, ogenj in jutranje ptice; meditacija in fokus; zvoki za dojenčka kot fen, sesalec in tipkovnica. Lahko mixaš katero koli kombinacijo.</p>
           </div>
-          
-          <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Ali DRMN deluje offline?</h3>
-            <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">Da. Po prenosu posnetkov aplikacija predvaja brez interneta. Optimizacija baterije omogoča do 10 ur neprekinjenega predvajanja—dovolj za potovanja ali celo noč.</p>
-            </div>
+        </details>
+        
+        <details>
+          <summary>Ali DRMN deluje offline?</summary>
+          <div class="faq-body">
+            <p>Da. Po prenosu posnetkov aplikacija predvaja brez interneta. Optimizacija baterije omogoča do 10 ur neprekinjenega predvajanja—dovolj za potovanja ali celo noč.</p>
           </div>
-          
-          <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Kateri zvoki ustrezajo za spanec dojenčka?</h3>
-            <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">Mnogi starši uporabljajo stalne, znane zvoke—fen, sesalec ali nežen beli šum. DRMN ima posnetke za dojenčke, ki pomirjajo najmanjše brez ločene naprave v sobi.</p>
-            </div>
+        </details>
+        
+        <details>
+          <summary>Kateri zvoki ustrezajo za spanec dojenčka?</summary>
+          <div class="faq-body">
+            <p>Mnogi starši uporabljajo stalne, znane zvoke—fen, sesalec ali nežen beli šum. DRMN ima posnetke za dojenčke, ki pomirjajo najmanjše brez ločene naprave v sobi.</p>
           </div>
-          
-          <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Ali lahko mixam različne zvoke?</h3>
-            <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">Da. Združi beli šum z valovi, dež z meditacijo ali kateri koli par po tvoji izbiri. Mix je vključen v brezplačno različico.</p>
-            </div>
+        </details>
+        
+        <details>
+          <summary>Ali lahko mixam različne zvoke?</summary>
+          <div class="faq-body">
+            <p>Da. Združi beli šum z valovi, dež z meditacijo ali kateri koli par po tvoji izbiri. Mix je vključen v brezplačno različico.</p>
           </div>
-          
-          <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Ali ima DRMN časovnik za spanje?</h3>
-            <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">Da. Nastavi časovnik z avtomatskim fade-outom, da se zvok zmanjša po zaspavanju. Brezplačna različica vključuje uro; premium doda daljše možnosti.</p>
-            </div>
+        </details>
+        
+        <details>
+          <summary>Ali ima DRMN časovnik za spanje?</summary>
+          <div class="faq-body">
+            <p>Da. Nastavi časovnik z avtomatskim fade-outom, da se zvok zmanjša po zaspavanju. Brezplačna različica vključuje uro; premium doda daljše možnosti.</p>
           </div>
-          
-          <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Ali lahko DRMN pomaga pri nespečnosti?</h3>
-            <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">Stabilno ozadje lahko maskira promet, sosede in druge motnje, ki budijo lahke spančce. Ljudje z nespečnostjo pogosto poslušajo beli ali rjav šum vsako noč; mnogi poročajo o hitrejšem zaspavanju, rezultati pa se razlikujejo.</p>
-            </div>
+        </details>
+        
+        <details>
+          <summary>Ali lahko DRMN pomaga pri nespečnosti?</summary>
+          <div class="faq-body">
+            <p>Stabilno ozadje lahko maskira promet, sosede in druge motnje, ki budijo lahke spančce. Ljudje z nespečnostjo pogosto poslušajo beli ali rjav šum vsako noč; mnogi poročajo o hitrejšem zaspavanju, rezultati pa se razlikujejo.</p>
           </div>
-          
-          <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Kako se DRMN razlikuje od Calm ali Headspace?</h3>
-            <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">Calm in Headspace se osredotočata na vodeno meditacijo in wellness naročnine. DRMN temelji na ambient zvoku—aparatu za spanje v žepu—z radodarno brezplačno različico (1-urni časovnik, offline, mix) in brez meditacijskih tečajev. BetterSleep in podobne aplikacije pogosto funkcije zadržijo za naročnike; z DRMN lahko brezplačno preizkusiš osnovne zvoke.</p>
-            </div>
+        </details>
+        
+        <details>
+          <summary>Kako se DRMN razlikuje od Calm ali Headspace?</summary>
+          <div class="faq-body">
+            <p>Calm in Headspace se osredotočata na vodeno meditacijo in wellness naročnine. DRMN temelji na ambient zvoku—aparatu za spanje v žepu—z radodarno brezplačno različico (1-urni časovnik, offline, mix) in brez meditacijskih tečajev. BetterSleep in podobne aplikacije pogosto funkcije zadržijo za naročnike; z DRMN lahko brezplačno preizkusiš osnovne zvoke.</p>
           </div>
-          
-          <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(107, 127, 215, 0.1);">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-text-primary);">Kdo je ustvaril DRMN?</h3>
-            <div>
-              <p style="color: var(--color-text-secondary); line-height: 1.8;">DRMN je razvil Vladimir Ivakhnenko, neodvisni iOS razvijalec. V App Store ima oceno 4,9 na podlagi 10 mnenj in več kot 10 000 prenosov. Kontakt: c-basso@ya.ru.</p>
-            </div>
+        </details>
+        
+        <details>
+          <summary>Kdo je ustvaril DRMN?</summary>
+          <div class="faq-body">
+            <p>DRMN je razvil Vladimir Ivakhnenko, neodvisni iOS razvijalec. V App Store ima oceno 4,9 na podlagi 10 mnenj in več kot 10 000 prenosov. Kontakt: c-basso@ya.ru.</p>
           </div>
-          
-        </div>
+        </details>
+        
       </div>
     </section>
 
     <!-- About / developer (E-E-A-T) -->
     
-    <section class="about-section" aria-labelledby="about-heading">
-      <div class="container-narrow">
+    <section id="about" class="wrap" aria-labelledby="about-heading">
+      <div class="section-head">
         <h2 id="about-heading">O DRMN</h2>
+      </div>
+      <div class="about-strip">
         <p>DRMN je neodvisna iOS aplikacija za spanje in fokus, ki jo je ustvaril Vladimir Ivakhnenko. Začela je kot preprosto orodje za boljši počitek—stabilni zvoki, offline predvajanje in osnovne funkcije brez obvezne naročnine.</p>
         <div class="about-meta">
           <a href="https://apps.apple.com/developer/id1239180595" rel="noopener noreferrer">Razvijalec v App Store: Vladimir Ivakhnenko</a>
@@ -781,149 +797,177 @@
     </section>
     
 
-    <!-- CTA Section -->
-    <section class="cta-section" aria-labelledby="cta-heading">
-      <div class="container">
-        <div class="cta-content">
-          <h2 id="cta-heading">Pripravljen na boljši spanec nocoj?</h2>
-          <p>Več kot 10 000 ljudi uporablja DRMN za hitrejšo sprostitev in zaspavanje. Ocena 4,9/5 v App Store, brezplačna različica z 1-urnim časovnikom, offline načinom in mixom. Prenesi in najdi zvoke, ki ti ustrezajo.</p>
-          <div class="hero-cta">
-            <a href="https://apps.apple.com/app/id6746480683" class="download-btn" aria-label="Prenesi DRMN brezplačno iz App Store" rel="noopener noreferrer">
-              <img src="/img/download.svg" alt="Prenesi DRMN v App Store" width="200" height="60" loading="lazy" decoding="async">
-            </a>
-          </div>
-        </div>
+    <!-- CTA -->
+    <section class="wrap" aria-labelledby="cta-heading">
+      <div class="cta-band">
+        <span class="kicker">Get the app</span>
+        <h2 id="cta-heading">Pripravljen na boljši spanec nocoj?</h2>
+        <p>Več kot 10 000 ljudi uporablja DRMN za hitrejšo sprostitev in zaspavanje. Ocena 4,9/5 v App Store, brezplačna različica z 1-urnim časovnikom, offline načinom in mixom. Prenesi in najdi zvoke, ki ti ustrezajo.</p>
+        <a class="btn-badge" href="https://apps.apple.com/app/id6746480683" aria-label="Prenesi DRMN brezplačno iz App Store" rel="noopener noreferrer">
+          <img src="/img/app-store-badge.svg" alt="Prenesi DRMN v App Store" width="168" height="56" loading="lazy" decoding="async">
+        </a>
       </div>
     </section>
   </main>
 
   <footer role="contentinfo">
-    <div class="container">
-      <div class="footer-links">
-        
-        <a href="/about.html">O aplikaciji</a>
-        
-        <a href="/blog/">Blog</a>
-        <a href="/privacy.html">Pravilnik o zasebnosti</a>
-        <a href="/terms.html">Pogoji uporabe</a>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <a class="brand" href="/">
+            <img src="/img/logo-80.webp" alt="Logotip aplikacije DRMN aparat za spanje za iPhone" width="34" height="34" loading="lazy" decoding="async">
+            DRMN
+          </a>
+          <p>Sound Machine Deep Sleep DRMN is a white noise and sleep sounds app for iPhone by Vladimir Ivakhnenko. Free to download, works offline, available in 31 languages.</p>
+        </div>
+        <div>
+          <h4>Guides</h4>
+          <ul>
+            
+            <li><a href="/guides/white-noise-app/">White noise app</a></li>
+            
+            <li><a href="/guides/best-sounds-for-sleep/">Best sounds for sleep</a></li>
+            
+            <li><a href="/guides/fall-asleep-fast/">Fall asleep fast</a></li>
+            
+            <li><a href="/guides/white-noise-for-babies/">White noise for babies</a></li>
+            
+            <li><a href="/guides/block-out-snoring/">Block out snoring</a></li>
+            
+          </ul>
+        </div>
+        <div>
+          <h4>DRMN</h4>
+          <ul>
+            <li><a href="https://apps.apple.com/app/id6746480683" rel="noopener noreferrer">Download on the App Store</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            
+            <li><a href="/about.html">O aplikaciji</a></li>
+            
+            <li><a href="/privacy.html">Pravilnik o zasebnosti</a></li>
+            <li><a href="/terms.html">Pogoji uporabe</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="language-switcher">
-        <label for="lang-select" class="visually-hidden">Jezik</label>
-        <select id="lang-select" class="lang-select" aria-label="Jezik">
-          
-          <option value="https://drmn.xyz/">English</option>
-          
-          <option value="https://drmn.xyz/ru/">Русский</option>
-          
-          <option value="https://drmn.xyz/es/">Español</option>
-          
-          <option value="https://drmn.xyz/fr/">Français</option>
-          
-          <option value="https://drmn.xyz/de/">Deutsch</option>
-          
-          <option value="https://drmn.xyz/it/">Italiano</option>
-          
-          <option value="https://drmn.xyz/pt/">Português</option>
-          
-          <option value="https://drmn.xyz/ja/">日本語</option>
-          
-          <option value="https://drmn.xyz/ko/">한국어</option>
-          
-          <option value="https://drmn.xyz/zh/">中文</option>
-          
-          <option value="https://drmn.xyz/cs/">Čeština</option>
-          
-          <option value="https://drmn.xyz/da/">Dansk</option>
-          
-          <option value="https://drmn.xyz/el/">Ελληνικά</option>
-          
-          <option value="https://drmn.xyz/fi/">Suomi</option>
-          
-          <option value="https://drmn.xyz/fil/">Filipino</option>
-          
-          <option value="https://drmn.xyz/he/">עברית</option>
-          
-          <option value="https://drmn.xyz/hr/">Hrvatski</option>
-          
-          <option value="https://drmn.xyz/hu/">Magyar</option>
-          
-          <option value="https://drmn.xyz/id/">Bahasa Indonesia</option>
-          
-          <option value="https://drmn.xyz/ms/">Bahasa Melayu</option>
-          
-          <option value="https://drmn.xyz/nl/">Nederlands</option>
-          
-          <option value="https://drmn.xyz/no/">Norsk</option>
-          
-          <option value="https://drmn.xyz/pl/">Polski</option>
-          
-          <option value="https://drmn.xyz/ro/">Română</option>
-          
-          <option value="https://drmn.xyz/sk/">Slovenčina</option>
-          
-          <option value="https://drmn.xyz/sv/">Svenska</option>
-          
-          <option value="https://drmn.xyz/bg/">Български</option>
-          
-          <option value="https://drmn.xyz/sl/">Slovenščina</option>
-          
-          <option value="https://drmn.xyz/ca/">Català</option>
-          
-          <option value="https://drmn.xyz/hi/">हिन्दी</option>
-          
-          <option value="https://drmn.xyz/bn/">বাংলা</option>
-          
-          <option value="https://drmn.xyz/ml/">മലയാളം</option>
-          
-          <option value="https://drmn.xyz/th/">ไทย</option>
-          
-          <option value="https://drmn.xyz/tr/">Türkçe</option>
-          
-          <option value="https://drmn.xyz/uk/">Українська</option>
-          
-          <option value="https://drmn.xyz/vi/">Tiếng Việt</option>
-          
-        </select>
+      <div class="footer-badges">
+        <a href="https://fazier.com/launches/drmn.xyz" target="_blank" rel="noopener">
+          <img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=dark" width="120" alt="Značka Fazier" loading="lazy">
+        </a>
+        <a href="https://www.superlaun.ch/products/909" target="_blank" rel="noopener">
+          <img src="https://www.superlaun.ch/badge.png" alt="Predstavljeno na Super Launch" height="60" loading="lazy">
+        </a>
+      </div>
+      <div class="legal">
+        <span>© 2025 DRMN. Vse pravice pridržane.</span>
+        <span>Nazadnje posodobljeno: julij 2026</span>
+        <div class="language-switcher">
+          <label for="lang-select" class="visually-hidden">Jezik</label>
+          <select id="lang-select" class="lang-select" aria-label="Jezik">
+            
+            <option value="https://drmn.xyz/">English</option>
+            
+            <option value="https://drmn.xyz/ru/">Русский</option>
+            
+            <option value="https://drmn.xyz/es/">Español</option>
+            
+            <option value="https://drmn.xyz/fr/">Français</option>
+            
+            <option value="https://drmn.xyz/de/">Deutsch</option>
+            
+            <option value="https://drmn.xyz/it/">Italiano</option>
+            
+            <option value="https://drmn.xyz/pt/">Português</option>
+            
+            <option value="https://drmn.xyz/ja/">日本語</option>
+            
+            <option value="https://drmn.xyz/ko/">한국어</option>
+            
+            <option value="https://drmn.xyz/zh/">中文</option>
+            
+            <option value="https://drmn.xyz/cs/">Čeština</option>
+            
+            <option value="https://drmn.xyz/da/">Dansk</option>
+            
+            <option value="https://drmn.xyz/el/">Ελληνικά</option>
+            
+            <option value="https://drmn.xyz/fi/">Suomi</option>
+            
+            <option value="https://drmn.xyz/fil/">Filipino</option>
+            
+            <option value="https://drmn.xyz/he/">עברית</option>
+            
+            <option value="https://drmn.xyz/hr/">Hrvatski</option>
+            
+            <option value="https://drmn.xyz/hu/">Magyar</option>
+            
+            <option value="https://drmn.xyz/id/">Bahasa Indonesia</option>
+            
+            <option value="https://drmn.xyz/ms/">Bahasa Melayu</option>
+            
+            <option value="https://drmn.xyz/nl/">Nederlands</option>
+            
+            <option value="https://drmn.xyz/no/">Norsk</option>
+            
+            <option value="https://drmn.xyz/pl/">Polski</option>
+            
+            <option value="https://drmn.xyz/ro/">Română</option>
+            
+            <option value="https://drmn.xyz/sk/">Slovenčina</option>
+            
+            <option value="https://drmn.xyz/sv/">Svenska</option>
+            
+            <option value="https://drmn.xyz/bg/">Български</option>
+            
+            <option value="https://drmn.xyz/sl/" selected>Slovenščina</option>
+            
+            <option value="https://drmn.xyz/ca/">Català</option>
+            
+            <option value="https://drmn.xyz/hi/">हिन्दी</option>
+            
+            <option value="https://drmn.xyz/bn/">বাংলা</option>
+            
+            <option value="https://drmn.xyz/ml/">മലയാളം</option>
+            
+            <option value="https://drmn.xyz/th/">ไทย</option>
+            
+            <option value="https://drmn.xyz/tr/">Türkçe</option>
+            
+            <option value="https://drmn.xyz/uk/">Українська</option>
+            
+            <option value="https://drmn.xyz/vi/">Tiếng Việt</option>
+            
+          </select>
+        </div>
       </div>
       <script>
         document.getElementById('lang-select')?.addEventListener('change', function () {
           if (this.value) { window.location.href = this.value; }
         });
       </script>
-      <div class="footer-badges">
-        <a href="https://fazier.com/launches/drmn.xyz" target="_blank" rel="noopener">
-          <img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=dark" width="120" alt="Značka Fazier">
-        </a>
-        <a href="https://www.superlaun.ch/products/909" target="_blank" rel="noopener">
-          <img src="https://www.superlaun.ch/badge.png" alt="Predstavljeno na Super Launch" height="60">
-        </a>
-      </div>
-      <p class="footer-copyright">© 2025 DRMN. Vse pravice pridržane.</p>
-      <p class="footer-updated">Nazadnje posodobljeno: julij 2026</p>
     </div>
   </footer>
 
   <!-- Structured Data (JSON-LD) for SEO -->
   <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"MobileApplication","name":"DRMN","alternateName":"DRMN aplikacija za spanje","applicationCategory":"HealthApplication","operatingSystem":"iOS","offers":{"@type":"Offer","price":"0","priceCurrency":"USD","availability":"https://schema.org/InStock","url":"https://apps.apple.com/app/id6746480683"},"description":"DRMN je freemium iOS aplikacija z belim in rjavim šumom, dežjem, ventilatorjem in naravnimi zvoki. Mixaj posnetke, predvajaj offline in uporabi časovnik za spanje s fade-outom. Brezplačen prenos v App Store za iPhone.","image":{"@type":"ImageObject","url":"https://drmn.xyz/img/logo.webp","width":176,"height":176,"caption":"Logotip aplikacije DRMN"},"screenshot":{"@type":"ImageObject","url":"https://drmn.xyz/img/logo.webp","width":176,"height":176},"url":"https://drmn.xyz/sl/","author":{"@type":"Person","name":"Vladimir Ivakhnenko"},"publisher":{"@type":"Person","name":"Vladimir Ivakhnenko"},"keywords":"beli šum, zvoki za spanje, aparat za spanje, rjav šum, zvok dežja za spanje, zvok ventilatorja, zvoki za dojenčka, offline, časovnik za spanje, fokus, nespečnost, brezplačna aplikacija iPhone","inLanguage":"sl","datePublished":"2024-01-01","dateModified":"2026-07-11","softwareVersion":"1.5","fileSize":"49.2MB","softwareRequirements":"Zahteva iOS 17.1 ali novejšo različico","downloadUrl":"https://apps.apple.com/app/id6746480683","review":[{"@type":"Review","author":{"@type":"Person","name":"Sarah M."},"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"reviewBody":"Z DRMN zaspim hitreje. Funkcija mix mi omogoča, da popolnoma združim beli šum in valove."},{"@type":"Review","author":{"@type":"Person","name":"Michael R."},"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"reviewBody":"Naš dojenček spi celo noč ob zvoku fen. Offline način nas reši na potovanjih."},{"@type":"Review","author":{"@type":"Person","name":"Jennifer L."},"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"reviewBody":"Pri nespečnosti mi je DRMN vse spremenil. Uporabljam ga vsako noč in se zbudim spočita."}]}
+    {"@context":"https://schema.org","@type":"MobileApplication","name":"DRMN","alternateName":"DRMN aplikacija za spanje","applicationCategory":"HealthApplication","operatingSystem":"iOS","offers":{"@type":"Offer","price":"0","priceCurrency":"USD","availability":"https://schema.org/InStock","url":"https://apps.apple.com/app/id6746480683"},"description":"DRMN je freemium iOS aplikacija z belim in rjavim šumom, dežjem, ventilatorjem in naravnimi zvoki. Mixaj posnetke, predvajaj offline in uporabi časovnik za spanje s fade-outom. Brezplačen prenos v App Store za iPhone.","image":{"@type":"ImageObject","url":"https://drmn.xyz/img/logo.webp","width":176,"height":176,"caption":"Logotip aplikacije DRMN"},"screenshot":{"@type":"ImageObject","url":"https://drmn.xyz/img/logo.webp","width":176,"height":176,"caption":"DRMN sleep sound machine app preview"},"url":"https://drmn.xyz/sl/","author":{"@type":"Person","name":"Vladimir Ivakhnenko"},"publisher":{"@type":"Person","name":"Vladimir Ivakhnenko"},"keywords":"beli šum, zvoki za spanje, aparat za spanje, rjav šum, zvok dežja za spanje, zvok ventilatorja, zvoki za dojenčka, offline, časovnik za spanje, fokus, nespečnost, brezplačna aplikacija iPhone","inLanguage":"sl","datePublished":"2024-01-01","dateModified":"2026-07-11","softwareVersion":"1.5","fileSize":"49.2MB","softwareRequirements":"Zahteva iOS 17.1 ali novejšo različico","installUrl":"https://apps.apple.com/app/id6746480683","featureList":["White noise, brown noise, pink noise, and green noise","Rain, ocean, thunderstorm, and nature sleep sounds","Fan, hair dryer, and vacuum sounds for baby sleep","Sound mixer to layer multiple tracks","Sleep timer up to 10 hours with gradual fade-out","Offline playback"],"downloadUrl":"https://apps.apple.com/app/id6746480683","review":[{"@type":"Review","author":{"@type":"Person","name":"Sarah M."},"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"reviewBody":"Z DRMN zaspim hitreje. Funkcija mix mi omogoča, da popolnoma združim beli šum in valove."},{"@type":"Review","author":{"@type":"Person","name":"Michael R."},"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"reviewBody":"Naš dojenček spi celo noč ob zvoku fen. Offline način nas reši na potovanjih."},{"@type":"Review","author":{"@type":"Person","name":"Jennifer L."},"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"reviewBody":"Pri nespečnosti mi je DRMN vse spremenil. Uporabljam ga vsako noč in se zbudim spočita."}]}
   </script>
-  
+
   <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Organization","name":"DRMN","url":"https://drmn.xyz/sl/","logo":"https://drmn.xyz/img/logo.webp","description":"DRMN — beli šum in ambientni zvoki za spanje za iPhone. Mix, offline, časovnik za spanje. Brezplačen prenos v App Store.","founder":{"@type":"Person","name":"Vladimir Ivakhnenko","url":"https://apps.apple.com/developer/id1239180595"},"sameAs":["https://apps.apple.com/developer/id1239180595","https://twitter.com/c__basso","https://fazier.com/launches/drmn.xyz","https://www.superlaun.ch/products/909","https://apps.apple.com/app/id6746480683"]}
   </script>
-  
+
   <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"WebSite","name":"DRMN","url":"https://drmn.xyz/sl/","description":"DRMN — beli šum in ambientni zvoki za spanje za iPhone. Mix, offline, časovnik za spanje. Brezplačen prenos v App Store.","inLanguage":"sl"}
   </script>
-  
+
   <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"HowTo","name":"Uporaba DRMN za boljši spanec","description":"Hiter vodnik: izberi posnetek, po želji mixaj, nastavi časovnik in poslušaj offline.","step":[{"@type":"HowToStep","position":1,"name":"Prenesi DRMN","text":"Namesti DRMN brezplačno iz App Store na iPhone (iOS 17.1+). Brezplačna različica vključuje 1-urni časovnik in osnovne zvoke.","url":"https://apps.apple.com/app/id6746480683"},{"@type":"HowToStep","position":2,"name":"Razišči knjižnico","text":"V DRMN najdeš beli in rjav šum, dež, valove, ogenj, meditacijo in zvoke za dojenčka."},{"@type":"HowToStep","position":3,"name":"Izberi glede na potrebo","text":"Stalni zvok za maskiranje motenj, narava za sprostitev, zvoki za dojenčka v otroški sobi. Poslušaj pred predvajanjem."},{"@type":"HowToStep","position":4,"name":"Mixaj zvoke (po izbiri)","text":"Dodaj beli šum k valovom ali dež k nežni meditaciji—ustvari večerno mešanico."},{"@type":"HowToStep","position":5,"name":"Nastavi časovnik za spanje","text":"Vklopi avtomatski fade-out, če ne želiš zvoka celo noč. Po zaspavanju se glasnost postopoma zmanjša."},{"@type":"HowToStep","position":6,"name":"Predvajaj in prilagodi glasnost","text":"Dovolj glasno za maskiranje hrupa, a prijetno za ušesa. iPhone na nočni omarici ali slušalke—oboje deluje."},{"@type":"HowToStep","position":7,"name":"Prenesi za offline","text":"Shrani priljubljene lokalno—uporabno na potovanjih ali s šibkim Wi‑Fi-jem v spalnici."}]}
+    {"@context":"https://schema.org","@type":"HowTo","name":"Uporaba DRMN za boljši spanec","description":"Hiter vodnik: izberi posnetek, po želji mixaj, nastavi časovnik in poslušaj offline.","step":[{"@type":"HowToStep","position":1,"name":"Pick a sound","text":"Choose white, brown, or pink noise, rain, ocean, fan, or nature ambience from the library.","url":"https://apps.apple.com/app/id6746480683"},{"@type":"HowToStep","position":2,"name":"Mix your soundscape","text":"Layer tracks in the mixer — rain over brown noise, thunder under ocean waves — with per-track volume."},{"@type":"HowToStep","position":3,"name":"Set the timer","text":"Pick anything up to 10 hours. Playback fades out gradually so the stop never startles you awake."},{"@type":"HowToStep","position":4,"name":"Press play and sleep","text":"Lock the screen and put the phone down. Sounds keep playing all night — even offline."}]}
   </script>
-  
+
   <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Kateri zvok je najboljši za spanje?","acceptedAnswer":{"@type":"Answer","text":"Odvisno od tega, kaj te pomiri. Mnogi izberejo dež, stalni hrup ventilatorja ali nevtralen beli šum. V DRMN lahko poslušaš in mixaš posnetke, da najdeš, kar ti pomaga hitreje zaspati."}},{"@type":"Question","name":"Kaj je aparat za spanje?","acceptedAnswer":{"@type":"Answer","text":"Predvaja stabilno ozadje—dež, ventilator ali beli šum—ki maskira motnje in pomaga pri spanju. DRMN deluje kot prenosni aparat na iPhonu z mixom, offline načinom in vgrajenim časovnikom."}},{"@type":"Question","name":"Je DRMN dobra aplikacija belega šuma za iPhone?","acceptedAnswer":{"@type":"Answer","text":"DRMN ima oceno 4,9 v App Store in več kot 10 000 prenosov. Vključuje dež, ventilator, beli in rjav šum ter več kot 100 ur ambientnih in naravnih zvokov. Uporabniki pogosto zaspijo 30–50 % hitreje, ko jih moti hrup v ozadju."}},{"@type":"Question","name":"Obstaja brezplačna aplikacija belega šuma za iPhone?","acceptedAnswer":{"@type":"Answer","text":"Da. DRMN preneseš brezplačno iz App Store. Brezplačna različica vključuje 1-urni časovnik, offline, mix in osnovne zvoke za spanje. Premium odklene daljše seje in dodatne posnetke—za preizkus osnov ne potrebuješ naročnine."}},{"@type":"Question","name":"Kateri zvoki so vključeni?","acceptedAnswer":{"@type":"Answer","text":"Beli, rjav in temen šum; narava kot dež, valovi, ogenj in jutranje ptice; meditacija in fokus; zvoki za dojenčka kot fen, sesalec in tipkovnica. Lahko mixaš katero koli kombinacijo."}},{"@type":"Question","name":"Ali DRMN deluje offline?","acceptedAnswer":{"@type":"Answer","text":"Da. Po prenosu posnetkov aplikacija predvaja brez interneta. Optimizacija baterije omogoča do 10 ur neprekinjenega predvajanja—dovolj za potovanja ali celo noč."}},{"@type":"Question","name":"Kateri zvoki ustrezajo za spanec dojenčka?","acceptedAnswer":{"@type":"Answer","text":"Mnogi starši uporabljajo stalne, znane zvoke—fen, sesalec ali nežen beli šum. DRMN ima posnetke za dojenčke, ki pomirjajo najmanjše brez ločene naprave v sobi."}},{"@type":"Question","name":"Ali lahko mixam različne zvoke?","acceptedAnswer":{"@type":"Answer","text":"Da. Združi beli šum z valovi, dež z meditacijo ali kateri koli par po tvoji izbiri. Mix je vključen v brezplačno različico."}},{"@type":"Question","name":"Ali ima DRMN časovnik za spanje?","acceptedAnswer":{"@type":"Answer","text":"Da. Nastavi časovnik z avtomatskim fade-outom, da se zvok zmanjša po zaspavanju. Brezplačna različica vključuje uro; premium doda daljše možnosti."}},{"@type":"Question","name":"Ali lahko DRMN pomaga pri nespečnosti?","acceptedAnswer":{"@type":"Answer","text":"Stabilno ozadje lahko maskira promet, sosede in druge motnje, ki budijo lahke spančce. Ljudje z nespečnostjo pogosto poslušajo beli ali rjav šum vsako noč; mnogi poročajo o hitrejšem zaspavanju, rezultati pa se razlikujejo."}},{"@type":"Question","name":"Kako se DRMN razlikuje od Calm ali Headspace?","acceptedAnswer":{"@type":"Answer","text":"Calm in Headspace se osredotočata na vodeno meditacijo in wellness naročnine. DRMN temelji na ambient zvoku—aparatu za spanje v žepu—z radodarno brezplačno različico (1-urni časovnik, offline, mix) in brez meditacijskih tečajev. BetterSleep in podobne aplikacije pogosto funkcije zadržijo za naročnike; z DRMN lahko brezplačno preizkusiš osnovne zvoke."}},{"@type":"Question","name":"Kdo je ustvaril DRMN?","acceptedAnswer":{"@type":"Answer","text":"DRMN je razvil Vladimir Ivakhnenko, neodvisni iOS razvijalec. V App Store ima oceno 4,9 na podlagi 10 mnenj in več kot 10 000 prenosov. Kontakt: c-basso@ya.ru."}}]}
   </script>
-  
+
   <!-- BreadcrumbList Schema -->
   <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domov","item":"https://drmn.xyz/sl/"}]}

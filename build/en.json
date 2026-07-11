@@ -1,19 +1,19 @@
 {
   "meta": {
     "lang": "en",
-    "title": "White Noise & Sleep Sound Machine App for iPhone | DRMN",
-    "description": "Fall asleep faster with DRMN, a free white noise and sleep sound machine app for iPhone. Mix rain, fan, and brown noise, set a fade-out timer, play offline.",
-    "keywords": "white noise, sleep sounds, sound machine, brown noise, rain sounds, fan sounds, baby sleep sounds, offline sleep app, sleep timer, focus sounds, bedtime audio, free sleep app iPhone",
+    "title": "White Noise App for Sleep & Sound Machine for iPhone | DRMN",
+    "description": "DRMN is a free white noise app and sound machine for iPhone. Mix rain, fan, and deep sleep sounds, set a fade-out timer up to 10 hours, and listen offline.",
+    "keywords": "white noise app, sleep sounds app, sound machine app, deep sleep sounds, rain sounds for sleeping, fan noise for sleep, brown noise, white noise for babies, sleep timer, block out snoring, free sleep app iPhone",
     "author": "DRMN",
     "og_url": "https://drmn.xyz/",
-    "og_title": "White Noise & Sleep Sound Machine App for iPhone | DRMN",
-    "og_description": "Free white noise and sleep sound app for iPhone. Mix rain, fan, and nature sounds, play offline, set a fade-out sleep timer. Download DRMN on the App Store.",
+    "og_title": "White Noise App for Sleep — Sound Machine Deep Sleep DRMN",
+    "og_description": "Free white noise and sleep sounds app for iPhone. Mix rain, fan, and deep sleep sounds, set a 10-hour fade timer, and listen offline.",
     "og_image": "https://drmn.xyz/site_preview.png",
     "og_image_alt": "DRMN white noise and sleep sound machine app on iPhone",
     "og_locale": "en_US",
     "twitter_url": "https://drmn.xyz/",
-    "twitter_title": "White Noise & Sleep Sound Machine App for iPhone | DRMN",
-    "twitter_description": "Free white noise and sleep sound app for iPhone. Mix rain, fan, and nature sounds, play offline, set a fade-out sleep timer. Download DRMN on the App Store.",
+    "twitter_title": "White Noise App for Sleep — Sound Machine Deep Sleep DRMN",
+    "twitter_description": "Free white noise and sleep sounds app for iPhone. Mix sounds, set a fade timer, listen offline.",
     "twitter_image": "https://drmn.xyz/site_preview.png",
     "twitter_image_alt": "DRMN white noise and sleep sound machine app on iPhone",
     "twitter_site": "@c__basso",
@@ -33,9 +33,9 @@
     "app_name_suffix": "Sleep Sound Machine",
     "logo_alt": "DRMN sleep sound machine app logo for iPhone",
     "app_name": "DRMN",
-    "title": "White Noise & Sleep Sound Machine App for iPhone",
-    "tagline": "Fall asleep faster with steady ambient sound. DRMN combines rain, fan, white and brown noise, and nature audio with unlimited mixing, offline playback, and a battery-friendly sleep timer.",
-    "tldr": "DRMN is a free white noise and sleep sound machine app for iPhone (iOS 17.1+). The free version includes rain, fan, and white noise, a 1-hour fade-out timer, offline playback, and unlimited sound mixing. App Store reviewers report falling asleep faster when background noise is the problem; results vary by person.",
+    "title": "The white noise app that works like a <em class=\"glow\">sound machine</em> — and fades out while you dream",
+    "tagline": "Sound Machine Deep Sleep DRMN plays white noise, rain, fan, and deep sleep sounds on your iPhone. Mix your own soundscape, set a fade-out timer up to 10 hours, and keep listening offline — no bedside machine required.",
+    "tldr": "DRMN is a free white noise and sleep sound machine app for iPhone (iOS 17.1+). It plays white, brown, and pink noise, rain, fan, and nature sounds, mixes multiple tracks, works offline, and fades out with a sleep timer of up to 10 hours. App Store reviewers report falling asleep faster when background noise is the problem; results vary by person.",
     "download_text": "Download Now",
     "download_url": "https://apps.apple.com/app/id6746480683",
     "download_aria_label": "Download DRMN free from the App Store",
@@ -321,12 +321,13 @@
     ]
   },
   "final_cta": {
-    "title": "Ready to Sleep Better Tonight?",
-    "paragraph1": "Join over 10,000 people who use DRMN to wind down faster. Rated 4.9/5 on the App Store, with a free tier that includes a one-hour timer, offline playback, and sound mixing. Download today and find the ambient sounds that work for you.",
+    "title": "Your next calm night is one tap away",
+    "paragraph1": "Download Sound Machine Deep Sleep DRMN free on the App Store. Pick a sound, set the fade timer, press play — and fall asleep faster tonight.",
     "cta_text": "Download DRMN Free",
     "cta_url": "https://apps.apple.com/app/id6746480683",
     "cta_aria_label": "Download DRMN free from the App Store",
-    "cta_img_alt": "Download DRMN on the App Store"
+    "cta_img_alt": "Download DRMN on the App Store",
+    "kicker": "Get the app"
   },
   "footer": {
     "copyright": "© {year} DRMN. All rights reserved.",
@@ -338,7 +339,10 @@
     "about_url": "/about.html",
     "blog_link": "Blog",
     "fazier_badge_alt": "Fazier badge",
-    "superlaunch_badge_alt": "Featured on Super Launch"
+    "superlaunch_badge_alt": "Featured on Super Launch",
+    "blurb": "Sound Machine Deep Sleep DRMN is a white noise and sleep sounds app for iPhone by Vladimir Ivakhnenko. Free to download, works offline, available in 31 languages.",
+    "guides_heading": "Guides",
+    "download_link": "Download on the App Store"
   },
   "app_info": {
     "developer": "Vladimir Ivakhnenko",
@@ -369,60 +373,84 @@
     "faq_title": "Frequently Asked Questions",
     "faq": [
       {
-        "question": "What is the best sound for sleep?",
-        "answer": "It depends on what calms you. Many people prefer rain, a steady fan hum, or neutral white noise. DRMN lets you preview and mix tracks so you can find what helps you drift off fastest."
+        "question": "What is the best white noise app for iPhone?",
+        "answer": "A good white noise app needs four things: gapless looping, background playback with the screen locked, a fade-out timer, and offline support. DRMN does all four and adds a sound mixer, so you can layer white noise with rain or fan sounds.",
+        "link_url": "/guides/white-noise-app/",
+        "link_label": "Learn more"
       },
       {
-        "question": "What is a sleep sound machine?",
-        "answer": "A sleep sound machine plays steady background audio—rain, fan hum, or white noise—to mask disruptive noise and help you rest. DRMN works like a portable sound machine on iPhone, with mixing, offline playback, and a sleep timer built in."
+        "question": "Can a phone app replace a sleep sound machine?",
+        "answer": "Yes. A sound machine app plays the same steady masking audio as a bedside device, adds mixing and fade timers most hardware lacks, travels with you, and skips the $50–$100 price tag.",
+        "link_url": "/guides/sound-machine-app/",
+        "link_label": "Learn more"
       },
       {
-        "question": "Is DRMN a good white noise app for iPhone?",
-        "answer": "DRMN has a 4.9-star App Store rating and more than 10,000 downloads. It includes rain, fan, white and brown noise, plus 100 hours of ambient and nature audio. App Store reviewers often report falling asleep faster when background noise is a problem; individual results vary."
+        "question": "What are the best sounds for sleep?",
+        "answer": "Steady, unchanging sounds work best: white, pink, or brown noise, rain, fan hum, and ocean waves. They mask the sudden noises — doors, traffic, snoring — that actually wake you. The right one is personal, so test each for a full night.",
+        "link_url": "/guides/best-sounds-for-sleep/",
+        "link_label": "Learn more"
+      },
+      {
+        "question": "How do sleep sounds help you fall asleep faster?",
+        "answer": "Steady sound raises the threshold a noise needs to cross to alert your brain, and a consistent bedtime sound becomes a conditioning cue — after about a week, your brain links it to falling asleep.",
+        "link_url": "/guides/fall-asleep-fast/",
+        "link_label": "Learn more"
+      },
+      {
+        "question": "Why do rain sounds help you sleep?",
+        "answer": "Rain is natural broadband noise close to pink noise: it masks disruptions without sounding artificial, and most people find it calming. Layer it with brown noise to cover low-frequency sounds too.",
+        "link_url": "/guides/rain-sounds-for-sleeping/",
+        "link_label": "Learn more"
+      },
+      {
+        "question": "Can sleep sounds turn off automatically with a timer?",
+        "answer": "Yes — DRMN’s sleep timer runs from a few minutes up to 10 hours and ends with a gradual fade-out, so the stop never startles you awake the way a hard cutoff can.",
+        "link_url": "/guides/sleep-sounds-with-timer/",
+        "link_label": "Learn more"
+      },
+      {
+        "question": "Is white noise safe for babies?",
+        "answer": "Yes, when kept at or below roughly 50 decibels with the phone at least 7 feet (2 meters) from the crib, per pediatric guidance. Use a timer rather than loud all-night playback, and never put the device in the crib.",
+        "link_url": "/guides/white-noise-for-babies/",
+        "link_label": "Learn more"
+      },
+      {
+        "question": "How do I block out snoring at night?",
+        "answer": "Snoring is low-frequency, so high-pitched white noise misses it. Use brown noise or fan sound — or rain layered over brown noise — set just above the snoring volume, with a long timer.",
+        "link_url": "/guides/block-out-snoring/",
+        "link_label": "Learn more"
+      },
+      {
+        "question": "Can I get a fan sound for sleep without running a fan?",
+        "answer": "Yes. DRMN plays a gapless fan hum with no cold air, no dust, and no fan running all night. Mix it with white noise and set a fade timer.",
+        "link_url": "/guides/fan-noise-for-sleep/",
+        "link_label": "Learn more"
+      },
+      {
+        "question": "What sounds are best for deep sleep?",
+        "answer": "Lower-frequency sounds — brown noise, pink noise, ocean waves — mask disruptions without harsh high frequencies, which makes them the usual picks for deep sleep support. Keep the volume at conversation level or below.",
+        "link_url": "/guides/deep-sleep-sounds/",
+        "link_label": "Learn more"
       },
       {
         "question": "Is there a free white noise app for iPhone?",
-        "answer": "Yes. DRMN is free to download on the App Store. The free tier includes a one-hour timer, offline playback, sound mixing, and core sleep sounds. Premium unlocks longer sessions and additional tracks—no subscription required to try the basics."
-      },
-      {
-        "question": "What sounds are included?",
-        "answer": "White, brown, and dark noise; nature sounds like rain, ocean waves, fire, and morning birds; meditation and focus tracks; and baby-friendly sounds such as hair dryer, vacuum, and keyboard typing. You can mix any combination."
+        "answer": "Yes. DRMN is free to download on the App Store. The free tier includes a sleep timer, offline playback, sound mixing, and core sleep sounds. Premium unlocks longer sessions and additional tracks — no subscription required to try the basics."
       },
       {
         "question": "Does DRMN work offline?",
-        "answer": "Yes. After you download tracks, DRMN plays without internet. Battery optimization supports up to 10 hours of uninterrupted playback—enough for travel or all-night use."
-      },
-      {
-        "question": "What are the best sounds for baby sleep?",
-        "answer": "Many parents use steady, familiar sounds—hair dryer, vacuum hum, or soft white noise. DRMN includes baby-focused tracks designed to soothe infants without a separate nursery device."
-      },
-      {
-        "question": "Can I mix different sounds together?",
-        "answer": "Yes. Combine white noise with ocean waves, rain with meditation audio, or any pairing you like. Mixing is included in the free version."
-      },
-      {
-        "question": "Does DRMN have a sleep timer?",
-        "answer": "Yes. Set a timer with automatic fade-out so audio gently stops after you fall asleep. The free tier includes a one-hour timer; premium adds longer options."
-      },
-      {
-        "question": "Can DRMN help with insomnia?",
-        "answer": "Steady background sound can mask traffic, neighbors, and other disruptions that keep light sleepers awake. DRMN users with insomnia often use white or brown noise nightly; many report faster sleep onset, though results vary by person."
-      },
-      {
-        "question": "How is DRMN different from Calm or Headspace?",
-        "answer": "Calm and Headspace focus on guided meditation and wellness subscriptions. DRMN is built around ambient sound—a sound machine in your pocket—with a generous free tier (one-hour timer, offline mode, mixing) and no meditation course required. BetterSleep and similar apps offer large libraries but often gate features behind subscriptions; DRMN keeps core sleep sounds free to try."
+        "answer": "Yes. After you download tracks, DRMN plays without internet. Battery optimization supports up to 10 hours of uninterrupted playback — enough for travel or all-night use."
       },
       {
         "question": "Who makes DRMN?",
-        "answer": "DRMN is developed by Vladimir Ivakhnenko, an independent iOS developer. The app is listed on the App Store with a 4.9-star rating from 10 reviews and more than 10,000 downloads. Contact: c-basso@ya.ru."
+        "answer": "DRMN is developed by Vladimir Ivakhnenko, an independent iOS developer. The app is listed on the App Store with a 4.9-star rating and more than 10,000 downloads. Contact: c-basso@ya.ru."
       }
     ],
     "structured_data": {
       "software_application": {
         "@context": "https://schema.org",
         "@type": "MobileApplication",
-        "name": "DRMN",
-        "alternateName": "DRMN Sleep App",
+        "name": "Sound Machine Deep Sleep DRMN",
+        "alternateName": "DRMN White Noise App",
         "applicationCategory": "HealthApplication",
         "operatingSystem": "iOS",
         "offers": {
@@ -467,7 +495,16 @@
           "@type": "AggregateRating",
           "ratingValue": "4.9",
           "ratingCount": "10"
-        }
+        },
+        "installUrl": "https://apps.apple.com/app/id6746480683",
+        "featureList": [
+          "White noise, brown noise, pink noise, and green noise",
+          "Rain, ocean, thunderstorm, and nature sleep sounds",
+          "Fan, hair dryer, and vacuum sounds for baby sleep",
+          "Sound mixer to layer multiple tracks",
+          "Sleep timer up to 10 hours with gradual fade-out",
+          "Offline playback"
+        ]
       },
       "organization": {
         "@context": "https://schema.org",
@@ -488,7 +525,7 @@
         "@context": "https://schema.org",
         "@type": "HowTo",
         "name": "How to Use DRMN for Better Sleep",
-        "description": "A short guide to falling asleep faster with ambient sounds on iPhone—pick a track, mix if you like, set a timer, and play offline.",
+        "description": "Fall asleep faster with ambient sound on iPhone: pick a sound, mix your soundscape, set a fade-out timer, and press play.",
         "step": [
           {
             "@type": "HowToStep",
@@ -536,5 +573,127 @@
         ]
       }
     }
+  },
+  "nav": {
+    "home_url": "/",
+    "screenshots": "Screenshots",
+    "how_it_works": "How it works",
+    "guides": "Guides",
+    "faq": "FAQ",
+    "download": "Download"
+  },
+  "hero": {
+    "kicker": "White noise · Sleep sounds · Sound machine app",
+    "secondary_cta": "See how it works →",
+    "note": "Free to download · iPhone, iOS 17.1+ · Health & Fitness",
+    "screenshot_alt": "Sound Machine Deep Sleep DRMN white noise app home screen on iPhone with the tagline Fall Asleep Faster Tonight"
+  },
+  "facts": {
+    "aria_label": "DRMN by the numbers",
+    "items": [
+      {
+        "stat": "10 hrs",
+        "description": "maximum sleep timer with gradual fade-out"
+      },
+      {
+        "stat": "Offline",
+        "description": "download sounds and play with no connection"
+      },
+      {
+        "stat": "Mixer",
+        "description": "layer rain, noise, and fan sounds into one mix"
+      },
+      {
+        "stat": "4.9/5",
+        "description": "average App Store rating from users"
+      }
+    ]
+  },
+  "download": {
+    "kicker": "Download",
+    "title": "A sleep sounds app instead of a $50 bedside machine",
+    "description": "DRMN replaces a dedicated white noise machine with the phone already on your nightstand. It is free to download, plays through the night with the screen locked, and keeps sudden noises — traffic, doors, snoring — from waking you."
+  },
+  "screenshots": {
+    "kicker": "Screenshots",
+    "title": "Every screen is built for bedtime",
+    "intro": "Dark interface, big controls, nothing to squint at when the lights are off.",
+    "items": [
+      {
+        "src": "/img/screenshot-2-sounds.webp",
+        "alt": "DRMN sleep sounds library with white noise, rain, ocean, and nature sounds",
+        "caption_title": "Sound library.",
+        "caption_text": "White, brown, pink noise, rain, ocean, thunder, and nature ambience."
+      },
+      {
+        "src": "/img/screenshot-3-mix.webp",
+        "alt": "DRMN sound mixer layering multiple sleep sounds into one soundscape",
+        "caption_title": "Sound mixer.",
+        "caption_text": "Layer several tracks with independent volume to build your soundscape."
+      },
+      {
+        "src": "/img/screenshot-4-fan.webp",
+        "alt": "Fan noise for sleep playing in the DRMN sound machine app",
+        "caption_title": "Fan noise.",
+        "caption_text": "The steady fan hum light sleepers rely on, without running a fan."
+      },
+      {
+        "src": "/img/screenshot-5-rain.webp",
+        "alt": "Rain sounds for sleeping in the DRMN white noise app",
+        "caption_title": "Rain sounds.",
+        "caption_text": "Gapless rain loops for falling asleep and staying asleep."
+      },
+      {
+        "src": "/img/screenshot-6-fade.webp",
+        "alt": "Gradual fade-out setting in the DRMN sleep sounds app",
+        "caption_title": "Gradual fade.",
+        "caption_text": "Audio fades so gently the ending never wakes you."
+      },
+      {
+        "src": "/img/screenshot-7-timer.webp",
+        "alt": "Sleep timer up to 10 hours in the DRMN sound machine app",
+        "caption_title": "Sleep timer.",
+        "caption_text": "Set minutes or up to 10 hours — playback stops on its own."
+      },
+      {
+        "src": "/img/screenshot-1-cover.webp",
+        "alt": "DRMN app cover screen: fall asleep faster tonight",
+        "caption_title": "One tap to sleep.",
+        "caption_text": "Open, press play, put the phone down."
+      }
+    ]
+  },
+  "how_it_works": {
+    "kicker": "How it works",
+    "title": "From “can’t sleep” to asleep in four taps",
+    "intro": "Steady sound masks the sudden noises that wake you — doors, traffic, snoring. Here is the whole routine.",
+    "steps": [
+      {
+        "title": "Pick a sound",
+        "description": "Choose white, brown, or pink noise, rain, ocean, fan, or nature ambience from the library."
+      },
+      {
+        "title": "Mix your soundscape",
+        "description": "Layer tracks in the mixer — rain over brown noise, thunder under ocean waves — with per-track volume."
+      },
+      {
+        "title": "Set the timer",
+        "description": "Pick anything up to 10 hours. Playback fades out gradually so the stop never startles you awake."
+      },
+      {
+        "title": "Press play and sleep",
+        "description": "Lock the screen and put the phone down. Sounds keep playing all night — even offline."
+      }
+    ]
+  },
+  "guides_section": {
+    "kicker": "Guides",
+    "title": "Sleep sound guides, written for real problems",
+    "intro": "How to use sound to fall asleep faster, block snoring, calm a baby, and more — each with exact steps in DRMN.",
+    "read_label": "Read the guide →"
+  },
+  "faq_section": {
+    "kicker": "FAQ",
+    "intro": "Short answers here — full guides one click away."
   }
 }

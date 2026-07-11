@@ -1,0 +1,46 @@
+{
+  "slug": "fan-noise-for-sleep",
+  "title": "Fan Noise for Sleep — Without Running a Fan All Night",
+  "meta_title": "Fan Noise for Sleep — Without Running a Fan All Night (2026)",
+  "description": "Fan sound for sleep without the cold air, dust, or electricity of a real fan. Why fan hum works as a sleep cue, and how to loop gapless fan noise on your iPhone with a fade timer.",
+  "kicker": "Guide · Fan noise for sleep",
+  "lede": "If you pack a fan for vacations, this guide is for you. The part of the fan you need is the hum, and the hum fits in your pocket.",
+  "datePublished": "2026-07-11",
+  "dateModified": "2026-07-11",
+  "cta_tagline": "Gapless fan noise, offline, with a fade timer · free download",
+  "answer_html": "<p><strong>Short answer:</strong> the sleep benefit of a fan comes from its steady low-mid hum, which masks noise and acts as a conditioned sleep cue. A gapless fan recording reproduces both effects without cold air, dust, or the electricity draw. DRMN plays fan noise offline with a fade-out timer up to 10 hours.</p>",
+  "body_html": "<h2>Why fan sleepers can't sleep in silence</h2>\n    <p>Two things happen over years of fan sleeping. First, the hum masks household and street noise, so your sleep gets genuinely shallower without it. Second, and stronger, the sound becomes a <strong>conditioned cue</strong>: your brain has paired that exact drone with falling asleep thousands of times. Take it away in a quiet hotel room and bedtime feels wrong in a way you can't name.</p>\n    <p>Neither effect requires moving air. Recordings of a fan carry the full cue.</p>\n\n    <h2>Real fan vs fan sound app</h2>\n    <table>\n      <thead>\n        <tr><th></th><th>Real fan</th><th>Fan sound in DRMN</th></tr>\n      </thead>\n      <tbody>\n        <tr><td>The hum</td><td>Yes</td><td>Yes — gapless loop</td></tr>\n        <tr><td>Cold air in January</td><td>Yes, unfortunately</td><td>No</td></tr>\n        <tr><td>Dust and allergens circulating</td><td>Yes</td><td>No</td></tr>\n        <tr><td>Electricity</td><td>50–100 W all night (~$20–$45/year)</td><td>Phone audio, screen off</td></tr>\n        <tr><td>Travels with you</td><td>In a suitcase</td><td>Already in your pocket, works offline</td></tr>\n        <tr><td>Turns itself off gently</td><td>No</td><td>Fade-out timer up to 10 hours</td></tr>\n      </tbody>\n    </table>\n\n    <figure class=\"figure-shot\">\n      <img src=\"/img/screenshot-4-fan.webp\" alt=\"Fan noise for sleep playing in the DRMN sound machine app on iPhone\" width=\"600\" height=\"1300\" loading=\"lazy\">\n      <figcaption>Fan noise in DRMN: the hum, minus the appliance.</figcaption>\n    </figure>\n\n    <h2>How to replace your fan with DRMN</h2>\n    <div class=\"app-steps\">\n      <ol>\n        <li>Download <strong>Sound Machine Deep Sleep DRMN</strong> free from the App Store.</li>\n        <li>Pick <strong>Fan</strong> from the library and download it for offline playback — hotel Wi-Fi never gets a vote.</li>\n        <li>Match the volume to what your real fan sounds like from your pillow. Familiarity is the point.</li>\n        <li>If the recording feels thinner than your fan, layer <strong>white noise</strong> or <strong>brown noise</strong> underneath it in the mixer.</li>\n        <li>Set the timer — all night to fully replace the fan, or 60 minutes with fade-out if you only need it to fall asleep.</li>\n      </ol>\n    </div>\n\n    <p>Transition tip: run the app and the real fan together for two or three nights, then stop the fan. The cue transfers without a fuss.</p>",
+  "faq_html": "<h3>Why can't I sleep without a fan?</h3>\n    <p>Years of pairing the hum with sleep made it a conditioned cue. The cue is the sound, so a recording reproduces it.</p>\n    <h3>Is a fan sound app as good as a real fan?</h3>\n    <p>For sleep, yes — masking and conditioning both come from the audio. The app skips the cold air, dust, and electricity.</p>\n    <h3>Does a real fan cost much to run?</h3>\n    <p>A 50–100 W box fan running nightly adds roughly $20–$45 a year at average US rates. Phone audio with the screen off is a rounding error.</p>",
+  "faq": [
+    {
+      "question": "Why can't I sleep without a fan?",
+      "answer": "Years of falling asleep to a fan turn its hum into a conditioned sleep cue — your brain expects that exact sound at bedtime, and silence feels wrong. The cue is the sound, not the moving air, so a recorded fan hum reproduces the effect."
+    },
+    {
+      "question": "Is a fan sound app as good as a real fan for sleep?",
+      "answer": "For the sleep effect, yes — the masking and the conditioning both come from the sound. An app adds what a fan can't: no cold air in winter, no dust circulation, no electricity draw, a fade-out timer, and the same hum in any hotel room."
+    },
+    {
+      "question": "Does running a fan all night cost much electricity?",
+      "answer": "A typical box fan draws 50–100 watts; eight hours a night for a year adds roughly $20–$45 to an electricity bill at average US rates. A phone playing fan sound with the screen off uses a small fraction of that."
+    }
+  ],
+  "related": [
+    {
+      "slug": "sound-machine-app",
+      "title": "Sound machine app vs bedside machine: which to choose"
+    },
+    {
+      "slug": "best-sounds-for-sleep",
+      "title": "The best sounds for sleep, ranked by what wakes you"
+    },
+    {
+      "slug": "sleep-sounds-with-timer",
+      "title": "Sleep sounds with a timer: fade out instead of stopping"
+    }
+  ],
+  "order": 9,
+  "card_title": "Fan Noise for Sleep — Without Running a Fan All Night",
+  "card_description": "Keep the fan hum, skip the cold air and the electricity bill. Gapless fan sound on your phone.",
+  "short_title": "Fan noise for sleep"
+}
