@@ -6,7 +6,13 @@ download	Download Now	Descargar	CTA; Apple App Store ES style
 white_noise	white noise	ruido blanco	Standard es-ES term
 brown_noise	brown noise	ruido marrón	
 sleep_sounds	sleep sounds	sonidos para dormir	
-sound_machine	sleep sound machine	máquina de sonidos para dormir	Marketing
+sound_machine	sleep sound machine	máquina de ruido blanco	Google Trends ES: «maquina (de) ruido blanco» se busca; «máquina de sonidos» no
+app_store_name_es	Sound Machine Deep Sleep DRMN	Máquina Sonido Ruido Blanco	Localized App Store product name (ES storefront)
+sound_mixer	sound mixer	mezclador de sonidos	
+rain_sounds	rain sounds	sonido de lluvia	
+fan_sound	fan sound	ruido de ventilador	
+baby_white_noise	white noise for babies	ruido blanco para bebés / ruido blanco bebé	Top ES queries (es/queries_es.csv)
+white_noise_study	white noise for studying	ruido blanco para estudiar	High-volume ES query
 offline	offline	sin conexión	Prefer sin conexión in ES copy; offline OK in keywords
 privacy_policy	Privacy Policy	Política de privacidad	Apple es-ES legal term
 terms_of_service	Terms of Service	Términos de uso	Apple es-ES
