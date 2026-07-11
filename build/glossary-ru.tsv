@@ -6,7 +6,12 @@ download	Download Now	Скачать	CTA; Apple App Store RU style
 white_noise	white noise	белый шум	Standard ru-RU term
 brown_noise	brown noise	коричневый шум	
 sleep_sounds	sleep sounds	звуки для сна	
-sound_machine	sleep sound machine	машина звуков для сна	Marketing
+sound_machine	sleep sound machine	генератор белого шума / генератор звуков для сна	Google Trends RU: «машина звуков» не ищут; «генератор» — естественный термин
+sound_mixer	sound mixer	микшер звуков	Replaces legacy «микш» (not a Russian word)
+rain_sounds	rain sounds	шум дождя	Top RU query (ru/queries.csv)
+fan_sound	fan sound	звук вентилятора	
+baby_white_noise	white noise for babies	белый шум для детей / для новорожденных	High-volume RU queries
+fall_asleep_fast	fall asleep faster	быстрее уснуть / засыпай быстрее	Rising RU query «как быстро уснуть»
 offline	offline	офлайн	Common in App Store RU
 privacy_policy	Privacy Policy	Политика конфиденциальности	Apple ru-RU legal term
 terms_of_service	Terms of Service	Условия использования	Apple ru-RU
