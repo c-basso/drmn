@@ -2,7 +2,7 @@
   "version": 1,
   "source": "Google Trends related queries",
   "sourceFile": "relatedQueries.csv",
-  "updatedAt": "2026-07-10",
+  "updatedAt": "2026-07-11",
   "clusters": [
     {
       "id": "core-sound-machine",
