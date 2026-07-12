@@ -503,48 +503,7 @@
             "text": "Shrani priljubljene lokalno—uporabno na potovanjih ali s šibkim Wi‑Fi-jem v spalnici."
           }
         ]
-      },
-      "reviews": [
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Sarah M."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Z DRMN zaspim hitreje. Funkcija mix mi omogoča, da popolnoma združim beli šum in valove."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Michael R."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Naš dojenček spi celo noč ob zvoku fen. Offline način nas reši na potovanjih."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Jennifer L."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Pri nespečnosti mi je DRMN vse spremenil. Uporabljam ga vsako noč in se zbudim spočita."
-        }
-      ]
+      }
     }
   },
   "app_store_proof": {

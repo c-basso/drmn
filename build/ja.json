@@ -503,48 +503,7 @@
             "text": "お気に入りを端末に保存—旅行先や寝室のWi‑Fiが弱いときに便利です。"
           }
         ]
-      },
-      "reviews": [
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Sarah M."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "DRMNで入眠が早くなりました。ミックス機能でホワイトノイズと波の音を組み合わせるのがぴったりです。"
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Michael R."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "ドライヤーの音で赤ちゃんが一晩中眠ってくれます。オフラインモードは旅行先でも助かります。"
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Jennifer L."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "不眠で悩んでいましたが、DRMNは生活を変えました。毎晩使い、すっきり目覚めています。"
-        }
-      ]
+      }
     }
   },
   "app_store_proof": {

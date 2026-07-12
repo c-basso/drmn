@@ -503,48 +503,7 @@
             "text": "บันทึกรายการโปรดในเครื่อง—มีประโยชน์เวลาเดินทางหรือ Wi‑Fi อ่อนในห้องนอน"
           }
         ]
-      },
-      "reviews": [
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Sarah M."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "หลับเร็วขึ้นด้วย DRMN ฟีเจอร์ผสมเสียงช่วยให้ผสมไวท์นอยส์กับคลื่นได้ลงตัว"
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Michael R."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "ลูกนอนทั้งคืนด้วยเสียงไดร์เป่าผม โหมดออฟไลน์ช่วยได้มากเวลาเดินทาง"
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Jennifer L."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "พอเป็นนอนไม่หลับ DRMN เปลี่ยนทุกอย่าง ใช้ทุกคืน & ตื่นมาสดชื่น"
-        }
-      ]
+      }
     }
   },
   "app_store_proof": {

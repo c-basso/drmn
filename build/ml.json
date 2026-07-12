@@ -503,48 +503,7 @@
             "text": "ഇഷ്ടപ്പെട്ടവ locally save ചെയ്യുക—യാത്രയിലോ ദുർബല Wi‑Fi ബെഡ്‌റൂമിലോ ഉപയോഗിക്കാം."
           }
         ]
-      },
-      "reviews": [
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Sarah M."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "DRMN-ൽ ഞാൻ വേഗത്തിൽ ഉറങ്ങുന്നു. മിക്സ് ഫീച്ചർ വൈറ്റ് നോയിസും തിരമാലകളും നന്നായി ചേർക്കുന്നു."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Michael R."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "ഞങ്ങളുടെ കുഞ്ഞ് ഹെയർ ഡ്രയർ ശബ്ദത്തിൽ രാത്രി മുഴുവൻ ഉറങ്ങുന്നു. ഓഫ്‌ലൈൻ മോഡ് യാത്രയിൽ രക്ഷിക്കുന്നു."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Jennifer L."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "ഉറക്കക്കുറവിൽ DRMN എല്ലാം മാറ്റി. ഓരോ രാത്രിയും ഉപയോഗിക്കുന്നു & സുഖപ്രദമായി ഉണരുന്നു."
-        }
-      ]
+      }
     }
   },
   "app_store_proof": {

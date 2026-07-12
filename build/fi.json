@@ -503,48 +503,7 @@
             "text": "Tallenna suosikit paikallisesti—hyödyllistä matkoilla tai heikolla Wi‑Fi:llä makuuhuoneessa."
           }
         ]
-      },
-      "reviews": [
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Sarah M."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Nukahdan nopeammin DRMN:n kanssa. Mixaus antaa yhdistää valkoisen kohinan ja aallot täydellisesti."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Michael R."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Vauvamme nukkuu koko yön hiustenkuivaajan äänellä. Offline-tila pelastaa matkoilla."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Jennifer L."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Unettomuuden kanssa DRMN muutti kaiken. Käytän sitä joka yö ja herään levänneenä."
-        }
-      ]
+      }
     }
   },
   "app_store_proof": {

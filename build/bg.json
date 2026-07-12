@@ -503,48 +503,7 @@
             "text": "Запази любимите локално—полезно при пътуване или слаб Wi‑Fi в спалнята."
           }
         ]
-      },
-      "reviews": [
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Sarah M."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Заспивам по-бързо с DRMN. Функцията за микс ми позволява да комбинирам бял шум и вълни перфектно."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Michael R."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Бебето ни спи цяла нощ със звука на сешоара. Офлайн режимът ни спасява при пътуване."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Jennifer L."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "При безсъние DRMN промени всичко. Ползвам го всяка нощ и се събуждам отпочинала."
-        }
-      ]
+      }
     }
   },
   "app_store_proof": {

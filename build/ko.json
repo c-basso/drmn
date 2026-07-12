@@ -503,48 +503,7 @@
             "text": "즐겨찾기를 기기에 저장—여행이나 침실 Wi‑Fi가 약할 때 유용해요."
           }
         ]
-      },
-      "reviews": [
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Sarah M."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "DRMN 덕분에 더 빨리 잠들어요. 믹스 기능으로 화이트 노이즈와 파도를 완벽하게 조합할 수 있어요."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Michael R."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "드라이어 소리로 아기가 밤새 잘 자요. 오프라인 모드는 여행에서 정말 도움이 돼요."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Jennifer L."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "불면으로 고생했는데 DRMN이 큰 변화를 줬어요. 매일 밤 사용하고 상쾌하게 일어나요."
-        }
-      ]
+      }
     }
   },
   "app_store_proof": {

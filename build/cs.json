@@ -503,48 +503,7 @@
             "text": "Uložte oblíbené lokálně—užitečné na cestách nebo se slabým Wi‑Fi v ložnici."
           }
         ]
-      },
-      "reviews": [
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Sarah M."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "S DRMN usínám rychleji. Mix mi umožní dokonale spojit bílý šum a vlny."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Michael R."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Naše miminko spí celou noc díky zvuku fénu. Offline režim nás zachrání na cestách."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Jennifer L."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "S nespavostí mi DRMN změnilo život. Používám ho každou noc a probouzím se odpočatá."
-        }
-      ]
+      }
     }
   },
   "app_store_proof": {

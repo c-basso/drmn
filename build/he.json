@@ -503,48 +503,7 @@
             "text": "שמרו מועדפים מקומית — שימושי בנסיעות או עם Wi‑Fi חלש בחדר השינה."
           }
         ]
-      },
-      "reviews": [
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Sarah M."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "אני נרדמת מהר יותר עם DRMN. המיקס מאפשר לי לשלב רעש לבן וגלים בצורה מושלמת."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Michael R."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "התינוק שלנו ישן כל הלילה עם צליל מייבש השיער. מצב אופליין מציל אותנו בנסיעות."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Jennifer L."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "עם נדודי שינה, DRMN שינתה את החיים שלי. אני משתמשת בו כל לילה ומתעוררת רעננה."
-        }
-      ]
+      }
     }
   },
   "app_store_proof": {

@@ -503,48 +503,7 @@
             "text": "I-save ang favorites locally—kapaki-pakinabang sa biyahe o mahina ang Wi‑Fi sa kwarto."
           }
         ]
-      },
-      "reviews": [
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Sarah M."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Mas mabilis akong makatulog gamit ang DRMN. Ang mix feature ay nagpapahintulot sa akin na pagsamahin ang white noise at alon nang perpekto."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Michael R."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Tulog buong gabi ang sanggol namin sa tunog ng hair dryer. Ang offline mode ay life-saver sa biyahe."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Jennifer L."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Sa insomnia, binago ng DRMN ang buhay ko. Ginagamit ko gabi-gabi at gising na refreshed."
-        }
-      ]
+      }
     }
   },
   "app_store_proof": {

@@ -503,48 +503,7 @@
             "text": "Speichere Favoriten lokal—praktisch auf Reisen oder bei schwachem WLAN im Schlafzimmer."
           }
         ]
-      },
-      "reviews": [
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Sarah M."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Ich schlafe mit DRMN schneller ein. Der Mix erlaubt die perfekte Kombination aus weißem Rauschen und Wellen."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Michael R."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Unser Baby schläft dank Föhn-Sound in DRMN durch. Offline ist auf Reisen unverzichtbar."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Jennifer L."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Bei Schlaflosigkeit war DRMN ein Gamechanger. Ich nutze es jede Nacht und wache erholt auf."
-        }
-      ]
+      }
     }
   },
   "app_store_proof": {

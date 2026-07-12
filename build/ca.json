@@ -503,48 +503,7 @@
             "text": "Desa els preferits localment—útil en viatges o amb Wi‑Fi feble al dormitori."
           }
         ]
-      },
-      "reviews": [
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Sarah M."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "M'adormo més ràpid amb DRMN. La funció de mix em permet combinar soroll blanc i ones perfectament."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Michael R."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "El nostre nadó dorm tota la nit amb el so de l'assecador. El mode fora de línia ens salva en viatges."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Jennifer L."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Amb insomni, DRMN m'ha canviat tot. L'utilitzo cada nit i em despert descansada."
-        }
-      ]
+      }
     }
   },
   "app_store_proof": {

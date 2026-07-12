@@ -503,48 +503,7 @@
             "text": "Favorileri yerel olarak kaydedin—seyahatte veya yatak odasında zayıf Wi‑Fi'de kullanışlı."
           }
         ]
-      },
-      "reviews": [
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Sarah M."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "DRMN ile daha hızlı uykuya dalıyorum. Karıştırma özelliği beyaz gürültü ve dalgaları mükemmel birleştiriyor."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Michael R."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Bebeğimiz saç kurutma makinesi sesiyle tüm gece uyuyor. Seyahatte çevrimdışı mod hayat kurtarıcı."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Jennifer L."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Uykusuzluk yaşayan biri olarak DRMN her şeyi değiştirdi. Her gece kullanıyorum ve dinlenmiş uyanıyorum."
-        }
-      ]
+      }
     }
   },
   "app_store_proof": {

@@ -503,48 +503,7 @@
             "text": "Lưu yêu thích cục bộ—hữu ích khi đi du lịch hoặc Wi‑Fi yếu trong phòng ngủ."
           }
         ]
-      },
-      "reviews": [
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Sarah M."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Tôi chìm vào giấc nhanh hơn với DRMN. Tính năng trộn cho phép kết hợp tiếng ồn trắng và sóng biển hoàn hảo."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Michael R."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Bé chúng tôi ngủ trọn đêm nhờ tiếng máy sấy tóc. Chế độ ngoại tuyến cứu cánh khi đi du lịch."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Jennifer L."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Bị mất ngủ — DRMN thay đổi tất cả. Dùng mỗi đêm và thức dậy sảng khoái."
-        }
-      ]
+      }
     }
   },
   "app_store_proof": {

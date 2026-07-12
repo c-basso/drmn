@@ -503,48 +503,7 @@
             "text": "Simpan kegemaran secara tempatan—berguna semasa melancong atau Wi‑Fi lemah di bilik."
           }
         ]
-      },
-      "reviews": [
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Sarah M."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Saya tidur lebih cepat dengan DRMN. Ciri mix membolehkan gabungan white noise dan ombak yang sempurna."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Michael R."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Bayi kami tidur sepanjang malam dengan bunyi pengering rambut. Mod offline sangat membantu semasa melancong."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Jennifer L."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Dengan insomnia, DRMN mengubah hidup saya. Saya guna setiap malam dan bangun segar."
-        }
-      ]
+      }
     }
   },
   "app_store_proof": {

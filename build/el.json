@@ -503,48 +503,7 @@
             "text": "Αποθήκευσε αγαπημένα τοπικά—χρήσιμο σε ταξίδια ή με αδύναμο Wi‑Fi στο υπνοδωμάτιο."
           }
         ]
-      },
-      "reviews": [
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Sarah M."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Κοιμάμαι πιο γρήγορα με το DRMN. Το mix μου επιτρέπει να συνδυάζω τέλεια λευκό θόρυβο και κύματα."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Michael R."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Το μωρό μας κοιμάται όλη τη νύχτα με τον ήχο του σεσουάρ. Το offline μας σώζει σε ταξίδια."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Jennifer L."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Με αϋπνία, το DRMN άλλαξε τα πάντα. Το χρησιμοποιώ κάθε βράδυ και ξυπνάω ξεκούραστη."
-        }
-      ]
+      }
     }
   },
   "app_store_proof": {

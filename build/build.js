@@ -362,25 +362,9 @@ function buildSoftwareApplicationStructuredData(data) {
     app.url = data.meta?.canonical;
     app.downloadUrl = APP_STORE_URL;
     app.dateModified = BUILD_DATE_ISO;
-    delete app.aggregateRating;
     if (app.offers && typeof app.offers === 'object') {
         app.offers.url = APP_STORE_URL;
     }
-}
-
-function buildReviewStructuredData(data) {
-    const reviews = data.seo.structured_data.reviews;
-    const app = data.seo.structured_data.software_application;
-    if (!app || !Array.isArray(reviews) || reviews.length === 0) {
-        return;
-    }
-    app.review = reviews.map((entry) => ({
-        '@type': 'Review',
-        author: entry.author,
-        reviewRating: entry.reviewRating,
-        reviewBody: entry.reviewBody
-    }));
-    delete data.seo.structured_data.reviews;
 }
 
 function buildOrganizationStructuredData(data) {
@@ -515,7 +499,6 @@ function preparePageData(data, lang) {
     buildOrganizationStructuredData(data);
     buildWebsiteStructuredData(data, lang);
     buildHowToStructuredData(data);
-    buildReviewStructuredData(data);
     buildFaqStructuredData(data);
     buildBreadcrumbStructuredData(data);
     return data;

@@ -503,48 +503,7 @@
             "text": "Zapisz ulubione lokalnie—przydatne w podróży albo przy słabym Wi‑Fi w sypialni."
           }
         ]
-      },
-      "reviews": [
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Sarah M."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Zasypiam szybciej z DRMN. Mix pozwala mi idealnie połączyć biały szum z falami."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Michael R."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Nasze dziecko śpi całą noc przy dźwięku suszarki. Tryb offline ratuje nas w podróży."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Jennifer L."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Przy bezsenności DRMN wszystko zmienił. Używam go każdej nocy i budzę się wypoczęta."
-        }
-      ]
+      }
     }
   },
   "app_store_proof": {

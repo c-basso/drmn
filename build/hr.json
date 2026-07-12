@@ -503,48 +503,7 @@
             "text": "Spremi favorite lokalno—korisno na putovanjima ili sa slabim Wi‑Fi-jem u spavaćoj sobi."
           }
         ]
-      },
-      "reviews": [
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Sarah M."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Brže zaspim s DRMN-om. Mix mi omogućuje savršeno kombinirati bijeli šum i valove."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Michael R."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Naša beba spava cijelu noć uz zvuk sušila. Offline način rada nas spašava na putovanjima."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Jennifer L."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "S nesanicoom mi je DRMN promijenio život. Koristim ga svake noći i budim se odmorn."
-        }
-      ]
+      }
     }
   },
   "app_store_proof": {

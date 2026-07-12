@@ -503,48 +503,7 @@
             "text": "Salva i preferiti localmente—utile in viaggio o con Wi‑Fi debole in camera da letto."
           }
         ]
-      },
-      "reviews": [
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Sarah M."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Mi addormento più velocemente con DRMN. Il mix mi permette di combinare rumore bianco e onde alla perfezione."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Michael R."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Il nostro neonato dorme tutta la notte grazie al suono del phon. La modalità offline ci salva in viaggio."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Jennifer L."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Con l'insonnia, DRMN ha cambiato tutto. Lo uso ogni notte e mi sveglio riposata."
-        }
-      ]
+      }
     }
   },
   "app_store_proof": {

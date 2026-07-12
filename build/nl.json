@@ -503,48 +503,7 @@
             "text": "Sla favorieten lokaal op—handig op reis of met zwak Wi‑Fi op de slaapkamer."
           }
         ]
-      },
-      "reviews": [
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Sarah M."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Ik val sneller in slaap met DRMN. De mix laat me witte ruis en golven perfect combineren."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Michael R."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Onze baby slaapt de hele nacht met het föhngeluid. Offline modus redt ons op reis."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Jennifer L."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Met slapeloosheid heeft DRMN alles veranderd. Ik gebruik het elke nacht en word uitgerust wakker."
-        }
-      ]
+      }
     }
   },
   "app_store_proof": {

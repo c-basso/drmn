@@ -503,48 +503,7 @@
             "text": "Spara favoriter lokalt—användbart på resa eller med svagt Wi‑Fi på sovrummet."
           }
         ]
-      },
-      "reviews": [
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Sarah M."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Jag somnar snabbare med DRMN. Mix-funktionen låter mig kombinera vitt brus och vågor perfekt."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Michael R."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Vår baby sover hela natten med hårtorksljudet. Offlineläget räddar oss på resa."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Jennifer L."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Med sömnlöshet har DRMN förändrat allt. Jag använder den varje natt och vaknar utvilad."
-        }
-      ]
+      }
     }
   },
   "app_store_proof": {

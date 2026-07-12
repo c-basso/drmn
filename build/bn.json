@@ -503,48 +503,7 @@
             "text": "পছন্দের গুলো ডিভাইসে সংরক্ষণ করো—ভ্রমণে বা দুর্বল Wi‑Fi-র বেডরুমে কাজে লাগে।"
           }
         ]
-      },
-      "reviews": [
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Sarah M."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "DRMN দিয়ে আমি দ্রুত ঘুমাই। মিক্স ফিচার দিয়ে হোয়াইট নয়েজ ও ঢেউ নিখুঁতভাবে মিলে যায়।"
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Michael R."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "আমাদের শিশু হেয়ার ড্রায়ারের শব্দে রাতভর ঘুমায়। অফলাইন মোড ভ্রমণে কাজে লাগে।"
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Jennifer L."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "অনিদ্রায় DRMN সব বদলে দিয়েছে। প্রতি রাত ব্যবহার করি ও সতেজ হয়ে উঠি।"
-        }
-      ]
+      }
     }
   },
   "app_store_proof": {

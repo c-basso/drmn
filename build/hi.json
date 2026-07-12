@@ -503,48 +503,7 @@
             "text": "favorites locally save करें—यात्रा में या कमज़ोर Wi‑Fi वाले बेडरूम में useful।"
           }
         ]
-      },
-      "reviews": [
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Sarah M."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "DRMN से मैं जल्दी सो जाती हूँ। mix feature से वाइट नॉइज़ और लहरें perfect combine होती हैं।"
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Michael R."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "हमारा बच्चा हेयर ड्रायर की आवाज़ पर पूरी रात सोता है। ऑफ़लाइन mode यात्रा में काम आता है।"
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Jennifer L."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "अनिद्रा में DRMN ने सब बदल दिया। हर रात इस्तेमाल करती हूँ और fresh उठती हूँ।"
-        }
-      ]
+      }
     }
   },
   "app_store_proof": {

@@ -503,48 +503,7 @@
             "text": "Enregistre tes favoris localement—pratique en voyage ou quand le Wi‑Fi est faible dans la chambre."
           }
         ]
-      },
-      "reviews": [
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Sarah M."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Je m'endors plus vite avec DRMN. Le mixage me permet de combiner bruit blanc et vagues à la perfection."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Michael R."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Notre bébé dort toute la nuit grâce au son du sèche-cheveux. Le mode hors ligne nous sauve en voyage."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Jennifer L."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Avec l'insomnie, DRMN a tout changé. Je l'utilise chaque nuit et me réveille reposée."
-        }
-      ]
+      }
     }
   },
   "app_store_proof": {

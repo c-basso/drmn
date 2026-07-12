@@ -503,48 +503,7 @@
             "text": "收藏保存到本地，旅行或卧室 Wi‑Fi 弱时很方便。"
           }
         ]
-      },
-      "reviews": [
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Sarah M."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "用 DRMN 入睡更快了。混音功能让我把白噪音和海浪配得刚刚好。"
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Michael R."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "吹风机声让宝宝整夜安睡。离线模式在旅行时特别有用。"
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Jennifer L."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "失眠困扰多年，DRMN 改变了我的睡眠。每晚使用，醒来精神很好。"
-        }
-      ]
+      }
     }
   },
   "app_store_proof": {
